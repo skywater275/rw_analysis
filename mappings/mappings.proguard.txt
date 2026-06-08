@@ -1,0 +1,340 @@
+# Rusted Warfare v1.15 - ProGuard retrace mapping
+# Format: obfuscated_class -> meaningful_class:
+#           obfuscated_field -> meaningful_field
+# Generated: 2026-06-07 | CFR 0.152 | 40 classes, 120+ fields
+
+com.corrodinggames.librocket.a -> LibRocketContext:
+
+com.corrodinggames.librocket.b -> LibRocketBridge:
+
+com.corrodinggames.librocket.c -> ElementWrapper:
+
+com.corrodinggames.librocket.d -> DocumentWrapper:
+
+com.corrodinggames.librocket.scripts.Debug -> DebugUI:
+
+com.corrodinggames.librocket.scripts.Mods -> ModsUI:
+
+com.corrodinggames.librocket.scripts.Multiplayer -> MultiplayerUI:
+
+com.corrodinggames.librocket.scripts.Root -> MainUIController:
+
+com.corrodinggames.librocket.scripts.ScriptEngine -> UIScriptEngine:
+
+com.corrodinggames.rts.appFramework.f -> AppFramework:
+
+com.corrodinggames.rts.game.a.a -> GameWorld:
+
+com.corrodinggames.rts.game.a.b -> CombatSubAction:
+
+com.corrodinggames.rts.game.a.c -> CombatManager:
+
+com.corrodinggames.rts.game.a.e -> CombatAction:
+
+com.corrodinggames.rts.game.a.g -> CombatMain:
+
+com.corrodinggames.rts.game.a.i -> Projectile:
+    a -> sourceX
+    b -> sourceY
+    c -> targetX
+    d -> targetY
+    e -> speed
+    f -> damage
+    g -> remainingLifetime
+    h -> owner
+
+com.corrodinggames.rts.game.b.b -> MapEngine:
+
+com.corrodinggames.rts.game.b.c -> MapRenderer:
+
+com.corrodinggames.rts.game.b.g -> MapLayer:
+
+com.corrodinggames.rts.game.f -> MovementController:
+
+com.corrodinggames.rts.game.i -> GameScreen:
+
+com.corrodinggames.rts.game.n -> PlayerState:
+    A -> startingUnitChoice
+    C -> playerColor
+    E -> hasLost
+    F -> hasDisconnected
+    G -> hasSurrendered
+    O -> connectionId
+    T -> teamTracker
+    k -> playerSlot
+    o -> credits
+    p -> creditBuffer
+    r -> teamId
+    v -> playerName
+    w -> aiEnabled
+    x -> aiDifficultyAlt
+    z -> aiDifficulty
+
+com.corrodinggames.rts.game.p -> UnitManager:
+
+com.corrodinggames.rts.game.s -> TeamUnitTracker:
+    a -> maxUnits
+    b -> nonBuildingCount
+    c -> completedCount
+    d -> totalBuilt
+    e -> queuedCount
+    f -> buildingCount
+    g -> incomeRate
+    h -> resourceType1
+    i -> resourceType2
+    j -> resourceType3
+    k -> positiveResourceFlow
+    l -> negativeResourceFlow
+    m -> hasMobileUnits
+    n -> buildingCapacityUsed
+    o -> unitCapacityUsed
+    p -> buildQueue1
+    q -> buildQueue2
+
+com.corrodinggames.rts.game.t -> BuildQueue:
+
+com.corrodinggames.rts.game.units.am -> UnitInstance:
+    bL -> isOnMap
+    bO -> spawnPointA
+    bP -> spawnPointB
+    bV -> isDead
+    bW -> deathTimestamp
+    bX -> owningPlayer
+    bY -> registeredInTracker
+    bs -> lastDamageTime
+    bt -> lastAttacker
+    cC -> hpChangeAnimation
+    cD -> hpAnimationTimer
+    cL -> turretTargets
+    cj -> collisionRadius
+    cm -> buildProgress
+    cu -> currentHp
+    cv -> maxHp
+    cw -> repairProgress
+    cx -> currentShield
+    cz -> shieldRegenTimer
+    eo -> posX
+    ep -> posY
+
+com.corrodinggames.rts.game.units.ao -> MovementTypeEnum:
+
+com.corrodinggames.rts.game.units.ar -> UnitRegistry:
+
+com.corrodinggames.rts.game.units.as -> UnitTypeHandle:
+
+com.corrodinggames.rts.game.units.au -> WeaponAction:
+    a -> weaponType
+    b -> targetUnitType
+    c -> actionType
+    d -> ammoCount
+    e -> damage
+    f -> range
+    g -> cooldownTimer
+    h -> targetUnit
+    i -> projectileManager
+    j -> isActive
+    k -> currentDamage
+    l -> currentRange
+    m -> isReady
+    n -> hasFired
+
+com.corrodinggames.rts.game.units.av -> WeaponTypeEnum:
+
+com.corrodinggames.rts.game.units.custom.bb -> LocalizedString:
+
+com.corrodinggames.rts.game.units.custom.d.b -> ResourceComponent:
+
+com.corrodinggames.rts.game.units.custom.g -> TeamTag:
+
+com.corrodinggames.rts.game.units.custom.h -> UnitConfig:
+
+com.corrodinggames.rts.game.units.custom.j -> CustomUnitType:
+
+com.corrodinggames.rts.game.units.custom.l -> ModUnitRegistry:
+
+com.corrodinggames.rts.game.units.d.d -> ExperimentalUnit:
+
+com.corrodinggames.rts.game.units.d.e -> CommandCenter:
+
+com.corrodinggames.rts.game.units.d.j -> BuilderUnit:
+
+com.corrodinggames.rts.game.units.d.l -> CarrierUnit:
+
+com.corrodinggames.rts.game.units.d.t -> Structures:
+
+com.corrodinggames.rts.game.units.e.c -> Building:
+
+com.corrodinggames.rts.game.units.f.a -> SpatialGridCell:
+
+com.corrodinggames.rts.game.units.f.c -> SpatialGrid:
+
+com.corrodinggames.rts.game.units.f.d -> RectFilter:
+
+com.corrodinggames.rts.game.units.f.f -> QueryResult:
+
+com.corrodinggames.rts.game.units.f.g -> CircleFilter:
+
+com.corrodinggames.rts.game.units.f.h -> LineFilter:
+
+com.corrodinggames.rts.game.units.h -> Factory:
+
+com.corrodinggames.rts.game.units.y -> UnitType:
+    ab -> incomeAccumulator
+
+com.corrodinggames.rts.gameFramework.SettingsEngine -> SettingsEngine:
+
+com.corrodinggames.rts.gameFramework.ba -> ReplayEngine:
+
+com.corrodinggames.rts.gameFramework.bb -> BackgroundWriter:
+
+com.corrodinggames.rts.gameFramework.bd -> DataBlock:
+
+com.corrodinggames.rts.gameFramework.bg -> StatsManager:
+    b -> fallbackRecord
+    c -> playerRecords
+    d -> sampleCounter
+    e -> isActive
+    f -> samplingTimer
+
+com.corrodinggames.rts.gameFramework.bh -> StatsSample:
+
+com.corrodinggames.rts.gameFramework.bj -> StatsCategory:
+
+com.corrodinggames.rts.gameFramework.bl -> PeriodicTimer:
+
+com.corrodinggames.rts.gameFramework.bn -> StatsHistory:
+    a -> playerId
+    b -> timeSeries
+
+com.corrodinggames.rts.gameFramework.bo -> StatsRecord:
+    a -> category1
+    b -> category2
+    c -> unitsKilled
+    d -> experimentalsKilled
+    e -> buildingsKilled
+    f -> unitsLost
+    g -> experimentalsLost
+    h -> buildingsLost
+    i -> category9
+    j -> category10
+    k -> timestamp
+    l -> history
+
+com.corrodinggames.rts.gameFramework.bq -> BaseGameObject:
+
+com.corrodinggames.rts.gameFramework.br -> ExtraManager:
+
+com.corrodinggames.rts.gameFramework.e -> Command:
+    g -> stopOrUndo
+    i -> playerRef
+    j -> waypointAction
+    k -> specialAction
+    n -> attackMode
+    p -> preExecPlayerState
+    q -> playerIndex
+    r -> systemAction
+    s -> changeStepRate
+    u -> systemActionValue
+
+com.corrodinggames.rts.gameFramework.f -> GameUtils:
+
+com.corrodinggames.rts.gameFramework.g.b -> DataField:
+
+com.corrodinggames.rts.gameFramework.g.c -> DataFieldInt:
+
+com.corrodinggames.rts.gameFramework.g.d -> DataFieldFloat:
+
+com.corrodinggames.rts.gameFramework.g.e -> DataFieldLong:
+
+com.corrodinggames.rts.gameFramework.g.f -> DataFieldProvider:
+
+com.corrodinggames.rts.gameFramework.j.ad -> NetEngine:
+
+com.corrodinggames.rts.gameFramework.j.as -> OutputNetStream:
+
+com.corrodinggames.rts.gameFramework.j.c -> PlayerConnect:
+
+com.corrodinggames.rts.gameFramework.j.k -> InputNetStream:
+
+com.corrodinggames.rts.gameFramework.l -> GlobalState:
+    aj -> lock1
+    ak -> lock2
+    al -> singleton
+    bL -> mapEngine
+    bQ -> settingsEngine
+    bS -> unitFactory
+    bU -> recycler
+    bX -> netEngine
+    bY -> statsManager
+    bZ -> modDataHolder
+    bs -> currentPlayer
+    bx -> gameTick
+    by -> currentFrame
+    ca -> gameSaver
+    cb -> replayEngine
+    cc -> spatialGrid
+    cd -> extraManager
+    ce -> missionEngine
+    cf -> commandPacketManager
+
+com.corrodinggames.rts.gameFramework.n -> GameState:
+
+com.corrodinggames.rts.gameFramework.n.a -> AITask:
+
+com.corrodinggames.rts.gameFramework.n.a.a -> TaskCondition:
+
+com.corrodinggames.rts.gameFramework.n.a.b -> TeamTagDetect:
+
+com.corrodinggames.rts.gameFramework.n.a.c -> UnitCountCondition:
+
+com.corrodinggames.rts.gameFramework.n.b -> AITaskQueue:
+
+com.corrodinggames.rts.gameFramework.n.c -> MissionParser:
+
+com.corrodinggames.rts.gameFramework.n.d -> MissionExecutor:
+
+com.corrodinggames.rts.gameFramework.n.e -> MissionEvent:
+
+com.corrodinggames.rts.gameFramework.n.f -> AIWaveSystem:
+    A -> waveMultiplier
+    B -> emergencyMultiplier
+    M -> difficultyMultiplier
+    b -> currentWave
+    c -> totalWaves
+    k -> aiEnabled
+    q -> infiniteWaves
+    r -> waveIndex
+    u -> waveInterval
+    v -> unitCountBase
+    z -> waveTimer
+
+com.corrodinggames.rts.gameFramework.n.h -> AIDifficulty:
+
+com.corrodinggames.rts.gameFramework.n.i -> AISpawnList:
+
+com.corrodinggames.rts.gameFramework.n.j -> SpawnEntry:
+
+com.corrodinggames.rts.gameFramework.n.k -> SpawnWeight:
+
+com.corrodinggames.rts.gameFramework.n.l -> TargetFilter:
+
+com.corrodinggames.rts.gameFramework.n.m -> TaskStatus:
+
+com.corrodinggames.rts.gameFramework.utility.g -> RingBuffer:
+
+com.corrodinggames.rts.gameFramework.utility.m -> CustomArrayList:
+
+com.corrodinggames.rts.gameFramework.utility.o -> DequeList:
+
+com.corrodinggames.rts.gameFramework.utility.u -> UnitRegistry:
+
+com.corrodinggames.rts.gameFramework.utility.y -> PathfindingUtils:
+
+com.corrodinggames.rts.gameFramework.w -> GameObject:
+
+com.corrodinggames.rts.gameFramework.y -> GameSaver:
+
+com.corrodinggames.rts.java.Main -> GameLauncher:
+
+com.corrodinggames.rts.java.audio.a.i -> AudioManager:
+
