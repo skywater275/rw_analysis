@@ -304,30 +304,6 @@ a(i)    — 从框架注册
   [graphics]       → 渲染参数
 ```
 
-## 官方单位数据 (90个, game_units.json)
-
-| 类别 | 数量 | 示例 |
-|------|------|------|
-| 提取器 | 5 | T1(700/8cy), T2(2100/12), T3(6100/20), OC(14100/30) |
-| 制造仪 | 3 | T1(2200/2), T2(6600/7), T3(14100/14) |
-| 工厂 | 5 | mech(1000), air(1000), sea(1000), land(700), expLand(11000) |
-| 机甲 | 8 | gun(600), missile(900), artillery(1400), flame(12000)... |
-| 坦克 | 8 | plasma(1000), mammoth(3900), laser(1600), exp(14000)... |
-| 空军 | 8 | interceptor(1200), gunship(250), bomber(4000)... |
-| 海军 | 10 | battleship(1500), heavyBattleship(6000), sub(800)... |
-| 炮塔 | 12 | turret(500), aa(600), flak(4600)... |
-| 实验 | 8 | spider(70000), gunship(140000), dropship(30000)... |
-| 虫子 | 15 | extractor(1200), melee(300), ranged(650)... |
-| 建筑 | 6 | outpost(1500), lab(4000), repairbay(1500)... |
-
-## 单位属性 (每个单位)
-
-```
-price, hp, speed, range, damage, mass, shoot_delay, turn_speed
-```
-
-从 `-printunits` 提取，存储在 `output/game_units.json`。
-
 ---
 
 ## UnitTypeLoader — `custom.l` (38KB) ★NEW
