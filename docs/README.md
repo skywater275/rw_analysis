@@ -81,25 +81,6 @@
 
 ---
 
-## 快速查找
-
-| 问题 | 答案 | 文档 |
-|------|------|------|
-| 整体逆向情况? | **见最终评估** | [验证报告 §项目总览](VERIFICATION.md) |
-| 某个混淆名含义? | 查映射表 | [混淆名映射](OBFUSCATION_MAP.md) |
-| 游戏全部系统? | 22系统完整分析 | [游戏完整分析](GAME_COMPLETE_ANALYSIS.md) |
-| 非Java层级? | C++/OpenGL/Shader/UI | [全层级分析](LAYER_ANALYSIS.md) |
-| DLL/Shader/ini含义? | 全栈解混淆 | [全层级解混淆](MULTI_LAYER_DEOBFUSCATION.md) |
-| CC收入多少? | 67.5/s | [经济系统](01_ECONOMY.md) |
-| 伤害公式? | 3阶段 (1.75×/护盾/HP) | [战斗系统](02_COMBAT.md) |
-| 回放格式? | 二进制逐字节 | [文件格式](16_FILE_FORMATS.md) |
-| player_index在哪? | rc块 byte[11] | [网络/指令](06_NETWORK_COMMAND.md) |
-| 为什么崩溃? | Intel GPU驱动 (97.8%) | [深层分析](DEEP_ANALYSIS.md) |
-| 类字段映射? | 280+字段 | [类字典](CLASS_DICTIONARY.md) |
-| 验证准确率? | 98.7% (77/78) | [验证报告](VERIFICATION.md) |
-
----
-
 ## 逆向评估总结
 
 ```
