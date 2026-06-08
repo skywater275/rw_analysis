@@ -46,3 +46,11 @@
 | [18_NETWORK_SYSTEM](18_NETWORK_SYSTEM.md) | TCP/UDP, packet types, sync |
 | [19_UI_RENDERING](19_UI_RENDERING_SYSTEM.md) | LibRocket/Slick2D/OpenGL |
 | [20_PLUGIN_MOD](20_PLUGIN_MOD_SYSTEM.md) | Mod/plugin lifecycle |
+
+---
+
+## Disclaimer
+
+This is an unofficial Rusted Warfare reverse engineering project. All referenced resources belong to their original authors. For educational and research purposes only. Commercial use prohibited.
+
+*Rusted Warfare v1.15 — CFR 0.152 decompiled source (1,698 classes) + RW-HPS server + 30 replays*
