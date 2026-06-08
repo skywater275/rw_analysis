@@ -400,7 +400,3 @@ o() → ao                       — 获取移动类型
 buildSpeed (from .ini) × FRAME_RATE(60fps) × speed_multiplier
 = 1.0 / buildSpeed / 60 / 2.5 秒
 ```
-
-默认值:
-- 提取器: 33s | 制造仪: 67s | 工厂: 33s
-- 机甲/坦克: 17s | 实验蜘蛛: 167s | 实验炮艇: 333s
