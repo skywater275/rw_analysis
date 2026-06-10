@@ -109,8 +109,6 @@ Other:   dH:f, dI:c, dJ:b
 关键发现:
 - 使用 `pendingCommands` 队列比直接调用 `executeCommand()` 安全（避免跨线程崩溃）
 - GameUI 的 `bZ` (UnitList) 是唯一有效的选中来源
-- Robot Ctrl+A 可编程触发全选
-
 ### 2.3 游戏状态读取（getState 完整链路）
 
 ```
