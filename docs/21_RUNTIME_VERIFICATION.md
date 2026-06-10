@@ -5,91 +5,9 @@
 
 ---
 
-## 一、与静态文档的差异修正
+## 一、运行时确认的完整字段映射
 
-通过对运行中游戏进程的反射访问，发现以下与静态逆向文档的差异：
-
-### 1.1 类层级差异 — `eo`/`ep` 位置
-
-**文档说**: `am.eo` = X坐标, `am.ep` = Y坐标 (CLASS_DICTIONARY, OBFUSCATION_MAP)
-
-**实际**: `eo`/`ep` 在父类 **`w`** (GameObject, `com.corrodinggames.rts.gameFramework.w`) 上，**不在** `am` (UnitInstance) 上。
-
-```
-运行时类层级:
-  w (GameObject) ──eo──→ X坐标 (float)   ← 坐标在这里!
-                ├──ep──→ Y坐标 (float)
-                └──eq──→ ? (float)
-      ↑
-      ├── am (UnitInstance) ──cu──→ HP (float)
-      │                      ├──cv──→ maxHP (float)
-      │                      └──...
-      ├── al (TreeUnit)
-      ├── d (某个父类, owner对象类型)
-      └── ...
-```
-
-**影响**: `unitClass.getDeclaredField("eo")` 返回 `NoSuchFieldException`。必须沿类层级向上搜索。
-
-### 1.2 Owner 对象类型差异
-
-**文档说**: `am.bX` → `n` (PlayerTeam/GameState)
-
-**实际**: `am.bX` 返回的对象**运行时类型为 `d`**（`n` 的某个子类），不是 `n`。
-
-`n.k` 字段（玩家槽位索引）在运行时对象上可能不存在，需要沿 owner 对象的类层级搜索:
-```java
-for (Class<?> oc = ow.getClass(); oc != null; oc = oc.getSuperclass()) {
-    Field kf = oc.getDeclaredField("k");
-    own = (int) kf.get(ow);
-}
-```
-
-### 1.3 UnitType 名称获取
-
-**文档说**: `y.d()` → 内部名称, `y.k()` → 显示名称
-
-**实际**: UnitType（`custom.l`/`ar$34`）的名称存储在**字段 `M`**（String）中，不是通过方法调用获取。
-
-| 字段 | 含义 | 示例 |
-|------|------|------|
-| `M` | ★ 单位类型名 | `c_turret_t1`, `mechGun`, `lightGunship` |
-| `D` | 内部路径 | `units/turrets/turret_t1.ini` |
-| `E` | .ini文件路径 | `assets/units/turrets/turret_t1.ini` |
-
-自定义单位返回 `custom.l` 类，内置单位返回 `ar$N` (内部类)。读 `M` 字段对两者都有效。
-
-### 1.4 GameUI 选中列表
-
-**文档说**: `GameUI.selectedUnits` = `bM` (ArrayList)
-
-**实际**: GameUI 有两个选中相关列表字段:
-
-| 字段 | 类型 | 运行时状态 | 用途 |
-|------|------|-----------|------|
-| `bM` | ArrayList | **始终为空** | 废弃字段 |
-| `bZ` | UnitList (extends AbstractList) | ★ 实际包含选中单位 | 真正的选中列表 |
-
-`bZ` 类型为 `utility.u` (UnitList), `aX` 字段为 int 选中计数。
-
-### 1.5 GameEngine 字段确认
-
-**文档**: `l.bS` = ? (不同文档有矛盾: UnitFactory vs GameUI)
-
-**实际**: `l.bS` = **GameUI** (`f.g`), `l.cf` = **CommandController** (`c`)。
-
-运行时通过类型匹配扫描确认:
-```java
-// 按类型匹配找到:
-l.bS → f.g → GameUI (含 bZ=选中列表, aX=选中计数)
-l.cf → c   → CommandController (含 b=pendingCommands)
-```
-
----
-
-## 二、运行时确认的完整字段映射
-
-### 2.1 am (UnitInstance) 完整字段列表
+### 1.1 am (UnitInstance) 完整字段列表
 
 以下是通过 `getDeclaredFields()` 在运行时获取的 `am` 类所有实例字段:
 
@@ -124,7 +42,7 @@ Other:   dH:f, dI:c, dJ:b
 | `eo` | float | X坐标 | 2570.0, 1230.0 |
 | `ep` | float | Y坐标 | 110.0 |
 
-### 2.2 UnitType (y/custom.l) 字符串字段
+### 1.2 UnitType (y/custom.l) 字符串字段
 
 | 字段 | 含义 | 示例 |
 |------|------|------|
@@ -132,7 +50,7 @@ Other:   dH:f, dI:c, dJ:b
 | `D` | 内部资源路径 | `units/turrets/turret_t1.ini` |
 | `E` | 资源文件路径 | `assets/units/turrets/turret_t1.ini` |
 
-### 2.3 GameUI (f.g) 关键字段
+### 1.3 GameUI (f.g) 关键字段
 
 | 字段 | 类型 | 运行时值 | 含义 |
 |------|------|---------|------|
@@ -143,7 +61,7 @@ Other:   dH:f, dI:c, dJ:b
 | `bP` | boolean | true(PC) | PC界面标志 |
 | `bQ` | boolean | true(PC) | PC界面标志 |
 
-### 2.4 Command (e) 关键字段
+### 1.4 Command (e) 关键字段
 
 | 字段 | 类型 | 含义 | 验证方式 |
 |------|------|------|---------|
@@ -155,7 +73,7 @@ Other:   dH:f, dI:c, dJ:b
 | `u` | int | systemActionType | ✅ 100=投降 |
 | `s` | float | gameSpeedChange | 文档 |
 
-### 2.5 CommandController (c)
+### 1.5 CommandController (c)
 
 | 字段 | 类型 | 含义 |
 |------|------|------|
@@ -163,9 +81,9 @@ Other:   dH:f, dI:c, dJ:b
 
 ---
 
-## 三、运行时验证的功能
+## 二、运行时验证的功能
 
-### 3.1 全局单位注册表
+### 2.1 全局单位注册表
 
 | 访问方式 | 返回类型 | 大小 | 首个元素 | 验证 |
 |----------|---------|------|---------|------|
@@ -174,7 +92,7 @@ Other:   dH:f, dI:c, dJ:b
 
 两者都 extends/implements `java.util.List`。
 
-### 3.2 原生命令注入链路（完整验证）
+### 2.2 原生命令注入链路（完整验证）
 
 ```
 用户框选单位 → GameUI.bZ (UnitList)
@@ -193,7 +111,7 @@ Other:   dH:f, dI:c, dJ:b
 - GameUI 的 `bZ` (UnitList) 是唯一有效的选中来源
 - Robot Ctrl+A 可编程触发全选
 
-### 3.3 游戏状态读取（getState 完整链路）
+### 2.3 游戏状态读取（getState 完整链路）
 
 ```
 getState():
@@ -208,7 +126,7 @@ getState():
   └── Players: 遍历 n.k(0..9) ✅
 ```
 
-### 3.4 已知可用的 UnitCommandType (av)
+### 2.4 已知可用的 UnitCommandType (av)
 
 | 序号 | 枚举值 | 含义 | 测试状态 |
 |------|--------|------|---------|
@@ -219,7 +137,7 @@ getState():
 
 ---
 
-## 四、Agent 通信协议
+## 三、Agent 通信协议
 
 ### 请求/响应格式
 
@@ -273,9 +191,9 @@ JSON 行协议 (每行一个消息, \n 分隔)
 
 ---
 
-## 五、反射访问的关键教训
+## 四、反射访问的关键教训
 
-### 5.1 `getDeclaredField` vs 类层级
+### 4.1 `getDeclaredField` vs 类层级
 
 `Class.getDeclaredField(name)` **只查找当前类声明的字段**，不检查父类。
 
@@ -286,7 +204,7 @@ for (Class<?> sc = unitClass; sc != null && sc != Object.class; sc = sc.getSuper
 }
 ```
 
-### 5.2 运行时类型 vs 声明类型
+### 4.2 运行时类型 vs 声明类型
 
 字段声明类型可能与运行时实例类型不同:
 - `am.bX` 声明类型为 `n`，运行时返回类型为 `d`
@@ -294,7 +212,7 @@ for (Class<?> sc = unitClass; sc != null && sc != Object.class; sc = sc.getSuper
 
 **解决方案**: 始终使用运行时对象的 `getClass()` 进行字段/方法搜索。
 
-### 5.3 扫描 vs 直接访问
+### 4.3 扫描 vs 直接访问
 
 遍历所有已加载类并访问其字段**可能导致游戏崩溃**（OpenGL 上下文错误）。已确认安全的操作:
 - ✅ 直接访问已知类名/字段名
@@ -302,13 +220,13 @@ for (Class<?> sc = unitClass; sc != null && sc != Object.class; sc = sc.getSuper
 - ❌ 扫描列表元素（如 `list.get(i)`）可能导致崩溃
 - ❌ 访问非 `com.corrodinggames` 包的类字段
 
-### 5.4 初始化时机
+### 4.4 初始化时机
 
 `premain` (JVM Agent) 在游戏启动时运行，此时大部分游戏类尚未加载。必须在**首次使用时懒加载**反射引用，不能依赖 `initReflection()` 一次完成的假设。
 
 ---
 
-## 六、内置单位类型补充
+## 五、内置单位类型补充
 
 ### 运行时观察到的类型名
 
