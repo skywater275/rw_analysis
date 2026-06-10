@@ -109,7 +109,10 @@ Other:   dH:f, dI:c, dJ:b
 关键发现:
 - 使用 `pendingCommands` 队列比直接调用 `executeCommand()` 安全（避免跨线程崩溃）
 - GameUI 的 `bZ` (UnitList) 是唯一有效的选中来源
+<<<<<<< HEAD
 
+=======
+>>>>>>> 320ccf9bcfe9ef4406bc23f0dd81fc7d87e056eb
 ### 2.3 游戏状态读取（getState 完整链路）
 
 ```
@@ -155,7 +158,7 @@ JSON 行协议 (每行一个消息, \n 分隔)
 | `inject` | 原生命令注入 | `cmd_type, x, y, speed` | `status: "ok", native: true` |
 | `command` | Robot 键鼠 | `action, key, x, y` | `status: "ok"` |
 
-### get_state 响应结构
+### get_state 响应结构(列子:来自战役第一关)
 
 ```json
 {
