@@ -154,7 +154,7 @@ JSON 行协议 (每行一个消息, \n 分隔)
 | `inject` | 原生命令注入 | `cmd_type, x, y, speed` | `status: "ok", native: true` |
 | `command` | Robot 键鼠 | `action, key, x, y` | `status: "ok"` |
 
-### get_state 响应结构
+### get_state 响应结构(列子:来自战役第一关)
 
 ```json
 {
