@@ -358,7 +358,7 @@ Step 2: am.bv() [20B] — 死亡序列入口
   bt()                            // 最终清理
 
 Step 3: am.bu() [98B] — 核心清理
-  l.bS.l(this)                    // 从工厂/生成器移除
+  l.bS.l(this)                    // 从GameUI注销 (运行时验证)
   n.a(this)                       // ★ 从队伍追踪器注销(s.b)
   am.bE.remove(this)              // ★ 从全局单位注册表移除
   if cu > 0: cu = 0               // 强制HP归零
@@ -396,10 +396,10 @@ Step 8: y.bC() [83B] — ResourceComponent 重算
 if l.bs != null && l.bs != this.bX && l.bs.k >= 0:
     create death effect (fw.d.a):
       d = this.r()           // 单位类型
-      g = this.eo            // 死亡X坐标
-      h = this.ep            // 死亡Y坐标
+      g = this.eo            // 死亡X坐标 (⚠ 在父类w上)
+      h = this.ep            // 死亡Y坐标 (⚠ 在父类w上)
       n = false              // 不循环
-      e = this.bX            // 所属队伍
+      e = this.bX            // 所属队伍 (运行时类型为d)
       f = an.b               // 特效类型
       j = l.bs               // 目标玩家
       u = this.c_()          // 额外标志

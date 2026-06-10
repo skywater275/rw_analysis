@@ -180,7 +180,7 @@ l.al         → static l              全局单例
 l.bs         → game.n                当前玩家
 l.bL         → game.b.b              MapEngine (地图引擎)
 l.bQ         → SettingsEngine        设置引擎
-l.bS         → f.g                  UnitFactory (单位工厂)
+l.bS         → f.g                  GameUI (运行时验证: 含bZ选中列表)
 l.bU         → k.l                  Recycler (单位回收队列)
 l.bX         → j.ad                 NetEngine (网络引擎)
 l.bY         → bg                    StatsManager (统计管理器)
@@ -190,7 +190,7 @@ l.cb         → ba                   ReplayEngine (回放引擎)
 l.cc         → f.c                  空间网格 (SpatialGrid)
 l.cd         → br                    ExtraManager
 l.ce         → n.f                  MissionEngine (AI系统)
-l.cf         → —                     指令数据包管理器
+l.cf         → c                    CommandController (运行时验证: b=pendingCommands)
 l.bx         → int                  游戏tick计数器
 l.by         → int                  当前帧号
 ```
@@ -252,11 +252,11 @@ l.by         → int                  当前帧号
 | `cz` | float | ★ 护盾再生计时器 |
 | `cm` | float | ★ 建造进度 (≥1.0=完成) |
 | `cj` | float | ★ 碰撞半径 |
-| `eo` | float | X坐标 |
-| `ep` | float | Y坐标 |
+| `eo` | float | X坐标 (⚠ 在父类w上) |
+| `ep` | float | Y坐标 (⚠ 在父类w上) |
 | `bV` | boolean | 已死亡标志 |
 | `bW` | float | 死亡时间戳 |
-| `bX` | n | ★ 所属玩家引用 |
+| `bX` | n (运行时d) | ★ 所属玩家引用 (声明n, 运行时为子类d) |
 | `bO` | boolean | 出生点A标志 |
 | `bP` | boolean | 出生点B标志 |
 | `bY` | boolean | 已注册到队伍追踪器 |
@@ -267,6 +267,8 @@ l.by         → int                  当前帧号
 | `cD` | float | HP动画时间系数 |
 | `cw` | float | 维修进度 |
 | `cL` | am[] | 炮塔目标数组 |
+
+> **⚠ 运行时修正**: `eo`/`ep` 实际声明在父类 **`w`** (GameObject) 上，不在 `am` 上。`am.getDeclaredField("eo")` 会抛异常，必须沿类层级向上搜索。
 
 ### 4.4 WeaponAction (game.units.au)
 

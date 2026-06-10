@@ -125,8 +125,8 @@ am (UnitInstance, 43KB, 124F/212M)      ← ★ 地图上的单位实例
 
 ```
 位置/物理:
-  eo (float)      — X坐标
-  ep (float)      — Y坐标
+  eo (float)      — X坐标 (⚠ 在父类w上, 非am声明)
+  ep (float)      — Y坐标 (⚠ 在父类w上, 非am声明)
   cj (float)      — 碰撞半径
   cg (float)      — 朝向角度 (度)
   cl (float)      — 质量/重量
@@ -142,7 +142,7 @@ HP/护盾:
   cm (float)      — 建造进度 (≥1.0 = 完成)
 
 归属:
-  bX (ref(n))     — 所属队伍/玩家
+  bX (ref(n/d))   — 所属队伍/玩家 (声明n, 运行时为子类d)
   bW (long)       — 出生时间戳
   cN (ref(am))    — 父单位 (运输者/附着目标)
 
@@ -417,7 +417,7 @@ Step 2: am.bv() [20B]
   bt()                              // 最终清理
 
 Step 3: am.bu() [98B]
-  l.bS.l(this)                      // 从工厂移除
+  l.bS.l(this)                      // 从GameUI注销 (运行时验证)
   n.a(this)                         // ★ 从追踪器注销 (s.b)
   am.bE.remove(this)                // ★ 从全局注册表移除
   if cu > 0: cu = 0                 // 强制HP归零
@@ -796,7 +796,7 @@ l.B() — 全局单例入口
 子系统引用:
   bL (b.b)       — 地图引擎
   bX (j.ad)      — 网络引擎 (104KB)
-  bS (f.g)       — 单位工厂/空间管理
+  bS (f.g)       — GameUI (运行时验证: 含bZ选中列表)
   bU (recycler)  — 单位回收队列
   bY (bg)        — 统计管理器 (StatsManager, 内部使用 bo=StatsData)
   cb (ba)        — 回放引擎

@@ -323,7 +323,7 @@ def remove_unit(self, uid):
     8步死亡链:
       1. ch() — 检查 cu <= 0, 设置 bV=true
       2. bv() — 调用 bu() + e() + a() + bt()
-      3. bu() — l.bS.l(this) 从工厂移除
+      3. bu() — l.bS.l(this) 从GameUI注销 (运行时验证)
       4.      — s.b(this) ★ 从收入追踪器注销
       5.      — am.bE.remove  ★ 从全局注册表移除
       6.      — l.cc.a(this)  ★ 从空间网格移除

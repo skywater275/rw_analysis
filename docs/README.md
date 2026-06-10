@@ -46,6 +46,7 @@
 | [18_NETWORK_SYSTEM](18_NETWORK_SYSTEM.md) | TCP/UDP, 包类型, 同步 |
 | [19_UI_RENDERING](19_UI_RENDERING_SYSTEM.md) | LibRocket/Slick2D/OpenGL |
 | [20_PLUGIN_MOD](20_PLUGIN_MOD_SYSTEM.md) | Mod/插件生命周期 |
+| [21_RUNTIME_VERIFICATION](21_RUNTIME_VERIFICATION.md) | **运行时验证补充** — Agent反射测试修正 |
 
 ---
 

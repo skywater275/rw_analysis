@@ -14,12 +14,12 @@
 | `bX` | j.ad | 网络引擎 (NetEngine) | GameEngine.kt:70 |
 | `bQ` | — | 设置引擎 (GameSettings) | GameEngine.kt:72 |
 | `bY` | bg | 对战统计管理器 (StatsManager, 内部用 bo=StatsData) | GameEngine.kt:74 + l.java:170 |
-| `bS` | — | 单位工厂/生成管理器 | ClientCommands.kt:506 |
+| `bS` | f.g | ★ GameUI (运行时验证: 含bZ选中列表) | 21_RUNTIME_VERIFICATION + ClientCommands.kt:506 |
 | `bU` | — | 单位回收/销毁队列 | GameUnitData.kt:72 |
 | `bZ` | — | Mod数据持有者 | GameUnitData.kt:59 |
 | `bx` | int | 游戏tick计数器 | GameHessData.kt:34 |
 | `ca` | — | 回放管理器 (.rwsave) | LinkGameFunction.kt:42 |
-| `cf` | — | 指令数据包管理器 | FFA_X.kt:140 |
+| `cf` | c | ★ CommandController (含b=pendingCommands队列) | 21_RUNTIME_VERIFICATION + FFA_X.kt:140 |
 
 ---
 
@@ -83,11 +83,9 @@
 | `cz` | float | 护盾再生计时器 | am.java:1280 |
 | `cm` | float | 建造进度 (≥1.0=完成) | am.java:148 |
 | `cj` | float | 碰撞半径 | am.java:1379 |
-| `eo` | float | X坐标 | am.java:1332 |
-| `ep` | float | Y坐标 | am.java:1332 |
 | `bV` | boolean | 已死亡标志 | am.java:1347 |
 | `bW` | float | 死亡时间戳 | am.java:1348 |
-| `bX` | n | 所属玩家/队伍引用 | GameHessData.kt:115 |
+| `bX` | n (运行时d) | ★ 所属玩家引用 (声明n, 运行时为子类d) | 21_RUNTIME_VERIFICATION + GameHessData.kt:115 |
 | `bO` | boolean | 出生点A标志 | GameHessData.kt:116 |
 | `bP` | boolean | 出生点B标志 | GameHessData.kt:121 |
 | `bY` | boolean | 已注册到队伍追踪器 | n.java:1543 |
@@ -106,6 +104,9 @@
 | `bu()` | void | 执行死亡清理 | am.java:1340 |
 | `bv()` | void | 死亡序列入口 | am.java:1371 |
 | `bF()` | static | 获取所有单位列表 | GameHessData.kt:114 |
+
+> **⚠ 运行时修正 (21_RUNTIME_VERIFICATION)**: `eo`(X坐标) / `ep`(Y坐标) 实际声明在父类 **`w`** (GameObject) 上，不在 `am` 上。
+> `getDeclaredField("eo")` 在 `am` 上会抛 `NoSuchFieldException`，必须沿类层级向上搜索。
 
 ---
 

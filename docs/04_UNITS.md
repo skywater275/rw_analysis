@@ -30,8 +30,8 @@
 | `ao()` → au | 获取武器类型 |
 | `S()` | 单位更新 |
 | `b(n)` | 设置队伍 |
-| `d()` → String | 内部名称 |
-| `k()` → String | 显示名称 |
+| `d()` → String | (静态文档误判, 见下方⚠修正) |
+| `k()` → String | (静态文档误判, 见下方⚠修正) |
 
 ### 自定义单位类型 — `custom/j` (90KB)
 ```
@@ -346,17 +346,20 @@ a(i)    — 从框架注册
     G: Mod启用标志?
 
   C (Rect)              — 碰撞矩形
-  D (String)            — 内部名称 (如 "units.extractor")
-  E (String)            — 显示名称 (如 "Extractor")
+  M (String)            — ★ 单位类型名 (如 "c_turret_t1", "mechGun") — 运行时验证
+  D (String)            — 内部资源路径 (如 "units/turrets/turret_t1.ini")
+  E (String)            — .ini文件路径 (如 "assets/units/turrets/turret_t1.ini")
   F (String)            — 描述文本
   H (int)               — 内部ID
   I (String)            — 分类标签
   J (i.b)               — Mod信息引用
-  K/L/M (String)        — 路径/文件名
+  K/L (String)          — 路径/文件名
 
   N (utility.m)         — 子单位列表
   ... (~340 more fields)
 ```
+
+> **⚠ 运行时修正 (21_RUNTIME_VERIFICATION)**: UnitType名称获取方式 — 静态文档中 `y.d()`→内部名称、`y.k()`→显示名称 有误。运行时验证发现单位类型名存储在**字段 `M`** (String)中 (如 `c_turret_t1`, `mechGun`, `commandCenter`)。自定义单位运行时类型为 `custom.l`，内置单位为 `ar$N`，读 `M` 字段对两者都有效。
 
 ### 关键方法
 

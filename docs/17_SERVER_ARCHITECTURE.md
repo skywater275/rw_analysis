@@ -292,15 +292,15 @@ GameMaps:
 | `cD` | `cB` | 当前能量 | float |
 | `cG` | `cE` | 弹药计数 | int |
 | `ej` | — | 单位ID | long |
-| `eq` | `eo` | X坐标 | float |
-| `er` | `ep` | Y坐标 | float |
+| `eq` | `eo` | X坐标 (⚠ 在父类w上) | float |
+| `er` | `ep` | Y坐标 (⚠ 在父类w上) | float |
 | `es` | `eh` | 高度 | float |
 | `co` | `cm` | 建造进度 | float |
 | `ci` | `cg` | 朝向角度 | float |
 | `ce` | — | X速度 | float |
 | `cf` | — | Y速度 | float |
 | `cQ` | `cN` | 父单位引用 | ref |
-| `bZ` | `bX` | 所属玩家 | ref |
+| `bZ` | `bX` | 所属玩家 (声明n, 运行时d) | ref |
 
 ### 字段映射 (p ← → n, Player)
 
@@ -323,7 +323,7 @@ RW-HPS Server
   │   ├─ l.B()                    — GlobalState 全局单例
   │   ├─ l.bX → j.ad              — NetEngine 网络引擎
   │   ├─ l.bL → game.b.b          — MapEngine 地图引擎
-  │   ├─ l.bS → UnitFactory        — 单位工厂
+  │   ├─ l.bS → f.g              — GameUI (运行时验证)
   │   ├─ l.bY → bg                 — 统计管理器 (StatsManager)
   │   └─ l.ca → GameSaver          — 存档管理
   │

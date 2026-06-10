@@ -37,7 +37,7 @@ private void i(float delta, au weapon, ad action) {
     this.ab += delta * rate;                  // 累积收入
     
     if (this.ab > 1.0f) {
-        n = this.bX;                          // 获取所属玩家 (am.bX→n)
+        n = this.bX;                          // 获取所属玩家 (am.bX→n, 运行时类型为d)
         n.o += (double)this.ab;               // ★ 转入玩家资金
         this.ab -= (int)this.ab;              // 保留小数部分 (如 2.3 → 0.3)
     }

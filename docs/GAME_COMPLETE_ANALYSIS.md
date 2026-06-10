@@ -86,7 +86,7 @@ l.B()  →  GlobalState 单例 (l.al)
   ├── l.bX    j.ad            NetEngine (网络引擎)
   ├── l.bQ    SettingsEngine  设置引擎
   ├── l.bY    bg              StatsManager (统计管理器)
-  ├── l.bS    f.g             UnitFactory (单位工厂)
+  ├── l.bS    f.g             GameUI (运行时验证: 含bZ选中列表)
   ├── l.bU    k.l             Recycler (单位回收队列)
   ├── l.lZ    i.a             ModDataHolder
   ├── l.ca    y               GameSaver (存档管理)
@@ -390,8 +390,8 @@ SpatialGrid (f.c) 空间查询:
   cx/cz     — 护盾 (当前/计时器)
   cm        — 建造进度
   cj        — 碰撞半径
-  eo/ep     — 坐标 (X/Y)
-  bX        — 所属玩家引用 (n)
+  eo/ep     — 坐标 X/Y (⚠ 在父类w上, 非am声明)
+  bX        — 所属玩家引用 (n, 运行时为子类d)
   bV/bW     — 死亡标志/时间戳
   bL        — 在地图上标志
   bY        — 已注册到队伍追踪器
