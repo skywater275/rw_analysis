@@ -47,6 +47,13 @@
 | [19_UI_RENDERING](19_UI_RENDERING_SYSTEM.md) | LibRocket/Slick2D/OpenGL |
 | [20_PLUGIN_MOD](20_PLUGIN_MOD_SYSTEM.md) | Mod/插件生命周期 |
 | [21_RUNTIME_VERIFICATION](21_RUNTIME_VERIFICATION.md) | **运行时验证补充** — Agent反射测试修正 |
+| [22_BUILTIN_UNITS](22_BUILTIN_UNITS.md) | **完整内置单位表** — 130+单位, 含运行时验证 |
+| [23_RUNTIME_STATE_READING](23_RUNTIME_STATE_READING.md) | **运行时状态读取验证** — getState 字段/UnitType/MapEngine |
+| [24_COMMAND_INJECTION](24_COMMAND_INJECTION.md) | **原生命令注入验证** — Command/UnitCommand/type_filter |
+| [25_COORDINATE_SYSTEM](25_COORDINATE_SYSTEM.md) | **地图坐标系统** — 图层/资源地/tile↔world转换 |
+| [26_FACTORY_PRODUCTION](26_FACTORY_PRODUCTION.md) | **工厂生产注入** — FactoryQueueManager 队列直连 + 负载均衡 |
+| [27_ATTACK_COMMAND](27_ATTACK_COMMAND.md) | **定点攻击注入** — Command.a(am)=setAttackTarget + 动态追踪 |
+| [28_UNIT_TYPE_DISCOVERY](28_UNIT_TYPE_DISCOVERY.md) | **单位类型名发现** — 三源收集 + 72 类型完整清单 + 模糊匹配 |
 
 ---
 

@@ -56,11 +56,11 @@ cz() → e.f — 获取资源类型
 ```
 HP:     cu(当前) / cv(最大)
 护盾:   cx(当前) / max_shield
-位置:   eo, ep
+位置:   eo, ep (⚠ 在父类w上, 非am声明)
 半径:   cj
 进度:   cm (≥1.0=完成)
 收入:   cy()
-队伍:   bX → n (玩家对象)
+队伍:   bX → n (玩家对象, 运行时类型为d)
 死亡:   bV
 出生点: bO(A) / bP(B)
 ```
@@ -89,7 +89,7 @@ HP:     cu(当前) / cv(最大)
 行为模式 (units.a):  aggressive / guardArea / holdFire / returnFire ...
   决定了单位"是否"攻击
 
-当前动作 (am.bF?):    idle / moving / attacking / building / repairing ...
+当前动作 (单位状态字段):    idle / moving / attacking / building / repairing ...
   决定了单位"正在做什么"
 
 两者独立运作: 一个 returnFire 模式的单位可以在 moving 状态

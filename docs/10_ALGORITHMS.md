@@ -17,7 +17,7 @@ function s.register(am unit):
     else:
         s.c++                      // 已完成计数 +1
     
-    if !unit.r().k():              // 不是建筑类型?
+    if !unit.r().k()  // k()=是否为建筑(boolean):              // 不是建筑类型?
         s.b++                      // 非建筑单位数 +1
     
     if !s.m && unit.u() && unit.r().y():
@@ -53,7 +53,7 @@ function s.unregister(am unit):
     else:
         s.c--                      // 已完成计数 -1
     
-    if !unit.r().k():
+    if !unit.r().k()  // k()=是否为建筑(boolean):
         s.b--                      // 非建筑单位数 -1
     
     resComp = unit.dq()

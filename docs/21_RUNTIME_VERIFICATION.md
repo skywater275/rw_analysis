@@ -109,11 +109,31 @@ Other:   dH:f, dI:c, dJ:b
 关键发现:
 - 使用 `pendingCommands` 队列比直接调用 `executeCommand()` 安全（避免跨线程崩溃）
 - GameUI 的 `bZ` (UnitList) 是唯一有效的选中来源
-<<<<<<< HEAD
+- Robot Ctrl+A 可编程触发全选
 
-=======
->>>>>>> 320ccf9bcfe9ef4406bc23f0dd81fc7d87e056eb
-### 2.3 游戏状态读取（getState 完整链路）
+### 2.3 AI 自主选择单位 (2026-06-11)
+
+通过 `type_filter` 参数，Agent 可以从 `am.bE` 全局注册表直接查找并选择单位，无需 UI 交互:
+
+```json
+{"type":"inject","cmd_type":"move","type_filter":"c_tank","x":"800","y":"500"}
+```
+
+内置单位需通过类层级搜索 `name` 字段（非 public, 需 `getDeclaredField`）。
+
+### 2.4 建造指令注入 (2026-06-11)
+
+从回放日志确认建造指令格式: `Waypoint: build` + `Build Type: c_turret_t1`。
+
+实现: `Command.a(float,float,UnitType,int)` = setBuildTarget。
+- UnitType 从 `custom.l.f` (HashMap) 按 values 的 `M` 字段查找（HashMap key 不是 M 值）
+- 自动查找建造者 (type_filter=builder)
+
+```json
+{"type":"inject","cmd_type":"build","build_type":"c_turret_t1","x":"800","y":"500"}
+```
+
+### 2.5 游戏状态读取（getState 完整链路）
 
 ```
 getState():
@@ -158,7 +178,7 @@ JSON 行协议 (每行一个消息, \n 分隔)
 | `inject` | 原生命令注入 | `cmd_type, x, y, speed` | `status: "ok", native: true` |
 | `command` | Robot 键鼠 | `action, key, x, y` | `status: "ok"` |
 
-### get_state 响应结构(列子:来自战役第一关)
+### get_state 响应结构
 
 ```json
 {
