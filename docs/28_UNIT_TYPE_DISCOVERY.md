@@ -124,11 +124,11 @@ com.corrodinggames.rts.game.units.am → static List bE
 | Laser Tank | ar | 激光坦克 |
 | Ladybug | ar | 瓢虫 |
 | Mammoth Tank | ar | 猛犸坦克 |
-| Mega Tank | ar | 巨型坦克 |
+| Mega Tank | ar | 概念坦克 |
 | Missile Ship | ar | 导弹舰 |
 | Nuke Launcher | ar | 核弹发射器 |
 | Repair Bay | ar | 维修湾 |
-| Shielded Hovertank | ar | 护盾悬浮坦克 |
+| Shielded Hovertank | ar | 概念悬浮坦克 |
 | Supply Depot | ar | 补给站 |
 | Tank | ar | 坦克 |
 | Unnamed Tank | ar | 未命名坦克 |
@@ -142,9 +142,9 @@ com.corrodinggames.rts.game.units.am → static List bE
 | c_tank | custom | 自定义坦克 |
 | antiNukeLauncherC | custom | 自定义反核发射器 |
 | nukeLauncherC | custom | 自定义核弹发射器 |
-| lightGunship | custom | 轻型武装直升机 |
-| mechGun | custom | 机甲枪兵 |
-| scout | custom | 侦察兵 |
+| lightGunship | custom | 轻型武装直升机(蚊子) |
+| mechGun | custom | 基础机甲 |
+| scout | custom | 侦察者 |
 
 ### 系统/特殊单位
 
