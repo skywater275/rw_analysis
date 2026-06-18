@@ -74,7 +74,7 @@ public boolean isUnitTargetCommand() {
         || this.commandType == UnitCommandType.reclaim      // 回收 (6)
         || this.commandType == UnitCommandType.loadInto     // 装载 (4)
         || this.commandType == UnitCommandType.loadUp       // 装载 (8)
-        || this.commandType == UnitCommandType.guard        // 守卫 (10)
+        || this.commandType == UnitCommandType.guard        // 巡逻 (10)
         || this.commandType == UnitCommandType.touchTarget  // 触碰 (12)
         || this.commandType == UnitCommandType.follow;      // 跟随 (13)
 }
