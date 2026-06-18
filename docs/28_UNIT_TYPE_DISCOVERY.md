@@ -103,7 +103,7 @@ com.corrodinggames.rts.game.units.am → static List bE
 | Amphibious Jet | ar | 两栖喷气机 |
 | Anti-Nuke Defence | ar | 反核防御 |
 | Artillery | ar | 火炮 |
-| Attack Submarine | ar | 攻击潜艇 |
+| Attack Submarine | ar | 重型潜艇 |
 | Battle Ship | ar | 战列舰 |
 | Builder | ar | 建造者 |
 | Builder Ship | ar | 建造船 |
