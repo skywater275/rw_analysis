@@ -107,7 +107,7 @@ com.corrodinggames.rts.game.units.am → static List bE
 | Battle Ship | ar | 战列舰 |
 | Builder | ar | 建造者 |
 | Builder Ship | ar | 建造船 |
-| Command | ar | 指挥官 |
+| Command | ar | 指挥官(存疑，毕竟不知道这个单位) |
 | Crystal | ar | 水晶资源 |
 | Dropship | ar | 运输机 |
 | Experimental Tank | ar | 实验坦克 |
