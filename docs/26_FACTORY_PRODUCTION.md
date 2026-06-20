@@ -205,7 +205,7 @@ Object action = fqmFindActionMethod.invoke(fqm, unitType);
 fqmAddToQueueMethod4.invoke(fqm, action, false, null, null);
 ```
 
-### Step 3: 多工厂负载均衡
+### Step 3: 多工厂负载均衡（ai重构项目的设计游戏本身没有这个功能）
 
 ```java
 // 遍历所有玩家工厂, 读取队列长度 (c.size())
