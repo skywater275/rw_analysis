@@ -1,0 +1,603 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+method,android.net.http,b,a,reset,real-class-inferred: android.net.http.b,real-class-v1200
+field,android.net.http,b,b,int,real-class-inferred: android.net.http.b,real-class-v1200
+field,com.corrodinggames.librocket,a$2,a,syncLock,Phase3-inferred: new k(false) synchronization object (gameFramework.utility.k),verified-exists
+field,com.corrodinggames.librocket,a$2,b,scriptEngine,Phase3-inferred: captured ScriptEngine (librocket.scripts),verified-exists
+field,com.corrodinggames.librocket,a$2,c,joinQuestion,"""Phase3-inferred: captured j.ae data (b=question msg""", e=title
+field,com.corrodinggames.librocket,a$2,d,outerContext,Phase3-inferred: synthetic outer ref to a (LibRocketContext),verified-exists
+method,com.corrodinggames.librocket,a$2,run,run,already meaningful (Runnable) - builds 'Password Required'/'Server Question' modal with Join/Close,verified-exists
+method,com.corrodinggames.librocket,c,a,isEnabled,real-class-inferred: com.corrodinggames.librocket.c,real-class-v1200
+field,com.corrodinggames.librocket,d,a,elementDocument,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,d,b,string1,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,d,c,string2,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,d,d,string3,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,d,e,object1,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,d,f,object2,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,e,a,string,real-class-inferred: com.corrodinggames.librocket.e,real-class-v1200
+field,com.corrodinggames.librocket,e,b,runnable,real-class-inferred: com.corrodinggames.librocket.e,real-class-v1200
+field,com.corrodinggames.rts.appFramework,AndroidUIHelper,a,activity,Activity reference (Activity),verified-exists
+field,com.corrodinggames.rts.appFramework,AndroidUIHelper,b,dialogHelper,Dialog helper reference,verified-exists
+field,com.corrodinggames.rts.appFramework,AndroidUIHelper,c,toastQueue,Toast message queue,verified-exists
+field,com.corrodinggames.rts.appFramework,AndroidUIHelper,d,lastToastTime,Last toast display time (long),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,a,activePointers,Active pointer IDs (int[]),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,b,pointerX,Pointer X coordinates (float[]),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,c,pointerY,Pointer Y coordinates (float[]),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,d,pointerDownX,Pointer initial down X (float[]),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,e,pointerDownY,Pointer initial down Y (float[]),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,f,pointerDownTime,Pointer down timestamp (long[]),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,g,pointerState,Pointer state flags (int[]),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,h,maxPointers,Max simultaneous pointers (int),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,i,activePointerCount,Currently active pointer count (int),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,j,lastTouchX,Last single-touch X (float),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,k,lastTouchY,Last single-touch Y (float),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,l,lastTouchTime,Last touch timestamp (long),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,m,gestureDetector,Gesture/tap detector reference (Object),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,n,doubleTapActive,Double-tap detected flag (boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,o,pinchDistance,Pinch/zoom current distance (float),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,p,pinchStartDistance,Pinch/zoom start distance (float),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,q,pinchActive,Pinch/zoom gesture active (boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,r,scrollVelocityX,Scroll velocity X (float),verified-exists
+field,com.corrodinggames.rts.appFramework,MultiTouchHandler,s,scrollVelocityY,Scroll velocity Y (float),unverifiable-rebuilt
+field,com.corrodinggames.rts.appFramework,TouchState,a,activePointer,Current active pointer index (private int),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,b,touchAreaX,Touch area X coordinates per pointer (private float[10]),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,c,touchAreaY,Touch area Y coordinates per pointer (private float[10]),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,d,lastPointerX,Last known X per pointer (private float[10]),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,e,lastPointerId,Last pointer IDs (private int[10]),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,f,downStartX,Touch-down start X (private float),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,g,downStartY,Touch-down start Y (private float),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,h,currentX,Current touch X (private float),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,i,currentY,Current touch Y (private float),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,j,dragDistance,Drag distance from start (private float),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,k,isDown,Finger currently down flag (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,l,wasDown,Finger was down last frame (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,m,justPressed,Just pressed this frame flag (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,n,clickCount,Consecutive tap click count (private int),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,o,isDragging,Currently dragging flag (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,p,isLongPress,Long press detected flag (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,q,isDoubleClick,Double click detected flag (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,TouchState,r,gestureType,Detected gesture type enum (private int),verified-exists
+field,com.corrodinggames.rts.appFramework,c$2,a,activity,Phase3-inferred: captured Activity,verified-exists
+field,com.corrodinggames.rts.appFramework,c$2,b,globalState,"""Phase3-inferred: captured l (GlobalState); sets storageType=2 + hasSelectedAStorageType""",verified-exists
+field,com.corrodinggames.rts.appFramework,c$2,c,postSetupRunnable,Phase3-inferred: captured Runnable run after storage setup,verified-exists
+method,com.corrodinggames.rts.appFramework,c$2,onClick,onClick,already meaningful (DialogInterface.OnClickListener),verified-exists
+method,com.corrodinggames.rts.appFramework,f,a,setValue,real-class-inferred: com.corrodinggames.rts.appFramework.f,real-class-v1200
+method,com.corrodinggames.rts.appFramework,f,b,getl,real-class-inferred: com.corrodinggames.rts.appFramework.f,real-class-v1200
+method,com.corrodinggames.rts.appFramework,f,c,isEnabled,real-class-inferred: com.corrodinggames.rts.appFramework.f,real-class-v1200
+method,com.corrodinggames.rts.appFramework,f,d,geta,real-class-inferred: com.corrodinggames.rts.appFramework.f,real-class-v1200
+method,com.corrodinggames.rts.appFramework,f,e,isEnabled,real-class-inferred: com.corrodinggames.rts.appFramework.f,real-class-v1200
+method,com.corrodinggames.rts.appFramework,f,f,isEnabled,real-class-inferred: com.corrodinggames.rts.appFramework.f,real-class-v1200
+method,com.corrodinggames.rts.appFramework,f,g,getObject,real-class-inferred: com.corrodinggames.rts.appFramework.f,real-class-v1200
+method,com.corrodinggames.rts.appFramework,g,a,reset,real-class-inferred: com.corrodinggames.rts.appFramework.g,real-class-v1200
+field,com.corrodinggames.rts.appFramework,g,c,f,real-class-inferred: com.corrodinggames.rts.appFramework.g,real-class-v1200
+field,com.corrodinggames.rts.appFramework,g,d,handler,real-class-inferred: com.corrodinggames.rts.appFramework.g,real-class-v1200
+field,com.corrodinggames.rts.appFramework,g,e,progressDialog,real-class-inferred: com.corrodinggames.rts.appFramework.g,real-class-v1200
+field,com.corrodinggames.rts.appFramework,g,f,boolean,real-class-inferred: com.corrodinggames.rts.appFramework.g,real-class-v1200
+field,com.corrodinggames.rts.appFramework,g$4,a,mapNameField,Phase3-inferred: captured EditText (map name input),verified-exists
+field,com.corrodinggames.rts.appFramework,g$4,b,globalState,"""Phase3-inferred: captured l (GlobalState); uses bL=MapEngine.saveMap(dl""",verified-exists
+field,com.corrodinggames.rts.appFramework,g$4,c,outerActivity,Phase3-inferred: synthetic outer ref to appFramework.g,verified-exists
+method,com.corrodinggames.rts.appFramework,g$4,onClick,onClick,"""already meaningful - validates map name chars"" | shows 'Bad Map Name' dialog",verified-exists
+field,com.corrodinggames.rts.appFramework,g$6,a,saveNameField,Phase3-inferred: captured EditText (save name input),verified-exists
+field,com.corrodinggames.rts.appFramework,g$6,b,outerActivity,Phase3-inferred: synthetic outer ref to appFramework.g,verified-exists
+method,com.corrodinggames.rts.appFramework,g$6,onClick,onClick,"""already meaningful - validates save name chars"" | shows 'Bad Save Name' dialog",verified-exists
+field,com.corrodinggames.rts.appFramework,h,a,string,real-class-inferred: com.corrodinggames.rts.appFramework.h,real-class-v1200
+field,com.corrodinggames.rts.appFramework,h,b,g,real-class-inferred: com.corrodinggames.rts.appFramework.h,real-class-v1200
+method,com.corrodinggames.rts.appFramework,i,a,isEnabled,real-class-inferred: com.corrodinggames.rts.appFramework.i,real-class-v1200
+method,com.corrodinggames.rts.appFramework,i,b,reset,real-class-inferred: com.corrodinggames.rts.appFramework.i,real-class-v1200
+field,com.corrodinggames.rts.appFramework,i,c,boolean,real-class-inferred: com.corrodinggames.rts.appFramework.i,real-class-v1200
+method,com.corrodinggames.rts.appFramework,i,d,getString,real-class-inferred: com.corrodinggames.rts.appFramework.i,real-class-v1200
+method,com.corrodinggames.rts.appFramework,i,e,getString,real-class-inferred: com.corrodinggames.rts.appFramework.i,real-class-v1200
+method,com.corrodinggames.rts.appFramework,i,f,isEnabled,real-class-inferred: com.corrodinggames.rts.appFramework.i,real-class-v1200
+method,com.corrodinggames.rts.appFramework,i,g,isEnabled,real-class-inferred: com.corrodinggames.rts.appFramework.i,real-class-v1200
+method,com.corrodinggames.rts.appFramework,j,b,reset,real-class-inferred: com.corrodinggames.rts.appFramework.j,real-class-v1200
+field,com.corrodinggames.rts.appFramework,k,a,pattern,real-class-inferred: com.corrodinggames.rts.appFramework.k,real-class-v1200
+method,com.corrodinggames.rts.appFramework,l,a,getint,real-class-inferred: com.corrodinggames.rts.appFramework.l,real-class-v1200
+field,com.corrodinggames.rts.appFramework,l,h,method6,real-class-inferred: com.corrodinggames.rts.appFramework.l,real-class-v1200
+field,com.corrodinggames.rts.appFramework,l,i,method7,real-class-inferred: com.corrodinggames.rts.appFramework.l,real-class-v1200
+field,com.corrodinggames.rts.appFramework,l,j,method8,real-class-inferred: com.corrodinggames.rts.appFramework.l,real-class-v1200
+field,com.corrodinggames.rts.appFramework,l,k,method9,real-class-inferred: com.corrodinggames.rts.appFramework.l,real-class-v1200
+field,com.corrodinggames.rts.appFramework,l,l,int1,real-class-inferred: com.corrodinggames.rts.appFramework.l,real-class-v1200
+field,com.corrodinggames.rts.appFramework,l,m,int2,real-class-inferred: com.corrodinggames.rts.appFramework.l,real-class-v1200
+field,com.corrodinggames.rts.appFramework,l,n,float1,real-class-inferred: com.corrodinggames.rts.appFramework.l,real-class-v1200
+field,com.corrodinggames.rts.appFramework,m,a,int1,real-class-inferred: com.corrodinggames.rts.appFramework.m,real-class-v1200
+field,com.corrodinggames.rts.appFramework,m,b,float1,real-class-inferred: com.corrodinggames.rts.appFramework.m,real-class-v1200
+field,com.corrodinggames.rts.appFramework,m,c,float2,real-class-inferred: com.corrodinggames.rts.appFramework.m,real-class-v1200
+method,com.corrodinggames.rts.appFramework,n,a,reset,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,c,n,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+method,com.corrodinggames.rts.appFramework,n,d,reset,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,e,handler1,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,f,boolean2,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,g,boolean3,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,h,textView,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,i,ae,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,j,alertDialog,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,k,handler2,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+method,com.corrodinggames.rts.appFramework,n,l,isEnabled,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+method,com.corrodinggames.rts.appFramework,n,m,reset,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+method,com.corrodinggames.rts.appFramework,n,n,reset,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+method,com.corrodinggames.rts.appFramework,n,o,reset,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+method,com.corrodinggames.rts.appFramework,n,p,reset,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+method,com.corrodinggames.rts.appFramework,n,q,reset,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+method,com.corrodinggames.rts.appFramework,n,r,reset,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,o,a,string,real-class-inferred: com.corrodinggames.rts.appFramework.o,real-class-v1200
+field,com.corrodinggames.rts.appFramework,o,b,int1,real-class-inferred: com.corrodinggames.rts.appFramework.o,real-class-v1200
+field,com.corrodinggames.rts.appFramework,o,c,int2,real-class-inferred: com.corrodinggames.rts.appFramework.o,real-class-v1200
+field,com.corrodinggames.rts.appFramework,o,d,testConfigField1,"P3.3-deep-curated: class-context, was=n1",p3-deep-curated
+field,com.corrodinggames.rts.appFramework,o,e,testConfigField2,"P3.3-deep-curated: class-context, was=n2",p3-deep-curated
+field,com.corrodinggames.rts.appFramework,o,f,int3,real-class-inferred: com.corrodinggames.rts.appFramework.o,real-class-v1200
+field,com.corrodinggames.rts.appFramework,p,c,p,real-class-inferred: com.corrodinggames.rts.appFramework.p,real-class-v1200
+field,com.corrodinggames.rts.appFramework,p,d,handler,real-class-inferred: com.corrodinggames.rts.appFramework.p,real-class-v1200
+field,com.corrodinggames.rts.appFramework,p,e,runnable,real-class-inferred: com.corrodinggames.rts.appFramework.p,real-class-v1200
+method,com.corrodinggames.rts.appFramework,p$1,a(g,g),compareByRank,verified-exists
+method,com.corrodinggames.rts.appFramework,p$1,compare(Object,Object),compare | already meaningful - synthetic bridge,verified-exists
+method,com.corrodinggames.rts.appFramework,p$1,a(g),rankServer,"""Phase3-inferred: rank 0..99: pinged 0""", chat 1
+field,com.corrodinggames.rts.appFramework,q,c,string,real-class-inferred: com.corrodinggames.rts.appFramework.q,real-class-v1200
+field,com.corrodinggames.rts.appFramework,s,c,boolean1,real-class-inferred: com.corrodinggames.rts.appFramework.s,real-class-v1200
+field,com.corrodinggames.rts.appFramework,s,d,boolean2,real-class-inferred: com.corrodinggames.rts.appFramework.s,real-class-v1200
+field,com.corrodinggames.rts.appFramework,s,e,int,real-class-inferred: com.corrodinggames.rts.appFramework.s,real-class-v1200
+field,com.corrodinggames.rts.appFramework,s,f,d,real-class-inferred: com.corrodinggames.rts.appFramework.s,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.i,VersionChecker,a,currentVersion,Current version string (static String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,VersionChecker,b,latestVersion,Latest version string (static String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,VersionChecker,c,checkTask,Background check task (b),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,a,modId,Mod numeric ID (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,b,modVersion,Mod format version (static int=1),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,c,modName,Mod display name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,d,modAuthor,Mod author name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,e,modDescription,Mod description text (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,f,isEnabled,Mod enabled flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,g,isLoaded,Mod loaded into memory (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,h,hasErrors,Mod has loading errors (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,i,isBuiltinMod,Is built-in/default mod (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,j,isActiveMod,Is currently active mod (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,k,modFileSize,Mod file size bytes (long),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,m,requiresRestart,Requires game restart (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,n,modDirectory,Mod directory path (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,o,modUrl,Mod download URL (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,p,modImagePath,Mod preview image path (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,q,modVersionString,Mod version string (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,r,isDownloaded,Mod downloaded flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,s,workshopId,Steam Workshop ID (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,t,modTags,Mod tag string (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,u,modCategory,Mod category string (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,v,modDependencies,Mod dependencies string (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,w,priority,Load priority (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,x,loadOrder,Load order index (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,y,isCompatible,Is compatible check (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,b,z,requiresUpdate,Requires update flag (boolean),verified-exists
+method,com.corrodinggames.rts.a.a,"a(int, String)",startDebugServer,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16): -debug 分支,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16),main-deobf-anchored
+method,com.corrodinggames.rts.a.a,a(String),addDebugScript,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16): -debugscript 分支,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16),main-deobf-anchored
+method,com.corrodinggames.rts.a.a,b(),runDebugScripts,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16),main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16),main-deobf-anchored
+field,com.corrodinggames.rts.gameFramework.i,a,a,errorAccumulator,static; SettingsEngine.java 中 i.a.a 累积外部存储错误文本('Failed to read: ... - Folder might have moved...'),verified
+field,com.corrodinggames.rts.gameFramework.i,a,b,lastErrorMessage,static; SettingsEngine.java 中 i.a.b=最新一条错误文本(03 的 currentVersion/latestVersion 与证据冲突),verified
+field,com.corrodinggames.rts.gameFramework.i,a,c,unusedAuxObject,i.b 类型; 本类及全库未发现字段访问(03 命名 checkTask 无依据),verified-exists
+field,com.corrodinggames.rts.gameFramework.i,a,d,lock,addModEntry/removeModEntry 中 synchronized(this.d),verified
+field,com.corrodinggames.rts.gameFramework.i,a,e,modList,全部 mod 条目(i.b)列表; 各方法遍历对象(任务参考确认),verified
+field,com.corrodinggames.rts.gameFramework.i,a,f,extraMaps,额外地图条目(i.c)列表; g(String) 遍历匹配 'mod/' 前缀(任务参考确认),verified
+method,com.corrodinggames.rts.gameFramework.i,a,"a(String,int)",parseVersionPart,'Unexpected version format (Missing/Bad ...)' 点分版本号某段解析,verified
+method,com.corrodinggames.rts.gameFramework.i,a,a(String),checkGameVersion,"调 a(version, l.B().u()) 校验当前游戏版本是否满足要求",verified
+method,com.corrodinggames.rts.gameFramework.i,a,b(String),sanitizeVersionString,剥离 v/a/b/c/d/e/f/g/h1-h4 后缀的版本字符串清洗,verified
+method,com.corrodinggames.rts.gameFramework.i,a,"a(String,String)",checkMinVersion,'Requires version: X or higher. (You have: Y)' 'Requires newer build:' 'Min version cannot be less than v1.10' 版本比较,verified
+method,com.corrodinggames.rts.gameFramework.i,a,a(),init,k() discoverMods + f() loadSelection(任务参考确认),verified
+method,com.corrodinggames.rts.gameFramework.i,a,a(boolean),countEnabledMods,结构计数: 跳过 f(禁用)/D(错误)/bl 时 R!=null; 无字符串证据,verified-exists
+method,com.corrodinggames.rts.gameFramework.i,a,b(),countActiveMods,结构计数: !f && R!=null (R=运行时加载状态); 无字符串证据,verified-exists
+method,com.corrodinggames.rts.gameFramework.i,a,c(),countNonBuiltinMods,"结构计数: !z (z=isBuiltinMod, 'Storage: ' 路径证据); 无字符串证据",verified-exists
+method,com.corrodinggames.rts.gameFramework.i,a,d(),storeCurrentSelection,b2.g=b2.f; b2.h=false 保存应用前选择快照; 无字符串证据,verified-exists
+method,com.corrodinggames.rts.gameFramework.i,a,e(),saveSelection,"bQ.modSettings 写 'name|hash|enabled/disabled' 串, modSettingsVersion=1(任务参考确认)",verified
+method,com.corrodinggames.rts.gameFramework.i,a,f(),loadSelection,'Loading mod selection' + 'loadSelection: wrong count/Unknown option/Did not find mod in settings'(任务参考确认),verified
+method,com.corrodinggames.rts.gameFramework.i,a,c(String),findByHash,按 b2.e (hash) 查找; 'MOD|'+hash 链接证据(任务参考确认),verified
+method,com.corrodinggames.rts.gameFramework.i,a,d(String),countModsByName,按 b2.c() 显示名计数; 无字符串证据,verified-exists
+method,com.corrodinggames.rts.gameFramework.i,a,a(int),findByModId,按 b2.L 查找 (L=modId 递增); 顺序对齐 ModInfo,verified
+method,com.corrodinggames.rts.gameFramework.i,a,g(),disableAllMods,全部 b2.f=true(任务参考确认),verified
+method,com.corrodinggames.rts.gameFramework.i,a,h(),countEnabledOrFailedMods,结构计数: !f||D (D=hasErrors 顺序对齐); 无字符串证据,verified-exists
+method,com.corrodinggames.rts.gameFramework.i,a,e(String),findByAuthor,按 b2.d 字段查找 (modAuthor 顺序对齐); 无字符串证据,verified-exists
+method,com.corrodinggames.rts.gameFramework.i,a,f(String),findByDisplayName,按 b2.a() 方法结果查找; 无字符串证据,verified-exists
+method,com.corrodinggames.rts.gameFramework.i,a,"a(String,String,String,String,boolean,boolean,boolean,int)",addModEntry,创建/更新 i.b: 名称/作者/来源路径/hash/禁用/下载/内置/优先级; 'Storage: '+来源; 排序插入(任务参考确认),verified
+method,com.corrodinggames.rts.gameFramework.i,a,a(b),removeModEntry,同步从 e 移除; k() 'Removing mod no longer found on system' 调用点,verified
+method,com.corrodinggames.rts.gameFramework.i,a,"a(String,boolean,boolean)",scanModsFromDirectory,'loading mod custom units at:' + 'getAllModList: Failed to load:' 扫描目录 ini 文件逐个 addModEntry,verified
+method,com.corrodinggames.rts.gameFramework.i,a,i(),getEnabledModItems,合并启用 mod (b2.m()) 的 q() 内容列表; 无字符串证据,verified-exists
+method,com.corrodinggames.rts.gameFramework.i,a,j(),getEnabledMods,返回启用 mod (b2.m()) 列表(任务参考 i()/j()=getMods),verified
+method,com.corrodinggames.rts.gameFramework.i,a,k(),discoverMods,'getAllModList:' 'Modded Custom ... directory not found' 'Number of mods:' 'Disabling all new mods for first/new load' 'Too many new mods found'(任务参考确认),verified
+method,com.corrodinggames.rts.gameFramework.i,a,l(),loadAllMods,"l2.br 标志 + l2.e() 重载 + applyMods(false,false) + l2.x()(任务参考确认)",verified
+method,com.corrodinggames.rts.gameFramework.i,a,"a(boolean,boolean)",applyMods,清空运行时状态(R/S/U/V/D/E/F/G/H/I/J/w) + k() 发现 + ag.h()/ag.b() 重建(任务参考确认),verified
+method,com.corrodinggames.rts.gameFramework.i,a,m(),notifyCallbacks,'No active callbacks' l2.dH.d()(任务参考确认),verified
+method,com.corrodinggames.rts.gameFramework.i,a,"a(String[],String)",getMapListForPath,'addExtraMapsForPath:' + 'NEW_PATH|maps2/' + 'MOD|'+hash 前缀生成地图列表,verified
+method,com.corrodinggames.rts.gameFramework.i,a,g(String),getExtraMapsForPath,'Adding extra map:' 按路径匹配 extraMaps,verified
+method,com.corrodinggames.rts.gameFramework.i,a,n(),clearExtraMaps,this.f.clear() 结构证据,verified
+method,com.corrodinggames.rts.gameFramework.i,a,"a(String,b)",addExtraMapEntry,'Skipping: as mod sourceFolder is null' + 'Mod path: ... not in map path:' 创建 i.c 条目,verified
+method,com.corrodinggames.rts.gameFramework.i,a,h(String),getLinkedModForFile,'getLinkedModForFile: Failed to find mod with hash:' 按 MOD| 前缀找关联 mod,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,scriptEngine,instance,"v19.105: 静态单例 (createScriptEngine设置, getInstance返回)",verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,inDebugScript,inDebugScript,"v19.105: 静态标志, a$2.run() 设置 true/false 包裹 function 命令",verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,queuedScripts,queuedScripts,"v19.105: 待执行脚本队列 (synchronized add/remove, update逐帧消费)",verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,runningScripts,runningScripts,v19.105: 本帧运行中脚本 (update 中迭代后 clear),verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,globals,globals,v19.105: 全局变量表 (setGlobalVariable: root/mp/mods/debug 四上下文),verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,scriptError,scriptError,v19.105: 延迟异常 (throwDelayedException 首个错误保存),verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,root,rootContext,v19.105: Root 脚本上下文实例,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,b,libRocketBridge,v19.105: slickLibRocket (librocket b 桥接),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,isStrict(),isStrict,v19.105: return a.a.a() DebugServer是否启用 (严格模式抛异常),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,checkThreadAccess(),checkThreadAccess,v19.105: ThreadLocal 主脚本线程断言 (违规打日志),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,getInstance(),getInstance,v19.105: 静态单例访问器,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,createScriptEngine(com.corrodinggames.librocket.b),createScriptEngine,v19.105: 静态工厂 (已存在则抛异常; 构造root+四上下文注册),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,setupScriptContext(com.corrodinggames.librocket.scripts.ScriptContext),setupScriptContext,v19.105: 反射注册上下文全部公开方法到 methods HashMap (跳过wait/getClass),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,update(float),update,v19.105: 每帧: 队列消费(framesDelay递减)+runningScripts执行+root.onFrameUpdate,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"addScriptToQueue(java.lang.String, boolean)",addScriptToQueue,v19.105: 脚本入队 (tryToCatchCrash=bl),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,addScriptToQueueIfNotAlreadyQueued(java.lang.String),addScriptToQueueIfNotAlreadyQueued,v19.105: 去重入队 (相同脚本已在队列则返回null),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,addRunnableToQueue(java.lang.Runnable),addRunnableToQueue,v19.105: Runnable 入队 (RunnableAction 包装),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,processScript(java.lang.String),processScript,v19.105: 按;分割逐条processArg; 日志 ScriptEngine:HandleEvent:,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"throwDelayedException(java.lang.String, java.lang.Throwable)",throwDelayedException,v19.105: 延迟异常保存 (首个scriptError),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,checkForErrors(),checkForErrors,v19.105: 有 scriptError 则抛出,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,processArg(java.lang.String),processArg,v19.105: 脚本表达式解析器: 单引号字符串/整数/浮点/赋值/函数调用/布尔/变量查找,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"getScriptVariable(java.lang.String, boolean)",getScriptVariable,v19.105: 变量查找链: document metadata→popup→b→globals,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"setLocalVariable(java.lang.String, java.lang.Object)",setLocalVariable,v19.105: 活动文档 metadata 写入,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"setGlobalVariable(java.lang.String, java.lang.Object)",setGlobalVariable,v19.105: globals HashMap 写入,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"processFunction(java.lang.String, java.util.regex.Matcher)",processFunction,v19.105: 参数逗号分割+逐个processArg→runFunction,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"runFunction(java.lang.String, java.lang.Object[])",runFunction,v19.105: 最多两级ctx.func; methods表查找+反射invoke (参数类型适配),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"match(java.lang.String, java.lang.String)",match,v19.105: 正则全匹配辅助,verified
+field,com.corrodinggames.librocket.scripts,ScriptContext,methods,methods,"v19.105: 函数注册表 HashMap<String,Method> (setupScriptContext反射填充)",verified
+field,com.corrodinggames.librocket.scripts,ScriptContext,libRocket,libRocket,v19.105: LibRocket 桥引用 (文档操作),verified
+field,com.corrodinggames.librocket.scripts,ScriptContext,guiEngine,guiEngine,v19.105: librocket.a.a() GUI引擎,verified
+field,com.corrodinggames.librocket.scripts,ScriptContext,scriptEngine,scriptEngine,v19.105: 归属 ScriptEngine 反向引用,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,script,script,v19.105: 脚本文本,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,tryToCatchCrash,tryToCatchCrash,v19.105: 捕获崩溃标志,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,caughtCrash,caughtCrash,v19.105: 捕获的崩溃信息,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,completed,completed,v19.105: 完成标志,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,framesDelay,framesDelay,"v19.105: 帧延迟计数 (update中递减, 到0才执行)",verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,run(com.corrodinggames.librocket.scripts.ScriptEngine),run,"v19.105: 执行脚本 (processScript), tryToCatchCrash时捕获保存caughtCrash",verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,waitForCompletionOrCrash(boolean),waitForCompletionOrCrash,v19.105: 轮询3000次等完成 (DebugServer同步等待; 超时抛异常),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,run(com.corrodinggames.librocket.scripts.ScriptEngine),run,v19.105: 包装 Runnable 执行,verified
+method,com.corrodinggames.librocket.scripts,Root,loadReplay(java.lang.String),loadReplay,v19.105: l2.cb.c(string) 加载回放 + resumeNonMenu (动态测试脚本主入口),verified
+method,com.corrodinggames.librocket.scripts,Root,loadGame(java.lang.String),loadGame,"v19.105: l2.ca.c(string,false) 加载存档",verified
+method,com.corrodinggames.librocket.scripts,Root,saveGame(java.lang.String),saveGame,"v19.105: l2.ca.b(string,false) 保存存档 (名称 . / 替换为 _)",verified
+method,com.corrodinggames.librocket.scripts,Root,hostStart(boolean),hostStart,v19.105: 主机游戏入口 (bX.b(false) + battleroom.rml),verified
+method,com.corrodinggames.librocket.scripts,Root,closePopup(),closePopup,v19.105: 关闭弹窗 (动态测试弹窗解除),verified
+method,com.corrodinggames.librocket.scripts,Root,closeAlertOnly(),closeAlertOnly,v19.105: 仅关闭告警弹窗,verified
+method,com.corrodinggames.librocket.scripts,Root,exit(),exit,v19.105: 退出应用 (numLoadsSinceRunningGameOrNormalExit清零 + guiEngine.d(true)),verified
+method,com.corrodinggames.librocket.scripts,Root,"showPopup(java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String)",showPopup,v19.105: 弹窗显示,verified
+method,com.corrodinggames.librocket.scripts,Root,alert(java.lang.String),alert,v19.105: 告警弹窗,verified
+method,com.corrodinggames.librocket.scripts,Root,loadConfigAndStartNew(java.lang.String),loadConfigAndStartNew,v19.105: 配置+单机游戏启动 (loadConfigCommon + guiEngine.f),verified
+method,com.corrodinggames.librocket.scripts,Root,loadConfigAndStartNewSandbox(java.lang.String),loadConfigAndStartNewSandbox,v19.105: 沙盒编辑器模式启动 (bv=true),verified
+method,com.corrodinggames.librocket.scripts,Root,resume(),resume,v19.105: 恢复游戏,verified
+method,com.corrodinggames.librocket.scripts,Root,resumeNonMenu(),resumeNonMenu,v19.105: 恢复非菜单屏幕,verified
+method,com.corrodinggames.librocket.scripts,Root,makeSaveGamePopup(java.lang.String),makeSaveGamePopup,v19.105: 存档命名弹窗 (onenter:saveGame(getPopupText())),verified
+method,com.corrodinggames.librocket.scripts,Root,getPopupText(),getPopupText,v19.105: 弹窗输入文本,verified
+method,com.corrodinggames.librocket.scripts,Root,showMaps(),showMaps,v19.105: 地图列表,verified
+method,com.corrodinggames.librocket.scripts,Root,back(),back,v19.105: 返回上一屏,verified
+field,com.corrodinggames.librocket.scripts,Root,multiplayer,multiplayer,v19.105: Multiplayer 上下文引用,verified
+field,com.corrodinggames.librocket.scripts,Root,mods,mods,v19.105: Mods 上下文引用,verified
+method,com.corrodinggames.rts.appFramework,e,,getString2,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置3),order-align-v19.111
+method,game.n,c,,isEnemy,v19.113 运行时捕捉: 崩溃栈 n.c(SourceFile:2222) + javap 字节码 (this.r != other.r) + 02b n.java:1168,runtime-verified
+method,game.n,b,,writePlayerBaseState,"v19.113g 运行时存档逐位对照: ""Writing team: <名>"" 后 k/o/r/U/v/A()/X(lastPing) 序列 (03 已改声明+调用点)",runtime-verified
+method,game.n,d,,writeFogOfWar,"v19.113g 02b n.d(as) + 存档 ""-- Saving fog --"" N(200x160) 二维数组互证 (03 已补方法; 旧误译 isSameTeamAs)",runtime-verified
+field,game.n,o,,credits,"v19.113g 运行时铁证: setTeamCredits(0,777777) → 存档 #int 779064 (对局经济调整+1287) — n.b(as) 写 (int)o 位序互证; 02b 注释 ""Changing credits..."" 亦证",runtime-verified
+method,custom.g,a,,serializeTags,"v19.113g 02 g.a(ak, j.as) 写方向 (03 TeamTag 旧误名 deserializeTags 已改)",runtime-verified
+field,gameFramework.az,eo,,posX,"v19.113g 存档 ""xy is:"" 注释 + 坐标值序 (1234.5/678.9 独特值定位) — SpriteBase 坐标 (ep=posY, eq/ex 待证)",runtime-verified
+field,gameFramework.az,ep,,posY,v19.113g 同 eo 证据链,runtime-verified
+field,units.am,cu,,hp,"v19.113i 四重铁证: 02b日志"", hp:"" + 5类型血量表 + agent直写210→50 + 存档验证50 (受伤差分)",runtime-verified
+field,units.am,cv,,maxHp,v19.113i 铁证: 受伤差分 — cu改50后 cv 仍 210 (最大血量不随受伤变!),runtime-verified
+field,units.am,bV,,isDead,"v19.113g 铁证: 02b am:1749 "", dead:""+this.bV + 存档 tank 段 false (活着)",runtime-verified
+field,units.am,bX,,player,v19.113g 铁证: 存档 int 0 (玩家引用写为 team id) + 崩溃栈 bX=所属玩家链,runtime-verified
+field,units.am,cK,,debugPlaced,v19.113g 待证: createUnit 设 cK=true (调试放置标记) — 存档 false (序列化后重置?),runtime-verified
+field,units.am,cN,,mountedOn,v19.113g 铁证: 存档 -1 (无挂载) + 崩溃栈 cN=挂载单位链,runtime-verified
+field,units.y,P,,unitFlag,v19.113g 铁证: 存档 #Enum:a:onlyInRange + ordinal1 (y.P 写枚举),runtime-verified
+field,units.am,bs,,???,v19.113g 存档 -9999 (02b 默认 -9999) — 路径相关 int,runtime-verified
+field,units.am,bz,,creationSequence,"v19.113h 铁证: 02b am:627 this.bz = l.B().by (GlobalState.by 创建序数快照) + 多单位存档递增 (33350/36454/39550, 初始单位0)",runtime-verified
+field,units.am,bA,,???,v19.113g 存档 -9999 (默认),runtime-verified
+field,units.am,cM,,???,v19.113g 存档 false — 炮塔循环后 bool,runtime-verified
+field,units.am,cP,,???,v19.113g 存档 cO=null→short -1 (cO/cP 成对引用),runtime-verified
+field,gameFramework.l,by,,creationCounter,"v19.113h 铁证: am.bz 快照源 (单位创建递增, 初始0)",runtime-verified
+field,units.y,k,,isPathingActive,v19.113h 移动差分铁证: 静止 false / moveAllUnitsOnTeam 后 true (pathing_active 注释下第一位),runtime-verified
+field,units.y,l,,pathTargetX,v19.113h 移动差分铁证: 移动后 = 3000.0 (moveAllUnitsOnTeam 目标x!) 静止 3.0,runtime-verified
+field,units.y,m,,pathTargetY,v19.113h 移动差分铁证: 移动后 = 3000.0 (目标y!) 静止 3.0,runtime-verified
+field,units.y,ad,,pathTargetUnit,v19.113h 移动差分铁证: 移动后 = 487 (builder 单位引用) 静止 -1,runtime-verified
+field,units.am,ce,,moveDirection,v19.113h 移动差分: 静止 0.0 / 移动 2.0135 (rad 方向角候选),runtime-verified
+field,units.am,cL[0].a,,turretAngle,v19.113h 移动差分: 静止 0.0 / 移动 1.964 (炮塔瞄准角候选),runtime-verified
+field,units.am,cM,,turretFlag,v19.113j 运行时铁证: 10炮塔单位 (experimentalTank) 存档每炮塔后一个 bool — cM 写调用在循环体内 (02b 缩进失真!),runtime-verified
+field,units.am,cL[],,turretArray,v19.113j 铁证: bl()=10 → 10×(7float a/c/d/e/f/h/i + j引用) — 每炮塔 8 项结构精确匹配,runtime-verified
+field,units.am,bl(),,turretCount,v19.113j 铁证: experimentalTank=10 / tank=1 / turret=1 / artillery=1 — 炮塔数组长度,runtime-verified
+field,units.am,bV,,isDead,v19.113j 死亡差分铁证: agent 置 true → 存档位5=true (活单位 false) — 03 已改名,runtime-verified
+field,units.am,cg,,deathAngle,v19.113j 死亡差分: 活 0.0 / 死 45.03 (=炮塔角同步 — 死亡旋转角候选),runtime-verified
+field,units.am,cj,,deathParam1,v19.113j 死亡差分: 活 0.0 / 死 10.0 (死亡动画参数候选),runtime-verified
+field,units.am,ck,,deathParam2,v19.113j 死亡差分: 活 0.0 / 死 12.0 (死亡动画参数候选),runtime-verified
+field,gameFramework.l,bt,,gameSpeed,"v19.113k HUD 铁证: f/g.java ""Game Speed: ""+bt+""x"" 沙盒 HUD 显示 (默认 1.0)",runtime-verified
+field,gameFramework.l,bw,,invincibleUnits,"v19.113k HUD 铁证: f/g.java ""Invincible Units"" 显示条件 bw",runtime-verified
+field,game.a.a,bG,,aiFreezeTimer,"v19.113k HUD 铁证: f/g.java ""AIs frozen"" 显示条件 bG > 0.0F (官方 AI 冻结开关!)",runtime-verified
+field,gameFramework.l,bv,,sandboxMode,"v19.113k HUD 铁证: f/g.java ""Editor Active"" 显示条件 bv (沙盒/编辑器模式 — agent 沙盒链核心开关)",runtime-verified
+method,game.n,W,,debugUnitCountByType,v19.113k 运行时验证: agent 调 W() → 按类型单位统计 dump (Units/Buildings 分组+total) — 02b W() 打印链,runtime-verified
+field,units.am,dz,,unitTypeHandle,v19.113k 02b W() 铁证: var5.dz = as 类型 (按类型统计键),runtime-verified
+method,units.y,U,,debugPrintSelectedUnit,v19.113k 02b f/g 键位处理铁证: var17.aa.a() → cG 选中单位 → U() 打印状态,runtime-verified
+field,units.am,cG,,isSelected,v19.113k 02b f/g 铁证: var25.cG 选中标记 (debugPrintSelectedUnit 遍历条件),runtime-verified
+field,gameFramework.l,bl,,debugTempMode,"v19.113k 02b f/g 铁证: ""debugTempMode now:"" + bl (DevMode 键切换; AIView/MapView 的前置)",runtime-verified
+field,game.a.a,as,,aiDebugView,"v19.113k 02b f/g 铁证: AIStrategy.as = !as — ""AI debug view:"" (静态字段, 与方法 as() 同名!)",runtime-verified
+field,gameFramework.n.f,a,,mapDebugView,"v19.113k 02b f/g 铁证: n.f.a = !a — ""Map debug:""",runtime-verified
+field,gameFramework.l,bp,,editorMode,v19.113k 02b f/g 铁证: Debug Editor 键 V → bp = !bp (编辑器开关; 与 bv 沙盒开关区分),runtime-verified
+method,gameFramework.j.ad,U,,addTestPopup,"v19.113k 02b f/g 铁证: HideInterface 键 → ""Adding test popup"" bX.U()",runtime-verified
+field,units.ap,a,,turretAngle,"v19.113k U() 铁证: ""Dir was:""+a — 炮塔当前角度 (03 旧译 turretOffsetX 待纠)",runtime-verified
+field,units.ap,d,,lockDelay,"v19.113k U() 铁证: ""lockDelay:""+d — 炮塔锁定延迟",runtime-verified
+field,units.ap,e,,shootCooldown,"v19.113k U() 铁证: ""shootCooldown:""+e — 射击冷却",runtime-verified
+field,custom.j.x.fQ,a,,turretName,"v19.113k U() 铁证: ""for name:""+fQ[i].a — 炮塔名",runtime-verified
+method,custom.j,U,,debugPrintUnitState,v19.113k 运行时验证: agent 触发 → 炮塔全状态 dump (角度/锁定/冷却/重置/空闲/差角),runtime-verified
+method,custom.j,"b(int,float)",,updateAndShouldResetTurret,"v19.113k U() 铁证: ""updateAndShouldResetTurret:""+b(i,0)",runtime-verified
+method,custom.j,C,,getTurretIdleDir,"v19.113k U() 铁证: ""idleDir:""+C(i) — 炮塔空闲方向",runtime-verified
+method,units.h$21,nukeAt,,createNukeAtPoint,"v19.113l 铁证: ""Create a nuke at a point"" — 编辑器官方核弹按钮 (点击地图点生成弹丸)",runtime-verified
+method,units.h$5,freezeAllAI,,freezeAllAIHighLevelLogic,"v19.113l 铁证: ""Freeze full high level logic for all AI forever"" — h.c 切换 (Freeze AI/Unfreeze AIs)",runtime-verified
+method,units.h$9,search,,searchUnits,"v19.113l 铁证: ""Search for units"" — h.G 搜索模式 (n.e 枚举) + h.H 过滤文本",runtime-verified
+field,units.h,c,,aiFrozen,v19.113l 铁证: h$5 d() 读 h.c 判定 Freeze/Unfreeze 显示,runtime-verified
+field,units.h,G,,searchMode,"v19.113l 铁证: h$9 b() ""Search: ""+G==n.e 显示",runtime-verified
+field,units.h,H,,searchFilter,v19.113l 铁证: h$9 b() 显示 H 过滤文本,runtime-verified
+field,gameFramework.l,bn,,triggerDebug,"v19.113l 铁证: h$13 enableTriggerDebug ""Trigger Debug: On"" ← bn (autoTrigger 日志开关)",runtime-verified
+field,gameFramework.l,bl,,debugTooltips,"v19.113l 铁证升级: h$10 enableDebug ""Show hidden unit information in tooltips including flags, ammo, tags and resources"" ← bl (与 debugTempMode 同字段)",runtime-verified
+method,gameFramework.n.a,h,,triggerDebugLog,"v19.113l 02b n/a.java:208 铁证: ""MapTrigger-Debug (""+id+"" type:""+type+""): ""+msg — Triggers 层调试日志",runtime-verified
+method,gameFramework.n.a,g,,triggerErrorLog,"v19.113l 02b n/a.java:204 铁证: ""MapTrigger-Error (""+id+"" type:""+type+""): ""+msg — 触发器错误/未使用键",runtime-verified
+field,game.units,an,a,discovered,"该玩家已发现此单位 (g(n) 可见时置true, 死亡后清)",bytecode-verified
+field,game.units,an,b,typeValue,发现时的 V() 类型值快照,bytecode-verified
+field,game.units,an,c,indicator,迷雾中不可见时的 GameHUD 位置指示器 (旧类型误标 UnitFlag),bytecode-verified
+field,game.units,am,dF,playerIndicators,每玩家指示器状态数组 (BuildTask[] 旧误名),bytecode-verified
+method,game.units,am,g(PlayerState),setDiscoveredBy,v19.113m 参数类型修正: 旧签名 UnitCategory (03误标). 02b am.java:2032 g(n) n=PlayerState + MapEngine调用点cast双证,bytecode-verified
+method,game.units,am,d(PlayerState),isVisibleTo,v19.113m: 旧名isVisibleToTeam(UnitCategory). 02b am.java:1175 d(n) 迷雾检查 (N数组>=5),bytecode-verified
+method,game.units,am,g(),getResourceProductionRate,"v19.113m: 旧名setDiscoveredBy()错译. 02b am g()=0.0F/e(建筑)=0.02F, 调用点 f/a.java:2231 资源生产展示",bytecode-verified
+method,game.units.custom,j,"g(UnitInstance, boolean)",setDiscoveredBy,v19.113m: 与基类同名对齐 (继承链断裂修复) + 内部调h (03旧误替ejectAllTransported),bytecode-verified
+method,game.units,am,cX(),updateMinimapIndicator,v19.113m: GameHUD类型修正 (03旧误标EffectBase),bytecode-verified
+field,game.units,am,cq,placeFlipY,"v19.113m: ar.a放置瞬时标志 (var9), 方法末清零 (ar.java:611). 实际调用方只有FF路径 → 存档恒false",bytecode-verified
+field,game.units,am,cr,placeFlipX,"v19.113m: ar.a放置瞬时标志 (var8), 方法末清零 (ar.java:612). 实际调用方只有FF路径 → 存档恒false",bytecode-verified
+field,game.units,am,co,placeNormal,"v19.113m: ar.a放置标志 (var8=var9=false 唯一真实路径), 方法末清零 (ar.java:615)",bytecode-verified
+field,game.units,am,ct,placeLegacyFlag,"v19.113m: ar.a 13参版遗留标志 (var11=false→true), 游戏内无调用方",bytecode-verified
+field,game.units,am,bM,dustEffect,v19.113m: custom/ag:1962 mod键名铁证 + b/a:215 MapSpawn预放置置true. AI选择排除 (a/g:223) / 统计降权 (a/i:507),bytecode-verified
+field,game.units,am,bN,dustEffectReverse,v19.113m: custom/ag:1964 mod键名铁证 (默认true),bytecode-verified
+field,game.units,am,ci,unusedLegacyFlag,"v19.113m: 仅序列化 (am.java:223), 无任何使用点 — 遗留字段",bytecode-verified
+field,game.units,am,cB,clonedAccumValue,"v19.113m: ar.a 12参版克隆状态复制 (ar.java:580, 源=var12参考单位). 编辑器克隆单位路径",bytecode-verified
+method,game.units,ar,a(12参),placeUnitClone,"v19.113m: 单位克隆放置 (var12=克隆源, 复制cE/cu/cB/bw). am.c()原型修改→不进er列表 (列表大小不变运行验证). 唯一调用方 f/a:1660+f/g:4303 均传 var8=var9=false",bytecode-verified
+method,game.units,y,m(int),checkWaypointIndex,"v19.113n: 02b y.java:3964 Waypoint索引检查 (30上限, g数组初始化)",bytecode-verified
+method,game.units,y,m(),getMaxMoveDistance,v19.113n: 02b y.java:4777 abstract float; 使用点距离阈值 (y:2640); 建筑返回0,bytecode-verified
+method,game.units,y,m(am),onUnitCommandTarget,v19.113n: 02b y.java:3688 空钩子 (命令目标处理),bytecode-verified
+method,game.units,y,al(),isDieOnConstruct,v19.113n: 02b y.java:3690 + custom/j:3662 返回x.bi=dieOnConstruct mod键,bytecode-verified
+field,game.units,y,al,heightOffset,v19.113n: 02b y.java:90 放置/渲染y偏移 (三处 y+al 铁证). 03旧名pathTargetYetalCost=v19.113i误伤,bytecode-verified
+method,game.units,am,ct(),checkIsLargeUnit,"v19.113n: 02b am:1610 return i() (大单位检查, 子类覆盖)",bytecode-verified
+method,game.units,y,aO(),shouldAntiAlias,v19.113n: 02b y:4603 renderAntiAlias 逻辑,bytecode-verified
+method,game.units,y,ap(),addWaypoint,v19.113n: 02b y:3810 m(this.f)+g[f]创建+au2.e()+f递增,bytecode-verified
+method,game.units,y,aR(),isUsable,v19.113n: 02b y:4737 dn()配置检查+I(),bytecode-verified
+method,game.units.a,s,b(am),getLabel,"v19.113n: 02b a/s:190 return this.h.a(var1,false) = 03 h.isAffordable(am,false)",bytecode-verified
+method,game.units.a,s,O(),getDisplayString,v19.113n: javap public final String O() = 03 getDisplayString,bytecode-verified
+field,gameFramework.a,e,o,placeSound,"v19.113n: 音效常量. 03曾误标PlatformAudio (platform.e 实为另一类; jar无platform.e, 铁证 y:5102 a.e.o/p)",bytecode-verified
+field,gameFramework.a,e,p,attackSound,v19.113n: 音效常量 (y:5102 a.e.p 攻击音),bytecode-verified
+field,game.a.i,i,b,baseZone,v19.113n: javap a.i.b=a.j=BaseZoneType (03旧标SpecialBuilding错),bytecode-verified
+method,gameFramework,f,h(String),formatSeconds,v19.113n: 02b f.java:759 getParent逻辑 (03误名formatSeconds — 实为取父目录; 语义名待修正),bytecode-verified
+method,gameFramework,w,cD(),getRenderScale,"v19.113n: javap w.cD() float (03缺失, 渲染缩放) — 02b w.java 反编译不完整 143行",bytecode-verified
+method,gameFramework,w,cY(),getRenderOffset,v19.113n: javap w.cY() PointF (03缺失) — 02b w.java 反编译不完整,bytecode-verified
+method,game.units,y,aQ(),checkLowPolyMode,"v19.113n: javap y.aQ() boolean (03缺失, 低多边形渲染检查 var1.de/df 分支)",bytecode-verified
+field,game.units,au,b,unitTypeHandle,v19.113n: javap au.b=as (03旧误标PacketBuilder),bytecode-verified
+field,game.units,y,ad,parentUnitType,v19.113n: javap y.ad=y 引用 (03类型链修正 instanceof UnitType),bytecode-verified
+method,gameFramework,f,h(String),formatSeconds,v19.113n 重复确认: getParent逻辑,bytecode-verified
+field,game,n,as,playerSlotArray,v19.113n: 02b n.java:520/1948 as 静态玩家槽数组 (03误名playerSlotArray),bytecode-verified
+method,gameFramework.m.e,e,j(),initPixelBuffer,v19.113n: 02b m/e:164 位图缓冲初始化 (k!=null||!aU||aX → j=new int[p*q]) — 03缺失补插,bytecode-verified
+method,gameFramework.m.e,e,l(),getHeight,v19.113n: 02b m/e:190 return q (03缺失补插),bytecode-verified
+method,gameFramework.m.e,e,m(),getWidth,v19.113n: 02b m/e:194 return p (03缺失补插),bytecode-verified
+method,game,n,A(),getPingStatus,v19.113n: 02b n.java:905 X==-1?-2:超时?-1:W (03误名getCreditsInteger),bytecode-verified
+field,game,n,b,playerSlots,v19.113n: 02b n.java b静态玩家数组 (03曾误名UnitTypeHandle 8处),bytecode-verified
+method,gameFramework.effects,f,a(),spawnEffectAt,"v19.113n: 02b d.f.a(eo,ep) 地图特效 (03误名EffectInstance — 真身DrawEffect d.f)",bytecode-verified
+field,game.units.custom,l,s,teamColorsOnTurret,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,t,showHealthBar,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,u,showHealthBarChanges,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,v,showEnergyBar,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,w,showShotDelayBar,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,x,showTransportBar,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,y,showShieldBar,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,z,showQueueBar,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,A,showSelectionIndicator,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,M,name,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,Q,overrideAndReplace,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,R,strictLevel,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,U,total_frames,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,W,frame_width,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,X,frame_height,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,Y,default_frame,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aa,imageSmoothingWhenZoomedIn,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ab,imageSmoothing,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ae,image_floatingPointSize,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ah,image_offsetX,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ai,image_offsetY,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aj,image_offsetH,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,am,image_back_always_use_full_image,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aE,displayLocaleKey,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aF,showInEditor,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aG,globalScale,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aH,isBuilding,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aI,ignoreInUnitCapCalculation,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aJ,placeOnlyOnResPool,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aK,isUnrepairableUnit,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aL,extraBuildRangeWhenBuildingThis,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aM,isUnselectable,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aN,isUnselectableAsTarget,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aO,canNotBeDirectlyAttacked,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aP,canNotBeDamaged,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aQ,showOnMinimap,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aR,showOnMinimapToEnemies,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aT,canNotBeGivenOrdersByPlayer,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aU,canRepairBuildings,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aV,canRepairUnits,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aW,autoRepair,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,aY,nanoRangeForRepairIsMelee,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ba,nanoRangeForReclaimIsMelee,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bb,nanoRepairSpeed,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bc,nanoReclaimSpeed,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bd,resourceReclaimMultiplier,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,be,nanoUnbuildSpeed,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bf,nanoBuildSpeed,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bh,selfBuildRate,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bi,dieOnConstruct,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bj,dieOnAttack,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bk,dieOnZeroEnergy,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bl,removeOnAttack,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bm,fireOnDeath,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bn,nukeOnDeath,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bo,nukeOnDeathRange,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bp,nukeOnDeathDamage,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bq,numBitsOnDeath,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,br,nukeOnDeathDisableWhenNoNuke,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bs,disableDeathOnZeroHp,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bu,explodeOnDeath,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bD,unitsSpawnedOnDeath_setToTeamOfLastAttacker,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bJ,splastEffect,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bK,splastEffectReverse,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bM,dustEffect,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bN,dustEffectReverse,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bQ,movementEffectReverseFlipEffects,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bR,movementEffectRate,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bT,repairEffectRate,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,bX,reclaimEffectRate,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ca,autoTriggerCooldownTime,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cd,autoTriggerCheckWhileNotBuilt,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ce,availableInDemo,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cf,isLocked,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cg,isLockedIfGameModeNoNuke,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ck,buildSpeed,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cl,techLevel,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cm,experimental,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cr,generation_delay,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cu,updateUnitMemoryRate,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cy,stayNeutral,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cz,createNeutral,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cA,allowCaptureWhenNeutralByAI,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cB,whileNeutralTransportAnyTeam,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cC,whileNeutralConvertToTransportedTeam,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cD,convertToNeutralIfNotTransporting,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cE,createOnAggressiveTeam,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cF,resourceRate,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cG,resourceMaxConcurrentReclaimingThis,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cJ,shadowOffsetX,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cK,shadowOffsetY,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cM,startShieldAtZero,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cN,armourMinDamageToKeep,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cO,startEnergyAtZero,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cP,energyRegen,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cQ,energyRegenWhenRecharging,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cR,energyNeedsToRechargeToFull,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cS,energyStartingPercentage,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cU,shieldDisplayOnlyDeflection,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cV,shieldDeflectionDisplayRate,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cW,radius,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cX,footprint,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cY,constructionFootprint,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,cZ,displayFootprint,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,da,buildingToFootprintOffsetX,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,db,buildingToFootprintOffsetY,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dd,displayRadius,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,de,uiTargetRadius,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,df,shieldRenderRadius,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dg,buildingSelectionOffset,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dh,fogOfWarSightRangeWhileNotBuilt,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,di,exit_x,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dj,exit_y,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dk,exit_dirOffset,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dl,exit_heightOffset,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dm,exitHeightIgnoreParent,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dn,exit_moveAwayAmount,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dB,rotate_with_direction,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dC,lock_body_rotation_with_main_turret,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dD,lock_shadow_rotation_with_main_turret,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dE,lock_leg_rotation_with_main_turret,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dH,whenBeingBuiltMakeTransparentTill,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dK,showRangeUIGuide,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dL,turretRotateWithBody,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,dM,shootDelay,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ea,turretSize,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eb,turretTurnSpeed,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ed,attackMovementSpeed,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ee,attackMovementSpread,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ef,disablePassiveTargeting,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eg,stopTargetingAfterFiring,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eh,turretMultiTargeting,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ep,canAttack,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ey,isFixedFiring,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,ez,aimOffsetSpread,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eB,softCollisionOnAll,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eC,disableAllUnitCollisions,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eD,isBio,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eE,isBug,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eF,isMelee,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eH,isPickableStartingUnit,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eI,startFallingWhenStartingUnit,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eJ,hideScorchMark,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eK,disableLowHpFire,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eL,disableLowHpSmoke,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eM,maxTransportingUnits,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eN,transportUnitsUnloadDelayBetweenEachUnit,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eO,transportUnitsEachUnitAlwaysUsesSingleSlot,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eR,transportUnitsBlockAirAndWaterUnits,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eS,transportUnitsBlockOtherTransports,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eT,transportUnitsAddUnloadOption,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eX,transportUnitsOnTeamChangeKeepCurrentTeam,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eY,transportUnitsHealBy,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,eZ,transportSlotsNeeded,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,fk,canReclaimResources,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,fm,canReclaimResourcesNextSearchRange,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,l,gs,logIfCreditResourceUsed,"v19.113p mod配置键铁证 (02b ag.java var11.a(var12, 键名))",mod-key-verified
+field,game.units.custom,as,c,maxHp,v19.113p mod配置键铁证 (02b ag.java var17.cL) — 03类缺失 jar-only,mod-key-verified
+field,game.units.custom,as,d,energyMax,v19.113p mod配置键铁证 (02b ag.java var17.cL) — 03类缺失 jar-only,mod-key-verified
+field,game.units.custom,as,g,maxShield,v19.113p mod配置键铁证 (02b ag.java var17.cL) — 03类缺失 jar-only,mod-key-verified
+field,game.units.custom,as,h,shieldRegen,v19.113p mod配置键铁证 (02b ag.java var17.cL) — 03类缺失 jar-only,mod-key-verified
+field,game.units.custom,as,l,armour,v19.113p mod配置键铁证 (02b ag.java var17.cL) — 03类缺失 jar-only,mod-key-verified
+field,game.units.custom,as,n,fogOfWarSightRange,v19.113p mod配置键铁证 (02b ag.java var17.cL) — 03类缺失 jar-only,mod-key-verified
+field,game.units.custom,as,o,nanoRange,v19.113p mod配置键铁证 (02b ag.java var17.cL) — 03类缺失 jar-only,mod-key-verified
+field,game.units.custom,as,p,selfRegenRate,v19.113p mod配置键铁证 (02b ag.java var17.cL) — 03类缺失 jar-only,mod-key-verified
+field,game.units.custom,as,r,nanoFactorySpeed,v19.113p mod配置键铁证 (02b ag.java var17.cL) — 03类缺失 jar-only,mod-key-verified
+field,game.units,am,cE,ammoCount,v19.113q 函数语义铁证: mod函数Ammo/AmmoIncludingQueued读取该成员 (弹药数),func-semantics-verified
+field,game.units,am,bd,energyCurrent,v19.113q 函数语义铁证: mod函数Energy/MaxEnergy读取该成员 (当前能量),func-semantics-verified
+field,game.units,am,cB,energyMax,v19.113q 函数语义铁证: mod函数EnergyIncludingQueued读取该成员 (最大能量 (与 cA 护盾并排)),func-semantics-verified
+field,game.units,am,cF,unitFlags,v19.113q 函数语义铁证: mod函数HasFlag读取该成员 (单位旗标),func-semantics-verified
+field,game.units,am,cU,killCount,v19.113q 函数语义铁证: mod函数Kills读取该成员 (击杀数),func-semantics-verified
+method,game.units,y,z,getMaxMoveSpeed,v19.113q 函数语义铁证: mod函数MaxMoveSpeed/Speed读取该成员 (最大移动速度 (方法 z())),func-semantics-verified
+field,game.units,am,cA,maxShield,v19.113q 函数语义铁证: mod函数MaxShield/Shield读取该成员 (最大护盾),func-semantics-verified
+field,game.units,am,cx,shieldCurrent,v19.113q 函数语义铁证: mod函数Shield读取该成员 (当前护盾),func-semantics-verified
+field,game.units,am,cK,isMoving,v19.113q 函数语义铁证: mod函数Moving读取该成员 (移动中标志),func-semantics-verified
+field,game.units,am,cI,isOverCliff,v19.113q 函数语义铁证: mod函数OverClift读取该成员 (悬崖上),func-semantics-verified
+field,game.units,am,cJ,isOverWater,v19.113q 函数语义铁证: mod函数OverWater读取该成员 (水上),func-semantics-verified
+field,game.units,am,cH,isTouchingWater,v19.113q 函数语义铁证: mod函数TouchWater读取该成员 (触水),func-semantics-verified
+field,game.units,am,eh,unitId,v19.113q 函数语义铁证: mod函数UnitId读取该成员 (单位ID (存档 eh=492 铁证互证)),func-semantics-verified
+field,game.units,am,cc,velocityX,v19.113q 函数语义铁证: mod函数Speed读取该成员 (速度X分量),func-semantics-verified
+field,game.units,am,cd,velocityY,v19.113q 函数语义铁证: mod函数Speed读取该成员 (速度Y分量),func-semantics-verified
+field,game.units,am,cf,speedCurrent,v19.113q 函数语义铁证: mod函数Speed读取该成员 (当前速度),func-semantics-verified
+field,game.units,am,cm,buildProgress,v19.113q 函数语义铁证: mod函数BuiltAmount/Completed精确绑定 (javap Field/Method分离) — 建造进度 0~1 (v19.113n 滤镜逻辑互证),func-semantics-verified
+field,game.units,am,bA,customTimer,v19.113q 函数语义铁证: mod函数CustomTimer精确绑定 (javap Field/Method分离) — 自定义计时器 (int),func-semantics-verified
+field,game.units,am,cB,energy,v19.113q 函数语义铁证: mod函数Energy/EnergyIncludingQueued精确绑定 (javap Field/Method分离) — 能量 (float),func-semantics-verified
+method,game.units,am,bd,getEnergy,v19.113q 函数语义铁证: mod函数Energy/MaxEnergy精确绑定 (javap Field/Method分离) — 能量读取方法,func-semantics-verified
+method,game.units,am,by,includesQueued,v19.113q 函数语义铁证: mod函数AmmoIncludingQueued/EnergyIncludingQueued精确绑定 (javap Field/Method分离) — 队列包含检查,func-semantics-verified
+field,game.units,am,ci,isReversing,v19.113q 函数语义铁证: mod函数IsReversing精确绑定 (javap Field/Method分离) — 倒车标志 (boolean),func-semantics-verified
+field,game.units,am,cg,rotation,v19.113q 函数语义铁证: mod函数Rotation精确绑定 (javap Field/Method分离) — 旋转角 (float),func-semantics-verified
+field,game.units,am,eq,height,v19.113q 函数语义铁证: mod函数Height/HeightValue精确绑定 (javap Field/Method分离) — 高度 (float),func-semantics-verified
+field,game.units,am,bs,damageTaken,v19.113q 函数语义铁证: mod函数HasTakenDamage精确绑定 (javap Field/Method分离) — 受伤累计 (int),func-semantics-verified
+method,game.units,am,de,handleCallbackCount,v19.113q 函数语义铁证: mod函数HandleCallbackCount 族精确绑定 (javap Field/Method分离) — 回调计数方法,func-semantics-verified
+field,game.units,am,bz,creationSequence,v19.113q 函数语义铁证: mod函数TimeAlive精确绑定 (javap Field/Method分离) — 创建序数 (存活时间=当前-序数快照) — v19.113h 互证,func-semantics-verified
+method,game.units,am,bi,isMovingFast,v19.113q 函数语义铁证: mod函数Speed精确绑定 (javap Field/Method分离) — 速度检查方法 (atTopSpeed 阈值 0.1f),func-semantics-verified
+field,game.b.k,k,b,textureLoaded,v19.113u: 02b j.java:241 加载后true/清空循环false,bytecode-verified
+field,game.b.k,k,c,path,v19.113u: 02b j.java:184 t=tilesets/bitmaps/ 前缀,bytecode-verified
+field,game.b.k,k,d,tileId,v19.113u: 02b j.java:189 t+k.a 递增计数,bytecode-verified
+field,game.b.k,k,e,texture,v19.113u: 02b j.java:233 加载图像 (m.e),bytecode-verified
+field,game.b.k,k,f,tileName,v19.113u: 02b j.java:195 equalsIgnoreCase 匹配,bytecode-verified
+field,game.b.k,k,g,src,v19.113u: 02b j.java:196 base64 源字符串,bytecode-verified
+field,game.b.a,a,o,spawnedUnitsList,v19.113u: 02b b.a.o=utility.m CustomArrayList (03 旧误标 ProjectileType),bytecode-verified
+method,game.b.b,b,a(int),getTilesetDef,v19.113u: javap 返回 b.j TilesetDef (03 曾误名 tileId),bytecode-verified
+field,gameFramework.j,g,b,mapUuid,v19.113u 大厅dump: u_0F10AF10DAFAD2 地图UUID格式,runtime-verified
+field,gameFramework.j,g,c,description,v19.113u 大厅dump: url:https://corrodinggames.com/discord 服务器描述,runtime-verified
+field,gameFramework.j,g,d,address,v19.113u 大厅dump: 127.0.0.1/0.0.0.0 IP地址,runtime-verified
+field,gameFramework.j,g,A,relayId,v19.113v 中继id铁证: 02b j/g.java:95 get|格式第3段 (A==0直连) — 自动加入成功 (23558),bytecode-verified
+field,gameFramework.j,g,c,publicIp,v19.113v 大厅dump: 13.213.226.46/3.19.39.252/18.216.139.119 公网IP,runtime-verified
+field,gameFramework.j,g,d,displayAddress,v19.113v: 172.31.6.239内网/127.0.0.1/0.0.0.0 (直连候选地址),runtime-verified
+field,gameFramework.j,g,h,isOnline,v19.113v: 全部true,runtime-verified
+field,gameFramework.j,g,j,versionCode,"v19.113v: 135/176/151 版本码 (k=版本字符串 ""1.15"")",runtime-verified
+field,gameFramework.j,g,k,versionString,"v19.113v: ""1.15""/""1.14+""/""ANY""",runtime-verified
+field,gameFramework.j,g,n,roomType,"v19.113v: SERVER/RELAY/中文房间名 (""𒀱EK群内有可爱男娘A"")",runtime-verified
+field,gameFramework.j,g,o,lastActivityTime,v19.113v: 1787417076271 毫秒时间戳,runtime-verified
+field,gameFramework.j,g,q,serverName,"v19.113v: ""Relay ASIA2""/""Auto Server 4+ [US-G #11]""/""Discord chat link""",runtime-verified
+field,gameFramework.j,g,r,mapType,"v19.113v: ""skirmishMap""",runtime-verified
+field,gameFramework.j,g,s,gameState,"v19.113v: ""battleroom""(对局室)/""LINK""(官方链接)",runtime-verified
+field,gameFramework.j,g,t,currentPlayersDisplay,"v19.113v: ""0""/""6360"" 字符串显示版 (v=同值int)",runtime-verified
+field,gameFramework.j,g,u,maxPlayersDisplay,"v19.113v: ""10""/""1000""/""9999""/""64921"" 字符串显示版 (w=同值int)",runtime-verified
+field,gameFramework.j,g,v,currentPlayers,v19.113v: int 版当前玩家,runtime-verified
+field,gameFramework.j,g,w,maxPlayers,v19.113v: int 版最大玩家 (10/1000/9999),runtime-verified
+field,com.corrodinggames.rts.gameFramework.i,b,y,isCompatible,"field-order-zip-v19.114: 02b boolean y=- <-> 03 boolean isCompatible=- (位置24, ModInfo)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.i,b,q,modVersionString,"field-order-zip-v19.114: 02b String q=- <-> 03 String modVersionString=- (位置16, ModInfo)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.i,b,m,requiresRestart,"field-order-zip-v19.114: 02b boolean m=- <-> 03 boolean requiresRestart=- (位置12, ModInfo)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.i,b,f,isEnabled,"field-order-zip-v19.114: 02b boolean f=- <-> 03 boolean isEnabled=- (位置5, ModInfo)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.i,b,c,modName,"field-order-zip-v19.114: 02b String c=- <-> 03 String modName=- (位置2, ModInfo)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.i,b,z,requiresUpdate,"field-order-zip-v19.114: 02b boolean z=- <-> 03 boolean requiresUpdate=- (位置25, ModInfo)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.i,b,x,loadOrder,"field-order-zip-v19.114: 02b int x=- <-> 03 int loadOrder=- (位置23, ModInfo)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.i,b,e,modDescription,"field-order-zip-v19.114: 02b String e=- <-> 03 String modDescription=- (位置4, ModInfo)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.i,b,k,modFileSize,"field-order-zip-v19.114: 02b long k=- <-> 03 long modFileSize=- (位置10, ModInfo)",field-order-zip-v19.114

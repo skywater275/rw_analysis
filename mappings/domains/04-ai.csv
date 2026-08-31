@@ -1,0 +1,271 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+method,com.corrodinggames.rts.game.a,a,a(float,float,o,verified-exists
+method,com.corrodinggames.rts.game.a,a,b(com.corrodinggames.rts.game.units.am,float,"""float)""",canUnitReachPointLoose
+method,com.corrodinggames.rts.game.a,a,c(float,float),findNearestZone | [V] 找离坐标最近的区域,verified-exists
+method,com.corrodinggames.rts.game.a,a,T(),resetZones,[I] 区域系统重置,verified-exists
+method,com.corrodinggames.rts.game.a,a,a(com.corrodinggames.rts.gameFramework.j.as),writeToStream,[V] 网络序列化输出,verified-exists
+field,com.corrodinggames.rts.game.a,a,aA,buildingCount,Building count,verified-exists
+field,com.corrodinggames.rts.game.a,a,aB,extractorCount,Extractor count,verified-exists
+field,com.corrodinggames.rts.game.a,a,aC,factoryCount,Factory count,verified-exists
+field,com.corrodinggames.rts.game.a,a,aD,builderCount,Builder unit count,verified-exists
+field,com.corrodinggames.rts.game.a,a,aE,combatUnitCount,Combat unit count,verified-exists
+field,com.corrodinggames.rts.game.a,a,aF,harvesterCount,Harvester count,verified-exists
+field,com.corrodinggames.rts.game.a,a,aG,scoutCount,Scout unit count,verified-exists
+field,com.corrodinggames.rts.game.a,a,aH,experimentalCount,Experimental unit count,verified-exists
+field,com.corrodinggames.rts.game.a,a,aI,zoneIdCounter,[V] public int; 区域 ID 分配器 (AIStrategyNode 构造时 ++a2.aI),verified-exists
+field,com.corrodinggames.rts.game.a,a,aJ,turtleFlag,[V] int; 缩壳模式标志位 (ae() 检查 bit0),verified-exists
+field,com.corrodinggames.rts.game.a,a,aK,isHumanPlayer,[V] boolean; 该玩家是否为人类控制,verified-exists
+field,com.corrodinggames.rts.game.a,a,aL,tier2Accum,[V] float; Tier2 累计器 (80ms 周期),verified-exists
+field,com.corrodinggames.rts.game.a,a,aM,tier2Param,[V] float; Tier2 参数累计器,verified-exists
+field,com.corrodinggames.rts.game.a,a,aN,tier3Accum,[V] float; Tier3 累计器 (250ms 周期),verified-exists
+field,com.corrodinggames.rts.game.a,a,aO,tier3Param,[V] float; Tier3 参数累计器,verified-exists
+field,com.corrodinggames.rts.game.a,a,aP,tier1Accum,"""[V] float; Tier1 累计器 (25ms 周期""",verified-exists
+field,com.corrodinggames.rts.game.a,a,aQ,creditAccumulator,"""[V] float; 信用累计器""",verified-exists
+field,com.corrodinggames.rts.game.a,a,aR,groupUpdateTimer,[V] float; 单位组更新倒计时,verified-exists
+field,com.corrodinggames.rts.game.a,a,aS,groupUpdateAccum,[V] float; 单位组更新累计器,verified-exists
+field,com.corrodinggames.rts.game.a,a,aT,forwardZoneTimer,[V] float; 前置区域创建倒计时,verified-exists
+field,com.corrodinggames.rts.game.a,a,aU,resourceZoneTimer,[V] float; 资源区域创建倒计时,verified-exists
+field,com.corrodinggames.rts.game.a,a,aV,recycleTimer,Recycle/reclaim timer,verified-exists
+field,com.corrodinggames.rts.game.a,a,aW,repairTimer,[V] float; 修理调度倒计时,verified-exists
+field,com.corrodinggames.rts.game.a,a,aX,aiDisabled,[V] public boolean; AI 全局禁用开关,verified-exists
+field,com.corrodinggames.rts.game.a,a,aY,allowExpansion,[V] public boolean; 允许扩张 (tier3Update 决定单位归属),verified-exists
+field,com.corrodinggames.rts.game.a,a,aZ,aiSleeping,[V] public boolean; AI 休眠 (无单位时置 true),verified-exists
+method,com.corrodinggames.rts.game.a,a,ac(),shouldRushExpansion,[V] 难度3 或单位>300 时加速扩张 (forwardZoneTimer 加速 4x),verified-exists
+method,com.corrodinggames.rts.game.a,a,ad(),isHardDifficulty,[V] 难度指数>=2,verified-exists
+method,com.corrodinggames.rts.game.a,a,ae(),isTurtleEnabled,[V] turtleFlag bit0 检查 (缩壳模式),verified-exists
+method,com.corrodinggames.rts.game.a,a,af(),isTurtleMode,[V] ae() 的别名,verified-exists
+method,com.corrodinggames.rts.game.a,a,ag(),getDifficultyIndex,[V] 返回 difficultyIndex,verified-exists
+method,com.corrodinggames.rts.game.a,a,ah(),isUnitLimitReached,[V] 全局单位数 > 3000,verified-exists
+method,com.corrodinggames.rts.game.a,a,ai(),useTransportsOnThisMap,"""[V] 是否本图使用运输机 (路径检查""",verified-exists
+method,com.corrodinggames.rts.game.a,a,aj(),useHoverTransportsOnThisMap,[V] 是否本图使用悬浮运输机 (ai() && waterPathExists),verified-exists
+method,com.corrodinggames.rts.game.a,a,ak(),recountUnitCounts,[V] 重算 12 项统计计数 (air/factory/builder/combat/building/extractor/harvester/scout/land/water/experimental),verified-exists
+method,com.corrodinggames.rts.game.a,a,al(),tickAllBehaviors,[V] 遍历 aiBehaviorList 调用 b(),verified-exists
+method,com.corrodinggames.rts.game.a,a,am(),getMapCenter,[V] 返回地图中心点 (缓存到 centerPosition),verified-exists
+method,com.corrodinggames.rts.game.a,a,an(),findBestResourcePool,[V] 随机选取一个资源池 (bL.A 随机),verified-exists
+method,com.corrodinggames.rts.game.a,a,ao(),countUnitsNeedingTransport,[V] 统计所有组内 strandedUnits 总数,verified-exists
+method,com.corrodinggames.rts.game.a,a,ap(),getZoneTypeList,[V] 返回区域类型定义列表,verified-exists
+method,com.corrodinggames.rts.game.a,a,aq(),debugCheckZones,[I] 调试: 区域 ID 重叠检查 + 基地重叠计数 (n3>0 时日志),verified-exists
+method,com.corrodinggames.rts.game.a,a,ar(),findForwardFactory,[V] 随机选取一个敌方工厂 (isHostile 单位),verified-exists
+field,com.corrodinggames.rts.game.a,a,as,globalAIEnabled,[V] static boolean; incomeUpdate 入口检查 (as && l.B().bl),verified-exists
+method,com.corrodinggames.rts.game.a,a,as(),findRandomEnemyUnit,[I] 随机选取一个敌方攻击单位 (tier3Update+findEnemy 过滤),verified-exists
+field,com.corrodinggames.rts.game.a,a,at,maxUnits,[V] final int=3000; 单队最大单位数上限 (MAX_UNITS),verified-exists
+method,com.corrodinggames.rts.game.a,a,at(),findRandomEnemyPosition,"""[I] 随机敌方单位位置 (PointF""",verified-exists
+field,com.corrodinggames.rts.game.a,a,au,totalUnitCount,Total unit count,verified-exists
+method,com.corrodinggames.rts.game.a,a,au(),countDefendingUnits,[I] 统计防御组单位总数 (aB.b() 且非 hostile),verified-exists
+field,com.corrodinggames.rts.game.a,a,av,enemyUnitCount,Enemy unit count,verified-exists
+method,com.corrodinggames.rts.game.a,a,av(),setupAI,[V] AI 初始化: 设定各层定时器初值、debugPaint、tick 行为,verified-exists
+field,com.corrodinggames.rts.game.a,a,aw,forwardZoneCount,"""[V] int; 前置区域计数""",verified-exists
+field,com.corrodinggames.rts.game.a,a,ax,landUnitCount,Land unit count,verified-exists
+field,com.corrodinggames.rts.game.a,a,ay,waterUnitCount,Water unit count,verified-exists
+field,com.corrodinggames.rts.game.a,a,az,airUnitCount,Air unit count,verified-exists
+method,com.corrodinggames.rts.game.a,a,b(android.graphics.PointF),isBuildLocationValid,[I] private; 位置合法性: 与己方单位距离/敌单位计数检查,verified-exists
+field,com.corrodinggames.rts.game.a,a,bA,harvesterUnits,[V] d; 采集者 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,bB,extractorUnits,[V] d; 提取器 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,bC,buildingFactories,[V] d; 工厂 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,bD,buildingFactoriesForBuilders,[V] d; 建造者工厂 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,bE,combatManager,[V] public c; 战斗计数缓存管理器,verified-exists
+field,com.corrodinggames.rts.game.a,a,bF,difficultyIndex,[V] int; 难度指数 (ag() 读取),verified-exists
+field,com.corrodinggames.rts.game.a,a,bG,updateCooldown,[V] public float; 主循环冷却 (剩余时间),verified-exists
+field,com.corrodinggames.rts.game.a,a,bH,sortedZones,[V] ArrayList; 按优先级排序的区域列表,verified-exists
+field,com.corrodinggames.rts.game.a,a,bI,nearbyUnitsCache,"""[V] public static final gameFramework.utility.u; 碰撞查询结果缓存 (a(as""",f
+field,com.corrodinggames.rts.game.a,a,bJ,aiBehaviors,[V] public final gameFramework.utility.m; AI 行为扩展列表 (a.a.a 实例),verified-exists
+field,com.corrodinggames.rts.game.a,a,bK,zoneTypeList,Zone type definitions (static ArrayList),verified-exists
+field,com.corrodinggames.rts.game.a,a,ba,attackingCount,[V] int; 当前攻击组数量,verified-exists
+field,com.corrodinggames.rts.game.a,a,bb,defendingCount,[V] int; 当前防御组数量,verified-exists
+field,com.corrodinggames.rts.game.a,a,bc,amphibiousCount,[V] int; 两栖单位数量,verified-exists
+field,com.corrodinggames.rts.game.a,a,bd,firstRun,[V] boolean; 首次运行标志 (路径可用性初始化),verified-exists
+field,com.corrodinggames.rts.game.a,a,be,firstRunDelayed,[V] boolean; 延迟首跑标志 (搜 damagingBorder),verified-exists
+field,com.corrodinggames.rts.game.a,a,bf,mapChecked,[V] boolean; 地图检查完成标志,verified-exists
+field,com.corrodinggames.rts.game.a,a,bg,damagingBorder,[V] units.f; 地图伤害边界单位,verified-exists
+field,com.corrodinggames.rts.game.a,a,bh,landPathExists,[V] boolean; 陆路连通性,verified-exists
+field,com.corrodinggames.rts.game.a,a,bi,waterPathExists,[V] boolean; 水路连通性,verified-exists
+field,com.corrodinggames.rts.game.a,a,bj,harborPathExists,[V] boolean; 港口连通性,verified-exists
+field,com.corrodinggames.rts.game.a,a,bk,airPathExists,[V] boolean; 空路连通性,verified-exists
+field,com.corrodinggames.rts.game.a,a,bl,transportCount,[V] int; 运输机数量,verified-exists
+field,com.corrodinggames.rts.game.a,a,bm,zoneQueue,[V] ConcurrentLinkedQueue; 区域活动队列 (ConcurrentLinkedQueue),verified-exists
+field,com.corrodinggames.rts.game.a,a,bn,zoneSnapshot,"""[V] ArrayList; 区域快照 (zoneQueue 的拷贝""",verified-exists
+field,com.corrodinggames.rts.game.a,a,bo,centerPosition,Map center position (PointF),verified-exists
+field,com.corrodinggames.rts.game.a,a,bp,debugPaint,Debug drawing paint,verified-exists
+field,com.corrodinggames.rts.game.a,a,bq,aiBehaviorList,AI behavior extension list,verified-exists
+field,com.corrodinggames.rts.game.a,a,br,attackingUnitsLand,[V] d; 陆地攻击组 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,bs,attackingUnitsHover,[V] d; 悬浮攻击组 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,bt,attackingUnitsAir,[V] d; 空中攻击组 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,bu,attackingUnitsWater,[V] d; 水上攻击组 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,bv,buildingUnits,[V] d; 建造单位 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,bw,transportUnits,[V] d; 运输单位 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,bx,transportUnitsFlying,[V] d; 飞行运输单位 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,by,transportUnitsNonFlying,[V] d; 非飞行运输单位 UnitBuildStrategy,verified-exists
+field,com.corrodinggames.rts.game.a,a,bz,builderUnits,[V] d; 建造者 UnitBuildStrategy,verified-exists
+method,com.corrodinggames.rts.game.a,a,c(com.corrodinggames.rts.gameFramework.j.k),readFromStream,[V] 网络反序列化输入 (完整 AI 状态),verified-exists
+method,com.corrodinggames.rts.game.a,a,cz(),selectBuilder,Select best builder unit,suspicious-bc-missing
+method,com.corrodinggames.rts.game.a,a,d(java.lang.String),debugLog,[V] AI 调试日志输出 (zoneUpdate(String)),verified-exists
+method,com.corrodinggames.rts.game.a,a,e(com.corrodinggames.rts.game.units.am),findZoneAtUnit,[V] 找包含该单位的区域,verified-exists
+method,com.corrodinggames.rts.game.a,a,f(com.corrodinggames.rts.game.units.am),findZoneForUnit,"""[I] 按单位位置找区域 (tier3Update(eo""",verified-exists
+method,com.corrodinggames.rts.game.a,a,g(com.corrodinggames.rts.game.units.am),resetAI,[V] 判定单位是否重置 AI 归属 (cr() 检查),verified-exists
+method,com.corrodinggames.rts.game.a,a,h(com.corrodinggames.rts.game.units.am),isHostile,[V] 判定单位是否为敌对 (isHostile 核心),verified-exists
+method,com.corrodinggames.rts.game.a,a,i(float),incomeUpdateTimer,[V] 收入更新: 统计视野内己方单位并绘制调试信息,verified-exists
+method,com.corrodinggames.rts.game.a,a,j(float),findEnemy,[V] 敌意换算: f2/60*1000,verified-exists
+method,com.corrodinggames.rts.game.a,a,k(float),findAlly,[V] 友方换算: f2/60,verified-exists
+method,com.corrodinggames.rts.game.a,a,l(int),createZoneByType,"""[V] 按类型 ID 创建区域 (1=Projectile""",2=CombatMain
+method,com.corrodinggames.rts.game.a,a,m(int),findZoneById,[V] 按区域 ID 在 zoneQueue 中查找 (canAfford(int)),verified-exists
+method,com.corrodinggames.rts.game.a,a,n(float),updateBuilders,[V] 建造者调度: 分配建造任务 (executeBuild/防御单位检测),verified-exists
+method,com.corrodinggames.rts.game.a,d,a(com.corrodinggames.rts.game.units.as,com.corrodinggames.rts.game.units.ao),isMovementTypeCompatible | [V] 单位类型移动类型兼容性检查,verified-exists
+method,com.corrodinggames.rts.game.a,d,a,isEnabled,real-class-inferred: com.corrodinggames.rts.game.a.d,real-class-v1200
+method,com.corrodinggames.rts.game.a,d,a(com.corrodinggames.rts.game.units.as),isUnitTypeAllowed,[V] 抽象; 该类型是否加入此策略,verified-exists
+method,com.corrodinggames.rts.game.a,d,b,reset,real-class-inferred: com.corrodinggames.rts.game.a.d,real-class-v1200
+method,com.corrodinggames.rts.game.a,d,b(com.corrodinggames.rts.game.units.as),containsUnitType,[V] 策略内是否包含该单位类型,verified-exists
+method,com.corrodinggames.rts.game.a,d,c,getas,real-class-inferred: com.corrodinggames.rts.game.a.d,real-class-v1200
+method,com.corrodinggames.rts.game.a,d,c(com.corrodinggames.rts.game.units.as),getBuildWeight,[V] 单位建造权重 (默认 10.0f),verified-exists
+field,com.corrodinggames.rts.game.a,d,d,owner,[V] final synthetic a; 所属 GameWorld,verified-exists
+method,com.corrodinggames.rts.game.a,f,a(com.corrodinggames.rts.game.units.y,com.corrodinggames.rts.game.units.custom.g),isTeamTagMatch | [V] static; TeamTag 匹配判定,verified-exists
+method,com.corrodinggames.rts.game.a,f,a,gets,real-class-inferred: com.corrodinggames.rts.game.a.f,real-class-v1200
+method,com.corrodinggames.rts.game.a,f,a(java.util.AbstractList),getRandomElement,[V] static; 从列表随机取元素,verified-exists
+method,com.corrodinggames.rts.game.a,f,b,isEnabled,real-class-inferred: com.corrodinggames.rts.game.a.f,real-class-v1200
+field,com.corrodinggames.rts.game.a,h,F,units,[V] ArrayList; 组内单位列表,verified-exists
+field,com.corrodinggames.rts.game.a,h,G,strandedUnits,[V] ArrayList; 被困/待运输单位列表,verified-exists
+method,com.corrodinggames.rts.game.a,h,a,reset,real-class-inferred: com.corrodinggames.rts.game.a.h,real-class-v1200
+method,com.corrodinggames.rts.game.a,h,a(),addUnitHook,"""[I] 无参添加钩子 (默认 false""",verified-exists
+method,com.corrodinggames.rts.game.a,h,b(),removeUnitHook,[I] 无参移除钩子 (默认 false),verified-exists
+method,com.corrodinggames.rts.game.a,h,c(float),update,[V] abstract; 组更新接口,verified-exists
+method,com.corrodinggames.rts.game.a,h,l(),getUnitCount,[V] 返回组内单位数,verified-exists
+method,com.corrodinggames.rts.game.a,h,m(),isInZoneQueue,[V] 检查 TransporterGroup 是否引用本组,verified-exists
+method,com.corrodinggames.rts.game.a,h,n(),cleanupDead,[V] 清理死亡单位 (从 units/strandedUnits 移除),verified-exists
+method,com.corrodinggames.rts.game.a,h,o(),cleanupStranded,[V] 清理已无效的被困单位,verified-exists
+method,com.corrodinggames.rts.game.a,h,p(),destroy,[V] 覆盖 o.p(): 释放单位并清空 strandedUnits,verified-exists
+method,com.corrodinggames.rts.game.a,h,q(),releaseAll,[V] 释放所有单位归属并清空列表,verified-exists
+method,com.corrodinggames.rts.game.a,j,a,getint,real-class-inferred: com.corrodinggames.rts.game.a.j,real-class-v1200
+method,com.corrodinggames.rts.game.a,j,a(),getOrdinal,[V] 返回 ordinal(),verified-exists
+field,com.corrodinggames.rts.game.a,j,b,RESOURCE_OUTPOST,[V] 枚举常量: 资源前哨,verified-exists
+field,com.corrodinggames.rts.game.a,j,c,FORWARD_OUTPOST,[V] 枚举常量: 前置前哨,verified-exists
+field,com.corrodinggames.rts.game.a,k,a,PRE,[V] 枚举常量: 建造前阶段,verified-exists
+field,com.corrodinggames.rts.game.a,k,b,ACTIVE,[V] 枚举常量: 激活阶段 (主基地默认),verified-exists
+field,com.corrodinggames.rts.game.a,k,c,FORWARD,[V] 枚举常量: 前置阶段 (资源基地),verified-exists
+method,com.corrodinggames.rts.game.a,l,a,reset,real-class-inferred: com.corrodinggames.rts.game.a.l,real-class-v1200
+method,com.corrodinggames.rts.game.a,l,c,reset,real-class-inferred: com.corrodinggames.rts.game.a.l,real-class-v1200
+method,com.corrodinggames.rts.game.a,l,c(float),update,[V] 集结更新: 移除接近单位的分配并超时销毁,verified-exists
+method,com.corrodinggames.rts.game.a,n,a(float,boolean),findTargetGroup,verified-exists
+method,com.corrodinggames.rts.game.a,n,a,geti,real-class-inferred: com.corrodinggames.rts.game.a.n,real-class-v1200
+method,com.corrodinggames.rts.game.a,n,a(com.corrodinggames.rts.gameFramework.j.as),writeToStream,[V] 网络序列化输出,verified-exists
+field,com.corrodinggames.rts.game.a,n,b,targetZoneId,[I] int; 目标区域 ID,verified-exists
+method,com.corrodinggames.rts.game.a,n,c,reset,real-class-inferred: com.corrodinggames.rts.game.a.n,real-class-v1200
+method,com.corrodinggames.rts.game.a,n,c(),collectTransporterUnits,[V] 收集同队空闲运输单位入组 (容量内),verified-exists
+method,com.corrodinggames.rts.game.a,n,d,isEnabled,real-class-inferred: com.corrodinggames.rts.game.a.n,real-class-v1200
+method,com.corrodinggames.rts.game.a,n,d(),hasTargetGroup,[V] 是否有目标组 (m!=null),verified-exists
+method,com.corrodinggames.rts.game.a,n,e,reset,real-class-inferred: com.corrodinggames.rts.game.a.n,real-class-v1200
+method,com.corrodinggames.rts.game.a,n,e(),resetGroup,[V] 重置组状态 (卸载完成/重新出发),verified-exists
+method,com.corrodinggames.rts.game.a,n,f,reset,real-class-inferred: com.corrodinggames.rts.game.a.n,real-class-v1200
+method,com.corrodinggames.rts.game.a,n,f(),pickDropLocation,[V] 选定卸载点 (目标区域中心或地图中心),verified-exists
+field,com.corrodinggames.rts.game.a,n,g,findTargetTimer,[V] float=100; 寻找目标计时器 (80% 概率),verified-exists
+field,com.corrodinggames.rts.game.a,n,h,lifetimeTimer,[I] float; 生命周期计时器 (>1500 且组空销毁),verified-exists
+field,com.corrodinggames.rts.game.a,n,i,scanTimer,[V] float; 扫描单位计时器 (300ms),verified-exists
+field,com.corrodinggames.rts.game.a,n,j,moveTimer,[V] float; 移动指令计时器 (400ms),verified-exists
+field,com.corrodinggames.rts.game.a,n,k,unloadTimer,[V] float; 卸载指令计时器 (80/100ms),verified-exists
+field,com.corrodinggames.rts.game.a,n,l,capacity,[V] int; 运输容量 (调试 UnitsWanted),verified-exists
+field,com.corrodinggames.rts.game.a,n,m,targetGroup,[V] h; 目标单位组,verified-exists
+field,com.corrodinggames.rts.game.a,n,n,targetUnit,[V] units.y; 目标运输单位,verified-exists
+field,com.corrodinggames.rts.game.a,n,o,unloadElapsed,[V] float=0; 卸载累计时间 (>600/1200 扩大卸载区),verified-exists
+field,com.corrodinggames.rts.game.a,n,p,unloading,[V] boolean=false; 卸载中标志,verified-exists
+field,com.corrodinggames.rts.game.a,n,q,readyToMoveOut,[V] boolean; 准备出发标志 (调试 readyToMoveOut),verified-exists
+field,com.corrodinggames.rts.game.a,n,r,dropX,[V] float; 卸载点 X,verified-exists
+field,com.corrodinggames.rts.game.a,n,s,dropY,[V] float; 卸载点 Y,verified-exists
+method,com.corrodinggames.rts.game.a,o,a(com.corrodinggames.rts.game.units.am,float),isUnitInRange | [V] 单位是否在扩展范围内,verified-exists
+method,com.corrodinggames.rts.game.a,o,c(float,float),isPointInRadius | [V] 点是否在区域半径内,verified-exists
+method,com.corrodinggames.rts.game.a,o,d(float,float),distanceToPoint | [V] 点到区域中心距离平方,verified-exists
+field,com.corrodinggames.rts.game.a,o,Q,zoneId,[V] public int; 区域 ID (zoneIdCounter 分配),verified-exists
+field,com.corrodinggames.rts.game.a,o,R,aiController,[V] protected final a; 所属 GameWorld,verified-exists
+field,com.corrodinggames.rts.game.a,o,S,centerX,[V] public float; 区域中心 X,verified-exists
+field,com.corrodinggames.rts.game.a,o,T,centerY,[V] public float; 区域中心 Y,verified-exists
+field,com.corrodinggames.rts.game.a,o,U,radius,[V] public float; 区域半径,verified-exists
+field,com.corrodinggames.rts.game.a,o,V,destroyed,[V] public boolean; 已销毁标志,verified-exists
+field,com.corrodinggames.rts.game.a,o,W,pathQueryResult,[V] static final ArrayList; 寻路查询结果列表 (PathfindingUtils 输出),verified-exists
+method,com.corrodinggames.rts.game.a,o,a,getfloat,real-class-inferred: com.corrodinggames.rts.game.a.o,real-class-v1200
+method,com.corrodinggames.rts.game.a,o,a(com.corrodinggames.rts.gameFramework.j.as),writeToStream,[V] 网络序列化输出 (中心/半径),verified-exists
+method,com.corrodinggames.rts.game.a,o,b,isEnabled,real-class-inferred: com.corrodinggames.rts.game.a.o,real-class-v1200
+method,com.corrodinggames.rts.game.a,o,b(com.corrodinggames.rts.game.units.am),isUnitInRadius,[V] 单位是否在区域半径内 (含单位半径),verified-exists
+method,com.corrodinggames.rts.game.a,o,c,getfloat,real-class-inferred: com.corrodinggames.rts.game.a.o,real-class-v1200
+method,com.corrodinggames.rts.game.a,o,c(com.corrodinggames.rts.game.units.am),distanceToUnit,[V] 单位到区域中心距离平方,verified-exists
+method,com.corrodinggames.rts.game.a,o,e,getPointF,real-class-inferred: com.corrodinggames.rts.game.a.o,real-class-v1200
+method,com.corrodinggames.rts.game.a,o,e(com.corrodinggames.rts.game.units.as),findBuildPoint,[I] 寻找建造点: 实验单位/运输单位特殊处理+15 次随机探测,verified-exists
+method,com.corrodinggames.rts.game.a,o,p(),destroy,[V] 销毁: 从 zoneQueue/zoneSnapshot 移除并置 V=true,verified-exists
+method,com.corrodinggames.rts.game.a,o,w(),getTargetPoint,[V] 区域内随机目标点 (随机角度+半径内),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,a,taskId,Task identifier (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,b,taskName,Task display name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,c,taskDescription,Task description (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,d,startPosition,Start position (b=PointF),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,e,targetPosition,Target position (b=PointF),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,f,requiredUnits,Required units list (m=ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,g,triggerEvent,Trigger mission event (e),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,h,isActive,Task active flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,i,isRepeating,Task repeating flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,j,isCompleted,Task completed flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,k,priority,Task priority (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,l,maxAttempts,Maximum attempt count (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,m,hasStarted,Task started flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,n,startDelay,Start delay seconds (int  -1=none),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,o,timeoutSeconds,Timeout seconds (int  MAX=unlimited),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,p,currentAttempt,Current attempt counter (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,q,successEventId,Success event ID (int  -1=none),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,r,failureEventId,Failure event ID (int  -1=none),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,s,completionEventId,Completion event ID (int  -1=none),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,t,mapSpawnRef,Map spawn reference (game.b.a),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,u,useMapSpawn,Use map spawn point (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,v,taskScript,Task LogicBoolean script (bp),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,w,progressMin,Minimum progress value (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,x,progressMax,Maximum progress value (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,y,playerRef,Player reference (n),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AITask,z,displayMessage,Display message (LocalizedString),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AIWaveSystem,a,waveEnabled,Wave system enabled (static boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AIWaveSystem,h,waveName,Current wave name (bb),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AIWaveSystem,l,isActive,Wave system active (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,AIWaveSystem,y,waveCounter,Wave counter (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,E,paint1,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.n,f,F,paint2,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.n,f,G,paint3,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.n,f,H,paint4,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.n,f,I,boolean11,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.n,f,J,pendingSpawnQueue,Pending spawn queue,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,N,boolean12,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.n,f,O,attackTargets,Attack targets,verified-exists
+method,com.corrodinggames.rts.gameFramework.n,f,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.n,f,b,geti,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.n,f,c,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.n,f,d,getg,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.n,f,d(),getCurrentWave,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.gameFramework.n,f,e,setupWaveOrigin,[[MANUAL: single overload - verify with javap]: multi-overload — needs manual disambiguation] Initialize wave origin from attack_points (2 overloads),verified-exists
+method,com.corrodinggames.rts.gameFramework.n,f,f,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.n,f,f(),initDefaultWaveUnits,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.gameFramework.n,f,g,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.n,f,g(),isInEditorMode,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.gameFramework.n,f,h,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.n,f,h(),checkAutoAttackProximity,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.gameFramework.n,f,i,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.n,f,j,briefingPending,Briefing/intro text pending display,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,k,aiEnabled,Global AI enabled,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,l,boolean5,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.n,f,m,isDefeated,True when all player units destroyed,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,n,isSkirmish,True if map type is skirmish,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,o,shareFogWithAllies,Fog shared with allies,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,p,classicMode,Classic survival wave mode flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,q,infiniteWaves,Infinite waves,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,r,waveIndex,Wave index,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,s,waveTitleText,Wave announcement title text,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,t,waveCompositionText,Wave composition description,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,u,waveCycleCounter,Wave spawn cycle counter,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,v,waveDifficultyBase,Base difficulty for wave scaling,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,w,waveCycleCount,Wave cycle iteration count,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,x,waveSpacingCounter,Spacing counter for waves,verified-exists
+field,com.corrodinggames.rts.gameFramework.n,f,y,int8,real-class-inferred: com.corrodinggames.rts.gameFramework.n.f,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.n,g,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.n.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.n,g,b,isInfinite,Infinite waves flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,g,c,isEnabled,Wave system enabled (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,g,d,waveInterval,Wave spawn interval (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,g,e,currentWaveIndex,Current wave index (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,g,f,waveName,Wave display name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,g,g,debugMode,Debug mode enabled (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,g,h,isPaused,Wave spawning paused (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.n,g,i,f,real-class-inferred: com.corrodinggames.rts.gameFramework.n.g,real-class-v1200
+method,com.corrodinggames.rts.game.a,y,,assignBaseZone,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置23),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.n,b,,geti,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置3),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.n,d,,getCurrentWave,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置9),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.n,e,,setupWaveOrigin,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置10),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.n,h,,checkAutoAttackProximity,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置25),order-align-v19.111

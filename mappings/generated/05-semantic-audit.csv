@@ -1,0 +1,483 @@
+fqn,group,status,project_name,fwd_value_count,supplement_members,note
+android.app.Activity,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.app.Application,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.app.Application$ActivityLifecycleCallbacks,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.app.Application$OnProvideAssistDataListener,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.content.Context,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.content.ContextWrapper,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.content.ServerContext,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.content.res.AssetManager,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.content.res.AssetManager$AssetInputStream,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Bitmap,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Bitmap$1,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Bitmap$CompressFormat,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Bitmap$Config,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Canvas,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Canvas$EdgeType,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Canvas$VertexMode,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Color,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.ColorFilter,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.LightingColorFilter,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Matrix,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Matrix$1,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Matrix$ScaleToFit,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Paint,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Paint$Align,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Paint$Cap,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Paint$FontMetrics,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Paint$FontMetricsInt,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Paint$Join,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Paint$Style,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Point,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Point$1,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.PointF,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.PorterDuffColorFilter,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.PorterDuffXfermode,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Rect,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.RectF,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.RectF$1,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.TemporaryBuffer,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Typeface,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.graphics.Xfermode,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.net.http.AndroidHttpClient,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.net.http.AndroidHttpClient$1,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.net.http.AndroidHttpClient$2,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.net.http.Headers,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.net.http.Headers$HeaderCallback,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.os.Handler,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.os.Handler$Callback,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.os.IMessenger,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.os.IMessenger$Stub,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.os.Looper,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.os.Message,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.os.Message$1,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.os.MessageQueue,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.os.MessageQueue$IdleHandler,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.os.SystemClock,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.support.v4.app.ActivityCompat,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.support.v4.content.ContextCompat,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.util.Log,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.util.Log$1,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.util.Log$TerribleFailureHandler,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.util.SparseArray,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.view.KeyEvent,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.view.KeyEvent$1,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.view.KeyEvent$Callback,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+android.view.KeyEvent$DispatcherState,semantic,MISSING,,0,0,03无同名文件 — 真实缺口
+com.Element,semantic,IDENTITY,,0,0,03: com/Element.java
+com.ElementDocument,semantic,IDENTITY,,0,0,03: com/ElementDocument.java
+com.ElementList,semantic,IDENTITY,,0,0,03: com/ElementList.java
+com.LibRocket,semantic,IDENTITY,,0,0,03: com/LibRocket.java
+com.LibRocket$CompiledGeometry,semantic,IDENTITY,,0,0,03: com/LibRocket$CompiledGeometry.java
+com.LibRocket$TextureHolder,semantic,IDENTITY,,0,0,03: com/LibRocket$TextureHolder.java
+com.codedisaster.steamworks.SteamAPI,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamAPI.java
+com.codedisaster.steamworks.SteamAPICall,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamAPICall.java
+com.codedisaster.steamworks.SteamAPIWarningMessageHook,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamAPIWarningMessageHook.java
+com.codedisaster.steamworks.SteamApps,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamApps.java
+com.codedisaster.steamworks.SteamAuth,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamAuth.java
+com.codedisaster.steamworks.SteamAuth$AuthSessionResponse,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamAuth$AuthSessionResponse.java
+com.codedisaster.steamworks.SteamAuth$BeginAuthSessionResult,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamAuth$BeginAuthSessionResult.java
+com.codedisaster.steamworks.SteamAuth$UserHasLicenseForAppResult,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamAuth$UserHasLicenseForAppResult.java
+com.codedisaster.steamworks.SteamAuthTicket,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamAuthTicket.java
+com.codedisaster.steamworks.SteamCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamCallbackAdapter.java
+com.codedisaster.steamworks.SteamController,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamController.java
+com.codedisaster.steamworks.SteamController$ActionOrigin,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamController$ActionOrigin.java
+com.codedisaster.steamworks.SteamController$LEDFlag,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamController$LEDFlag.java
+com.codedisaster.steamworks.SteamController$Pad,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamController$Pad.java
+com.codedisaster.steamworks.SteamController$Source,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamController$Source.java
+com.codedisaster.steamworks.SteamController$SourceMode,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamController$SourceMode.java
+com.codedisaster.steamworks.SteamControllerActionSetHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamControllerActionSetHandle.java
+com.codedisaster.steamworks.SteamControllerAnalogActionData,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamControllerAnalogActionData.java
+com.codedisaster.steamworks.SteamControllerAnalogActionHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamControllerAnalogActionHandle.java
+com.codedisaster.steamworks.SteamControllerDigitalActionData,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamControllerDigitalActionData.java
+com.codedisaster.steamworks.SteamControllerDigitalActionHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamControllerDigitalActionHandle.java
+com.codedisaster.steamworks.SteamControllerHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamControllerHandle.java
+com.codedisaster.steamworks.SteamControllerMotionData,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamControllerMotionData.java
+com.codedisaster.steamworks.SteamException,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamException.java
+com.codedisaster.steamworks.SteamFriends,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamFriends.java
+com.codedisaster.steamworks.SteamFriends$FriendFlags,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamFriends$FriendFlags.java
+com.codedisaster.steamworks.SteamFriends$FriendRelationship,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamFriends$FriendRelationship.java
+com.codedisaster.steamworks.SteamFriends$OverlayDialog,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamFriends$OverlayDialog.java
+com.codedisaster.steamworks.SteamFriends$OverlayToStoreFlag,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamFriends$OverlayToStoreFlag.java
+com.codedisaster.steamworks.SteamFriends$OverlayToUserDialog,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamFriends$OverlayToUserDialog.java
+com.codedisaster.steamworks.SteamFriends$PersonaChange,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamFriends$PersonaChange.java
+com.codedisaster.steamworks.SteamFriends$PersonaState,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamFriends$PersonaState.java
+com.codedisaster.steamworks.SteamFriendsCallback,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamFriendsCallback.java
+com.codedisaster.steamworks.SteamFriendsCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamFriendsCallbackAdapter.java
+com.codedisaster.steamworks.SteamGameServer,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamGameServer.java
+com.codedisaster.steamworks.SteamGameServer$DenyReason,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamGameServer$DenyReason.java
+com.codedisaster.steamworks.SteamGameServerAPI,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamGameServerAPI.java
+com.codedisaster.steamworks.SteamGameServerAPI$ServerMode,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamGameServerAPI$ServerMode.java
+com.codedisaster.steamworks.SteamGameServerCallback,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamGameServerCallback.java
+com.codedisaster.steamworks.SteamGameServerCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamGameServerCallbackAdapter.java
+com.codedisaster.steamworks.SteamGameServerStats,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamGameServerStats.java
+com.codedisaster.steamworks.SteamGameServerStatsCallback,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamGameServerStatsCallback.java
+com.codedisaster.steamworks.SteamGameServerStatsCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamGameServerStatsCallbackAdapter.java
+com.codedisaster.steamworks.SteamHTTP,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamHTTP.java
+com.codedisaster.steamworks.SteamHTTP$API,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamHTTP$API.java
+com.codedisaster.steamworks.SteamHTTP$HTTPMethod,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamHTTP$HTTPMethod.java
+com.codedisaster.steamworks.SteamHTTP$HTTPStatusCode,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamHTTP$HTTPStatusCode.java
+com.codedisaster.steamworks.SteamHTTPCallback,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamHTTPCallback.java
+com.codedisaster.steamworks.SteamHTTPCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamHTTPCallbackAdapter.java
+com.codedisaster.steamworks.SteamHTTPRequestHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamHTTPRequestHandle.java
+com.codedisaster.steamworks.SteamID,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamID.java
+com.codedisaster.steamworks.SteamInterface,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamInterface.java
+com.codedisaster.steamworks.SteamLeaderboardEntriesHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamLeaderboardEntriesHandle.java
+com.codedisaster.steamworks.SteamLeaderboardEntry,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamLeaderboardEntry.java
+com.codedisaster.steamworks.SteamLeaderboardHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamLeaderboardHandle.java
+com.codedisaster.steamworks.SteamMatchMakingKeyValuePair,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamMatchMakingKeyValuePair.java
+com.codedisaster.steamworks.SteamMatchmaking,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamMatchmaking.java
+com.codedisaster.steamworks.SteamMatchmaking$ChatEntry,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamMatchmaking$ChatEntry.java
+com.codedisaster.steamworks.SteamMatchmaking$ChatEntryType,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamMatchmaking$ChatEntryType.java
+com.codedisaster.steamworks.SteamMatchmaking$ChatMemberStateChange,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamMatchmaking$ChatMemberStateChange.java
+com.codedisaster.steamworks.SteamMatchmaking$ChatRoomEnterResponse,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamMatchmaking$ChatRoomEnterResponse.java
+com.codedisaster.steamworks.SteamMatchmaking$LobbyComparison,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamMatchmaking$LobbyComparison.java
+com.codedisaster.steamworks.SteamMatchmaking$LobbyDistanceFilter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamMatchmaking$LobbyDistanceFilter.java
+com.codedisaster.steamworks.SteamMatchmaking$LobbyType,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamMatchmaking$LobbyType.java
+com.codedisaster.steamworks.SteamMatchmakingCallback,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamMatchmakingCallback.java
+com.codedisaster.steamworks.SteamMatchmakingCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamMatchmakingCallbackAdapter.java
+com.codedisaster.steamworks.SteamNativeHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamNativeHandle.java
+com.codedisaster.steamworks.SteamNetworking,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamNetworking.java
+com.codedisaster.steamworks.SteamNetworking$API,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamNetworking$API.java
+com.codedisaster.steamworks.SteamNetworking$P2PSend,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamNetworking$P2PSend.java
+com.codedisaster.steamworks.SteamNetworking$P2PSessionError,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamNetworking$P2PSessionError.java
+com.codedisaster.steamworks.SteamNetworking$P2PSessionState,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamNetworking$P2PSessionState.java
+com.codedisaster.steamworks.SteamNetworkingCallback,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamNetworkingCallback.java
+com.codedisaster.steamworks.SteamNetworkingCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamNetworkingCallbackAdapter.java
+com.codedisaster.steamworks.SteamPublishedFileID,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamPublishedFileID.java
+com.codedisaster.steamworks.SteamPublishedFileUpdateHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamPublishedFileUpdateHandle.java
+com.codedisaster.steamworks.SteamRemoteStorage,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamRemoteStorage.java
+com.codedisaster.steamworks.SteamRemoteStorage$PublishedFileVisibility,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamRemoteStorage$PublishedFileVisibility.java
+com.codedisaster.steamworks.SteamRemoteStorage$RemoteStoragePlatform,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamRemoteStorage$RemoteStoragePlatform.java
+com.codedisaster.steamworks.SteamRemoteStorage$UGCReadAction,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamRemoteStorage$UGCReadAction.java
+com.codedisaster.steamworks.SteamRemoteStorage$WorkshopFileType,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamRemoteStorage$WorkshopFileType.java
+com.codedisaster.steamworks.SteamRemoteStorageCallback,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamRemoteStorageCallback.java
+com.codedisaster.steamworks.SteamRemoteStorageCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamRemoteStorageCallbackAdapter.java
+com.codedisaster.steamworks.SteamResult,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamResult.java
+com.codedisaster.steamworks.SteamSharedLibraryLoader,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamSharedLibraryLoader.java
+com.codedisaster.steamworks.SteamUGC,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC.java
+com.codedisaster.steamworks.SteamUGC$ItemAdditionalPreview,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$ItemAdditionalPreview.java
+com.codedisaster.steamworks.SteamUGC$ItemDownloadInfo,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$ItemDownloadInfo.java
+com.codedisaster.steamworks.SteamUGC$ItemInstallInfo,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$ItemInstallInfo.java
+com.codedisaster.steamworks.SteamUGC$ItemPreviewType,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$ItemPreviewType.java
+com.codedisaster.steamworks.SteamUGC$ItemState,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$ItemState.java
+com.codedisaster.steamworks.SteamUGC$ItemStatistic,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$ItemStatistic.java
+com.codedisaster.steamworks.SteamUGC$ItemUpdateInfo,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$ItemUpdateInfo.java
+com.codedisaster.steamworks.SteamUGC$ItemUpdateStatus,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$ItemUpdateStatus.java
+com.codedisaster.steamworks.SteamUGC$MatchingUGCType,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$MatchingUGCType.java
+com.codedisaster.steamworks.SteamUGC$UGCQueryType,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$UGCQueryType.java
+com.codedisaster.steamworks.SteamUGC$UserUGCList,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$UserUGCList.java
+com.codedisaster.steamworks.SteamUGC$UserUGCListSortOrder,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGC$UserUGCListSortOrder.java
+com.codedisaster.steamworks.SteamUGCCallback,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGCCallback.java
+com.codedisaster.steamworks.SteamUGCCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGCCallbackAdapter.java
+com.codedisaster.steamworks.SteamUGCDetails,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGCDetails.java
+com.codedisaster.steamworks.SteamUGCFileWriteStreamHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGCFileWriteStreamHandle.java
+com.codedisaster.steamworks.SteamUGCHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGCHandle.java
+com.codedisaster.steamworks.SteamUGCQuery,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGCQuery.java
+com.codedisaster.steamworks.SteamUGCUpdateHandle,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUGCUpdateHandle.java
+com.codedisaster.steamworks.SteamUniverse,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUniverse.java
+com.codedisaster.steamworks.SteamUser,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUser.java
+com.codedisaster.steamworks.SteamUserCallback,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUserCallback.java
+com.codedisaster.steamworks.SteamUserCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUserCallbackAdapter.java
+com.codedisaster.steamworks.SteamUserStats,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUserStats.java
+com.codedisaster.steamworks.SteamUserStats$LeaderboardDataRequest,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUserStats$LeaderboardDataRequest.java
+com.codedisaster.steamworks.SteamUserStats$LeaderboardDisplayType,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUserStats$LeaderboardDisplayType.java
+com.codedisaster.steamworks.SteamUserStats$LeaderboardSortMethod,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUserStats$LeaderboardSortMethod.java
+com.codedisaster.steamworks.SteamUserStats$LeaderboardUploadScoreMethod,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUserStats$LeaderboardUploadScoreMethod.java
+com.codedisaster.steamworks.SteamUserStatsCallback,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUserStatsCallback.java
+com.codedisaster.steamworks.SteamUserStatsCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUserStatsCallbackAdapter.java
+com.codedisaster.steamworks.SteamUtils,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUtils.java
+com.codedisaster.steamworks.SteamUtils$NotificationPosition,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUtils$NotificationPosition.java
+com.codedisaster.steamworks.SteamUtils$SteamAPICallFailure,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUtils$SteamAPICallFailure.java
+com.codedisaster.steamworks.SteamUtilsCallback,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUtilsCallback.java
+com.codedisaster.steamworks.SteamUtilsCallbackAdapter,semantic,IDENTITY,,0,0,03: com/codedisaster/steamworks/SteamUtilsCallbackAdapter.java
+com.corrodinggames.librocket.scripts.Debug,semantic,RENAMED,com.corrodinggames.librocket.scripts.DebugUI,0,0,
+com.corrodinggames.librocket.scripts.Debug$1,semantic,RENAMED,com.corrodinggames.librocket.scripts.DebugUI$1,0,0,
+com.corrodinggames.librocket.scripts.Mods,semantic,RENAMED,com.corrodinggames.librocket.scripts.ModsUI,0,0,
+com.corrodinggames.librocket.scripts.Mods$1,semantic,RENAMED,com.corrodinggames.librocket.scripts.ModsUI$1,0,0,
+com.corrodinggames.librocket.scripts.Multiplayer,semantic,RENAMED,com.corrodinggames.librocket.scripts.MultiplayerUI,0,0,
+com.corrodinggames.librocket.scripts.Multiplayer$1,semantic,RENAMED,com.corrodinggames.librocket.scripts.MultiplayerUI$1,0,0,
+com.corrodinggames.librocket.scripts.Multiplayer$DropdownOption,semantic,RENAMED,com.corrodinggames.librocket.scripts.MultiplayerUI$DropdownOption,0,0,
+com.corrodinggames.librocket.scripts.Root,semantic,RENAMED,com.corrodinggames.librocket.scripts.Root,0,19,
+com.corrodinggames.librocket.scripts.Root$1,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$1,0,0,
+com.corrodinggames.librocket.scripts.Root$10,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$10,0,0,
+com.corrodinggames.librocket.scripts.Root$11,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$11,0,0,
+com.corrodinggames.librocket.scripts.Root$2,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$2,0,0,
+com.corrodinggames.librocket.scripts.Root$3,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$3,0,0,
+com.corrodinggames.librocket.scripts.Root$4,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$4,0,0,
+com.corrodinggames.librocket.scripts.Root$5,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$5,0,0,
+com.corrodinggames.librocket.scripts.Root$6,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$6,0,0,
+com.corrodinggames.librocket.scripts.Root$7,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$7,0,0,
+com.corrodinggames.librocket.scripts.Root$8,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$8,0,0,
+com.corrodinggames.librocket.scripts.Root$9,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$9,0,0,
+com.corrodinggames.librocket.scripts.Root$TableCell,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$TableCell,0,0,
+com.corrodinggames.librocket.scripts.Root$TableData,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$TableData,0,0,
+com.corrodinggames.librocket.scripts.Root$TableRow,semantic,RENAMED,com.corrodinggames.librocket.scripts.MainUIController$TableRow,0,0,
+com.corrodinggames.librocket.scripts.ScriptContext,semantic,RENAMED,com.corrodinggames.librocket.scripts.ScriptContext,0,4,
+com.corrodinggames.librocket.scripts.ScriptEngine,semantic,RENAMED,com.corrodinggames.librocket.scripts.ScriptEngine,0,35,
+com.corrodinggames.librocket.scripts.ScriptEngine$1,semantic,RENAMED,com.corrodinggames.librocket.scripts.UIScriptEngine$1,0,0,
+com.corrodinggames.librocket.scripts.ScriptEngine$Action,semantic,RENAMED,com.corrodinggames.librocket.scripts.UIScriptEngine$Action,0,0,
+com.corrodinggames.librocket.scripts.ScriptEngine$RunnableAction,semantic,RENAMED,com.corrodinggames.librocket.scripts.UIScriptEngine$RunnableAction,0,0,
+com.corrodinggames.rts.R,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R.java
+com.corrodinggames.rts.R$anim,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$anim.java
+com.corrodinggames.rts.R$array,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$array.java
+com.corrodinggames.rts.R$attr,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$attr.java
+com.corrodinggames.rts.R$color,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$color.java
+com.corrodinggames.rts.R$drawable,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$drawable.java
+com.corrodinggames.rts.R$id,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$id.java
+com.corrodinggames.rts.R$layout,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$layout.java
+com.corrodinggames.rts.R$raw,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$raw.java
+com.corrodinggames.rts.R$string,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$string.java
+com.corrodinggames.rts.R$style,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$style.java
+com.corrodinggames.rts.R$styleable,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$styleable.java
+com.corrodinggames.rts.R$xml,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/R$xml.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.BooleanParseException,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/BooleanParseException.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareBooleanOnly,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareBooleanOnly.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareEqualBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareEqualBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareEqualNumbers,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareEqualNumbers.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareEqualStrings,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareEqualStrings.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareEqualUnits,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareEqualUnits.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareGreaterThanNumbers,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareGreaterThanNumbers.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareGreaterThanOrEqualNumbers,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareGreaterThanOrEqualNumbers.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareLessThanNumbers,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareLessThanNumbers.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareLessThanOrEqualNumbers,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareLessThanOrEqualNumbers.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareNotEqualBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareNotEqualBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareNotEqualNumbers,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareNotEqualNumbers.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareNotEqualStrings,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareNotEqualStrings.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareNotEqualUnits,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareNotEqualUnits.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareNumbers,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$CompareNumbers.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathAddJoinerBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$MathAddJoinerBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathDivideJoinerBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$MathDivideJoinerBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathJoinerBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$MathJoinerBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathModulusJoinerBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$MathModulusJoinerBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathMultiplyJoinerBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$MathMultiplyJoinerBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathSubtractJoinerBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$MathSubtractJoinerBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$StringJoinerBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean$StringJoinerBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/effects/LogicBoolean.java;com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$AbstractNumberBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$AbstractNumberBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$AndBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$AndBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$CallContext,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$CallContext.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$CallContext_self,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$CallContext_self.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$CallContext_selfAndTarget,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$CallContext_selfAndTarget.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$JoinerBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$JoinerBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$LogicBooleanCommon,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$LogicBooleanCommon.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$LogicBooleanCommonLocking,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$LogicBooleanCommonLocking.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$LogicNumberOnly,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$LogicNumberOnly.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$NotBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$NotBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$OrBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$OrBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$Parameter,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$Parameter.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$ReturnType,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$StaticBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$StaticBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$StaticBooleanFalse,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$StaticBooleanFalse.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$StaticBooleanTrue,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$StaticBooleanTrue.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$StaticValueBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$StaticValueBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$TimeBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$TimeBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanActionFilter,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanActionFilter.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$AmmoBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$AmmoBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$AmmoIncludingQueuedBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$AmmoIncludingQueuedBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$BuiltAmountBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$BuiltAmountBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$CompareUnitsBroken,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$CompareUnitsBroken.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$CompletedBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$CompletedBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$CustomTimerBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$CustomTimerBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EnergyBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$EnergyBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EnergyIncludingQueuedBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$EnergyIncludingQueuedBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$EventTagsBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$GameMapHeightBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$GameMapHeightBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$GameMapWidthBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$GameMapWidthBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$GameModeBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$GameModeBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasActiveWaypoint,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$HasActiveWaypoint.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasFlagBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$HasFlagBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasFlagDynamicBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$HasFlagDynamicBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasParent,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$HasParent.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasResourcesBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$HasResourcesBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasTakenDamage,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$HasTakenDamage.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HeightBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$HeightBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HeightValueBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$HeightValueBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HpBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$HpBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$InMapBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$InMapBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsAttackingBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$IsAttackingBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsControlledByAI,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$IsControlledByAI.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsGameFrameBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$IsGameFrameBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsOnTeam,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$IsOnTeam.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsResourceLargerThan,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$IsResourceLargerThan.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsReversingBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$IsReversingBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$KillsBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$KillsBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$LastConvertedBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$LastConvertedBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$MaxEnergyBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$MaxEnergyBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$MaxHpBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$MaxHpBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$MaxMoveSpeedBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$MaxMoveSpeedBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$MaxShieldBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$MaxShieldBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$MovingBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$MovingBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfAttachedUnitsBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$NumberOfAttachedUnitsBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfConnectionsBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$NumberOfConnectionsBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfQueuedWaypoints,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$NumberOfQueuedWaypoints.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfUnitsInEnemyOrAllyTeam,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$NumberOfUnitsInEnemyOrAllyTeam.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfUnitsInEnemyOrAllyTeam$HandleCallbackCountAlly,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$NumberOfUnitsInEnemyOrAllyTeam$HandleCallbackCountAlly.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfUnitsInEnemyOrAllyTeam$HandleCallbackCountEnemies,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$NumberOfUnitsInEnemyOrAllyTeam$HandleCallbackCountEnemies.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfUnitsInTeam,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$NumberOfUnitsInTeam.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfUnitsInTeam$HandleCallbackCount,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$NumberOfUnitsInTeam$HandleCallbackCount.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$OverCliftBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$OverCliftBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$OverLiquidBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$OverLiquidBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$OverPassableTileBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$OverPassableTileBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$OverWaterBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$OverWaterBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$PositionXBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$PositionXBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$PositionYBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$PositionYBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$PriceCreditsBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$PriceCreditsBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$QueueSize,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$QueueSize.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$ResourceCountBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$ResourceCountBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$ResourceScope,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$ResourceScope.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$RotationBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$RotationBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$ShieldBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$ShieldBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$SpeedBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$SpeedBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$SpeedValueBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$SpeedValueBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TagsBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$TagsBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamDefeatedTechBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$TeamDefeatedTechBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamIdBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$TeamIdBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamTagBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$TeamTagBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamVictoryBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$TeamVictoryBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamWipedOutBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$TeamWipedOutBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$ThisActionRepeatedCount,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$ThisActionRepeatedCount.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TimeAliveBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$TimeAliveBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TouchWaterBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$TouchWaterBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TransportingCountBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$TransportingCountBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TransportingUnitWithTagsBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$TransportingUnitWithTagsBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$UnitIdBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$UnitIdBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$isDead,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$isDead.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$isEnergyRechargingBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$isEnergyRechargingBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$isTransportUnloading,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$isTransportUnloading.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ArrayContextReader.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader$ArrayContains,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ArrayContextReader$ArrayContains.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader$ArrayFunction,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ArrayContextReader$ArrayFunction.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader$ArrayGet,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ArrayContextReader$ArrayGet.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader$ArrayGetUnit,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ArrayContextReader$ArrayGetUnit.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader$ArraySize,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ArrayContextReader$ArraySize.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$DefaultContextReader,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$DefaultContextReader.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$LogicBooleanContext,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$LogicBooleanContextWithDefault,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContextWithDefault.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$LogicBooleanScopeOnly,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanScopeOnly.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ParameterMapping,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ParameterMapping.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ParameterMapping$FieldOrMethod,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ParameterMapping$FieldOrMethod.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$VoidContextReader,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$VoidContextReader.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$CreateMarker,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$CreateMarker.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionCos,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionCos.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirection,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionDirection.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirectionBetween,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionDirectionBetween.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistance,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionDistance.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistanceBetween,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionDistanceBetween.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistanceBetweenSquared,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionDistanceBetweenSquared.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistanceSquared,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionDistanceSquared.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionInt,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionInt.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionLength,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionLength.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMax,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionMax.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMin,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionMin.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionRnd,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionRnd.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionSin,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionSin.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionSquareRoot,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionSquareRoot.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$LogicNumberFunctionRawArgs,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$LogicNumberFunctionRawArgs.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$Debug,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$Debug.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$DebugPassthrough,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$DebugPassthrough.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$LowerString,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$LowerString.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$Playername,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$Playername.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$Select,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$Select.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$StaticString,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$StaticString.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$StringCast,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$StringCast.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$StringCast$NumberToStringCast,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$StringCast$NumberToStringCast.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$Substring,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$Substring.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$TeamName,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$TeamName.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$UpperString,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$UpperString.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$WrappingLogicString,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString$WrappingLogicString.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$ActiveWaypointTargetReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$ActiveWaypointTargetReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$AttachmentUnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$AttachmentUnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$AttackingReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$AttackingReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$ChainedUnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$ChainedUnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$EventSourceReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$EventSourceReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$FirstUnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$FirstUnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$GetAsMarker,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$GetAsMarker.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$GetOffsetAbsolute,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$GetOffsetAbsolute.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$GetOffsetRelative,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$GetOffsetRelative.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$GetOffsetRelativeStatic,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$GetOffsetRelativeStatic.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$LastDamagedByUnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$LastDamagedByUnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$LockedUnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$LockedUnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$Memory1UnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$Memory1UnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$Memory2UnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$Memory2UnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$NearestUnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$NearestUnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$NearestUnitReference$HandleCallbackNearest,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$NearestUnitReference$HandleCallbackNearest.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$NullUnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$NullUnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$ParentUnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$ParentUnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$PlaceholderUnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$PlaceholderUnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$SelfUnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$SelfUnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$ThisActionTargetReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$ThisActionTargetReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$TransportingUnitReference,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$TransportingUnitReference.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$UnitContextChangingBooleanByLogic,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$UnitContextChangingBooleanByLogic.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$UnitContextChangingContext,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$UnitContextChangingContext.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$UnitReferenceOrUnitType,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$UnitReferenceOrUnitType.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$AbstractMemoryLogicBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$AbstractMemoryLogicBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter$Operator,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter$Operator.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter$WriterElement,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter$WriterElement.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter$WriterFactory,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter$WriterFactory.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$EmptyVariableScope,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$EmptyVariableScope.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$KnownMemoryReadLogicBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$KnownMemoryReadLogicBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$KnownMemoryScopeLogicBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$KnownMemoryScopeLogicBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryNames,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryNames.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryWriter,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryWriter.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryWriterFactory,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryWriterFactory.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryWriterFactory$MemoryWriterElement,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryWriterFactory$MemoryWriterElement.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryWriterFactory$MemoryWriterElementIndex,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryWriterFactory$MemoryWriterElementIndex.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$ReadEventMemoryLogicBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$ReadEventMemoryLogicBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$ReadUnitMemoryLogicBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$ReadUnitMemoryLogicBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableData,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableData.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataArray,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDataArray.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataBoolArray,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDataBoolArray.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataBoolean,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDataBoolean.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataNull,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDataNull.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataNumber,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDataNumber.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataNumberArray,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDataNumberArray.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataString,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDataString.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataUnit,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDataUnit.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataUnitArray,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDataUnitArray.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDefinition,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDefinition.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableMapping,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableMapping.java
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableName,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName.java
+com.corrodinggames.rts.gameFramework.SettingsEngine,semantic,RENAMED,com.corrodinggames.rts.gameFramework.SettingsEngine,0,137,
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/gameFramework/utility/SlickToAndroidKeycodes.java
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes$AndroidCodes,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/gameFramework/utility/SlickToAndroidKeycodes$AndroidCodes.java
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes$GdxCodes,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/gameFramework/utility/SlickToAndroidKeycodes$GdxCodes.java
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes$LibrocketKeys,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/gameFramework/utility/SlickToAndroidKeycodes$LibrocketKeys.java
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes$MissingKey,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/gameFramework/utility/SlickToAndroidKeycodes$MissingKey.java
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes$SlickCodes,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/gameFramework/utility/SlickToAndroidKeycodes$SlickCodes.java
+com.corrodinggames.rts.java.Main,semantic,RENAMED,com.corrodinggames.rts.java.GameLauncher,0,0,
+com.corrodinggames.rts.java.Main$1,semantic,RENAMED,com.corrodinggames.rts.java.GameLauncher$1,0,0,
+com.corrodinggames.rts.java.Main$2,semantic,RENAMED,com.corrodinggames.rts.java.GameLauncher$2,0,0,
+com.corrodinggames.rts.java.Main$3,semantic,RENAMED,com.corrodinggames.rts.java.GameLauncher$3,0,0,
+com.corrodinggames.rts.java.Main$4,semantic,RENAMED,com.corrodinggames.rts.java.GameLauncher$4,0,0,
+com.corrodinggames.rts.java.audio.Audio,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/Audio.java
+com.corrodinggames.rts.java.audio.AudioDevice,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/AudioDevice.java
+com.corrodinggames.rts.java.audio.AudioRecorder,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/AudioRecorder.java
+com.corrodinggames.rts.java.audio.Music,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/Music.java
+com.corrodinggames.rts.java.audio.Music$OnCompletionListener,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/Music$OnCompletionListener.java
+com.corrodinggames.rts.java.audio.Sound,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/gameFramework/platform/Sound.java;com/corrodinggames/rts/java/audio/Sound.java
+com.corrodinggames.rts.java.audio.lwjgl.JavaSoundAudioRecorder,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/JavaSoundAudioRecorder.java
+com.corrodinggames.rts.java.audio.lwjgl.Ogg,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/Ogg.java
+com.corrodinggames.rts.java.audio.lwjgl.Ogg$Music,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/Ogg$Music.java
+com.corrodinggames.rts.java.audio.lwjgl.Ogg$MusicWithThreadedLoader,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/Ogg$MusicWithThreadedLoader.java
+com.corrodinggames.rts.java.audio.lwjgl.Ogg$Sound,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/Ogg$Sound.java
+com.corrodinggames.rts.java.audio.lwjgl.OggInputStream,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/OggInputStream.java
+com.corrodinggames.rts.java.audio.lwjgl.OpenALAudio,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/OpenALAudio.java
+com.corrodinggames.rts.java.audio.lwjgl.OpenALAudio$1,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/OpenALAudio$1.java
+com.corrodinggames.rts.java.audio.lwjgl.OpenALAudio$2,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/OpenALAudio$2.java
+com.corrodinggames.rts.java.audio.lwjgl.OpenALAudioDevice,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/OpenALAudioDevice.java
+com.corrodinggames.rts.java.audio.lwjgl.OpenALMusic,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/OpenALMusic.java
+com.corrodinggames.rts.java.audio.lwjgl.OpenALSound,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/OpenALSound.java
+com.corrodinggames.rts.java.audio.lwjgl.ThreadedWrappingAudioInputStream,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/ThreadedWrappingAudioInputStream.java
+com.corrodinggames.rts.java.audio.lwjgl.Wav,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/Wav.java
+com.corrodinggames.rts.java.audio.lwjgl.Wav$Music,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/Wav$Music.java
+com.corrodinggames.rts.java.audio.lwjgl.Wav$Sound,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/Wav$Sound.java
+com.corrodinggames.rts.java.audio.lwjgl.Wav$WavInputStream,semantic,IDENTITY,,0,0,03: com/corrodinggames/rts/java/audio/lwjgl/Wav$WavInputStream.java

@@ -1,0 +1,6 @@
+package com.corrodinggames.rts.java.audio.lwjgl;
+
+
+public class Ogg {
+
+}

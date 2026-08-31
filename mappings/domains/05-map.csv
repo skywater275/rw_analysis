@@ -1,0 +1,256 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,com.corrodinggames.rts.game.b,MapLayer,a,tilesetDef,Associated tileset definition (j),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayer,b,layerWidth,Layer width in tiles (int),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayer,c,layerHeight,Layer height in tiles (int, -2=unset)
+field,com.corrodinggames.rts.game.b,MapLayer,d,layerOpacity,Layer opacity (short  -1=fully opaque),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayer,e,layerVisible,Layer visible flag (boolean),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayer,f,layerLocked,Layer locked flag (boolean),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayer,g,isObjectLayer,Is object/entity layer (boolean),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayer,h,isImageLayer,Is image layer (boolean),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayer,i,isTileLayer,Is tile layer (boolean),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayer,j,layerTypeByte,Layer type as byte enum,verified-exists
+field,com.corrodinggames.rts.game.b,MapLayer,k,hasProperties,Has custom properties (boolean),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayer,l,needsRedraw,Needs redraw flag (boolean),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayer,m,tileGrid,Tile grid data (g[]),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerDef,a,layerName,Layer name string,verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerDef,b,layerClass,Layer class/type string,verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerDef,c,offsetX,Layer offset X (float),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerDef,d,offsetY,Layer offset Y (float),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerDef,e,parallaxX,Parallax scroll X factor (float),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerDef,f,parallaxY,Parallax scroll Y factor (float),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,a,mapEngine,Reference to MapEngine,verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,b,renderWidth,Render width in pixels (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,c,renderHeight,Render height in pixels (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,d,offsetX,Render offset X (int),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,e,offsetY,Render offset Y (int),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,f,startTileX,First visible tile column (int),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,g,startTileY,First visible tile row (int),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,h,endTileX,Last visible tile column (int),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,i,endTileY,Last visible tile row (int),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,j,tileWidth,Tile width in pixels (int),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,k,tileHeight,Tile height in pixels (int),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,l,currentLayer,Currently rendering layer (MapLayer),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,m,currentTileset,Current tileset (TilesetDef),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,n,viewRect,Visible area rectangle (Rect),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,o,dirtyRect,Dirty/redraw rectangle (Rect),verified-exists
+field,com.corrodinggames.rts.game.b,MapLayerRenderer,p,globalState,GlobalState reference,verified-exists
+field,com.corrodinggames.rts.game.b,MapRenderer,a,layerRenderer,Layer renderer reference (MapLayerRenderer),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,MapRenderer,b,renderWidth,Render width (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,MapRenderer,c,renderHeight,Render height (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,MapSpawn,a,spawnIndex,Spawn point index (int),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,b,unitTypeName,Unit type name to spawn (String),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,c,playerRef,Player reference name (String),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,d,teamName,Team name for spawn (String),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,e,spawnX,Spawn position X (float),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,f,spawnY,Spawn position Y (float),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,g,spawnWidth,Spawn area width (float),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,h,spawnHeight,Spawn area height (float),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,i,spawnInterval,Spawn interval seconds (float),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,j,boundsRect,Spawn boundary rectangle (RectF),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,k,maxUnitCount,Max units to spawn (int  -1=unlimited),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,l,tilesetRef,Reference to tileset definition (j),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,m,startingCredits,Starting credits at spawn (int  -1=default),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,n,customProperties,Custom properties from TMX (Properties),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,o,spawnedUnitsList,List of spawned units (m=ArrayList),verified-exists
+field,com.corrodinggames.rts.game.b,MapSpawn,p,spawnId,Spawn identifier string (private String),verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,a,layerIndex,Current layer index during parsing (int),verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,b,tileWidth,Tile width from TMX (int),verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,c,tileHeight,Tile height from TMX (int),verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,d,mapWidth,Map width in tiles (int),verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,e,mapHeight,Map height in tiles (int),verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,f,nextObjectId,Next free object ID (int),verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,g,currentTileset,Current tileset being processed (TilesetDef),verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,h,currentLayer,Current layer being processed (MapLayer),verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,i,orientation,Map orientation string,verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,j,renderOrder,Render order string,verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,k,backgroundColor,Background color int,verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,l,basePath,Base directory path for TMX file (String),verified-exists
+field,com.corrodinggames.rts.game.b,TMXMapLoader,m,encoding,Data encoding type (String),verified-exists
+field,com.corrodinggames.rts.game.b,TileEntry,a,tileId,Local tile ID within tileset (int),verified-exists
+field,com.corrodinggames.rts.game.b,TileEntry,b,tilesetIndex,Tileset index reference (int),verified-exists
+field,com.corrodinggames.rts.game.b,TileEntry,c,properties,Tile custom properties (Properties),verified-exists
+field,com.corrodinggames.rts.game.b,TileEntry,d,animationFrames,Animation frame array (TileEntry[]),verified-exists
+field,com.corrodinggames.rts.game.b,TileEntry,e,animationDuration,Animation frame duration ms (int),verified-exists
+field,com.corrodinggames.rts.game.b,TileEntry,f,tileType,Tile type string (String),verified-exists
+field,com.corrodinggames.rts.game.b,TilesetDef,a,tilesetName,Tileset name string,verified-exists
+field,com.corrodinggames.rts.game.b,TilesetDef,b,tilesetTexture,Tileset texture image (m.e),verified-exists
+field,com.corrodinggames.rts.game.b,TilesetDef,c,sourcePath,Source file path string,verified-exists
+field,com.corrodinggames.rts.game.b,TilesetDef,d,tileWidth,Tile width in pixels (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,TilesetDef,e,tileHeight,Tile height in pixels (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,TilesetDef,f,spacing,Spacing between tiles (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,TilesetDef,g,margin,Margin around tileset (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,TilesetDef,h,firstGid,First global tile ID (int, default 0)
+field,com.corrodinggames.rts.game.b,TilesetDef,i,tileCount,Total tile count (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,TilesetDef,j,tileProperties,Tile property map (HashMap),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,TilesetDef,k,tileEntries,Tile entry list (ArrayList),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.b,TilesetDef,l,columns,Column count in tileset image (int),verified-exists
+method,com.corrodinggames.rts.game.b,b,a(RectF, RectF),getVisibleRectWithPadding | MapEngine: void - visible area with margin,verified-exists
+method,com.corrodinggames.rts.game.b,b,a(int, int),setViewport | MapEngine: void - update visible tile range,verified-exists
+method,com.corrodinggames.rts.game.b,b,a(InputStream,boolean),loadMapFromStream | MapEngine: void - main TMX parser,verified-exists
+method,com.corrodinggames.rts.game.b,b,a(String,boolean),loadMapFromFile | MapEngine: void - load from path,verified-exists
+method,com.corrodinggames.rts.game.b,b,a(float,float,"""n)""",isWorldWalkable
+method,com.corrodinggames.rts.game.b,b,a(g,int,"""int)""",getVariantTile
+method,com.corrodinggames.rts.game.b,b,a(n,int,"""int)""",canEditTile
+method,com.corrodinggames.rts.game.b,b,c(float,float),getGroundTileAtWorld | MapEngine: byte - ground at world coords,verified-exists
+method,com.corrodinggames.rts.game.b,b,"c(int,int)",isInsideMap | MapEngine: boolean - coords in bounds,unverified,verified-exists
+method,com.corrodinggames.rts.game.b,b,"d(int,int)",getGroundTileAtTile | MapEngine: byte - ground at tile coords,unverified,verified-exists
+method,com.corrodinggames.rts.game.b,b,"e(int,int)",getItemsTileAtTile | MapEngine: byte - items at tile coords,unverified,verified-exists
+field,com.corrodinggames.rts.game.b,b,A,resourcePoints,Resource extraction points (ArrayList),verified-exists
+field,com.corrodinggames.rts.game.b,b,B,mapWidth,Map width in tiles,verified-exists
+field,com.corrodinggames.rts.game.b,b,C,mapHeight,Map height in tiles,verified-exists
+field,com.corrodinggames.rts.game.b,b,D,tileWidth,Tile width pixels,verified-exists
+field,com.corrodinggames.rts.game.b,b,E,tileHeight,Tile height pixels,verified-exists
+field,com.corrodinggames.rts.game.b,b,F,fogGrid,Fog of war grid,verified-exists
+field,com.corrodinggames.rts.game.b,b,G,visibilityGrid,Visibility update grid,verified-exists
+field,com.corrodinggames.rts.game.b,b,H,blockingGrid,Terrain blocking grid,verified-exists
+field,com.corrodinggames.rts.game.b,b,I,buildBlockingGrid,Build blocking grid,verified-exists
+field,com.corrodinggames.rts.game.b,b,J,tilesetList,Loaded tileset list,verified-exists
+field,com.corrodinggames.rts.game.b,b,K,layerList,Map layer list,verified-exists
+field,com.corrodinggames.rts.game.b,b,L,tilesetTexture,Tileset texture atlas (m.y),verified-exists
+field,com.corrodinggames.rts.game.b,b,M,fogCacheBufferA,MapEngine: byte[][] - smoothFog cache A,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,N,fogCacheBufferB,MapEngine: byte[][] - smoothFog cache B,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,P,objectGroups,MapEngine: ArrayList<i> - map object groups,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,Q,minimapRenderer,Minimap renderer component (i),verified-exists
+field,com.corrodinggames.rts.game.b,b,R,showGridOverlay,Show grid overlay flag,verified-exists
+field,com.corrodinggames.rts.game.b,b,S,showFogOverlay,Show fog overlay flag,verified-exists
+field,com.corrodinggames.rts.game.b,b,T,scrollPixelX,MapEngine: int - horizontal scroll offset px,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,U,scrollPixelY,MapEngine: int - vertical scroll offset px,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,V,cameraFocus,Camera focus point (PointF),verified-exists
+field,com.corrodinggames.rts.game.b,b,W,cameraLocked,Map camera locked flag,verified-exists
+field,com.corrodinggames.rts.game.b,b,X,fogDirty,Fog needs update flag,verified-exists
+field,com.corrodinggames.rts.game.b,b,Y,visibleTilesX,Visible tile count X,verified-exists
+field,com.corrodinggames.rts.game.b,b,Z,visibleTilesY,Visible tile count Y,verified-exists
+method,com.corrodinggames.rts.game.b,b,a,lockMap,MapEngine: static void - acquire ReentrantLock e,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,a(Point),tileToScreenPoint,MapEngine: PointF - tile to screen coords,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,a(RectF),getVisibleRect,MapEngine: void - fill RectF with visible area,body-verified-v1300
+method,com.corrodinggames.rts.game.b,b,a(as),getGidForUnit,MapEngine: int - find tile GID for unit type,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,a(boolean),setRedrawFlag,MapEngine: void - mark dirty for re-render,body-verified-v1300
+method,com.corrodinggames.rts.game.b,b,a(float),clampScrollX,MapEngine: float - clamp horizontal scroll,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,a(g),registerUniqueTile,"""MapEngine: short - register tile""",""" return ID (max 32766)"""
+method,com.corrodinggames.rts.game.b,b,a(int),tileToPixelX,MapEngine: static int - tile coord to pixel x,body-verified-v1300
+method,com.corrodinggames.rts.game.b,b,a(k),initFromConfig,MapEngine: void - load map from config,body-verified-v1300
+method,com.corrodinggames.rts.game.b,b,a(short),getTileByUniqueId,MapEngine: g - resolve ID to tile,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,ah,tileCache,MapEngine: HashMap - tile lookup cache,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,al,commandProcessor,Map command processor (static c),verified-exists
+field,com.corrodinggames.rts.game.b,b,as,renderMode,Map render mode (1=normal),verified-exists
+method,com.corrodinggames.rts.game.b,b,b,unlockMap,MapEngine: static void - release ReentrantLock e,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,b(String),openMapStream,MapEngine: static InputStream - open map file,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,b(float),clampScrollY,MapEngine: float - clamp vertical scroll,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,"b(int,int)",isBuildable,Check tile buildable,verified-exists
+method,com.corrodinggames.rts.game.b,b,c,initFogOfWarTextures,"""MapEngine: static void - load fog_smooth""",""" generate atlas"""
+method,com.corrodinggames.rts.game.b,b,d,updateSoftFogSetting,MapEngine: static void - toggle smoothFog by memory,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,e,getMapTilesY,MapEngine: int - map height in tiles,body-verified-v1300
+method,com.corrodinggames.rts.game.b,b,e(String),getOrCreateTileset,MapEngine: j - find or create by name,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,f,isMapLoaded,MapEngine: boolean - map data available,body-verified-v1300
+method,com.corrodinggames.rts.game.b,b,"f(int,int)",clearFogAt | Clear fog at specific tile position,unverified,verified-exists
+method,com.corrodinggames.rts.game.b,b,g,getTotalTiles,MapEngine: int - total tile count,body-verified-v1300
+method,com.corrodinggames.rts.game.b,b,"g(int,int)",markFogDirtyAt | Mark fog dirty at tile and neighbors,unverified,verified-exists
+method,com.corrodinggames.rts.game.b,b,h,unloadAll,"""MapEngine: void - clear tilesets""",layers
+method,com.corrodinggames.rts.game.b,b,h(),disposeAll,Dispose all map resources: tilesets+layers+groups,verified-exists
+method,com.corrodinggames.rts.game.b,b,i,isViewportDirty,MapEngine: boolean - vieport needs update,body-verified-v1300
+method,com.corrodinggames.rts.game.b,b,i(),getMapWidthPixels,Get total map width in pixels,verified-exists
+method,com.corrodinggames.rts.game.b,b,j,resetViewport,MapEngine: void - reset visible area,body-verified-v1300
+method,com.corrodinggames.rts.game.b,b,j(),getMapHeightPixels,Get total map height in pixels,verified-exists
+method,com.corrodinggames.rts.game.b,b,k,resetFogCache,MapEngine: void - clear smoothFog cache,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,k(),clearAllFog,Clear all fog of war arrays,verified-exists
+method,com.corrodinggames.rts.game.b,b,l,buildFogCache,MapEngine: void - rebuild smoothFog M/N,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,l(),rebuildFogCache,Rebuild smooth fog cache arrays,verified-exists
+field,com.corrodinggames.rts.game.b,b,m,tileRendererB,Tile renderer variant B (static h),verified-exists
+field,com.corrodinggames.rts.game.b,b,n,tilePixelWidth,"""MapEngine: int - tile pixel size (default 20""",""" HD 60)"""
+field,com.corrodinggames.rts.game.b,b,o,tilePixelHeight,MapEngine: int - tile pixel height,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,p,selectedTileX,Currently selected tile X,verified-exists
+field,com.corrodinggames.rts.game.b,b,q,selectedTileY,Currently selected tile Y,verified-exists
+field,com.corrodinggames.rts.game.b,b,r,float1,real-class-inferred: com.corrodinggames.rts.game.b.b,real-class-v1200
+field,com.corrodinggames.rts.game.b,b,s,float2,real-class-inferred: com.corrodinggames.rts.game.b.b,real-class-v1200
+field,com.corrodinggames.rts.game.b,b,t,tilesets,MapEngine: ArrayList<j> - tileset list,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,u,groundLayer,MapEngine: e - Ground layer reference,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,v,groundDetailsLayer,MapEngine: e - grounddetails layer,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,w,groundDetails2Layer,MapEngine: e - grounddetails2 layer,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,x,pathingOverrideLayer,MapEngine: e - PathingOverride layer,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,y,itemsLayer,MapEngine: e - Items/objects layer,body-verified-v1500
+field,com.corrodinggames.rts.game.b,b,z,layers,MapEngine: ArrayList<e> - map layers,body-verified-v1500
+method,com.corrodinggames.rts.game.b,b,a(com.corrodinggames.rts.game.b.g, int,""" int)""",getTileVariant
+method,com.corrodinggames.rts.game.b,b,b(float, float),scrollCameraByDelta | [V] b(FF)->void; scroll camera by delta (tiles),verified-exists
+method,com.corrodinggames.rts.game.b,b,a(android.graphics.Point),tileToWorld,[V] a(Point)->PointF; tile coords to world pixels,verified-exists
+method,com.corrodinggames.rts.game.b,b,c(java.lang.String),resolveMapFilePath,[V] c(String)->String; find real map path,verified-exists
+method,com.corrodinggames.rts.game.b,b,d(java.lang.String),openMapFileStream,[V] d(String)->InputStream; open map file stream,verified-exists
+method,com.corrodinggames.rts.game.b,b,e(java.lang.String),getTilesetByName,[V] e(String)->j; find tileset def by name,verified-exists
+method,com.corrodinggames.rts.game.b,b,e(float),update,v19.100 辐射批1: GameEngine.update每帧调用 bL.e(f2) (地图更新),verified
+field,com.corrodinggames.rts.game.b,b,O,unusedRect,"Rect; javap 仅构造器 putfield(102: Field O),无读取(死字段)",verified-exists
+field,com.corrodinggames.rts.game.b,b,a,debugTiming,"static final boolean; 字节码中 if (a) 包裹性能计时(this.ap += br.a()-l3, seeThoughFogOfWarTimes 统计),仅此一处读取",verified
+field,com.corrodinggames.rts.game.b,b,aa,unusedFloat,"float=0.0f; 仅构造器 putfield(129: Field aa:F),无读取(死字段)",verified-exists
+field,com.corrodinggames.rts.game.b,b,ab,unusedPaint,"Paint; 构造器设置 (100,255,0,0)+16f 后无任何引用(死字段)",verified-exists
+field,com.corrodinggames.rts.game.b,b,ac,buildableTilePaintA,"Paint; 构造器 (255,0,225,0) 描边; a(y,...) 中 ""if(bl2) y3.b(this.an, b2.ac)"" 可行走瓦片着色(字节码 4748 行 getfield #250)",verified
+field,com.corrodinggames.rts.game.b,b,ad,buildableTilePaintB,"Paint; 构造器 (100,0,185,0); a(y,...) 可行走瓦片着色(b2.ad, 字节码 4726 行)",verified
+field,com.corrodinggames.rts.game.b,b,ae,blockedTilePaintA,"Paint; 构造器 (255,175,0,0) 红; a(y,...) 不可行走时着色(b2.ae, 字节码 4739/4755 行)",verified
+field,com.corrodinggames.rts.game.b,b,af,blockedTilePaintB,"Paint; 构造器 (155,175,0,0) 半透明红; a(y,...) 着色(b2.af, 字节码 4733 行)",verified
+field,com.corrodinggames.rts.game.b,b,ag,clearPaint,Paint; 构造器 new PorterDuffXfermode(PorterDuff.Mode.CLEAR) 擦除画笔(常量池枚举 CLEAR),verified
+field,com.corrodinggames.rts.game.b,b,ai,unusedFloat2,float; javap 无任何引用(死字段),verified-exists
+field,com.corrodinggames.rts.game.b,b,aj,unusedFloat3,"float=1.0f; 仅构造器 putfield(134: Field aj:F),无读取(死字段)",verified-exists
+field,com.corrodinggames.rts.game.b,b,ak,unusedInt,"int=0; 仅构造器 putfield(139: Field ak:I),无读取(死字段)",verified-exists
+field,com.corrodinggames.rts.game.b,b,am,unusedPaint2,"Paint=new Paint(); 仅构造器 putfield(150: Field am),无读取(死字段)",verified-exists
+field,com.corrodinggames.rts.game.b,b,an,scratchRect,"Rect; a(y,...) 中复用绘制矩形(字节码 4702-4746 行 getfield #260)",verified
+field,com.corrodinggames.rts.game.b,b,ao,unusedRect2,"Rect; 仅构造器 putfield(172: Field ao),无读取(死字段)",verified-exists
+field,com.corrodinggames.rts.game.b,b,ap,fogPerfAccumNs,"long; f(float)/a(f,f,int,n,boolean) 中计时累积,打印 ""seeThoughFogOfWarTimes:""(字节码 5101-5106 行)",verified
+field,com.corrodinggames.rts.game.b,b,aq,fogPerfTimerSec,"float; f(float) 中 ""if(this.aq>60.0f) { this.aq=0; 打印..."" 性能统计窗口(字节码 5750-5761 行)",verified
+field,com.corrodinggames.rts.game.b,b,ar,fogRecalcTimer,"float; loadMapFromStream 设 150.0f, f(float) 中 ""if(this.ar>260.0f)"" 触发队伍雾重算(字节码 3894/5812-5823 行)",verified
+field,com.corrodinggames.rts.game.b,b,b,debugFlagB,static final boolean=false; 无任何引用(死开关),verified-exists
+field,com.corrodinggames.rts.game.b,b,c,debugFlagC,static final boolean=false; 无任何引用(死开关),verified-exists
+field,com.corrodinggames.rts.game.b,b,d,debugDisableFogRender,"public static boolean; 唯一引用在 game/b/c.java:400 ""if (b.b.d) { bl6=false; bl7=false; }"" 禁用雾/遮挡绘制(控制流证据)",verified
+field,com.corrodinggames.rts.game.b,b,e,mapLock,static ReentrantLock; 静态方法 a()/b() 中 e.lock()/e.unlock()(lockMap/unlockMap 已映射),verified
+field,com.corrodinggames.rts.game.b,b,f,lockDisabled,"static boolean; a()/b() 中 ""if (f) return"" 跳过加解锁(控制流)",verified
+field,com.corrodinggames.rts.game.b,b,g,fogDebugPaintA,"static Paint; c() 中 g.a(150,255,255,255) 白色调试画笔,随后参与雾图集绘制",verified
+field,com.corrodinggames.rts.game.b,b,h,fogDebugPaintB,"static Paint; c() 中 h.a(150,255,0,0) 红色调试画笔",verified
+field,com.corrodinggames.rts.game.b,b,i,fogDebugPaintC,"static Paint; c() 中 i.a(150,0,255,0) 绿色调试画笔",verified
+field,com.corrodinggames.rts.game.b,b,j,fogDebugPaintD,"static Paint; c() 中 j.a(150,255,0,0) 红色调试画笔",verified
+field,com.corrodinggames.rts.game.b,b,k,unusedFlagArray,"boolean[256]; javap 中仅构造器 1 次 putfield(10: putfield #275 Field k:[Z),无任何 getfield(死字段)",verified-exists
+field,com.corrodinggames.rts.game.b,b,l,fogAtlasRendererA,"public static h; c() 中 ""l = new h(1.0f,false); l.a()"" 雾图集渲染器(1.0 倍)",verified
+method,com.corrodinggames.rts.game.b,b,a(),identityIntArray,"private static; 直接返回参数数组(identity),供雾图集掩码构造",verified
+method,com.corrodinggames.rts.game.b,b,"a(Document,OutputStream)",writeXmlDocument,"void; Transformer 序列化 DOM, ""indent""=""yes"" 输出属性(字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,"a(InputStream,OutputStream)",rewriteMapWithUnitObjects,"void; 解析 TMX,删除旧 UnitObjects,遍历所有单位重建 objectgroup(""UnitObjects""/""unit""/""team""/""gid""/""rotation"" 字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,"a(String,String)",exportMap,"boolean; ""Error exporting map""/""Map exported."" 弹窗与异常处理(字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,"a(String,String,int)",tryOpenRelativePath,"private InputStream; split(""/"") 取末 n 段拼接路径后 e.a.j() 打开(控制流)",verified
+method,com.corrodinggames.rts.game.b,b,"a(String,int,int)",getOrCreateTile,g; 调 e(String)(getOrCreateTileset)+ah HashMap 缓存创建瓦片(控制流),verified
+method,com.corrodinggames.rts.game.b,b,a(gameFramework.j.as),syncNetworkStream,"void; as2.a(false) 网络流同步; 调用语义不明确(无字符串,证据弱)",verified-exists
+method,com.corrodinggames.rts.game.b,b,"a(float,float)",setScrollFromWorldPx,void; T=(int)(f2*r); U=(int)(f3*s) 世界坐标→滚动像素(结构),verified
+method,com.corrodinggames.rts.game.b,b,"a(float,float,int,n,boolean)",revealFogRadial,"void; 按可见性过滤队伍后调 b(f2,f3,n2,n3,bl) 揭示视野(控制流, if(a) 计时分支同处)",verified
+method,com.corrodinggames.rts.game.b,b,"a(int,)",buildMaskCombinations,"private static; 生成位掩码子集组合, ""unhandled:"" + nArray.length 异常(字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,"a(int,Rect)",fogTileRectInAtlas,public static; 按 n2%16 与 0.0625f 计算 20x20 雾图集瓦片位置写入 rect(结构),verified
+method,com.corrodinggames.rts.game.b,b,"a(int,e)",drawFogTileToFrameBuffer,"public static; ""rect2.a(0,0,20,20)"" + 调用 a(int,Rect) 与 h.a(L,e2,...) 将雾瓦片写入帧缓冲(结构)",verified
+method,com.corrodinggames.rts.game.b,b,"a(int[],int,int,boolean,e,y,e)",blitFogEdgeTiles,"private static; 20px 网格纹理拼接绘制雾边缘瓦片(rect.a(0,0,20,20) 结构),仅 c() 调用",verified
+method,com.corrodinggames.rts.game.b,b,"a(int[],int[],boolean,e,y,e)",drawFogEdgeTile,"private static; 按掩码位绘制雾边缘(rect 复用、y3.a(e3,rect2,rect,null) 绘制结构),仅 c() 调用",verified
+method,com.corrodinggames.rts.game.b,b,a(l),renderTileLayer,void; 转发 al.a(l2); 对应 c.java:236 中遍历瓦片调用 l2.a(...) 绘制(跨类控制流),verified
+method,com.corrodinggames.rts.game.b,b,"a(y,int,int,int,int,int,int,y,boolean,int)",drawBuildabilityOverlay,"void; 循环瓦片调 d.d.a(y2,as2,ao2,i2,i3,n8) 判定可行走, 用 ad/ae/af/ac 画笔着色(控制流+画笔证据)",verified
+method,com.corrodinggames.rts.game.b,b,b(),constructor,public 构造器; 初始化瓦片尺寸(60/20 HD 判断)、1/n 比例、7 个 Paint(ab..ag)与 Rect 字段(结构),verified
+method,com.corrodinggames.rts.game.b,b,"b(String,String)",saveMap,"void; ""--- Saving map:"" 日志, 校验原始地图(""Could not find orginal map:"")后写盘(字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,"b(float,float)",setScrollWorldAndTile,"void; 依次调用 a(f2,f3) 与 a(T,U) 同步世界与瓦片滚动(控制流)",verified
+method,com.corrodinggames.rts.game.b,b,"b(float,float,int,n,boolean)",revealFogGradient,"void; 半径 n2 内雾值渐变(by2/阈值 by 计算), c2.a(i2,i3,true) 标记雾脏(控制流)",verified
+method,com.corrodinggames.rts.game.b,b,b(int),singletonIntArray,private static; 返回 new int[]{n2}; 仅被 c()(initFogOfWarTextures)调用构造雾位掩码(控制流),verified
+method,com.corrodinggames.rts.game.b,b,c(String),normalizeMapPath,static String; 返回 e.a.e(string) 规范化路径; 被 d(String)(openMapFile) 调用(控制流+Mapfile: 日志),verified
+method,com.corrodinggames.rts.game.b,b,"c(String,String)",getGidByUnitName,"Integer; 遍历 tileset 调 j2.b(name,value), ""unit""/""customUnit"" 两种键(字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,c(float),renderUpdate,void; 转发 al.a(f2); 命令处理器渲染循环每帧调用(控制流),verified
+method,com.corrodinggames.rts.game.b,b,d(String),openMapFile,"static InputStream; ""Mapfile: "" 日志 + e.a.k() 打开输入流(字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,"d(String,String)",openMapSubpath,"InputStream; 依次尝试完整路径与降级子路径, ""File could not be found:"" 异常(字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,d(float),updateMapPerFrame,void; 调 c(f2) + if(X) 重绘雾脏区块(rect2 计算结构),verified
+method,com.corrodinggames.rts.game.b,b,f(String),getObjectGroupByName,"i; equalsIgnoreCase 匹配对象组名; loadMapFromStream 中 this.Q = this.f(""triggers"")(""triggers"" 字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,f(float),updateFogOfWar,"void; 每帧主雾更新: ""fogOfWar_map==null for:"" 日志 + 260s 周期队伍视野同步(字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,"a(String,gameFramework.j.as)",sendMapStream,"static void; ""Sending map stream of size:"" 日志, 校验地图存在(""writeMapStream: Could not find map:"")后 as2.a(inputStream,n2) 发送(字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,"a(int,int,n)",isTileEditable,"boolean; 雾值检查 n2.N[n2][n3] < 5 判定可编辑/可通行; 与已映射 a(n,int,int) canEditTile 互为补充(supplement 的 a(int,int) isBlocked 条目缺第 3 参,签名不完整)",verified
+method,com.corrodinggames.rts.game.b,b,"a(int,int...)",buildMaskCombinations,"private static; 生成位掩码子集组合, ""unhandled:"" + nArray.length 异常(字符串证据)",verified
+method,com.corrodinggames.rts.game.b,b,a(int...),identityIntArray,"private static; 直接返回参数数组(identity),供雾图集掩码构造",verified
+method,com.corrodinggames.rts.game.b,g,,disposeAll,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置46),order-align-v19.111
+method,com.corrodinggames.rts.game.b,j,,clearAllFog,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置55),order-align-v19.111
+method,com.corrodinggames.rts.game.b,k,,rebuildFogCache,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置58),order-align-v19.111
+field,com.corrodinggames.rts.game.b,j,a,tilesetName,"field-order-zip-v19.114: 02b String a=- <-> 03 String tilesetName=- (位置0, TilesetDef)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,i,b,layerClass,"field-order-zip-v19.114: 02b String b=- <-> 03 String layerClass=- (位置1, MapLayerDef)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,g,i,isTileLayer,"field-order-zip-v19.114: 02b boolean i=- <-> 03 boolean isTileLayer=- (位置8, MapLayer)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,g,b,layerWidth,"field-order-zip-v19.114: 02b int b=- <-> 03 int layerWidth=- (位置1, MapLayer)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,j,l,columns,"field-order-zip-v19.114: 02b int l=- <-> 03 int columns=- (位置11, TilesetDef)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,a,b,unitTypeName,"field-order-zip-v19.114: 02b String b=- <-> 03 String unitTypeName=- (位置1, MapSpawn)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,g,e,layerVisible,"field-order-zip-v19.114: 02b boolean e=- <-> 03 boolean layerVisible=- (位置4, MapLayer)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,g,g,isObjectLayer,"field-order-zip-v19.114: 02b boolean g=- <-> 03 boolean isObjectLayer=- (位置6, MapLayer)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,g,h,isImageLayer,"field-order-zip-v19.114: 02b boolean h=- <-> 03 boolean isImageLayer=- (位置7, MapLayer)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,g,k,hasProperties,"field-order-zip-v19.114: 02b boolean k=- <-> 03 boolean hasProperties=- (位置10, MapLayer)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,g,f,layerLocked,"field-order-zip-v19.114: 02b boolean f=- <-> 03 boolean layerLocked=- (位置5, MapLayer)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,g,j,layerTypeByte,"field-order-zip-v19.114: 02b byte j=- <-> 03 byte layerTypeByte=- (位置9, MapLayer)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.b,a,j,boundsRect,"field-order-zip-v19.114: 02b RectF j=- <-> 03 RectF boundsRect=- (位置10, MapSpawn)",field-order-zip-v19.114

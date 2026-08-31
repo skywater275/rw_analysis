@@ -1,0 +1,1048 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,com.corrodinggames.rts.game,GameScreen,a,renderer,Game renderer reference,unverifiable-rebuilt
+field,com.corrodinggames.rts.game,GameScreen,b,gameWorld,GameWorld reference,unverifiable-rebuilt
+field,com.corrodinggames.rts.game,GameScreen,c,mapEngine,MapEngine reference,unverifiable-rebuilt
+field,com.corrodinggames.rts.game,GameScreen,d,netEngine,NetEngine reference,unverifiable-rebuilt
+field,com.corrodinggames.rts.game,GameScreen,e,globalState,GlobalState reference,unverifiable-rebuilt
+field,com.corrodinggames.rts.game,GameScreen,f,inputHandler,Input handler reference,unverifiable-rebuilt
+field,com.corrodinggames.rts.game,GameScreen,g,cameraController,Camera controller reference,unverifiable-rebuilt
+field,com.corrodinggames.rts.game,GameScreen,h,uiController,UI controller reference,unverifiable-rebuilt
+field,com.corrodinggames.rts.game,GameScreen,i,isPaused,Paused state flag (boolean),unverifiable-rebuilt
+field,com.corrodinggames.rts.game,GameScreen,j,isExiting,Exiting state flag (boolean),unverifiable-rebuilt
+field,com.corrodinggames.rts.game,GameSettings,A,dedicatedServerMode,Dedicated server mode flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,B,defaultCommand,Default command template (e=Command),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,C,secondaryCommand,Secondary command template (e),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,D,buildSpeedMultiplier,Build speed multiplier (float),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,E,unitSpeedMultiplier,Unit movement speed multiplier (float),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,F,attackDamageMultiplier,Attack damage multiplier (float),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,G,repairSpeedMultiplier,Repair speed multiplier (float),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,H,reclaimSpeedMultiplier,Reclaim speed multiplier (float),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,I,enableTriggerDebug,Enable trigger debug flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,J,enableAIDebug,Enable AI debug overlay flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,K,gameDurationLimit,Game duration limit minutes (float  -1=unlimited),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,a,defaultInstance,Default settings instance (static GameSettings),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,b,startingCredits,Starting credits amount (int),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,c,fogOfWarMode,Fog of war mode (int: 0=off 1=basic 2=los),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,d,teamsLocked,Teams locked flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,e,allowSpectators,Allow spectators flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,f,allowCheats,Allow cheats/debug mode flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,g,randomStartPositions,Random start positions flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,h,sharedResources,Team shared resources flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,i,defaultIncomeRate,Default income rate (int, default 35)
+field,com.corrodinggames.rts.game,GameSettings,j,nukeCooldownTime,Nuke cooldown time seconds (float  -1=disabled),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,k,nukesEnabled,Nukes enabled flag (boolean, default false)
+field,com.corrodinggames.rts.game,GameSettings,l,aiEnabled,AI players enabled flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,m,tournamentMode,Tournament/competitive mode flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,n,fogRevealAll,Reveal all fog flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,o,gameSpeed,Game speed multiplier (float, default 1.0)
+field,com.corrodinggames.rts.game,GameSettings,p,freeForAllMode,Free-for-all mode flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,q,allowMidGameJoin,Allow mid-game join flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,r,unlockAllTech,Unlock all technology flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,s,noSupplyLimit,No supply/population limit flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,t,disableT2Upgrades,Disable T2 upgrades flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,u,startingCreditsFloat,Starting credits (float precision),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,v,incomeMultiplier,Income rate multiplier (float),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,w,nukeDamageRadius,Nuke damage radius (float, default 5.0)
+field,com.corrodinggames.rts.game,GameSettings,x,mapWidthSetting,Map width setting (short  -1=auto),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,y,mapHeightSetting,Map height setting (short),verified-exists
+field,com.corrodinggames.rts.game,GameSettings,z,playerCount,Player count setting (short  -1=auto),verified-exists
+field,com.corrodinggames.rts.game,TagFilter,a,tagName,Tag name string,verified-exists
+field,com.corrodinggames.rts.game,TagFilter,b,tagValue,Tag value string,verified-exists
+field,com.corrodinggames.rts.game,TagFilter,c,matchType,Match type enum (int),verified-exists
+field,com.corrodinggames.rts.game,TagFilter,d,inclusiveFilter,Include matching flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,TagFilter,e,excludeFilter,Exclude matching flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,TagFilter,f,fallback,Next filter in chain (TagFilter),verified-exists
+field,com.corrodinggames.rts.game,TagFilter,g,isActive,Filter active flag (boolean),verified-exists
+field,com.corrodinggames.rts.game,UnitManager,a,teamTag,Team tag reference (g),verified-exists
+field,com.corrodinggames.rts.game,UnitManager,b,totalUnitCount,Total unit count (int),verified-exists
+field,com.corrodinggames.rts.game,UnitManager,c,activeUnitCount,Active unit count (int),verified-exists
+field,com.corrodinggames.rts.game,UnitManager,d,maxAllowedUnits,Max allowed units (int),verified-exists
+field,com.corrodinggames.rts.game,UnitManager,e,priorityLevel,Priority level (short),verified-exists
+method,com.corrodinggames.rts.game,f,a(com.corrodinggames.rts.game.units.am, com.corrodinggames.rts.game.units.am, float | com.corrodinggames.rts.game.f,verified-exists
+method,com.corrodinggames.rts.game,f,b(com.corrodinggames.rts.game.units.am, float,""" float)""",attemptHitUnit
+method,com.corrodinggames.rts.game,f,a(am,am,float,f
+method,com.corrodinggames.rts.game,f,a(float,float,"""h)""",retarget
+method,com.corrodinggames.rts.game,f,b(am,float,"""float)""",canHitUnit
+field,com.corrodinggames.rts.game,f,A,brakingDistance,Braking distance,verified-exists
+field,com.corrodinggames.rts.game,f,B,arrivalDistance,Arrival detection distance,verified-exists
+field,com.corrodinggames.rts.game,f,C,pushingEnabled,Unit pushing/repulsion enabled flag,verified-exists
+field,com.corrodinggames.rts.game,f,D,pushPriority,Pushing priority level,verified-exists
+field,com.corrodinggames.rts.game,f,E,isPushing,Currently being pushed by another unit,verified-exists
+field,com.corrodinggames.rts.game,f,F,pushForce,Push force magnitude,verified-exists
+field,com.corrodinggames.rts.game,f,G,collisionChecked,Collision was checked this frame,verified-exists
+field,com.corrodinggames.rts.game,f,H,speedFactor,Terrain/movement speed factor (default 1.0),verified-exists
+field,com.corrodinggames.rts.game,f,I,lastPathX,Last path target X position,verified-exists
+field,com.corrodinggames.rts.game,f,J,lastPathY,Last path target Y position,verified-exists
+field,com.corrodinggames.rts.game,f,K,moveStartX,Movement start X position,verified-exists
+field,com.corrodinggames.rts.game,f,L,moveStartY,Movement start Y position,verified-exists
+field,com.corrodinggames.rts.game,f,M,useDirectMovement,Direct movement (skip pathfinding),verified-exists
+field,com.corrodinggames.rts.game,f,N,pathProgress,Path progress along current segment (0-1),verified-exists
+field,com.corrodinggames.rts.game,f,O,nodePositions,Path node positions cache (float[]),verified-exists
+field,com.corrodinggames.rts.game,f,P,pathSearchId,Path search ID for async result matching,verified-exists
+field,com.corrodinggames.rts.game,f,Q,pathResultId,Received path result ID,verified-exists
+field,com.corrodinggames.rts.game,f,R,pathRetryCount,Path retry attempt counter,verified-exists
+field,com.corrodinggames.rts.game,f,S,pathCanRetry,Path retry allowed flag (default true),verified-exists
+field,com.corrodinggames.rts.game,f,T,needsPathUpdate,Path requires update flag,verified-exists
+field,com.corrodinggames.rts.game,f,U,pathAge,Path age since creation (seconds),verified-exists
+field,com.corrodinggames.rts.game,f,V,useSmoothPath,Smooth path following enabled,verified-exists
+field,com.corrodinggames.rts.game,f,W,lastKnownTargetX,Last known target X (for interpolation),verified-exists
+field,com.corrodinggames.rts.game,f,X,lastKnownTargetY,Last known target Y (for interpolation),verified-exists
+field,com.corrodinggames.rts.game,f,Y,interpolatedTargetX,Interpolated target X,verified-exists
+field,com.corrodinggames.rts.game,f,Z,interpolatedTargetY,Interpolated target Y,verified-exists
+method,com.corrodinggames.rts.game,f,a,getag,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+method,com.corrodinggames.rts.game,f,a(am),applyGravity,Projectile: void - update gravity acceleration ah+=ag/bN(),body-verified-v1500
+method,com.corrodinggames.rts.game,f,a(as),writeToStream,Projectile: void - full serialize version 7-89,body-verified-v1500
+method,com.corrodinggames.rts.game,f,a(com.corrodinggames.rts.game.f),obtainProjectile,"""f.java:169 static; reuses pool bm""",verified-exists
+method,com.corrodinggames.rts.game,f,a(f),getTemplate,Projectile: static f - return static prototype bm,body-verified-v1500
+method,com.corrodinggames.rts.game,f,a(float),updateProjectile,"""Projectile: void - main fly loop: J+=dt""",""" hit detection"""
+method,com.corrodinggames.rts.game,f,a(k),readFromStream,Projectile: void - full deserialize with version branches,body-verified-v1500
+method,com.corrodinggames.rts.game,f,a(l),isVisibleOnScreen,Projectile: boolean - viewport culling check,body-verified-v1500
+field,com.corrodinggames.rts.game,f,aA,heightLevel,Height/altitude level (for air/water units),verified-exists
+field,com.corrodinggames.rts.game,f,aB,isHovering,Unit is hovering (hovercraft/flight),verified-exists
+field,com.corrodinggames.rts.game,f,aC,collisionEnabled,Collision detection enabled,verified-exists
+field,com.corrodinggames.rts.game,f,aD,collisionGroupId,Collision group/filter ID,verified-exists
+field,com.corrodinggames.rts.game,f,aE,pathResult,A* pathfinding result handle (h),verified-exists
+field,com.corrodinggames.rts.game,f,aF,desiredHeading,Desired facing angle (radians),verified-exists
+field,com.corrodinggames.rts.game,f,aG,rotateTowardsTarget,Rotate to face attack target,verified-exists
+field,com.corrodinggames.rts.game,f,aH,rotateTowardsMovement,Rotate to face movement direction,verified-exists
+field,com.corrodinggames.rts.game,f,aI,closeEnoughRadius,"""Arrival ""close enough"" radius (default 40)""",verified-exists
+field,com.corrodinggames.rts.game,f,aJ,tooCloseRadius,"""Separation ""too close"" radius (default 60)""",verified-exists
+field,com.corrodinggames.rts.game,f,aK,avoidFriendlies,Friendly unit avoidance enabled,verified-exists
+field,com.corrodinggames.rts.game,f,aL,pushStrength,Unit pushing strength multiplier (default 2.0),verified-exists
+field,com.corrodinggames.rts.game,f,aM,isBeingPushed,Currently being pushed flag,verified-exists
+field,com.corrodinggames.rts.game,f,aN,pushDirectionX,Push direction X component,verified-exists
+field,com.corrodinggames.rts.game,f,aO,pushDirectionY,Push direction Y component,verified-exists
+field,com.corrodinggames.rts.game,f,aP,selectionCircleUI,Selection circle UI element (d.e),verified-exists
+field,com.corrodinggames.rts.game,f,aQ,isSelected,Unit is currently selected,verified-exists
+field,com.corrodinggames.rts.game,f,aR,isVisible,Unit is visible on screen (default true),verified-exists
+field,com.corrodinggames.rts.game,f,aS,needsRedraw,Needs redraw this frame,verified-exists
+field,com.corrodinggames.rts.game,f,aT,movementAnimTimer,Movement animation timer,verified-exists
+field,com.corrodinggames.rts.game,f,aU,movementAnimActive,Movement animation active,verified-exists
+field,com.corrodinggames.rts.game,f,aV,impactPointX,Collision impact point X (package-private),verified-exists
+field,com.corrodinggames.rts.game,f,aW,impactPointY,Collision impact point Y (package-private),verified-exists
+field,com.corrodinggames.rts.game,f,aX,impactNormalX,Collision impact normal X (package-private),verified-exists
+field,com.corrodinggames.rts.game,f,aY,terrainBlocked,Path blocked by terrain,verified-exists
+field,com.corrodinggames.rts.game,f,aZ,unitBlocked,Path blocked by other unit,verified-exists
+field,com.corrodinggames.rts.game,f,aa,canMoveBackwards,Can move backwards flag,verified-exists
+field,com.corrodinggames.rts.game,f,ab,isPathfinding,Currently pathfinding flag,verified-exists
+field,com.corrodinggames.rts.game,f,ac,pathRecalculate,Path needs recalculation,verified-exists
+field,com.corrodinggames.rts.game,f,ad,pathInvalid,Current path is invalid,verified-exists
+field,com.corrodinggames.rts.game,f,ae,smoothPathEnabled,Smooth path corners enabled (default true),verified-exists
+field,com.corrodinggames.rts.game,f,af,hasArrivedAtTarget,Has arrived at target destination,verified-exists
+field,com.corrodinggames.rts.game,f,ag,minMoveSpeed,Minimum movement speed,verified-exists
+field,com.corrodinggames.rts.game,f,ah,maxMoveSpeedOverride,Max speed override value,verified-exists
+field,com.corrodinggames.rts.game,f,ai,speedMultiplier,Overall speed multiplier (default 1.0),verified-exists
+field,com.corrodinggames.rts.game,f,aj,accelMultiplier,Acceleration multiplier (default 1.0),verified-exists
+field,com.corrodinggames.rts.game,f,ak,turnRateMultiplier,Turn rate multiplier (default 1.0),verified-exists
+field,com.corrodinggames.rts.game,f,al,brakingMultiplier,Braking distance multiplier (default 1.0),verified-exists
+field,com.corrodinggames.rts.game,f,am,terrainSpeedFactor,Terrain speed factor (default 1.0),verified-exists
+field,com.corrodinggames.rts.game,f,an,smoothedSpeed,Smoothed/lerped current speed,verified-exists
+field,com.corrodinggames.rts.game,f,ao,useFixedSpeed,Use fixed speed (ignore acceleration),verified-exists
+field,com.corrodinggames.rts.game,f,ap,movementState,Movement state enum (Idle/Moving/Turning),verified-exists
+field,com.corrodinggames.rts.game,f,aq,defaultPathColor,Default path line color (static int ARGB),verified-exists
+field,com.corrodinggames.rts.game,f,ar,pathColor,Current path line color (default=aq),verified-exists
+field,com.corrodinggames.rts.game,f,as,drawPathLine,Draw path line enabled,verified-exists
+field,com.corrodinggames.rts.game,f,at,boolean21,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+field,com.corrodinggames.rts.game,f,au,attachedGameObject,Attached game object (w = GameObject),verified-exists
+field,com.corrodinggames.rts.game,f,av,teamColorIndex,Team color index for rendering (-1=none),verified-exists
+field,com.corrodinggames.rts.game,f,aw,collisionRadius,Collision radius override,verified-exists
+field,com.corrodinggames.rts.game,f,ax,hitboxOffsetX,Collision hitbox offset X,verified-exists
+field,com.corrodinggames.rts.game,f,ay,hitboxOffsetY,Collision hitbox offset Y,verified-exists
+field,com.corrodinggames.rts.game,f,az,facingAngle,Facing angle degrees,verified-exists
+method,com.corrodinggames.rts.game,f,b,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+method,com.corrodinggames.rts.game,f,b(float),updateSplashDamage,Projectile: void - area damage: range query + per-unit check,body-verified-v1500
+field,com.corrodinggames.rts.game,f,ba,defaultPaint,Default movement paint (static ag),verified-exists
+field,com.corrodinggames.rts.game,f,bb,pathPaint,Path line paint (static Paint),verified-exists
+field,com.corrodinggames.rts.game,f,bc,paint2,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+field,com.corrodinggames.rts.game,f,bd,targetMarkerPaint,Target marker paint (static Paint),verified-exists
+field,com.corrodinggames.rts.game,f,be,collisionAreaPaint,Collision area debug paint (static Paint),verified-exists
+field,com.corrodinggames.rts.game,f,bf,rangeCirclePaint,Range circle paint (static Paint),verified-exists
+field,com.corrodinggames.rts.game,f,bg,blockingAreaPaint,Blocking area debug paint (static Paint),verified-exists
+field,com.corrodinggames.rts.game,f,bh,debugOverlayPaint,Debug overlay paint (static Paint),verified-exists
+field,com.corrodinggames.rts.game,f,bi,movementProfiler,Movement performance profiler (static u),verified-exists
+field,com.corrodinggames.rts.game,f,bj,activePaint,Currently active paint reference,verified-exists
+field,com.corrodinggames.rts.game,f,bk,sharedPaint,Shared paint instance (static ag),verified-exists
+field,com.corrodinggames.rts.game,f,bl,globalPathIdCounter,Global path ID counter (static int),verified-exists
+field,com.corrodinggames.rts.game,f,bm,templateInstance,Projectile: static f - prototype for cloning,body-verified-v1500
+field,com.corrodinggames.rts.game,f,bn,boolean30,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+method,com.corrodinggames.rts.game,f,c,loadSpriteTextures,Projectile: static void - load projectiles/projectiles2/projectiles_large,body-verified-v1500
+method,com.corrodinggames.rts.game,f,c(float),drawPathVisuals,Render path lines/waypoints/targets/icons,verified-exists
+method,com.corrodinggames.rts.game,f,d,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+method,com.corrodinggames.rts.game,f,d(float),onTick,f.java:1640 empty override,body-verified-v1007
+method,com.corrodinggames.rts.game,f,e,getLifeRatio,Projectile: float - J/F or 1.0 life/total ratio,body-verified-v1500
+method,com.corrodinggames.rts.game,f,e(float),onDraw,f.java:1643 empty override,body-verified-v1007
+field,com.corrodinggames.rts.game,f,eo,posX,Projectile: float - world X (inherited az),body-verified-v1500
+field,com.corrodinggames.rts.game,f,ep,posY,Projectile: float - world Y (inherited az),body-verified-v1500
+field,com.corrodinggames.rts.game,f,eq,posZ,Projectile: float - world Z/elevation (inherited az),body-verified-v1500
+method,com.corrodinggames.rts.game,f,f,getColorFilterPaint,Projectile: Paint - LightingColorFilter tint (cached bk/bl),body-verified-v1500
+method,com.corrodinggames.rts.game,f,f(float),isTickComplete,f.java:1646 returns false,body-verified-v1007
+field,com.corrodinggames.rts.game,f,g,movementType,Movement type enum (Land/Water/Air/Hover),verified-exists
+field,com.corrodinggames.rts.game,f,h,float1,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+field,com.corrodinggames.rts.game,f,i,float2,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+field,com.corrodinggames.rts.game,f,j,am1,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+field,com.corrodinggames.rts.game,f,k,pathfinderResult,Pathfinder result handle,verified-exists
+field,com.corrodinggames.rts.game,f,l,am2,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+field,com.corrodinggames.rts.game,f,m,hasFixedTarget,Has fixed target,verified-exists
+field,com.corrodinggames.rts.game,f,n,targetX,Target X,verified-exists
+field,com.corrodinggames.rts.game,f,o,targetY,Target Y,verified-exists
+field,com.corrodinggames.rts.game,f,p,pathIndex,Current path node index,verified-exists
+field,com.corrodinggames.rts.game,f,q,projectileConfig,"P3.3-deep-curated: class-context, was=f2",p3-deep-curated
+field,com.corrodinggames.rts.game,f,r,lastPosition,Last frame position,verified-exists
+field,com.corrodinggames.rts.game,f,s,stuckTimer,Stuck detection timer,verified-exists
+field,com.corrodinggames.rts.game,f,t,float8,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+field,com.corrodinggames.rts.game,f,u,float9,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+field,com.corrodinggames.rts.game,f,v,float10,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+field,com.corrodinggames.rts.game,f,w,float11,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+field,com.corrodinggames.rts.game,f,x,float12,real-class-inferred: com.corrodinggames.rts.game.f,real-class-v1200
+field,com.corrodinggames.rts.game,f,y,acceleration,Movement acceleration,verified-exists
+field,com.corrodinggames.rts.game,f,z,turnSpeed,Turn speed,verified-exists
+method,com.corrodinggames.rts.game,i,a(int, int,""" float)""",setScreenSize
+method,com.corrodinggames.rts.game,i,b(int, int),setScreenSize,verified-exists
+field,com.corrodinggames.rts.game,i,A,uiPaint,UI rendering Paint object,verified-exists
+field,com.corrodinggames.rts.game,i,B,textPaint,Text rendering Paint,verified-exists
+field,com.corrodinggames.rts.game,i,C,selectionBoxPaint,Selection box Paint,verified-exists
+field,com.corrodinggames.rts.game,i,D,minimapPaint,Minimap overlay Paint,verified-exists
+field,com.corrodinggames.rts.game,i,G,stepAccumulator,Network replay step frame accumulator,verified-exists
+field,com.corrodinggames.rts.game,i,H,targetFps,Target FPS for frame timing,verified-exists
+field,com.corrodinggames.rts.game,i,I,deltaTime,Frame delta time storage,verified-exists
+field,com.corrodinggames.rts.game,i,J,deltaTimeBackup,Delta time backup (JIT bug detection),verified-exists
+field,com.corrodinggames.rts.game,i,K,shaderBase,Base post-processing shader (post_base.frag),verified-exists
+field,com.corrodinggames.rts.game,i,L,shaderDisplacement,Displacement shader (post_displacement.frag),verified-exists
+field,com.corrodinggames.rts.game,i,N,savedGraphicsLayer,Stack for shader push/pop graphics state,verified-exists
+field,com.corrodinggames.rts.game,i,O,waterTexture1,Water texture layer 1,verified-exists
+field,com.corrodinggames.rts.game,i,P,waterTexture2,Water texture layer 2,verified-exists
+field,com.corrodinggames.rts.game,i,Q,waterTexture3,Water texture layer 3,verified-exists
+field,com.corrodinggames.rts.game,i,R,isPaused,Game paused flag,verified-exists
+field,com.corrodinggames.rts.game,i,S,isGameOver,Game over flag,verified-exists
+field,com.corrodinggames.rts.game,i,T,gameStartTime,Game start timestamp,verified-exists
+field,com.corrodinggames.rts.game,i,U,screenshotTexture,Screenshot capture texture,verified-exists
+field,com.corrodinggames.rts.game,i,V,screenTransitionState,"P3.3-deep-curated: class-context, was=e5",p3-deep-curated
+field,com.corrodinggames.rts.game,i,W,visibleObjects,List of currently visible game objects,verified-exists
+field,com.corrodinggames.rts.game,i,X,visibleObjectsDirty,Visible object list needs refresh flag,verified-exists
+field,com.corrodinggames.rts.game,i,Z,arrayList2,real-class-inferred: com.corrodinggames.rts.game.i,real-class-v1200
+method,com.corrodinggames.rts.game,i,a,isBusy,v19.98 T0: 方法体 bS.u || dH.b() 忙碌检查; 原onScreenStart无GameScreen字符串支撑撤销,verified
+method,com.corrodinggames.rts.game,i,aG(),updateVisibleObjects,Refresh visible object list from spatial query [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game,i,aa,arrayList3,real-class-inferred: com.corrodinggames.rts.game.i,real-class-v1200
+field,com.corrodinggames.rts.game,i,af,flyoverPrevUnit,Camera flyover: previous unit,verified-exists
+field,com.corrodinggames.rts.game,i,ag,flyoverNextUnit,Camera flyover: next unit target,verified-exists
+field,com.corrodinggames.rts.game,i,ah,flyoverLerp,Camera flyover: lerp progress 0-1,verified-exists
+field,com.corrodinggames.rts.game,i,ai,flyoverTransitioning,Camera flyover: transitioning flag,verified-exists
+field,com.corrodinggames.rts.game,i,b,is64BitSystem,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16): 原 boolean1 占位名有误; Main 中 = Sys.is64Bit(),main-deobf-anchored
+method,com.corrodinggames.rts.game,i,c(float),drawGameWorld,[v10.3-resolved: semantic match (1 params | returns void)] Cull (4 overloads),verified-exists
+method,com.corrodinggames.rts.game,i,d,onScreenPause,GameScreen: called when screen loses focus,body-verified-v1300
+method,com.corrodinggames.rts.game,i,d(float),drawUiOverlay,[v10.3-resolved: semantic match (1 params | returns void)] Draw HUD (3 overloads),verified-exists
+method,com.corrodinggames.rts.game,i,e,onScreenResume,GameScreen: called when screen regains focus,body-verified-v1300
+method,com.corrodinggames.rts.game,i,e(),startGame,Initialize and start a new game/match [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game,i,f,onScreenStop,GameScreen: called when screen is destroyed,body-verified-v1300
+method,com.corrodinggames.rts.game,i,f(),endGame,Handle game end: cleanup [sig-backfill: returns void], save replay
+method,com.corrodinggames.rts.game,i,g,getScreenId,GameScreen: returns screen identifier string,body-verified-v1300
+method,com.corrodinggames.rts.game,i,g(),onResize,Handle screen resize event [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game,i,h,isTransitioning,GameScreen: boolean - screen transition in progress,body-verified-v1300
+method,com.corrodinggames.rts.game,i,h(),captureScreenshot,Capture current frame to texture [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game,i,i,getTransitionProgress,GameScreen: float - transition alpha 0.0-1.0,body-verified-v1300
+method,com.corrodinggames.rts.game,i,i(),togglePause,Toggle game pause state [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game,i,j,handleBackPress,GameScreen: boolean - handle Android back button,body-verified-v1300
+method,com.corrodinggames.rts.game,i,j(),getGameState,Return current game/match state [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game,i,k,handleKeyEvent,GameScreen: boolean - handle keyboard event,body-verified-v1300
+method,com.corrodinggames.rts.game,i,k(),onBackPressed,Handle Android back button [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game,i,l,handleTouchEvent,GameScreen: boolean - handle touch/mouse event,body-verified-v1300
+method,com.corrodinggames.rts.game,i,l(),showPauseMenu,Display in-game pause menu [sig-backfill: returns java.lang.String],verified-exists
+method,com.corrodinggames.rts.game,i,m,getBackgroundColor,GameScreen: returns background color,body-verified-v1300
+method,com.corrodinggames.rts.game,i,m(),getActiveModList,Return list of active mods for this match [sig-backfill: returns java.lang.String],verified-exists
+method,com.corrodinggames.rts.game,i,n,showDialog,GameScreen: void - display dialog/popup,body-verified-v1300
+method,com.corrodinggames.rts.game,i,n(),checkWinCondition,Check and handle win/loss conditions [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game,i,o,dismissDialog,GameScreen: void - close current dialog,body-verified-v1300
+method,com.corrodinggames.rts.game,i,o(),onMatchComplete,Match completion callback [sig-backfill: returns java.lang.String],verified-exists
+method,com.corrodinggames.rts.game,i,p,getDialogResult,GameScreen: returns dialog user selection,body-verified-v1300
+method,com.corrodinggames.rts.game,i,p(),restartMatch,Restart current match [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game,i,q,isDialogShowing,GameScreen: boolean - dialog currently visible,body-verified-v1300
+method,com.corrodinggames.rts.game,i,q(),returnToMenu,Exit to main menu [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game,i,r,getParentScreen,GameScreen: returns parent/calling screen,body-verified-v1300
+method,com.corrodinggames.rts.game,i,r(),getReplayData,Get replay recording data [sig-backfill: returns java.lang.String],verified-exists
+method,com.corrodinggames.rts.game,i,s,setResult,GameScreen: void - set return value for parent,body-verified-v1300
+method,com.corrodinggames.rts.game,i,s(),setGameSpeed,Set game speed multiplier [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game,i,t(),getVersionDisplayString,'v' + u(),body-verified-v1007
+field,com.corrodinggames.rts.game,i,u,string4,real-class-inferred: com.corrodinggames.rts.game.i,real-class-v1200
+method,com.corrodinggames.rts.game,i,u(),getVersionNumber,'1.15',body-verified-v1007
+method,com.corrodinggames.rts.game,i,v(),getVersionString,i: method v() -> getVersionString,body-verified-v1007
+method,com.corrodinggames.rts.game,i,w,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.i,real-class-v1200
+method,com.corrodinggames.rts.game,i,x,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.i,real-class-v1200
+method,com.corrodinggames.rts.game,i,y,getam,real-class-inferred: com.corrodinggames.rts.game.i,real-class-v1200
+method,com.corrodinggames.rts.game,i,z,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.i,real-class-v1200
+method,com.corrodinggames.rts.game,n,a(boolean, boolean),getUnitCount,n.java:662 T.c + f + e
+method,com.corrodinggames.rts.game,n,b(com.corrodinggames.rts.game.units.custom.g, boolean,""" boolean)""",getEnemyUnitCountOfType
+method,com.corrodinggames.rts.game,n,c(com.corrodinggames.rts.game.units.custom.g, boolean,""" boolean)""",getAllyUnitCountOfType
+field,com.corrodinggames.rts.game,n,A,startingUnitChoice,Starting unit choice,verified-exists
+method,com.corrodinggames.rts.game,n,A(),getCreditsInteger,Returns credits as rounded int [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game,n,B,teamColorIndex,Team color index (Integer),verified-exists
+method,com.corrodinggames.rts.game,n,B(),isIdle,Check if player idle (no command in 15s),verified-exists
+field,com.corrodinggames.rts.game,n,C,playerColor,Player color,verified-exists
+method,com.corrodinggames.rts.game,n,C(),getPlayerColorInt,Returns player color as ARGB int [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game,n,D,pingMs,Current ping in milliseconds,verified-exists
+method,com.corrodinggames.rts.game,n,D(),getIncomeRate,Returns resource income rate per second [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game,n,E,hasLost,Has lost,verified-exists
+method,com.corrodinggames.rts.game,n,E(),getExpenseRate,Returns resource expense rate per second [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game,n,F,hasDisconnected,Has disconnected,verified-exists
+method,com.corrodinggames.rts.game,n,F(),recalculateEconomy,Recalculate income/expense rates [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game,n,G,hasSurrendered,Has surrendered,verified-exists
+method,com.corrodinggames.rts.game,n,G(),getUnitCount,Returns total unit count [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game,n,H,teamVictory,Team victory flag,verified-exists
+method,com.corrodinggames.rts.game,n,H(),getBuildingCount,Returns building count [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game,n,I,isAllyLocked,Team alliance locked flag,verified-exists
+method,com.corrodinggames.rts.game,n,I(),updateResourceDisplay,Update resource HUD display [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game,n,J,isSharingResources,Resource sharing enabled,verified-exists
+method,com.corrodinggames.rts.game,n,J(),processResourceTick,Process per-tick resource accumulation [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game,n,K,stateLock,Player state synchronization lock (final Object),verified-exists
+method,com.corrodinggames.rts.game,n,K(),getMaxUnitCapacity,Returns maximum unit capacity [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game,n,L,totalUnitsOwned,Total units owned count,verified-exists
+method,com.corrodinggames.rts.game,n,L(),recalculateCapacities,Recalculate unit/building capacities [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game,n,M,totalBuildingsOwned,Total buildings owned count,verified-exists
+method,com.corrodinggames.rts.game,n,M(),getUsedUnitCapacity,Returns currently used unit capacity [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game,n,N,fogOfWarGrid,Fog of war byte grid,verified-exists
+method,com.corrodinggames.rts.game,n,N(),getPlayerName,Returns player display name string [sig-backfill: returns java.lang.String],verified-exists
+field,com.corrodinggames.rts.game,n,O,connectionId,Connection hex ID,verified-exists
+method,com.corrodinggames.rts.game,n,O(),markAllPlayersDirty,v19.104 agentG: n.i.S=n.h.S=true全体标记 (1539行); 原onPlayerDefeated错误,verified
+field,com.corrodinggames.rts.game,n,P,lastIPAddress,Last known IP address,verified-exists
+method,com.corrodinggames.rts.game,n,P(),onPlayerVictory,Handle player victory event [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game,n,Q,incomeRate,Resource income rate,verified-exists
+method,com.corrodinggames.rts.game,n,Q(),checkDefeatedPlayers,Check for defeated players and trigger notifications (static),verified-exists
+field,com.corrodinggames.rts.game,n,R,storageCapacity,Resource storage capacity,verified-exists
+method,com.corrodinggames.rts.game,n,R(),getTeamIndex,Returns team index number [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game,n,S,canBuild,Can build units flag (default true),verified-exists
+method,com.corrodinggames.rts.game,n,S(),getAllyCount,Returns number of allied players [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game,n,T,teamTracker,Team unit tracker,verified-exists
+method,com.corrodinggames.rts.game,n,T(),onMatchStart,Handle match start initialization [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game,n,U,isObserver,Is observer flag,verified-exists
+method,com.corrodinggames.rts.game,n,U(),getUnitFilter,Get current unit filter,verified-exists
+field,com.corrodinggames.rts.game,n,V,playerFlag,Player state flag byte,verified-exists
+method,com.corrodinggames.rts.game,n,V(),getTeamStatModifiers,Returns team stat modifiers collection [sig-backfill: returns com.corrodinggames.rts.game.units.custom.e.f],verified-exists
+field,com.corrodinggames.rts.game,n,W,selectedCommandCenter,Selected CC index (-1=none),verified-exists
+method,com.corrodinggames.rts.game,n,W(),debugUnitCountByType,Debug: log count of every unit type owned,verified-exists
+field,com.corrodinggames.rts.game,n,X,lastCommandTick,Last command tick (long),verified-exists
+method,com.corrodinggames.rts.game,n,X(),updateAllUnitCapacities,Update max unit capacity for all players (static),verified-exists
+field,com.corrodinggames.rts.game,n,Y,lastIncomeTick,Last income tick (long),verified-exists
+method,com.corrodinggames.rts.game,n,Y(),onResourceChanged,Handle resource amount change event [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game,n,Z,teamSlot,Team slot index (-1=none),type-aware-fp-v19.114
+method,com.corrodinggames.rts.game,n,Z(),resetForNewGame,Reset player state to defaults (fresh start),verified-exists
+method,com.corrodinggames.rts.game,n,a,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.n,real-class-v1200
+method,com.corrodinggames.rts.game,n,a(com.corrodinggames.rts.game.n),compareToPlayer,n.java:117 ac/k/name compare,body-verified-v1007
+field,com.corrodinggames.rts.game,n,aa,isDefeated,Is defeated flag,verified-exists
+method,com.corrodinggames.rts.game,n,aa(),getCreditsTotal,v19.104 agentG: 166ms缓存aq/ar + o+p (1867行); 原getTotalPlayTime错误,verified
+method,com.corrodinggames.rts.game,n,ab,get_ab,"""[Phase3-method] returns com.corrodinggames.rts.game.units.custom.e.f""",verified-exists
+field,com.corrodinggames.rts.game,n,ac,victoryTimer,Victory condition timer (int=0),verified-exists
+field,com.corrodinggames.rts.game,n,action_set_rally,action_set_rally,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,action_upgrade,action_upgrade,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,add_group_to_selection_1,add_group_to_selection_1,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,add_group_to_selection_10,add_group_to_selection_10,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,add_group_to_selection_2,add_group_to_selection_2,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,add_group_to_selection_3,add_group_to_selection_3,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,add_group_to_selection_4,add_group_to_selection_4,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,add_group_to_selection_5,add_group_to_selection_5,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,add_group_to_selection_6,add_group_to_selection_6,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,add_group_to_selection_7,add_group_to_selection_7,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,add_group_to_selection_8,add_group_to_selection_8,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,add_group_to_selection_9,add_group_to_selection_9,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,ae,playerColorPaint,Player color paint,verified-exists
+field,com.corrodinggames.rts.game,n,af,teamColorPaint,Team color paint,verified-exists
+field,com.corrodinggames.rts.game,n,ag,colorPalette,Team color palette (static int[10]),verified-exists
+field,com.corrodinggames.rts.game,n,ah,colorNames,Team color name strings (static String[10]),verified-exists
+field,com.corrodinggames.rts.game,n,aiDifficulty,aiDifficulty,"SettingsEngine SharedPreferences key (game verified, default=3)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,aj,defaultTeamIndex,Default team index (static, =-99)
+field,com.corrodinggames.rts.game,n,allowGameRecording,allowGameRecording,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,am,playerActions,Player available actions list (c),verified-exists
+field,com.corrodinggames.rts.game,n,an,incomeTimer,Income timer accumulator,verified-exists
+field,com.corrodinggames.rts.game,n,androidNoSoundPrioritiesDebug,androidNoSoundPrioritiesDebug,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,ao,defaultIncomeInterval,Default income interval (static, =40.0f)
+field,com.corrodinggames.rts.game,n,ap,defaultCreditRate,Default credit rate (static, =10.0f)
+field,com.corrodinggames.rts.game,n,as,playerSlotArray,Player slot array (private static n[]),verified-exists
+field,com.corrodinggames.rts.game,n,at,receivingSync,Currently receiving sync data (private),verified-exists
+field,com.corrodinggames.rts.game,n,attack_move,attack_move,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,au,lastSyncFrame,Last received sync frame (private),verified-exists
+field,com.corrodinggames.rts.game,n,autosaving,autosaving,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,av,lastCommandFrame,Last command frame (private),verified-exists
+method,com.corrodinggames.rts.game,n,b,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.n,real-class-v1200
+method,com.corrodinggames.rts.game,n,b(boolean),getActivePlayers,n.java:400 static; non-neutral when false,body-verified-v1007
+field,com.corrodinggames.rts.game,n,banTimeInSecondsAfterKick,banTimeInSecondsAfterKick,"SettingsEngine SharedPreferences key (game verified, default=60)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,batterySaving,batterySaving,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+method,com.corrodinggames.rts.game,n,c,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.n,real-class-v1200
+method,com.corrodinggames.rts.game,n,c(boolean),setHost,n.java:654 Q = bl ? 1 : 0,body-verified-v1007
+field,com.corrodinggames.rts.game,n,camera_down,camera_down,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT,DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,camera_left,camera_left,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT,DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,camera_right,camera_right,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT,DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,camera_up,camera_up,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT,DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,classicInterface,classicInterface,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,create_group_1,create_group_1,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,create_group_10,create_group_10,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,create_group_2,create_group_2,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,create_group_3,create_group_3,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,create_group_4,create_group_4,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,create_group_5,create_group_5,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,create_group_6,create_group_6,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,create_group_7,create_group_7,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,create_group_8,create_group_8,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,create_group_9,create_group_9,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,cycle_air_factories,cycle_air_factories,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,cycle_builders,cycle_builders,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,cycle_extractors,cycle_extractors,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,cycle_land_factories,cycle_land_factories,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,cycle_upgradable_fabricators,cycle_upgradable_fabricators,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+method,com.corrodinggames.rts.game,n,d,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.n,real-class-v1200
+method,com.corrodinggames.rts.game,n,d(com.corrodinggames.rts.game.n),isSameTeamAs,n.java:1103 r == r,body-verified-v1007
+field,com.corrodinggames.rts.game,n,deselect_units,deselect_units,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,disableDigitGrouping,disableDigitGrouping,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,disableModLazyLoad,disableModLazyLoad,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,displayOverCutout,displayOverCutout,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,doubleClickToAttackMove,doubleClickToAttackMove,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,dpad,dpad,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+method,com.corrodinggames.rts.game,n,e,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.n,real-class-v1200
+method,com.corrodinggames.rts.game,n,e(float),checkDefeat,Defeat check: iterate units, surrender if none remain
+field,com.corrodinggames.rts.game,n,edgeScrollSpeed,edgeScrollSpeed,"SettingsEngine SharedPreferences key (game verified, default=1.0)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,enableMouseCapture,enableMouseCapture,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,enableSounds,enableSounds,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,externalSAFWorking,externalSAFWorking,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+method,com.corrodinggames.rts.game,n,f,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.n,real-class-v1200
+method,com.corrodinggames.rts.game,n,f(int),setTeamIdAndRegister,"""n.java:1059 c(n2""",verified-exists
+field,com.corrodinggames.rts.game,n,faster,faster,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT,DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,forceEnglish,forceEnglish,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+method,com.corrodinggames.rts.game,n,g,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.n,real-class-v1200
+method,com.corrodinggames.rts.game,n,g(int),canAffordInt,Check if player can afford integer cost,verified-exists
+field,com.corrodinggames.rts.game,n,gameVolume,gameVolume,"SettingsEngine SharedPreferences key (game verified, default=0.5)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,gestureZoom,gestureZoom,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,go_to_notification,go_to_notification,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,guard_unit,guard_unit,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+method,com.corrodinggames.rts.game,n,h,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.n,real-class-v1200
+method,com.corrodinggames.rts.game,n,h(float),tickAllAI,Run AI tick for all AI players (static),verified-exists
+field,com.corrodinggames.rts.game,n,hadStoragePermissionInPast,hadStoragePermissionInPast,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,hasPlayedGameOrSeenHelp,hasPlayedGameOrSeenHelp,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,hasSelectedAStorageType,hasSelectedAStorageType,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,highGraphics,highGraphics,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,highRefreshRate,highRefreshRate,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+method,com.corrodinggames.rts.game,n,i,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.n,real-class-v1200
+method,com.corrodinggames.rts.game,n,i(int),getSlotColor,Get color int for team slot index (static),verified-exists
+field,com.corrodinggames.rts.game,n,immersiveFullScreen,immersiveFullScreen,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,interfaceVolume,interfaceVolume,"SettingsEngine SharedPreferences key (game verified, default=0.63)",game-prefs-verified
+method,com.corrodinggames.rts.game,n,j,getString,real-class-inferred: com.corrodinggames.rts.game.n,real-class-v1200
+method,com.corrodinggames.rts.game,n,j(),hasSurrenderedFlag,v19.104 agentG: E标志投降组 (536-550行); 原hasLost错误,verified
+method,com.corrodinggames.rts.game,n,k,getn,real-class-inferred: com.corrodinggames.rts.game.n,real-class-v1200
+method,com.corrodinggames.rts.game,n,k(),hasSurrenderTimestamp,v19.104 agentG: au>=0; 原hasReceivedSync错误,verified
+field,com.corrodinggames.rts.game,n,keyAction,keyAction,"SettingsEngine SharedPreferences key (game verified, default=23)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,keyDown,keyDown,"SettingsEngine SharedPreferences key (game verified, default=20)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,keyJump,keyJump,"SettingsEngine SharedPreferences key (game verified, default=19)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,keyLeft,keyLeft,"SettingsEngine SharedPreferences key (game verified, default=21)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,keyRight,keyRight,"SettingsEngine SharedPreferences key (game verified, default=22)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,keyboardSupport,keyboardSupport,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,l,modifierWarning,Modifier warning text (final String),verified-exists
+method,com.corrodinggames.rts.game,n,l(),markSurrenderTimestamp,v19.104 agentG: au=l2.by投降时间戳 (550行); 原markSyncFrame错误,verified
+field,com.corrodinggames.rts.game,n,landscapeOrientation,landscapeOrientation,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,lastModCount,lastModCount,"SettingsEngine SharedPreferences key (game verified, default=1)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,lastNetworkIP,lastNetworkIP,"SettingsEngine SharedPreferences key (game verified, default=R91309)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,lastNetworkPlayerName,lastNetworkPlayerName,"SettingsEngine SharedPreferences key (game verified, default=Unnamed204)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,lastSeenMessageId,lastSeenMessageId,"SettingsEngine SharedPreferences key (game verified, default=-1)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,liveReloading,liveReloading,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,loadDisabledModData,loadDisabledModData,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,locationAction,locationAction,"SettingsEngine SharedPreferences key (game verified, default=3)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,locationDpad,locationDpad,"SettingsEngine SharedPreferences key (game verified, default=0)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,m,isSpectator,Is spectator flag,verified-exists
+method,com.corrodinggames.rts.game,n,m(),isActive,Check if player is active (not disconnected/surrendered/AI),verified-exists
+field,com.corrodinggames.rts.game,n,masterVolume,masterVolume,"SettingsEngine SharedPreferences key (game verified, default=0.2)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,modSettings,modSettings,"SettingsEngine SharedPreferences key (game verified, default=sw1878960341|sw1878960341|enab)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,modSettingsVersion,modSettingsVersion,"SettingsEngine SharedPreferences key (game verified, default=1)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,mouseOrders,mouseOrders,"SettingsEngine SharedPreferences key (game verified, default=1)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,mousePlacement,mousePlacement,"SettingsEngine SharedPreferences key (game verified, default=1)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,mouseSupport,mouseSupport,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,musicVolume,musicVolume,"SettingsEngine SharedPreferences key (game verified, default=0.39)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,n,isReady,Is ready to start flag,verified-exists
+method,com.corrodinggames.rts.game,n,n(),resetAllPlayers,Reset all players to initial state (static),verified-exists
+field,com.corrodinggames.rts.game,n,networkClientId,networkClientId,"SettingsEngine SharedPreferences key (game verified, default=254f8f1b-d6fa-4dd2-948a-e5664a)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,networkClientIdMachineKey,networkClientIdMachineKey,"SettingsEngine SharedPreferences key (game verified, default=F4D2F6CF8EA984)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,networkPort,networkPort,"SettingsEngine SharedPreferences key (game verified, default=5123)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,networkServerId,networkServerId,"SettingsEngine SharedPreferences key (game verified, default=RELAY-CN Team & Copyright dr@d)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,newRender,newRender,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,nextBackgroundMap,nextBackgroundMap,"SettingsEngine SharedPreferences key (game verified, default=3)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,next_music_track,next_music_track,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,numIncompleteLoadAttempts,numIncompleteLoadAttempts,"SettingsEngine SharedPreferences key (game verified, default=0)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,numLoadsSinceRunningGameOrNormalExit,numLoadsSinceRunningGameOrNormalExit,"SettingsEngine SharedPreferences key (game verified, default=1)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,numberOfWins,numberOfWins,"SettingsEngine SharedPreferences key (game verified, default=3)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,o,credits,Current credits (default 4000),verified-exists
+method,com.corrodinggames.rts.game,n,o(),resetSurrenderTimestamps,Reset all player surrender timestamps (static),verified-exists
+field,com.corrodinggames.rts.game,n,onscreenControls,onscreenControls,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,p,creditBuffer,Credit buffer,verified-exists
+method,com.corrodinggames.rts.game,n,p(),isActivePlayer,n.java:645 I || J,body-verified-v1007
+field,com.corrodinggames.rts.game,n,patrol,patrol,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,pause_game,pause_game,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,ping_map,ping_map,"SettingsEngine SharedPreferences key (game verified, default=ctrl+q,DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,q,creditsSpent,Total credits spent this game,verified-exists
+method,com.corrodinggames.rts.game,n,q(),isLocalPlayer,Check if this player is the local/human-controlled one,verified-exists
+field,com.corrodinggames.rts.game,n,quickRally,quickRally,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,r,teamId,Team ID,verified-exists
+method,com.corrodinggames.rts.game,n,r(),isHost,n.java:658 Q == 1,body-verified-v1007
+field,com.corrodinggames.rts.game,n,rateGameShown,rateGameShown,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderAntiAlias,renderAntiAlias,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderBackground,renderBackground,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderClouds,renderClouds,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderControls,renderControls,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderDensity,renderDensity,"SettingsEngine SharedPreferences key (game verified, default=1.0)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderDoubleScale,renderDoubleScale,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderExtraLayers,renderExtraLayers,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderExtraShadows,renderExtraShadows,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderFancyWater,renderFancyWater,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderSmoothDelta,renderSmoothDelta,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderVsync,renderVsync,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,renderWithLineWidth,renderWithLineWidth,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,replayTracing,replayTracing,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,replaysShowRecordedChat,replaysShowRecordedChat,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,resizeFontWithUIScale,resizeFontWithUIScale,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,s,commanderUnitType,Commander unit type (y),verified-exists
+method,com.corrodinggames.rts.game,n,s(),getTotalUnitCount,Get total units (completed+incomplete+queued),verified-exists
+field,com.corrodinggames.rts.game,n,saveMultiplayerReplays,saveMultiplayerReplays,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,save_game,save_game,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,scrollSpeed,scrollSpeed,"SettingsEngine SharedPreferences key (game verified, default=1.0)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_command_center,select_command_center,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_group_1,select_group_1,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_group_10,select_group_10,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_group_2,select_group_2,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_group_3,select_group_3,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_group_4,select_group_4,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_group_5,select_group_5,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_group_6,select_group_6,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_group_7,select_group_7,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_group_8,select_group_8,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_group_9,select_group_9,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,select_whole_army,select_whole_army,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,sendReports,sendReports,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,send_chat,send_chat,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT,DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,send_team_chat,send_team_chat,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT,DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,settingsGameVersion,settingsGameVersion,"SettingsEngine SharedPreferences key (game verified, default=176)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,settingsGameVersionFirst,settingsGameVersionFirst,"SettingsEngine SharedPreferences key (game verified, default=176)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,shaderEffects,shaderEffects,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showActionInfoHoverNearMouse,showActionInfoHoverNearMouse,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showChatAndPingShortcuts,showChatAndPingShortcuts,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showFps,showFps,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showHp,showHp,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showHpChanges,showHpChanges,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showMapPingsOnBattlefield,showMapPingsOnBattlefield,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showMapPingsOnMinimap,showMapPingsOnMinimap,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showPlayerChatInGame,showPlayerChatInGame,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showSelectedUnitsList,showSelectedUnitsList,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showUnitGroups,showUnitGroups,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showUnitIcons,showUnitIcons,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showUnitWaypoints,showUnitWaypoints,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showWarLogOnScreen,showWarLogOnScreen,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,showZoomButton,showZoomButton,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,show_menu,show_menu,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT,DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,shownAudioWarning,shownAudioWarning,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,slick2dBorderless,slick2dBorderless,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,slick2dFullScreen,slick2dFullScreen,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,slick2dFullScreenResolution,slick2dFullScreenResolution,"SettingsEngine SharedPreferences key (game verified, default=native)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,slick2dResolution,slick2dResolution,"SettingsEngine SharedPreferences key (game verified, default=native)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,slower,slower,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT,DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,smartSelection_v2,smartSelection_v2,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,softFogFading,softFogFading,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,stop,stop,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,storageType,storageType,"SettingsEngine SharedPreferences key (game verified, default=0)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,t,builderUnitType,Builder unit type (y),verified-exists
+method,com.corrodinggames.rts.game,n,t(),validateTeamTracker,Validate team tracker against fresh computation,verified-exists
+field,com.corrodinggames.rts.game,n,teamColors,teamColors,"SettingsEngine SharedPreferences key (game verified, default=#00ff00,#d02013,#0463f3,#ffff4)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,teamColorsNames,teamColorsNames,"SettingsEngine SharedPreferences key (game verified, default=GREEN,RED,BLUE,YELLOW,CYAN,WHI)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,teamShaders,teamShaders,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,teamUnitCapHostedGame,teamUnitCapHostedGame,"SettingsEngine SharedPreferences key (game verified, default=500)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,teamUnitCapSinglePlayer,teamUnitCapSinglePlayer,"SettingsEngine SharedPreferences key (game verified, default=500)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,trackpad,trackpad,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,u,hasReceivedSync,Has received initial sync,verified-exists
+method,com.corrodinggames.rts.game,n,u(),getIncomeRate,Get income rate adjusted by multiplier,verified-exists
+field,com.corrodinggames.rts.game,n,udpInMultiplayer,udpInMultiplayer,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,uiRenderScale,uiRenderScale,"SettingsEngine SharedPreferences key (game verified, default=1.0)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,unit_action_1,unit_action_1,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,unit_action_10,unit_action_10,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,unit_action_2,unit_action_2,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,unit_action_3,unit_action_3,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,unit_action_4,unit_action_4,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,unit_action_5,unit_action_5,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,unit_action_6,unit_action_6,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,unit_action_7,unit_action_7,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,unit_action_8,unit_action_8,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,unit_action_9,unit_action_9,"SettingsEngine SharedPreferences key (game verified, default=DEFAULT)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,unlockedScreenRotation,unlockedScreenRotation,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,upgradedToNoPublicStorage,upgradedToNoPublicStorage,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,upgradedToNoPublicStorageWarningShown,upgradedToNoPublicStorageWarningShown,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,useCircleSelect,useCircleSelect,"SettingsEngine SharedPreferences key (game verified, default=false)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,useMinimapAllyColors,useMinimapAllyColors,"SettingsEngine SharedPreferences key (game verified, default=true)",game-prefs-verified
+field,com.corrodinggames.rts.game,n,v,playerName,Player name,verified-exists
+method,com.corrodinggames.rts.game,n,v(),getScaledTotalUnits,Get scaled total units owned,verified-exists
+field,com.corrodinggames.rts.game,n,w,aiEnabled,AI enabled,verified-exists
+method,com.corrodinggames.rts.game,n,w(),getTotalUnitCount,n.java:837 T.b,body-verified-v1007
+field,com.corrodinggames.rts.game,n,x,aiDifficultyAlt,AI difficulty alt,verified-exists
+method,com.corrodinggames.rts.game,n,x(),getMaxUnitCount,n.java:841 T.a,body-verified-v1007
+field,com.corrodinggames.rts.game,n,y,hasCustomTeam,Has custom team color,verified-exists
+method,com.corrodinggames.rts.game,n,y(),getPingDisplayString,n.java:845 '(n)'/'(disconnected)',body-verified-v1007
+field,com.corrodinggames.rts.game,n,z,aiDifficulty,AI difficulty,verified-exists
+method,com.corrodinggames.rts.game,n,z(),getHostDisplayString,n.java:862 HOST/N/A,body-verified-v1007
+method,com.corrodinggames.rts.game,u,a,reset,real-class-inferred: com.corrodinggames.rts.game.u,real-class-v1200
+field,com.corrodinggames.rts.game.units,DecorType1,a,animTimer,Animation/lifetime timer (float),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType1,b,decorType,Decoration type enum (int),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType1,c,scaleValue,Scale/size value (float),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType1,d,rotationAngle,Rotation angle (float),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType1,e,alphaValue,Alpha/opacity value (float),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType1,f,colorTint,Color tint ARGB (int),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType1,g,groundOffset,Ground offset Y (float),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType2,a,animType,Animation type enum (int),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType2,b,scaleValue,Scale multiplier (float),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType2,c,fadeInEnabled,Fade-in enabled (boolean),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType2,d,fadeOutEnabled,Fade-out enabled (boolean),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType3,a,particleType,Particle effect type (int),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType3,b,particleValues,Particle parameter values (float[31]),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType3,c,particleFlags,Particle behavior flags (boolean[31]),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType3,e,isActive,Effect active flag (boolean),verified-exists
+field,com.corrodinggames.rts.game.units,DecorType3,f,isLooping,Effect looping flag (boolean),verified-exists
+field,com.corrodinggames.rts.game.units,ResourceRate,a,productionRate,Production per second (float),verified-exists
+field,com.corrodinggames.rts.game.units,ResourceRate,b,consumptionRate,Consumption per second (float),verified-exists
+field,com.corrodinggames.rts.game.units,ResourceRate,c,storageCapacity,Storage capacity (float),verified-exists
+field,com.corrodinggames.rts.game.units,ResourceRate,d,resourceRef,Resource type reference (e),verified-exists
+field,com.corrodinggames.rts.game.units,UnitAttachment,a,attachType,Attachment type enum (int),verified-exists
+field,com.corrodinggames.rts.game.units,UnitAttachment,b,offsetX,Attachment offset X (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitAttachment,c,offsetY,Attachment offset Y (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitAttachment,d,rotationAngle,Attachment rotation (float),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units,UnitAttachment,e,scaleValue,Attachment scale (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,a,turretOffsetX,Turret mount offset X (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,b,turretOffsetY,Turret mount offset Y (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,c,turretPivotX,Turret rotation pivot X (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,d,turretPivotY,Turret rotation pivot Y (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,e,restAngle,Turret rest/default angle (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,f,maxRotationAngle,Maximum rotation arc (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,g,hasLimitedArc,Has limited firing arc (boolean),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,h,minAngleLimit,Minimum angle limit (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,i,maxAngleLimit,Maximum angle limit (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,j,targetUnit,Current target unit (am),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,k,currentAngle,Current turret angle (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,l,targetAngle,Target/desired angle (float),verified-exists
+field,com.corrodinggames.rts.game.units,UnitTurret,m,isTurning,Currently rotating/turning (boolean),verified-exists
+field,com.corrodinggames.rts.game.units,WaterUnit,a,buoyancyForce,Buoyancy lift force (float, default 2000)
+field,com.corrodinggames.rts.game.units,WaterUnit,b,waterSurfaceLevel,Water surface Y level (float),verified-exists
+field,com.corrodinggames.rts.game.units,WaterUnit,c,waveAmplitude,Wave oscillation amplitude (float),verified-exists
+field,com.corrodinggames.rts.game.units,WaterUnit,d,maxWaterDepth,Maximum water depth (float, default 2000)
+field,com.corrodinggames.rts.game.units,WaterUnit,e,waterDrag,Drag coefficient in water (float),verified-exists
+field,com.corrodinggames.rts.game.units,WaterUnit,f,angularDrag,Angular/rotation drag (float),verified-exists
+field,com.corrodinggames.rts.game.units,WaterUnit,g,floatOnSurface,Float on water surface (boolean, default true)
+field,com.corrodinggames.rts.game.units,WaterUnit,h,submersionDepth,Submersion depth factor (float, default 1.0)
+field,com.corrodinggames.rts.game.units,WaterUnit,i,canSubmerge,Can fully submerge (boolean),verified-exists
+field,com.corrodinggames.rts.game.units,WaterUnit,j,sonarRange,Sonar detection range (float),verified-exists
+method,com.corrodinggames.rts.game.units,h,a(com.corrodinggames.rts.game.units.a.s, boolean),a_2p,verified-exists
+field,com.corrodinggames.rts.game.units,h,A,actionEnableAIDebug,Debug: enable AI debug (static s),verified-exists
+method,com.corrodinggames.rts.game.units,h,A(),getResourceProductionRate,Returns resource production rate float [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,h,B,actionEnableTriggerDebug,Debug: enable trigger debug (static s),verified-exists
+method,com.corrodinggames.rts.game.units,h,B(),getBuildPowerOutput,Returns build power output float [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,h,C,actionClearSaveHistory,Debug: clear save history (static s),verified-exists
+method,com.corrodinggames.rts.game.units,h,C(),getRepairRate,Returns repair rate float [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,h,D,buildQueue,Build queue,verified-exists
+method,com.corrodinggames.rts.game.units,h,D(),getReclaimRate,Returns reclaim rate float [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,h,E(),hasActiveProduction,Whether factory has active production [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,h,F(),isQueuePaused,Whether production queue is paused [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,h,G(),getQueueProgress,Returns current queue item progress float [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,h,H(),getMaxQueueCapacity,Returns max queue items capacity [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,h,I(),canAcceptOrders,Whether factory can accept new build orders [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,h,J(),isUpgrading,Whether factory is currently upgrading [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,h,K,buildFilter,Build availability filter,verified-exists
+method,com.corrodinggames.rts.game.units,h,K(),processUpgradeComplete,Handle upgrade completion [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,h,L(),getLinkedFactory,Returns linked/paired factory reference [sig-backfill: returns com.corrodinggames.rts.game.units.h],verified-exists
+method,com.corrodinggames.rts.game.units,h,M(),processBuildComplete,Handle build completion and unit spawning [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,h,N(),getBuildableActions,Returns list of buildable action types [sig-backfill: returns java.util.ArrayList],verified-exists
+method,com.corrodinggames.rts.game.units,h,O(),updateProductionQueue,Update production queue processing [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,h,P(),isProductionComplete,Whether current production item is done [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,h,a,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h,b,get_b,"""[Phase3-method] returns android.graphics.PointF[]""",verified-exists
+method,com.corrodinggames.rts.game.units,h,b_,get_b_,"""[Phase3-method] returns boolean""",verified-exists
+method,com.corrodinggames.rts.game.units,h,c,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h,c(com.corrodinggames.rts.game.units.am),get_c,"""[Phase3-method] returns float""",verified-exists
+method,com.corrodinggames.rts.game.units,h,d,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h,e,onUnitDeath,"""DebugCheatUnit: void - dead texture""", bT=false
+method,com.corrodinggames.rts.game.units,h,e(),processBuildQueue,Process build queue,verified-exists
+method,com.corrodinggames.rts.game.units,h,e_,getPointF,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h,f,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h,f(),startBuild,Start building unit,verified-exists
+method,com.corrodinggames.rts.game.units,h,g,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h,g(),cancelBuild,Cancel current build,verified-exists
+field,com.corrodinggames.rts.game.units,h,h,actionReloadUnits,Debug: reload all units (static s),verified-exists
+field,com.corrodinggames.rts.game.units,h,i,actionReloadActive,Debug: reload active units (static s),verified-exists
+field,com.corrodinggames.rts.game.units,h,j,actionCloneUnit,Debug: clone unit (static s),verified-exists
+method,com.corrodinggames.rts.game.units,h,k,getIconTexture,DebugCheatUnit: returns null (no icon for debug unit) [FIXED: was incorrectly isBuildable],body-verified-v1300-fixed
+method,com.corrodinggames.rts.game.units,h,k(),isBuildable,Check if unit type is buildable,verified-exists
+method,com.corrodinggames.rts.game.units,h,l,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h,l(),getQueueLength,Get build queue length,verified-exists
+method,com.corrodinggames.rts.game.units,h,m,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h,m(),clearBuildQueue,Clear entire build queue,verified-exists
+field,com.corrodinggames.rts.game.units,h,n,actionNukeAt,Debug: nuke at position (static s),verified-exists
+field,com.corrodinggames.rts.game.units,h,o,actionFreezeAI,Debug: freeze AI (static s),verified-exists
+field,com.corrodinggames.rts.game.units,h,p,actionChangeAlliance,Debug: change alliance (static s),verified-exists
+field,com.corrodinggames.rts.game.units,h,q,rallyPoint,Rally point position,verified-exists
+method,com.corrodinggames.rts.game.units,h,r,getas,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+field,com.corrodinggames.rts.game.units,h,s,idleTimer,Idle time counter,verified-exists
+field,com.corrodinggames.rts.game.units,h,t,totalProduced,Total units produced count,verified-exists
+method,com.corrodinggames.rts.game.units,h,u,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h,v,gete,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h,w,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+field,com.corrodinggames.rts.game.units,h,x,actionFastForward,Debug: fast forward (static s),verified-exists
+method,com.corrodinggames.rts.game.units,h,y,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h,z,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.h,real-class-v1200
+method,com.corrodinggames.rts.game.units,h$3,a(am,boolean),isEnabled,verified-exists
+method,com.corrodinggames.rts.game.units,h$3,c(am,boolean),execute,verified-exists
+method,com.corrodinggames.rts.game.units,h$3,a(),getHelpText,Phase3-inferred: returns 'Start playback of last a replay',verified-exists
+method,com.corrodinggames.rts.game.units,h$3,b(),getName,Phase3-inferred: returns 'Start Playback',verified-exists
+method,com.corrodinggames.rts.game.units,h$3,d(),getDynamicLabel,Phase3-inferred: 'Start Playback'/'Stop Playback' depending on replay state,verified-exists
+method,com.corrodinggames.rts.game.units,h$9,c(am,boolean),execute,verified-exists
+method,com.corrodinggames.rts.game.units,h$9,a(),getHelpText,Phase3-inferred: returns 'Search for units',verified-exists
+method,com.corrodinggames.rts.game.units,h$9,b(),getDynamicName,"""Phase3-inferred: 'Search: <filter>' when unit search active""",verified-exists
+method,com.corrodinggames.rts.game.units,h$9,j(),getIcon,Phase3-inferred: j() returns m.e icon texture (h.g),verified-exists
+method,com.corrodinggames.rts.game.units,n,a(int, int),jumpToNextCategory,verified-exists
+method,com.corrodinggames.rts.game.units,n,a,getn,real-class-inferred: com.corrodinggames.rts.game.units.n,real-class-v1200
+method,com.corrodinggames.rts.game.units,n,a(),getName,n: method a() -> getName,body-verified-v1007
+field,com.corrodinggames.rts.game.units,n,b,categoryWater,Water unit category (enum n),verified-exists
+method,com.corrodinggames.rts.game.units,n,b(),isAvailable,n: method b() -> isAvailable,body-verified-v1007
+field,com.corrodinggames.rts.game.units,n,c,categoryAir,Air unit category (enum n),verified-exists
+field,com.corrodinggames.rts.game.units,n,d,categoryHover,Hover unit category (enum n),verified-exists
+field,com.corrodinggames.rts.game.units,n,e,categoryAmphibious,Amphibious unit category (enum n),verified-exists
+field,com.corrodinggames.rts.game.units,n,f,categoryBuilding,Building category (enum n),verified-exists
+field,com.corrodinggames.rts.game.units,n,g,$VALUES,enum values array,body-verified-v1007
+field,com.corrodinggames.rts.game.units,r,a,actionTargetType,"P3.3-deep-curated: class-context, was=r1",p3-deep-curated
+method,com.corrodinggames.rts.game.units,r,a(),getRidgeTexturePath,r$1 returns 'ridges/Sand Nothing - Flat.tsx',body-verified-v1007
+field,com.corrodinggames.rts.game.units,r,b,actionCooldown,"P3.3-deep-curated: class-context, was=r2",p3-deep-curated
+method,com.corrodinggames.rts.game.units,r,b(),getTerrainTexturePath,r$1 returns 'terrain/Long Grass.tsx',body-verified-v1007
+field,com.corrodinggames.rts.game.units,r,c,actionRange,"P3.3-deep-curated: class-context, was=r3",p3-deep-curated
+field,com.corrodinggames.rts.game.units,r,d,actionDamage,"P3.3-deep-curated: class-context, was=r4",p3-deep-curated
+field,com.corrodinggames.rts.game.units,r,e,actionEffectType,"P3.3-deep-curated: class-context, was=r5",p3-deep-curated
+field,com.corrodinggames.rts.game.units.e,AbstractSubBuilding,a,parentBuilding,Parent building reference (Building),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.e,AbstractSubBuilding,b,subIndex,Sub-building index (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.e,AbstractSubBuilding,m,outputResource,Output resource type (static e),verified-exists
+field,com.corrodinggames.rts.game.units.e,AbstractSubBuilding,n,inputResources,Input resource type array (static e[10]),verified-exists
+field,com.corrodinggames.rts.game.units.e,Building,a,buildPosition,Build placement position (PointF),verified-exists
+field,com.corrodinggames.rts.game.units.e,Building,b,buildRotation,Build placement rotation (float),verified-exists
+field,com.corrodinggames.rts.game.units.e,Building,c,isConstructed,Fully constructed flag (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.e,Building,d,buildResourceType,Build resource type (static e),verified-exists
+field,com.corrodinggames.rts.game.units.e,Building,e,repairResourceType,Repair resource type (static e),verified-exists
+field,com.corrodinggames.rts.game.units.e,FactoryBuilding,a,buildQueueList,Build queue entries (m),verified-exists
+field,com.corrodinggames.rts.game.units.e,FactoryBuilding,b,defaultBuildUnit,Default unit type to build (static e),verified-exists
+field,com.corrodinggames.rts.game.units.e,FactoryBuilding,c,productionProgress,Current production progress (float),verified-exists
+field,com.corrodinggames.rts.game.units.e,FactoryBuilding,d,costResources,Cost resource type array (static e[10]),verified-exists
+field,com.corrodinggames.rts.game.units.e,FactoryBuilding,e,productionResource,Production resource type (static e),verified-exists
+field,com.corrodinggames.rts.game.units.e,FactoryBuilding,f,consumptionResource,Consumption resource type (static e),verified-exists
+field,com.corrodinggames.rts.game.units.e,FactoryBuilding,g,outputResource,Output resource type (static e),verified-exists
+field,com.corrodinggames.rts.game.units.e,FactoryBuilding,h,storageResources,Storage resource type array (static e[10]),verified-exists
+field,com.corrodinggames.rts.game.units.e,SpecialBuilding,a,detonateAction,Detonate/self-destruct action (s),verified-exists
+field,com.corrodinggames.rts.game.units.e,SpecialBuilding,b,upgradeAction,Upgrade/transform action (s),verified-exists
+field,com.corrodinggames.rts.game.units.g,b,a,componentA,Component type A (enum b),verified-exists
+field,com.corrodinggames.rts.game.units.g,b,b,componentB,Component type B (enum b),verified-exists
+method,com.corrodinggames.rts.game.units.units.d,a,a,getCommandSlotId,units.d.a: int - slot identifier,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,a,b,getCommandIcon,units.d.a: Texture - slot icon,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,a,c,isSlotEnabled,units.d.a: boolean - slot active,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,a,d,executeSlot,units.d.a: void - trigger slot action,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,b,a,setFactoryReference,units.d.b: void - bind to Factory,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,b,b,getFactoryQueueLength,units.d.b: int - queue size,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,b,c,getProductionProgress,units.d.b: float - build progress,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,f,a,addToGroup,units.d.f: void - add slot to group,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,f,b,removeFromGroup,units.d.f: void - remove slot,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,f,c,clearGroup,units.d.f: void - clear all slots,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,g,a,getGroupSize,units.d.g: int - slot count,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,g,b,getSlotAt,units.d.g: slot - indexed access,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,g,c,sortByPriority,units.d.g: void - priority sort,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,h,a,isActionAllowed,units.d.h: boolean - filter check,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,h,b,filterActions,units.d.h: void - apply filter,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,i,a,getBaseTexture,units.d.i: Texture - base icon,body-verified-v1500
+method,com.corrodinggames.rts.game.units.units.d,i,b,getBaseRange,units.d.i: float - base range,body-verified-v1500
+field,com.corrodinggames.rts.game.units.y,ap,hasEnergyShield,Has energy shield flag (boolean),ap: field hasEnergyShield -> Has energy shield flag (boolean),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.i,c,isMacOS,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16): mac os 检测 (方法行 c→onScreenRender 不受影响),main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16),main-deobf-anchored
+field,com.corrodinggames.rts.game,i,bT,inputController,"InputController (h(""InputController"") 220-221; 类型 ac=KeyBindings 键绑定主体)",verified
+field,com.corrodinggames.rts.game,i,bQ,settingsEngine,"SettingsEngine (h(""SettingsEngine"") 223-224)",verified
+field,com.corrodinggames.rts.game,i,bM,audioEngine,"AudioEngine (h(""AudioEngine"") 320-321)",verified
+field,com.corrodinggames.rts.game,i,bN,musicController,"MusicController (h(""MusicController"") 325-326; 类型 am=MusicController v19.98仲裁)",verified
+field,com.corrodinggames.rts.game,i,bU,pathEngine,"PathEngine (h(""PathEngine"") 374-375, gameFramework.k.l)",verified
+field,com.corrodinggames.rts.game,i,bV,groupController,"GroupController (h(""GroupController"") 376-377)",verified
+field,com.corrodinggames.rts.game,i,bP,collisionEngine,"CollisionEngine (h(""CollisionEngine"") 378-379)",verified
+field,com.corrodinggames.rts.game,i,bS,interfaceEngine,"InterfaceEngine (h(""InterfaceEngine"") 380-381; 类型 f.g=InGameUI 游戏内UI控制器)",verified
+field,com.corrodinggames.rts.game,i,bX,networkEngine,"NetworkEngine (h(""NetworkEngine"") 384-385, gameFramework.j.ad)",verified
+field,com.corrodinggames.rts.game,i,bY,statsHandler,"StatsHandler (h(""StatsHandler"") 387-388)",verified
+field,com.corrodinggames.rts.game,i,bZ,modEngine,"ModEngine (h(""ModEngine"") 389-390, gameFramework.i.a)",verified
+field,com.corrodinggames.rts.game,i,cf,commandController,"CommandController (h(""CommandController"") 395-396)",verified
+field,com.corrodinggames.rts.game,i,ca,gameSaver,"GameSaver (h(""GameSaver"") 397-398)",verified
+field,com.corrodinggames.rts.game,i,cb,replayEngine,"ReplayEngine (h(""ReplayEngine"") 399-400, gameFramework.ba)",verified
+field,com.corrodinggames.rts.game,i,cc,unitGeoIndex,"UnitGeoIndex (h(""UnitGeoIndex"") 402-403)",verified
+method,com.corrodinggames.rts.game,i,a(android.content.Context),init,GameEngine:init() (i.java:185 日志字符串自证),verified
+method,com.corrodinggames.rts.game,i,a(float),update,v19.98 T0: 每帧主模拟 1352-1376 (bX.c步进→cf.c命令→cb.a回放→bx++→n.g团队→bL.e→am.bF单位) + JFR 150+采样帧 + 回放es校验帧推进,verified
+method,com.corrodinggames.rts.game,n,g(float),updateAllTeams,v19.100 辐射批1: GameEngine.update每帧调用 n.g(f2) 静态全团队更新 (收入/视野),verified
+field,com.corrodinggames.rts.game,i,bs,currentAIStrategy,v19.100: 2097行 团队0的AI策略 (game.a.a=AIStrategy); 回放end块 l2.bs=h2.bX 屏幕AI切换,suspicious-bc-missing
+field,com.corrodinggames.rts.game,i,bH,gameStarted,"v19.100: 2099行 a(false,GameState)启动后=true; 1036行 bH&&bG 存档计数器清零条件",suspicious-bc-missing
+field,com.corrodinggames.rts.game,i,bG,gameRunning,v19.100: 1036行 bH&&bG 运行中检查,suspicious-bc-missing
+field,com.corrodinggames.rts.game,i,bp,isBusyFlag,v19.100: a(boolean)里检查this.bp (忙碌阻塞),suspicious-bc-missing
+method,com.corrodinggames.rts.game,n,q,isFogEnabled,q()Z 在迷雾循环中决定是否 al.a(IIZ) 重算格子; 现有映射 creditsSpent 与迷雾上下文不符(疑似错误),verified
+field,com.corrodinggames.rts.game,n,c,activePlayerCount,静态 int; f(float) 186: k(i) 循环上界 if_icmpge n.c; 现有映射为 javap 提取占位符,verified
+method,com.corrodinggames.rts.game.units,c,<init>(boolean),AbstractUnitBase(boolean),构造器; 仅转发 super(bl) 到 am; javap 确认 invokespecial am.<init>(Z); 继承链 am<-c<-y 为任务已知 + javap 验证,verified
+method,com.corrodinggames.rts.game.units,w,<init>(boolean),MobileUnitShell(boolean),构造器; 转发 super 到 y(MobileUnit); javap 确认,verified
+method,com.corrodinggames.rts.game.units,w,I(),isGroundMovable,"T0: y.java:596/658/777/806/4776 地面移动/转向/堆叠分组逻辑均要求 I()=true; w 覆盖 true, d.d(建筑)/g(工厂)/x(空中基类, h()=ao.d) 覆盖 false; y.java:319-324 反序列化时 !I() 状态降级 P=a.b; x 空中单位 I()=false 说明非通用可移动标志",verified
+method,com.corrodinggames.rts.game.units,w,i(),isAirUnit,"T0: b/d.java:141 i()=eq>=4.0f(升空高度判定), b/f.java:126 恒 true(纯飞机), x.java:191 恒 true 且 h()=ao.d(AIR); am.bR() 中 i()=true -> 碰撞组 3; k(am) 目标判定: am2.i() 空中目标走 af(); 地面/建筑类(ai/al/e/w/d.d)均 false",verified
+method,com.corrodinggames.rts.game.units,w,Q(),isSubmergedUnit,"T0: b/c.java:74 Q()=eq<-1.0f(沉入水下判定, 潜艇); am.bR() 中 Q()=true -> 碰撞组 2; k(am) 目标判定: am2.Q() 水下目标走 ae(); 其余类默认 false; w 默认 false",verified
+field,com.corrodinggames.rts.game.units.e,j,dK,elevationSpeed,"T0: a(float) 中 dK 递增(+=0.002f/0.03f*f2)并驱动 eq 变化(eq-=dK*f2), f.b(dK,0.2f) 钳制; 结构上为 eq(海拔偏移)的变化速率; 名称保守",verified
+field,com.corrodinggames.rts.game.units.e,j,dL,landIconTexture,"T0: dt() 中 l.bO.a(R$drawable.unit_icon_land) 加载; null 时抛 ""IMAGE_ICON is null""",verified
+field,com.corrodinggames.rts.game.units.e,j,dM,expIconTexture,"T0: dt() 中 l.bO.a(R$drawable.unit_icon_land_exp) 加载; null 时抛 ""IMAGE_ICON_EXP is null""",verified
+field,com.corrodinggames.rts.game.units.e,j,dN,landIconFrames,T0: dt() 中 n.a(dL) 将陆地图标切片为 10 帧动画纹理(n.a 创建 m.h 包装帧),verified
+field,com.corrodinggames.rts.game.units.e,j,dO,expIconFrames,T0: dt() 中 n.a(dM) 将扩展图标切片为 10 帧动画纹理,verified
+method,com.corrodinggames.rts.game.units.e,j,v(),getIcon,"T0: bX.k==-1 时返回 null(无动画类型); dd() 为真取 dO[帧] 否则 dN[帧], 帧索引 bX.R(); 与 d.d 的 v() 结构一致(supplement 已映射 d.d.v=BuildingPlaceholder 图标)",verified
+method,com.corrodinggames.rts.game.units.e,j,dt(),initIconCache,"T0: static 初始化; 加载 unit_icon_land/unit_icon_land_exp 并 n.a() 切帧; ""IMAGE_ICON is null""/""IMAGE_ICON_EXP is null"" 校验; 与 d.d.dt() 结构一致",verified
+method,com.corrodinggames.rts.game.units.e,j,a(float),updateElevationAnim,"T0: 处理 eq/dK 升降物理: bV(已移除)时下沉至目标 0 或 -10(cK()=isOverLiquid 水上时), 存活(bT()=cm>=1)且非 bV 时 eq 回升至 0; instanceof h(Factory) 排除回升分支; 命名保守",verified
+method,com.corrodinggames.rts.game.units.e,j,h(),getMovementType,"T0: 返回 ao.b; javap ao clinit 字符串序列 NONE/LAND/BUILDING/AIR/WATER/HOVER/OVER_CLIFF/OVER_CLIFF_WATER 对应 a..h, 故 ao.b=LAND; 工厂链为陆地移动类型",verified
+method,com.corrodinggames.rts.game.units.e,j,<init>(boolean),FactoryBase(boolean),构造器; 转发 super 到 w; javap 确认; h(Factory) extends e.j(units/h.java:63),verified
+field,com.corrodinggames.rts.game,n,a,allPlayersList,CustomArrayList (deobf 确认); 玩家列表容器,verified
+field,com.corrodinggames.rts.game,n,b,allPlayersArray,n[] (deobf: PlayerState[] 初值 new PlayerState[0]),verified
+field,com.corrodinggames.rts.game,n,d,extraSlotOffset,int 0; f=c+d 总槽位,verified
+field,com.corrodinggames.rts.game,n,e,maxTeamIdLimit,"IOException ""setMaxTeamId: n2 is over limit of:e"" (408 行)",verified
+field,com.corrodinggames.rts.game,n,f,totalSlotCount,c+d 静态总槽位数,verified
+field,com.corrodinggames.rts.game,n,g,humanPlayerTemplate,"HumanPlayer(-1,false,""<blank>"") (deobf 确认类名与构造参数)",verified
+field,com.corrodinggames.rts.game,n,h,neutralTeam,NeutralPlayer(-2) (deobf); 单位设中立用 n.h (custom/a/a/j.java:157),verified
+field,com.corrodinggames.rts.game,n,i,aiTeam,NeutralPlayer(-1) (deobf); bK() 原型缓存单位设此队 (am.java:510),verified
+field,com.corrodinggames.rts.game,n,j,spectatorPlayer,LobbyPlayer(-99) (deobf),verified
+field,com.corrodinggames.rts.game,n,k,slotIndex,int -1,verified
+field,com.corrodinggames.rts.game,n,ab,surrenderForfeitFlag,boolean; 序列化 ext>=97 区域; 具体语义待定,verified
+field,com.corrodinggames.rts.game,n,ad,teamTrackerFailCount,int; t() 中 ++ 计数,verified
+field,com.corrodinggames.rts.game,n,ai,defeatCheckCooldown,int=-2; e(float) 失败检查中 -- 递减,verified
+field,com.corrodinggames.rts.game,n,ak,tagFilter,h=custom.g.d TagFilter (deobf: TagFilter ak); a(h)=setTagFilter 直接赋值,verified
+field,com.corrodinggames.rts.game,n,al,movementController,f=MovementController (deobf 确认); V()/ab() 返回它; 序列化 a(as) 中 al.a(as2),verified
+field,com.corrodinggames.rts.game,n,aq,creditsCacheTimestamp,aa(): 166ms 缓存判断 f.c(this.aq-l2)>166.66 时刷新,verified
+field,com.corrodinggames.rts.game,n,ar,cachedCreditsTotal,aa(): 缓存 this.o+this.p 总额,verified
+method,com.corrodinggames.rts.game,n,a(com.corrodinggames.rts.game.k),readFromReplaySaver,从回放流读取: W=k2.f(); X=currentTimeMillis(); I/J (180 行; deobf compareToPlayer(ScreenshotSaver)),verified
+method,com.corrodinggames.rts.game,n,b(com.corrodinggames.rts.game.k),readFromReplaySaverBasic,"委托 a(k2,false) (188 行; deobf getActivePlayers(ScreenshotSaver))",verified
+method,com.corrodinggames.rts.game,n,"a(com.corrodinggames.rts.game.k, boolean)",readFromReplaySaverFull,完整回放读取: setTeamIdAndRegister(k2.d())/o/creditBuffer/r/v/U... (192 行),verified
+method,com.corrodinggames.rts.game,n,c(com.corrodinggames.rts.game.k),readHostFromReplaySaver,读主机段: G/F/isSameTeamAs/al/ak/y (292 行; deobf setHost(ScreenshotSaver)),verified
+method,com.corrodinggames.rts.game,n,d(com.corrodinggames.rts.game.k),readFogFromStream,"读迷雾 N/L/M; ""Map size does not match fog size"" 报错 (332 行)",verified
+method,com.corrodinggames.rts.game,n,a(com.corrodinggames.rts.gameFramework.j.as),writePlayerStateToStream,"写出完整玩家状态; ""Writing team: ""+this.v 字符串 (274 行)",verified
+method,com.corrodinggames.rts.game,n,b(com.corrodinggames.rts.gameFramework.j.as),writeActivePlayerToStream,"写出活跃玩家: k/o/r/v/U/X; ""lastPingTimeReceivedAt"" 字符串证实 X (132 行)",verified
+method,com.corrodinggames.rts.game,n,c(com.corrodinggames.rts.gameFramework.j.as),writeHostInfoToStream,写出主机段: 0/A()/I/J (173 行; deobf setHost(OutputNetStream)),verified
+method,com.corrodinggames.rts.game,n,d(com.corrodinggames.rts.gameFramework.j.as),writeFogToStream,"""-- Saving fog --""/""--End fog--"" 字符串 (316 行)",verified
+method,com.corrodinggames.rts.game,n,a(),clearFogOfWar,N 数组清零 + 脏标记 (363 行),verified
+method,com.corrodinggames.rts.game,n,b(),isSpectatorTeam,return this.r==-3 (381 行),verified
+method,com.corrodinggames.rts.game,n,a(boolean),getPlayersListSorted,遍历 f 槽收集并排序; !bl&&!b() 跳过(排除观战) (385 行),verified
+method,com.corrodinggames.rts.game,n,c(),getAllPlayersList,return b(false) (396 行),verified
+method,com.corrodinggames.rts.game,n,d(),getAllPlayersArray,返回 n[] 全量数组 (410 行),verified
+method,com.corrodinggames.rts.game,n,e(),rebuildPlayerList,重建玩家列表 (414 行),verified
+method,com.corrodinggames.rts.game,n,f(),getActiveTeamIds,返回活跃队伍 id 列表 (436 行),verified
+method,com.corrodinggames.rts.game,n,"a(int, boolean)",countPlayersOnTeam,统计队伍 n2 上的玩家 (447 行),verified
+method,com.corrodinggames.rts.game,n,g(),countPlayersNotDefeated,统计未败玩家 (457 行),verified
+method,com.corrodinggames.rts.game,n,"b(int, boolean)",setMaxPlayerCount,"""setMaxTeamId: n2 is over limit of:e"" IOException; 扩容 as 槽位 (467 行)",verified
+method,com.corrodinggames.rts.game,n,a(int),getTeamLetterCode,"返回 ""A""..""J"" 队伍字母 (492 行)",verified
+method,com.corrodinggames.rts.game,n,h(),getTeamLetter,return n.a(this.r) 当前队字母 (532 行),verified
+method,com.corrodinggames.rts.game,n,i(),resetSurrenderFlags,E=false; at=false; au=-9999 (536 行),verified
+method,com.corrodinggames.rts.game,n,"c(int, boolean)",setTeamSlotAndRegister,设置 k/r 并注册进 as[] 槽位 + J() 刷新颜色 (1063 行),verified
+method,com.corrodinggames.rts.game,n,ab(),getMovementController,return this.V() 且 V()=return this.al (1876 行),verified
+method,com.corrodinggames.rts.game,n,"a(com.corrodinggames.rts.game.units.q, com.corrodinggames.rts.game.n)",matchesTeamRelation,"队伍关系匹配; ""Unsupported type"" 抛错 (1716 行)",verified
+method,com.corrodinggames.rts.game,n,"b(com.corrodinggames.rts.game.units.custom.g, boolean, boolean)",countEnemyUnitsOfType,敌对单位按类型统计 (1789 行),verified
+method,com.corrodinggames.rts.game,n,"c(com.corrodinggames.rts.game.units.custom.g, boolean, boolean)",countAllyUnitsOfType,友方单位按类型统计 (1808 行),verified
+method,com.corrodinggames.rts.game,n,a(com.corrodinggames.rts.game.units.custom.h),setTagFilter,this.ak=h2 (1669 行),verified
+method,com.corrodinggames.rts.game,n,b(com.corrodinggames.rts.game.units.custom.h),addTagFilter,"TagFilter 合并: custom.g.b(h3,h2) 检查后 i 包装 (1685 行)",verified
+method,com.corrodinggames.rts.game,n,c(com.corrodinggames.rts.game.units.custom.h),removeTagFilter,"TagFilter 移除: custom.g.a(h2,h3) 检查 (1693 行)",verified
+method,com.corrodinggames.rts.game,n,a(com.corrodinggames.rts.game.units.am),unregisterUnit,T.b(am2)+bY=false+dj() (1510 行),verified
+method,com.corrodinggames.rts.game,n,c(com.corrodinggames.rts.game.units.am),registerUnit,T.a(am2)+bY=true+di()+n/m 标志+T() (1530 行),verified
+method,com.corrodinggames.rts.game,n,b(com.corrodinggames.rts.game.units.am),unregisterUnitAlias,委托 a(am2) (1522 行),verified
+method,com.corrodinggames.rts.game,n,d(com.corrodinggames.rts.game.units.am),onUnitDestroyedHook,空基类钩子 (1741 行),verified
+method,com.corrodinggames.rts.game,n,a(com.corrodinggames.rts.game.units.y),onUnitSpawnedHook,空钩子; 静态 b(y) 向全体玩家广播 a(y) (1499 行),verified
+method,com.corrodinggames.rts.game,n,"a(boolean, boolean)",countUnitsOnTeam,T.c + bl?T.f + bl2?T.e 单位统计 (662 行),verified
+method,com.corrodinggames.rts.game,n,"a(com.corrodinggames.rts.game.units.custom.g, boolean, boolean)",countUnitsOfType,"队伍跟踪器按类型计数, p2.e>50 缓存 (678 行)",verified
+method,com.corrodinggames.rts.game,n,d(boolean),rebuildTeamUnitTracker,T=e(true); S=false 脏标记清除 (790 行),verified
+method,com.corrodinggames.rts.game,h,,resetAllPlayers,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置22),order-align-v19.111
+method,com.corrodinggames.rts.game,l,,isLocalPlayer,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置26),order-align-v19.111
+method,com.corrodinggames.rts.game,r,,getMaxUnitCount,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置38),order-align-v19.111
+method,com.corrodinggames.rts.game,e,,compareToPlayer,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置43),order-align-v19.111
+method,com.corrodinggames.rts.game,v,,getExpenseRate,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置46),order-align-v19.111
+method,com.corrodinggames.rts.game,w,,recalculateEconomy,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置49),order-align-v19.111
+method,com.corrodinggames.rts.game,z,,getUnitCount,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置52),order-align-v19.111
+method,com.corrodinggames.rts.game,A,,getBuildingCount,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置53),order-align-v19.111
+method,com.corrodinggames.rts.game,B,,updateResourceDisplay,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置54),order-align-v19.111
+method,com.corrodinggames.rts.game,C,,processResourceTick,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置56),order-align-v19.111
+method,com.corrodinggames.rts.game,F,,getPlayerName,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置62),order-align-v19.111
+method,com.corrodinggames.rts.game,d,,compareToPlayer,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置74),order-align-v19.111
+method,com.corrodinggames.rts.game,M,,checkDefeatedPlayers,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置79),order-align-v19.111
+method,com.corrodinggames.rts.game,N,,onMatchStart,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置82),order-align-v19.111
+method,com.corrodinggames.rts.game,j,,compareToPlayer,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置83),order-align-v19.111
+method,com.corrodinggames.rts.game,O,,get_ab,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置98),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bG,,getUnitPool,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置5),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bH,,clearUnitPool,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置6),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bI,,clearAllStaticRegistries,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置7),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bJ,,isFactoryBuilding,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置8),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bK,,isNeutralTeam,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置9),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bL,,buildTypeInstanceCache,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置10),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bN,,isVisibleTo,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置17),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bP,,hasSpawnedDeathEffect,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置20),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bQ,,canAttackAir,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置21),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bR,,getXpKillReward,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置22),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bS,,initTurretTargets,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置24),order-align-v19.111
+method,com.corrodinggames.rts.game.units,O,,drawWaypointOverlays,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置25),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bT,,isAlive,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置29),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bU,,shouldDrawHpBar,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置31),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bV,,getBuildProgressForDisplay,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置32),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bW,,getRepairProgressForDisplay,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置33),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bX,,canBeManuallyRepaired,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置34),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bY,,getActionCategoryId,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置35),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bZ,,getActionSubCategoryId,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置36),order-align-v19.111
+method,com.corrodinggames.rts.game.units,ca,,onProjectileImpact,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置40),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cb,,onBuildingComplete,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置42),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cc,,getRenderBounds,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置45),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cd,,getHitboxRect,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置46),order-align-v19.111
+method,com.corrodinggames.rts.game.units,ce,,getTargetBounds,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置47),order-align-v19.111
+method,com.corrodinggames.rts.game.units,c_,,isOnRadar,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置51),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cf,,canMove,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置52),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cg,,isTargetableForAI,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置54),order-align-v19.111
+method,com.corrodinggames.rts.game.units,ch,,checkAndRemoveIfDead,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置61),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bt,,onUnitKilled,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置64),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bu,,deathChain,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置65),order-align-v19.111
+method,com.corrodinggames.rts.game.units,ci,,canBuild,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置66),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cj,,getAttackRange,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置67),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bv,,destroyUnit,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置68),order-align-v19.111
+method,com.corrodinggames.rts.game.units,Q,,setTeamInternalById,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置75),order-align-v19.111
+method,com.corrodinggames.rts.game.units,ck,,getMoveSpeed,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置83),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cl,,isIdle,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置84),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cm,,getDefaultActionType,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置85),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cn,,getActionCooldownTime,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置86),order-align-v19.111
+method,com.corrodinggames.rts.game.units,co,,isActionAvailable,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置87),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cp,,applyDamage,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置89),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cq,,countUsableActions,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置91),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cr,,canFireAtAirTargets,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置95),order-align-v19.111
+method,com.corrodinggames.rts.game.units,i,,checkIsLargeUnit,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置98),order-align-v19.111
+method,com.corrodinggames.rts.game.units,ct,,setTeamInternalById,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置99),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cu,,isReclaimable,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置103),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cv,,setTeamById,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置104),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cw,,isOnScreen,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置106),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cx,,getSpeedMultiplier,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置118),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cy,,getShieldStatModifiers,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置119),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cz,,getDefaultStatModifiers,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置120),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cC,,getFireCooldownMultiplier,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置127),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cD,,getAnimatedScreenBounds,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置128),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cE,,getStaticScreenBounds,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置129),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cF,,isDamageImmune,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置130),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cH,,isAboveMap,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置137),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cI,,isOffMapCorner,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置138),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cJ,,computeUnitHash,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置139),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cK,,getResourceCostValue,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置140),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bw,,getResourceProduction,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置141),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cL,,getCustomResourceOverride,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置142),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cN,,isEnabled2,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置144),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cO,,onCloakStateChanged,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置150),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cP,,getCustomEffectHandler,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置153),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cR,,getSightRadius,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置156),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bl,,isNotCapturable,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置163),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cT,,isAutoRepairActive,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置165),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cU,,isAutoReclaimActive,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置166),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cW,,updateMinimapIndicator,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置169),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cX,,getMapOriginY,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置172),order-align-v19.111
+method,com.corrodinggames.rts.game.units,cY,,getMinimapDrawRadius,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置173),order-align-v19.111
+method,com.corrodinggames.rts.game.units,db,,onUnitDeployed,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置176),order-align-v19.111
+method,com.corrodinggames.rts.game.units,dc,,getStatusEffects,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置179),order-align-v19.111
+method,com.corrodinggames.rts.game.units,dd,,getStatsCollection,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置180),order-align-v19.111
+method,com.corrodinggames.rts.game.units,de,,getCustomUnitData,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置182),order-align-v19.111
+method,com.corrodinggames.rts.game.units,df,,getCustomStatusHandler,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置183),order-align-v19.111
+method,com.corrodinggames.rts.game.units,dg,,onStatusEffectApplied,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置185),order-align-v19.111
+method,com.corrodinggames.rts.game.units,dh,,onStatusEffectRemoved,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置186),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bd,,hasActiveStatusEffect,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置187),order-align-v19.111
+method,com.corrodinggames.rts.game.units,di,,isSpawnPointA,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置188),order-align-v19.111
+method,com.corrodinggames.rts.game.units,dj,,isSpawnPointA_alias,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置189),order-align-v19.111
+method,com.corrodinggames.rts.game.units,dk,,getCollisionShapeData,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置190),order-align-v19.111
+method,com.corrodinggames.rts.game.units,do,,onFactoryDeploy,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置204),order-align-v19.111
+method,com.corrodinggames.rts.game.units,dp,,getCustomResourceHolder,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置205),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bC,,getActiveBuildOrTarget,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置206),order-align-v19.111
+method,com.corrodinggames.rts.game.units,e_,,getPointF,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置3),order-align-v19.111
+method,com.corrodinggames.rts.game.units,K,,processUpgradeComplete,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置5),order-align-v19.111
+method,com.corrodinggames.rts.game.units,k,,isBuildable,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置8),order-align-v19.111
+method,com.corrodinggames.rts.game.units,b_,,get_b_,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置18),order-align-v19.111
+method,com.corrodinggames.rts.game.units,D,,getReclaimRate,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置30),order-align-v19.111
+method,com.corrodinggames.rts.game.units,N,,hasActiveProduction,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置37),order-align-v19.111
+method,com.corrodinggames.rts.game.units,F,,getQueueProgress,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置40),order-align-v19.111
+method,com.corrodinggames.rts.game.units,G,,getMaxQueueCapacity,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置41),order-align-v19.111
+method,com.corrodinggames.rts.game.units,H,,getShadowOffsetY,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置25),order-align-v19.111
+method,com.corrodinggames.rts.game.units,R,,getDefaultPaint,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置1),order-align-v19.111
+method,com.corrodinggames.rts.game.units,S,,loadTextures,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置6),order-align-v19.111
+method,com.corrodinggames.rts.game.units,j,,getAttackRange,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置15),order-align-v19.111
+method,com.corrodinggames.rts.game.units,Y,,getBuilderTarget,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置35),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aA,,shouldAntiAlias,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置114),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aB,,isAboveGround,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置116),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aC,,getMuzzleOffset,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置117),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aD,,getTurretWorldPos,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置118),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aE,,getRecoilDistance,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置119),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aF,,renderAlternateIcon,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置120),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aH,,isUsable,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置123),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aJ,,canFaceTarget,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置125),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aK,,getGroupSizeLimit,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置126),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aN,,getTurretMountData,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置135),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aT,,getMuzzlePoint,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置149),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aU,,getSlopeFactor,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置152),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aV,,getSpeedFraction,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置155),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aW,,canAutoRepair,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置158),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aX,,canShowHealthBar,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置159),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bj,,spawnDeathParticles,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置188),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bk,,isTurretChargeable,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置191),order-align-v19.111
+method,com.corrodinggames.rts.game.units,bm,,cleanupNearbyUnits,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置193),order-align-v19.111
+method,com.corrodinggames.rts.game.units,J,,removeWaypointAt,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置206),order-align-v19.111
+field,com.corrodinggames.rts.game.units.w,em,,techLevel,v19.111 运行时值=ini techLevel (39单位相等) + 工厂2/指挥中心3,order-align-v19.111
+field,com.corrodinggames.rts.game.units,ar.e,,commandCenter,v19.113c 运行时存档铁证: #Enum:ar$45 ordinal4 toString=commandCenter (03 旧误名 buildAction 已改),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.h,,builder,v19.113c 运行时存档铁证: #Enum:ar$52 ordinal7 toString=builder (03 旧误名 transportAction 已改),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.s,,hovercraft,v19.113c 运行时存档铁证: #Enum:ar$11 ordinal18 toString=hovercraft (03 旧误名 loadAction 已改),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.aa,,tree,v19.113c 运行时存档铁证: #Enum:ar$20 ordinal26 toString=tree (03 旧误名 hashBucketA 已改),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.ay,,editorOrBuilder,v19.113c 运行时存档铁证: #Enum:ar$47 ordinal50 toString=editorOrBuilder (03 旧误名 hashBucketY 已改),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.d,,seaFactory,v19.113c 运行时存档铁证强化: #Enum:ar$34 ordinal3 (原字符串证据已记),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.a,,extractor,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.b,,landFactory,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.c,,airFactory,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.d,,seaFactory,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.e,,commandCenter,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.f,,turret,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.g,,antiAirTurret,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.h,,builder,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.i,,tank,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.j,,hoverTank,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.k,,artillery,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.l,,helicopter,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.m,,airShip,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.n,,gunShip,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.o,,missileShip,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.p,,gunBoat,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.q,,megaTank,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.r,,laserTank,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.s,,hovercraft,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.t,,ladybug,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.u,,battleShip,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.v,,tankDestroyer,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.w,,heavyTank,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.x,,heavyHoverTank,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.y,,laserDefence,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.z,,dropship,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.A,,tree,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.B,,repairbay,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.C,,NukeLaucher,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.D,,AntiNukeLaucher,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.E,,mammothTank,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.F,,experimentalTank,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.G,,experimentalLandFactory,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.H,,crystalResource,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.I,,wall_v,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.J,,fabricator,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.K,,attackSubmarine,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.L,,builderShip,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.M,,amphibiousJet,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.N,,supplyDepot,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.O,,experimentalHoverTank,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.P,,turret_artillery,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.Q,,turret_flamethrower,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.R,,fogRevealer,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.S,,spreadingFire,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.T,,antiAirTurretT2,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.U,,turretT2,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.V,,turretT3,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.W,,damagingBorder,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.X,,zoneMarker,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.Y,,editorOrBuilder,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+field,com.corrodinggames.rts.game.units,ar.Z,,dummyNonUnitWithTeam,v19.113d jar <clinit> 位序铁证: 第N常量 ldc 字符串 (存档 #Enum toString 互证),runtime-verified
+method,com.corrodinggames.rts.game.units,e,m,getMaxMoveDistance,"type-aware-fp-v19.114: 02b字面量指纹配对 (arity=0, BuildingBase)",type-aware-fp-v19.114
+field,com.corrodinggames.rts.game,h,c,matchType,"field-order-zip-v19.114: 02b float c=- <-> 03 float matchType=- (位置2, TagFilter)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game,h,d,inclusiveFilter,"field-order-zip-v19.114: 02b float d=- <-> 03 float inclusiveFilter=- (位置3, TagFilter)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game,q,a,own,"B5: 运行时 NoSuchFieldError: f 修复 (枚举字段声明侧反向, 访问侧全局映射一致)",T0
+field,com.corrodinggames.rts.game,q,b,ally,"B5: 运行时 NoSuchFieldError: f 修复 (枚举字段声明侧反向, 访问侧全局映射一致)",T0
+field,com.corrodinggames.rts.game,q,c,allyNotOwn,"B5: 运行时 NoSuchFieldError: f 修复 (枚举字段声明侧反向, 访问侧全局映射一致)",T0
+field,com.corrodinggames.rts.game,q,d,enemy,"B5: 运行时 NoSuchFieldError: f 修复 (枚举字段声明侧反向, 访问侧全局映射一致)",T0
+field,com.corrodinggames.rts.game,q,e,neutral,"B5: 运行时 NoSuchFieldError: f 修复 (枚举字段声明侧反向, 访问侧全局映射一致)",T0
+field,com.corrodinggames.rts.game,q,f,any,"B5: 运行时 NoSuchFieldError: f 修复 (枚举字段声明侧反向, 访问侧全局映射一致)",T0
+field,com.corrodinggames.rts.game,q,g,notOwn,"B5: 运行时 NoSuchFieldError: f 修复 (枚举字段声明侧反向, 访问侧全局映射一致)",T0
+field,com.corrodinggames.rts.game,m,a,normal,B5: 运行时 NoSuchFieldError: a 修复 (枚举常量 normal/nuke 反向),T0
+field,com.corrodinggames.rts.game,m,b,nuke,B5: 运行时 NoSuchFieldError: a 修复 (枚举常量 normal/nuke 反向),T0

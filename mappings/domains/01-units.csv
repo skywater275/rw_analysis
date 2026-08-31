@@ -1,0 +1,1201 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+method,com.corrodinggames.rts.game,g,a(com.corrodinggames.rts.game.units.am, float,""" boolean)""",getDamageMultiplier
+field,com.corrodinggames.rts.game,g,A,isDead,Projectile dead/expired flag,verified-exists
+field,com.corrodinggames.rts.game,g,B,projectileTexture,Projectile sprite texture,verified-exists
+field,com.corrodinggames.rts.game,g,C,impactTexture,Impact/explosion texture,verified-exists
+field,com.corrodinggames.rts.game,g,D,velocityX,Current X velocity,verified-exists
+field,com.corrodinggames.rts.game,g,E,velocityY,Current Y velocity,verified-exists
+field,com.corrodinggames.rts.game,g,F,targetX,Target X coordinate,verified-exists
+field,com.corrodinggames.rts.game,g,G,targetY,Target Y coordinate,verified-exists
+field,com.corrodinggames.rts.game,g,H,targetZ,Target Z/elevation coordinate,verified-exists
+field,com.corrodinggames.rts.game,g,I,spawnX,Spawn origin X position,verified-exists
+field,com.corrodinggames.rts.game,g,J,spawnY,Spawn origin Y position,verified-exists
+field,com.corrodinggames.rts.game,g,K,minRange,Minimum attack range,verified-exists
+field,com.corrodinggames.rts.game,g,L,ownerUnit,Unit that fired this projectile,verified-exists
+field,com.corrodinggames.rts.game,g,M,targetUnit,Target unit reference,verified-exists
+field,com.corrodinggames.rts.game,g,N,weaponIndex,Weapon/turret index that fired,verified-exists
+field,com.corrodinggames.rts.game,g,O,maxRange,Maximum attack range (float),verified-exists
+field,com.corrodinggames.rts.game,g,P,optimalRange,Optimal/ideal attack range,verified-exists
+field,com.corrodinggames.rts.game,g,Q,reloadCooldown,Weapon reload cooldown time,verified-exists
+field,com.corrodinggames.rts.game,g,R,burstDelay,Burst fire delay between shots,verified-exists
+field,com.corrodinggames.rts.game,g,S,chargeTime,Charge-up time before firing,verified-exists
+field,com.corrodinggames.rts.game,g,T,burstCount,Burst fire shot count,verified-exists
+field,com.corrodinggames.rts.game,g,U,trailSpacing,Trail particle spacing interval,verified-exists
+field,com.corrodinggames.rts.game,g,V,trailCount,Trail particle count,verified-exists
+field,com.corrodinggames.rts.game,g,W,impactCount,Impact particle count,verified-exists
+field,com.corrodinggames.rts.game,g,X,trailColor,Trail particle color (ARGB int),verified-exists
+field,com.corrodinggames.rts.game,g,Y,trailTexture,Trail particle texture,verified-exists
+field,com.corrodinggames.rts.game,g,Z,muzzleFlashTexture,Muzzle flash texture,verified-exists
+method,com.corrodinggames.rts.game,g,a,getg,real-class-inferred: com.corrodinggames.rts.game.g,real-class-v1200
+method,com.corrodinggames.rts.game,g,a(com.corrodinggames.rts.game.units.am),getUpgradeForUnit,g.java:133 returns h2.g payload of matching entry,body-verified-v1007
+field,com.corrodinggames.rts.game,g,aA,altMinRange,Alternate minimum range,verified-exists
+field,com.corrodinggames.rts.game,g,aB,altMaxRange,Alternate maximum range,verified-exists
+field,com.corrodinggames.rts.game,g,aC,altSplashRadius,Alternate splash radius,verified-exists
+field,com.corrodinggames.rts.game,g,aD,altDamage,Alternate damage value,verified-exists
+field,com.corrodinggames.rts.game,g,aE,teamColor,Team color tint (default white),verified-exists
+field,com.corrodinggames.rts.game,g,aF,spriteScale,Sprite render scale (default 1.0),verified-exists
+field,com.corrodinggames.rts.game,g,aG,spriteRotation,Sprite rotation angle,verified-exists
+field,com.corrodinggames.rts.game,g,aH,alpha,Render alpha/opacity (default 1.0),verified-exists
+field,com.corrodinggames.rts.game,g,aI,renderLayer,Render layer/depth ordering,verified-exists
+field,com.corrodinggames.rts.game,g,aJ,renderPriority,Render priority within layer,verified-exists
+field,com.corrodinggames.rts.game,g,aK,tintRed,Red tint component,verified-exists
+field,com.corrodinggames.rts.game,g,aL,tintGreen,Green tint component,verified-exists
+field,com.corrodinggames.rts.game,g,aM,tintBlue,Blue tint component,verified-exists
+field,com.corrodinggames.rts.game,g,aN,flashAlpha,Muzzle flash alpha intensity,verified-exists
+field,com.corrodinggames.rts.game,g,aO,flashScale,Muzzle flash scale,verified-exists
+field,com.corrodinggames.rts.game,g,aP,flashDuration,Muzzle flash duration ticks,verified-exists
+field,com.corrodinggames.rts.game,g,aQ,trailAlpha,Trail alpha intensity,verified-exists
+field,com.corrodinggames.rts.game,g,aR,trailScale,Trail particle scale,verified-exists
+field,com.corrodinggames.rts.game,g,aS,airDamageMultiplier,Damage multiplier vs air,verified-exists
+field,com.corrodinggames.rts.game,g,aT,groundDamageMultiplier,Damage multiplier vs ground,verified-exists
+field,com.corrodinggames.rts.game,g,aU,submergedDamageMultiplier,Damage multiplier vs submerged,verified-exists
+field,com.corrodinggames.rts.game,g,aV,hoverDamageMultiplier,Damage multiplier vs hover,verified-exists
+field,com.corrodinggames.rts.game,g,aW,shieldDamageMultiplier,Damage multiplier vs shields,verified-exists
+field,com.corrodinggames.rts.game,g,aX,parentWeapon,Parent weapon definition reference,verified-exists
+field,com.corrodinggames.rts.game,g,aY,spawnerType,Spawner unit type reference,verified-exists
+field,com.corrodinggames.rts.game,g,aZ,onHitUnits,Units spawned on impact,verified-exists
+field,com.corrodinggames.rts.game,g,aa,impactSound,Impact sound effect reference,verified-exists
+field,com.corrodinggames.rts.game,g,ab,shieldTexture,Shield impact texture,verified-exists
+field,com.corrodinggames.rts.game,g,ac,launchSound,Launch/fire sound effect,verified-exists
+field,com.corrodinggames.rts.game,g,ad,trailSound,Trail/ambient sound effect,verified-exists
+field,com.corrodinggames.rts.game,g,ae,targetLostSound,Target lost sound effect,verified-exists
+field,com.corrodinggames.rts.game,g,af,splashDamageRadius,Splash/AOE damage radius,verified-exists
+field,com.corrodinggames.rts.game,g,ag,turnRate,Homing turn rate (default 3.0),verified-exists
+field,com.corrodinggames.rts.game,g,ah,targetCategory,Valid target category tags,verified-exists
+field,com.corrodinggames.rts.game,g,ai,avoidCategory,Avoid/ignore category tags,verified-exists
+field,com.corrodinggames.rts.game,g,aj,onHitProjectiles,Sub-projectiles spawned on hit,verified-exists
+field,com.corrodinggames.rts.game,g,ak,onDeathProjectiles,Sub-projectiles spawned on death,verified-exists
+field,com.corrodinggames.rts.game,g,al,trailProjectiles,Trail sub-projectiles list,verified-exists
+field,com.corrodinggames.rts.game,g,am,damageMultiplier,Damage multiplier float,verified-exists
+field,com.corrodinggames.rts.game,g,an,acceleration,Acceleration rate (default 5.0),verified-exists
+field,com.corrodinggames.rts.game,g,ao,maxTurnAngle,Max turn angle for homing,verified-exists
+field,com.corrodinggames.rts.game,g,ap,braking,Braking/deceleration (default 0.5),verified-exists
+field,com.corrodinggames.rts.game,g,aq,gravity,Gravity effect on projectile,verified-exists
+field,com.corrodinggames.rts.game,g,ar,windResistance,Wind resistance/drag factor,verified-exists
+field,com.corrodinggames.rts.game,g,as,waterDrag,Water drag multiplier,verified-exists
+field,com.corrodinggames.rts.game,g,at,groundBounce,Ground bounce factor,verified-exists
+field,com.corrodinggames.rts.game,g,au,pierceCount,Pierce-through target count,verified-exists
+field,com.corrodinggames.rts.game,g,av,splashRadius,Splash damage radius (default 0.1),verified-exists
+field,com.corrodinggames.rts.game,g,aw,splashFalloff,Splash damage falloff exponent,verified-exists
+field,com.corrodinggames.rts.game,g,ax,weaponRange,Weapon range (default 120.0),verified-exists
+field,com.corrodinggames.rts.game,g,ay,splashVisualRadius,Splash visual effect radius,verified-exists
+field,com.corrodinggames.rts.game,g,az,splashDamage,Splash damage amount,verified-exists
+field,com.corrodinggames.rts.game,g,b,width,Projectile sprite width (int),verified-exists
+field,com.corrodinggames.rts.game,g,ba,onDeathUnits,Units spawned on projectile death,verified-exists
+field,com.corrodinggames.rts.game,g,bb,customData,Custom mod data container,verified-exists
+field,com.corrodinggames.rts.game,g,bc,isModProjectile,Mod-defined projectile flag,verified-exists
+field,com.corrodinggames.rts.game,g,bd,projectileId,Projectile type ID string,verified-exists
+field,com.corrodinggames.rts.game,g,be,damageModifiers,ArrayList of damage modifier rules,verified-exists
+field,com.corrodinggames.rts.game,g,bf,defenseModifiers,ArrayList of defense modifier rules,verified-exists
+field,com.corrodinggames.rts.game,g,bg,transformModifiers,ArrayList of transform modifier rules,verified-exists
+field,com.corrodinggames.rts.game,g,bh,isInitialized,Projectile initialized flag,suspicious-bc-missing
+field,com.corrodinggames.rts.game,g,c,height,Projectile sprite height (int),verified-exists
+field,com.corrodinggames.rts.game,g,d,isGuided,Homing/guided projectile flag,verified-exists
+field,com.corrodinggames.rts.game,g,e,isTracking,Target tracking enabled flag,verified-exists
+field,com.corrodinggames.rts.game,g,f,penetratesShields,Bypasses shield defense flag,verified-exists
+field,com.corrodinggames.rts.game,g,g,ignoresArmor,Ignores armor reduction flag,verified-exists
+field,com.corrodinggames.rts.game,g,h,isFireEffect,Fire/incendiary effect flag,verified-exists
+field,com.corrodinggames.rts.game,g,i,baseDamage,Base damage value (default 35),verified-exists
+field,com.corrodinggames.rts.game,g,j,maxSpeedOverride,Max speed override (-1=use default 5.0),verified-exists
+field,com.corrodinggames.rts.game,g,k,canTargetAir,Can target air units flag,verified-exists
+field,com.corrodinggames.rts.game,g,l,canTargetGround,Can target ground units flag,verified-exists
+field,com.corrodinggames.rts.game,g,m,canTargetSubmerged,Can target submerged/underwater units flag,verified-exists
+field,com.corrodinggames.rts.game,g,n,canTargetHover,Can target hover units flag,verified-exists
+field,com.corrodinggames.rts.game,g,o,speedMultiplier,Speed multiplier (default 1.0),verified-exists
+field,com.corrodinggames.rts.game,g,p,isLaser,Laser/beam visual type flag,verified-exists
+field,com.corrodinggames.rts.game,g,q,isMissile,Missile visual type flag,verified-exists
+field,com.corrodinggames.rts.game,g,r,isArtillery,Artillery arc visual type flag,verified-exists
+field,com.corrodinggames.rts.game,g,s,isBomb,Bomb/dropped visual type flag,verified-exists
+field,com.corrodinggames.rts.game,g,t,isMelee,Melee/instant hit flag,verified-exists
+field,com.corrodinggames.rts.game,g,u,worldX,Current world X position,verified-exists
+field,com.corrodinggames.rts.game,g,v,worldY,Current world Y position,verified-exists
+field,com.corrodinggames.rts.game,g,w,baseSpeed,Base movement speed (default 5.0),verified-exists
+field,com.corrodinggames.rts.game,g,x,remainingTicks,Remaining lifetime in ticks (short),verified-exists
+field,com.corrodinggames.rts.game,g,y,chargeTicks,Charge-up ticks elapsed (short),verified-exists
+field,com.corrodinggames.rts.game,g,z,maxTicks,Maximum lifetime ticks (short),verified-exists
+method,com.corrodinggames.rts.game,s,a,getp,real-class-inferred: com.corrodinggames.rts.game.s,real-class-v1200
+method,com.corrodinggames.rts.game,s,a(com.corrodinggames.rts.game.units.am),incrementUnitCount,s.java:37 ++d; cm<1 also ++f,body-verified-v1007
+method,com.corrodinggames.rts.game,s,b,reset,real-class-inferred: com.corrodinggames.rts.game.s,real-class-v1200
+method,com.corrodinggames.rts.game,s,b(com.corrodinggames.rts.game.units.am),decrementUnitCount,s.java:90 --d,body-verified-v1007
+field,com.corrodinggames.rts.game,s,c,completedCount,Completed building count,verified-exists
+method,com.corrodinggames.rts.game,s,c(com.corrodinggames.rts.game.units.am),incrementTypeCount,s.java:140 ++p2.c/b per factory type,body-verified-v1007
+field,com.corrodinggames.rts.game,s,d,totalBuilt,Total units built,verified-exists
+method,com.corrodinggames.rts.game,s,d(com.corrodinggames.rts.game.units.am),decrementTypeCount,s.java:154 --p2.c/b,body-verified-v1007
+field,com.corrodinggames.rts.game,s,e,queuedCount,Queued unit count,verified-exists
+field,com.corrodinggames.rts.game,s,f,buildingCount,Incomplete building count,verified-exists
+field,com.corrodinggames.rts.game,s,g,incomeRate,Credit income rate,verified-exists
+field,com.corrodinggames.rts.game,s,h,resourceType1,Resource type 1 flow,verified-exists
+field,com.corrodinggames.rts.game,s,i,resourceType2,Resource type 2 flow,verified-exists
+field,com.corrodinggames.rts.game,s,j,resourceType3,Resource type 3 flow,verified-exists
+field,com.corrodinggames.rts.game,s,k,positiveResourceFlow,Positive resource flow,verified-exists
+field,com.corrodinggames.rts.game,s,l,negativeResourceFlow,Negative resource flow,verified-exists
+field,com.corrodinggames.rts.game,s,m,hasMobileUnits,Has mobile units,verified-exists
+field,com.corrodinggames.rts.game,s,n,buildingCapacityUsed,Building capacity used,verified-exists
+field,com.corrodinggames.rts.game,s,o,unitCapacityUsed,Unit capacity used,verified-exists
+field,com.corrodinggames.rts.game,s,p,buildQueue1,Build queue 1,verified-exists
+field,com.corrodinggames.rts.game,s,q,buildQueue2,Build queue 2,verified-exists
+method,com.corrodinggames.rts.game,t,a,isEnabled,real-class-inferred: com.corrodinggames.rts.game.t,real-class-v1200
+field,com.corrodinggames.rts.game.a,b,C,assignedZoneId,Assigned zone ID (-9999=unset, int)
+field,com.corrodinggames.rts.game.a,b,D,defendTarget,Defense/priority target UnitInstance (public am),suspicious-bc-missing
+field,com.corrodinggames.rts.game.a,b,E,combatState,Combat behavior state enum (ao.a=default),suspicious-bc-missing
+field,com.corrodinggames.rts.game.a,b,a,damageMultiplier,Damage multiplier,verified-exists
+field,com.corrodinggames.rts.game.a,b,b,armorPiercing,Armor piercing value,verified-exists
+field,com.corrodinggames.rts.game.a,b,c,splashRadius,Splash damage radius,verified-exists
+field,com.corrodinggames.rts.game.a,b,d,splashDamage,Splash damage multiplier,suspicious-bc-missing
+field,com.corrodinggames.rts.game.a,b,e,rangeAttack,Attack range,suspicious-bc-missing
+field,com.corrodinggames.rts.game.a,b,f,minimumRange,Minimum attack range,suspicious-bc-missing
+field,com.corrodinggames.rts.game.a,b,g,reloadTime,Weapon reload time,suspicious-bc-missing
+field,com.corrodinggames.rts.game.a,b,h,projectileSpeed,Projectile speed,suspicious-bc-missing
+field,com.corrodinggames.rts.game.a,b,i,targetCount,Target/objective count (int),suspicious-bc-missing
+field,com.corrodinggames.rts.game.a,b,j,maxTargetCount,Maximum target count (int),suspicious-bc-missing
+field,com.corrodinggames.rts.game.a,b,s,awaitingReinforcements,Awaiting reinforcements before attacking flag,suspicious-bc-missing
+field,com.corrodinggames.rts.game.a,b,u,stagingProgress,Staging/gathering progress timer (float),suspicious-bc-missing
+field,com.corrodinggames.rts.game.a,b,x,engageDistance,Distance to engage target (float),suspicious-bc-missing
+method,com.corrodinggames.rts.game.a,c,a(boolean,com.corrodinggames.rts.game.units.as,"""boolean)""",getCount
+method,com.corrodinggames.rts.game.a,c,a,reset,real-class-inferred: com.corrodinggames.rts.game.a.c,real-class-v1200
+method,com.corrodinggames.rts.game.a,c,a(),clearAllCounts,[V] 清空 a/b 缓存 (不清 c),verified-exists
+field,com.corrodinggames.rts.game.a,c,b,cachedCountsNoTransport,[V] HashMap; 不含运输的单位计数缓存,verified-exists
+method,com.corrodinggames.rts.game.a,c,b(),clearCombatCounts,[V] 清空 c 缓存,verified-exists
+field,com.corrodinggames.rts.game.a,c,c,cachedUnitTypeCounts,[V] HashMap; 单位类型计数缓存 (bI 单位),verified-exists
+method,com.corrodinggames.rts.game.a,e,e(com.corrodinggames.rts.game.a.d,com.corrodinggames.rts.game.units.as,"""float)""",CombatActionConstructor
+field,com.corrodinggames.rts.game.a,e,a,unitType,[V] public as; 单位类型 (UnitTypeHandle),verified-exists
+field,com.corrodinggames.rts.game.a,e,b,weight,[V] public float; 建造权重,verified-exists
+field,com.corrodinggames.rts.game.a,e,c,ownerStrategy,[V] final synthetic d; 所属建造策略,verified-exists
+method,com.corrodinggames.rts.game.a,g,a(com.corrodinggames.rts.game.a.a,com.corrodinggames.rts.game.units.y),createGroupForUnit,verified-exists
+method,com.corrodinggames.rts.game.a,g,b(float,float),canGroupReach | [I] 检查组内所有单位可到达点,verified-exists
+field,com.corrodinggames.rts.game.a,g,A,field_A,"P3.1-inferred: type=boolean, was=flag0",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,B,field_B,"P3.1-inferred: type=com.corrodinggames.rts.gameFramework.m.e, was=e1",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,C,field_C,"P3.1-inferred: type=com.corrodinggames.rts.gameFramework.m.e, was=e2",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,D,field_D,"P3.1-inferred: type=float, was=value3",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,E,field_E,"P3.1-inferred: type=float, was=value4",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,F,field_F,"P3.1-inferred: type=float, was=value5",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,G,field_G,"P3.1-inferred: type=float, was=value6",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,H,field_H,"P3.1-inferred: type=float, was=value7",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,I,field_I,"P3.1-inferred: type=boolean, was=flag8",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,J,field_J,"P3.1-inferred: type=boolean, was=flag9",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,K,field_K,"P3.1-inferred: type=float, was=value10",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,L,field_L,"P3.1-inferred: type=boolean, was=flag11",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,M,field_M,"P3.1-inferred: type=boolean, was=flag12",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,N,field_N,"P3.1-inferred: type=boolean, was=flag13",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,O,field_O,"P3.1-inferred: type=float, was=value14",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,P,field_P,"P3.1-inferred: type=float, was=value15",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,Q,field_Q,"P3.1-inferred: type=float, was=value16",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,R,field_R,"P3.1-inferred: type=float, was=value17",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,S,field_S,"P3.1-inferred: type=float, was=value18",p3-auto-inferred
+field,com.corrodinggames.rts.game.a,g,T,field_T,"P3.1-inferred: type=boolean, was=flag19",p3-auto-inferred
+method,com.corrodinggames.rts.game.a,g,a,hasam,real-class-inferred: com.corrodinggames.rts.game.a.g,real-class-v1200
+method,com.corrodinggames.rts.game.a,g,a(),isPersistentGroup,[V] 返回 isPersistent (覆盖 h.a()),verified-exists
+field,com.corrodinggames.rts.game.a,g,b,lastActionName,"""[V] String; 最近动作描述 (调试 ""last action"")""",verified-exists
+method,com.corrodinggames.rts.game.a,g,b(),isDefensiveType,"""[V] 返回 !isAttacker (防御组判定""",verified-exists
+field,com.corrodinggames.rts.game.a,g,c,recruitingEnabled,[V] boolean; 是否持续招募 (调试 VIP Mode 相关),verified-exists
+method,com.corrodinggames.rts.game.a,g,c(),collectUnits,[V] 目标获取: 遍历同队空闲单位按组类型 (空中/地面) 招募入组,verified-exists
+field,com.corrodinggames.rts.game.a,g,d,attackMoveEnabled,[V] boolean; 移动攻击模式,verified-exists
+method,com.corrodinggames.rts.game.a,g,d(),isGroupFull,[V] 返回 groupSizeLimit<=units.size(),verified-exists
+field,com.corrodinggames.rts.game.a,g,e,isVipGroup,"""[I] boolean; VIP 组标志 (static 创建时置 true""",verified-exists
+method,com.corrodinggames.rts.game.a,g,e(),getPrimaryAttacker,[I] 通过 getRecentAttacker(6.0f) 获取当前主要攻击者,verified-exists
+field,com.corrodinggames.rts.game.a,g,f,isFleeing,[V] boolean; 逃跑模式,verified-exists
+method,com.corrodinggames.rts.game.a,g,f(),findFirstTarget,[I] 组内单位首个攻击目标,verified-exists
+field,com.corrodinggames.rts.game.a,g,g,recruitFromUnit,[V] units.y; 招募来源单位 (护盾血量 cu/cv 判定),verified-exists
+method,com.corrodinggames.rts.game.a,g,g(),findLinkedZone,[I] 找离路径点最近且可达的基地区域,verified-exists
+field,com.corrodinggames.rts.game.a,g,h,isAttacker,"""[V] boolean; 攻击组标志 (=true 默认""",verified-exists
+method,com.corrodinggames.rts.game.a,g,h(),planAttackMove,[I] 规划攻击移动路径点 (随机偏移 80% + 地形检查),verified-exists
+field,com.corrodinggames.rts.game.a,g,i,minGroupUnits,[I] int; 组最小单位数,verified-exists
+method,com.corrodinggames.rts.game.a,g,i(),getMovementType,[V] 返回当前移动类型 (调试 commonMovement),verified-exists
+field,com.corrodinggames.rts.game.a,g,j,maxGroupUnits,[I] int; 组最大单位数,verified-exists
+method,com.corrodinggames.rts.game.a,g,j(),computeMovementType,[I] 按组内单位计算最优移动类型,verified-exists
+field,com.corrodinggames.rts.game.a,g,k,baseZone,[V] i; 关联基地区域,verified-exists
+method,com.corrodinggames.rts.game.a,g,k(),assignBaseZone,[I] 分配基地: 招募单位位置或前置区域 (j.c) 或地图中心,verified-exists
+field,com.corrodinggames.rts.game.a,g,l,idleTimer,[V] float=1000; 闲置保持计时器 (调试 AttackDelay),verified-exists
+field,com.corrodinggames.rts.game.a,g,m,reEvaluateTimer,[V] float=100; 重评估计时器,verified-exists
+field,com.corrodinggames.rts.game.a,g,n,randomMoveTimer,[V] float=4000; 随机移动计时器 (调试 next move),verified-exists
+field,com.corrodinggames.rts.game.a,g,o,missionTimer,[V] float; 任务计时器 (调试 attackingFor),verified-exists
+field,com.corrodinggames.rts.game.a,g,p,defenseTimer,[V] float=1000; 防御计时器,verified-exists
+field,com.corrodinggames.rts.game.a,g,q,isStaging,[V] boolean; 集结中标志,verified-exists
+field,com.corrodinggames.rts.game.a,g,r,hasAttackTarget,[V] boolean; 有攻击目标 (调试 StagingTargetFound),verified-exists
+field,com.corrodinggames.rts.game.a,g,s,stagingComplete,[I] boolean; 集结完成标志,verified-exists
+field,com.corrodinggames.rts.game.a,g,t,stagingTimer,[V] float; 集结阶段计时器,verified-exists
+field,com.corrodinggames.rts.game.a,g,u,stagingWaitTimer,"""[V] float; 集结等待累计 (调试 StagingTimer""",verified-exists
+field,com.corrodinggames.rts.game.a,g,v,isRetreating,[V] boolean; 撤退中,verified-exists
+field,com.corrodinggames.rts.game.a,g,w,currentTarget,[V] am; 当前攻击目标单位,verified-exists
+field,com.corrodinggames.rts.game.a,g,x,elapsedTimer,[I] float; 累计运行时间,verified-exists
+field,com.corrodinggames.rts.game.a,g,y,recruitTimer,[V] float; 招募扫描计时器,verified-exists
+field,com.corrodinggames.rts.game.a,g,z,engagementCooldown,[V] float; 交战指令冷却,verified-exists
+method,com.corrodinggames.rts.game.a,i,a(com.corrodinggames.rts.game.units.am,boolean),isUnitAssignedToZone,verified-exists
+field,com.corrodinggames.rts.game.a,i,A,lastCantAffordBuilding,[V] custom.d.b; 买不起的建筑 (调试 cannotAffordPrice),verified-exists
+method,com.corrodinggames.rts.game.a,i,A(),findDamagedUnit,[I] private; 找受损单位 (血条不满),verified-exists
+field,com.corrodinggames.rts.game.a,i,B,lastFailedBuilding,[V] custom.d.b; 建造失败的建筑 (调试 cannotAffordBy),verified-exists
+field,com.corrodinggames.rts.game.a,i,C,lastAttemptedBuildingCount,[V] int; 上次尝试建造次数 (调试 lastAttemptedBuildingCount),verified-exists
+field,com.corrodinggames.rts.game.a,i,D,lastAttemptedBuildingFailed,[V] int; 上次建造失败标志 (调试 lastAttemptedBuildingFailed),verified-exists
+field,com.corrodinggames.rts.game.a,i,E,lastUnitAttemptName,[V] String; 上次单位尝试名称 (调试 lastUnitAttempt),verified-exists
+field,com.corrodinggames.rts.game.a,i,F,lastUnitAttemptCost,[I] int; 上次单位尝试消耗,verified-exists
+field,com.corrodinggames.rts.game.a,i,G,lastUnitAttemptBuildTime,[I] int; 上次单位尝试耗时,verified-exists
+field,com.corrodinggames.rts.game.a,i,H,retryBuildRequested,[I] boolean=false; 建造重试请求标志,verified-exists
+field,com.corrodinggames.rts.game.a,i,I,numberOfFactories,[I] int; 区域工厂数,verified-exists
+field,com.corrodinggames.rts.game.a,i,J,numberOfCombatUnits,[I] int; 区域战斗单位数 (updateResource 统计),verified-exists
+field,com.corrodinggames.rts.game.a,i,K,numberOfIdleBuilders,[V] int; 空闲建造者数 (调试 Idle Builders),verified-exists
+field,com.corrodinggames.rts.game.a,i,L,numberOfExtractors,[I] int; 区域提取器数,verified-exists
+field,com.corrodinggames.rts.game.a,i,M,hasFactories,[V] boolean; 有工厂标志 (触发 n()/q()/o() 调度),verified-exists
+field,com.corrodinggames.rts.game.a,i,N,buildOrderList,[I] ArrayList; 建造指令列表,verified-exists
+field,com.corrodinggames.rts.game.a,i,O,lastRequestedUnitType,[I] as; 最近请求的单位类型,verified-exists
+field,com.corrodinggames.rts.game.a,i,P,lastBuildOrderResource,[I] custom.d.b; 最近建造指令资源组件,verified-exists
+method,com.corrodinggames.rts.game.a,i,a,updateCombat,CombatManager: main combat update loop,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,a(com.corrodinggames.rts.gameFramework.j.as),writeToStream,[V] 网络序列化输出,verified-exists
+method,com.corrodinggames.rts.game.a,i,b,findTarget,CombatManager: find best target for unit,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,b(),updateZoneUnits,[V] 重建区域单位列表 (p 类型列表 + q 单位注册表),verified-exists
+method,com.corrodinggames.rts.game.a,i,c,evaluateThreat,CombatManager: evaluate threat level,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,c(),chooseUnitTypeToBuild,[V] 目标选择: 遍历所有单位类型计算适配度权重 (调试 lastFoundBuildingPriority),verified-exists
+method,com.corrodinggames.rts.game.a,i,d,getNearbyEnemies,CombatManager: get enemies in range,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,d(),countDefenders,[V] 统计区域防御单位数 (空闲战斗单位),verified-exists
+method,com.corrodinggames.rts.game.a,i,e,getNearbyAllies,CombatManager: get allies in range,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,e(),getNumberOfIdleBuilders,[V] 返回空闲建造者数,verified-exists
+method,com.corrodinggames.rts.game.a,i,f,requestAttack,CombatManager: request attack on target,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,f(),isUnsafe,[V] 区域是否不安全 (近处敌人数 != 0),verified-exists
+method,com.corrodinggames.rts.game.a,i,g,cancelAttack,CombatManager: cancel pending attack,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,g(),findNearbyEnemy,[V] 找区域内最近敌方单位 (120 偏移),verified-exists
+method,com.corrodinggames.rts.game.a,i,h,getDamageDealt,CombatManager: get damage statistics,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,h(),countNearbyEnemies,[V] 统计 60 距离内敌方单位数,verified-exists
+method,com.corrodinggames.rts.game.a,i,i,getDamageReceived,CombatManager: get damage received stats,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,i(),attackNearbyEnemies,[I] 攻击附近敌人 (距离 800/540 过滤),verified-exists
+method,com.corrodinggames.rts.game.a,i,j,isInCombat,CombatManager: check if unit is in combat,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,j(),countEnemiesInZone,[I] 统计区域视野内敌方单位数,verified-exists
+method,com.corrodinggames.rts.game.a,i,k,getCombatRange,CombatManager: get effective combat range,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,k(),getNearbyUnits,[I] 碰撞查询区域内单位 (units.f.f),verified-exists
+method,com.corrodinggames.rts.game.a,i,l,setAggressiveMode,CombatManager: toggle aggressive stance,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,l(),findNearestZoneWithBuilders,[I] 找有建造者的最近基地区域,verified-exists
+method,com.corrodinggames.rts.game.a,i,m,isAggressiveMode,CombatManager: check aggressive stance,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,m(),createAttackGroup,[V] 生成攻击组: 找有足够单位的基地创建 RallyGroup 并分配路径点,verified-exists
+method,com.corrodinggames.rts.game.a,i,n,getLastAttackTime,CombatManager: get timestamp of last attack,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,n(),orderHarvesters,[I] 调度采集者回收资源,verified-exists
+method,com.corrodinggames.rts.game.a,i,o,getReloadProgress,CombatManager: get weapon reload progress,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,o(),orderReclaim,[I] 让区域内单位执行回收,verified-exists
+method,com.corrodinggames.rts.game.a,i,p,canAttackTarget,CombatManager: check if target is attackable,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,q,getPreferredTarget,CombatManager: get AI-preferred target,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,q(),orderFailedBuild,[I] 处理建造失败: 找可执行单位重试,verified-exists
+method,com.corrodinggames.rts.game.a,i,r,updateTargetPriority,CombatManager: recalculate target priorities,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,r(),findRandomUnit,[I] 随机选取区域内可用单位 (20 次重试),verified-exists
+method,com.corrodinggames.rts.game.a,i,s,getEngagementRules,CombatManager: get engagement rule set,body-verified-v1200
+method,com.corrodinggames.rts.game.a,i,s(),handleCannotAfford,[I] 处理买不起的建筑 (派建造者处理),verified-exists
+method,com.corrodinggames.rts.game.a,i,t,reset,real-class-inferred: com.corrodinggames.rts.game.a.i,real-class-v1200
+method,com.corrodinggames.rts.game.a,i,t(),resolveOverlap,[V] 基地重叠解决: 两基地<400 距离移除弱者 (COMBAT-COMMAND 文档),verified-exists
+method,com.corrodinggames.rts.game.a,i,u,getint,real-class-inferred: com.corrodinggames.rts.game.a.i,real-class-v1200
+method,com.corrodinggames.rts.game.a,i,u(),countWaterUnits,[V] 统计区域内水中单位数,verified-exists
+method,com.corrodinggames.rts.game.a,i,v,reset,real-class-inferred: com.corrodinggames.rts.game.a.i,real-class-v1200
+method,com.corrodinggames.rts.game.a,i,v(),chooseBuildDirection,[V] 建造方向选择: 40%军事/30%经济/20%建造者 + 各类权重 (COMBAT-COMMAND 文档),verified-exists
+field,com.corrodinggames.rts.game.a,i,w,cachedBuildPoint,[I] PointF; 建造位置缓存,verified-exists
+method,com.corrodinggames.rts.game.a,i,x,gety,real-class-inferred: com.corrodinggames.rts.game.a.i,real-class-v1200
+method,com.corrodinggames.rts.game.a,i,x(),findAnyIdleBuilder,[I] private; 找任意空闲建造者,verified-exists
+method,com.corrodinggames.rts.game.a,i,y,gety,real-class-inferred: com.corrodinggames.rts.game.a.i,real-class-v1200
+method,com.corrodinggames.rts.game.a,i,y(),findIdleBuilderByPriority,[I] private; 按优先级找空闲建造者,verified-exists
+method,com.corrodinggames.rts.game.a,i,z,isEnabled,real-class-inferred: com.corrodinggames.rts.game.a.i,real-class-v1200
+method,com.corrodinggames.rts.game.a,i,z(),hasIdleTransporter,[I] private; 是否有空闲运输单位 (ai()),verified-exists
+method,com.corrodinggames.rts.game.units,am,a(com.corrodinggames.rts.game.units.am, float,""" com.corrodinggames.rts.game.f)""",getTargetDistance
+method,com.corrodinggames.rts.game.units,am,c(float, float,""" float)""",isWithinRange
+method,com.corrodinggames.rts.game.units,am,a(af,am,h,"""VariableScope)"""
+method,com.corrodinggames.rts.game.units,am,a(am,float,"""f)""",applyDamage
+method,com.corrodinggames.rts.game.units,am,a(float,float,float,float
+method,com.corrodinggames.rts.game.units,am,a(s,boolean,PointF,"""am)"""
+method,com.corrodinggames.rts.game.units,am,b(am,float,"""f)""",repairUnit
+method,com.corrodinggames.rts.game.units,am,c(am,boolean),canBeTargetedByWithFlag | AbstractUnit: final - temp strip cN/cO then d(),verified-exists
+method,com.corrodinggames.rts.game.units,am,f(float,float),setPosition,AbstractUnit: eo/ep assignment
+method,com.corrodinggames.rts.game.units,am,A(com.corrodinggames.rts.game.units.am),find_A,"""[Phase3-method] returns java.lang.String""",verified-exists
+method,com.corrodinggames.rts.game.units,am,A_,setTransport,UnitInstance: set transport unit,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,B(am),setVariableScopeUnit,AbstractUnit: bu = am2 (h type→null),body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,B(com.corrodinggames.rts.game.units.am),accept_B,"""[Phase3-method] returns void""",verified-exists
+method,com.corrodinggames.rts.game.units,am,J(),canInflictContactDamage,True if unit deals collision damage [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,am,N(),getActionCount,Count of available actions [sig-backfill: returns java.util.ArrayList],verified-exists
+method,com.corrodinggames.rts.game.units,am,O,onConstructionTick,UnitInstance: update construction progress,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,O(int),drawWaypointOverlays,[v10.3-resolved: semantic match (1 params,verified-exists
+method,com.corrodinggames.rts.game.units,am,P,blocksPathfinding,[[MANUAL: single overload - verify with javap]: multi-overload — needs manual disambiguation] True=unit has collision and blocks pathfinding (2 overloads),verified-exists
+method,com.corrodinggames.rts.game.units,am,P(int),setTeamById,AbstractUnit: lookup team by id then e(),body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,Q,isBeingConstructed,UnitInstance: check if unit is under construction,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,Q(),isAirUnit,v19.104 agentG: custom/j eq<=-1.0f; 原isCloaked错误,verified
+method,com.corrodinggames.rts.game.units,am,Q(int),setTeamInternalById,AbstractUnit: lookup team by id then b(),body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,V(),getUpgradeLevel,Upgrade/tier level from subclass [sig-backfill: returns int],verified-exists
+method,com.corrodinggames.rts.game.units,am,a,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,a(android.graphics.RectF),isVisibleInRect,am: method a(android.graphics.RectF) -> isVisibleInRect,body-verified-v1007
+method,com.corrodinggames.rts.game.units,am,a(c),findActionByType,AbstractUnit: iterate N() matching action type,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,a(l),isVisibleTo,AbstractUnit: sight range + cN/cP + d(bs) check,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,a_,initFromType,UnitInstance: initialize from UnitType config,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,a_(boolean),getAnimationFrameRectFull,dC sprite rect,body-verified-v1007
+method,com.corrodinggames.rts.game.units,am,aj(),onCustomMessage,Receive custom string action data [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,am,ak(),isCombatUnit,Abstract: true for real units [sig-backfill: returns boolean], false for decorations
+method,com.corrodinggames.rts.game.units,am,b,getCurrentHealth,UnitInstance: get current hit points,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,b(am),getDamageMultiplier,AbstractUnit: 1.0f default,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,b(com.corrodinggames.rts.game.n),assignTeam,raw team field set,body-verified-v1007
+method,com.corrodinggames.rts.game.units,am,b(n),setTeamInternal,AbstractUnit: bX assignment only,body-verified-v1500
+field,com.corrodinggames.rts.game.units,am,bA,lastRepairTick,Last repair tick,verified-exists
+field,com.corrodinggames.rts.game.units,am,bB,lastBuildTick,Last build tick,verified-exists
+method,com.corrodinggames.rts.game.units,am,bC,onCostChanged,AbstractUnit: empty default - cost HUD update,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,bC(),onFactoryDeploy,Callback when factory finishes deploying unit [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,bD,isSelected,Is currently selected flag,verified-exists
+field,com.corrodinggames.rts.game.units,am,bE,field_bE,"P3.1-inferred: type=com.corrodinggames.rts.gameFramework.utility.u, was=u0",p3-auto-inferred
+field,com.corrodinggames.rts.game.units,am,bF,unitTypeCache,Unit type lookup cache (HashMap),verified-exists
+method,com.corrodinggames.rts.game.units,am,bF(),getUnitPool,Get global unit registration/object pool [sig-backfill: returns com.corrodinggames.rts.gameFramework.utility.o],verified-exists
+field,com.corrodinggames.rts.game.units,am,bG,actionCache,Action availability cache (HashMap),verified-exists
+method,com.corrodinggames.rts.game.units,am,bG(),clearUnitPool,Clear/reset global unit registry pool [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,bH,weaponCache,Weapon target cache (HashMap),verified-exists
+method,com.corrodinggames.rts.game.units,am,bH(),clearAllStaticRegistries,Clear all static registries [sig-backfill: returns void], pools
+field,com.corrodinggames.rts.game.units,am,bI,minimapIconPaint,Static gray Paint for minimap icons (no weapons),verified-exists
+method,com.corrodinggames.rts.game.units,am,bI(),isFactoryBuilding,True if this is a factory-type building [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,bJ,minimapWeaponIconPaint,Static white Paint for minimap icons (has weapons),verified-exists
+method,com.corrodinggames.rts.game.units,am,bJ(),isNeutralTeam,Whether unit belongs to neutral team [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,bK,minimapIconColorFilter,Static LightingColorFilter for minimap icons,verified-exists
+method,com.corrodinggames.rts.game.units,am,bK(),buildTypeInstanceCache,Build type->placeholder instance cache [sig-backfill: returns java.util.HashMap],verified-exists
+field,com.corrodinggames.rts.game.units,am,bL,field_bL,"P3.1-inferred: type=boolean, was=flag1",p3-auto-inferred
+method,com.corrodinggames.rts.game.units,am,bL(),initAllCaches,Initialize action cache [sig-backfill: returns void], weapon cache
+field,com.corrodinggames.rts.game.units,am,bM,field_bM,"P3.1-inferred: type=boolean, was=flag2",p3-auto-inferred
+method,com.corrodinggames.rts.game.units,am,bM(),computeTypesHash,Compute hash of all registered unit types [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,am,bN,field_bN,"P3.1-inferred: type=boolean, was=flag3",p3-auto-inferred
+method,com.corrodinggames.rts.game.units,am,bN(),getBuildDuration,Default build time (3000.0f) [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,am,bO,field_bO,"P3.1-inferred: type=boolean, was=flag4",p3-auto-inferred
+method,com.corrodinggames.rts.game.units,am,bO(),hasSpawnedDeathEffect,v19.104 agentG: y.java:4530 if(!bO()) bo()生成特效; 原isAutoAttack错误,verified
+field,com.corrodinggames.rts.game.units,am,bP,field_bP,"P3.1-inferred: type=boolean, was=flag5",p3-auto-inferred
+method,com.corrodinggames.rts.game.units,am,bP(),canAttackAir,Whether unit can target air units [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,bQ,repairTarget,Current repair target unit,verified-exists
+method,com.corrodinggames.rts.game.units,am,bQ(),getXpKillReward,XP reward for destroying this unit [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,am,bR,transportUnit,Transported unit reference,verified-exists
+method,com.corrodinggames.rts.game.units,am,bR(),updateUnitAgeState,Update unitAge based on current state [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,bS,attackTimer,Attack cooldown timer,verified-exists
+method,com.corrodinggames.rts.game.units,am,bS(),initTurretTargets,Ensure at least one turret target slot [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,bT,field_bT,"P3.1-inferred: type=boolean, was=flag6",type-aware-fp-v19.114
+method,com.corrodinggames.rts.game.units,am,bT(),isAlive,Check if unit is alive,verified-exists
+field,com.corrodinggames.rts.game.units,am,bU,unitAge,Unit age/lifespan counter,verified-exists
+method,com.corrodinggames.rts.game.units,am,bU(),shouldDrawHpBar,Whether HP bar should be drawn [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,bV,isUnitRemoved,Unit removal flag beyond isDead/isAlive,verified-exists
+method,com.corrodinggames.rts.game.units,am,bV(),getBuildProgressForDisplay,Build progress 0-1 [sig-backfill: returns float], -1 if complete
+field,com.corrodinggames.rts.game.units,am,bW,lastEventTick,Timestamp of last relevant event (game tick),verified-exists
+method,com.corrodinggames.rts.game.units,am,bW(),getRepairProgressForDisplay,Repair progress value or -1 [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,am,bX,owningPlayer,PlayerState reference for alliance checks,verified-exists
+method,com.corrodinggames.rts.game.units,am,bX(),canBeManuallyRepaired,Whether unit accepts manual repair [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,bY,field_bY,"P3.1-inferred: type=boolean, was=flag7",p3-auto-inferred
+method,com.corrodinggames.rts.game.units,am,bY(),getActionCategoryId,Action menu primary category index [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,am,bZ,velX,X-axis velocity component,verified-exists
+method,com.corrodinggames.rts.game.units,am,bZ(),getActionSubCategoryId,Action menu sub-category index [sig-backfill: returns int],verified-exists
+method,com.corrodinggames.rts.game.units,am,b_,takeDamage,UnitInstance: apply damage to unit,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,bd(),getMaxEnergy,Maximum energy capacity [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,am,bl(),getWeaponMountCount,Number of turret/weapon mount points [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,am,br,moveSpeed,Current movement speed,verified-exists
+field,com.corrodinggames.rts.game.units,am,bs,counter8,[Phase3-inferred] type=int,verified-exists
+field,com.corrodinggames.rts.game.units,am,bt,am9,[Phase3-inferred] type=com.corrodinggames.rts.game.units.am,verified-exists
+method,com.corrodinggames.rts.game.units,am,bt(),onUnitKilled,Called when unit is killed [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,bu,parentUnit,Parent/carrier unit reference,verified-exists
+method,com.corrodinggames.rts.game.units,am,bu(),deathChain,8-step death sequence,verified-exists
+method,com.corrodinggames.rts.game.units,am,bv,onUnitRemoved,AbstractUnit: bu()+e()+bt() removal chain,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,bv(),destroyUnit,death sequence bu->e->a->bt,body-verified-v1007
+field,com.corrodinggames.rts.game.units,am,bw,scriptScope,LogicBoolean variable scope,verified-exists
+method,com.corrodinggames.rts.game.units,am,bw(),computeUnitHash,Hash based on busy state and max HP [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,am,bx,resourceCosts,Resource cost component,verified-exists
+field,com.corrodinggames.rts.game.units,am,by,resourceProduction,Resource production component,verified-exists
+field,com.corrodinggames.rts.game.units,am,bz,lastAttackedTick,Last time attacked (tick),verified-exists
+method,com.corrodinggames.rts.game.units,am,c,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,c(),getDebugInfoString,am: method c() -> getDebugInfoString,body-verified-v1007
+method,com.corrodinggames.rts.game.units,am,c(am),getRepairRate,AbstractUnit: 0.2f default repair speed,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,c(boolean),onGridUpdated,AbstractUnit: empty default - grid change callback,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,c(float),isRenderable,AbstractUnit: default true (visibility check),body-verified-v1500
+field,com.corrodinggames.rts.game.units,am,cA,maxEnergy,Maximum energy capacity,verified-exists
+method,com.corrodinggames.rts.game.units,am,cA(),getDefaultStatModifiers,Empty no-op stat modifiers [sig-backfill: returns com.corrodinggames.rts.game.units.custom.e.f],verified-exists
+field,com.corrodinggames.rts.game.units,am,cB,currentSensorRange,Effective sensor/vision range after modifiers,verified-exists
+method,com.corrodinggames.rts.game.units,am,cB(),toShortDebugString,Short debug: type(id:ID) [sig-backfill: returns java.lang.String],verified-exists
+field,com.corrodinggames.rts.game.units,am,cC,field_cC,"P3.1-inferred: type=float, was=value10",p3-auto-inferred
+method,com.corrodinggames.rts.game.units,am,cC(),toFullDebugString,Full debug with HP/death/deleted [sig-backfill: returns java.lang.String],verified-exists
+method,com.corrodinggames.rts.game.units,am,cD,getFireCooldownMultiplier,AbstractUnit: 1.0f default,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,cD(),getFireCooldownMultiplier,Rate of fire/cooldown multiplier [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,am,cE,buildStageIndex,Build stage or texture variant index,verified-exists
+method,com.corrodinggames.rts.game.units,am,cE(),getAnimatedScreenBounds,Screen bounds with animation scale [sig-backfill: returns android.graphics.RectF],verified-exists
+field,com.corrodinggames.rts.game.units,am,cF,weaponAmmo,Current weapon ammo,verified-exists
+method,com.corrodinggames.rts.game.units,am,cF(),getStaticScreenBounds,Screen bounds without animation [sig-backfill: returns android.graphics.RectF],verified-exists
+field,com.corrodinggames.rts.game.units,am,cG,hasWeapon,Has weapon equipped flag,verified-exists
+method,com.corrodinggames.rts.game.units,am,cG(),isDamageImmune,Whether immune to all damage [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,am,cH,isOnScreenSimple,AbstractUnit: final - cJ() && !(eq>2),body-verified-v1500
+field,com.corrodinggames.rts.game.units,am,cI,isFactory,Is factory unit flag,verified-exists
+method,com.corrodinggames.rts.game.units,am,cI(),isLeftOfMap,Whether X is beyond map left edge [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cJ,productionProgress,Production progress 0-1,verified-exists
+method,com.corrodinggames.rts.game.units,am,cJ(),isAboveMap,Whether Y is beyond map top edge [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cK,isEnabled,Is unit enabled/active,verified-exists
+method,com.corrodinggames.rts.game.units,am,cK(),isOffMapCorner,Whether unit is off-map corner [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cL,turretTargets,Array of turret target objects,verified-exists
+method,com.corrodinggames.rts.game.units,am,cL(),getResourceCostValue,Resource cost to build this unit [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,am,cM,hasTarget,Has attack target flag,type-aware-fp-v19.114
+method,com.corrodinggames.rts.game.units,am,cM(),getResourceProduction,Resource production efficiency [sig-backfill: returns com.corrodinggames.rts.game.units.custom.d.b],verified-exists
+field,com.corrodinggames.rts.game.units,am,cN,parentUnit,Parent/carrier/container unit reference,verified-exists
+method,com.corrodinggames.rts.game.units,am,cN(),getCustomResourceOverride,Custom resource definition override [sig-backfill: returns com.corrodinggames.rts.game.units.custom.d.b],verified-exists
+field,com.corrodinggames.rts.game.units,am,cO,buildUnitType,Unit type being built,verified-exists
+method,com.corrodinggames.rts.game.units,am,cO(),isCloaked,Whether unit is currently cloaked [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cP,collisionData,Collision filter data,verified-exists
+method,com.corrodinggames.rts.game.units,am,cP(),onCloakStateChanged,Called when cloak state toggles [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,cQ,experience,Experience/level points,verified-exists
+method,com.corrodinggames.rts.game.units,am,cQ(),getMaxFactoryQueueLength,Max factory queue length [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,am,cR,isVeteran,Is veteran unit flag,verified-exists
+method,com.corrodinggames.rts.game.units,am,cR(),getCustomEffectHandler,Custom effect handler [sig-backfill: returns com.corrodinggames.rts.game.units.custom.h],verified-exists
+field,com.corrodinggames.rts.game.units,am,cS,killCount,Unit kill count,verified-exists
+method,com.corrodinggames.rts.game.units,am,cS(),getSightRadius,Vision/detection radius [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,am,cT,deathCount,Unit death count,verified-exists
+method,com.corrodinggames.rts.game.units,am,cT(),isCapturable,Whether capturable by enemy [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cU,assistCount,Unit assist count,verified-exists
+method,com.corrodinggames.rts.game.units,am,cU(),isNotCapturable,Whether not capturable (inverse of cT) [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cV,attackDamage,Current attack damage,verified-exists
+method,com.corrodinggames.rts.game.units,am,cV(),isAutoRepairActive,Whether auto-repair enabled [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cW,hpBarPaint,HP bar paint (green),verified-exists
+method,com.corrodinggames.rts.game.units,am,cW(),isAutoReclaimActive,Whether auto-reclaim enabled [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cX,hpBgPaint,HP bar background paint (red),verified-exists
+method,com.corrodinggames.rts.game.units,am,cX(),updateMinimapIndicator,Create/update minimap indicator [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,cY,shieldBarPaint,Shield bar paint (blue),verified-exists
+method,com.corrodinggames.rts.game.units,am,cY(),getEffectsRenderOffset,Effect rendering offset [sig-backfill: returns android.graphics.PointF],verified-exists
+field,com.corrodinggames.rts.game.units,am,cZ,buildBarPaint,Build progress bar paint (yellow),verified-exists
+method,com.corrodinggames.rts.game.units,am,cZ(),getMapOriginX,v19.104 agentG: bL.p被减除 (1966行); 原getMinimapScaleX错误,verified
+method,com.corrodinggames.rts.game.units,am,c_,isDestroyed,UnitInstance: check if unit is dead/destroyed,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,c_(),isOnRadar,Whether unit shows on radar/minimap [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,ca,velY,Y-axis velocity component,verified-exists
+method,com.corrodinggames.rts.game.units,am,ca(),onProjectileImpact,Called after projectile hits this unit [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,cb,isMoving,Is currently moving flag,verified-exists
+method,com.corrodinggames.rts.game.units,am,cb(),onBuildingComplete,Called when building/manufacturing complete [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,cc,targetX,Target X coordinate,verified-exists
+method,com.corrodinggames.rts.game.units,am,cc(),getRenderBounds,Static axis-aligned bounding rect [sig-backfill: returns android.graphics.Rect],verified-exists
+field,com.corrodinggames.rts.game.units,am,cd,targetY,Target Y coordinate,verified-exists
+method,com.corrodinggames.rts.game.units,am,cd(),getHitboxRect,"""AbstractUnit: returns Rect dw field [FIXED: was findTarget - cd returns Rect""",""" not unit search]"""
+field,com.corrodinggames.rts.game.units,am,ce,dirX,X direction component,verified-exists
+method,com.corrodinggames.rts.game.units,am,ce(),getTargetBounds,Target bounding rect via targetX() [sig-backfill: returns android.graphics.Rect],verified-exists
+field,com.corrodinggames.rts.game.units,am,cf,dirY,Y direction component,verified-exists
+method,com.corrodinggames.rts.game.units,am,cf(),canMove,Check if unit can move,verified-exists
+field,com.corrodinggames.rts.game.units,am,cg,facingAngle,Unit rotation angle in degrees,verified-exists
+method,com.corrodinggames.rts.game.units,am,cg(),isTargetableForAI,Whether AI can target this unit [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,ch,turnRate,Turn rate per tick,verified-exists
+method,com.corrodinggames.rts.game.units,am,ch(),checkAndRemoveIfDead,AbstractUnit: void - checks !bV && cu<=0 then bv() [FIXED: was canAttack - ch is death check],body-verified-v1300-fixed
+method,com.corrodinggames.rts.game.units,am,ci,cullUnit,AbstractUnit: bu()+a()+bt() server-side culling,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,ci(),canBuild,Check if unit can build,verified-exists
+method,com.corrodinggames.rts.game.units,am,cj,setHealthZero,AbstractUnit: cu=-1 instant death,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,cj(),getAttackRange,Get attack range,verified-exists
+method,com.corrodinggames.rts.game.units,am,ck,hasProductionCapacity,AbstractUnit: bI() && s.c(cm()) factory check,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,ck(),getMoveSpeed,Get current move speed,verified-exists
+field,com.corrodinggames.rts.game.units,am,cl,extentY,Collision extent half-height,verified-exists
+method,com.corrodinggames.rts.game.units,am,cl(),isIdle,Check if unit is idle,verified-exists
+field,com.corrodinggames.rts.game.units,am,cm,buildProgress,Construction completion fraction (0.0-1.0),verified-exists
+method,com.corrodinggames.rts.game.units,am,cm(),getDefaultActionType,Default action type category [sig-backfill: returns com.corrodinggames.rts.game.units.a.c],verified-exists
+field,com.corrodinggames.rts.game.units,am,cn,sizeScale,Size scale multiplier,verified-exists
+method,com.corrodinggames.rts.game.units,am,cn(),getActionCooldownTime,Action cooldown time (-1=none) [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,am,co,isRepairing,Is repairing flag,verified-exists
+method,com.corrodinggames.rts.game.units,am,co(),isActionAvailable,Whether action is ready [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cp,isReclaiming,Is reclaiming flag,verified-exists
+method,com.corrodinggames.rts.game.units,am,cp(),applyDamage,Apply damage to unit,verified-exists
+field,com.corrodinggames.rts.game.units,am,cq,isConstructing,Is constructing flag,verified-exists
+method,com.corrodinggames.rts.game.units,am,cq(),countUsableActions,Count enabled+available actions [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,am,cr,isTransporting,Is transporting units flag,verified-exists
+method,com.corrodinggames.rts.game.units,am,cr(),canFireAtAirTargets,Whether can target and shoot air units [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,am,cs,getTargetAcquisitionRange,AbstractUnit: 21.0f default,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,cs(),getTargetAcquisitionRange,Auto-acquire target range [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,am,ct,isAttackMoving,Is attack-moving flag,verified-exists
+method,com.corrodinggames.rts.game.units,am,ct(),checkIsLargeUnit,Check if this is a large unit [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cu,currentIntegrity,Paired resource value (HP for trees, charge for factories)
+method,com.corrodinggames.rts.game.units,am,cu(),isRepairable,Whether other units can repair this [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cv,maxIntegrity,Maximum paired resource value,verified-exists
+method,com.corrodinggames.rts.game.units,am,cv(),isReclaimable,Whether reclaimable for resources [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,cw,field_cw,"P3.1-inferred: type=float, was=value12",p3-auto-inferred
+method,com.corrodinggames.rts.game.units,am,cw(),getMaxUnitGroupSize,Max units per control group [sig-backfill: returns int],verified-exists
+method,com.corrodinggames.rts.game.units,am,cx,getMoveSpeedMult,AbstractUnit: 1.0f default,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,cx(),isIdle,Check if unit is idle,verified-exists
+method,com.corrodinggames.rts.game.units,am,cy,getShieldRegenBase,AbstractUnit: 0.0f default,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,cy(),getSpeedMultiplier,Movement speed multiplier [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,am,cz,field_cz,"P3.1-inferred: type=float, was=value14",p3-auto-inferred
+method,com.corrodinggames.rts.game.units,am,cz(),getShieldStatModifiers,Shield/energy stat modifiers [sig-backfill: returns com.corrodinggames.rts.game.units.custom.e.f],verified-exists
+method,com.corrodinggames.rts.game.units,am,d,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,d(am),canBeTargetedBy,AbstractUnit: default true,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,d(boolean),getRenderAngle,AbstractUnit: cg + 90 with flag,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,d(com.corrodinggames.rts.game.n),isVisibleToTeam,fog grid check,body-verified-v1007
+field,com.corrodinggames.rts.game.units,am,dA,animatedScreenBounds,Static RectF for animated screen bounds calculation,verified-exists
+field,com.corrodinggames.rts.game.units,am,dB,rectF15,[Phase3-inferred] type=android.graphics.RectF,verified-exists
+field,com.corrodinggames.rts.game.units,am,dC,textureSrcRect,Static Rect for sprite atlas source rect,verified-exists
+field,com.corrodinggames.rts.game.units,am,dD,movementTargetPoint,Static PointF for computed waypoint target position,verified-exists
+field,com.corrodinggames.rts.game.units,am,dE,interpolationTargetPoint,Static PointF for interpolated position,verified-exists
+field,com.corrodinggames.rts.game.units,am,dG,effectsOffsetPoint,Static PointF for effects render offset,verified-exists
+field,com.corrodinggames.rts.game.units,am,dI,customUnitData,Custom mod data container for this unit,verified-exists
+method,com.corrodinggames.rts.game.units,am,d_,getPosition,UnitInstance: get world position,body-verified-v1200
+field,com.corrodinggames.rts.game.units,am,da,selectionPaint,Selection circle paint,verified-exists
+method,com.corrodinggames.rts.game.units,am,da(),getMapOriginY,v19.104 agentG: bL.q被减除; 原getMinimapScaleY错误,verified
+field,com.corrodinggames.rts.game.units,am,db,waypointPaint,Waypoint line paint,verified-exists
+method,com.corrodinggames.rts.game.units,am,db(),getMinimapDrawRadius,Minimap draw radius [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,am,dc,rangePaint,Attack range circle paint,verified-exists
+method,com.corrodinggames.rts.game.units,am,dc(),onUnitDeployed,Called after deploy from factory/transport [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,dd,repairRangePaint,Repair range circle paint,verified-exists
+method,com.corrodinggames.rts.game.units,am,dd(),updateMapVisibility,Update fog-of-war visibility for this unit [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,de,resourcePaint,Resource bar paint,verified-exists
+method,com.corrodinggames.rts.game.units,am,de(),getStatusEffects,Active status effects handler [sig-backfill: returns com.corrodinggames.rts.game.units.custom.h],verified-exists
+field,com.corrodinggames.rts.game.units,am,df,energyBarPaint,Energy bar paint,verified-exists
+method,com.corrodinggames.rts.game.units,am,df(),getStatsCollection,Stat modifiers collection [sig-backfill: returns com.corrodinggames.rts.game.units.custom.e.f],verified-exists
+field,com.corrodinggames.rts.game.units,am,dg,boundsGrayPaint,Static gray Paint for debug/selection ring,verified-exists
+method,com.corrodinggames.rts.game.units,am,dg(),getCustomUnitData,Custom mod data container [sig-backfill: returns com.corrodinggames.rts.game.units.custom.c.c],verified-exists
+field,com.corrodinggames.rts.game.units,am,dh,boundsGrayThickPaint,Static thicker gray Paint for selection rings,verified-exists
+method,com.corrodinggames.rts.game.units,am,dh(),getCustomStatusHandler,Custom status handler or default [sig-backfill: returns com.corrodinggames.rts.game.units.custom.h],verified-exists
+field,com.corrodinggames.rts.game.units,am,di,boundsRedPaint,Static red Paint for enemy/debug rendering,verified-exists
+method,com.corrodinggames.rts.game.units,am,di(),onStatusEffectApplied,Called when status effect applied [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,dj,boundsStrokePaint,Static generic stroke Paint #1,verified-exists
+method,com.corrodinggames.rts.game.units,am,dj(),onStatusEffectRemoved,Called when status effect removed [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,am,dk,boundsStrokePaint2,Static generic stroke Paint #2,verified-exists
+method,com.corrodinggames.rts.game.units,am,dk(),hasActiveStatusEffect,Whether unit has active status effect [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,dl,factorySlotIndex,Factory slot index (-1=none),verified-exists
+method,com.corrodinggames.rts.game.units,am,dl(),isSpawnPointA,Whether marked as spawn point A [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,dm,factorySlotIndex,Factory unit spawn slot index (default -1),verified-exists
+method,com.corrodinggames.rts.game.units,am,dm(),hasSpawnedDeathEffectAlias,v19.104 agentG: return this.bO() (2031行); 原isSpawnPoint_alias错误,verified
+field,com.corrodinggames.rts.game.units,am,dn,decorSubType,Decor variant sub-type index (default -99),verified-exists
+method,com.corrodinggames.rts.game.units,am,dn(),getCollisionShapeData,Custom collision shape data [sig-backfill: returns com.corrodinggames.rts.game.units.custom.b.n],verified-exists
+field,com.corrodinggames.rts.game.units,am,do,smokeParticleTimer,Smoke particle emission timer (HP<33%),verified-exists
+method,com.corrodinggames.rts.game.units,am,do(),getCollisionRadius,Collision radius value [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,am,dp,damageTimerTotal,Total accumulated time at low HP,verified-exists
+method,com.corrodinggames.rts.game.units,am,dp(),shouldDrawSelectionRing,Whether to draw selection ring [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,am,dq,fireParticleTimer,Fire particle emission timer (HP<33%),verified-exists
+method,com.corrodinggames.rts.game.units,am,dq(),getCustomResourceHolder,Custom resource holder on unit [sig-backfill: returns com.corrodinggames.rts.game.units.custom.d.b],verified-exists
+field,com.corrodinggames.rts.game.units,am,dr,hpBarRect,Static RectF for HP bar fill rectangle,verified-exists
+method,com.corrodinggames.rts.game.units,am,dr(),getActiveBuildOrTarget,Build target if building [sig-backfill: returns com.corrodinggames.rts.game.units.am], else attack targetfield
+field,com.corrodinggames.rts.game.units,am,ds,waypointLinePaint,Static Paint for waypoint/direction lines,verified-exists
+field,com.corrodinggames.rts.game.units,am,dt,paint16,[Phase3-inferred] type=android.graphics.Paint,verified-exists
+field,com.corrodinggames.rts.game.units,am,du,renderSourceRect,Static RectF for texture rendering source bounds,verified-exists
+field,com.corrodinggames.rts.game.units,am,dv,renderDestRect,Static Rect for texture rendering destination,verified-exists
+field,com.corrodinggames.rts.game.units,am,dw,renderBoundsCache,Static Rect for cached rendering bounds,verified-exists
+field,com.corrodinggames.rts.game.units,am,dx,actionsCache,Static ArrayList for available GameAction objects,verified-exists
+field,com.corrodinggames.rts.game.units,am,dy,arrayList17,[Phase3-inferred] type=java.util.ArrayList,verified-exists
+field,com.corrodinggames.rts.game.units,am,dz,unitTypeHandle,UnitTypeHandle reference for type lookup,verified-exists
+method,com.corrodinggames.rts.game.units,am,e,getm,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,e(com.corrodinggames.rts.game.n),setTeam,full team change,body-verified-v1007
+method,com.corrodinggames.rts.game.units,am,e(n),setTeam,AbstractUnit: full team switch with registry updates,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,e_,setPosition,UnitInstance: set world position,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,f,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,f(com.corrodinggames.rts.game.n),setTeamWithFallback,am: method f(com.corrodinggames.rts.game.n) -> setTeamWithFallback,body-verified-v1007
+method,com.corrodinggames.rts.game.units,am,f(n),setTeamRespectNeutral,AbstractUnit: p() ? b(n.i) : b(n),body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,f_,getVelocity,UnitInstance: get movement velocity,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,f_(),syncAliveFromRemoved,Set isAlive from isUnitRemoved flag [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,am,g,getDamageTaken,AbstractUnit: 0.0f default (used in y(am) damaged check),body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,g(com.corrodinggames.rts.game.n),updateTeamVisibility,am: method g(com.corrodinggames.rts.game.n) -> updateTeamVisibility,body-verified-v1007
+method,com.corrodinggames.rts.game.units,am,g(n),setDiscoveredBy,AbstractUnit: write visibility an[] for team,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,g_,setVelocity,UnitInstance: set movement velocity,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,h,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,h(float),setFacingAngle,am: method h(float) -> setFacingAngle,body-verified-v1007
+method,com.corrodinggames.rts.game.units,am,h_,getRotation,UnitInstance: get facing angle,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,i,isEnabled,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,i_,setRotation,UnitInstance: set facing angle,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,j_,getOwner,UnitInstance: get owning player,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,k_,setOwner,UnitInstance: set owning player,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,l,isEnabled,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,l_,getTeam,UnitInstance: get team/alliance,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,m,getPointF,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,m(float),getPredictedPosition,"""AbstractUnit: eo+cc*t""",""" ep+cd*t linear prediction"""
+method,com.corrodinggames.rts.game.units,am,m_,isSelected,UnitInstance: check if currently selected,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,n,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,n_,setSelected,UnitInstance: toggle selection state,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,o,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,o(float),setHealth,AbstractUnit: cu = f2,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,o_,getUnitType,UnitInstance: get UnitType reference,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,p,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,p_,getFactory,UnitInstance: get producing factory,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,q,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,q(float),getRecentAttacker,AbstractUnit: by - f2*1000 < bs → bt,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,q_,setFactory,UnitInstance: set producing factory,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,r,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,r(float),setBuildProgress,am: method r(float) -> setBuildProgress,body-verified-v1007
+method,com.corrodinggames.rts.game.units,am,r_,getBuildProgress,UnitInstance: get construction progress (0-1),body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,s,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,s_,isMoving,UnitInstance: check if unit is moving,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,s_(),isOnScreen,Abstract: unit visible on current screen [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,am,t,isWaterBound,AbstractUnit: default false,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,t_,isAttacking,UnitInstance: check if unit is attacking,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,u,isStructure,AbstractUnit: default false,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,u_,getTarget,UnitInstance: get current attack/move target,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,v,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,v_,setTarget,UnitInstance: set attack/move target,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,w,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,w_,getActionQueue,UnitInstance: get queued actions,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,x,getHealthFraction,AbstractUnit: cu<cv ? cu/cv : -1,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,x(),getHealthPercent,bN-based health fraction,body-verified-v1007
+method,com.corrodinggames.rts.game.units,am,x_,addAction,UnitInstance: add action to queue,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,y,getBaseRange,AbstractUnit: 85 default base range/sensor,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,y(am),isDamaged,AbstractUnit: am2.g() > 0 damage check,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,y_,clearActions,UnitInstance: clear action queue,body-verified-v1200
+method,com.corrodinggames.rts.game.units,am,z,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.am,real-class-v1200
+method,com.corrodinggames.rts.game.units,am,z(am),getRepairSpeed,AbstractUnit: g()>0 ? g() : c(am)*5.1,body-verified-v1500
+method,com.corrodinggames.rts.game.units,am,z_,getTransport,UnitInstance: get transport unit carrying this unit,body-verified-v1200
+method,com.corrodinggames.rts.game.units,ap,a,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+method,com.corrodinggames.rts.game.units,ap,b,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+field,com.corrodinggames.rts.game.units,ap,c,float3,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+field,com.corrodinggames.rts.game.units,ap,d,float4,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+field,com.corrodinggames.rts.game.units,ap,e,float5,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+field,com.corrodinggames.rts.game.units,ap,f,float6,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+field,com.corrodinggames.rts.game.units,ap,g,boolean1,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+field,com.corrodinggames.rts.game.units,ap,h,float7,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+field,com.corrodinggames.rts.game.units,ap,i,float8,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+field,com.corrodinggames.rts.game.units,ap,j,am,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+field,com.corrodinggames.rts.game.units,ap,k,float9,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+field,com.corrodinggames.rts.game.units,ap,l,float10,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+field,com.corrodinggames.rts.game.units,ap,m,boolean2,real-class-inferred: com.corrodinggames.rts.game.units.ap,real-class-v1200
+method,com.corrodinggames.rts.game.units,ar,a(com.corrodinggames.rts.game.units.as, float, float, float
+method,com.corrodinggames.rts.game.units,ar,A(),isDebugOnly,Whether unit is debug-only (no translation errors) [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,ar,B(),getFactoryProductionInfo,Factory production info object (null for non-factory) [sig-backfill: returns com.corrodinggames.rts.game.units.custom.d.b],verified-exists
+method,com.corrodinggames.rts.game.units,ar,a(),createUnitInstance,as interface factory; d/d.java:227 as2.a(),body-verified-v1007
+field,com.corrodinggames.rts.game.units,ar,ae,allUnitTypes,Static list of all registered UnitRegistry enum values,verified-exists
+field,com.corrodinggames.rts.game.units,ar,ag,isRenderingScaled,Set during rendering when scale factor < 1.0,verified-exists
+field,com.corrodinggames.rts.game.units,ar,ai,enumValues,Enum constant values array for values() method,verified-exists
+method,com.corrodinggames.rts.game.units,ar,b(),initUnitType,calls d.g.K() etc.,body-verified-v1007
+method,com.corrodinggames.rts.game.units,ar,c(),getBuildTime,ar: method c() -> getBuildTime,body-verified-v1007
+method,com.corrodinggames.rts.game.units,ar,d(),getSellAction,returns units.a.z,body-verified-v1007
+method,com.corrodinggames.rts.game.units,ar,e(),getDisplayName,Localized display name with caching [sig-backfill: returns java.lang.String],verified-exists
+method,com.corrodinggames.rts.game.units,ar,f(),getDescription,Localized description with caching [sig-backfill: returns java.lang.String],verified-exists
+method,com.corrodinggames.rts.game.units,ar,g(),getMaxTechLevel,Maximum available tech level (returns 1) [sig-backfill: returns int],verified-exists
+method,com.corrodinggames.rts.game.units,ar,h(),initTechLevels,Initialize tech level 1-3 action lists [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,ar,i(),getUnitTypeName,Java enum constant name string [sig-backfill: returns java.lang.String],verified-exists
+method,com.corrodinggames.rts.game.units,ar,j(),canBeBuilt,Whether unit can be built/selected [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,ar,k(),canGuard,Whether unit has guard capability [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,ar,l(),canPatrol,Whether unit supports patrol [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,ar,m(),canStop,Whether unit supports stop command [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,ar,n(),canHoldPosition,Whether unit supports hold position [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,ar,o(),getSharedUnit,Returns shared unit instance from UnitInstance pool [sig-backfill: returns com.corrodinggames.rts.game.units.ao],verified-exists
+method,com.corrodinggames.rts.game.units,ar,p(),hasCustomActions,Whether unit has custom actions [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,ar,q(),getCustomUnitConfig,Custom unit config (null by default) [sig-backfill: returns com.corrodinggames.rts.game.units.custom.be],verified-exists
+method,com.corrodinggames.rts.game.units,ar,r(),outputUnitImages,Export unit images to output directory [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,ar,s(),printHelpForUnits,Generate HTML help for all non-bug units [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,ar,t(),preloadUnitNames,Preload translations for all enum values [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,ar,u(),getBuilderProvider,Cached builder/provider for action cost lookup [sig-backfill: returns com.corrodinggames.rts.game.units.custom.d.b],verified-exists
+method,com.corrodinggames.rts.game.units,ar,v(),getUnitTypeId,Internal unit type ID string [sig-backfill: returns java.lang.String],verified-exists
+method,com.corrodinggames.rts.game.units,ar,w(),isTransport,Whether unit type is a transport [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,ar,x(),getExtraData,Extra data object (null by default) [sig-backfill: returns com.corrodinggames.rts.game.units.custom.h],verified-exists
+method,com.corrodinggames.rts.game.units,ar,y(),hasTeamColor,Whether unit uses team coloring [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,ar,z(),getResourceType,Resource type for resource units (null default) [sig-backfill: returns com.corrodinggames.rts.gameFramework.m.e],verified-exists
+method,com.corrodinggames.rts.game.units,as,B,getStreamingCost,[V] B()->d.b returns cj; INI 'streamingCost' (ag.java:1475),verified-exists
+method,com.corrodinggames.rts.game.units,as,C,availableInDemo,[V] C()->boolean returns ce; INI 'availableInDemo' (ag.java:1470),verified-exists
+method,com.corrodinggames.rts.game.units,as,D,getBuildSpeed,[V] D()->float returns ck; INI 'buildSpeed' (ag.java:1484),verified-exists
+method,com.corrodinggames.rts.game.units,as,a,createUnitInstance,"""[V] a()->am; ar: a(false); l: l.a(false""",verified-exists
+method,com.corrodinggames.rts.game.units,as,b(int),getCreditCostForTechLevel,[V] b(int)->int returns c() ignoring level,verified-exists
+method,com.corrodinggames.rts.game.units,as,c,getCreditCost,[V] c()->int returns ch.a() (ResourceCost.a=credits),verified-exists
+method,com.corrodinggames.rts.game.units,as,d,getUnitType,[V] d()->a.z; dynamic UnitType wrapper super('s_'+v()) (ar.java aa field),verified-exists
+method,com.corrodinggames.rts.game.units,as,e,getLocalizedName,[V] e()->String; translation 'units.'+name+'.name' (ar.java),verified-exists
+method,com.corrodinggames.rts.game.units,as,f,getLocalizedDescription,[V] f()->String; translation 'units.'+name+'.description' (ar.java),verified-exists
+method,com.corrodinggames.rts.game.units,as,g,getTechLevel,[V] g()->int returns cl; INI 'techLevel' (ag.java:1485),verified-exists
+method,com.corrodinggames.rts.game.units,as,h,buildTechTree,[V] h()->void; ar populates af[3] tech-level slots,verified-exists
+method,com.corrodinggames.rts.game.units,as,i,getUnitId,[V] i()->String; ar: enum name; MapEngine as2.i() for GID,verified-exists
+method,com.corrodinggames.rts.game.units,as,j,isBuilding,[V] j()->boolean returns aH; INI 'isBuilding' (ag.java:1708),verified-exists
+method,com.corrodinggames.rts.game.units,as,k,ignoreInUnitCapCalculation,[V] k()->boolean returns aI; INI 'ignoreInUnitCapCalculation' (ag.java:1709),verified-exists
+method,com.corrodinggames.rts.game.units,as,l,isBuilder,[V] l()->boolean returns fp; error '[core]isBuilder' (ag.java:1879),verified-exists
+method,com.corrodinggames.rts.game.units,as,m,useAsBuilder,[V] m()->boolean returns fq; '[ai]useAsBuilder' (ag.java:1878),verified-exists
+method,com.corrodinggames.rts.game.units,as,n,useAsHarvester,[V] n()->boolean returns fr; INI 'useAsHarvester' (ag.java:1887),verified-exists
+method,com.corrodinggames.rts.game.units,as,o,getMovementType,[V] o()->ao returns fg; INI 'movementType' (ag.java:1865); ao enum,verified-exists
+method,com.corrodinggames.rts.game.units,as,p,placeOnlyOnResPool,[V] p()->boolean returns aJ; INI 'placeOnlyOnResPool' (ag.java:1710),verified-exists
+method,com.corrodinggames.rts.game.units,as,q,getPlacementRuleGroup,"""[V] q()->be returns ff; be.a(l""",verified-exists
+method,com.corrodinggames.rts.game.units,as,u,getBaseCost,[V] u()->d.b returns ch; INI 'price' (ag.java:1473),verified-exists
+method,com.corrodinggames.rts.game.units,as,v,getUnitTypeName,[V] v()->String returns M; INI 'name' (ag.java:1205),verified-exists
+method,com.corrodinggames.rts.game.units,as,w,isLocked,[V] w()->boolean returns cf/cg; INI 'isLocked'/'isLockedIfGameModeNoNuke' (ag.java:1471-1472),verified-exists
+method,com.corrodinggames.rts.game.units,as,x,getUnitConfig,[V] x()->h returns O; INI 'tags' parsed (ag.java:1223),verified-exists
+method,com.corrodinggames.rts.game.units,as,y,usesCreditResources,[V] y()->boolean returns gr; set by a(d.b) when credit cost (l.java:934),verified-exists
+method,com.corrodinggames.rts.game.units,as,z,getImageTexture,[V] z()->m.e; body image Texture,verified-exists
+method,com.corrodinggames.rts.game.units,o,a(int, int),jumpToNextBehavior,verified-exists
+method,com.corrodinggames.rts.game.units,o,a,geto,real-class-inferred: com.corrodinggames.rts.game.units.o,real-class-v1200
+method,com.corrodinggames.rts.game.units,o,a(),getName,o: method a() -> getName,body-verified-v1007
+field,com.corrodinggames.rts.game.units,o,b,behaviorMoving,Moving behavior (enum o),verified-exists
+method,com.corrodinggames.rts.game.units,o,b(),isAvailable,o: method b() -> isAvailable,body-verified-v1007
+field,com.corrodinggames.rts.game.units,o,c,behaviorAttacking,Attacking behavior (enum o),verified-exists
+field,com.corrodinggames.rts.game.units,o,d,behaviorBuilding,Building behavior (enum o),verified-exists
+field,com.corrodinggames.rts.game.units,o,e,behaviorRepairing,Repairing behavior (enum o),verified-exists
+field,com.corrodinggames.rts.game.units,o,f,$VALUES,enum values array,body-verified-v1007
+method,com.corrodinggames.rts.game.units,x,A(),getTurnRate,Body rotation speed 4.8 deg/sec [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,x,B(),getAngularAcceleration,Angular acceleration 0.35f for smooth turning [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,x,C(),getAcceleration,Forward acceleration 0.04f toward max speed [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,x,D(),getDeceleration,Braking deceleration 0.1f (faster than accel) [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,x,E(),canBodyRotateToAim,True=mobile units rotate body to face target [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,x,F(),isOnElevatedGround,Whether unit sits on elevated terrain [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,x,G(),getShadowOffsetX,Shadow/label render X offset 1.0f [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,x,H(),getShadowOffsetY,Shadow/label render Y offset 1.0f [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,x,I(),isOperational,Whether active for movement and AI (abstract) [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,x,J(),isMeleeRammingUnit,True=melee/ramming unit deals collision damage [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,x,P(),isAIControllable,True=AI can manage this unit [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,x,Q(),isDisabled,Whether disabled/stunned/unusable [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,x,a,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.x,real-class-v1200
+method,com.corrodinggames.rts.game.units,x,b,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.x,real-class-v1200
+method,com.corrodinggames.rts.game.units,x,c,getWeaponRangeForLevel,[[MANUAL: single overload - verify with javap]: multi-overload — needs manual disambiguation] Weapon attack range 99.0f baseline (2 overloads),verified-exists
+method,com.corrodinggames.rts.game.units,x,d,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.x,real-class-v1200
+method,com.corrodinggames.rts.game.units,x,d(),getMovingTexture,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.game.units,x,e,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.x,real-class-v1200
+method,com.corrodinggames.rts.game.units,x,e(),hasDeathSound,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.game.units,x,f,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.x,real-class-v1200
+method,com.corrodinggames.rts.game.units,x,f_(),resetInactiveFlag,Reset bT flag to false (unit ready/active) [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,x,g(int),getWeaponCooldownForLevel,Weapon fire cooldown 10.0f [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,x,h(),getMovementType,"v19.103 agentF纠正: x是空中单位基类 (i()=true飞机判定), 非base mobile",verified
+method,com.corrodinggames.rts.game.units,x,i(),isAvailableInEditor,True=appears in game editor/menus [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,x,k(),getTextureOverlay,Secondary overlay texture (null=no overlay) [sig-backfill: returns com.corrodinggames.rts.gameFramework.m.e],verified-exists
+method,com.corrodinggames.rts.game.units,x,l(),isGroundUnit,Whether ground-based unit [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,x,m(),getBuildTime,Construction build time 30.0f [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,x,u(),isCrossableByUnits,True=other units can pass through [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,x,v(),getBaseTexture,Unit idle/base texture (null=default) [sig-backfill: returns com.corrodinggames.rts.gameFramework.m.e],verified-exists
+method,com.corrodinggames.rts.game.units,x,z(),getMaxSpeed,Maximum movement speed (abstract [sig-backfill: returns float], 0.0 default)
+method,com.corrodinggames.rts.game.units,y,d(float, float),createWaypoint,verified-exists
+method,com.corrodinggames.rts.game.units,y,e(float, float),createWaypointOffset,verified-exists
+method,com.corrodinggames.rts.game.units,y,a(ab,boolean),playHitEffectWithFlag | BaseUnit: flagged hit effect variant,verified-exists
+method,com.corrodinggames.rts.game.units,y,a(am,float,"""int)""",attackWithTurret
+method,com.corrodinggames.rts.game.units,y,a(au,as,n,float
+method,com.corrodinggames.rts.game.units,y,a(boolean,n),isPlacementAllowed | BaseUnit: boolean-flagged placement check,verified-exists
+method,com.corrodinggames.rts.game.units,y,a(float,float,n,boolean
+method,com.corrodinggames.rts.game.units,y,a(int,float,float,"""float)"""
+method,com.corrodinggames.rts.game.units,y,b(am,boolean),canAttackOrRepair,"""BaseUnit: final - a(am"""
+method,com.corrodinggames.rts.game.units,y,b(float,float),teleportTo | BaseUnit: direct eo/ep set + collision refresh,verified-exists
+method,com.corrodinggames.rts.game.units,y,A,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,A(),getTurnSpeed,[v10.3-resolved: semantic match (0 params | returns float)] Turn speed (float) (2 overloads),verified-exists
+method,com.corrodinggames.rts.game.units,y,A(int),getTurretMinRange,BaseUnit: -1 default,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,B,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,B(),getAngularAccel,[v10.3-resolved: semantic match (0 params | returns float)] Angular acceleration (2 overloads),verified-exists
+method,com.corrodinggames.rts.game.units,y,B(int),getTurretBaseAngle,BaseUnit: turret reference angle offset,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,C,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,C(),getAcceleration,[v10.3-resolved: semantic match (0 params | returns float)] Forward acceleration (2 overloads),verified-exists
+method,com.corrodinggames.rts.game.units,y,C(int),getTurretFacingAngle,BaseUnit: ci && bb() ? cg+180 : cg,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,D,getai,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,D(),getDeceleration,[v10.3-resolved: semantic match (0 params | returns float)] Braking deceleration (2 overloads),verified-exists
+method,com.corrodinggames.rts.game.units,y,D(int),getBarrelEndPoint,BaseUnit: bf.a(E(n2)) PointF calc,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,E,getPointF,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,E(),isTurretLockedToBody,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.game.units,y,E(int),getMuzzlePoint,BaseUnit: forward point + g(n2) barrel length,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,F,getai,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,F(),isAboveGround,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.game.units,y,G,getPointF,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,G(),getMuzzleOffsetX,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.game.units,y,G(int),getTurretWorldPos,BaseUnit: H/I/J recoil offsets included,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,H,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,H(),getMuzzleOffsetY,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.game.units,y,H(int),getRecoilDistance,BaseUnit: 0 default recoil phase 1,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,I,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,I(),isUsableInternal,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.game.units,y,I(int),getRecoilOutDistance,BaseUnit: 4 default recoil phase 2,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,J(int),getRecoilReturnDistance,BaseUnit: 6 default recoil phase 3,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,K(int),getTurretAimOffset,"""BaseUnit: bj + (h""","""i) aim adjustment"""
+field,com.corrodinggames.rts.game.units,y,L,debugUnitTypes,Debug unit types flag (static boolean),verified-exists
+method,com.corrodinggames.rts.game.units,y,L(int),getTurretSpread,BaseUnit: 0.6f spread coefficient,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,M,unitIconTexture,Unit icon texture (m.e),verified-exists
+method,com.corrodinggames.rts.game.units,y,M(int),resetMountOffsets,Reset turret h/i offsets; -1 resets all [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,N,unitIconAltTexture,Unit alternate icon texture (m.e),verified-exists
+method,com.corrodinggames.rts.game.units,y,N(int),drawPlacementGrid,Render build footprint on minimap preview [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,O,emptyWeaponActions,Shared empty WeaponAction[] array constant,verified-exists
+field,com.corrodinggames.rts.game.units,y,P,currentBehavior,Current AI behavior (attack/move/build/patrol),verified-exists
+field,com.corrodinggames.rts.game.units,y,Q,teamColorIndexCache,Cached team color index (int  -9999=unset),verified-exists
+field,com.corrodinggames.rts.game.units,y,R,targetUnit,Targeted/followed UnitInstance reference,verified-exists
+method,com.corrodinggames.rts.game.units,y,R(),getDefaultPaint,Default paint with anti-alias check [sig-backfill: returns android.graphics.Paint],verified-exists
+field,com.corrodinggames.rts.game.units,y,S,sizeX,Unit collision box width in world units,verified-exists
+method,com.corrodinggames.rts.game.units,y,S(),loadTextures,Loads unitIconTexture and unitIconAltTexture [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,T,sizeY,Unit collision box height in world units,verified-exists
+method,com.corrodinggames.rts.game.units,y,T(),getOptionalTexture,Optional extra texture (null default) [sig-backfill: returns com.corrodinggames.rts.gameFramework.m.e],verified-exists
+field,com.corrodinggames.rts.game.units,y,U,radius,Unit circular collision radius,verified-exists
+method,com.corrodinggames.rts.game.units,y,U(),logUnitTypeDebug,Dump debug info for this unit type [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,V,waypointElapsedTime,v19.102 复核: 3257行路径点入队时清零 + 330行k2.g()读float; 原maxHp错误,verified
+method,com.corrodinggames.rts.game.units,y,V(),getUnitClassId,Unit classification ID [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,y,W,pathStallTimer,v19.102 复核: 2736行W+=f2累积 + >200/600/80/40阈值触发重寻路aH(); 原speed错误,verified
+method,com.corrodinggames.rts.game.units,y,W(),removeFromEngine,Remove from engine unit list (local player) [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,X,pathStallTimerX,v19.102 复核: 401行k2.g()读 + 与W同类停滞计时; 原turnSpeed错误,verified
+method,com.corrodinggames.rts.game.units,y,X(),getBuilderTarget,Target unit being built/reclaimed [sig-backfill: returns com.corrodinggames.rts.game.units.am],verified-exists
+field,com.corrodinggames.rts.game.units,y,Y,idleWaitTimer,v19.102 复核: 3258行清零 + 原地等待计时; 原turretTurnSpeed错误,verified
+method,com.corrodinggames.rts.game.units,y,Y(),isReclaimWaypoint,Active waypoint is reclaim command [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,Z,unitInstance,Attached UnitInstance self-reference,verified-exists
+method,com.corrodinggames.rts.game.units,y,Z(),hasTargetUnit,Deprecated: returns targetUnit != null [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,y,a,do_a,"""[Phase3-method] returns void""",verified-exists
+method,com.corrodinggames.rts.game.units,y,a(String),logUnitMessage,BaseUnit: (Unit log:type id): msg format,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,a(ab),playHitEffect,BaseUnit: damage type->sound/particle/smoke,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,a(am),canAttackTarget,"""BaseUnit: default false""",""" overridden by subclasses"""
+method,com.corrodinggames.rts.game.units,y,a(float),tickMovement,BaseUnit: move/turn/collision per-frame update,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,a(int),onFactorySlotAssigned,BaseUnit: empty - build slot notification hook,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,a(y),setFactoryLink,BaseUnit: ad reference + ag counter,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,aA,field_aA,"P3.1-inferred: type=float, was=value2",p3-auto-inferred
+method,com.corrodinggames.rts.game.units,y,aA(),clearNonBuildWaypoints,Remove non-build/deliver waypoints [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,aB,linkedUnitGroup,Unit group this unit belongs to,verified-exists
+method,com.corrodinggames.rts.game.units,y,aB(),resetFactoryLink,Clear factory ref + experimental flags [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,aC,linkedBaseZone,Linked base zone action reference,verified-exists
+method,com.corrodinggames.rts.game.units,y,aC(),processLinkedFactories,Apply shield/order constraints to factories [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,aD,pathToZone,Current path leads to linked zone flag,verified-exists
+method,com.corrodinggames.rts.game.units,y,aD(),unlinkAllFactories,Unlink all factories from shield unit [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,aE,defaultNonAliasPaint,Static non-anti-aliased texture proxy,verified-exists
+method,com.corrodinggames.rts.game.units,y,aE(),getFirstPathNode,First pathfinding node [sig-backfill: returns com.corrodinggames.rts.game.units.af],verified-exists
+field,com.corrodinggames.rts.game.units,y,aF,defaultAliasPaint,Static anti-aliased texture proxy,verified-exists
+method,com.corrodinggames.rts.game.units,y,aF(),getSecondPathNode,Second pathfinding node [sig-backfill: returns com.corrodinggames.rts.game.units.af],verified-exists
+field,com.corrodinggames.rts.game.units,y,aG,zeroPoint,Static zero-initialized PointF constant,verified-exists
+method,com.corrodinggames.rts.game.units,y,aG(),hasAdvancedPathing,Has 2+ path nodes + speed [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,aH,spatialGridHelper,Static reusable SpatialGrid cell for queries,verified-exists
+method,com.corrodinggames.rts.game.units,y,aH(),resetPathData,Reset path count/flags/speed/turnSpeed [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,aI,targetCount,Number of valid targets in targetArray,verified-exists
+method,com.corrodinggames.rts.game.units,y,aI(),resetPathDataFull,Full reset incl path node arrays [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,aJ,targetArray,Array of nearby target UnitInstances (size 10),verified-exists
+method,com.corrodinggames.rts.game.units,y,aJ(),advancePathNode,Advances to next path node [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,aK,targetDistanceArray,Distances for targets in targetArray,type-aware-fp-v19.114
+method,com.corrodinggames.rts.game.units,y,aK(),isOnWalkableTile,Current tile walkable check [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,aL,pathRetryCounter,Path retry/validation counter (default -9999),type-aware-fp-v19.114
+method,com.corrodinggames.rts.game.units,y,aL(),computePathHash,Hash of path node coordinates [sig-backfill: returns long],verified-exists
+field,com.corrodinggames.rts.game.units,y,aM,unitTypeRegistry,Static unit type registry for lookup,verified-exists
+method,com.corrodinggames.rts.game.units,y,aM(),getBuildProgressCap,Partial-build progress cap [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,y,aN,hasTurretTarget,Turret acquired and tracking target flag,verified-exists
+method,com.corrodinggames.rts.game.units,y,aN(),composeRenderPaint,Paint with team color + health + status effects [sig-backfill: returns android.graphics.Paint],verified-exists
+field,com.corrodinggames.rts.game.units,y,aO,isBuildingOrReclaiming,Actively building/reclaiming target flag,verified-exists
+method,com.corrodinggames.rts.game.units,y,aO(),shouldAntiAlias,Anti-aliased rendering check [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,y,aP,getMuzzleOffset,"""BaseUnit: be.a(G()""",""" H()) PointF"""
+method,com.corrodinggames.rts.game.units,y,aP(),getMuzzleOffset,Muzzle flash offset point [sig-backfill: returns android.graphics.PointF],verified-exists
+field,com.corrodinggames.rts.game.units,y,aQ,spatialQueryHelper1,Static reusable spatial query filter #1,verified-exists
+method,com.corrodinggames.rts.game.units,y,aQ(),renderAlternateIcon,Renders alternate icon for builder/delivery [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,aR,spatialQueryHelper2,Static reusable spatial query filter #2,verified-exists
+method,com.corrodinggames.rts.game.units,y,aR(),isUsable,Unit usable by AI (custom allows or standard type) [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,y,aS,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+field,com.corrodinggames.rts.game.units,y,aT,formationHelper2,Static reusable unit formation helper #2,verified-exists
+method,com.corrodinggames.rts.game.units,y,aT(),getGroupSizeLimit,Max units per control group (-1=unlimited) [sig-backfill: returns int],verified-exists
+method,com.corrodinggames.rts.game.units,y,aU(),getBuildRange,Build/repair range (from resource2Cost) [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,y,aV,pathfindCache,Static cache of recent pathfind requests,verified-exists
+method,com.corrodinggames.rts.game.units,y,aV(),isBuildingPlacer,Building placement helper unit flag [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,aW,reusablePathNode,Static reusable single PathNode instance,verified-exists
+method,com.corrodinggames.rts.game.units,y,aW(),clampTurretAngles,Clamp turret extension angles to max [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,aX,buildProgressFilter,Color filter for build-progress green overlay,verified-exists
+method,com.corrodinggames.rts.game.units,y,aX(),getTurretMountData,Turret mount info per turret [sig-backfill: returns java.util.ArrayList],verified-exists
+field,com.corrodinggames.rts.game.units,y,aY,validSelectionFilter,Color filter for valid selection highlight,verified-exists
+method,com.corrodinggames.rts.game.units,y,aY(),isAtFinalPathNode,Reached final path node flag [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,aZ,invalidSelectionFilter,Color filter for invalid selection highlight,verified-exists
+method,com.corrodinggames.rts.game.units,y,aZ(),getSlopeFactor,Slope-based speed scaling [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units,y,a_(com.corrodinggames.rts.game.units.am),getBuildRate,Build rate for target (speed*size) [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,y,aa,globalUnitIndex,Global unit type index (int),verified-exists
+method,com.corrodinggames.rts.game.units,y,aa(),hasActiveTurretAttachment,Any turret has active attachment [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,ab,resource1Cost,Primary resource cost (metal/type1),verified-exists
+method,com.corrodinggames.rts.game.units,y,ab(),getCurrentTargetUnit,Current unit instance or waypoint target [sig-backfill: returns com.corrodinggames.rts.game.units.am],verified-exists
+field,com.corrodinggames.rts.game.units,y,ac,buildTimeFrames,Build time in game frames,verified-exists
+method,com.corrodinggames.rts.game.units,y,ac(),hasMultipleTurrets,Turret count > 1 [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,ad,upgradeTarget,Upgrade target unit type (y),verified-exists
+method,com.corrodinggames.rts.game.units,y,ad(),canBeAutoTargeted,Auto-targetable (false if no resource cost) [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,ae,hasWeapons,Has weapon actions flag (boolean),verified-exists
+method,com.corrodinggames.rts.game.units,y,ae(),isAlwaysTargetable,Always targetable override [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,af,hasShield,Has shield capability flag (boolean),verified-exists
+method,com.corrodinggames.rts.game.units,y,af(),isAlwaysSelectable,Always selectable override [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,ag,shieldCapacity,Shield HP capacity (int),verified-exists
+method,com.corrodinggames.rts.game.units,y,ag(),isAlwaysRenderable,Always renderable override [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,ah,techLevel,Tech tier level (short),verified-exists
+method,com.corrodinggames.rts.game.units,y,ah(),isAlwaysAttackable,Always attackable override [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,ai,weaponRangeMax,Maximum weapon range (float),verified-exists
+method,com.corrodinggames.rts.game.units,y,ai(),hasVisibleTextures,Any turret icon is visible/rendered [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,aj,isExperimentalUnit,Is experimental/T3 unit flag (boolean),verified-exists
+method,com.corrodinggames.rts.game.units,y,aj(),isOffensiveCapable,Offensive capability from buildTimeFrames [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,ak,energyCost,Energy build cost (float),verified-exists
+method,com.corrodinggames.rts.game.units,y,ak(),isDefensiveCapable,Defensive capability from buildTimeFrames [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,al,metalCost,Metal build cost (float),verified-exists
+method,com.corrodinggames.rts.game.units,y,al(),hasExtraAction,Has extra action buttons [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,am,productionTime,Production time seconds (float),verified-exists
+method,com.corrodinggames.rts.game.units,y,am(),getBuildRangeExtension,Extra build placement range extension [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,y,an,maxAmmo,Maximum weapon ammo (int),verified-exists
+method,com.corrodinggames.rts.game.units,y,an(),isRusherBehavior,AI rusher/aggressive behavior check [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,ao,weaponReloadTime,Weapon reload time seconds (float),type-aware-fp-v19.114
+method,com.corrodinggames.rts.game.units,y,ao(),insertWaypointFront,Insert waypoint at front of queue [sig-backfill: returns com.corrodinggames.rts.game.units.au],verified-exists
+field,com.corrodinggames.rts.game.units,y,ap,isFactory,Unit type is factory/builder flag,verified-exists
+method,com.corrodinggames.rts.game.units,y,ap(),addWaypoint,Add empty waypoint at end [sig-backfill: returns com.corrodinggames.rts.game.units.au],verified-exists
+field,com.corrodinggames.rts.game.units,y,aq,maxEnergyCapacity,Max energy capacity (float  -999=unset),verified-exists
+method,com.corrodinggames.rts.game.units,y,aq(),hasNoWaypoints,First waypoint is null/empty [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,ar,isStealthUnit,Is stealth/cloaked unit flag (boolean),verified-exists
+method,com.corrodinggames.rts.game.units,y,ar(),getFirstWaypoint,First waypoint in queue [sig-backfill: returns com.corrodinggames.rts.game.units.au],verified-exists
+field,com.corrodinggames.rts.game.units,y,as,factorySearchPending,Factory searching for build target flag,verified-exists
+method,com.corrodinggames.rts.game.units,y,as(),getSecondWaypoint,Second waypoint in queue [sig-backfill: returns com.corrodinggames.rts.game.units.au],verified-exists
+field,com.corrodinggames.rts.game.units,y,at,emptyPathNodes,Shared empty PathNode[] array default,verified-exists
+method,com.corrodinggames.rts.game.units,y,at(),getLastWaypoint,Last waypoint in queue [sig-backfill: returns com.corrodinggames.rts.game.units.au],verified-exists
+field,com.corrodinggames.rts.game.units,y,au,pathCost,Path cost/result from pathfinding system,type-aware-fp-v19.114
+method,com.corrodinggames.rts.game.units,y,au(),removeFirstWaypoint,Remove first waypoint + decrement count [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,av,pathNodes,Working array of path nodes for navigation,verified-exists
+method,com.corrodinggames.rts.game.units,y,av(),getWaypointCount,Active waypoint count [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,y,aw,activePathCount,Number of active path nodes in av array,verified-exists
+method,com.corrodinggames.rts.game.units,y,aw(),isMoveWaypoint,First waypoint is move command [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,ax,needsTransformUpdate,Model transform recalculation needed flag,verified-exists
+method,com.corrodinggames.rts.game.units,y,ax(),clearLinkedZoneAndWaypoint,Clear base zone + complete waypoint [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,ay,hasMovedThisFrame,Unit changed position this frame flag,verified-exists
+method,com.corrodinggames.rts.game.units,y,ay(),completeWaypoint,Complete current waypoint + shift queue [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,az,movementLockTimer,Timer preventing steering (decrements per frame),verified-exists
+method,com.corrodinggames.rts.game.units,y,az(),resetAllWaypoints,Full reset: waypoints/factory/path data [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,y,b,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,b(boolean),getEngagementRange,BaseUnit: m()+target/mode bonuses (190/250/150/180),body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,b(int),getWeaponReloadTime,BaseUnit: abstract - ap.e = b(n2)+t(n2) cooldown cap,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,b(l),consumePathResult,"""BaseUnit: consume aU result""",""" fill av nodes"""
+method,com.corrodinggames.rts.game.units,y,bA(),hasExtraAbility,Has special abilities [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,y,bB(),getExtraAbilityCooldown,Ability cooldown in frames [sig-backfill: returns int],verified-exists
+method,com.corrodinggames.rts.game.units,y,bC(),recalculateResourceDisplay,Update resource cost HUD indicator [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,y,bD(),getCustomResourceOverride,Custom resource type override [sig-backfill: returns com.corrodinggames.rts.game.units.custom.d.b],verified-exists
+method,com.corrodinggames.rts.game.units,y,bE(),getActiveResourceModifier,Resource modifier by build/reclaim activity [sig-backfill: returns com.corrodinggames.rts.game.units.custom.d.b],verified-exists
+method,com.corrodinggames.rts.game.units,y,b_(),canFaceTarget,Can rotate toward target [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,ba,waypointFilter,Color filter for waypoint rendering overlay,verified-exists
+method,com.corrodinggames.rts.game.units,y,ba(),getPathSlopeFactor,Path cost slope adjustment [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,y,bb,paintWithValidFilter,Paint with validSelectionFilter applied,verified-exists
+method,com.corrodinggames.rts.game.units,y,bb(),isNearMaxSpeed,Speed fraction > 0.95 [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,bc,paintWithInvalidFilter,Paint with invalidSelectionFilter applied,verified-exists
+method,com.corrodinggames.rts.game.units,y,bc(),getSpeedFraction,Fraction of max speed (default 0.6) [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,y,bd,paintWithWaypointFilter,Paint with waypointFilter applied,verified-exists
+method,com.corrodinggames.rts.game.units,y,bd(),getBaseSensorRange,Base sensor/vision range [sig-backfill: returns float],verified-exists
+field,com.corrodinggames.rts.game.units,y,be,reusableMuzzleOffset,Static reusable PointF for muzzle offset,verified-exists
+method,com.corrodinggames.rts.game.units,y,be(),getUnitCategory,Unit category enum [sig-backfill: returns com.corrodinggames.rts.game.units.b],verified-exists
+field,com.corrodinggames.rts.game.units,y,bf,reusableDecelPair,Static reusable float pair for deceleration,verified-exists
+method,com.corrodinggames.rts.game.units,y,bf(),canAutoRepair,Can auto-repair [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,bg,reusableTurretTarget,Static reusable PointF for turret targeting,verified-exists
+method,com.corrodinggames.rts.game.units,y,bg(),canShowHealthBar,Shows health bar [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,bh,reusablePosition1,Static reusable PointF for position calcs,verified-exists
+method,com.corrodinggames.rts.game.units,y,bh(),getPathingDirectionFlags,Pathfinding direction flags [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,y,bi,reusablePair2,Static reusable float pair #2,verified-exists
+method,com.corrodinggames.rts.game.units,y,bi(),isHoverVehicle,Hovercraft flag [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,bj,reusableRenderOffset,Static reusable PointF for render offset,verified-exists
+method,com.corrodinggames.rts.game.units,y,bj(),hasReverseMovement,Can move backward [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,bk,reusableTilePoint,Static reusable integer Point for tile coords,verified-exists
+method,com.corrodinggames.rts.game.units,y,bk(),hasCustomMovement,Custom movement logic [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,bl,reusableTilePoint2,Static reusable integer Point for tile #2,verified-exists
+method,com.corrodinggames.rts.game.units,y,bl(),getTurretCount,Number of turret mounts [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,y,bm,reusablePoint4,Static reusable PointF #4,verified-exists
+method,com.corrodinggames.rts.game.units,y,bm(),shouldSyncTurretRotation,Sync turret rotation to body [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units,y,bn,reusableBuildResult,Static reusable building placement result,verified-exists
+method,com.corrodinggames.rts.game.units,y,bn(),getCurrentBarrelEnd,3D barrel end position for projectile [sig-backfill: returns com.corrodinggames.rts.gameFramework.utility.ai],verified-exists
+field,com.corrodinggames.rts.game.units,y,bo,reusableAcConstants,Static reusable ac type constants,verified-exists
+method,com.corrodinggames.rts.game.units,y,bo(),spawnDeathParticles,Spawn explosion/debris particles on death [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units,y,bp,componentUpdaters,List of ComponentUpdater objects for custom behavior,verified-exists
+method,com.corrodinggames.rts.game.units,y,bp(),getDeathParticleCount,Death particle count by unit type [sig-backfill: returns int],verified-exists
+field,com.corrodinggames.rts.game.units,y,bq,globalUpdaters,Static global list of ComponentUpdaters,verified-exists
+method,com.corrodinggames.rts.game.units,y,bq(),spawnGroundCrater,Create ground crater decal [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,y,br(),cleanupNearbyUnits,Clean up dead linked units + decors [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,y,bs(),findNearbyFactory,Find nearby factory of same type+team [sig-backfill: returns com.corrodinggames.rts.game.units.y],verified-exists
+method,com.corrodinggames.rts.game.units,y,bt(),onUnitDeathStarted,Death lifecycle: clear target/waypoints/path [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,y,bu(),onUnitDetached,Death lifecycle: detach from parent [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,y,bv(),onUnitCleanedUp,Death finalization hook [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,y,bw(),computeUnitHash,Hash: movement stats + paint + color + accel [sig-backfill: returns int],verified-exists
+method,com.corrodinggames.rts.game.units,y,bx(),detachFromParent,Detach from parent attachment [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units,y,by(),getDefaultCost,Default empty resource cost profile [sig-backfill: returns com.corrodinggames.rts.game.units.custom.d.b],verified-exists
+method,com.corrodinggames.rts.game.units,y,bz(),getDefaultTextureStore,Static default texture store [sig-backfill: returns com.corrodinggames.rts.gameFramework.utility.m],verified-exists
+method,com.corrodinggames.rts.game.units,y,c,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,c(boolean),updateCollisionGrid,"""BaseUnit: l2.bL.a(eo""",ep
+method,com.corrodinggames.rts.game.units,y,c(int),getTurretTurnRate,BaseUnit: abstract - per-turret angular rate,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,c(n),isPlacementAllowed,"""BaseUnit: b(bl""","""n2)==null placement validity"""
+field,com.corrodinggames.rts.game.units,y,c_,techLevel,UnitType: technology tier level,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,d,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,d(au),cloneWaypoint,BaseUnit: au3.c(au2) copy waypoint,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,d_,buildCost,UnitType: resource cost to build,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,e,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,e(int),getTurretRange,BaseUnit: ap2.f < e(n2) reload full check,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,e_,buildTime,UnitType: construction time,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,f,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,f(int),getReloadProgressRate,BaseUnit: 4.0f reload fallback rate,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,f_,unitRadius,UnitType: collision/selection radius,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,g,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,g(float),updateAllUnitCollisions,BaseUnit: static - all unit collision batch + explosion radius query,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,g(int),getBarrelLength,BaseUnit: E(int) muzzle distance,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,g_,isBuilder,UnitType: can construct buildings,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,h,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,h(am),isInWeaponRange,BaseUnit: dist^2 < o(am)^2 range check,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,h(com.corrodinggames.rts.game.units.am),isTargetInRange,y: method h(com.corrodinggames.rts.game.units.am) -> isTargetInRange,body-verified-v1007
+method,com.corrodinggames.rts.game.units,y,h(int),getSensorRange,"""BaseUnit: default 0""",""" indexed by team"""
+field,com.corrodinggames.rts.game.units,y,h_,isFactory,UnitType: can produce units,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,i,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,i(am),canEngageWithAnyTurret,"""BaseUnit: iterate turrets r(n2)+a(n2""",am
+method,com.corrodinggames.rts.game.units,y,i(int),getAttackRange,"""BaseUnit: default 0""",""" indexed by team"""
+field,com.corrodinggames.rts.game.units,y,i_,maxHealth,UnitType: maximum hit points,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,j,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,j(am),canForceEngage,"""BaseUnit: iterate turrets r(n2)+a(n2""",am
+method,com.corrodinggames.rts.game.units,y,j(int),damageAllTurrets,BaseUnit: iterate turrets a(n2) damage,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,j_,sightRange,UnitType: fog of war sight range,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,k,getau,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,k(am),canTargetUnitByType,BaseUnit: af/ae/ag/ah flags + target i()/Q()/cH() check,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,k(float),updateUnitLogic,BaseUnit: main dispatcher by av.a waypoint type (12 types),body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,k(int),getWaypoint,BaseUnit: g[n2] indexed access,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,k_,moveSpeed,UnitType: base movement speed,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,l,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,l(int),ensurePathNodeCapacity,BaseUnit: array expand + too large exception,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,l_,turnSpeed,UnitType: turning speed,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,m,getPointF,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,m(),getAttackRange,y: method m() -> getAttackRange,body-verified-v1007
+method,com.corrodinggames.rts.game.units,y,m(int),ensureWaypointCapacity,BaseUnit: array expand for waypoints,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,m_,mass,UnitType: mass for physics,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,n,getPointF,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,n(am),addAttackWaypoint,BaseUnit: au.a(am) attack waypoint,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,n(com.corrodinggames.rts.game.units.am),createWaypointForUnit,y: method n(com.corrodinggames.rts.game.units.am) -> createWaypointForUnit,body-verified-v1007
+method,com.corrodinggames.rts.game.units,y,n(int),removeWaypointAt,BaseUnit: delete index + shift array forward,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,n_,isAirUnit,UnitType: flying/air unit,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,o,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,o(com.corrodinggames.rts.game.units.am),getAttackRangeIncludingTarget,y: method o(com.corrodinggames.rts.game.units.am) -> getAttackRangeIncludingTarget,body-verified-v1007
+field,com.corrodinggames.rts.game.units,y,o_,isWaterUnit,UnitType: water/naval unit,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,p,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,p(com.corrodinggames.rts.game.units.am),getBuildRangeIncludingTarget,y: method p(com.corrodinggames.rts.game.units.am) -> getBuildRangeIncludingTarget,body-verified-v1007
+field,com.corrodinggames.rts.game.units,y,p_,canAttack,UnitType: has attack capability,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,q,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,q(am),getApproachGridCells,BaseUnit: (p-41)/(1.414*tile) grid cell count,body-verified-v1500
+field,com.corrodinggames.rts.game.units,y,q_,weaponCount,UnitType: number of weapons/turrets,body-verified-v1200
+method,com.corrodinggames.rts.game.units,y,r,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,r(am),isInContactRange,BaseUnit: dist^2 < (cj+am2.cj)^2 contact check,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,r(com.corrodinggames.rts.game.units.am),isCollidingWith,y: method r(com.corrodinggames.rts.game.units.am) -> isCollidingWith,body-verified-v1007
+method,com.corrodinggames.rts.game.units,y,r(int),isTurretMountAvailable,BaseUnit: default true (turret usability),body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,s,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,s(),getDefaultFactoryQueue,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.game.units,y,s(int),isTurretChargeable,BaseUnit: default false (turret charge/sustain fire),body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,s_(),isOnScreen,Bounding rect intersects visible screen rect [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units,y,t,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,t(int),getReloadRandomDelay,BaseUnit: cooldown random jitter,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,u,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,u(int),isTurretAimedAtTarget,BaseUnit: v(n2) mirror turret g aim flag,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,v,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,w,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,w(int),getTurretAngularAccel,BaseUnit: -1 default,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,x,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,x(int),getTurretTurnArc,BaseUnit: 5.0f turn angle threshold,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,y,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,y(int),getTurretAngularDecel,BaseUnit: same as accel,body-verified-v1500
+method,com.corrodinggames.rts.game.units,y,z,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.y,real-class-v1200
+method,com.corrodinggames.rts.game.units,y,z(),getMaxSpeed,caller confirmed gameFramework/ab.java:121,body-verified-v1007
+method,com.corrodinggames.rts.game.units,y,z(int),getTurretMaxRange,BaseUnit: 99999 default,body-verified-v1500
+field,com.corrodinggames.rts.game.units.b,AttackBehavior,a,targetUnit,Current attack target (UnitInstance),verified-exists
+field,com.corrodinggames.rts.game.units.b,AttackBehavior,b,weaponIndex,Selected weapon index (int),verified-exists
+field,com.corrodinggames.rts.game.units.b,AttackBehavior,c,burstCounter,Shots fired in current burst (int),verified-exists
+field,com.corrodinggames.rts.game.units.b,MoveBehavior,a,targetPosition,Move target position (PointF),verified-exists
+field,com.corrodinggames.rts.game.units.b,MoveBehavior,b,waypointIndex,Current waypoint index (int),verified-exists
+field,com.corrodinggames.rts.game.units,ar,aa,defaultActionSet,com.corrodinggames.rts.game.units.a.z 类型; d() 返回 this.aa; 每个单位类型的默认动作集(as 接口 as2.d() 调用链),verified
+field,com.corrodinggames.rts.game.units,ar,ab,translationCacheStamp,"int=-1; e()/f() 中 ""if(this.ab != h.a.c || this.ac == null)"" 语言版本缓存校验(控制流)",verified
+field,com.corrodinggames.rts.game.units,ar,ac,cachedDisplayName,"String; e() 中 ""units.""+this.name()+"".name"" 翻译缓存(字符串证据)",verified
+field,com.corrodinggames.rts.game.units,ar,ad,cachedDescription,"String; f() 中 "".description"" 翻译缓存,缺省 """"(字符串证据)",verified
+field,com.corrodinggames.rts.game.units,ar,af,techLevelActionLists,at[]; h() 中 new at[3] 按科技等级 1..3 填充动作列表(控制流+Tech level 异常),verified
+field,com.corrodinggames.rts.game.units,ar,ah,builderProviderCache,"custom.d.b; u() 中 ""if(this.ah==null || this.ah.a()!=n2) this.ah=b.a(n2)"" 建造者信息缓存(控制流)",verified
+method,com.corrodinggames.rts.game.units,ar,"a(ArrayList,int)",fillActionListForTechLevel,"void; h()(initTechLevels)中 this.a(at2.a,i) 填充指定等级动作表(控制流)",verified
+method,com.corrodinggames.rts.game.units,ar,a(String),getUnitTypeByName,"static as; 先查 custom.l.m(string) 再 equalsIgnoreCase 遍历枚举, 最后 custom.l.n(string)(Debug.createUnit 调用链, 控制流)",verified
+method,com.corrodinggames.rts.game.units,ar,"a(String,String,String)",buildStatLine,"private static String; ""string+"": ""+string2+string3+""\n"""" 行构造(字符串证据)",verified
+method,com.corrodinggames.rts.game.units,ar,"a(String,boolean)",getUnitTypeByNameEx,static as; bl=false 跳过自定义查找(custom.l.m 调用控制流),verified
+method,com.corrodinggames.rts.game.units,ar,"a(String,float)",formatStatLine,"private static String; 浮点转整数字符串后拼接, 被 s()(printHelpForUnits)调用(""Price"" 等行)",verified
+method,com.corrodinggames.rts.game.units,ar,"a(String,float,String)",formatStatLineWithNote,"private static String; 带后缀统计行, ""(total:"" 后缀证据",verified
+method,com.corrodinggames.rts.game.units,ar,a(am),getUnitActionValue,"int; as 接口方法,默认返回 0 子类覆盖(无字符串,证据弱)",verified-exists
+method,com.corrodinggames.rts.game.units,ar,"a(as,float,float,float,float,n,float,float,boolean,boolean,int,am)",renderUnitPreview,static void; 创建单位摆位渲染(ag=isRenderingScaled 写入、l2.bO 缩放、dH/cE/cu/cB 交换); 供 r()(outputUnitImages)渲染 PNG(控制流),verified
+method,com.corrodinggames.rts.game.units,ar,"a(as,float,float,float,float,n,float,float,boolean,boolean,int,boolean,am)",renderUnitPreviewFull,"static void; 完整 13 参版本, bl4 控制 ct(禁止旋转?)标志(控制流)",verified
+method,com.corrodinggames.rts.game.units,ar,a(boolean),createUnitInstanceForSpawn,"abstract am; a()(createUnitInstance)调 this.a(false), true 分支为生成路径(控制流)",verified
+method,com.corrodinggames.rts.game.units,ar,a(int),getActionsForTechLevel,"ArrayList; ""Tech level:""+n2+"" greater than maxTechLevel"" 越界异常, 返回 af[n2-1].a(字符串证据)",verified
+method,com.corrodinggames.rts.game.units,ar,a(y),getUpgradeCost,"private static int; y2.cm() 动作的 s2.c() 成本; 被 ""T2 Upgrade Price""/""T3 Upgrade Price"" 行使用(字符串证据)",verified
+method,com.corrodinggames.rts.game.units,ar,"ar(String,int)",enumConstructorPrivate,"private 构造器; 枚举常量初始化(String name,int ordinal)(控制流)",verified
+method,com.corrodinggames.rts.game.units,ar,"ar(String,int,ar$1)",enumConstructorSynthetic,synthetic 构造器; 枚举常量实例化入口(字节码 synthetic 标志),verified
+method,com.corrodinggames.rts.game.units,ar,b(int),getCumulativeBuildTime,"int; n2>=2 加 c(2), n2>=3 再加 c(2); 累计建造时间(控制流)",verified
+method,com.corrodinggames.rts.game.units,ar,c(int),getBuildTimeForTechLevel,"int; 默认返回 0, 子类覆盖(ar$X); 被 b(int) 调用(控制流)",verified
+method,com.corrodinggames.rts.game.units,ar,d(int),getBuilderInfoForTechLevel,b; 调 this.b(n2) 后 custom.d.b.a(n3) 生成建造者信息(控制流),verified
+method,com.corrodinggames.rts.game.units,ar,valueOf(String),valueOf,"标准枚举方法; Enum.valueOf(ar.class,string)(控制流)",verified
+method,com.corrodinggames.rts.game.units,ar,values(),values,"标准枚举方法; 返回 ai.clone()(ai=enumValues 已映射,控制流)",verified
+method,com.corrodinggames.rts.game.units,ar,"a(as,float,float,float,float,n)",isValidHere,"static boolean; ""isValidHere: Failed to get unit from type:"" 日志; 摆位后 am2.bI()/y.c(n2) 判定可行(字符串证据); 注: supplement 已有该条目但签名被 CSV 截断为 a(as,float,float,float)",verified
+field,com.corrodinggames.rts.game.units,au,a,waypointType,"T0: d()返回a; k()中按a值分发处理函数(av.a/h/j->移动, av.c->建造, av.d/g->建造/回收, av.k/n->攻击等); e()重置为av.a; 序列化as2.a(this.a)写枚举",verified
+field,com.corrodinggames.rts.game.units,au,b,buildUnitType,"T0: a()返回b; f(f2,au,ad)中 as2=au2.b==null 时日志""activeBuildingType==null, removing waypoint""; a(au,boolean)日志""Skipping build waypoint with no buildType""; 序列化as2.a(this.b)",verified
+field,com.corrodinggames.rts.game.units,au,c,specialAction,"T0: 序列化末尾 com.corrodinggames.rts.game.units.a.c.a(as2,this.c); 反序列化 k2.b()>=82 时 a.c.a(k2); a(float,f2,au,ad)中 ""Failed to find action:""+au2.c.a()",verified
+field,com.corrodinggames.rts.game.units,au,d,buildSlotIndex,"T0: b()返回d; a(float,float,as,int)中 this.d=(int)((byte)n2) (byte格子索引); a(au,boolean)中 this.a(au2.b, au2.d, false) 作为action匹配参数; 序列化as2.c(this.d)",verified
+field,com.corrodinggames.rts.game.units,au,e,x,"T0: g()中 有单位返回h.eo 否则返回this.e; c()日志""convertUnitIds: x:""+this.e; a(float,float)设置; 序列化as2.a(this.e)",verified
+field,com.corrodinggames.rts.game.units,au,f,y,"T0: h()中 有单位返回h.ep 否则返回this.f; c()日志""y:""+this.f; 序列化as2.a(this.f)",verified
+field,com.corrodinggames.rts.game.units,au,g,unitEntityId,"T0: k()中 this.g=this.h.eh; this.h=null (实体id快照); c()中 g!=-1L 时 w.a(this.g,true) 转换,失败日志""convertUnitIds failed""; 序列化 g!=-1L 写g否则写h",verified
+field,com.corrodinggames.rts.game.units,au,h,targetUnit,T0: i()返回h; X()/Y()/d()/e()/g()/h()/i()等大量使用; f()类型集合判定; c()中转换目标,verified
+field,com.corrodinggames.rts.game.units,au,i,cachedPathEntry,"T0: a(float,f2,f3,n2,bl,bl2)中 ab2=au2.i; if(ab2!=null && ab2.g!=null) 遍历复用路径节点(d3.g+180<l2.bx时间戳校验)并取this.aU=d2.a; k()和aD()中置null/调用c(); 类型为gameFramework.ab",verified
+field,com.corrodinggames.rts.game.units,au,j,unusedFlagJ,"evidence_weak: 仅出现在序列化as2.a(this.j)、反序列化k2.b()>=65时this.j=k2.e()、c(au)复制中,未发现读取点; 保守命名flagJ",verified
+field,com.corrodinggames.rts.game.units,au,k,approachRangeLimit,"T0: i(f2,au,ad)中 au2.k==0.0f 直接放弃waypoint(ay()); au2.k>=0.0f && au2.k<(sqrt(f5)-f7) 时判定已到攻击距离并开火; a(float,f2,au,ad,bl)中 ((au)object).k=200.0f (巡逻搜敌半径); 序列化v46版本门控两个float",verified
+field,com.corrodinggames.rts.game.units,au,l,waypointTimeLimit,"evidence_weak: k(f2)中 au2.l>0.0f && au2.l<this.V 时放弃waypoint (V为已用时间, l为剩余时间限制); 序列化v46版本门控",verified
+field,com.corrodinggames.rts.game.units,au,m,chainToNextWaypoint,"evidence_weak: k(f2)中 au2.m && this.f>1 时检查后续waypoint类型(k(1)); f(f2,au,ad)中 au4.m=true (攻击时); a(float,f2,au,ad,bl)中 ((au)object).m=false; 序列化v58版本门控; 保守命名chainFlag",verified
+field,com.corrodinggames.rts.game.units,au,n,bypassBuildChecks,"T0: a(au,boolean)中 if(!au2.n) 才做locked/available检查(否则跳过); a(au,as,n,float,f3)中 if(!au2.n) 同样跳过; 序列化v79版本门控",verified
+method,com.corrodinggames.rts.game.units,au,a(au),isNearSameSpot,T0: 比较 e/f 差绝对值>3.0f 则不等; 返回两坐标近似判定,verified
+method,com.corrodinggames.rts.game.units,au,b(au),isEquivalentWaypoint,"T0: 依次比较 a,b,e,f(>1.0f),d,h 全部相等才true (语义等价判定)",verified
+method,com.corrodinggames.rts.game.units,au,a(),getBuildUnitType,"T0: return this.b; play2回放日志 ""Build Type: {j.a().i()}"" (j.a()返回构建单位类型, i()取名称)",verified
+method,com.corrodinggames.rts.game.units,au,b(),getBuildSlotIndex,"T0: return this.d; d为byte格子索引(见a(float,float,as,int))",verified
+method,com.corrodinggames.rts.game.units,au,a(as),serialize,"T0: 按序写 a(枚举),b,e,f,g/h(long或单位),d,k,l,m,j,n,末尾a.c.a(as2,this.c); 与反序列化a(k)完全对称",verified
+method,com.corrodinggames.rts.game.units,au,a(k),deserialize,"T0: 版本门控读取: v40->d, v46->k/l, v58->m, v65->j, v79->n, v82->c; 对应序列化顺序 (v19.97破解序列化格式)",verified
+method,com.corrodinggames.rts.game.units,au,c(),resolveUnitReference,"T0: g!=-1L时 w.a(this.g,true) 解析实体id为单位; 失败日志""convertUnitIds failed""+""convertUnitIds: type:""+a.toString(); 完成后g=-1L",verified
+method,com.corrodinggames.rts.game.units,au,d(),getWaypointType,"T0: return this.a; play2回放日志 ""updateGameFrame: Waypoint: {j.d().name()}"" (d()返回av枚举, name()=类型名)",verified
+method,com.corrodinggames.rts.game.units,au,e(),resetToDefault,"T0: 重置 a=av.a,b=null,d=1,e=f=2.0f,g=-1L,h/i=null,k=l=-1.0f,m=j=n=false,c=null",verified
+method,com.corrodinggames.rts.game.units,au,f(),isUnitTargetWaypoint,"T0: 判定 a 属于 {av.b,av.d,av.g,av.e,av.i,av.k,av.m,av.n} (带单位目标的waypoint类型集合)",verified
+method,com.corrodinggames.rts.game.units,au,g(),getTargetX,"T0: f()且h!=null时返回h.eo, 否则返回this.e (静态坐标x)",verified
+method,com.corrodinggames.rts.game.units,au,h(),getTargetY,"T0: f()且h!=null时返回h.ep, 否则返回this.f (静态坐标y)",verified
+method,com.corrodinggames.rts.game.units,au,i(),getTargetUnit,"T0: return this.h; y.java中 b(f2,au,ad) 等大量使用 i() 取单位引用",verified
+method,com.corrodinggames.rts.game.units,au,"a(float,float)",setMoveWaypoint,"T0: e()后置 a=av.a, e=f2, f=f3 (纯移动坐标waypoint); av.a在k()中走移动分支a(f2,au,ad,bl)",verified
+method,com.corrodinggames.rts.game.units,au,"b(float,float)",setAttackMoveWaypoint,"T0: e()后置 a=av.h, e=f2, f=f3; av.h在k()中与av.a同为移动分支(攻击移动:到达后遇敌开火)",verified
+method,com.corrodinggames.rts.game.units,au,a(am),setAttackWaypoint,"T0: e()后置 a=av.b, h=am2; k()中av.b走g(f2,au,ad)攻击处理(bX敌我检查+目标有效); y.aw()检查 a==av.b",verified
+method,com.corrodinggames.rts.game.units,au,"a(float,float,as,int)",setBuildWaypoint,"T0: e()后置 a=av.c, 坐标+构建单位类型b+格子索引d; k()中av.c走f(f2,au,ad)建造处理(activeBuildingType==null检查)",verified
+method,com.corrodinggames.rts.game.units,au,b(am),setConstructUnitWaypoint,"T0: e()后置 a=av.d, h=am2; av.d在k()中走i(f2,au,ad)建造进度处理(cm/cn/cu/cv); bE()中 au2.a==av.d && am2.cm<1.0f 判定施工中; 命名保守(av.d与av.g均为建造类)",verified
+method,com.corrodinggames.rts.game.units,au,c(am),setAttackUnitWaypoint,"T0: e()后置 a=av.k, h=am2; av.k在k()中走c(f2,au,ad)攻击单位处理(bl2=av.k分支, 目标检查cg())",verified
+method,com.corrodinggames.rts.game.units,au,d(am),setRepairUnitWaypoint,"T0: e()后置 a=av.m, h=am2; av.m在k()中走d(f2,au,ad)维修处理(调用custom.af.i修复动作); 命名基于处理逻辑推断",verified
+method,com.corrodinggames.rts.game.units,au,e(am),setUnitTargetWaypoint,"evidence_weak: e()后置 a=av.n, h=am2; av.n与av.k同走c(f2,au,ad)攻击类处理但有攻速差异分支(cK?30/50:80/100); av值语义不明, 保守命名setUnitTargetWaypoint",verified
+method,com.corrodinggames.rts.game.units,au,"c(float,float)",setPatrolWaypoint,"T0: e()后置 a=av.j, e=f2, f=f3; av.j在a(f2,au,ad,bl)中走巡逻逻辑(av()==1检查, d.r.a找敌, t=true, k=200.0f搜敌半径)",verified
+method,com.corrodinggames.rts.game.units,au,f(am),setReclaimUnitWaypoint,"T0: e()后置 a=av.g, h=am2; y.Y()已映射isReclaimWaypoint且检查a==av.g, 确认av.g=回收; k()中av.g走i()回收处理",verified
+method,com.corrodinggames.rts.game.units,au,g(am),setGuardUnitWaypoint,"T0: e()后置 a=av.e, h=am2; av.e在k()中走h(f2,au,ad)护卫处理(接近目标并攻击,e(this,false)解除)",verified
+method,com.corrodinggames.rts.game.units,au,h(am),setFollowUnitWaypoint,"T0: e()后置 a=av.i, h=am2; av.i在k()中走e(f2,au,ad)跟随处理(bQ=目标+d(au2.h,false)判定)",verified
+method,com.corrodinggames.rts.game.units,au,c(au),copyFrom,"T0: 复制 a,b,e,f,h,i,d,j,c 全部字段 (不复制g/k/l/m/n)",verified
+method,com.corrodinggames.rts.game.units,au,j(),getTypeOrdinal,T0: return a==null?0:a.ordinal(); 序列化辅助值,verified
+method,com.corrodinggames.rts.game.units,au,k(),snapshotUnitId,T0: h!=null时 g=h.eh 然后 h=null; i=null (网络/回放序列化前转为实体id),verified
+method,com.corrodinggames.rts.game.units,au,l(),getUnitOrDummy,T0: f()时返回i()真实单位; 否则返回静态临时单位 n.i.t 并设置eo/ep/cg(仅坐标占位),verified
+field,com.corrodinggames.rts.game.units,y,a,blockedFrameCount,"T0: a(float,f2,l,f3,f4)中 移动被挡时 b+=f2, a=0; 每帧b>0时++a, a>=3时b=0 (3帧未脱困重置阻塞计时)",verified
+field,com.corrodinggames.rts.game.units,y,b,blockedTimer,"T0: 同上b+=f2记录被挡时长; a(float,f2,af,ad,au)中 b>1.0f 触发避让逻辑; d(float,f2,au,ad)中 b>0.0f 时增大接近半径",verified
+field,com.corrodinggames.rts.game.units,y,c,obstacleTurnTimer,"T0: a(float,f2,af,ad,au)中 bl2时置90.0f, c==0.0f为正常直行分支否则旋转避让; aB()/ay()重置0.0f; 序列化写入",verified
+field,com.corrodinggames.rts.game.units,y,d,stuckMoveTimer,"T0: a(float,f2,af,ad,au)中 n2>300或b>1.0f时 d+=f2, d>300.0f触发bl2避让; 到达后置0",verified
+field,com.corrodinggames.rts.game.units,y,e,waitMoveTimer,"T0: a(float,f2,af,ad,au)中无waypoint时 e+=f2 累计等待, 超过阈值(f5<f6*f6判定)触发转向; 序列化写入",verified
+field,com.corrodinggames.rts.game.units,y,f,waypointCount,"T0: ar()/as()/at()用f索引g[]; av()返回f; m(n2)抛""Waypoint index:""+n2+"" too large""上限30; 序列化as2.a(this.f)",verified
+field,com.corrodinggames.rts.game.units,y,g,waypointQueue,"T0: 声明au[] g=O(O为空数组常量); ar()返回g[0]; 反序列化循环m(n5)+new au(); ao()/ap()队列位移操作; 上限30(""Waypoint index""异常)",verified
+field,com.corrodinggames.rts.game.units,y,h,unitTargetLocked,T0: X()中 this.h && ar()类型为av.d/av.g && au2.h!=null 时返回目标单位; k()末尾 this.h=ad2.a (ad2.a=到达攻击目标标志); b(au)置false,verified
+field,com.corrodinggames.rts.game.units,y,i,lastTargetSearchFrame,"T0: i(f2,au,ad)中 this.i<l2.by-100 时重新检查目标(bl3=false), 检查后 this.i=l2.by (游戏帧缓存)",verified
+field,com.corrodinggames.rts.game.units,y,j,isFacingMoveTarget,"T0: k(f2)开头置false; a(l2,f2,au,ad)中 else if(this.j) 直接以l/m为目标推进(已面向目标跳过转向); a(f2,am,ad,bl)等处理完转向后置true",verified
+field,com.corrodinggames.rts.game.units,y,k,waypointActive,T0: k(f2)中 boolean bl=this.k; this.k=false; 后按当前waypoint处理重新置true; 无waypoint时this.k=false; 序列化as2.a(this.k),verified
+field,com.corrodinggames.rts.game.units,y,l,moveTargetX,T0: 大量 this.k=true; this.l=f3; this.m=f4 模式(c/d/e/f/h/i方法中均为目标坐标); 序列化as2.a(this.l),verified
+field,com.corrodinggames.rts.game.units,y,m,moveTargetY,T0: 同上与l成对出现; 序列化as2.a(this.m),verified
+field,com.corrodinggames.rts.game.units,y,n,moveTargetTiles,"T0: c(f2,au,ad)置2; f(f2,au,ad)中 n=(int)((f6-41.0f)/(l2.bL.n*1.414f)) (距离换算格子数); a(f2,am,ad,bl)中 n=this.q(am2) (q(am2)返回格数)",verified
+field,com.corrodinggames.rts.game.units,y,o,pathTargetX,"T0: a(float,f2,f3,n2,bl,bl2)中 this.o=f2; this.p=f3 (寻路目标); a(l2,f2,au,ad)中 fabs(o-l)>f3 比较当前moveTarget; 序列化n3>=1版本门控",verified
+field,com.corrodinggames.rts.game.units,y,p,pathTargetY,T0: 同上与o成对; 序列化n3>=1,verified
+field,com.corrodinggames.rts.game.units,y,q,pathRetryCount,"T0: b(l2)中 aw==1时 ++q; f(f2,au,ad)中 q>3 放弃waypoint(ay()); aH()置0 (byte)",verified
+field,com.corrodinggames.rts.game.units,y,r,waypointArriveRadius,"T0: k(f2)置150; f(f2,au,ad)/e()置18; a(l2,f2,au,ad)中 f3=this.r; fabs(o-l)>f3||fabs(p-m)>f3 判定未到达(限速30/重新寻路); i(f2,au,ad)置r=this.n",verified
+field,com.corrodinggames.rts.game.units,y,s,currentMoveSpeed,"T0: a(l2,f2,au,ad)中 s==0.0f 判定停住需重新寻路; 寻路后置500; 减速时>30则压到30; 序列化as2.a(this.s)",verified
+field,com.corrodinggames.rts.game.units,y,t,forceMoveFlag,"T0: a(f2,au,ad,bl)中av.j巡逻时置true并aB(); a(l2,f2,au,ad)中作为强制参数传入 a(l,m,n,bl3,this.t); k(f2)中置false",verified
+field,com.corrodinggames.rts.game.units,y,u,pathTruncatedFlag,"T0: a(float,f2,f3,n2,bl,bl2)中路径点超60单位被截断时置true; aH()置false; a(l2,f2,au,ad)中 u&&s<450 时重新寻路",verified
+field,com.corrodinggames.rts.game.units,y,v,pathNodeCount,"T0: a(float,f2,f3,n2,bl,bl2)和b(l2)中 v=this.aw (总路径节点数快照); a(float,f2,af,ad,au)中 y2.v>2 && y2.v-y2.aw<=2 路径跟随判定; 序列化as2.a(this.v)",verified
+field,com.corrodinggames.rts.game.units,y,w,detourState,"T0: c(f2,au,ad)中 w=0/1 状态机(目标被挡时w=1, 距离>122500或302500强制绕路); a(f2,am,ad,bl)中 w==1&&f5>202500 维持绕路; 序列化n3>=9版本门控",verified
+method,com.corrodinggames.rts.game.units,y,a(k),readStateFromStream,"T0: 反序列化读入: b,c,cL[0].e,f,waypoint循环(30上限),P(单位类型a类),R(目标),S/U/V,k/l/m/s,ad,ae/af/aj/ak/al/am/an/ac,av路径节点,aw,v,版本门控n3>=1..12读o/p/d/e/u/ai/n/W/aq/ar/as/ah/ab/w/X/az/aA; 读后bV分支解析waypoint单位引用并S()",verified
+method,com.corrodinggames.rts.game.units,y,a(as),writeStateToStream,"T0: 序列化写出: b,c,cL[0].e,f,waypoint循环, P,R(过滤bV),S/U/V,""pathing_active:""标签+ck/l/m/s,ad,ae/af/aj/ak/al/am/an/ac,""activePathCount:""标签+aw,av循环, v,版本计数c(12), o/p/d/e/u/ai/n/W/aq/ar/as/ah/ab/w/X/az/aA, units.g.c.a, super.a; 与a(k)完全对称",verified
+method,com.corrodinggames.rts.game.units,y,"c(float,float)",turnTowards,"T0: 计算当前朝向cg与目标角度f3的差值并限幅调用i(f3)转向; 返回值=还需转动的角度(0=已完成); 使用j(25)动画状态与ci标志; 与a(float,f3,bl,bl2)转向辅助联动",verified
+method,com.corrodinggames.rts.game.units,y,bI,shouldUpdateFog,f(float) 251/523: if(y.bI()) 才调用 y.g(n) 或 y.cX(); 每帧迷雾循环中的单位可见性检查 (类映射 UnitType 存疑: y 含每帧实例方法),verified
+field,com.corrodinggames.rts.game.units,y,bV,fogProcessed,boolean; f(float) 463-466: if(!bV) 调用 c(false) 重置; 每帧处理标记,suspicious-bc-missing
+method,com.corrodinggames.rts.game.units,y,cX,updateFogSight,f(float) 528: bI() 为真时刷新单位视野,suspicious-bc-missing
+field,com.corrodinggames.rts.game.units,am,er,allUnits,"静态 TypedObjectList(s); f(float) 164-170: am.er 主单位列表, a()->w[] 后逐个 instanceof y 处理",verified
+field,com.corrodinggames.rts.game.units,am,a,staticAllUnitsDeque,private static DequeList o a; bF()=getAllUnits() 返回它; 构造注册/destroy移除; deobf UnitInstance 确认 DequeList 类型,verified
+field,com.corrodinggames.rts.game.units,am,bv,linkedUnit,B() 设置链接单位; 序列化 ext>=12 writeOutUnitOrPlaceholder; 自定义脚本 j5.bv=j6 链接引用,verified
+field,com.corrodinggames.rts.game.units,am,bC,customTimer,"f.java:512 f5.I=f.b(am2,0,1,am2.bC); ++am2.bC 帧递增; custom/bh.java:348 自定义修改器可累加; 序列化 ext>=17; 具体语义待定",verified
+field,com.corrodinggames.rts.game.units,am,ci,turnFlipped,y.java:2765 转向逻辑 if(this.ci && !this.bj()) 翻转转向方向,verified
+field,com.corrodinggames.rts.game.units,am,cj,collisionRadius,范围/碰撞判定 a(RectF)/c(3f)/t(am) 均使用; do() 返回; y.java:893 碰撞重叠 n8>(n6=am3.s(this)),verified
+field,com.corrodinggames.rts.game.units,am,ck,drawRadius,e(float) 绘制选择圆/特效半径; 序列化 ext>=14,verified
+field,com.corrodinggames.rts.game.units,am,cs,isReclaiming,"aN() 调色: cs=绿色(回收色); 序列化 ext>=16; 注意 supplement 已有 cp=isReclaiming 存疑, 实际 cs 更像回收调色",verified
+field,com.corrodinggames.rts.game.units,am,cx,shieldEnergy,"a(am,float,f) 伤害流程: 先扣 cx 护盾再扣血; cA 为护盾上限; 序列化 ext>=13",verified
+field,com.corrodinggames.rts.game.units,am,cy,shieldDrainBuffer,护盾击破时 cx 剩余量累加进 cy; 序列化 ext>=18,verified
+field,com.corrodinggames.rts.game.units,am,cD,hpRegenDecay,a(float) 帧更新 cC-=cv*cD*0.005 且 cD 随时间增长 -> 治疗/重生成分衰减器,verified
+field,com.corrodinggames.rts.game.units,am,cH,unusedIntField,"int cH=-9999 仅声明未见赋值/使用, 疑似废弃字段",verified
+method,com.corrodinggames.rts.game.units,am,a(com.corrodinggames.rts.gameFramework.m.e),createShadowTexture,"静态; 生成全黑副本并命名 ""shadow:""+e2.a() 字符串, e3.n=true; b/a.java 阴影调用",verified
+method,com.corrodinggames.rts.game.units,am,"a(com.corrodinggames.rts.gameFramework.m.e, int, int)",createShadowTextureFromRegion,"同上重载 a(n2,n3): 区域拷贝并涂黑, ""shadow:"" 命名",verified
+method,com.corrodinggames.rts.game.units,am,a(),destroyUnit,deobf UnitInstance.java:1343 已命名 destroyUnit; 从 bE/a 列表移除并触发死亡逻辑,verified
+method,com.corrodinggames.rts.game.units,am,s(com.corrodinggames.rts.game.units.am),getCollisionPushWeight,y.java:893 碰撞重叠质量权重 n8>(n6=am3.s(this)) 作为除数的碰撞推挤权重,verified
+method,com.corrodinggames.rts.game.units,am,"a(android.graphics.Paint, boolean)",applyPaintStyle,静态; !av()&&bl2 时 alpha=0 -> 隐形单位调色处理,verified
+method,com.corrodinggames.rts.game.units,am,"a(float, boolean)",drawUnitWithStatusBars,绘制单位 sprite + 血条/能量条等状态条,verified
+method,com.corrodinggames.rts.game.units,am,p(float),renderFrameUpdate,渲染帧更新; 路径点/选择环等覆盖绘制,verified
+method,com.corrodinggames.rts.game.units,am,O(),drawWaypoints,deobf UnitInstance.java:905 命名为 drawWaypointOverlays(); 注意 supplement 已把 O(int) 误映射为 drawWaypointOverlays,verified
+method,com.corrodinggames.rts.game.units,am,v(),getUnitTexture,deobf UnitInstance.java:1062 public Texture v(); 返回单位纹理 m.e,verified
+method,com.corrodinggames.rts.game.units,am,"b(com.corrodinggames.rts.game.units.am, float, com.corrodinggames.rts.game.units.f)",applyHealing,"治疗: 护盾+血量恢复, f.ak/al/am 乘数修饰",verified
+method,com.corrodinggames.rts.game.units,am,"a(com.corrodinggames.rts.game.units.am, float, com.corrodinggames.rts.game.units.f)",applyDamage,伤害: 先护盾后血量; 设置 bs=最后受击tick(此.bs=l2.by) 与 bt=攻击者,verified
+method,com.corrodinggames.rts.game.units,am,e(),spawnDeathEffect,"l2.bR=HUDManager.b(eo,ep,eq) 生成死亡爆裂特效(HUDManager 参数 V=35 淡出); 返回 false",verified
+method,com.corrodinggames.rts.game.units,am,"c(float, float, float)",isPointInRange,基于 cj 的坐标范围判定 (1339 行),verified
+method,com.corrodinggames.rts.game.units,am,t(com.corrodinggames.rts.game.units.am),isInCollisionRangeOf,dist<(cj+am2.cj)^2 碰撞判定 (1345 行),verified
+method,com.corrodinggames.rts.game.units,am,h(),getMovementType,custom/j.java: return this.x.fh (ao=MovementTypeEnum),verified
+method,com.corrodinggames.rts.game.units,am,i(),isSubmergedUnit,custom/j.java: x.fh==ao.d && eq>=4.0f 水下判定; 注意 supplement 裸 i=isEnabled 为错误映射,verified
+method,com.corrodinggames.rts.game.units,am,u(com.corrodinggames.rts.game.units.am),getAttackRangeVs,this.y()+am2.r().a(this) 攻击距离 (1536 行),verified
+method,com.corrodinggames.rts.game.units,am,v(com.corrodinggames.rts.game.units.am),getAttackRangeVs2,"与 u(am) 完全相同公式 (1540 行), 疑为重复实现",verified
+method,com.corrodinggames.rts.game.units,am,r(),getUnitTypeHandle,abstract; deobf UnitInstance: public abstract UnitTypeHandle r(),verified
+method,com.corrodinggames.rts.game.units,am,"g(com.corrodinggames.rts.game.units.am, boolean)",canTargetUnitWithFlag,基类 false; h() 委托此方法,verified
+method,com.corrodinggames.rts.game.units,am,"h(com.corrodinggames.rts.game.units.am, boolean)",canTargetUnitWithFlagAlias,"直接委托 g(am,boolean) (1825 行)",verified
+method,com.corrodinggames.rts.game.units,am,w(com.corrodinggames.rts.game.units.am),isTargetAcquisitionAllowed,基类 false 默认,verified
+method,com.corrodinggames.rts.game.units,am,x(com.corrodinggames.rts.game.units.am),canTargetUnitAdvanced,基类 false 默认,verified
+method,com.corrodinggames.rts.game.units,am,c(com.corrodinggames.rts.game.units.y),hasReachedMaxUnitsOfType,cQ()=数量上限(Integer.MAX_VALUE 默认无限); d(y) 计数 >= 上限则 true (1833 行),verified
+method,com.corrodinggames.rts.game.units,am,d(com.corrodinggames.rts.game.units.y),countUnitsWithAttackOrder,遍历 bE: 指派给 this 且 au.d()==av.g 的 y 单位计数 (1839 行),verified
+method,com.corrodinggames.rts.game.units,am,e(com.corrodinggames.rts.game.units.y),countUnitsWithOtherOrder,同 d(y) 但 au.d()==av.d (1854 行),verified
+method,com.corrodinggames.rts.game.units,am,l(),isBuilderUnit,"custom/l.java: return this.fp; [core]isBuilder INI 键 (custom/ag.java:1878+报错字符串 ""isBuilder:""); 但 warship/artillery/turret/heli 也返回 true, 内建单位语义存疑",verified
+method,com.corrodinggames.rts.game.units,am,"f(float, float)",setPosition,eo=f2; ep=f3; this.c(true) 网格更新 (2118 行),verified
+method,com.corrodinggames.rts.game.units,v,,gete,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置4),order-align-v19.111
+method,com.corrodinggames.rts.game.units,u,,canAcceptOrders,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置43),order-align-v19.111
+method,com.corrodinggames.rts.game.units,ag,,getBuildRangeExtension,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置68),order-align-v19.111
+method,com.corrodinggames.rts.game.units,ah,,isRusherBehavior,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置69),order-align-v19.111
+method,com.corrodinggames.rts.game.units,al,,getSecondWaypoint,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置83),order-align-v19.111
+method,com.corrodinggames.rts.game.units,an,,getWaypointCount,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置87),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aq,,unlinkAllFactories,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置99),order-align-v19.111
+method,com.corrodinggames.rts.game.units,av,,resetPathDataFull,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置105),order-align-v19.111
+method,com.corrodinggames.rts.game.units,aw,,advancePathNode,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置106),order-align-v19.111
+method,com.corrodinggames.rts.game.units,ay,,getBuildProgressCap,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置112),order-align-v19.111
+method,com.corrodinggames.rts.game.units,az,,composeRenderPaint,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置113),order-align-v19.111
+method,com.corrodinggames.rts.game.units,z,,getCurrentBarrelEnd,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置175),order-align-v19.111
+field,com.corrodinggames.rts.game.units,ac,f,colorTint,"field-order-zip-v19.114: 02b boolean f=- <-> 03 boolean colorTint=- (位置5, DecorType1)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.units,ac,g,groundOffset,"field-order-zip-v19.114: 02b boolean g=false <-> 03 boolean groundOffset=false (位置6, DecorType1)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.units,ac,d,rotationAngle,"field-order-zip-v19.114: 02b float d=- <-> 03 float rotationAngle=- (位置3, DecorType1)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.units,ac,a,animTimer,"field-order-zip-v19.114: 02b float a=- <-> 03 float animTimer=- (位置0, DecorType1)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.units,ac,b,decorType,"field-order-zip-v19.114: 02b float b=- <-> 03 float decorType=- (位置1, DecorType1)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.units,ap,a,turretAngle,保序对照 B4: jar ap 字段序 a-m vs 03 UnitTurret,verified
+field,com.corrodinggames.rts.game.units,ap,d,lockDelay,保序对照 B4: jar ap.d,verified
+field,com.corrodinggames.rts.game.units,ap,e,shootCooldown,保序对照 B4: jar ap.e,verified
+field,com.corrodinggames.rts.game.units,ap,h,maxRotationAngle,保序对照 B4: jar ap.h,verified
+field,com.corrodinggames.rts.game.units,ap,j,minAngleLimit,保序对照 B4: jar ap.j,verified
+field,com.corrodinggames.rts.game.units,ap,k,maxAngleLimit,保序对照 B4: jar ap.k,verified
+field,com.corrodinggames.rts.game.units,ap,l,targetUnit,保序对照 B4: jar ap.l,verified
+field,com.corrodinggames.rts.game.units,ap,b,turretOffsetY,保序对照 B4: jar ap 字段序 a-m vs 03 UnitTurret,verified
+field,com.corrodinggames.rts.game.units,ap,c,turretPivotX,保序对照 B4: jar ap.c,verified
+field,com.corrodinggames.rts.game.units,ap,i,hasLimitedArc,保序对照 B4: jar ap.i,verified
+field,com.corrodinggames.rts.game.units,ap,m,currentAngle,保序对照 B4: jar ap.m,verified

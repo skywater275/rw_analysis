@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "rusted-warfare": {
+      "command": "python",
+      "args": ["mcp/mcp_game_server.py"],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

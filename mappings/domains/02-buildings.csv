@@ -1,0 +1,524 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,com.corrodinggames.rts.game.units.d,AutoRepairCallback,a,repairTarget,Repair target unit (am),verified-exists
+field,com.corrodinggames.rts.game.units.d,AutoRepairCallback,b,repairRange,Repair range (float),verified-exists
+field,com.corrodinggames.rts.game.units.d,AutoRepairCallback,c,repairRate,Repair rate per second (float),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,a,builderId,Builder identifier (int),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,b,buildSpeed,Build speed multiplier (float),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,c,costResource,Cost resource component (b),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,d,bonusResource,Bonus/multiplier resource component (b),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,e,buildTargetType,Target unit type to build (h),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,f,isCurrentlyBuilding,Currently building flag (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,g,serializer,Serialization helper (as),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,h,buildPosition,Build target position (PointF),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,i,targetUnit,Target UnitInstance reference (am),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,j,buildState,Build state enum (c),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,k,isAssisting,Is assisting other builder (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,l,isRepairing,Is repairing unit (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,m,buildProgress,Build progress (float  -1=not building),verified-exists
+field,com.corrodinggames.rts.game.units.d,BuilderUnit,n,buildTimer,Build timer accumulator (double),verified-exists
+field,com.corrodinggames.rts.game.units.d,CommandCenter,a,commanderUnit,Commander unit reference (am),verified-exists
+field,com.corrodinggames.rts.game.units.d,CommandCenter,b,selectionIndex,Selection group index (int),verified-exists
+field,com.corrodinggames.rts.game.units.d,CommandCenter,c,lastCommandTick,Last command tick (int),verified-exists
+field,com.corrodinggames.rts.game.units.d,CommandCenter,d,commandTimeout,Command timeout counter (int),verified-exists
+field,com.corrodinggames.rts.game.units.d,CommandCenter,e,isActiveCmdCenter,Is active command center (boolean),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.d,ExperimentalUnit,a,experimentName,Experiment/upgrade name (String),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.d,ExperimentalUnit,b,costMultiplier,Cost multiplier (float),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.d,ExperimentalUnit,c,hpMultiplier,HP multiplier (float),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.d,ExperimentalUnit,d,damageMultiplier,Damage multiplier (float),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.d,UnitFactoryHelper,a,factoryReference,Factory unit reference (am),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.d,UnitFactoryHelper,b,queuePosition,Queue position index (int),verified-exists
+field,com.corrodinggames.rts.game.units.d,UnitFactoryHelper,c,productionProgress,Production progress (float),verified-exists
+method,com.corrodinggames.rts.game.units.d,a,K,getar,real-class-inferred: com.corrodinggames.rts.game.units.d.a,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,a,L,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.d.a,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,a,N,getArrayList,real-class-inferred: com.corrodinggames.rts.game.units.d.a,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,a,V,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.units.d.a,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,a,a,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.d.a,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,a,b,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.d.a,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,a,bJ,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.d.a,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,a,cm,getc,real-class-inferred: com.corrodinggames.rts.game.units.d.a,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,a,d,gete,real-class-inferred: com.corrodinggames.rts.game.units.d.a,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,a,k,gete,real-class-inferred: com.corrodinggames.rts.game.units.d.a,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,a,r,getas,real-class-inferred: com.corrodinggames.rts.game.units.d.a,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,b,K,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.d.b,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,b,L,getar,real-class-inferred: com.corrodinggames.rts.game.units.d.b,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,b,a,getString,real-class-inferred: com.corrodinggames.rts.game.units.d.b,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,b,c,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.units.d.b,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,b,f,gett,real-class-inferred: com.corrodinggames.rts.game.units.d.b,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,b,g,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.d.b,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,b,i,getas,real-class-inferred: com.corrodinggames.rts.game.units.d.b,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,c,a(am, float,""" game.f)""",calculateEffectValue
+method,com.corrodinggames.rts.game.units.d,c,b(int, float),checkCondition | CommandSlot: boolean - check indexed condition,verified-exists
+method,com.corrodinggames.rts.game.units.d,c,E,getPointF,real-class-inferred: com.corrodinggames.rts.game.units.d.c,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,c,E(int),getTurretPosition,CommandSlot: PointF - turret/attach point by index,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,K,getUnitRegistry,CommandSlot: returns UnitRegistry reference,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,L,isActionAvailable,CommandSlot: boolean - check if action can be used now,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,M,executeAction,CommandSlot: void - perform the configured action,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,N,getActionSlotList,CommandSlot: returns ArrayList of action slots,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,O,cancelAction,CommandSlot: void - cancel/abort current action,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,c,a,buttonTextures,CommandSlot: static Texture[] pool for button icons,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,a(as),writeToStream,CommandSlot: serialize to network stream,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,a(d.j),setBuildingContext,CommandSlot: void - attach to Building reference,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,a(float),setAlpha,CommandSlot: set transparency for fade animation,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,a(game.f),isValidInContext,CommandSlot: boolean - action valid in current game state,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,a(gameFramework.l),updateFromGlobalState,CommandSlot: boolean - tick update with GlobalState,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,a(int),setSlotIndex,CommandSlot: set position index in action bar,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,a(k),readFromStream,CommandSlot: deserialize from network stream,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,b,initStaticResources,CommandSlot: static - load shared textures,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,b(game.f),updateState,CommandSlot: refresh state from game context,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,bV,getCompletionProgress,CommandSlot: float - action progress 0.0-1.0,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,c,c,isSelected,CommandSlot: boolean - currently selected/highlighted,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,c(float),setThresholdValue,CommandSlot: boolean - set trigger threshold,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,c(int),getIndexedValue,CommandSlot: float - numeric property by index,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,cb,refreshVisualState,CommandSlot: void - update display based on state,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,ck,isActionUnlocked,CommandSlot: boolean - action is unlocked/available,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,cm,getActionCategory,CommandSlot: returns ActionCategory enum,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,c,d,slotIndex,CommandSlot: int - position index in action panel,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,c,e,alphaValue,CommandSlot: float - transparency/alpha for fade animation,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,e(float),setProgress,CommandSlot: void - set action progress,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,c,f,highlightTexture,CommandSlot: static highlight Texture,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,c,g,overlayTextures,CommandSlot: static Texture[] overlay/status icons,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,g(int),getNumericProperty,CommandSlot: float - indexed numeric property,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,c,h,position,CommandSlot: PointF - screen position,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,c,i,bounds,CommandSlot: Rect - clickable area bounds,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,c,j,primaryAction,CommandSlot: static GameAction - primary command,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,k,getStatusOverlay,CommandSlot: returns status overlay Texture,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,c,l,actionSlotPool,CommandSlot: static ArrayList - object pool for reuse,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,m,getCooldownRemaining,CommandSlot: float - cooldown time remaining,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,r,getAssociatedUnitType,CommandSlot: returns UnitType reference for this action,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,c,v,getIcon,CommandSlot: returns button icon Texture,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,a(as, float, float,""" n)"""
+method,com.corrodinggames.rts.game.units.d,d,a(y, as, ao, int
+method,com.corrodinggames.rts.game.units.d,d,b(int, int),createGhostUnit,verified-exists
+method,com.corrodinggames.rts.game.units.d,d,A,getTotalBuildTime,BuildingPlaceholder: float - total construction seconds,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,I,isGhostPreview,"""BuildingPlaceholder: boolean - this is a ghost/preview""",verified-exists
+method,com.corrodinggames.rts.game.units.d,d,I(),canPatrol,False - cannot patrol [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,L,isVisible,BuildingPlaceholder: boolean - visible on map,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,L(),onBuildComplete,Handle experiment completion + sound [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,Q,isUnderConstruction,BuildingPlaceholder: boolean - currently being built,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,Q(),isSelectable,False - not directly selectable [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,R,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.d.d,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,d,R(int),setBuildStep,Set buildStep field from int [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,a,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.d.d,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,d,a(as),writeToStream,BuildingPlaceholder: serialize,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,a(int),setGridPosition,BuildingPlaceholder: update grid coords,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,a(k),readFromStream,BuildingPlaceholder: deserialize,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,bI,canStartConstruction,BuildingPlaceholder: boolean - ready to begin building,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,bI(),isExperimentalUnit,True - identifies experimental unit type [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,b_,isBuildingType,BuildingPlaceholder: boolean - this is a building/structure,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,b_(),canBeTransported,False - cannot be transported [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,c,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.d.d,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,d,c(float),setBuildProgress,BuildingPlaceholder: boolean - update construction progress,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,cc,getHitboxBounds,BuildingPlaceholder: Rect - collision/click hitbox,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,cc(),getSourceRect,Return source texture rect (n) [sig-backfill: returns android.graphics.Rect],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,cd,getSelectionBounds,BuildingPlaceholder: Rect - selection rectangle,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,cd(),getDestRect,Return destination render rect (o) [sig-backfill: returns android.graphics.Rect],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,d,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.d.d,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,d,d(float),addBuildProgress,BuildingPlaceholder: void - increment construction progress,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,d(int),getTextureByIndex,BuildingPlaceholder: get indexed Texture,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,ds,isPlacementValid,BuildingPlaceholder: boolean - current placement is valid,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,ds(),hasOverlaySprite,Override hook for overlay sprite usage [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,dt,initStaticCache,BuildingPlaceholder: static - initialize texture cache,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,dt(),initTextures,Static: load icon textures + per-team array [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,e,hasValidPlacement,BuildingPlaceholder: boolean - placement position is buildable,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,f,getStatusPaint,BuildingPlaceholder: Paint - color-coded status paint,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,f_,recalculateBounds,BuildingPlaceholder: update position/bounds,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,f_(),resetBuildState,Set build-in-progress flag to false [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,g,getam,real-class-inferred: com.corrodinggames.rts.game.units.d.d,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,d,g(as),createPlaceholderInstance,BuildingPlaceholder: static UnitInstance - create preview object,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,g(com.corrodinggames.rts.game.units.as),createUnit,Static: create UnitInstance from handle [sig-backfill: returns com.corrodinggames.rts.game.units.am],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,h,getOwnerInfo,BuildingPlaceholder: returns owner/team color data,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,h(),getMovementType,Returns stationary movement type [sig-backfill: returns com.corrodinggames.rts.game.units.ao],verified-exists
+method,com.corrodinggames.rts.game.units.d,d,i,isFullyConstructed,BuildingPlaceholder: boolean - construction complete,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,i(),canMoveAndFire,False - cannot move while firing [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.game.units.d,d,m,previewTexture,BuildingPlaceholder: preview/ghost Texture,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,d,n,sourceRect,Source rect for texture mapping (cc()),verified-exists
+field,com.corrodinggames.rts.game.units.d,d,o,destRect,Destination rect for rendering (cd()),verified-exists
+field,com.corrodinggames.rts.game.units.d,d,p,defaultIcon,Static default icon texture from resources,verified-exists
+field,com.corrodinggames.rts.game.units.d,d,q,teamIconTextures,Static per-team icon texture array (size 10),verified-exists
+field,com.corrodinggames.rts.game.units.d,d,r,buildStep,Build/state step counter (serialized),verified-exists
+field,com.corrodinggames.rts.game.units.d,d,s,animFrame,Animation frame index for sprite offset,verified-exists
+method,com.corrodinggames.rts.game.units.d,d,v,getPreviewIcon,BuildingPlaceholder: get preview/info icon,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,d,z,getBuildProgress,BuildingPlaceholder: float - construction progress 0.0-1.0,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,a(ArrayList, int),addToBuildQueue | CommandCenter: static - queue multiple items,verified-exists
+method,com.corrodinggames.rts.game.units.d,e,a(am, float,""" game.f)""",calculateBuildSpeed
+method,com.corrodinggames.rts.game.units.d,e,b(int, float),canAddToQueue | CommandCenter: boolean - queue slot available,verified-exists
+method,com.corrodinggames.rts.game.units.d,e,K,getUnitRegistry,CommandCenter: returns UnitRegistry,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,K(),getUnitType,Returns ar.e as UnitRegistry type [sig-backfill: returns com.corrodinggames.rts.game.units.ar],verified-exists
+method,com.corrodinggames.rts.game.units.d,e,L,isSlotAvailable,CommandCenter: boolean - slot can be used,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,L(),onDeath,Death: set texture [sig-backfill: returns boolean], create explosion particles
+method,com.corrodinggames.rts.game.units.d,e,N,getBuildQueue,CommandCenter: ArrayList - current build queue,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,N(),getActions,Returns available GameActions from factory [sig-backfill: returns java.util.ArrayList],verified-exists
+method,com.corrodinggames.rts.game.units.d,e,S,clearSelectedUnit,CommandCenter: void - reset selection,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,S(),updateTexture,Update display texture based on state [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.game.units.d,e,a,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.d.e,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,e,a(as),writeToStream,CommandCenter: serialize,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,a(float),setScale,CommandCenter: set UI scale factor,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,a(int),setSelectedUnit,CommandCenter: set unit type index,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,a(k),readFromStream,CommandCenter: deserialize,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,b,initStaticTextures,CommandCenter: static - load shared textures,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,b(),getArmor,[v10.3-resolved: semantic match (0 params,verified-exists
+method,com.corrodinggames.rts.game.units.d,e,b(int),getQueueCount,CommandCenter: float - items in queue at index,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,bJ,isFactoryActive,CommandCenter: boolean - factory is operational,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,bJ(),isUnderConstruction,Building always reports construction status [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units.d,e,bp,getTotalQueueLength,CommandCenter: int - total items queued,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,bp(),getHeight,Unit height 35 for placement grid [sig-backfill: returns int],verified-exists
+method,com.corrodinggames.rts.game.units.d,e,c,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.d.e,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,e,c(int),getMaxHealth,Max HP 999.0 per tech level [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units.d,e,cF,getRenderRect,CommandCenter: RectF - rendering rectangle,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,cF(),getSelectionBounds,Expanded bounding rect (6.0 offset) [sig-backfill: returns android.graphics.RectF],verified-exists
+method,com.corrodinggames.rts.game.units.d,e,cy,getBuildTime,CommandCenter: float - construction time,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,cy(),getIncomePerTick,Income rate 18.0 per tick [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units.d,e,d,getIconTexture,CommandCenter: Texture - unit icon,body-verified-v1300
+field,com.corrodinggames.rts.game.units.d,e,e,scaleFactor,CommandCenter: float - UI scale,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,e(float),applyShield,Shield area effect at position with radius [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.game.units.d,e,f,totalActiveTime,Accumulated delta-time since activation,verified-exists
+field,com.corrodinggames.rts.game.units.d,e,g,buildTimeAccumulator,Accumulated delta-time for build tracking,verified-exists
+field,com.corrodinggames.rts.game.units.d,e,h,frameCounter,Incremented each tick frame,verified-exists
+field,com.corrodinggames.rts.game.units.d,e,i,resourceAccumulator,Accumulated by 10.0 each tick,verified-exists
+field,com.corrodinggames.rts.game.units.d,e,j,minDeltaTime,Minimum frame delta seen,verified-exists
+method,com.corrodinggames.rts.game.units.d,e,k,getProgressTexture,CommandCenter: Texture - progress bar texture,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,l,hasActiveProduction,CommandCenter: boolean - building something,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,l(),isBuilding,True for building/structure type [sig-backfill: returns boolean],verified-exists
+method,com.corrodinggames.rts.game.units.d,e,m,getProgressValue,CommandCenter: float - build progress,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,m(),getMass,Mass/repair cost value 280.0 [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units.d,e,q,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.d.e,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,e,q(int),getRange,Weapon/build range 70.0 [sig-backfill: returns float],verified-exists
+method,com.corrodinggames.rts.game.units.d,e,r,getProducingUnitType,CommandCenter: returns UnitType being produced,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,s,getQueuePosition,CommandCenter: int - position in build queue,body-verified-v1300
+method,com.corrodinggames.rts.game.units.d,e,s(),getWidth,Unit width 20 for placement grid [sig-backfill: returns int],verified-exists
+method,com.corrodinggames.rts.game.units.d,f,a,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.d.f,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,f,b,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.d.f,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,f,d,gete,real-class-inferred: com.corrodinggames.rts.game.units.d.f,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,K,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,L,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,N,getArrayList,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,S,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,V,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,a,getstrictfp void,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,b,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,bp,getstrictfp int,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,c,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,cm,getc,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,cy,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,d,gete,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,ds,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,k,gete,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,l,getstrictfp boolean,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,m,getstrictfp float,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,g,r,getas,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+field,com.corrodinggames.rts.game.units.d,g,t,factoryProductionSlot1,"P3.3-deep-curated: class-context, was=s1",p3-deep-curated
+field,com.corrodinggames.rts.game.units.d,g,u,factoryProductionSlot2,"P3.3-deep-curated: class-context, was=s2",p3-deep-curated
+field,com.corrodinggames.rts.game.units.d,g,v,arrayList1,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+field,com.corrodinggames.rts.game.units.d,g,w,arrayList2,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+field,com.corrodinggames.rts.game.units.d,g,x,arrayList3,real-class-inferred: com.corrodinggames.rts.game.units.d.g,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,K,reset,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,L,isEnabled,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,N,getArrayList,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,R,reset,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,V,getint,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,a,reset,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,b,getar,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,bp,getint,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,cm,getc,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,cy,getfloat,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,d,gete,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.d,h,db,getfloat,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+field,com.corrodinggames.rts.game.units.d,h,g,generatorPowerOutput,"P3.3-deep-curated: class-context, was=e7",p3-deep-curated
+method,com.corrodinggames.rts.game.units.d,h,k,gete,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+field,com.corrodinggames.rts.game.units.d,h,l,generatorResourceType,"P3.3-deep-curated: class-context, was=s2",p3-deep-curated
+method,com.corrodinggames.rts.game.units.d,h,r,getas,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+field,com.corrodinggames.rts.game.units.d,h,t,arrayList,real-class-inferred: com.corrodinggames.rts.game.units.d.h,real-class-v1200
+field,com.corrodinggames.rts.game.units.d.a,b,a,experimentLevel,Experiment tier level (int),verified-exists
+field,com.corrodinggames.rts.game.units.d.a,b,b,requiredResource,Required resource type (a),verified-exists
+field,com.corrodinggames.rts.game.units.d.a,b,c,costValue,Experiment cost (float),verified-exists
+field,com.corrodinggames.rts.game.units.d.a,b,d,timeValue,Research time (float),verified-exists
+field,com.corrodinggames.rts.game.units.d.a,b,e,statMultiplier,Stat multiplier value (float),verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$1,a(am,boolean),canUpgrade,verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$1,K(),getUpgradeTime,"""Phase3-inferred: UpgradeToGunT2Action (gui.actions.upgradeToGunT2""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$1,L(),getUpgradedUnitType,"""Phase3-inferred: UpgradeToGunT2Action (gui.actions.upgradeToGunT2""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$1,a(),getHelpText,"""Phase3-inferred: UpgradeToGunT2Action (gui.actions.upgradeToGunT2""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$1,b(),getName,"""Phase3-inferred: UpgradeToGunT2Action (gui.actions.upgradeToGunT2""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$1,c(),getCost,"""Phase3-inferred: UpgradeToGunT2Action (gui.actions.upgradeToGunT2""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$1,f(),getActionType,"""Phase3-inferred: UpgradeToGunT2Action (gui.actions.upgradeToGunT2""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$1,g(),isInstant,"""Phase3-inferred: UpgradeToGunT2Action (gui.actions.upgradeToGunT2""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$1,i(),getUpgradedUnitTypeSynthetic,"""Phase3-inferred: UpgradeToGunT2Action (gui.actions.upgradeToGunT2""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$2,a(am,boolean),canUpgrade,verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$2,K(),getUpgradeTime,"""Phase3-inferred: UpgradeToGunT3Action (gui.actions.upgradeToGunT3""", cost 11000
+method,com.corrodinggames.rts.game.units.d.a,b$2,L(),getUpgradedUnitType,"""Phase3-inferred: UpgradeToGunT3Action (gui.actions.upgradeToGunT3""", cost 11000
+method,com.corrodinggames.rts.game.units.d.a,b$2,a(),getHelpText,"""Phase3-inferred: UpgradeToGunT3Action (gui.actions.upgradeToGunT3""", cost 11000
+method,com.corrodinggames.rts.game.units.d.a,b$2,b(),getName,"""Phase3-inferred: UpgradeToGunT3Action (gui.actions.upgradeToGunT3""", cost 11000
+method,com.corrodinggames.rts.game.units.d.a,b$2,c(),getCost,"""Phase3-inferred: UpgradeToGunT3Action (gui.actions.upgradeToGunT3""", cost 11000
+method,com.corrodinggames.rts.game.units.d.a,b$2,f(),getActionType,"""Phase3-inferred: UpgradeToGunT3Action (gui.actions.upgradeToGunT3""", cost 11000
+method,com.corrodinggames.rts.game.units.d.a,b$2,g(),isInstant,"""Phase3-inferred: UpgradeToGunT3Action (gui.actions.upgradeToGunT3""", cost 11000
+method,com.corrodinggames.rts.game.units.d.a,b$2,i(),getUpgradedUnitTypeSynthetic,"""Phase3-inferred: UpgradeToGunT3Action (gui.actions.upgradeToGunT3""", cost 11000
+method,com.corrodinggames.rts.game.units.d.a,b$3,a(am,boolean),canUpgrade,verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$3,K(),getUpgradeTime,"""Phase3-inferred: UpgradeToArtilleryAction (gui.actions.upgradeToArtillery""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$3,L(),getUpgradedUnitType,"""Phase3-inferred: UpgradeToArtilleryAction (gui.actions.upgradeToArtillery""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$3,a(),getHelpText,"""Phase3-inferred: UpgradeToArtilleryAction (gui.actions.upgradeToArtillery""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$3,b(),getName,"""Phase3-inferred: UpgradeToArtilleryAction (gui.actions.upgradeToArtillery""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$3,c(),getCost,"""Phase3-inferred: UpgradeToArtilleryAction (gui.actions.upgradeToArtillery""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$3,f(),getActionType,"""Phase3-inferred: UpgradeToArtilleryAction (gui.actions.upgradeToArtillery""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$3,g(),isInstant,"""Phase3-inferred: UpgradeToArtilleryAction (gui.actions.upgradeToArtillery""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$3,i(),getUpgradedUnitTypeSynthetic,"""Phase3-inferred: UpgradeToArtilleryAction (gui.actions.upgradeToArtillery""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$4,a(am,boolean),canUpgrade,verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$4,K(),getUpgradeTime,"""Phase3-inferred: UpgradeToFlamethrowerAction (gui.actions.upgradeToFlamethrower""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$4,L(),getUpgradedUnitType,"""Phase3-inferred: UpgradeToFlamethrowerAction (gui.actions.upgradeToFlamethrower""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$4,a(),getHelpText,"""Phase3-inferred: UpgradeToFlamethrowerAction (gui.actions.upgradeToFlamethrower""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$4,b(),getName,"""Phase3-inferred: UpgradeToFlamethrowerAction (gui.actions.upgradeToFlamethrower""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$4,c(),getCost,"""Phase3-inferred: UpgradeToFlamethrowerAction (gui.actions.upgradeToFlamethrower""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$4,f(),getActionType,"""Phase3-inferred: UpgradeToFlamethrowerAction (gui.actions.upgradeToFlamethrower""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$4,g(),isInstant,"""Phase3-inferred: UpgradeToFlamethrowerAction (gui.actions.upgradeToFlamethrower""",verified-exists
+method,com.corrodinggames.rts.game.units.d.a,b$4,i(),getUpgradedUnitTypeSynthetic,"""Phase3-inferred: UpgradeToFlamethrowerAction (gui.actions.upgradeToFlamethrower""",verified-exists
+field,com.corrodinggames.rts.game.units.h,FactoryAction5,a,actionDef,Action definition (s),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.h,FactoryAction5,b,actionTarget,Action target ref (String),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.h,FactoryAction5,c,actionValue,Action value (float),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.h,FactoryAction5,d,actionFlags,Action flags (int),verified-exists
+field,com.corrodinggames.rts.game.units.h,FactoryAction6,a,targetFactory,Target factory reference (am),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.h,FactoryAction6,b,slotIndex,Factory slot index (int),unverifiable-rebuilt
+method,d,a,<clinit>(),run,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+method,d,a,<init>(),register,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,A,scratchRectF3,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,B,paint,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,C,staticPaint,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,D,staticPaint2,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,E,staticRectF,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,a,x,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+method,d,a,a(),isVisible,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,b,y,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+method,d,a,b(float),render,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,c,isEnabled,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+method,d,a,c(float),update,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,d,unit,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+method,d,a,d(float),update,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,e,player,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,f,frameCount,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,g,timer,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,h,duration,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,i,isFinished,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,j,owner,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,k,isVisible,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,l,color,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,m,color2,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,n,isRemoved,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,o,unitTarget,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,p,isStatic,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,q,isLooping,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,r,textureIndex,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,s,size,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,t,fadeSpeed,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,u,hasShadow,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,v,buildUnit,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,w,instanceList,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,x,scratchPoint,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,y,scratchRectF,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,d,a,z,scratchRectF2,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+method,d,b,<init>(),isEnabled,(CloudRenderer) 云层渲染器: R$drawable.noise 噪声纹理滚动叠加 方法 <init>() -> isEnabled,render-chain
+field,d,b,a,isLoaded,(CloudRenderer) 云层渲染器: R$drawable.noise 噪声纹理滚动叠加 字段 boolean: isLoaded,render-chain
+method,d,b,a(),loadTexture,(CloudRenderer) 云层渲染器: R$drawable.noise 噪声纹理滚动叠加 方法 a() -> loadTexture,render-chain
+field,d,b,b,noiseTexture,(CloudRenderer) 云层渲染器: R$drawable.noise 噪声纹理滚动叠加 字段 com.corrodinggames.rts.gameFramework.m.e: noiseTexture,render-chain
+method,d,b,b(),release,(CloudRenderer) 云层渲染器: R$drawable.noise 噪声纹理滚动叠加 方法 b() -> release,render-chain
+field,d,b,c,paint,(CloudRenderer) 云层渲染器: R$drawable.noise 噪声纹理滚动叠加 字段 android.graphics.Paint: paint,render-chain
+field,d,b,d,drawRect,(CloudRenderer) 云层渲染器: R$drawable.noise 噪声纹理滚动叠加 字段 android.graphics.RectF: drawRect,render-chain
+field,d,b,e,scrollX,(CloudRenderer) 云层渲染器: R$drawable.noise 噪声纹理滚动叠加 字段 float: scrollX,render-chain
+field,d,b,f,scrollY,(CloudRenderer) 云层渲染器: R$drawable.noise 噪声纹理滚动叠加 字段 float: scrollY,render-chain
+method,d,c,b(float, float,""" float)""",getValues
+method,d,c,c(float, float,""" float)""",getValues
+method,d,c,d(float, float, float,unverifiable-rebuilt
+method,d,c,e(float, float,""" float)""",getValues
+method,d,c,f(float, float,""" float)""",getValues
+method,d,c,<clinit>(),run,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+method,d,c,<init>(),updateAll,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,a,spriteFrameWidth,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+method,d,c,a(com.corrodinggames.rts.gameFramework.d.h),getResult,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,b,spriteFrameHeight,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,c,spriteCount,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,d,maxEffects,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,e,effectTypeCount,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,f,effectPool,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,g,activeEffectCount,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,h,isPaused,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,i,nextEffectIndex,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,j,drawLayerOrder,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,k,shader,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,l,textureSheet,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,m,textureSheet2,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,n,drawRect,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,o,srcRect,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,p,dstRect,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,q,paint,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,r,paint2,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,s,spriteSheets,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,t,drawLayer,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,u,isDisplacementEnabled,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,v,isGlowEnabled,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,w,glowPaint,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,x,globalScale,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+field,d,c,y,spriteLoaded,"""(EffectEngine) 特效引擎: 20 种精灵表""", 固定数组池 e[]
+method,d,d,<init>(java.lang.String, int),handle,unverifiable-rebuilt
+method,d,d,<clinit>(),run,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,d,d,a,obj0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,d,d,b,obj0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,d,d,c,obj0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,d,d,d,obj0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,d,d,e,obj0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,d,d,f,obj0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,d,d,g,obj0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,d,d,h,obj0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,d,d,i,obj0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,d,d,j,objArray0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+method,d,d,valueOf(java.lang.String),getResult,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+method,d,d,values(),getValue,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+method,d,e,<clinit>(),run,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 方法 <clinit>() -> run,render-chain
+method,d,e,<init>(com.corrodinggames.rts.gameFramework.d.c),init,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 方法 <init>(com.corrodinggames.rts.gameFramework.d.c) -> init,render-chain
+field,d,e,A,obj76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 short: obj76,render-chain
+field,d,e,B,obj76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 android.graphics.LightingColorFilter: obj76,render-chain
+field,d,e,C,obj76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 android.graphics.LightingColorFilter: obj76,render-chain
+field,d,e,D,count76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: count76,render-chain
+field,d,e,E,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,F,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,G,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,H,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,I,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,J,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,K,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,L,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,M,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,N,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,O,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,P,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,Q,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,R,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,S,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,T,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,U,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,V,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,W,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,X,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,Y,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,Z,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,a,template,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 com.corrodinggames.rts.game.units.custom.ay: template,render-chain
+method,d,e,a(),getPaint,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 方法 a() -> getPaint,render-chain
+field,d,e,aa,name76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 java.lang.String: name76,render-chain
+field,d,e,ab,paint76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 android.graphics.Paint: paint76,render-chain
+field,d,e,ac,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,ad,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,ae,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,af,count76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: count76,render-chain
+field,d,e,ag,count76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: count76,render-chain
+field,d,e,ah,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,ai,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,aj,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,ak,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,al,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,am,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,an,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,ao,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,ap,count76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: count76,render-chain
+field,d,e,aq,count76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: count76,render-chain
+field,d,e,ar,obj76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 short: obj76,render-chain
+field,d,e,as,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,at,uniquePaint76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 com.corrodinggames.rts.gameFramework.m.ag: uniquePaint76,render-chain
+field,d,e,au,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,av,count76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: count76,render-chain
+field,d,e,aw,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,ax,objArray76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 [com.corrodinggames.rts.gameFramework.m.ag: objArray76,render-chain
+field,d,e,ay,engine,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 com.corrodinggames.rts.gameFramework.d.c: engine,render-chain
+field,d,e,b,attachedObject,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 com.corrodinggames.rts.gameFramework.w: attachedObject,render-chain
+method,d,e,b(),reset,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 方法 b() -> reset,render-chain
+field,d,e,c,isActive,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isActive,render-chain
+method,d,e,c(),copyFromTemplate,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 方法 c() -> copyFromTemplate,render-chain
+field,d,e,d,isTrail,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isTrail,render-chain
+field,d,e,e,isFadeOut,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFadeOut,render-chain
+field,d,e,f,isRandomRotate,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isRandomRotate,render-chain
+field,d,e,g,typeConstant1,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: typeConstant1,render-chain
+field,d,e,h,typeConstant2,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: typeConstant2,render-chain
+field,d,e,i,typeConstant3,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: typeConstant3,render-chain
+field,d,e,j,typeConstant4,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: typeConstant4,render-chain
+field,d,e,k,typeConstant5,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: typeConstant5,render-chain
+field,d,e,l,typeConstant6,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: typeConstant6,render-chain
+field,d,e,m,typeConstant7,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: typeConstant7,render-chain
+field,d,e,n,colorStart,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: colorStart,render-chain
+field,d,e,o,isScaleAnimated,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isScaleAnimated,render-chain
+field,d,e,p,isVelocityAnimated,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isVelocityAnimated,render-chain
+field,d,e,q,obj76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 com.corrodinggames.rts.gameFramework.d.h: obj76,render-chain
+field,d,e,r,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,s,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,t,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,u,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,v,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,d,e,w,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,d,e,x,count76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: count76,render-chain
+field,d,e,y,count76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: count76,render-chain
+field,d,e,z,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+method,d,f,<init>(com.corrodinggames.rts.gameFramework.d.c),init,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 <init>(com.corrodinggames.rts.gameFramework.d.c) -> init,render-chain
+field,d,f,a,lifeTime,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: lifeTime,render-chain
+method,d,f,a(com.corrodinggames.rts.gameFramework.j.as),writeToStream,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 a(com.corrodinggames.rts.gameFramework.j.as) -> writeToStream,render-chain
+field,d,f,b,isEmitting,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 boolean: isEmitting,render-chain
+method,d,f,b(),initStaticEffects,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 b() -> initStaticEffects,render-chain
+field,d,f,c,intervalAccum,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: intervalAccum,render-chain
+method,d,f,c(),isInView,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 c() -> isInView,render-chain
+field,d,f,d,burstTimer,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: burstTimer,render-chain
+method,d,f,d(float),onUpdate,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 d(float) -> onUpdate,render-chain
+field,d,f,e,burstCount,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: burstCount,render-chain
+method,d,f,e(float),onDrawEnd,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 e(float) -> onDrawEnd,render-chain
+field,d,f,f,burstInterval,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: burstInterval,render-chain
+method,d,f,f(float),isExpired,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 f(float) -> isExpired,render-chain
+field,d,f,g,burstLimit,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: burstLimit,render-chain
+field,d,f,h,spreadX,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: spreadX,render-chain
+field,d,f,i,staticTrailEffect,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 com.corrodinggames.rts.gameFramework.d.e: staticTrailEffect,render-chain
+field,d,f,j,count23,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 int: count23,render-chain
+field,d,f,k,count23,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 int: count23,render-chain
+field,d,f,l,count23,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 int: count23,render-chain
+field,d,f,m,field_m,"P3.1-inferred: type=boolean, was=value23",p3-auto-inferred
+field,d,f,n,field_n,"P3.1-inferred: type=float, was=value23",p3-auto-inferred
+field,d,f,o,field_o,"P3.1-inferred: type=float, was=value23",p3-auto-inferred
+field,d,f,p,field_p,"P3.1-inferred: type=float, was=value23",p3-auto-inferred
+field,d,f,q,field_q,"P3.1-inferred: type=com.corrodinggames.rts.game.f, was=value23",p3-auto-inferred
+field,d,f,r,field_r,"P3.1-inferred: type=float, was=value23",p3-auto-inferred
+field,d,f,s,obj23,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 com.corrodinggames.rts.gameFramework.d.h: obj23,render-chain
+field,d,f,t,field_t,"P3.1-inferred: type=float, was=value23",p3-auto-inferred
+field,d,f,u,isFlag23,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 boolean: isFlag23,render-chain
+field,d,f,v,obj23,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 com.corrodinggames.rts.gameFramework.d.e: obj23,render-chain
+field,d,f,w,obj23,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 com.corrodinggames.rts.gameFramework.d.e: obj23,render-chain
+field,d,f,x,obj23,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 com.corrodinggames.rts.gameFramework.d.c: obj23,render-chain
+method,d,g,<clinit>(),run,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+method,d,g,<init>(),createDarkCopy,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,a,textureName,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+method,d,g,a(),init,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,b,frameWidth,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,c,frameHeight,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,d,offsetX,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,e,offsetY,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,f,frameStrideX,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,g,frameStrideY,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,h,framesPerRow,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,i,texture,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,j,darkTexture,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,k,hasDarkCopy,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,l,staticSrcRect,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,d,g,m,staticDstRectF,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+method,d,h,<init>(java.lang.String, int),handle,unverifiable-rebuilt
+method,d,h,<clinit>(),run,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+field,d,h,a,obj0,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+method,d,h,a(com.corrodinggames.rts.gameFramework.d.h),getResult,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+field,d,h,b,obj0,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+field,d,h,c,obj0,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+field,d,h,d,obj0,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+field,d,h,e,obj0,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+field,d,h,f,objArray0,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+method,d,h,valueOf(java.lang.String),getResult,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+method,d,h,values(),getValue,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+method,com.corrodinggames.rts.game.units.d,d,<init>(boolean),BuildingPlaceholder(boolean),"仅构造函数缺失; 其余成员 supplement.csv 已全覆盖(body-verified-v1300/sig-backfill), 按四元组规则跳过; 构造器设置 cg=-90(初始朝向) 与 bT=false(不参与碰撞分组); javap 确认",verified
+method,com.corrodinggames.rts.game.units.d,k,,gete2,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置6),order-align-v19.111
+method,com.corrodinggames.rts.game.units.d,K,,getUnitType,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置3),order-align-v19.111
+method,com.corrodinggames.rts.game.units.d,cF,,getSelectionBounds,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置9),order-align-v19.111
+method,com.corrodinggames.rts.game.units.d,l,,isBuilding,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置18),order-align-v19.111
+method,com.corrodinggames.rts.game.units.d,bJ,,isUnderConstruction,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置22),order-align-v19.111
+method,com.corrodinggames.rts.game.units.d,s,,getWidth,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置24),order-align-v19.111
+method,com.corrodinggames.rts.game.units.d,db,,getfloat2,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置15),order-align-v19.111
+field,com.corrodinggames.rts.game.units.d,j,h,buildPosition,"field-order-zip-v19.114: 02b PointF h=- <-> 03 PointF buildPosition=- (位置7, BuilderUnit)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.units.d,j,n,buildTimer,"field-order-zip-v19.114: 02b double n=- <-> 03 double buildTimer=- (位置13, BuilderUnit)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.units.d,j,a,builderId,"field-order-zip-v19.114: 02b int a=- <-> 03 int builderId=- (位置0, BuilderUnit)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.units.d,j,f,isCurrentlyBuilding,"field-order-zip-v19.114: 02b boolean f=- <-> 03 boolean isCurrentlyBuilding=- (位置5, BuilderUnit)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.units.d,j,k,isAssisting,"field-order-zip-v19.114: 02b boolean k=- <-> 03 boolean isAssisting=- (位置10, BuilderUnit)",field-order-zip-v19.114
+field,com.corrodinggames.rts.game.units.d,j,m,buildProgress,"field-order-zip-v19.114: 02b float m=- <-> 03 float buildProgress=- (位置12, BuilderUnit)",field-order-zip-v19.114

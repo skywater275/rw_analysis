@@ -1,0 +1,42 @@
+# EditorConfig — 项目文件格式统一 (v19.133f98 结构整理配置)
+# 与 .gitattributes 配套: 存储 LF, 工作区文本 CRLF (Windows 生态)
+# 支持插件: VS Code (EditorConfig for VS Code) / IDEA / 各类编辑器
+
+root = true
+
+[*]
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+end_of_line = crlf
+
+# 行尾: 与 .gitattributes 的 *.sh eol=lf 配套
+[*.sh]
+end_of_line = lf
+
+# 二进制不处理
+[*.{jar,class,png,jpg,jpeg,gif,wav,ogg,mp3,jfr,zip,replay,dat}]
+charset = unset
+end_of_line = unset
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+# Python: 4 空格缩进 (PEP 8)
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Java: 4 空格缩进
+[*.java]
+indent_style = space
+indent_size = 4
+
+# Markdown/文本: 不强制缩进
+[*.md]
+indent_style = unset
+indent_size = unset
+
+# CSV: 不强制缩进
+[*.csv]
+indent_style = unset
+indent_size = unset

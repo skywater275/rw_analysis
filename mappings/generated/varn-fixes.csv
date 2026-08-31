@@ -1,0 +1,6 @@
+file,varN,new_name,rule,context,level
+com\corrodinggames\rts\game\PlayerState.java,var0,it,R4,迭代器 var0→it (line 2678),semantic-derived-v19.114
+com\corrodinggames\rts\gameFramework\Command.java,var21,it,R4,迭代器 var21→it (line 629),semantic-derived-v19.114
+com\corrodinggames\rts\gameFramework\network\NetEngine.java,var2,it,R4,迭代器 var2→it (line 5598),semantic-derived-v19.114
+com\corrodinggames\rts\gameFramework\network\NetEngine.java,var4,it,R4,迭代器 var4→it (line 5486),semantic-derived-v19.114
+com\corrodinggames\rts\gameFramework\network\NetEngine.java,var1,it,R4,迭代器 var1→it (line 5237),semantic-derived-v19.114

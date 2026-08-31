@@ -1,0 +1,18 @@
+name: 一致性检查
+
+# 轻量 CI: 映射数据/文档静态检查 (不依赖游戏 jar — RustedWarfare/ 不入库)
+on:
+  push:
+    branches: [old_deobfuscated, main]
+  pull_request:
+
+jobs:
+  consistency:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 映射与文档一致性
+        run: python tools/gates/ci_checks.py

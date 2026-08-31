@@ -1,0 +1,161 @@
+================================================================================
+FILE 1: w.java -> GameObject (entity base class, extends BaseGameObject)
+================================================================================
+
+--- Fields ---
+
+GameObject|field|eh|long|entityId|Unique entity identifier, assigned from ID generator on construction. Never 0 for live objects.
+GameObject|field|ei|static x (GameObjectComparator)|zComparator|Comparator for Z-order sorting of visible objects. Sorts by renderLayer, then depthIndex, then Y position.
+GameObject|field|ej|boolean|removed|Marked as removed/disposed. Set true in remove(), checked to skip removed objects.
+GameObject|field|ek|boolean|trackedInList|Whether the entity is tracked in the fast game-object list. Serialized to/from network streams.
+GameObject|field|el|boolean|drawCulled|Visibility cache flag set during draw culling. Used in drawGameWorld to track whether each entity was visible last frame.
+GameObject|field|em|int|renderLayer|Render layer/draw priority: 0=normal world, 10=top overlay layer. Primary sort key in GameObjectComparator.
+GameObject|field|en|int|depthIndex|Secondary sort order within a render layer. Higher values drawn on top. Used for projectile ordering (+1 from source unit).
+GameObject|field|eo|float|worldX|World X position in map coordinates.
+GameObject|field|ep|float|worldY|World Y position in map coordinates. Also used as tertiary sort key (Y-depth sorting).
+GameObject|field|eq|float|altitude|Height above ground / Z-coordinate. Used in damage calculations, projectile trajectories, and serialized in PositionedObject.
+
+--- Methods ---
+
+GameObject|method|S(int n)|void|setRenderLayer|Sets the render layer (em) for draw ordering.
+GameObject|method|a(as as2)|void|writeToStream|Serializes game state (ej, ek, em) to network/output stream.
+GameObject|method|a(k k2)|void|readFromStream|Deserializes game state (ej, ek, em) from network/input stream.
+GameObject|method|w(boolean bl)|constructor|GameObject|Creates GameObject. If !bl, assigns entityId from ID generator and registers in global lists.
+GameObject|method|w()|constructor|GameObject|No-arg constructor, delegates to GameObject(false) for live object registration.
+GameObject|method|a(float var1)|abstract void|update|Main per-frame update logic. Called during game tick for each entity.
+GameObject|method|a(float var1, boolean var2)|abstract void|draw|Main draw logic. Called with boolean flag for icon mode vs normal draw.
+GameObject|method|d(float var1)|abstract void|drawShadow|Draw shadow/underlay layer below the entity.
+GameObject|method|e(float var1)|abstract void|drawSelection|Draw selection highlight and special effects overlay.
+GameObject|method|p(float f2)|void|drawOverlay|Draw extra overlay effects. Default empty, overridden by subclasses.
+GameObject|method|c(float var1)|abstract boolean|isVisible|Visibility culling test. Returns false if entity is off-screen.
+GameObject|method|f(float var1)|abstract boolean|isClickable|Hit-test for selection/clicking. Returns false if entity cannot be selected.
+GameObject|method|a(l l2)|boolean|canBeInTeam|Check if entity can belong to given team/player object. Default returns true.
+GameObject|method|a()|void|remove|Remove entity from global tracking lists. Sets removed=true, unregisters from fastGameObjectList and gameObjectListForLogic.
+GameObject|method|a(long l2, Class clazz, boolean bl)|static w|getEntityById|Lookup entity by ID and class type. Returns null with warnings if not found.
+GameObject|method|a(long l2, boolean bl)|static am|getUnitById|Lookup UnitInstance by ID. Convenience wrapper for getEntityById with am.class.
+GameObject|method|b(long l2, boolean bl)|static y|getOrderableUnitById|Lookup OrderableUnit by ID. Convenience wrapper for getEntityById with y.class.
+GameObject|method|dK()|static o|getGameObjectList|Returns the internal game-object list (for-loop safe snapshot via DequeList.a()).
+GameObject|method|dL()|static void|cleanupAll|Cleans all game objects: clears the logic list and resets unit count.
+
+================================================================================
+FILE 2: i.java -> GameScreen (main game UI/screen controller, extends GameEngine)
+================================================================================
+
+--- Fields ---
+
+GameScreen|field|a|static String|cachedVersionString|Cached full version display string (built once by t(), cleared by s()).
+GameScreen|field|b|static boolean|isDebugBuild|Debug build flag. Set externally for debug mode checks.
+GameScreen|field|c|static boolean|isTestMode|Test/automation mode flag. Controls safe-mode overrides.
+GameScreen|field|d|int|allUnitsChecksum|Checksum of all loaded unit types computed during init.
+GameScreen|field|e|float|densityScaleMultiplier|Multiplier applied to screen density scale (default 1.0).
+GameScreen|field|f|static String|statusLineText|Extra status text rendered on-screen below FPS (initially null).
+GameScreen|field|g|k[6]|shaderPrograms|Array of post-processing shader program handles.
+GameScreen|field|h|String|engineInstanceId|Engine instance identifier string (appears unused).
+GameScreen|field|i|boolean|methodTracingActive|Whether Debug.startMethodTracing has been started.
+GameScreen|field|j|int|gameTickCounter|Game loop tick counter, incremented each update, reset at 1000.
+GameScreen|field|k|ConcurrentLinkedQueue|pendingRunnables|Queue of Runnable tasks to execute on the main game thread.
+GameScreen|field|l|Paint|textPaintWhite|White text Paint (created in init, used for general text).
+GameScreen|field|m|Paint|textPaintFps|White anti-aliased Paint for FPS display text (set ARGB 255,255,255,255).
+GameScreen|field|n|Paint|textPaintWhite2|Secondary white text Paint (set ARGB 255,255,255,255).
+GameScreen|field|o|Paint|textPaintRed|Red tint Paint (set ARGB 100,255,0,0) for status indicators.
+GameScreen|field|p|Paint|textPaintGreen|Green tint Paint (set ARGB 100,0,255,0) for status indicators.
+GameScreen|field|q|int|frameTimeAccumulator|Accumulated frame render time in ms (for FPS calculation).
+GameScreen|field|r|int|frameCountAccumulator|Frame counter accumulator for FPS calculation (reset at 40 frames).
+GameScreen|field|s|int|computedFps|Computed FPS value (frameCountAccum * 1000 / frameTimeAccumulator).
+GameScreen|field|t|float|frameTimeAvgMs|Average frame time in ms (frameTimeAccumulator / frameCountAccumulator).
+GameScreen|field|u|String|fpsDisplayString|FPS display string formatted as "Nfps" (e.g. "60fps").
+GameScreen|field|v|Rect|tempRect|Temporary Rect for general calculations.
+GameScreen|field|w|ArrayList|unknownList|List field (appears unused in current source, possibly for future use).
+GameScreen|field|x|Paint|paintOverlayBlack|Black semi-transparent Paint (color -1=white? alpha 100) for dark overlays.
+GameScreen|field|y|Paint|paintOverlayGray|Gray stroke Paint (color -7829368, alpha 240, style STROKE, width 1) for outlines.
+GameScreen|field|z|Paint|paintOverlayWhite|White translucent Paint (ARGB 50,255,255,255) for selection/highlight fills.
+GameScreen|field|A|Paint|sharedPaint|Public shared Paint instance for external use.
+GameScreen|field|B|bf|backdropHandler|Backdrop handler for background scenery behind the map.
+GameScreen|field|C|be|licenseManager|License/DRM manager (com.corrodinggames.rts.gameFramework.be).
+GameScreen|field|D|d.b|debugOverlay|Debug statistics overlay renderer.
+GameScreen|field|E|com.corrodinggames.rts.game.a|gameData|Game data object (map metadata, teams configuration).
+GameScreen|field|F|boolean|safeModeShown|Whether the safe-mode dialog has been shown (set true after frame 5).
+GameScreen|field|G|float|stepAccumulator|Accumulated delta time for network-step pacing logic.
+GameScreen|field|H|float|gameSpeedMultiplier|Game speed multiplier applied to delta time.
+GameScreen|field|I|float|deltaPlusTwo|Delta + 2.0f (used for JIT bug detection in updateAllGame).
+GameScreen|field|J|float|gameDelta|Current delta-time for game update (stored for JIT bug correction).
+GameScreen|field|K|j|shaderBase|Post-processing base shader (loaded from post_base.frag).
+GameScreen|field|L|j|shaderDisplacement|Post-processing displacement shader (loaded from post_displacement.frag).
+GameScreen|field|M|boolean|shadersFailed|Whether post-processing shader initialization failed.
+GameScreen|field|N|m.y|savedGraphicsLayer|Saved graphics instance when a shader layer is pushed onto the stack.
+GameScreen|field|O|m.e|waterCloudTexture|Water cloud reflection texture (loaded from water_cloud drawable).
+GameScreen|field|P|m.e|waterLayer1Texture|Water layer 1 texture (loaded from water_layer1 drawable).
+GameScreen|field|Q|m.e|waterLayer2Texture|Water layer 2 texture (loaded from water_layer2 drawable).
+GameScreen|field|R|float|waterScrollOffset|Water texture scroll offset, incremented each frame (wraps at 100).
+GameScreen|field|S|Rect|waterClipRect|Clipping rectangle for water rendering (derived from cK viewport).
+GameScreen|field|T|RectF|waterSourceRect|Source rectangle for water texture rendering (derived from cL map bounds).
+GameScreen|field|U|m.e|sharedTexture1|Public shared texture for external use.
+GameScreen|field|V|m.e|sharedTexture2|Public shared texture for external use.
+GameScreen|field|W|s (TypedObjectList)|visibleObjects|Sorted list of on-screen visible objects (sorted by zComparator).
+GameScreen|field|X|s (TypedObjectList)|visibleObjectsDirty|Dirty/working list for visible object recalculation (swapped with W when changed).
+GameScreen|field|Y|Matrix|transformMatrix|Matrix for coordinate transformations.
+GameScreen|field|Z|ArrayList|selectedUnitIds|List of selected unit IDs (public, for UI interaction).
+GameScreen|field|aa|ArrayList|clipboardUnitIds|List of copied/grouped unit IDs (public).
+GameScreen|field|ab|Timer|autoSaveTimer|Timer for triggering autosaves.
+GameScreen|field|ac|boolean|timerCancelled|Whether the autosave timer has been cancelled.
+GameScreen|field|ad|Object|activityLock|Lock object for synchronizing activity attachment.
+GameScreen|field|ae|int|menuMapLoadAttempts|Counter for background menu map load attempts (aborted after 20).
+GameScreen|field|af|am|cameraPrevUnit|Previous camera focus unit (for flyover transitions).
+GameScreen|field|ag|am|cameraNextUnit|Next camera focus unit target (for flyover transitions).
+GameScreen|field|ah|float|cameraTransitionLerp|Camera transition interpolation factor (0.0 to 1.0).
+GameScreen|field|ai|boolean|cameraTransitioning|Whether camera flyover transition is active.
+
+--- Methods ---
+
+GameScreen|method|i(Context context)|constructor|GameScreen|Constructor; passes context to parent GameEngine.
+GameScreen|method|a()|boolean|isGameRunning|Override: returns true if game is active (bS.u flag) or map loaded and running.
+GameScreen|method|a(boolean bl)|boolean|canUpdateFrame|Override: checks all conditions for whether the game frame can update (safe mode, network status, dialog state).
+GameScreen|method|b()|int|getFps|Override: returns the current computed FPS from field s.
+GameScreen|method|c()|boolean|isSafeModeExtra|Override: returns parent's eh flag (extra safe mode level 1).
+GameScreen|method|d()|boolean|isSafeModeExtraX2|Override: returns parent's ei flag (extra safe mode level 2).
+GameScreen|method|a(Context context)|void|initialize|Full game engine initialization: settings, audio, graphics, shaders, network, pathfinding, units, mods, map loading.
+GameScreen|method|a(int n2, int n3)|void|calcViewZoomDensity|Calculate default viewport zoom density from screen dimensions, clamped to [0.5, 3.0].
+GameScreen|method|e()|void|frameUpdate|Override: calls K() (parent update) then f() (reset state flags).
+GameScreen|method|f()|void|resetStateFlags|Resets all game state flags (black screen, pause, game over, etc.) to false.
+GameScreen|method|a(boolean bl, s s2)|void|startGame|Override: clears state and starts a game with option flags and load source.
+GameScreen|method|a(boolean bl2, boolean bl3, s s2)|void|startGameFull|Full game start: load map, create teams, place starting units, init subsystems, set up fog/world.
+GameScreen|method|aG()|private void|selectBuilderOnScreen|Find and select the first on-screen builder unit for the current player.
+GameScreen|method|g()|void|removeAllGameObjects|Override: removes all game objects from all tracking lists and clears visibleObjects.
+GameScreen|method|b(boolean bl2)|void|clearGameSession|Clear game session: stop replay, clear pathfinding, remove objects, reset state.
+GameScreen|method|a(float f2, int n2)|void|gameTick|Synchronized wrapper: calls b(f2, n2) inside aj lock.
+GameScreen|method|b(float f2, int n2)|void|gameTickImpl|Main game tick: process runnables, sync viewport, update network, step game logic, draw frame.
+GameScreen|method|h()|void|closeActivity|Closes the current in-game Android activity.
+GameScreen|method|a(float f2)|void|updateAllGame|Update all game objects and subsystems for one time step: update entities, physics, effects, minimap, collision.
+GameScreen|method|a(m.l l2, float f2)|void|drawFrame|Synchronized wrapper: calls b(l2, f2) inside ak lock.
+GameScreen|method|i()|boolean|setupPostProcessing|Load and compile post-processing shaders (base and displacement). Returns false on failure.
+GameScreen|method|a(j j2)|void|pushShaderLayer|Push a shader layer onto the graphics stack: saves current graphics instance and applies shader.
+GameScreen|method|b(j j2)|void|popShaderLayer|Pop shader layer: restore the previous graphics instance from saved layer.
+GameScreen|method|b(m.l l2, float f2)|void|drawFrameImpl|Draw the complete frame: clear canvas, draw game world via shaders or direct, draw UI, FPS, effects.
+GameScreen|method|j()|boolean|shouldShowUnitIcons|Check whether unit icons should be drawn (based on zoom level and settings).
+GameScreen|method|b(float f2)|void|drawMapBounds|Draw black fill for areas outside the map boundary.
+GameScreen|method|c(float f2)|void|drawFrameOverlay|Empty hook for custom frame overlay drawing (intended for subclasses).
+GameScreen|method|c(m.l l2, float f2)|void|drawGameWorld|Draw the game world: cull objects, sort visible list, render terrain, water, shadows, entities, effects.
+GameScreen|method|d(m.l l2, float f2)|void|drawUiOverlay|Draw the UI overlay: interface elements, minimap, debug info, look-mode indicator.
+GameScreen|method|k()|void|recalcViewport|Recalculate viewport dimensions, clipping rectangles, and camera position after resize or zoom.
+GameScreen|method|b(int n2, int n3)|void|onSizeChanged|Override: called when screen size changes, delegates to setScreenSize with 1.0 density.
+GameScreen|method|a(int n2, int n3, float f2)|void|setScreenSize|Set screen pixel dimensions and density scale, then recalculate viewport.
+GameScreen|method|l()|String|getPackageName|Override: returns the Android package name based on build variant.
+GameScreen|method|m()|String|getInstallerName|Override: returns the app installer package name (for store attribution).
+GameScreen|method|n()|boolean|isBetaVersion|Override: checks if version string contains "p" (pre-release indicator).
+GameScreen|method|c(boolean bl2)|int|getVersionCode|Override: returns version code (176 for server, otherwise from PackageInfo).
+GameScreen|method|o()|String|getSignatureHash|Get the APK signature hash (SHA of first signature, only on release build).
+GameScreen|method|p()|boolean|isRawDebug|Override: checks if running in raw/debug mode (bypassed for testing builds).
+GameScreen|method|q()|boolean|hasOrderableUnitClass|Check if the OrderableUnit class name resolves (obfuscation detection).
+GameScreen|method|r()|String|getVersionDisplay|Override: builds the full version display string with build type prefix.
+GameScreen|method|s()|void|clearVersionCache|Override: clears the cached version string so it's rebuilt next call.
+GameScreen|method|t()|String|getVersionString|Override: builds version string with "v" prefix and debug/raw/beta markers.
+GameScreen|method|u()|String|getRawVersion|Override: returns raw version string "1.15".
+GameScreen|method|v()|String|getDisplayVersion|Override: returns display version string "1.15".
+GameScreen|method|w()|synchronized void|stopAutoSaveTimer|Cancel the autosave timer and clear it.
+GameScreen|method|a(Activity activity, f f2, boolean bl2)|synchronized void|attachToActivity|Attach to an Android Activity: sets activity reference, view, and initializes menu map if needed.
+GameScreen|method|x()|synchronized void|loadMenuMap|Load a random background menu map from maps/menu_background/menu[1-3].tmx.
+GameScreen|method|d(float f2)|void|updateCameraFlyover|Update camera flyover animation for menu background: lerp between random units.
+GameScreen|method|a(n n2)|am|getRandomUnitForTeam|Get a random non-duplicate unit for a given team (used for camera focus).
+GameScreen|method|y()|am|getCameraFocusUnit|Get the primary camera focus unit (prefers current team, falls back to any).
+GameScreen|method|a(float f2, float f3, float f4, float f5)|boolean|panCameraTowards|Pan the camera towards (f3,f4) at speed f5*f2. Returns true when close enough or ct flag set.
+GameScreen|method|z()|int|getUnitsChecksum|Override: returns the all-units checksum from field d.

@@ -1,0 +1,68 @@
+# Binary / large files
+*.jar
+*.zip
+*.class
+*.png
+*.jpg
+*.wav
+*.mp3
+*.ogg
+*.ttf
+*.so
+*.dll
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Generated / temporary
+nul
+_generated/
+build-output/
+compile-errors.csv
+rename-audit.csv
+
+# Debug / scratch outputs (javac feedback, javac8 tests)
+javac_*.txt
+temp_test*.java
+temp_*.java
+temp_out/
+
+# Game install — kept on disk as reference (game-lib.jar is the compile target),
+# but runtime files are not versioned. *.jar is already ignored above.
+RustedWarfare/
+
+# Large data
+replays.zip
+game-lib.jar
+*.bak
+tools/stubs/
+_extract/
+tools/gates/stubs/
+javac-full.log
+
+# 动态测试隔离资产
+_quarantine*/
+
+# 调试缓存 (v19.132): javac 复现实验 + 运行时补丁类 (由 fix_android_innerclasses.py 重新生成)
+cache/
+
+# B3 反向构建产物 (game-lib-reverse.jar / reverse-src / reverse-classes)
+build/
+
+# 运行日志产物 (v19.133f98 整理: JFR 性能分析 + 动态测试 stdout/log 解除跟踪)
+docs/generated/runtime-logs/
+
+# 第三方 jar 解包参考 (v19.133f98 整理: 14.4MB 出库, 磁盘保留; 需用时从 RustedWarfare/libs/*.jar 重新解包)
+06-lib/
+
+# 构建产物
+build/
+build-output/
+Rusted Warfare/

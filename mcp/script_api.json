@@ -1,0 +1,1436 @@
+{
+ "debug": {
+  "currentPid": [
+   "int",
+   []
+  ],
+  "setLocalPlayerName": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "setDdosProtection": [
+   "void",
+   [
+    "boolean"
+   ]
+  ],
+  "lookAt": [
+   "void",
+   [
+    "float",
+    "float"
+   ]
+  ],
+  "createManyUnits": [
+   "void",
+   [
+    "String",
+    "float",
+    "float",
+    "int",
+    "boolean",
+    "int"
+   ]
+  ],
+  "createUnit": [
+   "Long",
+   [
+    "String",
+    "float",
+    "float",
+    "int",
+    "boolean"
+   ]
+  ],
+  "getMaxCustomUnitTypeId": [
+   "int",
+   []
+  ],
+  "createCustomUnitFromTypeId": [
+   "Long",
+   [
+    "int",
+    "float",
+    "float",
+    "int",
+    "boolean"
+   ]
+  ],
+  "enableFeatures": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "selectNextUnit": [
+   "void",
+   []
+  ],
+  "removeAllUnits": [
+   "void",
+   []
+  ],
+  "killAllUnits": [
+   "void",
+   []
+  ],
+  "backgroundCurrentClientConnection": [
+   "boolean",
+   []
+  ],
+  "isTeamWipedOut": [
+   "boolean",
+   [
+    "int"
+   ]
+  ],
+  "isTeamDefeated": [
+   "boolean",
+   [
+    "int"
+   ]
+  ],
+  "isTeamInVictory": [
+   "boolean",
+   [
+    "int"
+   ]
+  ],
+  "getPlayerName": [
+   "String",
+   [
+    "int"
+   ]
+  ],
+  "getQueryStringOfPlayer": [
+   "String",
+   [
+    "int"
+   ]
+  ],
+  "setTeamCredits": [
+   "boolean",
+   [
+    "int",
+    "int"
+   ]
+  ],
+  "setTeamAllyGroup": [
+   "boolean",
+   [
+    "int",
+    "int"
+   ]
+  ],
+  "giveUpgradeToAllUnits": [
+   "void",
+   []
+  ],
+  "giveAllActionsToAllUnits": [
+   "void",
+   []
+  ],
+  "completeAllUnitsQueues": [
+   "void",
+   []
+  ],
+  "moveAllUnitsOnTeam": [
+   "boolean",
+   [
+    "int",
+    "float",
+    "float"
+   ]
+  ],
+  "showMessage": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "unicodeTest1": [
+   "String",
+   []
+  ],
+  "setZoom": [
+   "void",
+   [
+    "float"
+   ]
+  ],
+  "isNetworkGameActive": [
+   "boolean",
+   []
+  ],
+  "getLocalPlayerId": [
+   "int",
+   []
+  ],
+  "numberOfHumanPlayers": [
+   "int",
+   []
+  ],
+  "numberOfPlayersPlusAI": [
+   "int",
+   []
+  ],
+  "numberOfPlayerConnections": [
+   "int",
+   []
+  ],
+  "enableFastSync": [
+   "boolean",
+   []
+  ],
+  "enableExtraNetworkDebug": [
+   "boolean",
+   []
+  ],
+  "throwIfAnyPlayerNotInSync": [
+   "boolean",
+   []
+  ],
+  "enableFastResyncTimer": [
+   "boolean",
+   []
+  ],
+  "enablePauseOnDesync": [
+   "boolean",
+   []
+  ],
+  "networkSetIncomeMultiplier": [
+   "boolean",
+   [
+    "float"
+   ]
+  ],
+  "networkSetPortNumber": [
+   "boolean",
+   [
+    "int"
+   ]
+  ],
+  "networkSetUdp": [
+   "boolean",
+   [
+    "boolean"
+   ]
+  ],
+  "networkDisconnect": [
+   "boolean",
+   []
+  ],
+  "networkAbort": [
+   "boolean",
+   []
+  ],
+  "disableNetworkOwnInfo": [
+   "boolean",
+   []
+  ],
+  "networkPause": [
+   "boolean",
+   []
+  ],
+  "plainTextDebugSave": [
+   "boolean",
+   [
+    "boolean"
+   ]
+  ],
+  "checkDesync": [
+   "boolean",
+   [
+    "int"
+   ]
+  ],
+  "getNumberOfDesyncErrors": [
+   "int",
+   []
+  ],
+  "getNumberOfDesyncPasses": [
+   "int",
+   []
+  ],
+  "getNumberOfResyncSendsOrRecv": [
+   "int",
+   []
+  ],
+  "setMultiplayerMap": [
+   "boolean",
+   [
+    "int",
+    "String"
+   ]
+  ],
+  "setMultiplayerSave": [
+   "boolean",
+   [
+    "String"
+   ]
+  ],
+  "generateNewClientId": [
+   "void",
+   []
+  ],
+  "disableFog": [
+   "void",
+   []
+  ],
+  "overrideDeltaSpeed": [
+   "void",
+   [
+    "float"
+   ]
+  ],
+  "setGameSetting": [
+   "void",
+   [
+    "String",
+    "String"
+   ]
+  ],
+  "setNetworkaiDifficulty": [
+   "void",
+   [
+    "int"
+   ]
+  ],
+  "setNetworkStartingUnits": [
+   "void",
+   [
+    "int"
+   ]
+  ],
+  "startRandomUnitDesyncTest": [
+   "void",
+   []
+  ],
+  "startRandomUnitStressTest": [
+   "void",
+   []
+  ],
+  "runAllUnitTests": [
+   "void",
+   []
+  ],
+  "runAllLeakTests": [
+   "void",
+   []
+  ],
+  "loadSaveFromSystemPath": [
+   "boolean",
+   [
+    "String"
+   ]
+  ],
+  "checkTeamCaches": [
+   "void",
+   []
+  ],
+  "setPathSpeedConf": [
+   "void",
+   [
+    "boolean"
+   ]
+  ],
+  "getPathSpeed": [
+   "float",
+   [
+    "int",
+    "float",
+    "float",
+    "float",
+    "float"
+   ]
+  ],
+  "muteSounds": [
+   "void",
+   []
+  ],
+  "pong": [
+   "void",
+   []
+  ]
+ },
+ "root": {
+  "logDebug": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "logWarn": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "back": [
+   "void",
+   []
+  ],
+  "backOrClose": [
+   "void",
+   []
+  ],
+  "fullVersionOnlyStyle": [
+   "String",
+   []
+  ],
+  "openIfNotDemo": [
+   "void",
+   [
+    "String",
+    "Object",
+    "String"
+   ]
+  ],
+  "getVersionName": [
+   "String",
+   []
+  ],
+  "delayedOpenNoHistory": [
+   "void",
+   [
+    "String",
+    "Object"
+   ]
+  ],
+  "openAfterHelpPopup": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "open": [
+   "void",
+   [
+    "String",
+    "Object"
+   ]
+  ],
+  "onShowNewScreen": [
+   "void",
+   []
+  ],
+  "resume": [
+   "void",
+   []
+  ],
+  "resumeNonMenu": [
+   "void",
+   []
+  ],
+  "startNew": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "showRangeValue": [
+   "void",
+   [
+    "String",
+    "String",
+    "boolean"
+   ]
+  ],
+  "getValueById": [
+   "String",
+   [
+    "String"
+   ]
+  ],
+  "setValueById": [
+   "void",
+   [
+    "String",
+    "String"
+   ]
+  ],
+  "getElementById": [
+   "Element",
+   [
+    "String"
+   ]
+  ],
+  "clickElement": [
+   "boolean",
+   [
+    "Element"
+   ]
+  ],
+  "directJoinPopup": [
+   "void",
+   []
+  ],
+  "joinServerFromPopup": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "joinServerWithId": [
+   "void",
+   [
+    "String",
+    "String"
+   ]
+  ],
+  "joinServer": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "joinServerCallback": [
+   "void",
+   []
+  ],
+  "cancelJoinServer": [
+   "void",
+   []
+  ],
+  "alert": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "showAlert": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "showPopupWithButtons": [
+   "void",
+   [
+    "String",
+    "String",
+    "boolean",
+    "e",
+    "e"
+   ]
+  ],
+  "showPopupWithButtonsAndInput": [
+   "void",
+   [
+    "String",
+    "String",
+    "boolean",
+    "String",
+    "e",
+    "e"
+   ]
+  ],
+  "showPopup": [
+   "void",
+   [
+    "String",
+    "String",
+    "boolean",
+    "String",
+    "String"
+   ]
+  ],
+  "showInputPopup": [
+   "void",
+   [
+    "String",
+    "String",
+    "String",
+    "String",
+    "String"
+   ]
+  ],
+  "showInputPopupNonClose": [
+   "void",
+   [
+    "String",
+    "String",
+    "String",
+    "String",
+    "String"
+   ]
+  ],
+  "getPopup": [
+   "ElementDocument",
+   []
+  ],
+  "getAlertOrPopup": [
+   "ElementDocument",
+   []
+  ],
+  "closePopup": [
+   "boolean",
+   []
+  ],
+  "closePopupOnly": [
+   "boolean",
+   []
+  ],
+  "closeAlertOnly": [
+   "boolean",
+   []
+  ],
+  "getPopupText": [
+   "String",
+   []
+  ],
+  "showHostOptions": [
+   "void",
+   []
+  ],
+  "hostStartFromPopup": [
+   "void",
+   [
+    "boolean"
+   ]
+  ],
+  "hostStart": [
+   "void",
+   [
+    "boolean"
+   ]
+  ],
+  "hostStartWithPassword": [
+   "void",
+   [
+    "boolean",
+    "String"
+   ]
+  ],
+  "hostStartWithPasswordAndMods": [
+   "void",
+   [
+    "boolean",
+    "String",
+    "boolean"
+   ]
+  ],
+  "exit": [
+   "void",
+   []
+  ],
+  "getMapDetails": [
+   "String",
+   [
+    "String"
+   ]
+  ],
+  "getHTMLMapNameFromPath": [
+   "String",
+   [
+    "String"
+   ]
+  ],
+  "getMapNameFromPath": [
+   "String",
+   [
+    "String"
+   ]
+  ],
+  "convertMapName": [
+   "String",
+   [
+    "String"
+   ]
+  ],
+  "convertMapNameWithoutTranslation": [
+   "String",
+   [
+    "String"
+   ]
+  ],
+  "getHTMLMapThumbnail": [
+   "String",
+   [
+    "String"
+   ]
+  ],
+  "getMapThumbnail": [
+   "String",
+   [
+    "String"
+   ]
+  ],
+  "isMapSkirmish": [
+   "boolean",
+   [
+    "String"
+   ]
+  ],
+  "showLevelOptions": [
+   "void",
+   []
+  ],
+  "loadConfigAndStartSwitchToAdvanced": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "loadConfigAndStartNewSandbox": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "loadConfigAndStartNewSandboxInAdvanced": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "loadConfigAndStartNew": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "loadConfigCommon": [
+   "void",
+   [
+    "String",
+    "boolean"
+   ]
+  ],
+  "showMapPopup": [
+   "void",
+   [
+    "String",
+    "String"
+   ]
+  ],
+  "refreshAfterFileImport": [
+   "void",
+   []
+  ],
+  "showMaps": [
+   "boolean",
+   []
+  ],
+  "showMapsWithDoc": [
+   "boolean",
+   [
+    "ElementDocument"
+   ]
+  ],
+  "convertTextOnPage": [
+   "void",
+   []
+  ],
+  "keyBindingPopup_apply": [
+   "void",
+   [
+    "boolean"
+   ]
+  ],
+  "keyBindingPopup_onKeydown": [
+   "void",
+   [
+    "int"
+   ]
+  ],
+  "showKeyBindingPopup": [
+   "void",
+   []
+  ],
+  "getKeyBindingAction": [
+   "String",
+   [
+    "int",
+    "ad",
+    "int"
+   ]
+  ],
+  "backWarnIfOverlappingKeyBinding": [
+   "void",
+   []
+  ],
+  "showKeyBinding": [
+   "void",
+   []
+  ],
+  "loadSettings": [
+   "void",
+   []
+  ],
+  "loadLeaderboard": [
+   "void",
+   []
+  ],
+  "saveLeaderboard": [
+   "void",
+   []
+  ],
+  "applyResolution": [
+   "void",
+   []
+  ],
+  "updateRenderScaleInSettings": [
+   "void",
+   [
+    "boolean"
+   ]
+  ],
+  "closeSettings": [
+   "void",
+   []
+  ],
+  "saveSettings": [
+   "void",
+   []
+  ],
+  "hideStyle": [
+   "String",
+   [
+    "boolean"
+   ]
+  ],
+  "hideIf": [
+   "String",
+   [
+    "boolean"
+   ]
+  ],
+  "hideUnless": [
+   "String",
+   [
+    "boolean"
+   ]
+  ],
+  "hideClass": [
+   "String",
+   [
+    "boolean"
+   ]
+  ],
+  "hideIfMobile": [
+   "String",
+   []
+  ],
+  "canResume": [
+   "boolean",
+   []
+  ],
+  "isMobile": [
+   "boolean",
+   []
+  ],
+  "isIOS": [
+   "boolean",
+   []
+  ],
+  "isDesktop": [
+   "boolean",
+   []
+  ],
+  "isMac": [
+   "boolean",
+   []
+  ],
+  "hasModSupport": [
+   "boolean",
+   []
+  ],
+  "usingMods": [
+   "boolean",
+   []
+  ],
+  "hasWorkshopSupport": [
+   "boolean",
+   []
+  ],
+  "hasReloadSupport": [
+   "boolean",
+   []
+  ],
+  "checkServerListScroll": [
+   "void",
+   []
+  ],
+  "refreshServerList": [
+   "void",
+   []
+  ],
+  "displayServerList": [
+   "void",
+   []
+  ],
+  "refreshServerListRaw": [
+   "void",
+   [
+    "String",
+    "String",
+    "String"
+   ]
+  ],
+  "displayServerListRaw": [
+   "void",
+   [
+    "String",
+    "String",
+    "String"
+   ]
+  ],
+  "clickedServerRow": [
+   "void",
+   [
+    "int"
+   ]
+  ],
+  "clickedServer": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "hideKeyboard": [
+   "void",
+   []
+  ],
+  "saveGame": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "exportMap": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "loadGame": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "loadGameEdit": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "loadReplay": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "loadReplayEdit": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "makeSaveGamePopup": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "makeExportMapGamePopup": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "makeSendMessagePopup": [
+   "void",
+   []
+  ],
+  "makeSendTeamMessagePopup": [
+   "void",
+   []
+  ],
+  "makeSendTeamMessagePopupWithDefaultText": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "sendChatMessage": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "sendTeamChatMessageAndPing": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "sendTeamChatMessage": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "receiveChatMessage": [
+   "void",
+   [
+    "int",
+    "String",
+    "String",
+    "com.corrodinggames.rts.gameFramework.j.c"
+   ]
+  ],
+  "refreshChat": [
+   "void",
+   []
+  ],
+  "trace": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "updateTableTextOnly": [
+   "void",
+   [
+    "String",
+    "Root$TableData",
+    "Root$TableData"
+   ]
+  ],
+  "refreshTable": [
+   "void",
+   [
+    "String",
+    "Root$TableData"
+   ]
+  ],
+  "createAndShowPopup": [
+   "ElementDocument",
+   [
+    "String",
+    "Object",
+    "String"
+   ]
+  ],
+  "createPopupHidden": [
+   "ElementDocument",
+   [
+    "String",
+    "Object",
+    "String"
+   ]
+  ],
+  "tryToShowPopupDocument": [
+   "boolean",
+   [
+    "ElementDocument"
+   ]
+  ],
+  "showMainMenu": [
+   "void",
+   []
+  ],
+  "onEnter": [
+   "void",
+   []
+  ],
+  "scrollFromFocusedElement": [
+   "void",
+   [
+    "float"
+   ]
+  ],
+  "isSliderOrUIElementSelected": [
+   "boolean",
+   []
+  ],
+  "onTouch": [
+   "void",
+   []
+  ],
+  "onEscape": [
+   "void",
+   []
+  ],
+  "askQuitGame": [
+   "void",
+   []
+  ],
+  "getCurrentDocumentPath": [
+   "String",
+   []
+  ],
+  "getCurrentPopupPath": [
+   "String",
+   []
+  ],
+  "getCreditsText": [
+   "String",
+   []
+  ],
+  "runRunnable": [
+   "void",
+   [
+    "Runnable"
+   ]
+  ],
+  "isLinux": [
+   "boolean",
+   []
+  ],
+  "not": [
+   "boolean",
+   [
+    "boolean"
+   ]
+  ],
+  "and": [
+   "boolean",
+   [
+    "boolean",
+    "boolean"
+   ]
+  ],
+  "or": [
+   "boolean",
+   [
+    "boolean",
+    "boolean"
+   ]
+  ],
+  "showBattleroom": [
+   "void",
+   []
+  ],
+  "setDocument": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "playNextMusicTrack": [
+   "void",
+   []
+  ],
+  "toggleMusic": [
+   "void",
+   []
+  ],
+  "updateMusicButton": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "setSandboxMapFromPopup": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "showSandboxMapSelectOnChange": [
+   "void",
+   []
+  ],
+  "showSandboxMapSelect": [
+   "void",
+   []
+  ],
+  "getModeMapPath": [
+   "String",
+   [
+    "Element",
+    "String"
+   ]
+  ],
+  "event_unicodeEntered": [
+   "void",
+   []
+  ],
+  "isVersionBeta": [
+   "boolean",
+   []
+  ],
+  "ifCondition": [
+   "Object",
+   [
+    "boolean",
+    "Object",
+    "Object"
+   ]
+  ],
+  "i": [
+   "String",
+   [
+    "String"
+   ]
+  ],
+  "openLinkToCG": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "openWhitelistedLink": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "writeGameLog": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "exportGameLog": [
+   "void",
+   []
+  ],
+  "setPageMinWidthAndHeight": [
+   "void",
+   [
+    "float",
+    "float"
+   ]
+  ],
+  "importFilePopup": [
+   "void",
+   []
+  ],
+  "onFrameUpdate": [
+   "void",
+   [
+    "float"
+   ]
+  ]
+ },
+ "mods": {
+  "openWorkshop": [
+   "void",
+   []
+  ],
+  "uploadModAsk": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "uploadMod": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "viewMod": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "deleteModPopup": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "deleteMod": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "setModFilter": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "applyModFilter": [
+   "void",
+   []
+  ],
+  "updateMods": [
+   "void",
+   []
+  ],
+  "refreshModList": [
+   "void",
+   []
+  ],
+  "loadMods": [
+   "void",
+   []
+  ],
+  "saveMods": [
+   "void",
+   []
+  ],
+  "disableAllAsk": [
+   "void",
+   []
+  ],
+  "disableAll": [
+   "void",
+   []
+  ],
+  "reloadModDataAsk": [
+   "void",
+   []
+  ],
+  "reloadModData": [
+   "void",
+   []
+  ]
+ },
+ "multiplayer": {
+  "multiplayerStart": [
+   "void",
+   []
+  ],
+  "battleroomSetup": [
+   "void",
+   []
+  ],
+  "refreshUI": [
+   "void",
+   []
+  ],
+  "refreshPlayerTable": [
+   "void",
+   []
+  ],
+  "showSetTeamsDialog": [
+   "void",
+   []
+  ],
+  "showPlayerConfigForSelf": [
+   "void",
+   []
+  ],
+  "showPlayerConfig": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "showPlayerConfigNow": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "teamsSet_apply": [
+   "void",
+   []
+  ],
+  "playerConfig_kick": [
+   "void",
+   []
+  ],
+  "playerConfig_apply": [
+   "void",
+   []
+  ],
+  "disconnect": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "multiplayerBackPrompt": [
+   "void",
+   []
+  ],
+  "surrenderPrompt": [
+   "void",
+   []
+  ],
+  "surrender": [
+   "void",
+   []
+  ],
+  "multiplayerExitPrompt": [
+   "void",
+   []
+  ],
+  "sendReturnToBattleroomEvent": [
+   "void",
+   []
+  ],
+  "addAI": [
+   "void",
+   []
+  ],
+  "loadUsername": [
+   "void",
+   []
+  ],
+  "getUsernameFromInterface": [
+   "void",
+   []
+  ],
+  "gameOptionsGet": [
+   "void",
+   []
+  ],
+  "gameOptionsPush": [
+   "void",
+   []
+  ],
+  "gameOptionsRefreshTypes": [
+   "void",
+   []
+  ],
+  "gameOptionsGetOrPush": [
+   "void",
+   [
+    "boolean"
+   ]
+  ],
+  "closeBattleroomIfOpen": [
+   "void",
+   []
+  ],
+  "reinviteAsk": [
+   "void",
+   []
+  ],
+  "showSteamInviteDialog": [
+   "void",
+   []
+  ],
+  "setMapFromPopup": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "showMapSelect": [
+   "void",
+   []
+  ],
+  "isInControlOfServer": [
+   "boolean",
+   []
+  ],
+  "askPassword": [
+   "void",
+   []
+  ],
+  "askPasswordEntered": [
+   "void",
+   [
+    "String"
+   ]
+  ],
+  "cancelPaswordAsk": [
+   "void",
+   []
+  ]
+ }
+}

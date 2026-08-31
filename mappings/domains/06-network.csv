@@ -1,0 +1,833 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,a.a,ReliableServerSocket,a,udpSocket,Listening UDP DatagramSocket,unverifiable-rebuilt
+field,a.a,ReliableServerSocket,b,profile,Connection profile (ReliableProfile),unverifiable-rebuilt
+field,a.a,ReliableServerSocket,c,localPort,Local port number (int),unverifiable-rebuilt
+field,a.a,ReliableServerSocket,d,acceptQueue,Pending accept connections queue,verified-exists
+field,a.a,ReliableServerSocket,e,bound,Bound to port flag (boolean),verified-exists
+field,a.a,ReliableServerSocket,f,closed,Server socket closed flag (boolean),verified-exists
+field,a.a,ReliableServerSocket,g,acceptThread,Accept thread reference (Thread),verified-exists
+field,a.a,ReliableServerSocket,h,acceptLock,Accept synchronization lock (Object),verified-exists
+field,a.a,ReliableServerSocket,i,backlog,Connection backlog size (int),verified-exists
+field,a.a,ReliableSocket,A,maxRetransmissions,Max retransmission count (private int),verified-exists
+field,a.a,ReliableSocket,B,maxCumulativeAcks,Max cumulative ACK count (private int),verified-exists
+field,a.a,ReliableSocket,C,receiveQueueCapacity,Receive queue capacity (private int),verified-exists
+field,a.a,ReliableSocket,D,sendQueueCapacity,Send queue capacity (private int),verified-exists
+field,a.a,ReliableSocket,E,nullSegmentTimer,Null segment keep-alive timer (private i),verified-exists
+field,a.a,ReliableSocket,F,retransmissionTimer,Retransmission timer (private i),verified-exists
+field,a.a,ReliableSocket,G,cumulativeAckTimer,Cumulative ACK timer (private i),verified-exists
+field,a.a,ReliableSocket,H,keepAliveTimer,Connection keep-alive timer (private i),verified-exists
+field,a.a,ReliableSocket,I,globalDebugFlag,Global RUDP debug flag (static final boolean),verified-exists
+field,a.a,ReliableSocket,a,receiveBuffer,Single-byte receive buffer (private byte[]),verified-exists
+field,a.a,ReliableSocket,b,connected,Connection established flag (private boolean),verified-exists
+field,a.a,ReliableSocket,c,udpSocket,DatagramSocket for UDP I/O (protected),verified-exists
+field,a.a,ReliableSocket,d,remoteAddress,Remote socket address (protected SocketAddress),verified-exists
+field,a.a,ReliableSocket,e,inputStream,ReliableInputStream for reading (protected o),verified-exists
+field,a.a,ReliableSocket,f,outputStream,ReliableOutputStream for writing (protected q),verified-exists
+field,a.a,ReliableSocket,g,profile,Connection profile/config (protected r=ReliableProfile),verified-exists
+field,a.a,ReliableSocket,h,debugEnabled,Debug logging enabled (public boolean),verified-exists
+field,a.a,ReliableSocket,i,inputShutdown,Input stream shutdown flag (private boolean),verified-exists
+field,a.a,ReliableSocket,j,outputShutdown,Output stream shutdown flag (private boolean),verified-exists
+field,a.a,ReliableSocket,k,autoStart,Auto-start connection on creation (private boolean),verified-exists
+field,a.a,ReliableSocket,l,receiveWindowSize,Receive window size in segments (private int),verified-exists
+field,a.a,ReliableSocket,m,sendWindowSize,Send window size in segments (private int),verified-exists
+field,a.a,ReliableSocket,n,closed,Socket closed flag (private boolean),verified-exists
+field,a.a,ReliableSocket,o,closing,Socket closing in progress flag (private boolean),verified-exists
+field,a.a,ReliableSocket,p,soTimeout,Socket timeout ms (private int  -1=infinite),verified-exists
+field,a.a,ReliableSocket,q,receiveLock,Receive synchronization lock (private Object),verified-exists
+field,a.a,ReliableSocket,r,sendLock,Send synchronization lock (private Object),verified-exists
+field,a.a,ReliableSocket,s,pendingConnections,Pending connection list (private ArrayList),verified-exists
+field,a.a,ReliableSocket,t,activeConnections,Active connection list (private ArrayList),verified-exists
+field,a.a,ReliableSocket,u,receiveQueue,Received segments queue (private ArrayList),verified-exists
+field,a.a,ReliableSocket,v,sendQueue,Outgoing segments queue (private ArrayList),verified-exists
+field,a.a,ReliableSocket,w,eventListeners,Connection event listeners (private ArrayList),verified-exists
+field,a.a,ReliableSocket,x,stateLock,State change synchronization lock (private Object),verified-exists
+field,a.a,ReliableSocket,y,taskRunner,Timed task/scheduler runner (private i),verified-exists
+field,a.a,ReliableSocket,z,receiverThread,Background receiver thread (private Thread),verified-exists
+field,a.a,SocketStats,a,bytesSent,Total bytes sent (long),verified-exists
+field,a.a,SocketStats,b,bytesReceived,Total bytes received (long),verified-exists
+field,a.a,SocketStats,c,packetsSent,Total packets sent (int),verified-exists
+field,a.a,SocketStats,d,packetsReceived,Total packets received (int),verified-exists
+field,a.a,SocketStats,e,packetsLost,Total packets lost (int),verified-exists
+field,a.a,o,a,socket,Parent ReliableSocket reference,verified-exists
+field,a.a,o,b,receiveBuffer,Receive data buffer (byte[]),verified-exists
+field,a.a,o,c,bufferPosition,Buffer read position (int),verified-exists
+field,a.a,o,d,bufferSize,Buffer valid data size (int),verified-exists
+field,a.a,q,a,socket,Parent ReliableSocket reference,verified-exists
+field,a.a,q,b,sendBuffer,Send data buffer (byte[]),verified-exists
+field,a.a,q,c,bufferPosition,Buffer write position (int),verified-exists
+field,a.a,r,a,maxSegmentSize,Maximum segment size (int),verified-exists
+field,a.a,r,b,maxRetransmissions,Max retransmissions per segment (int),verified-exists
+field,a.a,r,c,maxCumulativeAcks,Max cumulative ACKs (int),verified-exists
+field,a.a,r,d,retransmissionTimeout,Base retransmission timeout ms (int),verified-exists
+field,a.a,r,e,cumulativeAckTimeout,Cumulative ACK timeout ms (int),verified-exists
+field,a.a,r,f,nullSegmentTimeout,Null segment/keepalive timeout ms (int),verified-exists
+field,a.a,r,g,maxResetAttempts,Max connection reset attempts (int),verified-exists
+field,a.a,r,h,connectTimeout,Connection timeout ms (int),verified-exists
+field,a.a,r,i,connectionBufferSize,Connection buffer size (int),verified-exists
+field,a.a,r,j,segmentReceiveTimeout,Segment receive timeout ms (int),verified-exists
+field,a.a,r,k,windowSize,Flight/flow-control window size (int),verified-exists
+field,a.a,r,l,checksumEnabled,Checksum validation enabled (boolean),verified-exists
+method,a.a.a,i,a,get_a,"""[Phase3-method] returns boolean""",verified-exists
+method,a.a.a,i,aG,do_aG,"""[Phase3-method] returns void""",suspicious-bc-missing
+method,a.a.a,i,b,get_b,"""[Phase3-method] returns int""",verified-exists
+method,a.a.a,i,c,isEnabled,[EXTERNAL: ReliableUDP library (KryoNet)],platform-or-external
+method,a.a.a,i,d,reset,[EXTERNAL: ReliableUDP library (KryoNet)],platform-or-external
+method,a.a.a,i,e,reset,[EXTERNAL: ReliableUDP library (KryoNet)],platform-or-external
+method,a.a.a,i,f,reset,[EXTERNAL: ReliableUDP library (KryoNet)],platform-or-external
+field,a.a.a,i,g,isCancelled,Cancelled before execution (private boolean),verified-exists
+field,a.a.a,i,h,isDaemon,Run as daemon thread (private boolean),verified-exists
+field,a.a.a,i,i,hasExecuted,Has executed at least once (private boolean),verified-exists
+field,a.a.a,i,j,waitLock,Wait/notify lock object (private Object),verified-exists
+field,a.a.a.g,a,sequenceNumber,Initial sequence number (int),a: field sequenceNumber -> Initial sequence number (int),unverifiable-rebuilt
+field,a.a.a.g,b,ackNumber,Acknowledgment number (int),b: field ackNumber -> Acknowledgment number (int),unverifiable-rebuilt
+field,a.a.a.g,c,windowSize,Advertised window size (int),c: field windowSize -> Advertised window size (int),unverifiable-rebuilt
+field,a.a.a.g,d,maxSegmentSize,Max segment size option (int),d: field maxSegmentSize -> Max segment size option (int),unverifiable-rebuilt
+field,a.a.a.g,e,maxRetransmissions,Max retransmissions option (int),e: field maxRetransmissions -> Max retransmissions option (int),unverifiable-rebuilt
+field,a.a.a.g,f,A,field_A,"P3.1-inferred: type=boolean, was=flag0",p3-auto-inferred
+field,a.a.a.g,f,B,field_B,"P3.1-inferred: type=boolean, was=flag1",p3-auto-inferred
+field,a.a.a.g,f,C,field_C,"P3.1-inferred: type=boolean, was=flag2",p3-auto-inferred
+field,a.a.a.g,f,D,field_D,"P3.1-inferred: type=boolean, was=flag3",p3-auto-inferred
+field,a.a.a.g,f,E,field_E,"P3.1-inferred: type=boolean, was=flag4",p3-auto-inferred
+field,a.a.a.g,f,F,field_F,"P3.1-inferred: type=float, was=value5",p3-auto-inferred
+field,a.a.a.g,f,G,field_G,"P3.1-inferred: type=boolean, was=flag6",p3-auto-inferred
+field,a.a.a.g,f,H,field_H,"P3.1-inferred: type=float, was=value7",p3-auto-inferred
+field,a.a.a.g,f,I,field_I,"P3.1-inferred: type=float, was=value8",p3-auto-inferred
+field,a.a.a.g,f,J,field_J,"P3.1-inferred: type=float, was=value9",p3-auto-inferred
+field,a.a.a.g,f,K,field_K,"P3.1-inferred: type=float, was=value10",p3-auto-inferred
+field,a.a.a.g,f,L,field_L,"P3.1-inferred: type=float, was=value11",p3-auto-inferred
+field,a.a.a.g,f,M,field_M,"P3.1-inferred: type=boolean, was=flag12",p3-auto-inferred
+field,a.a.a.g,f,N,field_N,"P3.1-inferred: type=float, was=value13",p3-auto-inferred
+field,a.a.a.g,f,O,floatArray14,[Phase3-inferred] type=float[],unverifiable-rebuilt
+field,a.a.a.g,f,P,short15,[Phase3-inferred] type=short,unverifiable-rebuilt
+field,a.a.a.g,f,Q,short16,[Phase3-inferred] type=short,unverifiable-rebuilt
+field,a.a.a.g,f,R,short17,[Phase3-inferred] type=short,unverifiable-rebuilt
+field,a.a.a.g,f,S,field_S,"P3.1-inferred: type=boolean, was=flag18",p3-auto-inferred
+field,a.a.a.g,f,T,field_T,"P3.1-inferred: type=boolean, was=flag19",p3-auto-inferred
+field,a.a.a.g,f,maxCumulativeAcks,Max cumulative ACKs option (int),f: field maxCumulativeAcks -> Max cumulative ACKs option (int),unverifiable-rebuilt
+field,a.a.a.g,g,A,field_A,"P3.1-inferred: type=boolean, was=flag0",p3-auto-inferred
+field,a.a.a.g,g,B,field_B,"P3.1-inferred: type=com.corrodinggames.rts.gameFramework.m.e, was=e1",p3-auto-inferred
+field,a.a.a.g,g,C,field_C,"P3.1-inferred: type=com.corrodinggames.rts.gameFramework.m.e, was=e2",p3-auto-inferred
+field,a.a.a.g,g,D,field_D,"P3.1-inferred: type=float, was=value3",p3-auto-inferred
+field,a.a.a.g,g,E,field_E,"P3.1-inferred: type=float, was=value4",p3-auto-inferred
+field,a.a.a.g,g,F,field_F,"P3.1-inferred: type=float, was=value5",p3-auto-inferred
+field,a.a.a.g,g,G,field_G,"P3.1-inferred: type=float, was=value6",p3-auto-inferred
+field,a.a.a.g,g,H,field_H,"P3.1-inferred: type=float, was=value7",p3-auto-inferred
+field,a.a.a.g,g,I,field_I,"P3.1-inferred: type=boolean, was=flag8",p3-auto-inferred
+field,a.a.a.g,g,J,field_J,"P3.1-inferred: type=boolean, was=flag9",p3-auto-inferred
+field,a.a.a.g,g,K,field_K,"P3.1-inferred: type=float, was=value10",p3-auto-inferred
+field,a.a.a.g,g,L,field_L,"P3.1-inferred: type=boolean, was=flag11",p3-auto-inferred
+field,a.a.a.g,g,M,field_M,"P3.1-inferred: type=boolean, was=flag12",p3-auto-inferred
+field,a.a.a.g,g,N,field_N,"P3.1-inferred: type=boolean, was=flag13",p3-auto-inferred
+field,a.a.a.g,g,O,field_O,"P3.1-inferred: type=float, was=value14",p3-auto-inferred
+field,a.a.a.g,g,P,field_P,"P3.1-inferred: type=float, was=value15",p3-auto-inferred
+field,a.a.a.g,g,Q,field_Q,"P3.1-inferred: type=float, was=value16",p3-auto-inferred
+field,a.a.a.g,g,R,field_R,"P3.1-inferred: type=float, was=value17",p3-auto-inferred
+field,a.a.a.g,g,S,field_S,"P3.1-inferred: type=float, was=value18",p3-auto-inferred
+field,a.a.a.g,g,T,field_T,"P3.1-inferred: type=boolean, was=flag19",p3-auto-inferred
+field,a.a.a.g,g,retransmissionTimeout,Retransmission timeout option (int),g: field retransmissionTimeout -> Retransmission timeout option (int),unverifiable-rebuilt
+field,a.a.a.g,h,cumulativeAckTimeout,Cumulative ACK timeout option (int),h: field cumulativeAckTimeout -> Cumulative ACK timeout option (int),unverifiable-rebuilt
+method,a.a.a.g,i,a,get_a,"""[Phase3-method] returns boolean""",unverifiable-rebuilt
+method,a.a.a.g,i,aG,do_aG,"""[Phase3-method] returns void""",unverifiable-rebuilt
+method,a.a.a.g,i,b,get_b,"""[Phase3-method] returns int""",unverifiable-rebuilt
+field,a.a.a.g,i,nullSegmentTimeout,Null segment timeout option (int),i: field nullSegmentTimeout -> Null segment timeout option (int),unverifiable-rebuilt
+field,a.a.a.g,j,maxResetAttempts,Max reset attempts option (int),j: field maxResetAttempts -> Max reset attempts option (int),unverifiable-rebuilt
+field,a.a.a.g,k,connectTimeout,Connect timeout option (int),k: field connectTimeout -> Connect timeout option (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.j,CompressedStream,a,gzipOutputStream,GZIP output stream (GZIPOutputStream),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,CompressedStream,b,bufferedOutputStream,Buffered output stream,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,CompressedStream,c,fileName,Output file name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,CompressedStream,d,byteArrayStream,Byte array output stream,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,CompressedStream,e,dataOutputStream,Data output stream,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,CompressedStream,f,isClosed,Stream closed flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,KeepAliveTimer,a,keepAliveEnabled,Keep-alive enabled (boolean, default true)
+field,com.corrodinggames.rts.gameFramework.j,KeepAliveTimer,b,lastKeepAliveTime,Last keep-alive timestamp (long),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,KeepAliveTimer,c,netEngineRef,NetEngine reference (private final ad),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,PasswordManager,b,passwordHash,Password hash (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,PasswordManager,c,minLength,Minimum length (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,PasswordManager,d,isRequired,Password required flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,PasswordManager,e,saltValue,Salt value (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,PasswordManager,f,algorithmName,Hash algorithm name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,PasswordManager,g,displayLabel,Display label (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ServerListener,a,debugLogging,Debug logging enabled (final boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ServerListener,b,listenEnabled,Listening enabled (static boolean, default true)
+field,com.corrodinggames.rts.gameFramework.j,ServerListener,r,netEngineRef,NetEngine reference (private final ad),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ServerResult,a,resultString,Result string (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ServerResult,b,errorString,Error string (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ServerResult,c,resultStatus,Result status enum (x),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,TextStream,a,bufferedOutput,Buffered output stream,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,TextStream,b,fileName,Output file name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,TextStream,c,byteArrayOutput,Byte array output stream,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,TextStream,d,printStream,Print stream writer,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,TextStream,e,isClosed,Closed flag (boolean),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,a(ArrayList,boolean),startJoinServer | NetEngine: void - launch server join thread,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,a(boolean,String,"""Boolean)""",setMultiplayerSettings
+method,com.corrodinggames.rts.gameFramework.j,ad,a(byte[],c),saveDesyncData | NetEngine: void - dump desync debug data to file,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,a(c,String),sendKick | NetEngine: void - kick client with reason,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,a(float,String),setGameSpeed | NetEngine: void - set simulation speed,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,a(int,n),isTeamPrefUsed | NetEngine: boolean - team preference slot check,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,a(n,int),setTeamSlot | NetEngine: void - assign team to slot,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,an(String,boolean,"""Runnable)""",startServerThread
+method,com.corrodinggames.rts.gameFramework.j,ad,b(String,boolean),connectToServer,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,c(n,int),changeTeamOf | NetEngine: void - move player to different team,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,A,hasPassword,Server has password flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,A(),clearConnectionFlags,Clear ready flags on all connections [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,B,isSyncing,Is in sync state (volatile),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,B(),getConnectedPlayerCount,Count connected non-spectator non-finished players,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,C,isServer,Is server mode flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,C(),getDistinctPlayerCount,Count distinct connected players (dedup by ref),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,D,steamP2PActive,Steam P2P networking active,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,D(),getTotalConnectionCount,Count all connected alive players incl spectators,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,E,serverMessage,Server MOTD/message,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,E(),getInGamePlayerCount,Count server players + non-debug clients,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,F,isDedicatedServer,Running as dedicated server flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,F(),emptyPlaceholderF,No-op placeholder method [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,G,useRelay,Use relay server flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,G(),checkConnectionPings,Validate ping status on all connections [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,H,useSteamRelay,Use Steam relay flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,H(),showPlayerListPopup,Build and show player list popup [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,I,connectionType,Connection type (0=direct),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,I(),shouldGameBePaused,Check if game should pause (blocking frame),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,J,leaveGame,NetEngine: void - exit current game session,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,J(),dismissInterfaceOverlay,Dismiss current interface overlay [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,K,closeBattleroom,NetEngine: void - close lobby/battleroom,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,K(),closeBattleroom,Trigger battleroom close [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,L,masterServerUrl,Master server URL,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,L(),logAllConnections,Log packet details for all active connections [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,M,assignTeamSlots,NetEngine: void - allocate team slots to connections,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,M(),connectToServer,Connect to game server,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,N,getFreeSlot,NetEngine: int - find unassigned team slot,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,N(),disconnect,Disconnect from server,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,O,totalPlayers,Total connected players,type-aware-fp-v19.114
+method,com.corrodinggames.rts.gameFramework.j,ad,O(),startServer,Start game server,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,P,maxPlayers,Maximum players,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,P(),stopServer,Stop game server,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,Q,connectionFlagQ,Connection tracking flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,Q(),sendSync,Send sync frame data,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,R,connectionVersionInt,Version/state int in register connection,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,R(),processPackets,Process incoming packets,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,S,serverIpAddress,Server IP address string,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,S(),updateConnections,Update connection states,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,T,lastReceivedFrame,Last received frame,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,T(),broadcastCommand,Broadcast command to clients,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,U,lastSentFrame,Last sent frame,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,U(),showReconnectDialog,Show reconnect dialog on Android [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,V,reconnectToServer,NetEngine: void - attempt server reconnection,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,V(),reconnectToServer,Attempt reconnect to last connected server,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,W,udpBufferSize,UDP socket buffer size,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,W(),getClientConnection,Return first non-disconnected connection [sig-backfill: returns com.corrodinggames.rts.gameFramework.j.c],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,X,pingResponseTimestamp,Ping/response timestamp,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,X(),registerAllConnections,Send register to all non-disconnected [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,Y,frameLimiter,Frame limiter enabled,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,Y(),generateClientId,Generate new network client ID if needed,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,Z,frameAccum,Frame time accumulator,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,Z(),getOwnClientIdHashed,Get or generate hashed client ID from machine key,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,a,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,a(Socket),connectedToServer,NetEngine: void - handle incoming server connection,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,a(ae),promptForPassword,NetEngine: static void - show password dialog,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,a(au),handleGamePacket,Handle game packets (10=cmd,20=resync
+method,com.corrodinggames.rts.gameFramework.j,ad,a(boolean),initializeNetwork,"""NetEngine: void - full network init caps""",nickname
+method,com.corrodinggames.rts.gameFramework.j,ad,a(c),getBanEntry,NetEngine: aj - find ban entry for connection,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,a(g),registerRelayServer,NetEngine: void - add relay server to list,body-verified-v1500
+field,com.corrodinggames.rts.gameFramework.j,ad,aA,inputNetStream,Network input stream (k=InputNetStream),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,aA(),randomizeConnectionLock,Set random connection lock value [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,aB,outputNetStream,Network output stream (k),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,aB(),onNetworkGameStarted,Handle game begin: flags [sig-backfill: returns void], master server
+field,com.corrodinggames.rts.gameFramework.j,ad,aC,packetBuffer,Packet buffer queue (a),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,aC(),setReturnToBattleroomFlag,Set returnToBattleroom = true [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,aD(),executeReturnToBattleroom,Full battleroom teardown [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,aE,showOngoingNotification,NetEngine: void - display multiplayer status,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,aE(),showGameInProgressNotification,Android notification for game in progress [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,aM,incomingPacketQueue,Incoming packet queue (ConcurrentLinkedQueue),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,aP,threadState,Thread state control (volatile int, 1=run)
+field,com.corrodinggames.rts.gameFramework.j,ad,aT,cloudServerUrl,Cloud/master server URL,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,aU,cloudServicesEnabled,Cloud services enabled (Boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,aV,cloudLoggedIn,Cloud services logged in (Boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,aW,returnToBattleroomActive,Return-to-battleroom timer active flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,aX,debugNetworkOverlay,Show network debug overlay,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,aa(),generateServerUUID,Generate new UUID for networkServerId [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ab,packetsPerSecond,Packets per second rate,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ab(),getServerUUID,Get or generate networkServerId [sig-backfill: returns java.lang.String],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ac,bytesPerSecond,Bytes per second rate,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ac(),getServerIdentifier,Server ID string (UUID or IP) [sig-backfill: returns java.lang.String],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ad,packetRateLimit,Packet rate limit flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ad(),sendReadyStateToServer,Send PACKET_SET_READY_STATE to server [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ae,packetTimer,Packet rate timer,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ae(),finalizeGameStart,Finalize game start settings on client,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,af,urgentPacket,Urgent packet pending flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,af(),onStartGameFailed,Reset game state on start failure,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ag,disconnectStateFlag,Disconnect handler state flag,type-aware-fp-v19.114
+method,com.corrodinggames.rts.gameFramework.j,ad,ag(),scheduleReturnToBattleroom,Schedule return-to-battleroom (5s delay) [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ah,resyncStageCounter,Resync stage counter (0-3),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ah(),getFirstDisconnectIp,Get first IP from disconnect pending list,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ai,resyncTimeout,Resync timeout (default 300),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ai(),getDisconnectIpList,Get comma-separated IP list from disconnect pending,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,aj,disconnectPending,Disconnect pending flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,aj(),getLocalIPAddresses,Get local IP addresses from network interfaces [sig-backfill: returns java.util.ArrayList],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ak,reconnecting,Is reconnecting flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ak(),getMacAddressHash,Get SHA hash of MAC address [sig-backfill: returns java.lang.String],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,al,connectionLost,Connection lost flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,al(),getBroadcastAddress,Calculate broadcast address from DHCP info [sig-backfill: returns java.net.InetAddress],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,am,updateNetworkNotification,NetEngine: void - refresh Android notification,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,am(),updateMultiplayerNotification,Show/hide Android multiplayer notification [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,an,countActiveTeams,NetEngine: int - non-eliminated teams,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,an(),getHumanPlayerCount,Count non-AI human players,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ao,countAllTeams,NetEngine: int - total teams incl eliminated,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,ao(),getTotalPlayerCount,Count all players including AI,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ap,addAItoGame,NetEngine: void - create AI team game.a.a,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,ap(),addAIToGame,Add AI player to free slot,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,aq,updateNamesOfAI,NetEngine: void - refresh AI display names,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,aq(),updateAllAINames,Update all AI player display names,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ar,maxReconnectAttempts,Maximum reconnect attempts,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ar(),cancelLobbyKickTimer,Cancel and null lobby kick timer [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,as,networkLogging,Network logging enabled (static),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,as(),startLobbyKickTimer,Create and schedule lobby kick timer (60s) [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,at(),getServerStatusText,Build server status display text [sig-backfill: returns java.lang.String],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,au(),getModListString,Semicolon-separated mod list (if hosting) [sig-backfill: returns java.lang.String],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,av,resyncRequested,Resync was requested flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,av(),getNetworkMapPath,Map file path based on connection type [sig-backfill: returns java.lang.String],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,aw,syncFrameThreshold,Sync frame threshold (default 5),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,aw(),isServerOrRelay,Whether isServer or useSteamRelay [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ax,desyncFrameThreshold,Desync detection threshold (default 5),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ax(),getAllTeamsSynchronized,Synced access to all team list [sig-backfill: returns java.util.ArrayList],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ay,serverConnection,Active server connection (ah),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,ay(),cleanClosedConnections,Remove connections marked as closed [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,az,lastServerMessage,Last server status message string,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,az(),resetDesyncTracking,Reset desync timers and increment stage [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,b,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,b(String),disconnect,NetEngine: void - disconnect with reason message,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,b(au),isPacketFiltered,NetEngine: boolean - filter unregistered connection packets,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,b(c,n,String,String)
+field,com.corrodinggames.rts.gameFramework.j,ad,bA,pendingBanList,Pending ban list (static ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bC,banCheckLock,Ban check synchronization lock,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bE,networkStats,Network statistics collector (static ae),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bG,dumpPacketsDebug,Debug: dump raw packets (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bH,encryptionEnabled,Encryption enabled flag (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bI,encryptionKeyVersion,Encryption key version (private volatile float),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,ba,pingAverageMs,Average ping in milliseconds,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bb,pingUpdated,Ping value was updated flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bc,highLatencyDetected,High latency detected flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bd,packetLossDetected,Packet loss detected flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,be,bandwidthLimited,Bandwidth limited flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bf,natPunchthroughOk,NAT punchthrough successful flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bg,externalIpAddress,External/public IP address string,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bh,natTypeString,NAT type description string,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bi,chatMessageQueue,Chat message queue (ConcurrentLinkedQueue),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bj,gameCommandController,Game command controller (game.e),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bk,replayCommandController,Replay command controller (game.e),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bl,stateLock,Network state synchronization lock,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bm,stateChanged,Network state changed flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bs,totalBytesReceived,Total bytes received (long),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bt,totalBytesSent,Total bytes sent (long),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bv,tcpSocket,TCP socket for direct connection,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bw,lastErrorMessage,Last error message string,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,bx,forceDisconnect,Force disconnect requested flag,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,c,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,c(String,String),formatChatMessage,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,c(au),handleServerPacket,NetEngine: void - process server info/status packets,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,c(c),sendServerInfo,NetEngine: void - push SERVER_INFO to connection,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,d,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,d(),resetSyncState,Reset sync state: clear checksum+lastSentSyncFrame,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,d(au),sendPacketToAll,NetEngine: void - broadcast to all clients,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,d(c),sendIncorrectPassword,NetEngine: void - notify wrong password,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,e,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,e(au),broadcastToAllIncludingRelay,Send packet to all including relay,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,e(boolean),setGamePaused,NetEngine: void - pause/unpause game,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,e(n),kickTeam,NetEngine: void - kick entire team,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,f,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,f(),updateAIDifficulties,Update AI difficulty for all players,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,f(au),sendPacketToServer,NetEngine: void - send to server only,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,f(int),isSlotUsed,NetEngine: boolean - slot occupied check,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,f(n),kickTeamImpl,NetEngine: void - execute team kick + temp ban,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,g,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,g(au),sendToAllClients,Send packet to all clients (server via serverTick),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,h,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,h(String),showError,Show severe error popup (static),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,h(au),sendPacketToClients,NetEngine: void - to clients only,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,i,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,i(String),sanitizeString,Sanitize string: truncate 250+replace control chars (static),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,i(au),sendPacketToAllExceptRelay,NetEngine: void - broadcast excluding relay,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,i(int),cancelNotification,NetEngine: void - dismiss notification by ID,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,j,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,k,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,l,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,l(String),prepareChatMessage,Send chat message (auto-prefix -t for team),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,m,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,m(),performNATPunchthrough,Send test packets to discover external IP,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,n,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,n(String),extractCommandName,Extract command name from prefix string (static),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,o,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,o(String),receiveChatMessage,Receive and display chat message,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,p,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ad,p(String),sanitizePlayerName,Sanitize player name: trim+replace whitespace (static),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,q,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ad,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.j,ad,r,useTcpFallback,TCP fallback enabled (static),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,r(),enableChecksum,Enable checksum verification [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,s,resetState,NetEngine: void - reset ~40 fields to defaults,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,s(),resetAllState,Reset all network state fields to defaults,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,t,defaultPort,Default server port (5005),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,t(),emptyPlaceholderT,No-op placeholder [sig-backfill: returns void],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,u,waitForDisconnect,NetEngine: void - block on bl until disconnected,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,u(),waitForSyncComplete,Block until syncing complete on stateLock,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,v,requestQuickResync,NetEngine: void - enqueue resync command,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,v(),triggerDesyncResync,Trigger desync recovery: add resync command,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,w,doQuickResync,NetEngine: void - load resync save data,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,w(),quickResync,Quick resync: save state+reload+reset checksum counters,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,x,assertAllClientsSynced,NetEngine: void - verify all client sync states,body-verified-v1500
+method,com.corrodinggames.rts.gameFramework.j,ad,x(),checkAllForDesync,Check all connections for desync flags,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,y,bindAddress,Bind address override string,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,y(),getNextUnitId,Get next unit ID (increment serverGameId),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ad,z,localPlayerState,Local PlayerState reference,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ad,z(),getCurrentGameId,Get current serverGameId,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ah,a,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ah,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ah,b,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ah,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ah,c,getah,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ah,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.j,ah,d,fogMode,Fog of war mode (int, default 2)
+field,com.corrodinggames.rts.gameFramework.j,ah,e,allowSpectators,Allow spectators (boolean, default true)
+field,com.corrodinggames.rts.gameFramework.j,ah,f,teamCount,Number of teams (int, default 1)
+field,com.corrodinggames.rts.gameFramework.j,ah,g,playerCount,Number of players (int, default 1)
+field,com.corrodinggames.rts.gameFramework.j,ah,h,gameSpeed,Game speed multiplier (float, default 1.0)
+field,com.corrodinggames.rts.gameFramework.j,ah,i,teamsLocked,Teams locked flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ah,j,randomSpawns,Random spawn positions (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ah,k,disableNukes,Disable nuke weapons (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ah,l,sharedResources,Shared team resources (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ah,m,allowCustomUnits,Allow custom units (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ah,n,unlockAllTech,Unlock all technology (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ah,o,nukesEnabled,Nukes enabled (boolean, default true)
+field,com.corrodinggames.rts.gameFramework.j,ah,p,tournamentMode,Tournament mode (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ah,q,gameDuration,Game duration limit (int),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,ak,a,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ak,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,ak,b,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.ak,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.j,ak,c,fieldUnitPos,Checksum field: Unit Position (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,d,fieldUnitDir,Checksum field: Unit Direction (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,e,fieldUnitHp,Checksum field: Unit HP (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,f,fieldUnitId,Checksum field: Unit ID (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,g,fieldWaypoints,Checksum field: Waypoints (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,h,fieldWaypointPos,Checksum field: Waypoint Positions (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,i,fieldTeamCredits,Checksum field: Team Credits (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,j,fieldUnitPaths,Checksum field: Unit Paths (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,k,fieldUnitCount,Checksum field: Unit Count (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,l,fieldTeamInfo,Checksum field: Team Info (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,m,fieldTeam1Credits,Checksum field: Team 1 Credits (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,n,fieldTeam2Credits,Checksum field: Team 2 Credits (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,o,fieldTeam3Credits,Checksum field: Team 3 Credits (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,p,fieldCmdCenter2,Checksum field: Command Center 2 (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+field,com.corrodinggames.rts.gameFramework.j,ak,q,fieldCmdCenter3,Checksum field: Command Center 3 (al) [v19.100 play2动态: 帧0全ok + 帧301+差异检测],verified
+method,com.corrodinggames.rts.gameFramework.j,aq,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.j.aq,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,aq,b,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.j.aq,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,aq,c,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.j.aq,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.j,aq,d,int3,real-class-inferred: com.corrodinggames.rts.gameFramework.j.aq,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.j,aq,e,int4,real-class-inferred: com.corrodinggames.rts.gameFramework.j.aq,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.j,aq,f,hashIterations,Hash iteration count (static int, default 4)
+field,com.corrodinggames.rts.gameFramework.j,aq,g,string1,real-class-inferred: com.corrodinggames.rts.gameFramework.j.aq,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.j,aq,h,string2,real-class-inferred: com.corrodinggames.rts.gameFramework.j.aq,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.j,aq,i,keyLength,Encryption key length (static int, default 55)
+field,com.corrodinggames.rts.gameFramework.j,aq,j,ivLength,IV length (static int, default 66)
+field,com.corrodinggames.rts.gameFramework.j,aq,k,tagLength,Auth tag length (static int, default 100)
+field,com.corrodinggames.rts.gameFramework.j,aq,l,isEnabled,Encryption enabled (static boolean, default true)
+method,com.corrodinggames.rts.gameFramework.j,as,a,do_a,"""[Phase3-method] returns void"" [v19.102 动态: IOException receiving packet 网络包运行时]",verified
+method,com.corrodinggames.rts.gameFramework.j,as,b,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.as [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,as,c,writeByte,[[MANUAL: single overload - verify with javap]: multi-overload — needs manual disambiguation] Write single byte to buffer (3 overloads) [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,as,d,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.as [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,as,e,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.as [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,as,e(java.lang.String),beginBlock,v19.102 agentE: 与读侧k.b(String)对称开子块; 原writeBlockMarker不精确,verified
+method,com.corrodinggames.rts.gameFramework.j,as,f(),isBlockActiveStub,No-op stub returning false [sig-backfill: returns boolean] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,as,g(),getBitCount,Return protocol bit count [sig-backfill: returns int] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,as,h(),close,Close and null all streams [sig-backfill: returns void] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+field,com.corrodinggames.rts.gameFramework.j,au,a,connection,Connection reference (c) [v19.102 动态: IOException receiving packet 网络包运行时],verified
+field,com.corrodinggames.rts.gameFramework.j,au,b,packetType,v19.102 agentE: switch(au2.b) case 10/20/35/110/160 分发键; 原packetLength错误,verified
+field,com.corrodinggames.rts.gameFramework.j,au,c,packetData,Packet data bytes (byte[]) [v19.102 动态: IOException receiving packet 网络包运行时],verified
+field,com.corrodinggames.rts.gameFramework.j,au,d,extraId,"v19.102 agentE: 附加ID (默认-1, as.a(int,int)第二参数); 原packetType错误",verified
+field,com.corrodinggames.rts.gameFramework.j,au,e,isSystemPacket,Is system packet flag (boolean) [v19.102 动态: IOException receiving packet 网络包运行时],verified
+field,com.corrodinggames.rts.gameFramework.j,c,E,connectionState,Connection state integer,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,L,clientVersion,Client version string,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,M,gameSpeedPreference,Game speed preference int,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,N,isRelayConnection,Relay connection flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,O,isSteamRelay,Steam relay flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,P,receivedChunks,Incremented per read() call in ReceiveWorker,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,Q,isRegistrationComplete,Registration complete flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,R,commandRateCount,10s command rate limiter counter,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,S,commandRateStartTime,Rate limiter start timestamp (ms),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,T,commandRateLimited,Rate limit triggered flag,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,U,packetBytesExpected,Expected inbound packet byte count,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,V,packetBytesRead,Bytes read so far for current packet,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,W,netEngine,Private final NetEngine reference,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,c,a,getad,real-class-inferred: com.corrodinggames.rts.gameFramework.j.c,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,c,b,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.c,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,c,c,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.c,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,c,d,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.j.c,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,c,e(),getPlayerName,Return player name string [sig-backfill: returns java.lang.String],verified-exists
+method,com.corrodinggames.rts.gameFramework.j,c,f(),getPlayerIp,Return player IP string [sig-backfill: returns java.lang.String],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,g,connectTime,Connection timestamp (long),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,c,g(),getConnectionId,Return connection ID string [sig-backfill: returns java.lang.String],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,h,isConnected,Currently connected (boolean),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,c,h(),isConnectionAlive,Check if connection still alive [sig-backfill: returns boolean],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,i,isAuthenticated,Authentication passed (boolean),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,c,i(),disconnect,Internal disconnect handler [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,j,connectionObj,Connection object reference (c),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,c,j(),closeConnection,Close and cleanup connection [sig-backfill: returns void],verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,k,assignedSlot,Assigned slot index (int, -1)
+field,com.corrodinggames.rts.gameFramework.j,c,m,playerName,Player display name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,n,ipAddress,Player IP address (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,o,clientVersion,Client version string (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,p,isHostPlayer,Is host player (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,q,isObserver,Is observer/spectator (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,r,isReady,Ready to start (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,s,hasDesynced,Desync detected (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,t,needsResync,Needs resync (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,u,isBanned,Player is banned (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,v,isKicked,Player is kicked (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,w,hasTimedOut,Connection timed out (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,x,pingMs,Current ping ms (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,y,packetsLost,Packets lost count (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,c,z,commandHandler,Command handler reference (game.e),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,A,int6,real-class-inferred: com.corrodinggames.rts.gameFramework.j.g,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,g,a,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.j.g,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,g,b,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.j.g,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,g,c,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.j.g,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,g,d,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.j.g,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,g,e,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.j.g,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,g,f,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.j.g,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,g,g,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.j.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.j,g,h,hasPassword,Password protected (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,i,pingMs,Ping latency ms (long  -1=unset),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,j,hostPlayerName,Host player name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,k,hostId,Host identifier (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,l,maxPlayers,Maximum players (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,m,isDedicated,Dedicated server flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,n,countryCode,Country code (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,o,lastSeenTime,Last seen timestamp (long),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,p,serverPort,Server port number (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,q,extraInfoA,Extra info string A (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,r,extraInfoB,Extra info string B (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,s,extraInfoC,Extra info string C (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,t,extraInfoD,Extra info string D (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,u,extraInfoE,Extra info string E (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,v,gameId,Game session ID (int  -1=unset),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,w,protocolVersion,Protocol version (int, default 8)
+field,com.corrodinggames.rts.gameFramework.j,g,x,isSecureConnection,Secure connection flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,y,requiresMods,Requires mods to join (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,g,z,modListString,Active mod list string (String),verified-exists
+method,com.corrodinggames.rts.gameFramework.j,k,a,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.k [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,b,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.k [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,c,getstrictfp byte,real-class-inferred: com.corrodinggames.rts.gameFramework.j.k [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,d,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.j.k [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,d(java.lang.String),readByte,[v10.3-resolved: semantic match (1 params [v19.102 动态: IOException receiving packet 网络包运行时],verified
+field,com.corrodinggames.rts.gameFramework.j,k,e,mainDataInputStream,v19.102 agentE: 主DataInputStream; 原bitPosition错误,verified
+method,com.corrodinggames.rts.gameFramework.j,k,e(),readBoolean,Read boolean from stream [sig-backfill: returns boolean] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+field,com.corrodinggames.rts.gameFramework.j,k,f,dataInputStream,DataInputStream for reading [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,f(),readInt,Read 32-bit int from stream [sig-backfill: returns int] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+field,com.corrodinggames.rts.gameFramework.j,k,g,blockStack,LinkedList of compressed block readers [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,g(),readFloat,Read 32-bit float from stream [sig-backfill: returns float] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,h(),readDouble,Read 64-bit double from stream [sig-backfill: returns double] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,i(),readLong,Read 64-bit long from stream [sig-backfill: returns long] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,j(),readNullableString,Read boolean+UTF; null if false [sig-backfill: returns java.lang.String] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,k(),readNullableInteger,Read boolean+int; null if false [sig-backfill: returns java.lang.Integer] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,l(),readString,Read non-null UTF string [sig-backfill: returns java.lang.String] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,m(),readCustomUnitTag,v19.102 agentE: 返回custom.g; 原readTeamTag错误,verified
+method,com.corrodinggames.rts.gameFramework.j,k,n(),readTimestamp,Read 64-bit long as game tick [sig-backfill: returns long] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,o(),readUnitInstance,Read unit instance from stream [sig-backfill: returns com.corrodinggames.rts.game.units.am] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,p(),readUnitRef,Read entity ID [sig-backfill: returns com.corrodinggames.rts.game.units.y] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,q(),readUnitType,Read int: -1=null [sig-backfill: returns com.corrodinggames.rts.game.units.as] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,r(),readTeam,Read byte team ID [sig-backfill: returns com.corrodinggames.rts.game.n] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,s(),readNullableTeam,Read byte team ID [sig-backfill: returns com.corrodinggames.rts.game.n] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,t(),readByteArray,Read length-prefixed byte array [sig-backfill: returns byte[]] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,u(),readCompressedData,Read byte array [sig-backfill: returns com.corrodinggames.rts.gameFramework.j.k] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,v(),readShort,Read 16-bit short from stream [sig-backfill: returns short] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,w(),getInputStream,Return DataInputStream as InputStream [sig-backfill: returns java.io.InputStream] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,x(),startBlockAndGetName,Start block [sig-backfill: returns java.lang.String] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,k,y(),readPointF,Read two floats into new PointF [sig-backfill: returns android.graphics.PointF] [v19.102 动态: IOException receiving packet 网络包运行时],verified
+method,com.corrodinggames.rts.gameFramework.j,n,a,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.j.n,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,n,b,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.j.n,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,n,c,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.j.n,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,n,d,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.j.n,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.j,n,e,responseCode,HTTP response code (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,n,f,responseBody,Response body string (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,n,g,string2,real-class-inferred: com.corrodinggames.rts.gameFramework.j.n,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.j,q$1,a(BufferedReader,int,"""String)""",loadFromMasterServer
+field,com.corrodinggames.rts.gameFramework.j,q$1,a,serverLineNumber,Phase3-inferred: captured ctor int (line/index of server entry),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,q$1,b,globalState,Phase3-inferred: captured l (GlobalState) reference,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,q$1,c,outerLoader,Phase3-inferred: synthetic outer ref to j.q (master server loader),verified-exists
+field,com.corrodinggames.rts.gameFramework.j.n,d,httpClientPool,"main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16): 类型 r, 初值 new r(); Main 赋 new k()",main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16),main-deobf-anchored
+field,com.corrodinggames.rts.gameFramework.j.ad,d,authHandler,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16): 类型 ac(NetworkAuth); Main 赋 this,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16),main-deobf-anchored
+method,com.corrodinggames.rts.gameFramework.j.ad,u(),waitForShutdown,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16): 体为 wait on bl,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16),main-deobf-anchored
+method,com.corrodinggames.rts.gameFramework.j.ad,b(String),disconnect,"main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16): 体日志 ""Disconnect: """,main-deobf-anchored: Main.class 用法/字节码锚定 (2026-08-16),main-deobf-anchored
+method,com.corrodinggames.rts.gameFramework.j,ad,c(float),updateStep,v19.100 辐射批1: GameEngine.update每帧调用 bX.c(f2) (NetworkEngine步进),verified
+method,com.corrodinggames.rts.gameFramework.j,ad,b(boolean),hostNetworkGame,"v19.100 辐射批3: hostStart链 bX.b(false) → ""starting new""; 3112行 B=true",verified
+method,com.corrodinggames.rts.gameFramework.j,ad,b(java.lang.String),disconnect,"v19.100 辐射批3: ""Disconnect: "" + 停止网络; mp.disconnect调用",verified
+field,com.corrodinggames.rts.gameFramework.j,ad,am,checksumCalculator,v19.100 辐射批3: ba.java用l2.bX.am.b (ak校验条目列表); 类型ak=ChecksumCalculator,verified
+field,com.corrodinggames.rts.gameFramework.j,ad,ap,desyncErrorCount,"v19.100 辐射批3: ad.a(String,bool) ++ap (desync报告); Debug.getNumberOfDesyncErrors",verified
+field,com.corrodinggames.rts.gameFramework.j,ad,aq,desyncPassCount,"v19.100 辐射批3: ""numberOfDesyncPasses"" (校验通过计数)",verified
+field,com.corrodinggames.rts.gameFramework.j,ad,N,resyncPending,boolean; c(float) 74-86: 条件满足时置 false 并 w()(doQuickResync); 现有映射 getFreeSlot 类型不符(疑似错误),verified
+field,com.corrodinggames.rts.gameFramework.j,ad,an,checksumSent,boolean; c(float) 105-279: 发送 checksum 包后置 true; 现有映射 countActiveTeams 类型不符(疑似错误),verified
+field,com.corrodinggames.rts.gameFramework.j,ad,g,debugLogging,"c(float) 240-277: if(g) 打印 ""Sent checksum to client [N]""; 现有映射为 javap 提取占位符",verified
+field,com.corrodinggames.rts.gameFramework.j,ad,bu,pauseRequested,"I()(shouldGameBePaused) 中设 true/false, ""shouldGameBePaused: isGoingToBlockThisFrame()==true"" 日志",verified
+field,com.corrodinggames.rts.gameFramework.j,ak,a,checksumTotal,long; c(float) 157-162: 发送前读取写入包; 现有映射为 javap 提取占位符,verified
+field,com.corrodinggames.rts.gameFramework.j,ak,b,checksumFields,ArrayList<ChecksumField(al)>; c(float) 167-222: 遍历把每个 al.b 值写入包; 现有映射为 javap 提取占位符,verified
+field,com.corrodinggames.rts.gameFramework.j,al,b,value,long; c(float) 216-218: 每个校验字段的 long 值写入包,verified
+field,com.corrodinggames.rts.gameFramework.j,c,c,clientId,"int; a(au)V 370-374: 日志 ""Got system action from client (id)""; 现有映射为 javap 提取占位符",verified-exists
+field,com.corrodinggames.rts.gameFramework.j,as,b,byteArrayBuffer,ByteArrayOutputStream 累积缓冲; 构造器 new ByteArrayOutputStream(); d()/c() 取数据; javap 构造器确认,verified
+field,com.corrodinggames.rts.gameFramework.j,as,c,dataOutputStream,主输出流 DataOutputStream; b() 中 currentStream=c; javap 构造器确认,verified
+field,com.corrodinggames.rts.gameFramework.j,as,a,currentStream,"私有当前写入流; beginBlock 后指向 at.e(块数据流), endBlock 恢复; javap b()/a(String,boolean)/a(String)",verified
+field,com.corrodinggames.rts.gameFramework.j,as,e,blockStack,LinkedList<at> 压缩块栈; a() 遍历 at.a() flush; beginBlock push/endBlock pop; javap a() 确认,verified
+field,com.corrodinggames.rts.gameFramework.j,as,d,bitCount,"位计数, 初始 999999; g() 返回; new as(int) 构造设置; j.ad 2994 行 new as(c3.E) (j.c.E=连接位计数)",verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(),flushAll,遍历块栈 at.a() + c.flush + b.flush; javap a() 完整反汇编,verified
+method,com.corrodinggames.rts.gameFramework.j,as,b(),resetCurrentStream,私有; 当前流 a=c; javap putfield a,verified
+method,com.corrodinggames.rts.gameFramework.j,as,<init>(int),PacketWriter(bitCount),构造器; d=n2; javap 构造器,verified
+method,com.corrodinggames.rts.gameFramework.j,as,<init>(),PacketWriter(),构造器; new ByteArrayOutputStream+DataOutputStream; javap,verified
+method,com.corrodinggames.rts.gameFramework.j,as,<init>(DataOutputStream),PacketWriter(stream),构造器(包装现有流); ba.java 466 行 this.J=new as(this.I) 回放写侧; javap,verified
+method,com.corrodinggames.rts.gameFramework.j,as,b(int),toPacket,"打包为 Packet: a(n2,-1); j.ad 1357/1394/3642/3689 行 as2.b(10/20/160/110) 类型键与 switch(au2.b) case 10/20/35/110/160 对应",verified
+method,com.corrodinggames.rts.gameFramework.j,as,"a(int,int)",toPacketWithId,"au2.c=toByteArray 数据, au2.d=n3 附加ID; javap; 第二参数 d 语义未见读取点(仅写侧), 名称保守",verified
+method,com.corrodinggames.rts.gameFramework.j,as,c(),toStringBuffer,"返回 b.toString(); javap; supplement 裸名 c 行(3重载)未消歧, 此为消歧补充",verified
+method,com.corrodinggames.rts.gameFramework.j,as,d(),toByteArray,返回 b.toByteArray(); javap,verified
+method,com.corrodinggames.rts.gameFramework.j,as,c(int),writeByte,a.writeByte; javap; 与读侧 k.d() readByte 对应; supplement 裸名 c 行未消歧,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(boolean),writeBoolean,a.writeBoolean; javap; 与读侧 k.e() 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(int),writeInt,a.writeInt; javap; 与读侧 k.f() 对应; ba.java 468 this.J.a(96) 写回放版本,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(float),writeFloat,a.writeFloat; javap; 与读侧 k.g() 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(double),writeDouble,a.writeDouble; javap; 与读侧 k.h() 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(long),writeLong,a.writeLong; javap; 与读侧 k.i() 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,b(String),writeNullableString,bool 前缀+UTF; null→false; javap; 与读侧 k.j() 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(Integer),writeNullableInt,bool 前缀+int; null→false; javap; 与读侧 k.k() 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,c(String),writeUTF,a.writeUTF; ba.java 467 this.J.c('rustedWarfareReplay') 回放魔数 (replay_parser.py 头部 [UTF 魔数]); 与读侧 k.l() 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(g),writeCustomUnitTag,null→''; 否则 g.toString(); javap ldc 空串; 与读侧 k.m() 对应 (units.custom.g 标签),verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(w),writeEntityId,w.eh(long 实体ID); null→-1L; javap getfield w.eh,verified
+method,com.corrodinggames.rts.gameFramework.j,as,b(w),writeEntityIdIfAlive,w.ej(已销毁)→-1L; javap getfield w.ej,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(m),writeEntityList,"写 size+逐项 b(w); javap m.size/iterator; 与读侧 k.a(m,Class) 对应 (utility.m=实体列表)",verified
+method,com.corrodinggames.rts.gameFramework.j,as,b(am),writeUnitInstanceIfAlive,"am.ej/am.bV 检查, 通过则写 a((w)am); javap; am=UnitInstance",verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(am),writeUnitInstance,am.ej 检查; javap; 与读侧 k.a(m) 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(y),writeUnitRef,y.ej 检查; javap; y=game.units.y; 与读侧 k.p() 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(PointF),writePointF,bool 前缀+2 float; javap; 与读侧 k.y() 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(Enum),writeEnum,null→-1; 否则 ordinal; javap writeInt; 与读侧 k.b(Class) readEnum 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(units.as),writeUnitType,-1 null / -2 custom+UTF 名 / 否则 ordinal; javap; 与读侧 k.q() readUnitType 对应 (units.as=UnitType 抽象),verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(c),writeConnectionId,null→0; 否则 c.c(连接标识); javap getfield c.c; j.c=Connection; j.ad case 20 用 c2.c 标识客户端,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(n),writeTeam,n.k(byte 队伍); javap writeByte; 与读侧 k.r()/s() 对应 (game.n=Team),verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(File),writeFile,读文件写入流; IOException 'Failed to read save file data'; 源码,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(k),writeFromReader,从 PacketReader 拷贝全部字节; k2.w() InputStream reset; 源码,verified
+method,com.corrodinggames.rts.gameFramework.j,as,"a(InputStream,int)",writeStream,写 int 长度+流内容; 日志 'writeStream: bytesTillFull is'; 源码,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(ByteArrayOutputStream),writeByteArrayOutputStream,写 size+writeTo; javap,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(byte[]),writeByteArray,int 长度前缀+内容; javap; 与读侧 k.t() readByteArray 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,b(byte[]),writeRawBytes,裸写字节; javap,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(short),writeShort,a.writeShort; javap; 与读侧 k.v() 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,as,e(),writeMark,写 (short)12345 标记; javap ldc 12345; 读侧 k.a(String) 'Mark wasn't read for:' 对应 (replay 记录尾标记),verified
+method,com.corrodinggames.rts.gameFramework.j,as,d(String),endBlockNoOp,空实现 stub; 源码; 全库未发现调用点,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,as,"a(String,boolean)",beginBlock,创建 at(bl) 压缩子流入栈并切换当前流; at=GZIP 子流(GZIPOutputStream); 源码+javap,verified
+method,com.corrodinggames.rts.gameFramework.j,as,a(String),endBlock,出栈; 名校验 'OutputNetStream:endBlock' 'Name does not match: expected'; 写名+长度+关闭 at; 源码,verified
+field,com.corrodinggames.rts.gameFramework.j,k,a,byteStream,ByteArrayInputStream 源流; 构造器 new ByteArrayInputStream(au.c / byte[] / String字节); javap,verified
+field,com.corrodinggames.rts.gameFramework.j,k,b,replayVersion,回放版本; 初始 999999; a(int) 设置; '<11 跳过块' 版本门控; ba.java 363 F.a(n3) 'Loading save from version:',verified
+field,com.corrodinggames.rts.gameFramework.j,k,c,compressionLevel,b(int) 设置; 初始 999999; 02 全库未见调用点; 与写侧 at(boolean 压缩) 对称但无直接证据,verified-exists
+field,com.corrodinggames.rts.gameFramework.j,k,d,depthCount,初始 0; k.java 内无其他使用点,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,k,a(),resetCurrentStream,私有; 当前流 f=e; javap putfield f,verified
+method,com.corrodinggames.rts.gameFramework.j,k,<init>(au),PacketReader(packet),构造器(从 Packet); new ByteArrayInputStream(au2.c); javap; j.ad 1571 new k(au2),verified
+method,com.corrodinggames.rts.gameFramework.j,k,<init>(DataInputStream),PacketReader(stream),构造器; ba.java 352 new k(this.E) 回放读侧; javap,verified
+method,com.corrodinggames.rts.gameFramework.j,k,<init>(String),PacketReader(string),构造器(字符串 getBytes); javap,verified
+method,com.corrodinggames.rts.gameFramework.j,k,<init>(byte[]),PacketReader(bytes),构造器; j.ad 922 new k(byArray) 快速重同步存档; javap,verified
+method,com.corrodinggames.rts.gameFramework.j,k,a(int),setReplayVersion,b=n2; ba.java 363 F.a(n3) 与 'Loading save from version:' 日志; k 内 '<11 跳过块' 版本门控,verified
+method,com.corrodinggames.rts.gameFramework.j,k,b(),getReplayVersion,返回 b; javap,verified
+method,com.corrodinggames.rts.gameFramework.j,k,b(int),setCompressionFlag,c=n2; 02 全库无调用点,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,k,c(),getCompressionFlag,返回 c; javap,verified-exists
+method,com.corrodinggames.rts.gameFramework.j,k,d(),readByte,f.readByte; javap; 与写侧 as.c(int) 对应; supplement 裸名 d 行未消歧,verified
+method,com.corrodinggames.rts.gameFramework.j,k,a(Class),readEntity,"w.a(l2,clazz,false) 读实体引用; javap; 与写侧 as.a(w) 对应",verified
+method,com.corrodinggames.rts.gameFramework.j,k,"a(m,Class)",readEntityList,读 int 数量+逐项 a(clazz); javap; 与写侧 as.a(m) 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,k,a(m),readUnitInstance,"w.a(l2, bl) bl=(m2==m.a); javap; 与写侧 as.a(am) 对应; m.a/m.b 为实体查找标志",verified
+method,com.corrodinggames.rts.gameFramework.j,k,b(Class),readEnum,readInt; -1→null; getEnumConstants 范围检查; 日志 'readEnum: ... is out of range'; javap; 与写侧 as.a(Enum) 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,k,a(String),verifyMark,读 short 校验 12345; 日志/异常 'Mark wasn't read for:'; javap; 与写侧 as.e() writeMark 对应,verified
+method,com.corrodinggames.rts.gameFramework.j,k,b(String),beginBlock,"=a(string,false); ba.java 381 F.b('gamesave') 回放块开始 (replay_parser.py gamesave 块); 与写侧 as.e(String) 对应",verified
+method,com.corrodinggames.rts.gameFramework.j,k,"a(String,boolean)",beginBlockChecked,"=a(string,bl,false); j.ad 1905 k3.a('teams', n2!=0)",verified
+method,com.corrodinggames.rts.gameFramework.j,k,"a(String,boolean,boolean)",beginBlockChecked2,版本<11 跳过('Skipping start block:'); 读名并校验 'InputNetStream:endBlock' 'Name does not match: expected:'; 第三参数传 j.l 但构造未使用,verified
+method,com.corrodinggames.rts.gameFramework.j,k,c(String),readBlockRaw,读 UTF 名校验 + t() 原始载荷; 日志 'getBlockRaw' 'Name does not match'; 源码,verified
+method,com.corrodinggames.rts.gameFramework.j,k,"a(boolean,boolean)",startBlock,"读 UTF 名 + t() 载荷, new j.l(载荷,bl,bl2) GZIP 解压入栈切流; 日志 'startBlockAndGetName()'; javap; j.l 构造含 GZIPInputStream",verified
+method,com.corrodinggames.rts.gameFramework.j,au,<init>(int),Packet(type),构造器; b=n2; j.ad 1561/1808 switch(au2.b) case 10/20/35/110/160 类型分发; javap,verified
+field,com.corrodinggames.rts.gameFramework.j,ad,m,networkPort,"v19.104: 3127 ""Could not open tcp port:""+this.m 端口号",verified
+field,com.corrodinggames.rts.gameFramework.j,c,a,isDisconnected,连接已断开标志(volatile)。T0: i() 设 true; h() 返回 !a; d.java run() 循环条件 !this.b.a,verified
+field,com.corrodinggames.rts.gameFramework.j,c,b,isClosing,正在关闭标志(volatile)。T0: j() 设 true; e.java run() 检查 this.f.b 结束,verified
+field,com.corrodinggames.rts.gameFramework.j,c,d,socket,底层Socket,verified
+field,com.corrodinggames.rts.gameFramework.j,c,e,remoteIp,对端InetAddress。T0: ao.java run() c2.e=accept的InetAddress; isIpAllowed 用 c.e 比对同IP连接数,verified
+field,com.corrodinggames.rts.gameFramework.j,c,f,sendQueue,"待发送数据包队列(ConcurrentLinkedQueue)。T0: e.java a(au) 入队 f.f.add, run() 出队发送, i() 清空",verified
+field,com.corrodinggames.rts.gameFramework.j,c,l,lastSequencePacket,"最近发送的序号包引用(au)。T0: e.java:80-82 f.l 更新/比对, 决定 175/176 压缩编码",verified
+field,com.corrodinggames.rts.gameFramework.j,c,A,lastPingValue,最近一次ping值(-1初始)。T0: b() 超时检查后返回 A; 与 B(时间戳)配对,verified
+field,com.corrodinggames.rts.gameFramework.j,c,B,lastPingTimeMillis,"最近ping时间戳(-1初始)。T0: b() B==-1 返回-2, B<now-5000 返回-1(超时)",verified
+field,com.corrodinggames.rts.gameFramework.j,c,C,resyncDataReceived,重同步数据已收标志。T0: ad.java:2628 包112 反序列化 c19.C; ad.java:1086 A() 重置,verified
+field,com.corrodinggames.rts.gameFramework.j,c,D,resyncComplete,重同步完成标志。T0: ad.java:1075 ready 检查 !c2.D 继续等待; 2629 包112 反序列化,verified
+field,com.corrodinggames.rts.gameFramework.j,c,F,receiverWorker,"接收线程对象(j.d)。T0: c.java:122 F=new d(this,null)",verified
+field,com.corrodinggames.rts.gameFramework.j,c,G,senderWorker,发送线程对象(j.e)。T0: c.java:118 G=new e(this); enqueue 检查 G!=null,verified
+field,com.corrodinggames.rts.gameFramework.j,c,H,receiverThread,接收Thread。T0: c.java:123 H=new Thread(F) 守护线程启动,verified
+field,com.corrodinggames.rts.gameFramework.j,c,I,senderThread,发送Thread。T0: c.java:119-121 I=new Thread(G),verified
+field,com.corrodinggames.rts.gameFramework.j,c,J,sendWorkerClosed,"发送侧关闭标志。T0: a(bl,bl2,String) bl2=true 时 J=true; J&&K 才关 socket",verified
+field,com.corrodinggames.rts.gameFramework.j,c,K,receiveWorkerClosed,"接收侧关闭标志。T0: a(bl,bl2,String) bl=true 时 K=true",verified
+method,com.corrodinggames.rts.gameFramework.j,c,a(),isCommandRateLimited,命令限速检查(10秒窗口>100条)。T0: 见 R/S/T 字段; 03 getad(),verified
+method,com.corrodinggames.rts.gameFramework.j,c,b(),getPingOrTimeoutState,"取ping状态: -2=未测, -1=超时(>5s), 否则A。T0: B/A 字段逻辑",verified
+method,com.corrodinggames.rts.gameFramework.j,c,c(),getPlayerTeamId,取玩家队伍ID(z.k)或-1。T0: z 非空返回 z.k,verified
+method,com.corrodinggames.rts.gameFramework.j,c,d(),startWorkerThreads,启动Send/Receive双线程(守护)。T0: G/I/F/H 创建启动,verified
+method,com.corrodinggames.rts.gameFramework.j,c,a(java.lang.String),sendDisconnectMessage,发送断线消息(111号包)并关闭连接。T0: as2.c(string) 写入后 a(as2.b(111)),verified
+method,com.corrodinggames.rts.gameFramework.j,c,"a(boolean, boolean)",disconnectWithTimeout,"带""Time out""原因的断开。T0: 委托 a(bl,bl2,""Time out"")",verified
+method,com.corrodinggames.rts.gameFramework.j,c,"a(boolean, boolean, java.lang.String)",handleRemoteDisconnect,"远端断开处理: 组装断开消息(spectator/player/relay), 通知UI与聊天, 双线程都停后关socket。T0: 完整逻辑+c()日志名 ""handleRemoteDisconnect""",verified
+method,com.corrodinggames.rts.gameFramework.j,c,"a(java.lang.String, java.lang.Throwable)",logError,"错误日志(带连接ID前缀)。T0: l.a(d(string),throwable)",verified
+method,com.corrodinggames.rts.gameFramework.j,c,b(java.lang.String),logWarn,警告日志。T0: l.b(d(string)),verified
+method,com.corrodinggames.rts.gameFramework.j,c,c(java.lang.String),logInfo,信息日志。T0: l.e(d(string)),verified
+method,com.corrodinggames.rts.gameFramework.j,c,d(java.lang.String),formatLogTag,"格式化日志前缀 ""id:N: msg (Player:name)""。T0: 拼接 c 与 z.v",verified
+method,com.corrodinggames.rts.gameFramework.j,c,a(com.corrodinggames.rts.gameFramework.j.au),enqueuePacket,数据包入发送队列(G.a)。T0: G==null&&a 时丢弃,verified
+field,com.corrodinggames.rts.gameFramework.j,ah,a,mapType,地图类型(GameModeEnum)。T0: Debug.setMultiplayerMap: ah2.a=ai.values()[n2]; setMultiplayerSave: a=ai.c,verified
+field,com.corrodinggames.rts.gameFramework.j,ah,b,mapName,"地图名(默认""[z;p10]Crossing Large (10p).tmx"")。T0: setMultiplayerMap b=string; ad.java:743 ""<CHAT ONLY>"" 判定; n.b(list) game_map 序列化",verified
+field,com.corrodinggames.rts.gameFramework.j,ah,c,startingCredits,"起始资金。T0: b() 输出 ""startingCredits: ""+c; ad.k() 返回 e(ay.c)",verified
+method,com.corrodinggames.rts.gameFramework.j,ah,a(),resetToDefaults,恢复默认: 内置地图+Crossing Large。T0: 31-33行,verified
+method,com.corrodinggames.rts.gameFramework.j,ah,b(),toDebugString,输出全部设置文本(键值对)。T0: 35-49行,verified
+method,com.corrodinggames.rts.gameFramework.j,ah,c(),cloneSettings,克隆设置(Cloneable)。T0: super.clone(),verified
+method,com.corrodinggames.rts.gameFramework.j,ah,a(com.corrodinggames.rts.gameFramework.j.as),writeToPacket,序列化到PacketWriter(版本4格式)。T0: 62-77行,verified
+method,com.corrodinggames.rts.gameFramework.j,ah,a(com.corrodinggames.rts.gameFramework.j.k),readFromPacket,从PacketReader反序列化(按版本by逐级兼容)。T0: 80-103行,verified
+field,com.corrodinggames.rts.gameFramework.j,ai,a,SKIRMISH_MAP,"内置地图(显示名""Skirmish Map"")。T0: ai$1.a()",verified
+field,com.corrodinggames.rts.gameFramework.j,ai,b,CUSTOM_MAP,"自定义地图(""Custom Map"")。T0: ai$2.a()",verified
+field,com.corrodinggames.rts.gameFramework.j,ai,c,SAVED_GAME,"存档(""Saved Game"")。T0: ai$3.a(); Debug.setMultiplayerSave 置 ai.c",verified
+method,com.corrodinggames.rts.gameFramework.j,ai,a(),getDisplayName,枚举显示名(抽象)。T0: 三个子类返回文本,verified
+method,com.corrodinggames.rts.gameFramework.j,at,a(),flushAll,冲刷: DataOutputStream→Buffered→GZIP finish。T0: 21-29行,verified
+method,com.corrodinggames.rts.gameFramework.j,at,b(),closeStream,"关闭(包装流时TODO警告)。T0: 31-37行 l.g(""TODO: Cannot yet close wrapped stream"")",verified
+field,com.corrodinggames.rts.gameFramework.j,l,a,blockName,块名。T0: k.java:286 l2.a=string 赋值,verified
+field,com.corrodinggames.rts.gameFramework.j,l,b,byteArrayInput,底层字节数组流。T0: 构造 this.b=new ByteArrayInputStream(byArray),verified
+field,com.corrodinggames.rts.gameFramework.j,l,c,dataInput,当前DataInputStream(可选GZIP)。T0: 构造 19-20行; k.java:291 取此作当前流,verified
+method,com.corrodinggames.rts.gameFramework.j,l,"<init>(byte[], boolean, boolean)",init,构造: 字节数组→(可选Buffered+GZIP)→DataInputStream。T0: 17-21行; 由 k.startBlockAndGetName 创建,verified
+field,com.corrodinggames.rts.gameFramework.j,b,a,playerId,"发送者玩家ID(int)。T0: a.java:24-26 a(int n,...) 构造 b2=n",verified
+field,com.corrodinggames.rts.gameFramework.j,b,b,playerName,"发送者名(可空)。T0: a() 拼接 b+"": ""+c",verified
+field,com.corrodinggames.rts.gameFramework.j,b,c,message,"消息文本。T0: a()/b() 使用; a(c,int) 前缀过滤 ""-i ""/""-qc """,verified
+field,com.corrodinggames.rts.gameFramework.j,b,d,connectionId,"来源连接ID。T0: 构造 c2!=null 时 d=c2.c; a(c,int) 按 d 统计",verified
+field,com.corrodinggames.rts.gameFramework.j,b,e,timestampNanos,"时间戳(System.nanoTime)。T0: 构造 this.e=System.nanoTime(); a(c,int) 按 e 超窗过滤",verified
+field,com.corrodinggames.rts.gameFramework.j,b,f,chatSystemRef,"所属ChatSystem(final)。T0: a.java:26 new b(this,...); b() 调 f.a() 转义HTML",verified
+method,com.corrodinggames.rts.gameFramework.j,b,a(),toPlainText,"纯文本: ""name: message""。T0: 30-33行",verified
+method,com.corrodinggames.rts.gameFramework.j,b,b(),toHtml,"HTML渲染: 着色名+换行。T0: 35-56行 f.h 取颜色, f.a 转义, <br/> 分隔",verified
+field,com.corrodinggames.rts.gameFramework.j,a,a,messageQueue,"消息队列(ConcurrentLinkedQueue<b>, 上限45条)。T0: 18/26-30行",verified
+method,com.corrodinggames.rts.gameFramework.j,a,a(java.lang.String),escapeHtml,HTML转义。T0: return f.i(string),verified
+method,com.corrodinggames.rts.gameFramework.j,a,"a(int, java.lang.String, java.lang.String, c)",addMessage,添加消息(截断>45丢弃最旧)。T0: 24-31行,verified
+method,com.corrodinggames.rts.gameFramework.j,a,"a(c, int)",countMessagesInWindow,"统计连接在时间窗内的有效消息数(跳过-i/-qc控制台命令, 多行加权)。T0: 33-53行",verified
+method,com.corrodinggames.rts.gameFramework.j,a,a(),toPlainTextAll,全部消息纯文本。T0: 55-61行,verified
+method,com.corrodinggames.rts.gameFramework.j,a,b(),getMessageQueue,取队列。T0: 63-65行,verified
+method,com.corrodinggames.rts.gameFramework.j,a,a(boolean),toHtmlAll,全部消息HTML(bl=逆序)。T0: 67-79行,verified
+method,com.corrodinggames.rts.gameFramework.j,a,b(boolean),toHtmlSpanned,HTML→Spanned(Android Html.fromHtml)。T0: 81-83行,verified
+method,com.corrodinggames.rts.gameFramework.j,a,c(),clearMessages,清空队列。T0: 85-87行,verified
+field,com.corrodinggames.rts.gameFramework.j,d,a,runningFlag,运行标志(Boolean)。T0: run() 循环条件 this.a && !b.a && !socket.isClosed,verified
+field,com.corrodinggames.rts.gameFramework.j,d,b,connection,所属连接(final c)。T0: 构造保存; 通过 c.a(b) 访问引擎,verified
+method,com.corrodinggames.rts.gameFramework.j,d,run(),run,"接收循环: 读int长度+int类型→校验(>2000万记日志, >10000按模式限最大, 负值拒绝)→new au(type)分配字节→读满→au.b>100走引擎优先处理否则入aN队列。T0: 54-104行",verified
+field,com.corrodinggames.rts.gameFramework.j,e,a,runningFlag,运行标志(Boolean)。T0: run() 条件 this.a && !f.a,verified
+field,com.corrodinggames.rts.gameFramework.j,e,b,rawOutputStream,原始socket输出流。T0: 构造 b=c2.d.getOutputStream(),verified
+field,com.corrodinggames.rts.gameFramework.j,e,c,bufferedOutput,缓冲输出流。T0: new BufferedOutputStream(b),verified
+field,com.corrodinggames.rts.gameFramework.j,e,d,dataOutput,DataOutputStream。T0: new DataOutputStream(c),verified
+field,com.corrodinggames.rts.gameFramework.j,e,e,scratchBuffer,字节缓冲复用(w)。T0: 85-90行 小包复用 this.e 避免分配,verified
+field,com.corrodinggames.rts.gameFramework.j,e,f,connection,所属连接(final c)。T0: 构造 f=c2,verified
+method,com.corrodinggames.rts.gameFramework.j,e,a(au),enqueuePacket,入发送队列并唤醒。T0: f.f.add(au2)+notifyAll; 连接已关则丢弃,verified
+method,com.corrodinggames.rts.gameFramework.j,e,a(),wakeup,唤醒等待。T0: notifyAll(),verified
+method,com.corrodinggames.rts.gameFramework.j,e,b(),waitForPackets,空队列等待10秒。T0: f.f.isEmpty 时 wait(10000),verified
+method,com.corrodinggames.rts.gameFramework.j,e,run(),run,发送循环: 取包→ay序号压缩(175/176)→按socket类型(h/a.a.h/普通)写int长度+int类型+字节→flush→au.d!=-1时sleep(延迟包)。T0: 57-132行,verified
+field,com.corrodinggames.rts.gameFramework.j,aj,a,ipAddress,"封禁IP/标识。T0: ad.a(c,String,int): aj2.a=c2.f()(IP), a(c) 查询用 string.equals(aj2.a)",verified
+field,com.corrodinggames.rts.gameFramework.j,aj,b,banExpiryMillis,封禁到期时间戳。T0: aj2.b=now+n2*1000; b() 计算剩余秒,verified
+field,com.corrodinggames.rts.gameFramework.j,aj,c,banReason,封禁原因。T0: aj2.c=string(ban 原因参数),verified
+method,com.corrodinggames.rts.gameFramework.j,aj,a(),getReasonText,"原因文本(默认""Active ban"")。T0: 12-15行",verified
+method,com.corrodinggames.rts.gameFramework.j,aj,b(),getRemainingSeconds,剩余封禁秒数。T0: (b-now)/1000,verified
+field,com.corrodinggames.rts.gameFramework.j,am,a,TWO_TEAMS,2队模式: 洗牌后前一半队0后一半队1。T0: ad.java:4538-4562 分支,verified
+field,com.corrodinggames.rts.gameFramework.j,am,b,THREE_TEAMS,3队模式: 三均分。T0: ad.java:4566-4629 分支,verified
+field,com.corrodinggames.rts.gameFramework.j,am,c,SOLO_TEAMS,每人独立队伍(自由混战)。T0: ad.java:4631-4637 r=n15++,verified
+field,com.corrodinggames.rts.gameFramework.j,am,d,RANDOM_TEAMS,随机队伍分配(H()随机)。T0: ad.java:4639-4650,verified
+field,com.corrodinggames.rts.gameFramework.j,an,a,hostAddress,目标主机。T0: 构造 a=string,verified
+field,com.corrodinggames.rts.gameFramework.j,an,b,useSteam,"Steam连接标志。T0: 构造 b=bl; run() ad.b(this.a,this.b)",verified
+field,com.corrodinggames.rts.gameFramework.j,an,c,connecting,连接进行中标志。T0: b() 置 true; run() finally 置 false,verified
+field,com.corrodinggames.rts.gameFramework.j,an,d,connectThread,连接线程。T0: b() d=new Thread(this),verified
+field,com.corrodinggames.rts.gameFramework.j,an,e,errorMessage,错误消息(失败/CANCELLED/cancelled)。T0: run() 异常分支,verified
+field,com.corrodinggames.rts.gameFramework.j,an,f,callback,成功回调(Runnable)。T0: run() finally 无取消时 f.run(),verified
+field,com.corrodinggames.rts.gameFramework.j,an,g,socket,连接结果Socket。T0: run() ad.b() 返回值,verified
+field,com.corrodinggames.rts.gameFramework.j,an,h,cancelled,取消标志。T0: a() 置 h=true; run() finally 检查后关socket,verified
+method,com.corrodinggames.rts.gameFramework.j,an,a(),tryCancel,请求取消(仅连接中生效)。T0: 11-16行,verified
+method,com.corrodinggames.rts.gameFramework.j,an,b(),start,启动线程连接。T0: 18-22行,verified
+method,com.corrodinggames.rts.gameFramework.j,an,run(),run,"执行连接: ad.b(host,useSteam)→成功回调/失败记录错误。T0: 24-52行",verified
+field,com.corrodinggames.rts.gameFramework.j,ap,a,ipAddress,来源IP。T0: isIpAllowed 中 ap2.a=inetAddress,verified
+field,com.corrodinggames.rts.gameFramework.j,ap,b,attemptCount,窗口内尝试次数(初始1)。T0: ++ap2.b,verified
+field,com.corrodinggames.rts.gameFramework.j,ap,c,flaggedTooMany,"已标记超限(>30/10/5)。T0: 84-86行 ""DOS: Too many attempts""",verified
+field,com.corrodinggames.rts.gameFramework.j,ap,d,flaggedExcessive,"已标记极度过量(>300)。T0: 88-90行 ""DOS: Excessive attempts""",verified
+field,com.corrodinggames.rts.gameFramework.j,ap,e,listenerRef,所属ServerListener(final)。T0: 构造,verified
+field,com.corrodinggames.rts.gameFramework.j,aq,a,singleton,单例实例(static)。T0: 4行 new aq(); p/y 中 aq.a.* 直接使用,verified
+field,com.corrodinggames.rts.gameFramework.j,aq,b,tokenSaltA,"token盐常量(默认2, create前置5)。T0: n.b() 前置 aq.b=5; a(String,List) 参与 (b+c)",verified
+field,com.corrodinggames.rts.gameFramework.j,aq,c,tokenSaltB,token盐常量(3)。T0: a() 参与 b+c,verified
+method,com.corrodinggames.rts.gameFramework.j,aq,"a(float, float, float)",lerp,线性插值 f+(f2-f)*f3。T0: 13行,verified
+method,com.corrodinggames.rts.gameFramework.j,aq,"a(java.lang.String, java.util.List)",addCreateTokens,"组装创建token: tx1=当前时间, tx2/tx3=截断哈希(""_""+string+盐)。T0: 15-20行, y.java create 调用",verified
+method,com.corrodinggames.rts.gameFramework.j,aq,"b(java.lang.String, java.util.List)",addSelfInfoToken,"组装自信息token tx3(负号盐)。T0: 22-24行, p.java self_info 调用",verified
+method,com.corrodinggames.rts.gameFramework.j,aq,"c(java.lang.String, java.util.List)",addConditionalToken,f>1000 时组装 tx4(加号盐)。T0: 26-30行,verified
+method,com.corrodinggames.rts.gameFramework.j,aq,a(com.corrodinggames.rts.gameFramework.j.c),checkSteamRelay,中继判定: 连接N(isRelay)且 bx>-5 时按10%概率置 O(isSteamRelay)。T0: 32-38行,verified
+method,com.corrodinggames.rts.gameFramework.j,ar,a(int),addFiveOffset,数值加5偏移。T0: return n+5; 03 NetworkUtils 全同,verified
+method,com.corrodinggames.rts.gameFramework.j,ar,a(),getAppSignatureMd5,应用签名MD5(仅Android)。T0: l.at() 检查后 i.o(): PackageInfo.signatures→f.b(MD5),verified
+field,com.corrodinggames.rts.gameFramework.j,aw,a,byteArrayOutput,主字节输出流(ByteArrayOutputStream)。T0: 构造 new ByteArrayOutputStream(),verified
+field,com.corrodinggames.rts.gameFramework.j,aw,e,mainPrintStream,主PrintStream。T0: 构造 new PrintStream(a),verified
+field,com.corrodinggames.rts.gameFramework.j,aw,f,currentPrintStream,当前写入PrintStream(private)。T0: b() 记录; 块栈切换,verified
+field,com.corrodinggames.rts.gameFramework.j,aw,g,blockStack,"文本块栈(LinkedList<ax>)。T0: 33行; a(String,boolean) 压入",verified
+method,com.corrodinggames.rts.gameFramework.j,aw,a(),flushAll,冲刷全部块+主流。T0: 36-46行,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,b(),recordCurrentStream,记录当前流为f。T0: 49-51行,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,b(int),toPacket,"转数据包。T0: 委托 a(n2,-1)",verified
+method,com.corrodinggames.rts.gameFramework.j,aw,"a(int, int)",toPacketWithDelay,转数据包(带延迟d)。T0: 70-81行 au2.d=n3,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,c(),toStringText,转文本。T0: 84-92行,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,d(),toByteArray,转字节。T0: 95-103行,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,"a(java.lang.String, boolean)",startBlock,开始文本块(压栈ax)。T0: 309-315行,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,a(java.lang.String),endBlock,"结束文本块(弹出, 输出"">>>> Start of block""标记)。T0: 317-335行, 日志 ""OutputNetStream:endBlock""",verified
+method,com.corrodinggames.rts.gameFramework.j,aw,e(),writeMark,写标记(short 12345)。T0: 289-292行,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,f(),isTextMode,文本模式标志(恒true)。T0: 300-302行,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,d(java.lang.String),writeIfDebugOnly,仅调试写入标记行。T0: 294-297行,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,e(java.lang.String),writeBlockComment,写注释块。T0: 304-307行,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,a(byte[]),writeByteArray,写字节数组(长度+数据)。T0: 277-280行,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,a(com.corrodinggames.rts.gameFramework.j.c),writeConnection,写连接ID(0=null)。T0: 228-234行 c2.c,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,a(Enum),writeEnum,写枚举(类名+ordinal)。T0: 204-212行,verified
+method,com.corrodinggames.rts.gameFramework.j,aw,a(PointF),writePointF,写点。T0: 194-201行,verified
+method,com.corrodinggames.rts.gameFramework.j,ax,a(),flushAll,冲刷: PrintStream→Buffered。T0: 20-25行,verified
+method,com.corrodinggames.rts.gameFramework.j,ax,b(),closeStream,关闭(包装流时TODO警告)。T0: 27-33行,verified
+field,com.corrodinggames.rts.gameFramework.j,ay,f,wrappedPacket,被包装的原始数据包(au)。T0: e.java:66-78 取 f 编码/取 f.b/f.c 序号,verified
+field,com.corrodinggames.rts.gameFramework.j,ay,g,sequenceNumber,序号(int)。T0: e.java:71/75 as2.a(g),verified
+method,com.corrodinggames.rts.gameFramework.j,ay,"<init>(int, au)",init,"构造(类型固定175, 带序号与原始包)。T0: 15-19行",verified
+field,com.corrodinggames.rts.gameFramework.j,ao,c,isRunning,"监听运行标志(volatile, 默认true)。T0: run() 循环条件; b() 置 false",verified
+field,com.corrodinggames.rts.gameFramework.j,ao,d,serverSocket,监听Socket(ServerSocket或UDP包装)。T0: a(boolean) new ServerSocket / a.a.b UDP,verified
+field,com.corrodinggames.rts.gameFramework.j,ao,e,port,监听端口。T0: a(boolean) e=this.r.m(引擎端口),verified
+field,com.corrodinggames.rts.gameFramework.j,ao,f,isUdp,"UDP模式标志。T0: 日志 ""udp""/""tcp"" 分支",verified
+field,com.corrodinggames.rts.gameFramework.j,ao,g,rateLimitWindowStart,限速窗口起点(-1)。T0: isIpAllowed 60秒窗口重置,verified
+field,com.corrodinggames.rts.gameFramework.j,ao,h,unusedFinalFalse,未使用final常量(false),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ao,i,unusedFinalTrue,未使用final常量(true),verified-exists
+field,com.corrodinggames.rts.gameFramework.j,ao,j,socketLock,socket操作锁。T0: a()/b() synchronized(this.j),verified
+field,com.corrodinggames.rts.gameFramework.j,ao,k,attemptEntries,"IP尝试条目表(ArrayList<ap>)。T0: isIpAllowed k.add/remove, >200淘汰",verified
+field,com.corrodinggames.rts.gameFramework.j,ao,l,attemptLock,尝试表锁。T0: isIpAllowed synchronized(this.l),verified
+field,com.corrodinggames.rts.gameFramework.j,ao,m,uniqueAttemptCount,"窗口内唯一IP数。T0: >500 拒绝 ""DOS: Too many unique attempts""",verified
+field,com.corrodinggames.rts.gameFramework.j,ao,n,totalAttemptCount,窗口内总尝试数。T0: 末尾 ++this.n; 决定单IP上限30/10/5,verified
+field,com.corrodinggames.rts.gameFramework.j,ao,o,connectionLockdownFlag,"总连接超300锁定标志。T0: ""DOS: Too open connections locking down""",verified
+field,com.corrodinggames.rts.gameFramework.j,ao,p,uniqueAttemptsFlagged,唯一IP超限已标记。T0: m>500 置 p=true,verified
+field,com.corrodinggames.rts.gameFramework.j,ao,q,ipExcessFlagged,同IP连接超限已标记。T0: n4>n5 置 q=true,verified
+method,com.corrodinggames.rts.gameFramework.j,ao,"a(java.net.InetAddress, boolean)",isIpAllowed,"IP准入检查(60秒窗口: 单IP 30/10/5次, 200条目, 500唯一, 同IP 20/10/5连接, 总300)。T0: 46-153行 全量DOS日志",verified
+method,com.corrodinggames.rts.gameFramework.j,ao,a(),recreateServerSocket,"重建监听socket(失败重试)。T0: 158-176行 ""Recreating server socket""",verified
+method,com.corrodinggames.rts.gameFramework.j,ao,a(boolean),startListening,启动监听(bl=UDP)。T0: 178-189行,verified
+method,com.corrodinggames.rts.gameFramework.j,ao,run(),acceptLoop,accept循环: TCP_NODELAY+15s超时→isIpAllowed→new c→c2.h=f(udp)→c2.e=IP→c2.d() 启动→engine.aM.add。T0: 192-264行,verified
+method,com.corrodinggames.rts.gameFramework.j,ao,b(),stopListening,停止监听并关闭socket。T0: 269-283行,verified
+method,a.a,c,,getLocalAddress,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置8),order-align-v19.111
+method,a.a,d,,close,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置14),order-align-v19.111
+method,a.a.a,c,,isEnabled,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置5),order-align-v19.111
+method,a.a.a,d,,reset,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置6),order-align-v19.111
+method,a.a.a,e,,reset2,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置7),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,f,,kickTeamImpl,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置11),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,q,,emptyPlaceholderT,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置33),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,s,,waitForSyncComplete,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置35),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,t,,triggerDesyncResync,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置37),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,u,,checkAllForDesync,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置39),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,x,,clearConnectionFlags,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置45),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,az,,getDistinctPlayerCount,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置47),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,C,,emptyPlaceholderF,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置56),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,E,,checkConnectionPings,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置58),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,H,,dismissInterfaceOverlay,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置69),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,K,,startServer,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置80),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,L,,sendSync,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置82),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,M,,updateConnections,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置86),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,Q,,showReconnectDialog,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置92),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,aA,,getClientConnection,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置97),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,U,,registerAllConnections,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置103),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,V,,generateClientId,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置104),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,W,,getServerIdentifier,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置108),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,j,,cancelNotification,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置128),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,ae,,addAIToGame,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置140),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,aD,,cancelLobbyKickTimer,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置148),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.j,am,,getAllTeamsSynchronized,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置156),order-align-v19.111
+field,com.corrodinggames.rts.gameFramework.j,ae,d,isRequired,"field-order-zip-v19.114: 02b boolean d=- <-> 03 boolean isRequired=- (位置2, PasswordManager)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.j,ae,c,minLength,"field-order-zip-v19.114: 02b int c=- <-> 03 int minLength=- (位置1, PasswordManager)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.j,ae,b,passwordHash,"field-order-zip-v19.114: 02b String b=- <-> 03 String passwordHash=- (位置0, PasswordManager)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.j,at,c,fileName,"field-order-zip-v19.114: 02b String c=- <-> 03 String fileName=- (位置2, CompressedStream)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.j,ae,f,algorithmName,"field-order-zip-v19.114: 02b String f=- <-> 03 String algorithmName=- (位置4, PasswordManager)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.j,ae,g,displayLabel,"field-order-zip-v19.114: 02b String g=- <-> 03 String displayLabel=- (位置5, PasswordManager)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.j,ae,e,saltValue,"field-order-zip-v19.114: 02b String e=- <-> 03 String saltValue=- (位置3, PasswordManager)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.j,g,w,protocolVersion,"field-order-zip-v19.114: 02b int w=8 <-> 03 int protocolVersion=8 (位置22, GameServerInfo)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.j,g,p,serverPort,"field-order-zip-v19.114: 02b int p=- <-> 03 int serverPort=- (位置15, GameServerInfo)",field-order-zip-v19.114
+field,a.a,b,d,acceptQueue,"field-order-zip-v19.114: 02b DatagramSocket d=- <-> 03 DatagramSocket acceptQueue=- (位置1, ReliableServerSocket)",field-order-zip-v19.114
+field,a.a,b,i,backlog,"field-order-zip-v19.114: 02b HashMap i=- <-> 03 HashMap backlog=- (位置6, ReliableServerSocket)",field-order-zip-v19.114
+field,a.a,b,h,acceptLock,"field-order-zip-v19.114: 02b ArrayList h=- <-> 03 ArrayList acceptLock=- (位置5, ReliableServerSocket)",field-order-zip-v19.114

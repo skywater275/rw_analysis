@@ -1,0 +1,597 @@
+jar_fqn,reason
+com.Element,无 fwd 映射 (identity-index 未收录)
+com.ElementDocument,无 fwd 映射 (identity-index 未收录)
+com.ElementList,无 fwd 映射 (identity-index 未收录)
+com.LibRocket,无 fwd 映射 (identity-index 未收录)
+com.LibRocket$CompiledGeometry,无 fwd 映射 (identity-index 未收录)
+com.LibRocket$TextureHolder,无 fwd 映射 (identity-index 未收录)
+com.a.a.a.a,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.librocket.e,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.librocket.scripts.Root,fwd=com.corrodinggames.librocket.scripts.Root 但 03 无对应文件
+com.corrodinggames.librocket.scripts.ScriptEngine$1,fwd=com.corrodinggames.librocket.scripts.UIScriptEngine$1 但 03 无对应文件
+com.corrodinggames.librocket.scripts.ScriptEngine$Action,fwd=com.corrodinggames.librocket.scripts.UIScriptEngine$Action 但 03 无对应文件
+com.corrodinggames.librocket.scripts.ScriptEngine$RunnableAction,fwd=com.corrodinggames.librocket.scripts.UIScriptEngine$RunnableAction 但 03 无对应文件
+com.corrodinggames.rts.R,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$anim,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$array,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$attr,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$color,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$drawable,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$id,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$layout,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$raw,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$string,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$style,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$styleable,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.R$xml,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.a.a,fwd=com.corrodinggames.rts.platform.DebugServer 但 03 无对应文件
+com.corrodinggames.rts.a.a$1,fwd=com.corrodinggames.rts.platform.DebugServer$1 但 03 无对应文件
+com.corrodinggames.rts.a.a$2,fwd=com.corrodinggames.rts.platform.DebugServer$2 但 03 无对应文件
+com.corrodinggames.rts.a.a.g,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.a.a.h,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.a.a.j,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.a.b,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.appFramework.o,fwd=com.corrodinggames.rts.appFramework.PlayerNameFormatter 但 03 无对应文件
+com.corrodinggames.rts.appFramework.p,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.appFramework.p$1,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.appFramework.q,fwd=com.corrodinggames.rts.appFramework.ReplayFolderManager 但 03 无对应文件
+com.corrodinggames.rts.appFramework.s,fwd=com.corrodinggames.rts.appFramework.StorageFolderPicker 但 03 无对应文件
+com.corrodinggames.rts.appFramework.s$1,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.a.a.a$1,fwd=com.corrodinggames.rts.game.ai.strategies.AIStrategy$1 但 03 无对应文件
+com.corrodinggames.rts.game.a.a.b$1,fwd=com.corrodinggames.rts.game.ai.strategies.AIStrategyResult$1 但 03 无对应文件
+com.corrodinggames.rts.game.a.a.b$2,fwd=com.corrodinggames.rts.game.ai.strategies.AIStrategyResult$2 但 03 无对应文件
+com.corrodinggames.rts.game.a.a.c,fwd=com.corrodinggames.rts.game.ai.strategies.AIUnitGroupStrategy 但 03 无对应文件
+com.corrodinggames.rts.game.a.a.d,fwd=com.corrodinggames.rts.game.ai.strategies.AINukeStrategy 但 03 无对应文件
+com.corrodinggames.rts.game.b.c,fwd=com.corrodinggames.rts.game.map.FogMapRenderer 但 03 无对应文件
+com.corrodinggames.rts.game.units.ao,fwd=com.corrodinggames.rts.game.units.MovementType 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$1,fwd=com.corrodinggames.rts.game.units.UnitRegistry$1 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$10,fwd=com.corrodinggames.rts.game.units.UnitRegistry$10 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$11,fwd=com.corrodinggames.rts.game.units.UnitRegistry$11 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$12,fwd=com.corrodinggames.rts.game.units.UnitRegistry$12 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$13,fwd=com.corrodinggames.rts.game.units.UnitRegistry$13 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$14,fwd=com.corrodinggames.rts.game.units.UnitRegistry$14 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$15,fwd=com.corrodinggames.rts.game.units.UnitRegistry$15 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$16,fwd=com.corrodinggames.rts.game.units.UnitRegistry$16 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$17,fwd=com.corrodinggames.rts.game.units.UnitRegistry$17 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$18,fwd=com.corrodinggames.rts.game.units.UnitRegistry$18 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$19,fwd=com.corrodinggames.rts.game.units.UnitRegistry$19 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$2,fwd=com.corrodinggames.rts.game.units.UnitRegistry$2 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$20,fwd=com.corrodinggames.rts.game.units.UnitRegistry$20 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$21,fwd=com.corrodinggames.rts.game.units.UnitRegistry$21 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$22,fwd=com.corrodinggames.rts.game.units.UnitRegistry$22 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$23,fwd=com.corrodinggames.rts.game.units.UnitRegistry$23 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$24,fwd=com.corrodinggames.rts.game.units.UnitRegistry$24 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$25,fwd=com.corrodinggames.rts.game.units.UnitRegistry$25 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$26,fwd=com.corrodinggames.rts.game.units.UnitRegistry$26 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$27,fwd=com.corrodinggames.rts.game.units.UnitRegistry$27 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$28,fwd=com.corrodinggames.rts.game.units.UnitRegistry$28 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$29,fwd=com.corrodinggames.rts.game.units.UnitRegistry$29 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$3,fwd=com.corrodinggames.rts.game.units.UnitRegistry$3 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$30,fwd=com.corrodinggames.rts.game.units.UnitRegistry$30 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$31,fwd=com.corrodinggames.rts.game.units.UnitRegistry$31 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$32,fwd=com.corrodinggames.rts.game.units.UnitRegistry$32 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$33,fwd=com.corrodinggames.rts.game.units.UnitRegistry$33 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$34,fwd=com.corrodinggames.rts.game.units.UnitRegistry$34 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$35,fwd=com.corrodinggames.rts.game.units.UnitRegistry$35 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$36,fwd=com.corrodinggames.rts.game.units.UnitRegistry$36 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$37,fwd=com.corrodinggames.rts.game.units.UnitRegistry$37 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$38,fwd=com.corrodinggames.rts.game.units.UnitRegistry$38 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$39,fwd=com.corrodinggames.rts.game.units.UnitRegistry$39 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$4,fwd=com.corrodinggames.rts.game.units.UnitRegistry$4 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$40,fwd=com.corrodinggames.rts.game.units.UnitRegistry$40 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$41,fwd=com.corrodinggames.rts.game.units.UnitRegistry$41 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$42,fwd=com.corrodinggames.rts.game.units.UnitRegistry$42 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$43,fwd=com.corrodinggames.rts.game.units.UnitRegistry$43 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$44,fwd=com.corrodinggames.rts.game.units.UnitRegistry$44 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$45,fwd=com.corrodinggames.rts.game.units.UnitRegistry$45 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$46,fwd=com.corrodinggames.rts.game.units.UnitRegistry$46 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$47,fwd=com.corrodinggames.rts.game.units.UnitRegistry$47 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$48,fwd=com.corrodinggames.rts.game.units.UnitRegistry$48 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$49,fwd=com.corrodinggames.rts.game.units.UnitRegistry$49 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$5,fwd=com.corrodinggames.rts.game.units.UnitRegistry$5 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$50,fwd=com.corrodinggames.rts.game.units.UnitRegistry$50 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$51,fwd=com.corrodinggames.rts.game.units.UnitRegistry$51 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$52,fwd=com.corrodinggames.rts.game.units.UnitRegistry$52 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$53,fwd=com.corrodinggames.rts.game.units.UnitRegistry$53 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$6,fwd=com.corrodinggames.rts.game.units.UnitRegistry$6 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$7,fwd=com.corrodinggames.rts.game.units.UnitRegistry$7 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$8,fwd=com.corrodinggames.rts.game.units.UnitRegistry$8 但 03 无对应文件
+com.corrodinggames.rts.game.units.ar$9,fwd=com.corrodinggames.rts.game.units.UnitRegistry$9 但 03 无对应文件
+com.corrodinggames.rts.game.units.at,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.av,fwd=com.corrodinggames.rts.game.units.UnitOrder 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.a.a,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.a.a.c,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.a.a.i,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.a.a.k,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.a.a.l,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.a.a.n,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.a.b,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.a.d,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.a.e,fwd=com.corrodinggames.rts.game.units.custom.actions.AutoFireMode 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.a.f,fwd=com.corrodinggames.rts.game.units.custom.actions.UnitBuildMode 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.aa,fwd=com.corrodinggames.rts.game.units.custom.ModFileWatcher 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.ab,fwd=com.corrodinggames.rts.game.units.custom.ModOriginDescriptor 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.ac,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.ad,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.ae,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.af,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.ah,fwd=com.corrodinggames.rts.game.units.custom.ModLoadPhase 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.ai,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.aj,fwd=com.corrodinggames.rts.game.units.custom.LocalizedTextParser 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.ak,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.al,fwd=com.corrodinggames.rts.game.units.custom.WarLogArrayEntry 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.am,fwd=com.corrodinggames.rts.game.units.custom.WarLogBooleanEntry 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.an,fwd=com.corrodinggames.rts.game.units.custom.WarLogNumberEntry 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.ao,fwd=com.corrodinggames.rts.game.units.custom.WarLogStringEntry 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.ap,fwd=com.corrodinggames.rts.game.units.custom.WarLogUnitEntry 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.aq,fwd=com.corrodinggames.rts.game.units.custom.WarLogEntryFactory 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.ar,fwd=com.corrodinggames.rts.game.units.custom.WarLogStaticEntry 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.as$1,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$10,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$11,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$12,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$13,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$14,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$15,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$16,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$17,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$18,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$19,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$2,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$3,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$4,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$5,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$6,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$7,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$8,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.as$9,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.at,fwd=com.corrodinggames.rts.game.units.custom.UnitDataWriter 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.au,fwd=com.corrodinggames.rts.game.units.custom.VariableScope$MemoryWriterFactory 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.av,fwd=com.corrodinggames.rts.game.units.custom.LogicWriterOperation 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.aw,fwd=com.corrodinggames.rts.game.units.custom.UnitTypeValueEvaluator 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.ax,fwd=com.corrodinggames.rts.game.units.custom.UnitValueEvaluator 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.ay,fwd=com.corrodinggames.rts.game.units.custom.CustomEffectTemplate 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.az,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.b.b,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.b.e,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.b.i,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.b.j,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.b.k,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.b.l,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.bb,fwd=com.corrodinggames.rts.game.units.custom.LocalizedStringBuilder 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.bc,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.bd,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.be,fwd=com.corrodinggames.rts.game.units.custom.RuleGroupValidator 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.bf,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.bg,fwd=com.corrodinggames.rts.game.units.custom.PlacementRuleValidator 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.bh,fwd=com.corrodinggames.rts.game.units.custom.ProjectileTemplate 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.bi,fwd=com.corrodinggames.rts.game.units.custom.UnitListParser 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.bj,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.bk,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.bl,fwd=com.corrodinggames.rts.game.units.custom.UnitSoundResolver 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.bm,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.bo,fwd=com.corrodinggames.rts.game.units.custom.ResourceException 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.bp,fwd=com.corrodinggames.rts.game.units.custom.TeamRuleValidator 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.bq,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.c.a,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.c.c,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.c.d,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.c.e,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.c.f,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.d.d,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.e.a.b,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.e.a.c,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.e.a.d,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.e.a.e,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.e.a.f,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.e.b,fwd=com.corrodinggames.rts.game.units.custom.effects.SeparatorType 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.e.e,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.f.b,fwd=com.corrodinggames.rts.game.units.custom.config.ActionFilter 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.f.c,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.f.d,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.g,fwd=com.corrodinggames.rts.game.units.custom.TagParser 但 03 无对应文件
+com.corrodinggames.rts.game.units.custom.logicBooleans.BooleanParseException,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareBooleanOnly,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareEqualBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareEqualNumbers,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareEqualStrings,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareEqualUnits,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareGreaterThanNumbers,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareGreaterThanOrEqualNumbers,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareLessThanNumbers,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareLessThanOrEqualNumbers,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareNotEqualBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareNotEqualNumbers,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareNotEqualStrings,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareNotEqualUnits,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$CompareNumbers,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathAddJoinerBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathDivideJoinerBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathJoinerBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathModulusJoinerBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathMultiplyJoinerBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$MathSubtractJoinerBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.CompareJoinerBoolean$StringJoinerBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$AbstractNumberBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$AndBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$CallContext,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$CallContext_self,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$CallContext_selfAndTarget,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$JoinerBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$LogicBooleanCommon,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$LogicBooleanCommonLocking,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$LogicNumberOnly,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$NotBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$OrBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$Parameter,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$ReturnType,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$StaticBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$StaticBooleanFalse,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$StaticBooleanTrue,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$StaticValueBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$TimeBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanActionFilter,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$AmmoBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$AmmoIncludingQueuedBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$BuiltAmountBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$CompareUnitsBroken,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$CompletedBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$CustomTimerBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EnergyBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EnergyIncludingQueuedBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$GameMapHeightBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$GameMapWidthBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$GameModeBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasActiveWaypoint,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasFlagBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasFlagDynamicBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasParent,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasResourcesBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HasTakenDamage,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HeightBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HeightValueBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$HpBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$InMapBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsAttackingBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsControlledByAI,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsGameFrameBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsOnTeam,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsResourceLargerThan,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$IsReversingBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$KillsBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$LastConvertedBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$MaxEnergyBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$MaxHpBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$MaxMoveSpeedBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$MaxShieldBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$MovingBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfAttachedUnitsBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfConnectionsBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfQueuedWaypoints,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfUnitsInEnemyOrAllyTeam,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfUnitsInEnemyOrAllyTeam$HandleCallbackCountAlly,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfUnitsInEnemyOrAllyTeam$HandleCallbackCountEnemies,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfUnitsInTeam,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$NumberOfUnitsInTeam$HandleCallbackCount,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$OverCliftBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$OverLiquidBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$OverPassableTileBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$OverWaterBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$PositionXBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$PositionYBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$PriceCreditsBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$QueueSize,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$ResourceCountBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$ResourceScope,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$RotationBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$ShieldBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$SpeedBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$SpeedValueBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TagsBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamDefeatedTechBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamIdBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamTagBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamVictoryBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamWipedOutBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$ThisActionRepeatedCount,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TimeAliveBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TouchWaterBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TransportingCountBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TransportingUnitWithTagsBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$UnitIdBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$isDead,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$isEnergyRechargingBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$isTransportUnloading,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader$ArrayContains,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader$ArrayFunction,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader$ArrayGet,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader$ArrayGetUnit,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ArrayContextReader$ArraySize,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$DefaultContextReader,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$LogicBooleanContext,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$LogicBooleanContextWithDefault,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$LogicBooleanScopeOnly,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ParameterMapping,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$ParameterMapping$FieldOrMethod,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanLoader$VoidContextReader,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$CreateMarker,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionCos,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirection,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirectionBetween,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistance,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistanceBetween,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistanceBetweenSquared,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistanceSquared,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionInt,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionLength,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMax,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMin,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionRnd,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionSin,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionSquareRoot,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$LogicNumberFunctionRawArgs,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$Debug,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$DebugPassthrough,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$LowerString,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$Playername,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$Select,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$StaticString,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$StringCast,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$StringCast$NumberToStringCast,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$Substring,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$TeamName,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$UpperString,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicString$WrappingLogicString,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$ActiveWaypointTargetReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$AttachmentUnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$AttackingReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$ChainedUnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$EventSourceReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$FirstUnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$GetAsMarker,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$GetOffsetAbsolute,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$GetOffsetRelative,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$GetOffsetRelativeStatic,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$LastDamagedByUnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$LockedUnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$Memory1UnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$Memory2UnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$NearestUnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$NearestUnitReference$HandleCallbackNearest,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$NullUnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$ParentUnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$PlaceholderUnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$SelfUnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$ThisActionTargetReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$TransportingUnitReference,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$UnitContextChangingBooleanByLogic,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$UnitContextChangingContext,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$UnitReferenceOrUnitType,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$AbstractMemoryLogicBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter$Operator,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter$WriterElement,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter$WriterFactory,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$EmptyVariableScope,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$KnownMemoryReadLogicBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$KnownMemoryScopeLogicBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryNames,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryWriter,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryWriterFactory,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryWriterFactory$MemoryWriterElement,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryWriterFactory$MemoryWriterElementIndex,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$ReadEventMemoryLogicBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$ReadUnitMemoryLogicBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableData,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataArray,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataBoolArray,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataBoolean,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataNull,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataNumber,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataNumberArray,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataString,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataUnit,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDataUnitArray,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableDefinition,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableMapping,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$VariableName,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.d,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.d.a.d,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.d.a.e,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.d.a.f,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.d.a.g,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.d.a.h,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.game.units.f.c,fwd=com.corrodinggames.rts.game.units.pathfinding.UnitGeoIndex 但 03 无对应文件
+com.corrodinggames.rts.game.units.g.b$1,fwd=com.corrodinggames.rts.game.units.weapons.ComponentType$1 但 03 无对应文件
+com.corrodinggames.rts.game.units.g.b$2,fwd=com.corrodinggames.rts.game.units.weapons.ComponentType$2 但 03 无对应文件
+com.corrodinggames.rts.game.units.n$1,fwd=com.corrodinggames.rts.game.units.UnitCategory$1 但 03 无对应文件
+com.corrodinggames.rts.game.units.n$2,fwd=com.corrodinggames.rts.game.units.UnitCategory$2 但 03 无对应文件
+com.corrodinggames.rts.game.units.n$3,fwd=com.corrodinggames.rts.game.units.UnitCategory$3 但 03 无对应文件
+com.corrodinggames.rts.game.units.n$4,fwd=com.corrodinggames.rts.game.units.UnitCategory$4 但 03 无对应文件
+com.corrodinggames.rts.game.units.n$5,fwd=com.corrodinggames.rts.game.units.UnitCategory$5 但 03 无对应文件
+com.corrodinggames.rts.game.units.n$6,fwd=com.corrodinggames.rts.game.units.UnitCategory$6 但 03 无对应文件
+com.corrodinggames.rts.game.units.o$1,fwd=com.corrodinggames.rts.game.units.UnitBehaviorEnum$1 但 03 无对应文件
+com.corrodinggames.rts.game.units.o$2,fwd=com.corrodinggames.rts.game.units.UnitBehaviorEnum$2 但 03 无对应文件
+com.corrodinggames.rts.game.units.o$3,fwd=com.corrodinggames.rts.game.units.UnitBehaviorEnum$3 但 03 无对应文件
+com.corrodinggames.rts.game.units.o$4,fwd=com.corrodinggames.rts.game.units.UnitBehaviorEnum$4 但 03 无对应文件
+com.corrodinggames.rts.game.units.o$5,fwd=com.corrodinggames.rts.game.units.UnitBehaviorEnum$5 但 03 无对应文件
+com.corrodinggames.rts.game.units.r$1,fwd=com.corrodinggames.rts.game.units.UnitActionEnum$1 但 03 无对应文件
+com.corrodinggames.rts.game.units.r$2,fwd=com.corrodinggames.rts.game.units.UnitActionEnum$2 但 03 无对应文件
+com.corrodinggames.rts.game.units.r$3,fwd=com.corrodinggames.rts.game.units.UnitActionEnum$3 但 03 无对应文件
+com.corrodinggames.rts.game.units.r$4,fwd=com.corrodinggames.rts.game.units.UnitActionEnum$4 但 03 无对应文件
+com.corrodinggames.rts.game.units.y,fwd=com.corrodinggames.rts.game.units.MobileUnit 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.aa,fwd=com.corrodinggames.rts.gameFramework.GroupController 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.ac,fwd=com.corrodinggames.rts.gameFramework.KeyBindings 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.am$1,fwd=com.corrodinggames.rts.gameFramework.GameRenderer$1 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.am$2,fwd=com.corrodinggames.rts.gameFramework.GameRenderer$2 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.at$1,fwd=com.corrodinggames.rts.gameFramework.MusicFolder$1 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.at$2,fwd=com.corrodinggames.rts.gameFramework.MusicFolder$2 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.at$3,fwd=com.corrodinggames.rts.gameFramework.MusicFolder$3 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.av,fwd=com.corrodinggames.rts.gameFramework.NullMusicPlayer 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.b.a.a,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.b.a.c,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.b.a.d,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.b.a.g,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.b.ab,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.b.ac,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.b.ag,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.b.f,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.b.f$1,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.b.k,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.bg,fwd=com.corrodinggames.rts.gameFramework.StatsHandler 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.bs$1,fwd=com.corrodinggames.rts.gameFramework.GamePhase$1 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.bs$2,fwd=com.corrodinggames.rts.gameFramework.GamePhase$2 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.bs$3,fwd=com.corrodinggames.rts.gameFramework.GamePhase$3 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.bs$4,fwd=com.corrodinggames.rts.gameFramework.GamePhase$4 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.d.c,fwd=com.corrodinggames.rts.gameFramework.effects.EffectEngine 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.d.d,fwd=com.corrodinggames.rts.gameFramework.effects.HUDAnchor 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f$a,fwd=com.corrodinggames.rts.gameFramework.GameRenderer$a 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.a.b,fwd=com.corrodinggames.rts.gameFramework.ui.panels.Button 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.a.c,fwd=com.corrodinggames.rts.gameFramework.ui.panels.Position 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.a.d,fwd=com.corrodinggames.rts.gameFramework.ui.panels.Enum 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.a.e,fwd=com.corrodinggames.rts.gameFramework.ui.panels.ImageButton 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.a.f,fwd=com.corrodinggames.rts.gameFramework.ui.panels.Panel 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.a.f$1,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.f.a.g,fwd=com.corrodinggames.rts.gameFramework.ui.panels.Panel2 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.a.i,fwd=com.corrodinggames.rts.gameFramework.ui.panels.Enum2 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.a.m,fwd=com.corrodinggames.rts.gameFramework.ui.panels.Enum3 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.ac,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.f.af,fwd=com.corrodinggames.rts.gameFramework.ui.TextItemBase 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.ak,fwd=com.corrodinggames.rts.gameFramework.ui.LayoutRow 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.ao,fwd=com.corrodinggames.rts.gameFramework.ui.LagHidingEntry 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.aq,fwd=com.corrodinggames.rts.gameFramework.ui.WarLogTextEntry 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.h,fwd=com.corrodinggames.rts.gameFramework.ui.YesNoMoreEnum 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.f.z,fwd=com.corrodinggames.rts.gameFramework.ui.MinimapDrawHelper 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.g,fwd=com.corrodinggames.rts.gameFramework.PlatformDetector 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.g.c,fwd=com.corrodinggames.rts.gameFramework.audio.StatsGrouping 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.g.f,fwd=com.corrodinggames.rts.gameFramework.audio.StatisticType 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.i.a,fwd=com.corrodinggames.rts.gameFramework.i.VersionChecker 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.i.b,fwd=com.corrodinggames.rts.gameFramework.i.ModInfo 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.i.c,fwd=com.corrodinggames.rts.gameFramework.i.ModLoadEntry 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.j.ag,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.j.ai$1,fwd=com.corrodinggames.rts.gameFramework.network.GameModeEnum$1 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.j.ai$2,fwd=com.corrodinggames.rts.gameFramework.network.GameModeEnum$2 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.j.ai$3,fwd=com.corrodinggames.rts.gameFramework.network.GameModeEnum$3 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.j.am,fwd=com.corrodinggames.rts.gameFramework.network.TeamAssignMode 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.j.ap,fwd=com.corrodinggames.rts.gameFramework.network.DosAttemptEntry 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.j.as,fwd=com.corrodinggames.rts.gameFramework.network.PacketWriter 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.j.au,fwd=com.corrodinggames.rts.gameFramework.network.Packet 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.j.ay,fwd=com.corrodinggames.rts.gameFramework.network.SequencePacket 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.j.k,fwd=com.corrodinggames.rts.gameFramework.network.PacketReader 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.j.m,fwd=com.corrodinggames.rts.gameFramework.network.SyncLogLevel 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.j.t,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.k.h,fwd=com.corrodinggames.rts.gameFramework.pathfinding.CostGrid 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.l.a,fwd=com.corrodinggames.rts.gameFramework.l.PerformanceMonitor 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.l.b,fwd=com.corrodinggames.rts.gameFramework.l.FilePickerCallback 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.l.c,fwd=com.corrodinggames.rts.gameFramework.l.PlatformBackend 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.m.ab,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.m.c,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.m.d,fwd=com.corrodinggames.rts.gameFramework.rendering.ShapeType 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.m.r,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.m.s,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.m.w,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.n.a.a,fwd=com.corrodinggames.rts.gameFramework.n.a.TaskCondition 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.a.b,fwd=com.corrodinggames.rts.gameFramework.n.a.TeamTagCondition 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.a.c,fwd=com.corrodinggames.rts.gameFramework.n.a.UnitTypeCondition 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.e$1,fwd=com.corrodinggames.rts.gameFramework.ai.MissionEvent$1 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.e$10,fwd=com.corrodinggames.rts.gameFramework.ai.MissionEvent$10 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.e$11,fwd=com.corrodinggames.rts.gameFramework.ai.MissionEvent$11 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.e$2,fwd=com.corrodinggames.rts.gameFramework.ai.MissionEvent$2 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.e$3,fwd=com.corrodinggames.rts.gameFramework.ai.MissionEvent$3 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.e$4,fwd=com.corrodinggames.rts.gameFramework.ai.MissionEvent$4 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.e$5,fwd=com.corrodinggames.rts.gameFramework.ai.MissionEvent$5 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.e$6,fwd=com.corrodinggames.rts.gameFramework.ai.MissionEvent$6 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.e$7,fwd=com.corrodinggames.rts.gameFramework.ai.MissionEvent$7 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.e$8,fwd=com.corrodinggames.rts.gameFramework.ai.MissionEvent$8 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.n.e$9,fwd=com.corrodinggames.rts.gameFramework.ai.MissionEvent$9 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.o.a,fwd=com.corrodinggames.rts.gameFramework.o.SteamEngine 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.s,fwd=com.corrodinggames.rts.gameFramework.GameStateEnum2 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes$AndroidCodes,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes$GdxCodes,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes$LibrocketKeys,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes$MissingKey,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.SlickToAndroidKeycodes$SlickCodes,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.a.a,fwd=com.corrodinggames.rts.gameFramework.utility.filesystem.SAFFileManager 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.utility.ab,fwd=com.corrodinggames.rts.gameFramework.utility.IniFile 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.utility.ad,fwd=com.corrodinggames.rts.gameFramework.utility.ObjectPool 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.utility.ae,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.af,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.ag,fwd=com.corrodinggames.rts.gameFramework.utility.NetworkException 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.utility.ah,fwd=com.corrodinggames.rts.gameFramework.utility.ZipDecoder 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.utility.ai,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.aj,fwd=com.corrodinggames.rts.gameFramework.utility.MainThreadTaskQueue 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.utility.ak,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.al,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.am,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.e,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.f,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.g,fwd=com.corrodinggames.rts.gameFramework.utility.ArrayDeque 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.utility.i,fwd=com.corrodinggames.rts.gameFramework.utility.AssetIndex 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.utility.i$1,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.k,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.gameFramework.utility.l,fwd=com.corrodinggames.rts.gameFramework.utility.BufferedLineReader 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.utility.m,fwd=com.corrodinggames.rts.gameFramework.utility.IntList 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.v,fwd=com.corrodinggames.rts.gameFramework.ZipReader 但 03 无对应文件
+com.corrodinggames.rts.gameFramework.w,fwd=com.corrodinggames.rts.gameFramework.EffectConfig 但 03 无对应文件
+com.corrodinggames.rts.java.a.a,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.Audio,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.AudioDevice,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.AudioRecorder,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.Music,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.Music$OnCompletionListener,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.Sound,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.a.c,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.a.e,fwd=com.corrodinggames.rts.java.audio.backend.ObjectMap 但 03 无对应文件
+com.corrodinggames.rts.java.audio.a.f,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.a.g,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.a.h,fwd=com.corrodinggames.rts.java.audio.backend.MapKeyIterator 但 03 无对应文件
+com.corrodinggames.rts.java.audio.a.i,fwd=com.corrodinggames.rts.java.audio.backend.LongMap 但 03 无对应文件
+com.corrodinggames.rts.java.audio.a.j,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.a.k,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.a.l,fwd=com.corrodinggames.rts.java.audio.backend.MapValueIterator 但 03 无对应文件
+com.corrodinggames.rts.java.audio.a.m,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.a.n,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.a.o,fwd=com.corrodinggames.rts.java.audio.backend.IntMap 但 03 无对应文件
+com.corrodinggames.rts.java.audio.a.p,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.a.q,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.a.s,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.a.t,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.JavaSoundAudioRecorder,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.Ogg,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.Ogg$Music,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.Ogg$MusicWithThreadedLoader,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.Ogg$Sound,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.OggInputStream,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.OpenALAudio,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.OpenALAudio$1,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.OpenALAudio$2,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.OpenALAudioDevice,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.OpenALMusic,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.OpenALSound,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.ThreadedWrappingAudioInputStream,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.Wav,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.Wav$Music,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.Wav$Sound,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.audio.lwjgl.Wav$WavInputStream,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.b.a,fwd=com.corrodinggames.rts.java.graphics.CommonGuiEngine 但 03 无对应文件
+com.corrodinggames.rts.java.c.a,fwd=com.corrodinggames.rts.java.input.SAFFileManager 但 03 无对应文件
+com.corrodinggames.rts.java.c.a$1,fwd=com.corrodinggames.rts.java.input.SAFFileManager$1 但 03 无对应文件
+com.corrodinggames.rts.java.c.c,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.c.d,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.c.h,无 fwd 映射 (identity-index 未收录)
+com.corrodinggames.rts.java.d.a,fwd=com.corrodinggames.rts.java.filesystem.SlickLibRocket 但 03 无对应文件
+com.corrodinggames.rts.java.k,fwd=com.corrodinggames.rts.java.ApacheHttpClientPool 但 03 无对应文件
+com.corrodinggames.rts.java.m,fwd=com.corrodinggames.rts.java.CrashHandler 但 03 无对应文件
+com.corrodinggames.rts.java.o,fwd=com.corrodinggames.rts.java.OpenALSoundEngine 但 03 无对应文件
+com.corrodinggames.rts.java.v,fwd=com.corrodinggames.rts.java.DesktopInputProvider 但 03 无对应文件

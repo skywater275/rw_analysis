@@ -1,0 +1,48 @@
+# 研究用途声明 / Research Declaration
+
+## 中文
+
+本仓库是 **Rusted Warfare (铁锈战争) v1.15** 的源码逆向研究项目, 目的仅限:
+
+- **学习与研究**: 理解游戏机制、分析反编译损伤、研究字节码验证与命名映射方法论。
+
+### 版权
+
+- 游戏程序及其全部资产、代码的版权归原作者 **Luke Hoschke (Corroding Games)** 所有。
+- 本项目**不主张**对游戏任何代码、资产、名称、商标的任何权利。
+- 本仓库中的反编译源码、字节码衍生内容与映射数据库均为**派生研究材料**,
+  仅用于技术研究, **禁止任何商业用途与商业分发**。
+- 游戏本体 (安装目录、jar 等运行时文件) 不在本仓库内、不随本仓库分发。
+- 如版权方提出要求, 相关内容将立即移除。
+
+### 本项目自有部分
+
+工具链脚本 (tools/)、文档 (docs/) 与映射数据库 (mappings/) 中由本项目作者原创
+的部分, 同样仅限研究用途, 未经许可不得用于商业目的。
+
+---
+
+## English
+
+This repository is a source-code reverse-engineering **research project** of
+**Rusted Warfare v1.15**, for the sole purposes of:
+
+- **Learning and research**: understanding game mechanics, studying decompilation
+  damage patterns, and researching bytecode verification and name-mapping methodology.
+
+### Copyright
+
+- The game program, its assets and its code are fully owned by
+  **Luke Hoschke (Corroding Games)**.
+- This project claims **no rights** to any game code, assets, names or trademarks.
+- The decompiled sources, bytecode-derived materials and mapping databases in this
+  repository are **derivative research materials** for technical study only.
+  **Any commercial use or commercial redistribution is prohibited.**
+- The game installation (runtime files, jars) is not included and not distributed here.
+- Upon request by the copyright holder, the relevant content will be removed immediately.
+
+### Original parts of this project
+
+The toolchain scripts (tools/), documents (docs/) and mapping databases (mappings/)
+authored by this project's contributors are likewise for research purposes only;
+commercial use without permission is not allowed.

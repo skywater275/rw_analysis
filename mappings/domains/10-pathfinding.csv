@@ -1,0 +1,149 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,com.corrodinggames.rts.game.units.f,CircleFilter,a,boundsRect,Bounding rectangle (RectF),verified-exists
+field,com.corrodinggames.rts.game.units.f,CircleFilter,b,centerX,Circle center X (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,CircleFilter,c,centerY,Circle center Y (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,CircleFilter,d,radius,Circle radius (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,CircleFilter,e,radiusSquared,Circle radius squared (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,LineFilter,a,boundsRect,Bounding rectangle (RectF),verified-exists
+field,com.corrodinggames.rts.game.units.f,LineFilter,b,startX,Line start X (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,LineFilter,c,startY,Line start Y (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,LineFilter,d,endX,Line end X (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,LineFilter,e,endY,Line end Y (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,RectFilter,a,boundsRect,Bounding rectangle (RectF),verified-exists
+field,com.corrodinggames.rts.game.units.f,RectFilter,b,minX,Minimum X bound (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,RectFilter,c,minY,Minimum Y bound (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,RectFilter,d,maxX,Maximum X bound (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,RectFilter,e,maxY,Maximum Y bound (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,RectFilter,f,expandX,X-axis expansion (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,RectFilter,g,expandY,Y-axis expansion (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,RectFilter,h,resultCount,Query result count (float),verified-exists
+field,com.corrodinggames.rts.game.units.f,SpatialGridCell,a,unitListA,Unit list A (final b),verified-exists
+field,com.corrodinggames.rts.game.units.f,SpatialGridCell,b,unitListByCategory,Unit lists by category (final b[]),verified-exists
+field,com.corrodinggames.rts.game.units.f,SpatialGridCell,c,unitListAll,All units list (final b),verified-exists
+field,com.corrodinggames.rts.game.units.f,SpatialGridCell,d,unitListDynamic,Dynamic units list (final b),verified-exists
+method,com.corrodinggames.rts.game.units.f,f,a,reset,real-class-inferred: com.corrodinggames.rts.game.units.f.f,real-class-v1200
+method,com.corrodinggames.rts.game.units.f,g,a,isEnabled,real-class-inferred: com.corrodinggames.rts.game.units.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.k,AStarNode,a,tileX,Tile X coordinate (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,AStarNode,b,tileY,Tile Y coordinate (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,AStarNode,c,gScore,G score value (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,PathFinder,e,pathSolver,Path solver reference (static f),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,PathFinder,m,useCache,Use path cache (static final boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,PathFinder,n,cacheEnabled,Cache enabled flag (boolean, default true)
+field,com.corrodinggames.rts.gameFramework.k,PathFinder,w,debugPaint,Debug drawing paint (Paint),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,PathFinder,x,landSolver,Land path solver (i),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,PathFinder,y,waterSolver,Water path solver (i),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,PathFinder,z,airSolver,Air path solver (i),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,PathSolverRunner,b,blockedLandGrid,Blocked land grid (byte[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,PathSolverRunner,c,blockedWaterGrid,Blocked water grid (byte[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,PathSolverRunner,d,blockedAirGrid,Blocked air grid (byte[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,PathSolverRunner,e,cachedResult,Cached path result (short[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,PathSolverRunner,f,costGrid,Movement cost grid (byte[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,UnitListIterator,b,categoryIndex,Category index (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,UnitListIterator,c,unitIndex,Unit index within category (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,UnitListIterator,d,totalUnits,Total unit count (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,f,A,field_A,"P3.1-inferred: type=boolean, was=flag0",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,B,field_B,"P3.1-inferred: type=boolean, was=flag1",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,C,field_C,"P3.1-inferred: type=boolean, was=flag2",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,D,field_D,"P3.1-inferred: type=boolean, was=flag3",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,E,field_E,"P3.1-inferred: type=boolean, was=flag4",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,F,field_F,"P3.1-inferred: type=float, was=value5",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,G,field_G,"P3.1-inferred: type=boolean, was=flag6",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,H,field_H,"P3.1-inferred: type=float, was=value7",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,I,field_I,"P3.1-inferred: type=float, was=value8",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,J,field_J,"P3.1-inferred: type=float, was=value9",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,K,field_K,"P3.1-inferred: type=float, was=value10",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,L,field_L,"P3.1-inferred: type=float, was=value11",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,M,field_M,"P3.1-inferred: type=boolean, was=flag12",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,N,field_N,"P3.1-inferred: type=float, was=value13",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,O,floatArray14,[Phase3-inferred] type=float[],suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,P,short15,[Phase3-inferred] type=short,suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,Q,short16,[Phase3-inferred] type=short,suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,R,short17,[Phase3-inferred] type=short,suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,S,field_S,"P3.1-inferred: type=boolean, was=flag18",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.k,f,T,field_T,"P3.1-inferred: type=boolean, was=flag19",p3-auto-inferred
+method,com.corrodinggames.rts.gameFramework.k,f,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.k.f,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.k,f,b,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.k.f,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.k,f,c,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.k.f,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.k,f,d,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.k.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.k,f,e,blockedWaterGrid,Blocked water terrain grid (byte[]),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,f,blockedAirGrid,Blocked air terrain grid (byte[]),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,g,cachedPathResult,Cached path result (short[]),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,h,cacheMap,Path cache HashMap,suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,i,currentSearchId,Current search ID (int),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,j,movementCostGrid,Movement cost grid (byte[]),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,k,searchCount,Total search count (int),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,l,cacheHitCount,Cache hit count (int),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,m,isRunning,Search running flag (boolean),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,o,pathFound,Path found flag (boolean),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,p,pathNodeCount,Path node count (int),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,f,q,pathEngineRef,PathEngine reference (private final l),suspicious-bc-missing
+method,com.corrodinggames.rts.gameFramework.k,h,a,getaf,real-class-inferred: com.corrodinggames.rts.gameFramework.k.h,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.k,h,b,af,real-class-inferred: com.corrodinggames.rts.gameFramework.k.h,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.k,h,c,point,real-class-inferred: com.corrodinggames.rts.gameFramework.k.h,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.k,h,e,searchId,Current search ID (protected int),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,f,nextSearchId,Next available search ID (static int),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,g,maxPathCost,Maximum path cost limit (int),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,h,startTileX,Start tile X (protected short),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,i,startTileY,Start tile Y (protected short),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,j,costMultiplier,Path cost multiplier (protected Float),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,k,allowDiagonal,Allow diagonal movement (protected boolean),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,l,endTileX,End tile X (protected short),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,m,endTileY,End tile Y (protected short),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,n,currentTileX,Current processing tile X (protected short),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,o,nodePool,A* node pool (protected ao),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,p,pathFound,Path found flag (boolean),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,q,expandedNodeCount,Expanded node count (int),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,r,isRunning,Search running flag (boolean),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,s,gScore,Current G score (float),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,t,hScore,Heuristic H score (float),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,u,reuseNodePool,Reuse node pool flag (boolean),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,v,allowLandMovement,Allow land pathing (protected boolean),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,w,allowWaterMovement,Allow water pathing (protected boolean),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,x,openNodeQueue,Open node priority queue (protected LinkedList),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,y,blockedGrid,Blocked terrain grid (byte[]),suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.k,h,z,movementCostGrid,Movement cost grid (byte[]),suspicious-bc-missing
+method,com.corrodinggames.rts.gameFramework.k,i,a,get_a,"""[Phase3-method] returns boolean""",verified-exists
+method,com.corrodinggames.rts.gameFramework.k,i,aG,do_aG,"""[Phase3-method] returns void""",suspicious-bc-missing
+method,com.corrodinggames.rts.gameFramework.k,i,b,get_b,"""[Phase3-method] returns int""",verified-exists
+method,com.corrodinggames.rts.gameFramework.k,i,c,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.k.i,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.k,i,d,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.k.i,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.k,i,e,getstrictfp void,real-class-inferred: com.corrodinggames.rts.gameFramework.k.i,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.k,i,f,neighborCount,Neighbor count (static int),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,i,g,heuristicWeight,Heuristic weight (static int),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,i,h,costStraight,Straight move cost (static double),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,i,i,costDiagonal,Diagonal move cost (static double),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,i,j,byte4,real-class-inferred: com.corrodinggames.rts.gameFramework.k.i,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.k,i,k,int4,real-class-inferred: com.corrodinggames.rts.gameFramework.k.i,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.k,i,u,closedSetSize,Closed set size (static int),suspicious-bc-missing
+method,com.corrodinggames.rts.gameFramework.k,l,b,update,v19.100 辐射批1: GameEngine.update每帧调用 bU.b (PathEngine更新),verified
+method,com.corrodinggames.rts.game.units.f,c,a,update,v19.100 辐射批1: GameEngine.update每帧调用 cc.a (UnitGeoIndex更新),verified
+method,com.corrodinggames.rts.gameFramework.k,l,"a(com.corrodinggames.rts.gameFramework.b.b, boolean)",setupMap,"v19.100: ""PathEngine: Setting up map costs""/""Keeping existing map costs""/""Ready"" (148行)",verified
+method,com.corrodinggames.rts.gameFramework.k,l,a(com.corrodinggames.rts.game.units.ao),findPath,v19.100: 62行 路径查询入口返回i,verified
+method,com.corrodinggames.rts.gameFramework.k,l,b(),update,"v19.100 辐射批1: 每帧调用; ""updateUnfinishedPaths"" (460行)",verified
+method,com.corrodinggames.rts.gameFramework.k,l,c(),updateFinishedPaths,v19.100: 285行,verified
+field,com.corrodinggames.rts.gameFramework.k,l,v,solvers,PathSolver(i) 数组; b() 0-29: 遍历 v 数组逐个调用 i.e() 每帧推进,verified
+field,com.corrodinggames.rts.gameFramework.k,l,o,runner,"PathSolverRunner(o); 构造器 10-18 创建, 独立求解线程",verified
+field,com.corrodinggames.rts.gameFramework.k,l,p,running,"boolean; 构造器初始 true; a(PathCostCalculator,ZZ) 检查 ""Cannot start new path, not running""",verified
+field,com.corrodinggames.rts.gameFramework.k,l,H,solverRunners,"ArrayList<PathSolverRunner(o)>; 构造器按 CPU 核数 f.c() 创建 ""We have N cores, creating extra solvers""",verified
+field,com.corrodinggames.rts.gameFramework.k,l,I,cancellingPaths,LinkedList<PathCostCalculator(k)>; c() 中逐个置 k.w=true 后 clear (取消中的路径),verified
+field,com.corrodinggames.rts.gameFramework.k,l,J,queuedPaths,LinkedList<PathCostCalculator(k)>; d() 中逐个 a(k) 分发后 clear (待处理路径队列),verified
+method,com.corrodinggames.rts.gameFramework.k,o,c,start,构造器 229-232: 对每个 runner 调用 c() 启动,verified-exists
+field,com.corrodinggames.rts.gameFramework.k,k,o,algorithm,"MovementType(units.ao) 枚举; k.l.a(PathCostCalculator,ZZ) 21-25: 按此取求解器",verified
+field,com.corrodinggames.rts.gameFramework.k,k,t,timeoutSeconds,"float; a(k/k,ZZ) 41-44: 初值 300.0f 路径超时",verified
+field,com.corrodinggames.rts.gameFramework.k,k,h,startX,"short; 与 l 配对, a(k/k,ZZ) 47-70: abs(h-l) 曼哈顿距离计算",verified-exists
+field,com.corrodinggames.rts.gameFramework.k,k,l,startY,short; 与 h 配对 (坐标对),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,k,i,targetX,"short; 与 m 配对, 目标点坐标",verified-exists
+field,com.corrodinggames.rts.gameFramework.k,k,m,targetY,short; 与 i 配对 (坐标对),verified-exists
+field,com.corrodinggames.rts.gameFramework.k,k,w,cancelled,boolean; k.l.c() 27-29: 置 true 标记取消路径,verified
+method,com.corrodinggames.rts.gameFramework.k,k,e,computePath,"e()V; a(k/k,ZZ) 37-39: 调度后执行路径计算",verified-exists
+method,com.corrodinggames.rts.gameFramework.k,l,a,getSolver,"重载 a(MovementType)LPathSolver; a(k/k,ZZ) 20-27: 按算法类型取求解器",verified
+method,com.corrodinggames.rts.gameFramework.k,l,a,scheduleSolver,"重载 a(PathSolver,boolean)V; 30-39: 设置截止帧并入队",verified
+method,com.corrodinggames.rts.gameFramework.k,l,a,startPath,"重载 a(PathCostCalculator,boolean,boolean)V; 完整寻路入口: 检查 running, 取 solver, 设超时, 距离判断",verified
+method,com.corrodinggames.rts.gameFramework.k,c,,addAll,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置4),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.k,a,,reset,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置0),order-align-v19.111
+field,com.corrodinggames.rts.gameFramework.k,n,a,tileX,"field-order-zip-v19.114: 02b short a=- <-> 03 short tileX=- (位置0, AStarNode)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.k,n,b,tileY,"field-order-zip-v19.114: 02b short b=- <-> 03 short tileY=- (位置1, AStarNode)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.k,o,b,blockedLandGrid,"field-order-zip-v19.114: 02b byte[] b=- <-> 03 byte[] blockedLandGrid=- (位置2, PathSolverRunner)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.k,o,c,blockedWaterGrid,"field-order-zip-v19.114: 02b byte[] c=- <-> 03 byte[] blockedWaterGrid=- (位置3, PathSolverRunner)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.k,o,d,blockedAirGrid,"field-order-zip-v19.114: 02b byte[] d=- <-> 03 byte[] blockedAirGrid=- (位置4, PathSolverRunner)",field-order-zip-v19.114
+field,com.corrodinggames.rts.gameFramework.k,n,c,gScore,"field-order-zip-v19.114: 02b int c=- <-> 03 int gScore=- (位置2, AStarNode)",field-order-zip-v19.114

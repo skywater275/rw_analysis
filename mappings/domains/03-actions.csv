@@ -1,0 +1,733 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,com.corrodinggames.rts.game.units.a,ActionWrapper,a,wrappedAction,Wrapped game action (GameAction),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.a,ActionWrapper,b,actionPriority,Action priority (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.a,ActionWrapper,c,actionCooldown,Action cooldown (float),unverifiable-rebuilt
+field,com.corrodinggames.rts.game.units.a,BuildAction,a,buildTargetPos,Build target position (PointF),verified-exists
+field,com.corrodinggames.rts.game.units.a,BuildAction,b,buildUnitType,Unit type to build (UnitTypeHandle),verified-exists
+field,com.corrodinggames.rts.game.units.a,BuildAction,c,buildStages,Number of build stages (int),verified-exists
+method,com.corrodinggames.rts.game.units.a,a,a(com.corrodinggames.rts.game.units.am, boolean),canExecute,verified-exists
+method,com.corrodinggames.rts.game.units.a,a,C,isPassiveAction,UnitActionBase: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,K,getFirstSelectedUnit,UnitActionBase: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,a,getDescription,UnitActionBase: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,a(com.corrodinggames.rts.game.units.am),isAffordable,[V] modifier hook for GameAction.u(am)=isAffordable; default false (a.java:12),verified-exists
+method,com.corrodinggames.rts.game.units.a,a,b,getLabel,UnitActionBase: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,b(com.corrodinggames.rts.game.units.am),isVisible,[V] modifier hook for GameAction.g(am)=isFilterBlocked inverse; default false (a.java:16),verified-exists
+method,com.corrodinggames.rts.game.units.a,a,c,getResourceCost,UnitActionBase: GameAction: returns ResourceComponent (cost to execute),type-aware-fp-v19.114
+method,com.corrodinggames.rts.game.units.a,a,c(com.corrodinggames.rts.game.units.am),getDisabledReason,[V] modifier hook for GameAction.j(am)=getFilterBlockReason; default null (a.java:20),verified-exists
+method,com.corrodinggames.rts.game.units.a,a,d,getDisplayString,UnitActionBase: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,d(com.corrodinggames.rts.game.units.am),isBlocked,[V] modifier hook for GameAction.a(am)=isAffordableSingle; default false (a.java:28),verified-exists
+method,com.corrodinggames.rts.game.units.a,a,e,getActionCategory,UnitActionBase: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,f,getActionTargetType,UnitActionBase: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,g,isInstantAction,UnitActionBase: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,h,isToggleable,UnitActionBase: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,h_,showActionInUI,UnitActionBase: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,i,getUnitTypeBridge,UnitActionBase: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,j,getTextureForAction,UnitActionBase: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,j_,getTexture,UnitActionBase: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,l,getActionScale,UnitActionBase: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,n,getUnitType,UnitActionBase: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,o_,isAlwaysVisible,UnitActionBase: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,a,s,isAvailableInCurrentGameState,UnitActionBase: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,C,isPassiveAction,ActionFilter: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,K,getFirstSelectedUnit,ActionFilter: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,a,getDescription,ActionFilter: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,b,getLabel,ActionFilter: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,c,getResourceCost,ActionFilter: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,d,getDisplayString,ActionFilter: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,e,getActionCategory,ActionFilter: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,f,getActionTargetType,ActionFilter: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,g,isInstantAction,ActionFilter: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,h,isToggleable,ActionFilter: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,h_,showActionInUI,ActionFilter: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,i,getUnitTypeBridge,ActionFilter: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,j,getTextureForAction,ActionFilter: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,j_,getTexture,ActionFilter: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,l,getActionScale,ActionFilter: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,n,getUnitType,ActionFilter: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,o_,isAlwaysVisible,ActionFilter: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,b,s,isAvailableInCurrentGameState,ActionFilter: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress,verified-exists
+method,com.corrodinggames.rts.game.units.a,d,C,isPassiveAction,AttackAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,K,getFirstSelectedUnit,AttackAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,a,getDescription,AttackAction: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,a(),getDescription,d.java:57-59 returns 'Attack Mode' (tooltip description),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,d,b,getLabel,AttackAction: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,b(),getLabel,"""d.java:62-68 button label = current attack mode name via getCurrentAttackMode()""",verified-exists
+method,com.corrodinggames.rts.game.units.a,d,c,getResourceCost,AttackAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,c(),getResourceCost,d.java:33-35 returns 0 (free command),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,d,d,getDisplayString,AttackAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,d(),getDisplayString,d.java:139-141 delegates to currentMode() (mode name for UI),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,d,e,getActionCategory,AttackAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,e(),getActionCategory,d.java:42-44 returns u.k = ActionCategory.ATTACK_MODE,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,d,f,getActionTargetType,AttackAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,f(),getActionTargetType,d.java:47-49 returns t.a = ActionTargetType.NONE,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,d,g,isInstantAction,AttackAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,g(),isInstantAction,d.java:52-54 returns false (not instant; toggles persistent mode),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,d,h,isToggleable,AttackAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,h_,showActionInUI,AttackAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,h_(),showActionInUI,d.java:71-73 returns false (not rendered in action panel),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,d,i,getUnitTypeBridge,AttackAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,i(),getUnitType,d.java:149-151 synthetic bridge returning getUnitType() (null for attack actions),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,d,j,getTextureForAction,AttackAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,j_,getTexture,AttackAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,l,getActionScale,AttackAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,n,getUnitType,AttackAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,n(),getUnitType,[v10.3-resolved: unique match,verified-exists
+method,com.corrodinggames.rts.game.units.a,d,o_,isAlwaysVisible,AttackAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,q(),getCurrentAttackMode,[v10.3-resolved: unique match,verified-exists
+method,com.corrodinggames.rts.game.units.a,d,r(),getAttackModeFromSelection,[v10.3-resolved: unique match,verified-exists
+method,com.corrodinggames.rts.game.units.a,d,s,isAvailableInCurrentGameState,AttackAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,d,s(),isAvailableInCurrentGameState,d.java:144-146 always true (available in all game states),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,e,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress | e.java:20-22 returns -1 (no build progress),verified-exists
+method,com.corrodinggames.rts.game.units.a,e,C,isPassiveAction,AttackMoveAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,K,getFirstSelectedUnit,AttackMoveAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,a,getDescription,AttackMoveAction: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,a(),getDescription,e.java:49-51 returns 'Attack Move' (tooltip),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,e,b,getLabel,AttackMoveAction: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,b(),getLabel,e.java:54-56 returns 'Attack Move' (button label),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,e,c,getResourceCost,AttackMoveAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,c(),getResourceCost,e.java:25-27 returns 0 (free command),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,e,d,getDisplayString,AttackMoveAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,e,getActionCategory,AttackMoveAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,e(),getActionCategory,e.java:34-36 returns u.h = ActionCategory.ATTACK_MOVE,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,e,f,getActionTargetType,AttackMoveAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,f(),getActionTargetType,e.java:39-41 returns t.a = ActionTargetType.NONE,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,e,g,isInstantAction,AttackMoveAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,g(),isInstantAction,e.java:44-46 returns false,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,e,h,isToggleable,AttackMoveAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,h_,showActionInUI,AttackMoveAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,h_(),showActionInUI,e.java:59-61 returns false (not rendered in panel),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,e,i,getUnitTypeBridge,AttackMoveAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,i(),getUnitType,e.java:64-66 synthetic bridge returning n() (null),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,e,j,getTextureForAction,AttackMoveAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,j_,getTexture,AttackMoveAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,l,getActionScale,AttackMoveAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,n,getUnitType,AttackMoveAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,n(),getUnitType,e.java:29-31 returns null (no associated unit type),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,e,o_,isAlwaysVisible,AttackMoveAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,e,s,isAvailableInCurrentGameState,AttackMoveAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress | f.java:22-24 returns -1 (no build progress),verified-exists
+method,com.corrodinggames.rts.game.units.a,f,C,isPassiveAction,GuardAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,K,getFirstSelectedUnit,GuardAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,a,getDescription,GuardAction: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,a(),getDescription,f.java:51-53 localized 'gui.actions.guardUnit.description',body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,f,b,getLabel,GuardAction: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,b(),getLabel,f.java:56-58 localized 'gui.actions.guardUnit' (button label),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,f,c,getResourceCost,GuardAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,c(),getResourceCost,f.java:27-29 returns 0 (free command),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,f,d,getDisplayString,GuardAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,e,getActionCategory,GuardAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,e(),getActionCategory,f.java:36-38 returns u.l = ActionCategory.GUARD,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,f,f,getActionTargetType,GuardAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,f(),getActionTargetType,f.java:41-43 returns t.a = ActionTargetType.NONE,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,f,g,isInstantAction,GuardAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,g(),isInstantAction,f.java:46-48 returns false,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,f,h,isToggleable,GuardAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,h(),isToggleable,f.java:74-76 returns true (toggle-style command),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,f,h_,showActionInUI,GuardAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,i,getUnitTypeBridge,GuardAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,i(),getUnitType,f.java:84-86 synthetic bridge returning n() (null),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,f,j,getTextureForAction,GuardAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,j_,getTexture,GuardAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,l,getActionScale,GuardAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,l(),getActionScale,"""f.java:66-71 UI scale 0.6f (old theme) / 0.5f (new theme""",verified-exists
+method,com.corrodinggames.rts.game.units.a,f,n,getUnitType,GuardAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,n(),getUnitType,f.java:31-33 returns null (no associated unit type),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,f,o_,isAlwaysVisible,GuardAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,o_(),isAlwaysVisible,f.java:79-81 returns true (always visible in panel),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,f,s,isAvailableInCurrentGameState,GuardAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,f,s(),isAvailableInCurrentGameState,f.java:61-63 always true,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,g,a(com.corrodinggames.rts.game.units.am, boolean),canExecute,verified-exists
+method,com.corrodinggames.rts.game.units.a,g,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress,verified-exists
+method,com.corrodinggames.rts.game.units.a,g,c(com.corrodinggames.rts.game.units.am, boolean),executeAction,verified-exists
+method,com.corrodinggames.rts.game.units.a,g,d(com.corrodinggames.rts.game.units.am, boolean),checkGameRules,verified-exists
+method,com.corrodinggames.rts.game.units.a,g,A,requiresTargeting,[V] 委托 buildTargetPos.A() (已映射基类同名),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,B,getResourceComponent,[V] 委托 buildTargetPos.B(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,C,isPassiveAction,[V] 委托 buildTargetPos.C(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,D,isActiveAction,[V] 委托 buildTargetPos.D(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,E,getBuildUnitType,[V] 委托 buildTargetPos.E(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,F,isBuildActionType,[V] 委托 buildTargetPos.F(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,G,isAggregateAction,[V] 委托 buildTargetPos.G(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,H,isChargedAction,[V] 委托 buildTargetPos.H(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,I,isChargedActionFor,[V] 委托 buildTargetPos.I(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,J,getColor,[V] 委托 buildTargetPos.J(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,K,saveSelectionCache,"""[V] 保存 l.B().bS.bZ 到缓存""",verified-exists
+method,com.corrodinggames.rts.game.units.a,g,L,restoreSelectionCache,[V] 恢复原选中单位缓存并清空临时列表; 字符串'保存选中单位缓存==null'守卫,verified-exists
+method,com.corrodinggames.rts.game.units.a,g,a,getDescription,[V] 委托 buildTargetPos.a(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,b,getLabel,[V] 委托 buildTargetPos.b() (目标位置标签),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,c,getResourceCost,[V] 委托 buildTargetPos.c(),verified-exists
+field,com.corrodinggames.rts.game.units.a,g,d,buildTargetPosition,"P3.3-deep-curated: class-context, was=u1",p3-deep-curated
+field,com.corrodinggames.rts.game.units.a,g,e,buildOrderIndex,"P3.3-deep-curated: class-context, was=u2",p3-deep-curated
+method,com.corrodinggames.rts.game.units.a,g,f,getActionTargetType,[V] 委托 buildTargetPos.f(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,g,isInstantAction,[V] 委托 buildTargetPos.g(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,h,isToggleable,[V] 委托 buildTargetPos.h(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,h_,showActionInUI,[V] 委托 buildTargetPos.h_(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,i,getUnitType,[V] 委托 buildTargetPos.i() (被建造单位类型),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,j,getTextureForAction,[V] 委托 buildTargetPos.j(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,j_,getTexture,BuildAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,g,k(com.corrodinggames.rts.game.units.am),isAvailableForUnit,[V] 委托 buildTargetPos.k(buildUnitType),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,l,getActionScale,[V] 委托 buildTargetPos.l(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,m,getMaxChargeUses,[V] 委托 buildTargetPos.m(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,m_,getSortPriority,[V] 委托 super (BuildAction 无额外优先级),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,n,getUnitType,BuildAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,g,n(com.corrodinggames.rts.game.units.am),checkUnitTypeFilterFor,[V] 委托 buildTargetPos.n(buildUnitType),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,n_,isBuildable,[V] 委托 buildTargetPos.n_(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,o(com.corrodinggames.rts.game.units.am),isVisibleForUnit,[V] 委托 buildTargetPos.o(buildUnitType),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,o_,isAlwaysVisible,BuildAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,g,p(com.corrodinggames.rts.game.units.am),getBuildProgressForUnit,[V] 委托 buildTargetPos.p(buildUnitType),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,p_,getWrappedAction,"""[V] 返回内部被包装的 GameAction (buildTargetPos)""",verified-exists
+method,com.corrodinggames.rts.game.units.a,g,q(com.corrodinggames.rts.game.units.am),getQueuedActions,[V] 委托 buildTargetPos.q(buildUnitType),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,r(com.corrodinggames.rts.game.units.am),canShowAction,"""[V] buildStages.isAvailable(this""",verified-exists
+method,com.corrodinggames.rts.game.units.a,g,s,isAvailableInCurrentGameState,[V] 委托 buildTargetPos.s(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,t,getMaxQueueCount,[V] 委托 buildTargetPos.t(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,u,isQueueable,[V] 委托 buildTargetPos.u(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,v,getIconRect,[V] 委托 buildTargetPos.v(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,x,isToggleableActionWrapper,[V] 委托 buildTargetPos.x(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,y,getAssociatedUnitType,[V] 委托 buildTargetPos.y(),verified-exists
+method,com.corrodinggames.rts.game.units.a,g,z,getActionIdAlias,[V] 委托 buildTargetPos.N() (被包装动作的 ID 别名),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,ActionWrapper(com.corrodinggames.rts.game.units.a.s, com.corrodinggames.rts.game.units.a.b),ActionWrapper,suspicious-bc-missing
+method,com.corrodinggames.rts.game.units.a,h,a(com.corrodinggames.rts.game.units.am, boolean),canExecute,verified-exists
+method,com.corrodinggames.rts.game.units.a,h,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress,verified-exists
+method,com.corrodinggames.rts.game.units.a,h,c(com.corrodinggames.rts.game.units.am, boolean),executeAction,verified-exists
+method,com.corrodinggames.rts.game.units.a,h,C,isPassiveAction,ActionTargetType: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,h,K,getFirstSelectedUnit,ActionTargetType: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,h,a,getDescription,ActionTargetType: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,h,a(com.corrodinggames.rts.game.units.a.s),compareByPriority,[V] delegates wrappedAction.a(s) — compareTo implementation (h.java:35),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,b,getLabel,[V] delegates wrappedAction.b() (h.java:40),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,c,getResourceCost,[V] returns 0 — the wrapper itself adds no cost (h.java:61),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,compareTo(java.lang.Object),compareTo,[V] synthetic bridge -> wrappedAction((GameAction)object) (h.java:250),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,d,getDisplayString,ActionTargetType: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,h,d(com.corrodinggames.rts.game.units.am),getLabelForUnit,[V] delegates wrappedAction.d(am) (h.java:45),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,e,getActionCategory,ActionTargetType: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,h,e(com.corrodinggames.rts.game.units.am),getDescriptionForUnit,[V] delegates wrappedAction.e(am) (h.java:56),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,equals(java.lang.Object),equals,[V] override: equal iff other is ActionWrapper with equal wrappedAction (h.java:94),verified-exists
+field,com.corrodinggames.rts.game.units.a,h,f,int2,real-class-inferred: com.corrodinggames.rts.game.units.a.h,real-class-v1200
+method,com.corrodinggames.rts.game.units.a,h,f(com.corrodinggames.rts.game.units.am),onActionExecuted,[V] delegates wrappedAction.f(am) post-execution hook (h.java:89),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,g,isInstantAction,ActionTargetType: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,h,g(com.corrodinggames.rts.game.units.am),isFilterBlocked,[V] delegates wrappedAction.g(am) (h.java:102),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,h,isToggleable,[V] delegates wrappedAction.h() (h.java:120),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,h_,showActionInUI,[V] delegates wrappedAction.h_() (h.java:150),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,hashCode(),hashCode,[V] delegates wrappedAction.hashCode() (h.java:193),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,i,getUnitType,[V] delegates wrappedAction.i() (as UnitTypeHandle) (h.java:125),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,j,getTextureForAction,[V] delegates wrappedAction.j() (m.e Texture) (h.java:174),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,j_,getTexture,ActionTargetType: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,h,l,getActionScale,ActionTargetType: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,h,m_,getSortPriority,[V] delegates wrappedAction.m_() (h.java:30),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,n,getUnitType,ActionTargetType: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,h,n_,isBuildable,[V] delegates wrappedAction.n_() (h.java:71),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,o_,isAlwaysVisible,ActionTargetType: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,h,q_,getWrappedAction,[V] returns wrappedAction (s GameAction) — unwrap accessor (h.java:214),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,s,isAvailableInCurrentGameState,"""[V] filter-gated: false unless actionPriority.isAvailable(this""",verified-exists
+method,com.corrodinggames.rts.game.units.a,h,t,getMaxQueueCount,[V] delegates wrappedAction.t() (h.java:84),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,toString(),toString,[V] delegates wrappedAction.toString() (h.java:197),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,u,isQueueable,[V] delegates wrappedAction.u() (h.java:115),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,v,getIconRect,[V] delegates wrappedAction.v() (Rect) (h.java:184),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,x,isToggleableActionWrapper,[V] true — wrapper always toggleable (h.java:219),verified-exists
+method,com.corrodinggames.rts.game.units.a,h,y,getAssociatedUnitType,[V] delegates wrappedAction.y() (as) (h.java:235),verified-exists
+method,com.corrodinggames.rts.game.units.a,i,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress | i.java:22-24 returns -1 (no build progress),verified-exists
+method,com.corrodinggames.rts.game.units.a,i,C,isPassiveAction,PatrolAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,K,getFirstSelectedUnit,PatrolAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,a,getDescription,PatrolAction: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,a(),getDescription,i.java:51-53 localized 'gui.actions.patrol.description',body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,i,b,getLabel,PatrolAction: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,b(),getLabel,i.java:56-58 localized 'gui.actions.patrol' (button label),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,i,c,getResourceCost,PatrolAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,c(),getResourceCost,i.java:27-29 returns 0 (free command),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,i,d,getDisplayString,PatrolAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,e,getActionCategory,PatrolAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,e(),getActionCategory,i.java:36-38 returns u.m = ActionCategory.PATROL,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,i,f,getActionTargetType,PatrolAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,f(),getActionTargetType,i.java:41-43 returns t.a = ActionTargetType.NONE,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,i,g,isInstantAction,PatrolAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,g(),isInstantAction,i.java:46-48 returns false,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,i,h,isToggleable,PatrolAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,h(),isToggleable,i.java:74-76 returns true (toggle-style command),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,i,h_,showActionInUI,PatrolAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,i,getUnitTypeBridge,PatrolAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,i(),getUnitType,i.java:84-86 synthetic bridge returning w() (null),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,i,j,getTextureForAction,PatrolAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,j_,getTexture,PatrolAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,l,getActionScale,PatrolAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,l(),getActionScale,i.java:66-71 UI scale 0.6f (old theme) / 0.5f (new theme),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,i,n,getUnitType,PatrolAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,o_,isAlwaysVisible,PatrolAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,o_(),isAlwaysVisible,i.java:79-81 returns true (always visible in panel),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,i,s,isAvailableInCurrentGameState,PatrolAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,i,s(),isAvailableInCurrentGameState,i.java:61-63 always true,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,i,w(),getUnitType,i.java:31-33 returns null (no associated unit type),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,j,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress | [V] returns -1; ping is not buildable (j.java:34),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,C,isPassiveAction,ActionId: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,j,K,getPingTypeKey,[V] returns pingType.c() = 'menus.ingame.ping.type.<name>' localization key (j.java:72),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,PingAction(),PingAction,[V] constructor; defaults to PingType a (ATTACK) (j.java:24),suspicious-bc-missing
+field,com.corrodinggames.rts.game.units.a,j,a,k,real-class-inferred: com.corrodinggames.rts.game.units.a.j,real-class-v1200
+method,com.corrodinggames.rts.game.units.a,j,b,getLabel,[V] pingType.b() localized ping-type name (j.java:68),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,c,getResourceCost,[V] returns 0; pings are free (j.java:39),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,d,getDisplayString,ActionId: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,j,e,getTargetType,[V] returns u.j=PING; ping is placed on the map (j.java:48),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,f,getActionCategory,[V] returns t.a=NONE/default category (j.java:53),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,g,isInstantAction,[V] false; ping needs a map click (j.java:58),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,h,isToggleable,ActionId: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,j,h_,showActionInUI,"""[V] false; pings rendered via icon rect""",verified-exists
+method,com.corrodinggames.rts.game.units.a,j,i,getUnitType,[V] synthetic bridge -> this.w() (null) (j.java:112),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,j,getTextureForAction,[V] returns gameFramework.d.c.s[9].i — shared UI atlas texture (j.java:100),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,j_,getTexture,ActionId: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,j,l,getActionScale,ActionId: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,j,n,getUnitType,ActionId: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,j,o_,isAlwaysVisible,ActionId: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,j,q(com.corrodinggames.rts.game.units.am),getQueuedActions,[V] returns static list b = all 11 ping-type action instances (j.java:95),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,s,isAvailableInCurrentGameState,[V] true (j.java:82),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,v,getIconRect,[V] builds 29x28 icon rect on atlas: index 7 + pingType.ordinal() (j.java:105),verified-exists
+method,com.corrodinggames.rts.game.units.a,j,w,getUnitType,[V] returns null (ar); ping has no unit type (j.java:43); fed to synthetic i(),verified-exists
+method,com.corrodinggames.rts.game.units.a,k,C,isPassiveAction,UnitActionDef: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,K,getFirstSelectedUnit,UnitActionDef: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,a,getPingSuffix,[V] returns ' - ' + getLocalizedName(); appended to PingAction description (k.java:22),verified-exists
+method,com.corrodinggames.rts.game.units.a,k,b,getLocalizedName,[V] localized via getLocalizationKey() (k.java:26),verified-exists
+method,com.corrodinggames.rts.game.units.a,k,c,getLocalizationKey,[V] returns 'menus.ingame.ping.type.' + enum name (k.java:30),verified-exists
+method,com.corrodinggames.rts.game.units.a,k,d,getDisplayString,UnitActionDef: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,e,getActionCategory,UnitActionDef: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,f,getActionTargetType,UnitActionDef: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,g,isInstantAction,UnitActionDef: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,h,isToggleable,UnitActionDef: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,h_,showActionInUI,UnitActionDef: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,i,getUnitTypeBridge,UnitActionDef: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,j,getTextureForAction,UnitActionDef: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,j_,getTexture,UnitActionDef: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,l,getActionScale,UnitActionDef: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,n,getUnitType,UnitActionDef: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,o_,isAlwaysVisible,UnitActionDef: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,k,s,isAvailableInCurrentGameState,UnitActionDef: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,l,B,getResourceComponent,"""[V] 优先 h.a() (修饰器成本)""",verified-exists
+method,com.corrodinggames.rts.game.units.a,l,C,isPassiveAction,SellAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,l,K,getBuildSpeed,"""[V] 委托 unitType.D() (建造速度""",verified-exists
+method,com.corrodinggames.rts.game.units.a,l,a,getDescription,[V] 单位类型描述 f() + 成本/属性详情 (构造器名 'u_'+unitId),verified-exists
+method,com.corrodinggames.rts.game.units.a,l,b,getLabel,[V] 委托 unitType.e() (单位本地化名称),verified-exists
+method,com.corrodinggames.rts.game.units.a,l,c,getResourceCost,[V] 委托 this.B().a(),verified-exists
+method,com.corrodinggames.rts.game.units.a,l,d,getDisplayString,SellAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,l,e,getActionCategory,SellAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,l,f,getActionTargetType,[V] 返回 t.d (BUILD 目标类型),verified-exists
+method,com.corrodinggames.rts.game.units.a,l,g,isInstantAction,[V] true: 单位建造命令即时入队执行,verified-exists
+method,com.corrodinggames.rts.game.units.a,l,h,isToggleable,SellAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,l,h_,showActionInUI,SellAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,l,i,getUnitType,[V] 返回被建造单位类型 this.unitType,verified-exists
+method,com.corrodinggames.rts.game.units.a,l,j,getTextureForAction,SellAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,l,j_,getTexture,SellAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,l,l,getActionScale,SellAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,l,n,getUnitType,SellAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,l,n_,isBuildable,[V] !unitType.C(): 单位类型未锁定才可建造,verified-exists
+method,com.corrodinggames.rts.game.units.a,l,o_,isAlwaysVisible,SellAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,l,r_,getSecondaryResourceComponent,"""[V] 优先 h.b()""",verified-exists
+method,com.corrodinggames.rts.game.units.a,l,s,isAvailableInCurrentGameState,SellAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,m,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress | [V] returns -1; not a build action (m.java:46),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,C,isPassiveAction,MapPingAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,m,K,getUnitType,[V] returns null (ar); generic reclaim action (m.java:50); fed to synthetic i(),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,ReclaimAction(boolean),ReclaimAction,"""[V] constructor; actionId 'c_2'""",suspicious-bc-missing
+method,com.corrodinggames.rts.game.units.a,m,a,getDescription,[V] localized: !isBuildingReclaim -> 'gui.actions.reclaimBuildingTarget.description' else 'gui.actions.reclaimTarget.description' (m.java:25),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,b,getLabel,[V] localized 'gui.actions.reclaimBuildingTarget' / 'gui.actions.reclaimTarget' (m.java:33),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,c,getResourceCost,[V] returns 0 (m.java:41),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,d,getDisplayString,MapPingAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,m,e,getTargetType,[V] returns u.e=RECLAIM target type (m.java:55),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,f,getActionCategory,[V] returns t.f=STRUCTURE category (m.java:60),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,g,isInstantAction,[V] false; targeted command (m.java:65),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,h,isToggleable,[V] true; reclaim mode toggles (m.java:70),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,h_,showActionInUI,MapPingAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,m,i,getUnitType,[V] synthetic bridge -> this.K() (null) (m.java:94),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,j,getTextureForAction,MapPingAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,m,j_,getTexture,MapPingAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,m,l,getActionScale,[V] UI scale/speed multiplier: 0.6f unless f.g.bP set then 1.0f (m.java:86),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,n,getUnitType,MapPingAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,m,o(com.corrodinggames.rts.game.units.am),isVisibleForUnit,[V] unit-gated: null target OK; wreck-reclaim only visible for reclaimable units (am.bI()); building-reclaim visible for any (m.java:75),verified-exists
+method,com.corrodinggames.rts.game.units.a,m,o_,isAlwaysVisible,MapPingAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,m,s,isAvailableInCurrentGameState,MapPingAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,n,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress | [V] returns -1; not a build action (n.java:36),verified-exists
+method,com.corrodinggames.rts.game.units.a,n,C,isPassiveAction,RepairAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,n,K,getUnitType,"""[V] returns null (ar UnitRegistry); repair is generic""",verified-exists
+method,com.corrodinggames.rts.game.units.a,n,RepairAction(),RepairAction,[V] constructor; actionId 'c_3' (n.java:16),suspicious-bc-missing
+method,com.corrodinggames.rts.game.units.a,n,a,getDescription,[V] localized 'gui.actions.repairTarget' (n.java:21),verified-exists
+method,com.corrodinggames.rts.game.units.a,n,b,getLabel,[V] localized 'gui.actions.repairTarget' (n.java:26),verified-exists
+method,com.corrodinggames.rts.game.units.a,n,c,getResourceCost,[V] returns 0; no up-front cost (n.java:31),verified-exists
+method,com.corrodinggames.rts.game.units.a,n,d,getDisplayString,RepairAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,n,e,getTargetType,[V] returns u.f=REPAIR; requires clicking a damaged unit (n.java:45),verified-exists
+method,com.corrodinggames.rts.game.units.a,n,f,getActionCategory,[V] returns t.f=STRUCTURE category (n.java:55),verified-exists
+method,com.corrodinggames.rts.game.units.a,n,g,isInstantAction,[V] false; repair is a targeted command (n.java:60),verified-exists
+method,com.corrodinggames.rts.game.units.a,n,h,isToggleable,[V] true; repair mode can be toggled (n.java:65),verified-exists
+method,com.corrodinggames.rts.game.units.a,n,h_,showActionInUI,[V] true; repair shown in panel (n.java:50),verified-exists
+method,com.corrodinggames.rts.game.units.a,n,i,getUnitType,[V] synthetic bridge -> this.K() (null) (n.java:70),verified-exists
+method,com.corrodinggames.rts.game.units.a,n,j,getTextureForAction,RepairAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,n,j_,getTexture,RepairAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,n,l,getActionScale,RepairAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,n,n,getUnitType,RepairAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,n,o_,isAlwaysVisible,RepairAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,n,s,isAvailableInCurrentGameState,RepairAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress | o.java:38-40 returns -1 (no build progress),verified-exists
+method,com.corrodinggames.rts.game.units.a,o,C,isPassiveAction,RallyPointAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,K,getFirstSelectedUnit,RallyPointAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,K(),getUnitType,o.java:42-44 returns null (no associated unit type),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,o,a,getDescription,RallyPointAction: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,a(),getDescription,o.java:23-25 localized 'gui.actions.setRally.description',body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,o,b,getLabel,RallyPointAction: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,b(),getLabel,o.java:28-30 localized 'gui.actions.setRally' (button label),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,o,c,getResourceCost,RallyPointAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,c(),getResourceCost,o.java:33-35 returns 0 (free command),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,o,d,getDisplayString,RallyPointAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,e,getActionCategory,RallyPointAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,e(),getActionCategory,o.java:47-49 returns u.d = ActionCategory.COMMAND,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,o,f,getActionTargetType,RallyPointAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,f(),getActionTargetType,o.java:52-54 returns t.b = ActionTargetType.LOCATION (rally point placed on map),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,o,g,isInstantAction,RallyPointAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,g(),isInstantAction,o.java:57-59 returns false (requires location target),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,o,h,isToggleable,RallyPointAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,h(),isToggleable,o.java:67-69 returns true (toggle-style command),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,o,h_,showActionInUI,RallyPointAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,i,getUnitTypeBridge,RallyPointAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,i(),getUnitType,o.java:71-73 synthetic bridge returning K() (null),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,o,j,getTextureForAction,RallyPointAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,j(),getTextureForAction,o.java:62-64 returns l.B().bS.bj (rally-point flag texture),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,o,j_,getTexture,RallyPointAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,l,getActionScale,RallyPointAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,n,getUnitType,RallyPointAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,o_,isAlwaysVisible,RallyPointAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,o,s,isAvailableInCurrentGameState,RallyPointAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,C,isPassiveAction,PingAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,K,getFirstSelectedUnit,PingAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,a,getDescription,PingAction: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,b,getLabel,PingAction: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,c,getResourceCost,PingAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,d,getDisplayString,PingAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,e,getActionCategory,PingAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,f,getActionTargetType,PingAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,g,isInstantAction,PingAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,h,isToggleable,PingAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,h_,showActionInUI,PingAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,i,getUnitTypeBridge,PingAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,j,getTextureForAction,PingAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,j_,getTexture,PingAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,l,getActionScale,PingAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,n,getUnitType,PingAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,o_,isAlwaysVisible,PingAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,p,s,isAvailableInCurrentGameState,PingAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,c(com.corrodinggames.rts.game.units.am, boolean),executeAction,verified-exists
+method,com.corrodinggames.rts.game.units.a,q,C,isPassiveAction,UnitBuildAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,K,getFirstSelectedUnit,UnitBuildAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,M,getKeyBindingRef,[V] returns inputController (bT).u = KeyBinding 'Send Team Chat' (ac.java:39),verified-exists
+method,com.corrodinggames.rts.game.units.a,q,TeamChatAction(),TeamChatAction,[V] constructor; super('c__cut_chat') (q.java:13),suspicious-bc-missing
+method,com.corrodinggames.rts.game.units.a,q,a,getDescription,[V] 'Send a team chat message to your allies' (q.java:23),verified-exists
+method,com.corrodinggames.rts.game.units.a,q,b,getLabel,[V] 'Team Chat' (q.java:18),verified-exists
+method,com.corrodinggames.rts.game.units.a,q,c,getResourceCost,UnitBuildAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,d,getDisplayString,UnitBuildAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,e,getActionCategory,UnitBuildAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,f,getActionTargetType,UnitBuildAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,g,isInstantAction,UnitBuildAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,h,isToggleable,UnitBuildAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,h_,showActionInUI,UnitBuildAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,i,getUnitTypeBridge,UnitBuildAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,j,getTextureForAction,UnitBuildAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,j_,getTexture,UnitBuildAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,l,getActionScale,UnitBuildAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,n,getUnitType,UnitBuildAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,o_,isAlwaysVisible,UnitBuildAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,q,s,isAvailableInCurrentGameState,UnitBuildAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,c(com.corrodinggames.rts.game.units.am, boolean),executeAction,verified-exists
+method,com.corrodinggames.rts.game.units.a,r,C,isPassiveAction,TeamChatAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,K,getFirstSelectedUnit,TeamChatAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,M,getKeyBindingRef,[V] returns inputController (bT).v = KeyBinding 'Ping Map' (ac.java:40; import gameFramework.KeyBinding in r.java),verified-exists
+method,com.corrodinggames.rts.game.units.a,r,MapPingAction(),MapPingAction,[V] constructor; super('c__cut_ping') (r.java:13),suspicious-bc-missing
+method,com.corrodinggames.rts.game.units.a,r,a,getDescription,[V] 'Send a map ping to your allies' (r.java:23),verified-exists
+method,com.corrodinggames.rts.game.units.a,r,b,getLabel,[V] 'Map Ping' (r.java:18),verified-exists
+method,com.corrodinggames.rts.game.units.a,r,c,getResourceCost,TeamChatAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,d,getDisplayString,TeamChatAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,e,getActionCategory,TeamChatAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,f,getActionTargetType,TeamChatAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,g,isInstantAction,TeamChatAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,h,isToggleable,TeamChatAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,h_,showActionInUI,TeamChatAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,i,getUnitTypeBridge,TeamChatAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,j,getTextureForAction,TeamChatAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,j_,getTexture,TeamChatAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,l,getActionScale,TeamChatAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,n,getUnitType,TeamChatAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,o_,isAlwaysVisible,TeamChatAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,r,s,isAvailableInCurrentGameState,TeamChatAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,s,a(com.corrodinggames.rts.game.units.a.s, com.corrodinggames.rts.game.units.a.s),actionsEqual | [V] static: s2==s3 引用相等比较,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,c(com.corrodinggames.rts.game.units.am, boolean),executeAction | [V] 基类 false: 执行动作主入口 (TeamChat/MapPing/Sell 覆盖),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,d(com.corrodinggames.rts.game.units.am, boolean),checkGameRules | [V] 基类恒 true: 地图/游戏规则限制检查钩子,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,A(),requiresTargeting,[v10.3-resolved: unique match | returns boolean] Needs explicit target check,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,B(),getResourceComponent,[v10.3-resolved: unique match,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,C,isPassiveAction,GameAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,s,C(),isPassiveAction,[v10.3-resolved: unique match | returns boolean] Passive/background action check,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,D(),isActiveAction,[v10.3-resolved: unique match | returns boolean] Active/interactive action check,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,E(),getBuildUnitType,[v10.3-resolved: unique match,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,F(),isBuildActionType,[v10.3-resolved: unique match | returns boolean] Is build-related action check,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,G(),isAggregateAction,[v10.3-resolved: unique match,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,H(),isChargedAction,[v10.3-resolved: unique match | returns boolean] Is charge-limited action,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,I(),isChargedActionFor,[v10.3-resolved: unique match | returns boolean] Charged variant check,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,J(),getColor,[v10.3-resolved: unique match | returns int] ARGB color for UI rendering,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,K,getBuildSortPriority,[[MANUAL: single overload - verify with javap]: multi-overload — needs manual disambiguation] Build queue sort priority float,game-test
+method,com.corrodinggames.rts.game.units.a,s,L,restoreSelectionCache,[[MANUAL: single overload - verify with javap]: multi-overload — needs manual disambiguation] Restore original selection after build,game-test
+method,com.corrodinggames.rts.game.units.a,s,M(),getKeyBindingRef,[v10.3-resolved: unique match,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,N(),getActionId,[v10.3-resolved: unique match,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,O(),getActionIdString,[v10.3-resolved: unique match,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,P(),getKeyBinding,[v10.3-resolved: unique match,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,Q(),hasSubActions,[v10.3-resolved: unique match | returns boolean] Has sub-action expand menu,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,a,getDescription,[V] abstract: 动作描述/tooltip 主文本 (BuildAction→buildTargetPos.a()),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,b,getLabel,[V] abstract: 动作按钮标签文本 (BuildAction→buildTargetPos.b()),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,c,getResourceCost,[V] abstract: 成本 int (BuildQueueAction→B().a(); SellAction 计算卖价),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,d,getDisplayString,"""[V] 遍历选中单位: 拼接标签 + 动作图标计数 '标签 (N)'""",verified-exists
+method,com.corrodinggames.rts.game.units.a,s,e,getActionCategory,[V] abstract: 动作类别枚举 u (ActionCategory 13 值),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,f,getActionTargetType,[V] abstract: 目标类型枚举 t (ActionTargetType 9 值),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,g,isInstantAction,[V] abstract: 是否即时执行 (v→false 排队执行; l→true 直接建造),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,h,isToggleable,[V] 基类 false: 是否切换型动作 (Guard/Patrol 覆盖为 true),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,h_,showActionInUI,[V] 基类 true: 是否在 UI 面板显示,verified-exists
+field,com.corrodinggames.rts.game.units.a,s,i,actionConfigFlag,"P3.3-deep-curated: class-context, was=c1",p3-deep-curated
+method,com.corrodinggames.rts.game.units.a,s,j,getTextureForAction,[V] 默认动作纹理: 目标类型==t.c(特殊) 时返回全局 bk 纹理,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,j_,getTexture,GameAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,s,k(com.corrodinggames.rts.game.units.am),isAvailableForUnit,[V] 基类 false: 该单位可用性钩子 (BuildAction 委托 buildTargetPos.k),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,l,getActionScale,[V] 渲染缩放倍率: 基类 1.0f (Guard→0.6/0.5),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,m,getMaxChargeUses,[V] 蓄力最大使用次数: 基类 -1 (无限),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,m_,getSortPriority,"""[V] 有效排序优先级: RallyPoint=-100""  sortPriority 字段 (-999=未设)",verified-exists
+method,com.corrodinggames.rts.game.units.a,s,n,getUnitType,GameAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,s,n(com.corrodinggames.rts.game.units.am),checkUnitTypeFilterFor,[V] 基类 false: 单位类型过滤变体钩子 (BuildAction 委托),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,n_,isBuildable,[V] 是否可建造/购买: 基类 false; v/l 覆盖为 !unitType.C() (单位类型未锁定),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,o,isRepeatingAction,[V] 基类 false: 是否重复执行动作,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,o_,isAlwaysVisible,[V] 基类 false: 面板中始终可见 (Guard/Patrol/Sell 覆盖为 true),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,p,isContextSensitive,[V] 基类 false: 是否随上下文变化显示,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,q,getArrayList,real-class-inferred: com.corrodinggames.rts.game.units.a.s,real-class-v1200
+method,com.corrodinggames.rts.game.units.a,s,q(com.corrodinggames.rts.game.units.am),getQueuedActions,[V] 基类 null: 排队子动作列表 (ArrayList),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,r,isEnabled,real-class-inferred: com.corrodinggames.rts.game.units.a.s,real-class-v1200
+method,com.corrodinggames.rts.game.units.a,s,r(com.corrodinggames.rts.game.units.am),canShowAction,"""[V] UI 可见性: 委托 this.b(am) (actionModifier.a(am""",verified-exists
+method,com.corrodinggames.rts.game.units.a,s,r_,getSecondaryResourceComponent,[V] 次要资源组件: actionModifier.b() (如双成本动作的第二个成本),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,s,isAvailableInCurrentGameState,[V] 基类 false: 编辑器/观战等游戏状态可用性,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,t,getMaxQueueCount,[V] 最大排队数量: 基类 1; v 返回队列计数 b (T1/T2/T3),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,u,isQueueable,"""[V] 基类 false: 可排队 (Shift-点击); v→true""",verified-exists
+method,com.corrodinggames.rts.game.units.a,s,v,getIconRect,[V] 基类 null: 图标矩形区域 (Rect),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,w(com.corrodinggames.rts.game.units.am),getLabelForUnitTarget,[V] 委托 this.d(am) — 目标单位标签 (原 requiresTarget 钩子),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,x,isToggleableActionWrapper,[V] 基类 false: 包装可切换动作 (ActionWrapper 覆盖),verified-exists
+method,com.corrodinggames.rts.game.units.a,s,y,getAssociatedUnitType,[V] 次级单位类型: 基类 null; v 返回队列单位类型,verified-exists
+method,com.corrodinggames.rts.game.units.a,s,z(),getActionIdAlias,[v10.3-resolved: unique match,verified-exists
+method,com.corrodinggames.rts.game.units.a,t,C,isPassiveAction,ActionWrapper: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,K,getFirstSelectedUnit,ActionWrapper: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,a,getDescription,ActionWrapper: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,b,getLabel,ActionWrapper: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,c,getResourceCost,ActionWrapper: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,d,getDisplayString,ActionWrapper: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,e,getActionCategory,ActionWrapper: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,f,getActionTargetType,ActionWrapper: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,g,isInstantAction,ActionWrapper: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,h,isToggleable,ActionWrapper: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,h_,showActionInUI,ActionWrapper: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,i,getUnitTypeBridge,ActionWrapper: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,j,getTextureForAction,ActionWrapper: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,j_,getTexture,ActionWrapper: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,l,getActionScale,ActionWrapper: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,n,getUnitType,ActionWrapper: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,o_,isAlwaysVisible,ActionWrapper: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,t,s,isAvailableInCurrentGameState,ActionWrapper: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,C,isPassiveAction,AbstractBuildAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,K,getFirstSelectedUnit,AbstractBuildAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,a,getDescription,AbstractBuildAction: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,b,getLabel,AbstractBuildAction: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,c,getResourceCost,AbstractBuildAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,d,getDisplayString,AbstractBuildAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,e,getActionCategory,AbstractBuildAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,f,getActionTargetType,AbstractBuildAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,g,isInstantAction,AbstractBuildAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,h,isToggleable,AbstractBuildAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,h_,showActionInUI,AbstractBuildAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,i,getUnitTypeBridge,AbstractBuildAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,j,getTextureForAction,AbstractBuildAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,j_,getTexture,AbstractBuildAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,l,getActionScale,AbstractBuildAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,n,getUnitType,AbstractBuildAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,o_,isAlwaysVisible,AbstractBuildAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,u,s,isAvailableInCurrentGameState,AbstractBuildAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress | [V] 恒 -1: 队列条目无个体建造进度,verified-exists
+method,com.corrodinggames.rts.game.units.a,v,B,getResourceComponent,"""[V] 优先 h.a() (修饰器成本)""",verified-exists
+method,com.corrodinggames.rts.game.units.a,v,C,isPassiveAction,BuildQueueAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,D,isActiveAction,[V] false: 队列条目非交互主动动作,verified-exists
+method,com.corrodinggames.rts.game.units.a,v,K,getFirstSelectedUnit,BuildQueueAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,a,getDescription,[V] 单位类型描述 f() + 成本/属性详情; 队列数!=1 时按数量重置 (UnitType.a(b) 临时设置),verified-exists
+method,com.corrodinggames.rts.game.units.a,v,b,getLabel,"""[V] 单位名 e() + ' T-2'/' T-3' 后缀 (字符串锚点""",verified-exists
+method,com.corrodinggames.rts.game.units.a,v,c,getResourceCost,[V] 委托 this.B().a() (资源成本组件总额),verified-exists
+method,com.corrodinggames.rts.game.units.a,v,d,getDisplayString,BuildQueueAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,e,getActionCategory,[V] 返回 u.b (BUILD_QUEUE 类别),verified-exists
+method,com.corrodinggames.rts.game.units.a,v,f,getActionTargetType,[V] 返回 t.e (BUILD_QUEUE 目标类型),verified-exists
+method,com.corrodinggames.rts.game.units.a,v,g,isInstantAction,[V] false: 队列条目非即时执行,verified-exists
+method,com.corrodinggames.rts.game.units.a,v,h,isToggleable,BuildQueueAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,h_,showActionInUI,BuildQueueAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,i,getUnitType,[V] 返回队列单位类型 this.a,verified-exists
+method,com.corrodinggames.rts.game.units.a,v,j,getTextureForAction,BuildQueueAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,j_,getTexture,BuildQueueAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,l,getActionScale,BuildQueueAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,n,getUnitType,BuildQueueAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,n_,isBuildable,[V] !i().C(): 单位类型未锁定 (demo 限制) 才可建造,verified-exists
+method,com.corrodinggames.rts.game.units.a,v,o_,isAlwaysVisible,BuildQueueAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,p(com.corrodinggames.rts.game.units.am),getBuildProgressForUnit,"""[V] 从单位类型 X() 的目标实例取进度 cm (<1.0 且类型匹配时返回""",verified-exists
+method,com.corrodinggames.rts.game.units.a,v,r(com.corrodinggames.rts.game.units.am),canShowAction,"""[V] 委托 h.a(am""",verified-exists
+method,com.corrodinggames.rts.game.units.a,v,r_,getSecondaryResourceComponent,"""[V] 优先 h.b() (修饰器次级成本)""",verified-exists
+method,com.corrodinggames.rts.game.units.a,v,s,isAvailableInCurrentGameState,BuildQueueAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,v,t,getMaxQueueCount,[V] 返回队列计数 this.b (1/2/3=科技等级),verified-exists
+method,com.corrodinggames.rts.game.units.a,v,u,isQueueable,[V] true: 队列动作始终可排队,verified-exists
+method,com.corrodinggames.rts.game.units.a,v,y,getAssociatedUnitType,[V] 返回队列单位类型 this.a (同 i),verified-exists
+method,com.corrodinggames.rts.game.units.a,w,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress,verified-exists
+method,com.corrodinggames.rts.game.units.a,w,C,isPassiveAction,ReclaimAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,K,getBuildSortPriority,[V] 返回 0.01f: 建造动作排序优先级常量 (文档: sorts below others),verified-exists
+method,com.corrodinggames.rts.game.units.a,w,a,getDescription,ReclaimAction: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,b,getLabel,ReclaimAction: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,c,getResourceCost,ReclaimAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,d,getDisplayString,ReclaimAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,e,getActionCategory,[V] 返回 u.c (BUILD 类别),verified-exists
+method,com.corrodinggames.rts.game.units.a,w,f,getActionTargetType,ReclaimAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,g,isInstantAction,ReclaimAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,h,isToggleable,ReclaimAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,h_,showActionInUI,ReclaimAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,i,getUnitTypeBridge,ReclaimAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,j,getTextureForAction,ReclaimAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,j_,getTexture,ReclaimAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,l,getActionScale,ReclaimAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,n,getUnitType,ReclaimAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,o_,isAlwaysVisible,ReclaimAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,p,getfloat,real-class-inferred: com.corrodinggames.rts.game.units.a.w,real-class-v1200
+method,com.corrodinggames.rts.game.units.a,w,p(com.corrodinggames.rts.game.units.am),getBuildProgressForUnit,[V] 从 CarrierUnit.dw() 建造队列取目标: 匹配动作 ID 时返回夹取 0-1 的进度,verified-exists
+method,com.corrodinggames.rts.game.units.a,w,s,isAvailableInCurrentGameState,ReclaimAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,w,u,isQueueable,[V] true: 建造动作可排队,verified-exists
+method,com.corrodinggames.rts.game.units.a,x,C,isPassiveAction,AbstractImmediateAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,K,getFirstSelectedUnit,AbstractImmediateAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,a,getDescription,AbstractImmediateAction: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,b,getLabel,AbstractImmediateAction: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,c,getResourceCost,AbstractImmediateAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,d,getDisplayString,AbstractImmediateAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,e,getActionCategory,AbstractImmediateAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,f,getActionTargetType,AbstractImmediateAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,g,isInstantAction,AbstractImmediateAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,h,isToggleable,AbstractImmediateAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,h_,showActionInUI,AbstractImmediateAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,i,getUnitTypeBridge,AbstractImmediateAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,j,getTextureForAction,AbstractImmediateAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,j_,getTexture,AbstractImmediateAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,l,getActionScale,AbstractImmediateAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,n,getUnitType,AbstractImmediateAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,o_,isAlwaysVisible,AbstractImmediateAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,x,s,isAvailableInCurrentGameState,AbstractImmediateAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress | y.java:29-31 returns -1 (no build progress),verified-exists
+method,com.corrodinggames.rts.game.units.a,y,C,isPassiveAction,StopAction: GameAction: passive background action,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,C(),isPassiveAction,y.java:138-140 returns true (passive background action),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,y,G,isEnabled,real-class-inferred: com.corrodinggames.rts.game.units.a.y,real-class-v1200
+method,com.corrodinggames.rts.game.units.a,y,G(),isAggregateAction,y.java:168-170 returns true (aggregates selected units),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,y,K,getFirstSelectedUnit,StopAction: GameAction: first selected UnitType,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,K(),getFirstSelectedUnit,y.java:58-70 scans l2.bS.bZ (selected units) for first UnitType with cG flag; used by d()/L()/a(),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,y,L,isEnabled,real-class-inferred: com.corrodinggames.rts.game.units.a.y,real-class-v1200
+method,com.corrodinggames.rts.game.units.a,y,L(),isEditorOrSpectator,"""y.java:72-82 true when first selected unit is Factory""",verified-exists
+method,com.corrodinggames.rts.game.units.a,y,a,getDescription,StopAction: GameAction: localized tooltip description,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,a(),getDescription,"""y.java:143-165 tooltip: unit info string via f.a.a(y2""",verified-exists
+method,com.corrodinggames.rts.game.units.a,y,b,getLabel,StopAction: GameAction: localized button label text,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,b(),getLabel,y.java:109-111 returns 'UnitInfo' (button label),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,y,c,getResourceCost,StopAction: GameAction: returns ResourceComponent (cost to execute),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,c(),getResourceCost,y.java:34-36 returns 0 (free command),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,y,d,getDisplayString,StopAction: GameAction: display string for current mode,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,d(),getDisplayString,"""y.java:85-101 'Editor' for Factory""",verified-exists
+method,com.corrodinggames.rts.game.units.a,y,e,getActionCategory,StopAction: GameAction: returns ActionCategory enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,e(),getActionCategory,y.java:44-46 returns u.i = ActionCategory.MISC_UI,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,y,f,getActionTargetType,StopAction: GameAction: returns ActionTargetType enum,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,f(),getActionTargetType,y.java:49-51 returns t.g = ActionTargetType.STOP,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,y,g,isInstantAction,StopAction: GameAction: returns true if action completes instantly,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,g(),isInstantAction,y.java:54-56 returns false,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,y,h,isToggleable,StopAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,h_,showActionInUI,StopAction: GameAction: visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,h_(),showActionInUI,y.java:104-106 returns true (rendered in panel),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,y,i,getUnitTypeBridge,StopAction: GameAction: synthetic bridge returning getUnitType(),batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,i(),getUnitType,y.java:39-41 returns null directly (no associated unit type),body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,y,j,getTextureForAction,StopAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,j_,getTexture,StopAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,l,getActionScale,StopAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,n,getUnitType,StopAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,o_,isAlwaysVisible,StopAction: GameAction: always visible in action panel,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,s,isAvailableInCurrentGameState,StopAction: GameAction: hidden in editor/spectator modes,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,y,s(),isAvailableInCurrentGameState,y.java:125-130 area-stop hidden in editor/spectator mode (!this.L()); single-stop always available,body-verified-v1010
+method,com.corrodinggames.rts.game.units.a,y,u,isEnabled,real-class-inferred: com.corrodinggames.rts.game.units.a.y,real-class-v1200
+method,com.corrodinggames.rts.game.units.a,y,u(),isQueueable,"""y.java:133-135 returns !this.a (single-unit info stop queueable""",verified-exists
+method,com.corrodinggames.rts.game.units.a,z,b(com.corrodinggames.rts.game.units.am, boolean),getBuildProgress,verified-exists
+method,com.corrodinggames.rts.game.units.a,z,c(com.corrodinggames.rts.game.units.am, boolean),executeAction,verified-exists
+method,com.corrodinggames.rts.game.units.a,z,C,isPassiveAction,[V] true; passive/background action (z.java:130),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,G,isAggregateAction,[V] true; aggregates all selected units of the type (matches supplement s.G=isAggregateAction) (z.java:178),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,K,refreshSelectionCount,"""[V] recounts selected units of this type: resets unitCount/hasMixedTypes/firstUnit"" | iterates selection registry bS.bZ",verified-exists
+method,com.corrodinggames.rts.game.units.a,z,SellAction(com.corrodinggames.rts.game.units.as),SellAction,"""[V] constructor; super(""s_""+unitTypeName) sell-id prefix""  g=-9999.0f (sell sorts last)",suspicious-bc-missing
+method,com.corrodinggames.rts.game.units.a,z,a,getDescription,[V] tooltip: '(Left click to exclusively select / Right click to unselect)\n' when hasMixedTypes + unitType.f() description (z.java:135),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,b,getLabel,[V] abstract b() override: 'UnitInfo' (z.java:102),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,c,getResourceCost,[V] returns 0; selling is free (z.java:38),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,d,getDisplayString,[V] full label: 'UnitInfo' / 'Editor' (factory) / '<unitType> x<count>' (z.java:91),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,e,getTargetType,"""[V] returns u.i=MISC_UI; button-only action""",verified-exists
+method,com.corrodinggames.rts.game.units.a,z,f,getActionCategory,"""[V] t.h SELL when l.at() && !f.g.bO (tournament UI)""",verified-exists
+method,com.corrodinggames.rts.game.units.a,z,g,isInstantAction,"""[V] false; sell is a selection-refinement action""",verified-exists
+method,com.corrodinggames.rts.game.units.a,z,h,isToggleable,AbstractCutsceneAction: GameAction: returns true if toggle-style command,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,z,h_,showActionInUI,[V] true; sell button always shown in action panel (z.java:115),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,i,getUnitType,[V] returns this.unitType (as UnitTypeHandle); abstract i() override (z.java:43),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,j,getTextureForAction,AbstractCutsceneAction: GameAction: action button icon texture,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,z,j_,getTexture,AbstractCutsceneAction: GameAction: alternative texture getter,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,z,l,getActionScale,AbstractCutsceneAction: GameAction: UI scale factor for action button,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,z,m_,getSortPriority,[V] returns g - unitCount: sell priority drops as more units of type selected (z.java:173),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,n,getUnitType,AbstractCutsceneAction: GameAction: associated unit type or null,batch-inferred-v1200
+method,com.corrodinggames.rts.game.units.a,z,o_,isAlwaysVisible,[V] true; always visible in panel (z.java:183),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,s,isAvailableInCurrentGameState,[V] true; available in normal game state (z.java:120),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,u,isQueueable,[V] true; sells can be shift-queued (z.java:125),verified-exists
+method,com.corrodinggames.rts.game.units.a,z,w(com.corrodinggames.rts.game.units.am),getLabelForUnitTarget,[V] per-unit label: 'Editor' for factory else unitType.e() localized name (z.java:107),verified-exists
+field,com.corrodinggames.rts.gameFramework.c,a,a,debugNetworkEnabled,Network debug enabled (static boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.c,a,b,debugRenderEnabled,Render debug enabled (static boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.c,a,c,debugAIEnabled,AI debug enabled (static boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.c,a,d,debugAudioEnabled,Audio debug enabled (static boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.c,a,e,debugUpdateInterval,Debug update interval (static float),verified-exists
+field,com.corrodinggames.rts.gameFramework.c,a,g,isRunning,Server running flag (static boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.c,a,h,serverSocket,Debug server socket (ServerSocket),verified-exists
+field,com.corrodinggames.rts.gameFramework.c,a,i,acceptConnections,Accept connections flag (boolean, default true)
+field,com.corrodinggames.rts.gameFramework.c,b,isProcessing,Currently processing flag (boolean),b: field isProcessing -> Currently processing flag (boolean),suspicious-bc-missing
+method,com.corrodinggames.rts.gameFramework.e,a,a,getFile,real-class-inferred: com.corrodinggames.rts.gameFramework.e.a,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.e,a,b,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.e.a,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.e,a,c,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.e.a,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.e,a,d,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.e.a,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.e,a,e,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.e.a,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.e,a,f,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.e.a,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.e,a,g,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.e.a,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.e,a,h,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.e.a,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.e,a,i,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.e.a,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.e,a,j,getj,real-class-inferred: com.corrodinggames.rts.gameFramework.e.a,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.e,a,k,getj,real-class-inferred: com.corrodinggames.rts.gameFramework.e.a,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.e,b,a,canRead,Read permission (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.e,b,b,canWrite,Write permission (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.e,b,c,fileExists,File exists (boolean),verified-exists
+method,com.corrodinggames.rts.gameFramework.e,c,a,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.e.c,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.e,c,b,canRead,Can read flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.e,c,c,canWrite,Can write flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.e,c,d,canDelete,Can delete flag (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.a,c,c,actionIdCache,"T0: private static HashMap; a(String)中 缓存命中返回, 未命中 new c(string)+put (字符串驻留池)",verified
+field,com.corrodinggames.rts.game.units.a,c,a,actionIdMinusOne,"T0: public static final c a = a(""-1""); 特殊哨兵ID(""-1""); 其他代码如 a.s.i 用作默认动作引用",verified
+field,com.corrodinggames.rts.game.units.a,c,b,actionName,"T0: 私有构造赋值; a()返回; 序列化取 c2.b 写UTF; toString()=""ActionId(""+this.b+"")""",verified
+method,com.corrodinggames.rts.game.units.a,c,a(String),internActionId,"T0: HashMap缓存查找/创建 (动作名驻留, 同名字符串返回同一实例, equals为引用相等的前提)",verified
+method,com.corrodinggames.rts.game.units.a,c,a(),getActionName,"T0: return this.b; play2回放日志 ""updateGameFrame: SpecialAction: {e2.k.a()}"" (k为Command的SpecialAction字段)",verified
+method,com.corrodinggames.rts.game.units.a,c,a(k),deserializeActionId,T0: k2.j()读UTF; 非null返回a(string)驻留; null返回null (配合au.c字段v82版本门控),verified
+method,com.corrodinggames.rts.game.units.a,c,a(c),isSameAction,"T0: return this==c2 (引用相等; 因a(String)驻留机制, 同名字符串即同一实例)",verified
+method,com.corrodinggames.rts.game.units.a,o_,,isAlwaysVisible,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置11),order-align-v19.111
+method,com.corrodinggames.rts.game.units.a,K,,getSortPriority,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置0),order-align-v19.111
+method,com.corrodinggames.rts.game.units.a,n_,,isBuildable,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置8),order-align-v19.111
+method,com.corrodinggames.rts.game.units.a,q_,,getWrappedAction,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置31),order-align-v19.111
+method,com.corrodinggames.rts.game.units.a,B,,getSecondaryResourceComponent,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置3),order-align-v19.111
+method,com.corrodinggames.rts.game.units.a,O,,getActionIdString,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置11),order-align-v19.111
+method,com.corrodinggames.rts.game.units.a,r_,,getSecondaryResourceComponent,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置19),order-align-v19.111
+method,com.corrodinggames.rts.game.units.a,Q,,isAlwaysVisible,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置78),order-align-v19.111
+method,com.corrodinggames.rts.game.units.a,L,,isEditorOrSpectator,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置7),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.e,h,,reset,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置13),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.e,i,,FileLoader,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置15),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.e,j,,FileLoader,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置16),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.e,b,,FileLoader,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置20),order-align-v19.111
+method,com.corrodinggames.rts.gameFramework.e,l,,FileLoader,v19.111 保序对齐+arity指纹: javap方法表↔03声明 (位置21),order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,cu,,maxHealth,v19.111 运行时值: landFactory=1200/airFactory=1000/commandCenter=4000/tank=210 (生命值量级),order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,cv,,currentHealth,v19.111 运行时值: 与 cu 同值 (满血初始),order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,cj,,sightRange,v19.111 运行时值: 工厂30/炮塔16/tank11/builder10 (视野随单位缩小),order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,ck,,sightRangeCache,v19.111 运行时值: 与 cj 同值,order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,cg,,turretAngle,"v19.111 运行时值: 非炮塔单位-90.0, builder/tank 0.0",order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,bT,,isMobile,"v19.111 运行时值: builder/tank=true, 工厂/炮塔=false",order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,cA,,maxShield,v19.111 容差匹配: ini maxShield eq ×10 (experimentalHoverTank=5000/heavyInterceptor=450),order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,cx,,currentShield,v19.111 容差匹配: 与cA同值(满盾)或0(startShieldAtZero) ×8,order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,cB,,energyMax,v19.111 容差匹配: ini energyMax eq ×12,order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,cu,,maxHealth,v19.111 容差匹配铁证: ini maxHp eq ×93 单位,order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,cv,,currentHealth,v19.111 容差匹配铁证: ini maxHp eq ×93 (满血初始),order-align-v19.111
+field,com.corrodinggames.rts.game.units.am,cj,,sightRadius,v19.111 容差匹配铁证: ini radius eq ×71 单位,order-align-v19.111
+method,com.corrodinggames.rts.game.units.a,s,O,getActionIdString,"type-aware-fp-v19.114: 02b字面量指纹配对 (arity=0, GameAction)",type-aware-fp-v19.114

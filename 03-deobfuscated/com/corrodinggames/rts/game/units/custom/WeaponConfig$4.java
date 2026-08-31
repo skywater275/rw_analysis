@@ -1,0 +1,24 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.corrodinggames.rts.game.units.custom;
+
+import com.corrodinggames.rts.game.units.custom.WeaponConfig;
+import com.corrodinggames.rts.game.units.custom.aw;
+
+final class WeaponConfig$4
+extends aw {
+    WeaponConfig$4(int n, String string) {
+        super(n, string);
+    }
+
+
+    public double a(WeaponConfig as2) {
+        return as2.reloadMultiplier;
+    }
+
+
+    public void a(WeaponConfig as2, double d) {
+        as2.reloadMultiplier = (float)d;
+    }
+}

@@ -1,0 +1,155 @@
+obfuscated_package,obfuscated_class,best_03_name,overlap,reason
+com.a.a.a,a,,0,02b无字符串
+com.corrodinggames.librocket,c,,0,02b无字符串
+com.corrodinggames.librocket,d,,0,02b无字符串
+com.corrodinggames.librocket,e,,0,02b无字符串
+com.corrodinggames.rts,R,,0,02b无字符串
+com.corrodinggames.rts.a,b,,0,02b无字符串
+com.corrodinggames.rts.a.a,g,,0,02b无字符串
+com.corrodinggames.rts.a.a,h,,0,02b无字符串
+com.corrodinggames.rts.a.a,j,,0,02b无字符串
+com.corrodinggames.rts.appFramework,f,,0,02b无字符串
+com.corrodinggames.rts.appFramework,o,MainUIController,1,重合1<阈值或并列 (次佳1)
+com.corrodinggames.rts.appFramework,p,,0,02b无字符串
+com.corrodinggames.rts.game,p,,0,02b无字符串
+com.corrodinggames.rts.game,s,,0,02b无字符串
+com.corrodinggames.rts.game,t,,0,02b无字符串
+com.corrodinggames.rts.game.a,e,,0,02b无字符串
+com.corrodinggames.rts.game.units,at,,0,02b无字符串
+com.corrodinggames.rts.game.units,d,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,aa,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.game.units.custom,ab,ModUnitRegistry,5,重合5但目标已映射 (拆分/合并?)
+com.corrodinggames.rts.game.units.custom,ac,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,ad,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,ae,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,af,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,ai,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,aj,TestLogicBoolean,1,重合1<阈值或并列 (次佳0)
+com.corrodinggames.rts.game.units.custom,ak,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,aq,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,ar,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,at,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.game.units.custom,av,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.game.units.custom,ay,ModLoader,2,重合2但目标已映射 (拆分/合并?)
+com.corrodinggames.rts.game.units.custom,az,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,bb,LocalizedString,1,重合1<阈值或并列 (次佳0)
+com.corrodinggames.rts.game.units.custom,bc,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,bd,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,be,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.game.units.custom,bf,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,bg,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.game.units.custom,bi,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.game.units.custom,bj,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,bk,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,bl,ModLoader,2,重合2但目标已映射 (拆分/合并?)
+com.corrodinggames.rts.game.units.custom,bm,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,bp,MapEngine,1,重合1<阈值或并列 (次佳1)
+com.corrodinggames.rts.game.units.custom,bq,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom,g,TeamTag,1,重合1<阈值或并列 (次佳0)
+com.corrodinggames.rts.game.units.custom.a,a,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.a,b,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.a,d,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.a.a,c,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.a.a,i,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.a.a,k,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.a.a,l,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.a.a,n,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.b,b,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.b,e,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.b,i,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.b,j,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.b,k,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.b,l,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.c,a,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.c,c,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.c,d,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.c,e,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.c,f,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.d,d,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.e,e,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.e.a,b,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.e.a,c,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.e.a,d,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.e.a,e,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.e.a,f,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.f,c,,0,02b无字符串
+com.corrodinggames.rts.game.units.custom.f,d,,0,02b无字符串
+com.corrodinggames.rts.game.units.d,l,,0,02b无字符串
+com.corrodinggames.rts.game.units.d,t,,0,02b无字符串
+com.corrodinggames.rts.game.units.d.a,d,,0,02b无字符串
+com.corrodinggames.rts.game.units.d.a,e,,0,02b无字符串
+com.corrodinggames.rts.game.units.d.a,f,,0,02b无字符串
+com.corrodinggames.rts.game.units.d.a,g,,0,02b无字符串
+com.corrodinggames.rts.game.units.d.a,h,,0,02b无字符串
+com.corrodinggames.rts.game.units.e,c,,0,02b无字符串
+com.corrodinggames.rts.game.units.f,a,,0,02b无字符串
+com.corrodinggames.rts.game.units.f,c,SpatialGrid,1,重合1<阈值或并列 (次佳0)
+com.corrodinggames.rts.game.units.f,d,,0,02b无字符串
+com.corrodinggames.rts.game.units.f,f,QueryResult,1,重合1<阈值或并列 (次佳1)
+com.corrodinggames.rts.game.units.f,g,,0,02b无字符串
+com.corrodinggames.rts.game.units.f,h,,0,02b无字符串
+com.corrodinggames.rts.gameFramework,bh,,0,02b无字符串
+com.corrodinggames.rts.gameFramework,bj,,0,02b无字符串
+com.corrodinggames.rts.gameFramework,bl,,0,02b无字符串
+com.corrodinggames.rts.gameFramework,bn,StatsHistory,1,重合1<阈值或并列 (次佳0)
+com.corrodinggames.rts.gameFramework,bo,StatsRecord,1,重合1<阈值或并列 (次佳0)
+com.corrodinggames.rts.gameFramework,bq,,0,02b无字符串
+com.corrodinggames.rts.gameFramework,n,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.b,ab,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.b,ac,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.b,ag,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.b,f,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.b,k,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.b.a,a,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.b.a,c,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.b.a,d,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.b.a,g,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.f,ac,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.f.a,b,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.f.a,c,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.f.a,e,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.f.a,f,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.f.a,g,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.g,b,DataField,1,重合1<阈值或并列 (次佳1)
+com.corrodinggames.rts.gameFramework.g,d,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.g,e,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.j,ag,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.j,t,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.m,ab,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.m,c,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.m,r,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.m,s,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.m,w,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.n.a,a,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.n.a,b,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.gameFramework.n.a,c,UnitCountCondition,1,重合1<阈值或并列 (次佳0)
+com.corrodinggames.rts.gameFramework.utility,ad,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.gameFramework.utility,ae,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.utility,af,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.utility,ah,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.gameFramework.utility,ai,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.utility,ak,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.utility,al,SettingsEngine,1,重合1<阈值或并列 (次佳1)
+com.corrodinggames.rts.gameFramework.utility,am,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.utility,e,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.utility,f,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.utility,g,RingBuffer,1,重合1<阈值或并列 (次佳0)
+com.corrodinggames.rts.gameFramework.utility,i,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.gameFramework.utility,k,,0,02b无字符串
+com.corrodinggames.rts.gameFramework.utility,m,UnitList,8,重合8<阈值或并列 (次佳8)
+com.corrodinggames.rts.gameFramework.utility,u,UnitRegistry,7,重合7<阈值或并列 (次佳7)
+com.corrodinggames.rts.java.a,a,,0,02b无字符串
+com.corrodinggames.rts.java.audio.a,c,,0,02b无字符串
+com.corrodinggames.rts.java.audio.a,f,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.java.audio.a,g,,0,02b无字符串
+com.corrodinggames.rts.java.audio.a,j,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.java.audio.a,k,,0,02b无字符串
+com.corrodinggames.rts.java.audio.a,m,,0,02b无字符串
+com.corrodinggames.rts.java.audio.a,n,,0,02b无字符串
+com.corrodinggames.rts.java.audio.a,p,AssetManager,0,重合0<阈值或并列 (次佳0)
+com.corrodinggames.rts.java.audio.a,q,,0,02b无字符串
+com.corrodinggames.rts.java.audio.a,s,,0,02b无字符串
+com.corrodinggames.rts.java.audio.a,t,,0,02b无字符串
+com.corrodinggames.rts.java.c,c,,0,02b无字符串
+com.corrodinggames.rts.java.c,d,,0,02b无字符串
+com.corrodinggames.rts.java.c,h,,0,02b无字符串
