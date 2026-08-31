@@ -1,6 +1,6 @@
 # TOOLS-TREE — 工具链完整结构树
 
-> 版本: v19.133f98 | 日期: 2026-09-04 | 本文件承接 CLAUDE.md 精简前的 tools/ + rwlib/ 完整结构树 (2026-09-04 精简战役移出)
+> 版本: v19.133f98 | 日期: 2026-08-31 | 本文件承接 CLAUDE.md 精简前的 tools/ + rwlib/ 完整结构树 (2026-08-31 精简战役移出)
 > 导航: [CLAUDE.md](../../CLAUDE.md) | 工具清单: python tools/manager.py list
 
 │
@@ -246,14 +246,14 @@
 │   │   ├── verify_ini_params.py ← INI参数验证 [rwlib]
 │   │   ├── method_catalog.py   ← 方法目录生成 [rwlib]
 │   │   ├── classdump.py        ← .class二进制解析 (独立工具)
-│   │   ├── gamelib_audit.py    ← 05-gamelib 语义名审计 (v19.85, 重生成 unresolved.txt)
+│   │   ├── gamelib_audit.py    ← game-lib.jar 语义名审计 (v19.85; 逆3 jar 遍历修复, 重生成 unresolved.txt)
 │   │   ├── class_evidence.py   ← 字节码证据提取 (v19.87, 并行 javap: super/接口/字符串)
 │   │   ├── identify_readable.py ← Rule E 反向字符串指纹匹配 (v19.88)
 │   │   ├── replay_parser.py    ← 回放命令流解析器 (v19.95, v19.97 d子对象子流修复)
 │   │   ├── debug_script.py     ← DebugServer 客户端 (v19.96, script 命令/--wait)
 │   │   ├── parse_rc_v96.py     ← v96 命令写侧格式字段级对照 (v19.97)
 │   │   ├── dump_rc.py          ← 回放 rc 原始字节 dump (v19.97)
-│   │   ├── gen_error_list.py ← 剩余错误总清单生成器 (v19.124: compile-errors.csv → docs/deobfuscation/剩余错误总清单-5283.md, 669 文件全分组/类型/符号归类, 可重生成)
+│   │   ├── gen_error_list.py ← 编译错误清单生成器 (v19.124: compile-errors.csv 分组/类型/符号归类; 错误已清零, 历史清单已删)
 │   │   ├── b2_reverse_map_check.py ← [v19.133f98] B2 反向映射核对 (jar 1,698 ↔ 03 1,739, 输出 b2-*.csv 至 mappings/generated/, 可重生成; 产物: b2-jar-to-03-map/b2-jar-cover/b2-gaps/b2-03-reverse/b2-extra)
 │   │   ├── comment_audit.py ← [v19.133f98] 注释覆盖率审计 (总行/注释行/注释率 + 类头/类声明前/方法/字段注释率 → build/comment-audit.csv, 可重生成)
 │   │   ├── runtime_evidence.py ← 运行时日志证据提取 (v19.90)

@@ -1,6 +1,6 @@
 # 11-platform — 平台层 (文档待建)
 
-> 版本: v19.133f98 | 日期: 2026-09-04 | 占位目录: 按键/输入/Steam/LibRocket 平台层文档待建
+> 版本: v19.133f98 | 日期: 2026-08-31 | 占位目录: 按键/输入/Steam/LibRocket 平台层文档待建
 > ⚠️ 证据时点 v19.133f98 — 本目录为 12 域归档补位, 暂无文档; 域边界见 [ORGANIZATION.md §2](../ORGANIZATION.md)
 
 ## 域边界 (ORGANIZATION.md §2)
@@ -19,5 +19,5 @@
 ## 相关映射与资料
 
 - 相关源码: `03-deobfuscated/java/` + `03-deobfuscated/librocket/`
-- 相关战役: sessions/PHASE-A-v19.133f14-ModsUI与filesystem域清零战役.md / v19.133f15-测试族与SteamWorkshop清零战役.md / v19.133f36-KeyBinding家族清零战役.md
+- 相关战役: v19.133f14 ModsUI/filesystem 域清零 / v19.133f15 测试族+SteamWorkshop 清零 / v19.133f36 KeyBinding 家族清零 (轨迹见 PLAN.md 会话行)
 - 待定信息: [PENDING.md](../PENDING.md)

@@ -153,7 +153,7 @@
 
 ## v19.100-v19.102 辐射批次
 
-详见 [../_archive/RADIATION-BATCHES.md](../_archive/RADIATION-BATCHES.md) (五大基础辐射批次方法论 + 4 批落库)
+五大基础辐射批次方法论已沉淀于 [../deobfuscation/METHODOLOGY.md](../deobfuscation/METHODOLOGY.md) (F1-F27), 批次记录已随编译清零删除。
 
 ## v19.108 批量脚本化会话 (21,854 → 19,337, -2,517)
 

@@ -5,7 +5,7 @@
 > **公开仓库**: https://github.com/skywater275/rw_analysis (master 分支为干净历史快照, 研究用途声明见 [LICENSE](LICENSE))
 
 > **当前进度**: 编译错误 **0** / 41,402 (-100.0%, B1 全量 javac_gate PASSED) + **B2 反向映射核对 0 缺口** + **B3 反向构建 0 错误** (game-lib-reverse.jar) + **B4 运行验证通过** (反向 jar 替换 game-lib.jar headless 启动 0 异常)
-> 口径唯一来源: [docs/STATUS.md](docs/STATUS.md) | 战役历史: 会话总览 | 规则: [CLAUDE.md](CLAUDE.md) | v19.133f98 (2026-09-04) 四 README 合并归一
+> 口径唯一来源: [docs/STATUS.md](docs/STATUS.md) | 战役轨迹: [PLAN.md](docs/deobfuscation/PLAN.md) 会话行 | 规则: [CLAUDE.md](CLAUDE.md) | v19.133f98 (2026-08-31)
 
 ---
 
@@ -18,10 +18,10 @@
 | **B4 运行验证** | **通过** (headless 启动 0 异常 / ping→pong / 回放加载成功 / AI 正常) |
 | 总映射数 (supplement.csv) | **10,395** (字段 6,072 + 方法 4,323) |
 | 类映射 (class-discoveries) | **1,294** (B5: 删 Main/g 错误映射 6 行 + 补 GlobalStateFactory) |
-| 官方语义名 (05-gamelib) | **482** (0 缺口) |
+| 官方语义名 (game-lib.jar 审计) | **482** (0 缺口) |
 | 损伤家族已修复 | **40+** (清单见 docs/deobfuscation/PLAN.md) |
 | 真实未解析 | **162** (mappings/generated/unresolved.txt) |
-| 下一阶段 | **B5 行为一致性收敛** (运行时反馈驱动补映射, 待确认) |
+| 下一阶段 | **GUI/回放深度验证** + 撞车剔除残余验证 (PENDING §5) |
 
 ## 二、核心类速查
 
@@ -75,14 +75,12 @@
 
 | 文件 | 内容 |
 |------|------|
-| [PLAN.md](docs/deobfuscation/PLAN.md) | 工程路线图 v3.23 (B1-B4 达成, B5 待确认) |
-| 会话总览 | 战役导航/方法论/损伤家族修复史 |
+| [PLAN.md](docs/deobfuscation/PLAN.md) | 工程路线图 v3.23 (B1-B5 达成 + 逆1-逆5 映射库收尾) |
 | [PHASE-A-早期战役史.md](docs/_archive/PHASE-A-早期战役史.md) | 早期战役 (v19.0-v19.102) |
 | [PHASE-B-高效方法.md](docs/_archive/PHASE-B-高效方法.md) | Phase B 高效方法 (v19.111 五路流水线) |
 | [TOOLS-TREE.md](docs/deobfuscation/TOOLS-TREE.md) | 工具链完整结构树 (含每个修复器条目) |
 | [METHODOLOGY.md](docs/deobfuscation/METHODOLOGY.md) | 修复脚本工作规范 F1-F27 + 管线链原则 |
 | RUNTIME-PATCH-PIPELINE / PIPELINES-VERIFIED / DYNAMIC-TESTING | 运行时管线/验证/动态测试记录 |
-| [sessions/](docs/_archive/sessions/) | 战役详细记录 **86 篇** (v19.107 → v19.133f98-B4) |
 
 ### 归档与生成
 
@@ -197,7 +195,6 @@ b2_reverse_map_check.py      # 反向映射核对 (0 缺口)
 游戏 headless 启动验证        # 反向 jar 替换 game-lib.jar (B4 流程, 见会话记录)
 ```
 
-> 下一步 B5: 行为一致性收敛 (运行时 NoSuchMethodError/NoSuchFieldError 反馈驱动补映射, 待确认)。
 
 ## 九、法律与用途声明
 

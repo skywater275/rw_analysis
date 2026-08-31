@@ -3,7 +3,7 @@
 > v19.84 | 2026-08-16 | 来源类: `com.corrodinggames.rts.java.Main` (桌面版游戏启动器)
 
 
-> ⚠️ **已归档** (Main.class→GameLauncher 反混淆 (java.* 平台后端), 2026-09-04 由 deobfuscation/ 移入 11-platform 域)
+> ⚠️ **已归档** (Main.class→GameLauncher 反混淆 (java.* 平台后端), 2026-08-31 由 deobfuscation/ 移入 11-platform 域)
 
 
 ## 概览

@@ -1,6 +1,6 @@
 # 05-gamelib 资源盘点与语义名审计
 
-> v19.133f98 | 2026-09-04 整理 | 审计脚本: tools/utils/gamelib_audit.py
+> v19.133f98 | 2026-08-31 整理 | 审计脚本: tools/utils/gamelib_audit.py
 > 持久知识版 (行动项过程记录已清理, 未解析清单以 unresolved.txt 重生成值为准)
 
 ## 1. 定位

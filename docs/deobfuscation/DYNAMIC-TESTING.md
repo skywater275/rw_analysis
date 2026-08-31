@@ -185,7 +185,7 @@ cd rw源码逆向/RustedWarfare
 
 ## 12. v19.98 主链路验证 + 解混淆落库
 
-- **game.i 身份仲裁完成**: GameInputHandler/GameScreen/屏幕状态机 全部候选撤销 — T0 常量池 "GameEngine:init()" + 16 引擎字段 + JFR 热路径 → **game.i = GameEngine** (详见 docs/deobfuscation/GAME-MAIN-LOOP.md)
+- **game.i 身份仲裁完成**: GameInputHandler/GameScreen/屏幕状态机 全部候选撤销 — T0 常量池 "GameEngine:init()" + 16 引擎字段 + JFR 热路径 → **game.i = GameEngine** (主循环细节见 07-engine/GAMELOOP.md)
 - 主链路: java.b.gameLoop → updateAndRender → GameEngine.update(float) (每帧: NetworkEngine步进→CommandController→ReplayEngine→帧号→Team→地图→单位)
 - 16 引擎字段落库 (supplement verified) + am: GameRenderer→**MusicController** (T0 音乐字符串) + gameFramework.d→**CommandPathPart** + a()→isBusy + 悬空 c→onScreenRender 删除
 - 03 侧统一改名 GameScreen/GameInputHandler→GameEngine (12 文件, 编译 24,965→**24,961**)

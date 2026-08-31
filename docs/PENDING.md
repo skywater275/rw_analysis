@@ -1,6 +1,6 @@
 # 待定信息 — 未确认项集中存放
 
-> v19.133f98 | 2026-09-04 | 所有不确定/待验证/待裁决信息集中于此, 禁止散落在域文档
+> v19.133f98 | 2026-08-31 | 所有不确定/待验证/待裁决信息集中于此, 禁止散落在域文档
 > 流转规则: 入 = 会话中立即登记; 出 = 裁决后结论写入域文档 + 映射 notes, 本条删除
 > 历史已决战役记录已清理 (结论沉淀于域文档「战役裁决与发现附录」+ mappings/ notes)
 
@@ -33,22 +33,18 @@
 - 详见 mappings/generated/arbitration-candidates.csv
 - supplement.csv 幻觉名条目 (待废弃): j/ad.h(String)→showError (与字节码 iconst_1 矛盾, v19.108 发现)
 
-## §5 当前残余 (B5/B5.6 阶段)
+## §5 当前残余 (逆5 后)
 
 | # | 项 | 状态 |
 |---|----|------|
 | 1 | **GUI/回放深度验证** | headless 已通 (启动/开局/建单位/存档/AI); GUI 渲染/音频线程与回放同步性 (ChecksumCalculator) 未深测 — 待确认 |
 | 2 | **撞车剔除 500 项残余验证** | skip_global 宿主优先已修; 其余撞车剔除成员运行时风险待逐个验证 |
-| 3 | ~~映射验证战役 (B5.6): 726 可疑映射~~ | ✅ 逆1-逆4d 已闭环 (2026-08-31): 726 → 复核恢复 304+32 → **390 真可疑 → 334 死映射删除 + 7 构造器恢复 + 15 宿主迁移 + 19 保持注记**; **suspicious 现存 19 条** (均带逆4d 分析注记, 见下) |
-| 4 | ~~unverified 49.3%~~ | ✅ 逆1/逆2 已处理 (2026-09-04): 726 复核 304 恢复+32 重分类; 空 verified 387 全清零 (列错位根因) |
-| 5 | 幻觉命名独立战役 | 编译自洽但语义待还原 (B5 收敛后长尾) |
-| 6 | NetEngine.t 字段 (UDP 广播端口) | javap 存在但 02b 无赋值点 — 默认 0, 语义待验证 |
-| 7 | EffectConfig 引用核对 | 03 全树 EffectConfig 引用 vs 02 双类归属 (OutputNetStream 周边/hud 链) |
-| 8 | ~~verified 列垃圾值 528 条~~ | ✅ 逆5a 已清零 (2026-08-31): 字符扫描重建 510 (ini 恢复 211 + exists 258 + suspicious 38) + 18 截断行删除留档; **垃圾 verified 现存 0** |
-| 9 | ~~19 条保持 suspicious~~ | ✅ 逆5b 已处理 (2026-08-31): 7 修复 (gScore→AStarNode / ResourceRate 家族 / 寻路网格) + 4 删除 + 15 保持注记 (4 条 MapLayerRenderer 纹理同名族 + SteamAPI 异域等, 语义宿主 03 无声明) |
-| 10 | **15 条保持 suspicious** (逆5b 终态) | 均带逆5b 注记: 4 条 MapLayerRenderer 纹理同名族 (startTileX/Y/endTileX/Y — A* 语义宿主 03 无此名, 疑 AStarSearch 字段异名) + resourceTypeRef×2/priorityLevel/backgroundColor 等异域或多候选 — 需 02b 语义深挖 (收益低, 可长期挂起) |
+| 3 | 幻觉命名独立战役 | 编译自洽但语义待还原 (B5 收敛后长尾) |
+| 4 | NetEngine.t 字段 (UDP 广播端口) | javap 存在但 02b 无赋值点 — 默认 0, 语义待验证 |
+| 5 | EffectConfig 引用核对 | 03 全树 EffectConfig 引用 vs 02 双类归属 (OutputNetStream 周边/hud 链) |
+| 6 | **15 条保持 suspicious** (逆5b 终态) | 均带逆5b 注记: 4 条 MapLayerRenderer 纹理同名族 (startTileX/Y/endTileX/Y — A* 语义宿主 03 无此名, 疑 AStarSearch 字段异名) + resourceTypeRef×2/priorityLevel/backgroundColor 等异域或多候选 — 需 02b 语义深挖 (收益低, 可长期挂起) |
 
-## §6 未解析混淆类 (2026-09-04 刷新)
+## §6 未解析混淆类 (2026-08-31 刷新)
 
 - unresolved.txt 重生成: 124 未映射 + 65 缺失 = 189 (gamelib_audit jar 遍历修复后)
 - 其中 obfuscated-name ~118 个: 大部分为**有意保留** (v19.115-129 战役家族清零后的

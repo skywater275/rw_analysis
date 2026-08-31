@@ -46,7 +46,7 @@
 
 包含 GameAction(s) 基类及所有子类：Attack(d)、Build(g)、Guard、Patrol、Stop、Sell、Repair、Reclaim、Ping、MapPing、TeamChat、RallyPoint 等。Command(e) 二进制序列化和 CommandController(c)。
 
-参见: `docs/03-actions/UNIT-ACTIONS.md`, `GAME-ACTION-METHODS.md`
+参见: `docs/03-actions/UNIT-ACTIONS.md`
 
 ### 4. AI系统 (`04-ai.csv`)
 

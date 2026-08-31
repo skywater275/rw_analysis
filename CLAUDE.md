@@ -1,8 +1,8 @@
 # CLAUDE.md — Rusted Warfare 解混淆项目
 
-> **最新**: v19.133f98 (B1-B5.5) | 2026-08-30 | **B5 行为一致性收敛完成** (运行时反馈 10 项修复, 启动 0 崩溃 + 功能全通); **B5.5 覆盖率探究**: JDK17 双 jar 方案证伪 (类包同名深包=javac 绝对硬限制), 核验覆盖 251/1,698=14.8% (天花板), 运行时反向类 14.4%, 映射 unverified 49.3%; 目标口径修订为“行为一致可运行的混合形态”; 详见 sessions/PHASE-A-v19.133f98-B5.5.md
+> **最新**: v19.133f98 (B1-B5.5) | 2026-08-30 | **B5 行为一致性收敛完成** (运行时反馈 10 项修复, 启动 0 崩溃 + 功能全通); **B5.5 覆盖率探究**: JDK17 双 jar 方案证伪 (类包同名深包=javac 绝对硬限制), 核验覆盖 251/1,698=14.8% (天花板), 运行时反向类 14.4%, 映射 unverified 49.3%; 目标口径修订为“行为一致可运行的混合形态”; 会话详细记录已按要求删除, 结论沉淀于域文档与 PLAN.md 会话行
 > **Phase B 状态**: B1 编译清零 (41,402→0) → B2 反向映射核对 (0 缺口) → B3 全量构建 (0 错误) → B4 运行验证 (可启动) → **B5 行为一致性收敛完成** (运行时反馈驱动 10 项修复, 启动 0 崩溃 + 功能全通)。残余: GUI/回放深度验证 (待确认)。
-> **过往战役** (v19.107 → v19.133f98-B4 共 86 篇): 见 会话总览 与 [sessions/](docs/_archive/sessions/)
+> **过往战役轨迹**: 见 [docs/deobfuscation/PLAN.md](docs/deobfuscation/PLAN.md) 会话行 (会话详细记录已删除, 结论沉淀于域文档)
 
 ## 语言规范
 
@@ -23,7 +23,7 @@ rw源码逆向/
 │                       game-lib.jar 直接作字节码源 (gamelib_audit 改 zipfile 遍历)
 ├── mappings/          — supplement.csv (10,395) + class-discoveries.csv (1,294) + domains/ (12域) + generated/
 ├── docs/              — STATUS (口径) + ORGANIZATION (12域规范) + PENDING (待定) + 01-units/..12-utility/ (31篇)
-│                       + deobfuscation/ (分析 9 篇 + sessions 86 篇 + PLAN.md v3.23 + TOOLS-TREE.md + METHODOLOGY.md)
+│                       + deobfuscation/ (分析 + PLAN.md v3.23 + TOOLS-TREE.md + METHODOLOGY.md)
 │                       + generated/ + _archive/; 导航索引在根 README.md 第三节 (v19.133f98 四 README 合并归一)
 ├── mcp/               — 游戏 MCP 独立目录 (v19.133f98: 完全自包含, 与项目隔离; mcp_game_server.py 293 工具 + script_api.json 副本 + unit_type_names.json 52 内置枚举名 + unit_names.json 125 ini 注册名 + README; 不依赖项目文件; RW_GAME_ROOT 可覆盖游戏根; .mcp.json 注册)
 ├── tools/             — manager.py (616 注册, v19.133f98 全量自动注册) + core/ + gates/ + fixers/ + utils/ + capture/
@@ -89,7 +89,7 @@ import csv; csv.field_size_limit(10 * 1024 * 1024)  # 如读 supplement
 ## 任务收尾更新清单 (每次任务必做)
 
 1. **D1 口径实测同步**: javac_gate 错误数 / supplement / class-discoveries 实测 → CLAUDE.md + README.md (根, 四合一) + docs/STATUS.md 全库同步; supplement 变化后重跑 `python tools/utils/split_mappings.py`
-2. **D2 会话记录**: 每个会话新开 sessions/PHASE-A-vNNN-*.md (四要素: 批次轨迹表/方法论沉淀/新工具清单/残余清单), 旧记录头加"已被 vNNN 超越"标注
+2. **D2 会话记录**: 每次任务在 docs/deobfuscation/PLAN.md 追加会话行 (四要素: 批次轨迹表/方法论沉淀/新工具清单/残余清单)
 3. **D3 映射库同步**: 根 README.md 映射章节三源行数表同步 + mappings/generated/ 新文件入分类索引
 4. **D4 类名改动同步**: grep 全 docs/ 旧类名引用并同步
 5. **D5 归档与索引**: 被取代文档/工具 git mv 入 _archive/; 根 README.md 索引补新删旧; docs/deobfuscation/PLAN.md 追加会话行; 新文档符合 ORGANIZATION.md 规范; PENDING.md 立即登记/裁决后移出
@@ -104,8 +104,8 @@ import csv; csv.field_size_limit(10 * 1024 * 1024)  # 如读 supplement
 
 使 **RustedWarfare/** 以未混淆的源码状态运行
 
-> 当前进度: 映射数据库 10,395 条, 工具链 85+ 脚本, 编译 41,402 → 0 (B1), 反向构建 0 错误 (B3), 运行验证通过 (B4), 行为一致性收敛完成 (B5)
-> 下一步: GUI/回放深度验证 + 撞车剔除残余验证 (待确认)
+> 当前进度: 映射数据库 10,395 条全列规范 (逆1-逆5 收尾), 编译 41,402 → 0 (B1), 反向构建 0 错误 (B3), 运行验证通过 (B4), 行为一致性收敛完成 (B5)
+> 下一步: GUI/回放深度验证 + 撞车剔除残余验证 (PENDING §5)
 
 ## 常用命令
 

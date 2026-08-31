@@ -1,7 +1,7 @@
 # PLAN.md — Rusted Warfare v1.15 源码逆向工程路线图
 
-> v3.23 | 2026-09-04 | **Phase B B4 运行验证完成** — 反向 jar (game-lib-reverse.jar) 替换 game-lib.jar 后游戏 headless 启动 0 异常, 调试服务器 ping→pong, 回放加载成功, AI 活动正常 (运行时修复 15 轮); 里程碑链: B1 编译清零 (41,402→0) → B2 反向映射核对 (0 缺口) → B3 全量构建 (0 错误) → B4 可运行; **B5 行为一致性收敛完成** (运行时反馈驱动 10 项修复, 启动 0 崩溃 + 功能全通); **B5.5 覆盖率探究: JDK17 双 jar 方案证伪** (类包同名深包=javac 绝对硬限制, 覆盖天花板 ~15%);
-> 战役历史详见 PHASE-A-会话历史总览.md 与 sessions/ 各战役记录
+> v3.23 | 2026-08-31 | **Phase B B4 运行验证完成** — 反向 jar (game-lib-reverse.jar) 替换 game-lib.jar 后游戏 headless 启动 0 异常, 调试服务器 ping→pong, 回放加载成功, AI 活动正常 (运行时修复 15 轮); 里程碑链: B1 编译清零 (41,402→0) → B2 反向映射核对 (0 缺口) → B3 全量构建 (0 错误) → B4 可运行; **B5 行为一致性收敛完成** (运行时反馈驱动 10 项修复, 启动 0 崩溃 + 功能全通); **B5.5 覆盖率探究: JDK17 双 jar 方案证伪** (类包同名深包=javac 绝对硬限制, 覆盖天花板 ~15%);
+> 战役历史: 本文件会话行 (详细会话记录已删除)
 
 ---
 ## 目标
@@ -50,12 +50,12 @@
 ### 三层真相源
 
 ```
-T0 字节码真相   game-lib.jar (1,698 class 全量) + 05-gamelib 解包 (同内容, 直接 javap 源) + 01-classes (388) + libs/*.jar (24)
+T0 字节码真相   game-lib.jar (1,698 class 全量, 直接 javap 源) + 01-classes (388) + libs/*.jar (24)
 T1 命名映射     fwd 前向表 (混淆FQN → 意义FQN, 1,063条): class-discoveries.csv (含real_pkg:注释)
                 + mappings.csv (class行) + mappings.json['classes'] 三源合并, 以 jar 文件存在性校验
                 + PKG_MAP (43包) + 补录映射 (gameFramework.l→core 等)
 T2 源码锚点     02-decompiled (混淆名原稿, 1,698个.java 与 jar 一一对应, 完整性已由 05-gamelib 比对验证)
-                为"未损坏的原稿"; 03-deobfuscated 为"待修复的当前态"
+                为"未损坏的原稿"; 03-deobfuscated 为"待修复的当前态" (05-gamelib/06-lib 解包目录已删, jar 直接作源)
 ```
 
 ### 铁律
@@ -144,10 +144,9 @@ T2 源码锚点     02-decompiled (混淆名原稿, 1,698个.java 与 jar 一一
 3. **修复器必须幂等且可重放**: 三度回退重放 (git checkout + 管线) 证明确定性管线的价值
 
 
-### 剩余计划 (v19.124-动画家族 起 — 当前残余, 5,987, 已突破 6,000)
+### 剩余计划 (v19.124-动画家族 起 — 历史残余, 已全部清零)
 
-> **剩余错误唯一聚合入口**: [../_archive/剩余错误总清单-5283.md](../_archive/剩余错误总清单-5283.md)
-> (678 文件全分组, 类型/符号归类; 生成器 cache/gen_error_list.py, 每次 javac_gate 后可重生成覆盖)
+> 编译错误已于 v19.133f97 全部清零 (41,402 → 0), 历史错误清单 (5283) 已删除。
 
 | 优先级 | 目标 | 错误数 (当前) | 说明 |
 |--------|------|------|------|
@@ -374,13 +373,15 @@ T2 源码锚点     02-decompiled (混淆名原稿, 1,698个.java 与 jar 一一
 - v19.133f11 (2026-08-27): SendWorker+NodeQueue 清零 | 1,943 → 1,892 (-95.43%)
 - v19.133f11.1 (2026-08-27): FireDecoration 清零 (02b units/ai 全文对照) | 1,892 → 1,866 (-95.49%)
 - v19.133f11.2 (2026-08-27): filesystem 家族清零 (DualStorage+StorageBackend, 02b e/c) | 1,866 → 1,820 (-95.61%)
-- **v19.133f96 (2026-09-04, Phase A 收尾)**: 清零战役巨型批次 | 486 → **12** (-99.97%): OutputNetStream 写侧 throws 恢复链 (a(String,boolean)/e(String) throws → 覆写 60+ 文件连锁)/synthetic final 去 final×5 (GLTextureRegion/UDPBroadcastListener/DialogHelper/p/ScreenshotSaver)/catch 类型还原×10 (NetEngine 3+ReplayWriter/BackgroundWriter/MusicPlayer/StorageBackend, 02b 铁证)/checked 异常 throws 补链 (bo/MapException/IOException) ×40+ 文件/过度 throws 撤销×4 (MapEngine.a(String,boolean)/Command.f()/ReplayEngine.a(Command,int)/CommandController)/unreachable 删除/变量未初始化两步还原×3 (VariableScope$VariableData*Array)/UnitReference relation() 还原; 新修复器 8 个 (fix_outputnetstream_override_throws_batch 等); 剩余 12 条全部集中于 WebAPIClient.java (11 throws + 1 var13_18 未初始化, 02b j/n.java 已定位), 留待 Phase B
-- **v19.133f97 (2026-09-04, Phase B B1 编译清零)**: **41,402 → 0 (-100.0%, 全量 javac_gate PASSED)** 编译零错误里程碑: WebAPIClient 12 条清零 (幻觉 reset2 删除 + 4 方法补 throws + var13_18 两步还原, 02b j/n 铁证) + javac 抑制解除 (F86) 暴露隐藏错误全灭 — synthetic final 去 final×13 (opengl aa/DrawBatch/DrawCallBuffer/GLRenderer×6/BlurEffect, javap 无构造器赋值铁证)/throws 补链连锁 (utility ah+l+filesystem b+c/GameWindow/DesktopGameContainer/Slick2DRenderer/audio backend e+o+s/ThreadedWrapping/Wav/java input k+l+m/PacketDecoder+NetEngine catch 还原/TestLogicBoolean writeToUnit 链 throws bo/platform.a 不可达 return)/reliableudp 家族 51 条 (ReliableSocket 39+ReliableServerSocket 12+ReliableProfile+InputStream+OutputStream+core.Packet 族, Socket/ServerSocket 标准签名); 新修复器 5 个 (fix_webapiclient_b1_batch/fix_opengl_aa_final_batch/fix_reliablesocket_throws_batch/fix_reliableserversocket_throws_batch/fix_reliableprofile_throws_batch)
-- **v19.133f98 (2026-09-04, Phase B B2 反向映射核对)**: jar 1,698 类 ↔ 03 1,739 文件全量核对 (新工具 tools/utils/b2_reverse_map_check.py): 游戏类 1,483 **100% 覆盖 0 缺口** (922 语义命中 + 561 混淆直配; 内部类经外层 javac 生成); 第三方 215 (android/librocket/codedisaster) 无需 03; 03 侧 63 no-map 全为映射表/脚本匹配问题非文件缺失; 映射表勘误 2 条 (02b 方法体 1:1 铁证: gameFramework/v ZipReader→GameEngineFactory, java/v DesktopInputProvider→ModDownloader); identity-index.json 重建 (fwd 1,087→1,125, v19.125+ 改名后过期); 产物 b2-jar-to-03-map/b2-gaps/b2-extra/b2-03-reverse/b2-jar-cover.csv (mappings/generated, 可重生成); **B3 构建结论: 全量反向可行无 jar 缺口**- **v19.133f98-B3 (2026-09-04, Phase B B3 全量构建)**: 反向→javac→打包 game-lib-reverse.jar 达成 (0 错误, 362 class, 1,834 类 = 原 1,698 + 新增 136): 攻克 JLS 类包同名硬限制 (40 冲突类+引用方跳过, build-skip.txt 从原 jar 合并)/正则灾难性回溯 3 连/反向盲区 6 连 (fq 全限定/斜杠脏数据/注释类名/\ 完整名/import 误删/keep_cls 重建类); 新工具 tools/fixers/build_reverse_jar.py; class-discoveries 补录 32 删 1 (B2 核对缺口+rule-e 错配)
-- **v19.133f98-B4 (2026-09-04, Phase B B4 运行验证)**: **反向 jar 可构建可运行** — game-lib-reverse.jar 替换 game-lib.jar 后 headless 启动 0 异常 (游戏自带 OpenJDK 13, -source/-target 13), 调试服务器 ping→pong, 回放加载成功, AI 活动正常; 运行时修复 15 轮 (宿主感知 per-class 成员映射/方法字段命名空间隔离/枚举字符串恢复 877 常量/原生绑定方法豁免/strip_unused_imports 前置/局部撞车检测/数据勘误 aq→MusicPlayerBase+q 双类+bo/ap 字段); build-skip.txt 136 文件 (jar 原样合并); 残余: B5 行为一致性收敛 (运行时反馈驱动补映射, 待确认)
+- **v19.133f96 (2026-08-31, Phase A 收尾)**: 清零战役巨型批次 | 486 → **12** (-99.97%): OutputNetStream 写侧 throws 恢复链 (a(String,boolean)/e(String) throws → 覆写 60+ 文件连锁)/synthetic final 去 final×5 (GLTextureRegion/UDPBroadcastListener/DialogHelper/p/ScreenshotSaver)/catch 类型还原×10 (NetEngine 3+ReplayWriter/BackgroundWriter/MusicPlayer/StorageBackend, 02b 铁证)/checked 异常 throws 补链 (bo/MapException/IOException) ×40+ 文件/过度 throws 撤销×4 (MapEngine.a(String,boolean)/Command.f()/ReplayEngine.a(Command,int)/CommandController)/unreachable 删除/变量未初始化两步还原×3 (VariableScope$VariableData*Array)/UnitReference relation() 还原; 新修复器 8 个 (fix_outputnetstream_override_throws_batch 等); 剩余 12 条全部集中于 WebAPIClient.java (11 throws + 1 var13_18 未初始化, 02b j/n.java 已定位), 留待 Phase B
+- **v19.133f97 (2026-08-31, Phase B B1 编译清零)**: **41,402 → 0 (-100.0%, 全量 javac_gate PASSED)** 编译零错误里程碑: WebAPIClient 12 条清零 (幻觉 reset2 删除 + 4 方法补 throws + var13_18 两步还原, 02b j/n 铁证) + javac 抑制解除 (F86) 暴露隐藏错误全灭 — synthetic final 去 final×13 (opengl aa/DrawBatch/DrawCallBuffer/GLRenderer×6/BlurEffect, javap 无构造器赋值铁证)/throws 补链连锁 (utility ah+l+filesystem b+c/GameWindow/DesktopGameContainer/Slick2DRenderer/audio backend e+o+s/ThreadedWrapping/Wav/java input k+l+m/PacketDecoder+NetEngine catch 还原/TestLogicBoolean writeToUnit 链 throws bo/platform.a 不可达 return)/reliableudp 家族 51 条 (ReliableSocket 39+ReliableServerSocket 12+ReliableProfile+InputStream+OutputStream+core.Packet 族, Socket/ServerSocket 标准签名); 新修复器 5 个 (fix_webapiclient_b1_batch/fix_opengl_aa_final_batch/fix_reliablesocket_throws_batch/fix_reliableserversocket_throws_batch/fix_reliableprofile_throws_batch)
+- **v19.133f98 (2026-08-31, Phase B B2 反向映射核对)**: jar 1,698 类 ↔ 03 1,739 文件全量核对 (新工具 tools/utils/b2_reverse_map_check.py): 游戏类 1,483 **100% 覆盖 0 缺口** (922 语义命中 + 561 混淆直配; 内部类经外层 javac 生成); 第三方 215 (android/librocket/codedisaster) 无需 03; 03 侧 63 no-map 全为映射表/脚本匹配问题非文件缺失; 映射表勘误 2 条 (02b 方法体 1:1 铁证: gameFramework/v ZipReader→GameEngineFactory, java/v DesktopInputProvider→ModDownloader); identity-index.json 重建 (fwd 1,087→1,125, v19.125+ 改名后过期); 产物 b2-jar-to-03-map/b2-gaps/b2-extra/b2-03-reverse/b2-jar-cover.csv (mappings/generated, 可重生成); **B3 构建结论: 全量反向可行无 jar 缺口**- **v19.133f98-B3 (2026-08-31, Phase B B3 全量构建)**: 反向→javac→打包 game-lib-reverse.jar 达成 (0 错误, 362 class, 1,834 类 = 原 1,698 + 新增 136): 攻克 JLS 类包同名硬限制 (40 冲突类+引用方跳过, build-skip.txt 从原 jar 合并)/正则灾难性回溯 3 连/反向盲区 6 连 (fq 全限定/斜杠脏数据/注释类名/\ 完整名/import 误删/keep_cls 重建类); 新工具 tools/fixers/build_reverse_jar.py; class-discoveries 补录 32 删 1 (B2 核对缺口+rule-e 错配)
+- **v19.133f98-B4 (2026-08-31, Phase B B4 运行验证)**: **反向 jar 可构建可运行** — game-lib-reverse.jar 替换 game-lib.jar 后 headless 启动 0 异常 (游戏自带 OpenJDK 13, -source/-target 13), 调试服务器 ping→pong, 回放加载成功, AI 活动正常; 运行时修复 15 轮 (宿主感知 per-class 成员映射/方法字段命名空间隔离/枚举字符串恢复 877 常量/原生绑定方法豁免/strip_unused_imports 前置/局部撞车检测/数据勘误 aq→MusicPlayerBase+q 双类+bo/ap 字段); build-skip.txt 136 文件 (jar 原样合并); 残余: B5 行为一致性收敛 (运行时反馈驱动补映射, 待确认)
 | v19.133f98-B5 | 2026-08-30 | B5 行为一致性收敛 (运行时反馈 10 项: conf 正则精确化/构造器 \/枚举常量区+显式 super/撞名全限定/声明行跳过/宿主映射优先/类映射勘误 Main-g-GlobalStateFactory/枚举字段补录 q-m; build-skip 136→400 硬限制闭包; 反向 jar 启动 0 崩溃 + 开局/建单位/存档/AI 全通) | 0 |
 | v19.133f98-B5.5 | 2026-08-30 | 覆盖率天花板探究 (JDK17 双 jar 方案证伪: 类包同名深包 javac 17/21 均报冲突; 核验: 覆盖 251/1698=14.8%, 运行时反向类 14.4%, 映射 unverified 49.3%; fq 回退匹配尝试 102 类移出 skip 但覆盖净负已回退; 目标修订为行为一致混合运行) | 0 |
 - **v19.133f98-逆4 (2026-08-31, 映射库清理战役)**: 390 可疑映射分类闭环 — **334 死映射删除 + 7 构造器恢复 + 15 宿主迁移 + 19 保持注记** (10,797 → 10,448 条): 根因三族 (Phase3 占位名 148 条 do_*/get_+字母/类型+数字 / 语义名从未落地 03 的死映射 186 条 / 列错位残留 1 条 ActionWrapper 加引号修复); 新工具 2 个 (reclassify_dead_mappings.py 三分类清理器 / relocate_members.py 归属迁移器: 03 声明提取×B2类映射×javap类型兼容×顺序zip×域一致性); 键盘家族 aj(抽象空类)→ac(KeyBindings) 宿主+成员双修正 (cameraUpKey=ac.n 等 15 条); 域一致性启发式拦下同名不同义 (TMXMapLoader.String backgroundColor/MapLayerRenderer 纹理 startTileX); 新发现 **528 条 verified 列垃圾值 (292 种, HEAD 确认历史遗留)** 登记 PENDING §5-8 (逆5 候选); 19 条保持 suspicious 均带逆4d 分析注记 (8 多候选 + 11 异域同名, gScore→AStarNode 等高置信跨域候选待家族级迁移)
 | v19.133f98-逆4 | 2026-08-31 | 映射库清理战役 (390 可疑 → 334 删+7 构造器+15 迁移+19 注记; 528 垃圾 verified 新发现; 新工具 reclassify_dead_mappings + relocate_members) | 0 |
 - **v19.133f98-逆5 (2026-08-31, 映射库质量收尾)**: **528 垃圾 verified 全清零 + 42 陈旧名清除 + 7 高价值迁移** (10,448 → 10,395 条): ① 逆5a 列漂移修复器 (fix_verified_column.py: 原始行字符扫描+括号深度追踪重建成员签名/name/notes; javap 参数级验证含 B2 可读参数名翻译 — supplement 'Texture'↔javap 'e' 兼容; 处置: ini 恢复 211 + exists 258 + 18 截断行删除留档) ② 逆5b 归属迁移器 v2 (type_compat 修饰符 bug 修复 — 'public int' 取末词; k.h↔pathfinding/h 宿主身份覆盖 (构造器+方法序同一性铁证) → gScore→AStarNode.c; 家族跨域放行白名单制 → productionRate/consumptionRate→ResourceRate; 同域 zip: damageMultiplier/displayColor/blockedWaterGrid×2; EffectEngine d.c 28 条陈旧名删除; MapLayerRenderer 纹理同名族三次拦截) ③ 终态: **垃圾 verified 0 / 空 verified 0 / suspicious 15 (带注记) / 7列完好**
 | v19.133f98-逆5 | 2026-08-31 | 映射库质量收尾 (528 垃圾 verified 清零 + 7 迁移 + 42 删; 终态 10,395 条全列规范) | 0 |
+- **v19.133f98-发布收尾 (2026-08-31, 公开仓库 + 文档整理)**: ① 公开仓库发布: https://github.com/skywater275/rw_analysis (master = public 孤儿分支干净快照, 完整证据链 5,439 文件, LICENSE 研究声明中英双语, 远程旧内容整体替换; 本地完整历史保留) ② 文档检查清理: 删除 24 个已完成归档 (错误清单5283/交叉验证×3/进度/v8-v9记录/勘误等, git 历史可溯); 日期修正 2026-09-04→08-31 (11 文件, 前会话误写); PENDING §5 已完成行删除 (4 行 → 6 行现行); STATUS 过期段重写 (05/06-lib 行/旧验证率/3.4%替换量/历史导航); README/CLAUDE/PLAN/METHODOLOGY/TOOLS-TREE 陈旧 sessions/会话总览引用全清
+| v19.133f98-发布收尾 | 2026-08-31 | 公开仓库发布 (rw_analysis) + 文档整理 (24 归档删除 + 日期修正 + PENDING/STATUS 清理) | 0 |
