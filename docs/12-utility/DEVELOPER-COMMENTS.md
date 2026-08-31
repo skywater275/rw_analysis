@@ -219,7 +219,7 @@ com.corrodinggames.rts.game.b.b.a          ← MapEngine 方法
 FRAME_RATE = 60.0           ← 游戏帧率
 TICK_RATE = 30.0            ← 回放帧率
 ECONOMY_WINDOW = 40.0       ← 经济窗口
-DEFAULT_SPEED = 2.5         ← 默认游戏速度
+DEFAULT_SPEED = 2.5         ← 游戏倍率
 STARTING_CREDITS = 4000.0   ← 起始资金
 CC_INCOME_CY = 18.0         ← 指挥中心收入贡献
 BUILD_MAX_FACTORY = 280.0   ← 工厂最大建造时间
