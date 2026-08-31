@@ -2,6 +2,8 @@
 
 将混淆的 Rusted Warfare v1.15 反编译源码恢复为**可编译、可读、可运行**的未混淆状态。
 
+> **公开仓库**: https://github.com/skywater275/rw_analysis (master 分支为干净历史快照, 研究用途声明见 [LICENSE](LICENSE))
+
 > **当前进度**: 编译错误 **0** / 41,402 (-100.0%, B1 全量 javac_gate PASSED) + **B2 反向映射核对 0 缺口** + **B3 反向构建 0 错误** (game-lib-reverse.jar) + **B4 运行验证通过** (反向 jar 替换 game-lib.jar headless 启动 0 异常)
 > 口径唯一来源: [docs/STATUS.md](docs/STATUS.md) | 战役历史: 会话总览 | 规则: [CLAUDE.md](CLAUDE.md) | v19.133f98 (2026-09-04) 四 README 合并归一
 
