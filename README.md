@@ -39,7 +39,7 @@ python tools/fixers/build_reverse_jar.py --apply
 python tools/fixers/build_conflict_pass.py --world all --include-skip --apply
 ```
 
-## 三·五、工具链（★ 一个入口 ✓）
+## 四、工具链（★ 一个入口 ✓）
 
 ```bash
 python tools/cli.py doctor                    # 自检（路径/注册表/池/交付物 ✓）
@@ -51,17 +51,8 @@ python tools/cli.py panel                     # ★ 生成 HTML 参数面板
 ★ **路径非硬编码**（`rwlib/paths.py` 单一来源 ✓）· **参数自动规格化**（从 argparse 导出 ✓）·
 历史战役脚本（研究过程）仅存于内部工作副本，公开仓库只分发活工具链 ✓。
 
-## 四、关键铁律（★ 血泪总结，务必先读）
 
-1. **不要清 `build/reverse-classes/`** ✗ —— 它是**交付物唯一来源**；重建只覆盖约一半类。
-2. **任何改动都要过 V0–V8** ✓ —— 尤其 **V5 真窗口** 与 **V6 回放 0 分叉**：
-   结构性判据**挡不住**「结构合法但行为致命」的类。
-3. **实验必须报两个度量** ✓ —— 可用类数 **和** 编译错误行数；只看一个会被假象骗。
-4. **先探针后全量** ✓ —— 单文件秒级探针（`importlib` 调 `reverse_members`）能省掉十几分钟的 A/B。
-5. **PowerShell 内联 `python -c` 会被引号/`$` 吃掉** ✗ —— 一律写**脚本文件**或用 `edit` 工具。
-6. **落地纪律** ✓ —— 可用类 ≥ 基线 **且** 产出 ≥ 基线；否则**回退并记录**（负结果也要入档）。
-
-## 五、文档导航
+## 四、文档导航
 
 | 文档 | 内容 |
 |---|---|
@@ -72,7 +63,7 @@ python tools/cli.py panel                     # ★ 生成 HTML 参数面板
 | [docs/STRUCTURE.md](docs/STRUCTURE.md) | ★ **项目结构与清理规则**（权威） |
 | [docs/INDEX.md](docs/INDEX.md) | 全部文档索引 |
 
-## 六、目录结构
+## 五、目录结构
 
 ```
 rw-reverse/
@@ -85,5 +76,5 @@ rw-reverse/
 ├── docs/               文档（核心 7 篇 + 14 域）
 └── build/              暂存区（**未受版本管理**）· 池 + 交付物在此
 ```
-## 七、 作者留言
+## 六、 作者留言
 在这个项目中，我有使用ai，所以还是建议ai读项目，毕竟逆向的代码可读性都不太高，以及以现在的进度对游戏进行适当修改基本上没什么大问题，基于游戏进行相关的辅助功能的开发基本上也能做到。
