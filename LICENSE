@@ -1,0 +1,30 @@
+研究用途声明 / Research-Use Notice
+=====================================
+
+本仓库（rw_analysis）是对商业游戏 **Rusted Warfare**（作者 Corroding Games）
+反编译产物进行**逆向工程研究**的记录，目的是研究混淆还原、字节码等价与方法论。
+
+1. 权利归属
+   Rusted Warfare 及其全部游戏代码、资源、商标、名称，版权与一切权利归
+   **Corroding Games** 所有。本仓库**不主张**、也**不授予**对上述内容的任何权利。
+
+2. 用途限制
+   本仓库仅供**学习、研究与互操作性分析**之用。**不得**用于再分发游戏本体、
+   绕过授权/许可验证、或以任何形式将原游戏内容商业化。
+
+3. 本仓库自有内容
+   本仓库自有的工具脚本（`tools/`）、文档（`docs/`）与映射数据（`mappings/`）
+   按「原样」提供，供研究参考，**不附带任何明示或暗示的担保**。
+
+4. 免责
+   作者不对使用本仓库内容所导致的任何后果负责。使用者须自行确保其使用行为
+   符合所在地法律及原游戏许可条款。
+
+5. 若权利人对本仓库内容有异议
+   请通过仓库 issue 联系，我们将立即移除相关内容。
+
+---
+This repository is a **reverse-engineering study record** for the commercial game
+Rusted Warfare (by Corroding Games). All rights to the game and its assets remain
+with Corroding Games. Nothing here grants any license to them. Provided for study
+and interoperability analysis only, "as is", without warranty of any kind.

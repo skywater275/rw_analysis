@@ -1,0 +1,76 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,com.corrodinggames.librocket,a$2,a,syncLock,Phase3-inferred: new k(false) synchronization object (gameFramework.utility.k),verified-exists
+field,com.corrodinggames.librocket,a$2,b,scriptEngine,Phase3-inferred: captured ScriptEngine (librocket.scripts),verified-exists
+field,com.corrodinggames.librocket,a$2,c,joinQuestion,"Phase3-inferred: captured j.ae data (b=question msg,  e=title",verified-exists
+field,com.corrodinggames.librocket,a$2,d,outerContext,Phase3-inferred: synthetic outer ref to a (LibRocketContext),verified-exists
+method,com.corrodinggames.librocket,a$2,run,run,already meaningful (Runnable) - builds 'Password Required'/'Server Question' modal with Join/Close,verified-exists
+method,com.corrodinggames.librocket,c,a,isEnabled,real-class-inferred: com.corrodinggames.librocket.c,real-class-v1200
+field,com.corrodinggames.librocket,d,a,elementDocument,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,d,b,string1,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,d,c,string2,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,d,d,string3,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,d,e,object1,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,d,f,object2,real-class-inferred: com.corrodinggames.librocket.d,real-class-v1200
+field,com.corrodinggames.librocket,e,a,string,real-class-inferred: com.corrodinggames.librocket.e,real-class-v1200
+field,com.corrodinggames.librocket,e,b,runnable,real-class-inferred: com.corrodinggames.librocket.e,real-class-v1200
+field,com.corrodinggames.librocket.scripts,ScriptEngine,scriptEngine,instance,"v19.105: 静态单例 (createScriptEngine设置, getInstance返回)",verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,inDebugScript,inDebugScript,"v19.105: 静态标志, a$2.run() 设置 true/false 包裹 function 命令",verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,queuedScripts,queuedScripts,"v19.105: 待执行脚本队列 (synchronized add/remove, update逐帧消费)",verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,runningScripts,runningScripts,v19.105: 本帧运行中脚本 (update 中迭代后 clear),verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,globals,globals,v19.105: 全局变量表 (setGlobalVariable: root/mp/mods/debug 四上下文),verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,scriptError,scriptError,v19.105: 延迟异常 (throwDelayedException 首个错误保存),verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,root,rootContext,v19.105: Root 脚本上下文实例,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,b,libRocketBridge,v19.105: slickLibRocket (librocket b 桥接),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,isStrict(),isStrict,v19.105: return a.a.a() DebugServer是否启用 (严格模式抛异常),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,checkThreadAccess(),checkThreadAccess,v19.105: ThreadLocal 主脚本线程断言 (违规打日志),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,getInstance(),getInstance,v19.105: 静态单例访问器,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,createScriptEngine(com.corrodinggames.librocket.b),createScriptEngine,v19.105: 静态工厂 (已存在则抛异常; 构造root+四上下文注册),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,setupScriptContext(com.corrodinggames.librocket.scripts.ScriptContext),setupScriptContext,v19.105: 反射注册上下文全部公开方法到 methods HashMap (跳过wait/getClass),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,update(float),update,v19.105: 每帧: 队列消费(framesDelay递减)+runningScripts执行+root.onFrameUpdate,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"addScriptToQueue(java.lang.String, boolean)",addScriptToQueue,v19.105: 脚本入队 (tryToCatchCrash=bl),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,addScriptToQueueIfNotAlreadyQueued(java.lang.String),addScriptToQueueIfNotAlreadyQueued,v19.105: 去重入队 (相同脚本已在队列则返回null),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,addRunnableToQueue(java.lang.Runnable),addRunnableToQueue,v19.105: Runnable 入队 (RunnableAction 包装),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,processScript(java.lang.String),processScript,v19.105: 按;分割逐条processArg; 日志 ScriptEngine:HandleEvent:,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"throwDelayedException(java.lang.String, java.lang.Throwable)",throwDelayedException,v19.105: 延迟异常保存 (首个scriptError),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,checkForErrors(),checkForErrors,v19.105: 有 scriptError 则抛出,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,processArg(java.lang.String),processArg,v19.105: 脚本表达式解析器: 单引号字符串/整数/浮点/赋值/函数调用/布尔/变量查找,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"getScriptVariable(java.lang.String, boolean)",getScriptVariable,v19.105: 变量查找链: document metadata→popup→b→globals,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"setLocalVariable(java.lang.String, java.lang.Object)",setLocalVariable,v19.105: 活动文档 metadata 写入,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"setGlobalVariable(java.lang.String, java.lang.Object)",setGlobalVariable,v19.105: globals HashMap 写入,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"processFunction(java.lang.String, java.util.regex.Matcher)",processFunction,v19.105: 参数逗号分割+逐个processArg→runFunction,verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"runFunction(java.lang.String, java.lang.Object[])",runFunction,v19.105: 最多两级ctx.func; methods表查找+反射invoke (参数类型适配),verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,"match(java.lang.String, java.lang.String)",match,v19.105: 正则全匹配辅助,verified
+field,com.corrodinggames.librocket.scripts,ScriptContext,methods,methods,"v19.105: 函数注册表 HashMap<String,Method> (setupScriptContext反射填充)",verified
+field,com.corrodinggames.librocket.scripts,ScriptContext,libRocket,libRocket,v19.105: LibRocket 桥引用 (文档操作),verified
+field,com.corrodinggames.librocket.scripts,ScriptContext,guiEngine,guiEngine,v19.105: librocket.a.a() GUI引擎,verified
+field,com.corrodinggames.librocket.scripts,ScriptContext,scriptEngine,scriptEngine,v19.105: 归属 ScriptEngine 反向引用,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,script,script,v19.105: 脚本文本,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,tryToCatchCrash,tryToCatchCrash,v19.105: 捕获崩溃标志,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,caughtCrash,caughtCrash,v19.105: 捕获的崩溃信息,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,completed,completed,v19.105: 完成标志,verified
+field,com.corrodinggames.librocket.scripts,ScriptEngine,framesDelay,framesDelay,"v19.105: 帧延迟计数 (update中递减, 到0才执行)",verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,run(com.corrodinggames.librocket.scripts.ScriptEngine),run,"v19.105: 执行脚本 (processScript), tryToCatchCrash时捕获保存caughtCrash",verified
+method,com.corrodinggames.librocket.scripts,ScriptEngine,waitForCompletionOrCrash(boolean),waitForCompletionOrCrash,v19.105: 轮询3000次等完成 (DebugServer同步等待; 超时抛异常),verified
+method,com.corrodinggames.librocket.scripts,Root,loadReplay(java.lang.String),loadReplay,v19.105: l2.cb.c(string) 加载回放 + resumeNonMenu (动态测试脚本主入口),verified
+method,com.corrodinggames.librocket.scripts,Root,loadGame(java.lang.String),loadGame,"v19.105: l2.ca.c(string,false) 加载存档",verified
+method,com.corrodinggames.librocket.scripts,Root,saveGame(java.lang.String),saveGame,"v19.105: l2.ca.b(string,false) 保存存档 (名称 . / 替换为 _)",verified
+method,com.corrodinggames.librocket.scripts,Root,hostStart(boolean),hostStart,v19.105: 主机游戏入口 (bX.b(false) + battleroom.rml),verified
+method,com.corrodinggames.librocket.scripts,Root,closePopup(),closePopup,v19.105: 关闭弹窗 (动态测试弹窗解除),verified
+method,com.corrodinggames.librocket.scripts,Root,closeAlertOnly(),closeAlertOnly,v19.105: 仅关闭告警弹窗,verified
+method,com.corrodinggames.librocket.scripts,Root,exit(),exit,v19.105: 退出应用 (numLoadsSinceRunningGameOrNormalExit清零 + guiEngine.d(true)),verified
+method,com.corrodinggames.librocket.scripts,Root,"showPopup(java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String)",showPopup,v19.105: 弹窗显示,verified
+method,com.corrodinggames.librocket.scripts,Root,alert(java.lang.String),alert,v19.105: 告警弹窗,verified
+method,com.corrodinggames.librocket.scripts,Root,loadConfigAndStartNew(java.lang.String),loadConfigAndStartNew,v19.105: 配置+单机游戏启动 (loadConfigCommon + guiEngine.f),verified
+method,com.corrodinggames.librocket.scripts,Root,loadConfigAndStartNewSandbox(java.lang.String),loadConfigAndStartNewSandbox,v19.105: 沙盒编辑器模式启动 (bv=true),verified
+method,com.corrodinggames.librocket.scripts,Root,resume(),resume,v19.105: 恢复游戏,verified
+method,com.corrodinggames.librocket.scripts,Root,resumeNonMenu(),resumeNonMenu,v19.105: 恢复非菜单屏幕,verified
+method,com.corrodinggames.librocket.scripts,Root,makeSaveGamePopup(java.lang.String),makeSaveGamePopup,v19.105: 存档命名弹窗 (onenter:saveGame(getPopupText())),verified
+method,com.corrodinggames.librocket.scripts,Root,getPopupText(),getPopupText,v19.105: 弹窗输入文本,verified
+method,com.corrodinggames.librocket.scripts,Root,showMaps(),showMaps,v19.105: 地图列表,verified
+method,com.corrodinggames.librocket.scripts,Root,back(),back,v19.105: 返回上一屏,verified
+field,com.corrodinggames.librocket.scripts,Root,multiplayer,multiplayer,v19.105: Multiplayer 上下文引用,verified
+field,com.corrodinggames.librocket.scripts,Root,mods,mods,v19.105: Mods 上下文引用,verified
+method,com.corrodinggames.librocket,a,b(),showMainMenu,"证据串自报名(ldc 绑定, A 级)；描述符 ()V",logstring-selfname-v109
+method,com.corrodinggames.librocket,a,b(boolean),endGame,"证据串自报名(ldc 绑定, A 级)；描述符 (Z)V",logstring-selfname-v109
+method,com.corrodinggames.librocket,b,"a(Element,boolean)",loadCharsetIfNeededOnChildren,"证据串自报名(ldc 绑定, A 级)；描述符 (Lcom/Element;Z)V",logstring-selfname-v109
+method,com.corrodinggames.librocket,b,d(String),parseText,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;)Ljava/lang/String;",logstring-selfname-v109

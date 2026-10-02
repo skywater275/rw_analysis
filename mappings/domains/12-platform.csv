@@ -1,0 +1,162 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,com.corrodinggames.rts.appFramework,c,a,activity,Activity reference (Activity),verified-exists
+field,com.corrodinggames.rts.appFramework,c,b,dialogHelper,Dialog helper reference,verified-exists
+field,com.corrodinggames.rts.appFramework,c,c,toastQueue,Toast message queue,verified-exists
+field,com.corrodinggames.rts.appFramework,c,d,lastToastTime,Last toast display time (long),verified-exists
+field,com.corrodinggames.rts.appFramework,l,a,activePointers,Active pointer IDs (int[]),verified-exists
+field,com.corrodinggames.rts.appFramework,l,b,pointerX,Pointer X coordinates (float[]),verified-exists
+field,com.corrodinggames.rts.appFramework,l,c,pointerY,Pointer Y coordinates (float[]),verified-exists
+field,com.corrodinggames.rts.appFramework,l,d,pointerDownX,Pointer initial down X (float[]),verified-exists
+field,com.corrodinggames.rts.appFramework,l,e,pointerDownY,Pointer initial down Y (float[]),verified-exists
+field,com.corrodinggames.rts.appFramework,l,f,pointerDownTime,Pointer down timestamp (long[]),verified-exists
+field,com.corrodinggames.rts.appFramework,l,g,pointerState,Pointer state flags (int[]),verified-exists
+field,com.corrodinggames.rts.appFramework,l,h,maxPointers,Max simultaneous pointers (int),verified-exists
+field,com.corrodinggames.rts.appFramework,l,i,activePointerCount,Currently active pointer count (int),verified-exists
+field,com.corrodinggames.rts.appFramework,l,j,lastTouchX,Last single-touch X (float),verified-exists
+field,com.corrodinggames.rts.appFramework,l,k,lastTouchY,Last single-touch Y (float),verified-exists
+field,com.corrodinggames.rts.appFramework,l,l,lastTouchTime,Last touch timestamp (long),verified-exists
+field,com.corrodinggames.rts.appFramework,l,m,gestureDetector,Gesture/tap detector reference (Object),verified-exists
+field,com.corrodinggames.rts.appFramework,l,n,doubleTapActive,Double-tap detected flag (boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,l,o,pinchDistance,Pinch/zoom current distance (float),verified-exists
+field,com.corrodinggames.rts.appFramework,l,p,pinchStartDistance,Pinch/zoom start distance (float),verified-exists
+field,com.corrodinggames.rts.appFramework,l,q,pinchActive,Pinch/zoom gesture active (boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,l,r,scrollVelocityX,Scroll velocity X (float),verified-exists
+field,com.corrodinggames.rts.appFramework,m,a,activePointer,Current active pointer index (private int),verified-exists
+field,com.corrodinggames.rts.appFramework,m,b,touchAreaX,Touch area X coordinates per pointer (private float[10]),verified-exists
+field,com.corrodinggames.rts.appFramework,m,c,touchAreaY,Touch area Y coordinates per pointer (private float[10]),verified-exists
+field,com.corrodinggames.rts.appFramework,m,d,lastPointerX,Last known X per pointer (private float[10]),verified-exists
+field,com.corrodinggames.rts.appFramework,m,e,lastPointerId,Last pointer IDs (private int[10]),verified-exists
+field,com.corrodinggames.rts.appFramework,m,f,downStartX,Touch-down start X (private float),verified-exists
+field,com.corrodinggames.rts.appFramework,m,g,downStartY,Touch-down start Y (private float),verified-exists
+field,com.corrodinggames.rts.appFramework,m,h,currentX,Current touch X (private float),verified-exists
+field,com.corrodinggames.rts.appFramework,m,i,currentY,Current touch Y (private float),verified-exists
+field,com.corrodinggames.rts.appFramework,m,j,dragDistance,Drag distance from start (private float),verified-exists
+field,com.corrodinggames.rts.appFramework,m,k,isDown,Finger currently down flag (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,m,l,wasDown,Finger was down last frame (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,m,m,justPressed,Just pressed this frame flag (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,m,n,clickCount,Consecutive tap click count (private int),verified-exists
+field,com.corrodinggames.rts.appFramework,m,o,isDragging,Currently dragging flag (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,m,p,isLongPress,Long press detected flag (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,m,q,isDoubleClick,Double click detected flag (private boolean),verified-exists
+field,com.corrodinggames.rts.appFramework,m,r,gestureType,Detected gesture type enum (private int),verified-exists
+field,com.corrodinggames.rts.appFramework,c$2,a,activity,Phase3-inferred: captured Activity,verified-exists
+field,com.corrodinggames.rts.appFramework,c$2,b,globalState,"""Phase3-inferred: captured l (GlobalState); sets storageType=2 + hasSelectedAStorageType""",verified-exists
+field,com.corrodinggames.rts.appFramework,c$2,c,postSetupRunnable,Phase3-inferred: captured Runnable run after storage setup,verified-exists
+method,com.corrodinggames.rts.appFramework,c$2,onClick,onClick,already meaningful (DialogInterface.OnClickListener),verified-exists
+method,com.corrodinggames.rts.appFramework,f,a,setValue,real-class-inferred: com.corrodinggames.rts.appFramework.f,real-class-v1200
+method,com.corrodinggames.rts.appFramework,f,c,isEnabled,real-class-inferred: com.corrodinggames.rts.appFramework.f,real-class-v1200
+method,com.corrodinggames.rts.appFramework,f,g,getObject,real-class-inferred: com.corrodinggames.rts.appFramework.f,real-class-v1200
+method,com.corrodinggames.rts.appFramework,g,a,reset,real-class-inferred: com.corrodinggames.rts.appFramework.g,real-class-v1200
+field,com.corrodinggames.rts.appFramework,g,c,f,real-class-inferred: com.corrodinggames.rts.appFramework.g,real-class-v1200
+field,com.corrodinggames.rts.appFramework,g,d,handler,real-class-inferred: com.corrodinggames.rts.appFramework.g,real-class-v1200
+field,com.corrodinggames.rts.appFramework,g,e,progressDialog,real-class-inferred: com.corrodinggames.rts.appFramework.g,real-class-v1200
+field,com.corrodinggames.rts.appFramework,g$4,a,mapNameField,Phase3-inferred: captured EditText (map name input),verified-exists
+field,com.corrodinggames.rts.appFramework,g$4,b,globalState,"""Phase3-inferred: captured l (GlobalState); uses bL=MapEngine.saveMap(dl""",verified-exists
+field,com.corrodinggames.rts.appFramework,g$4,c,outerActivity,Phase3-inferred: synthetic outer ref to appFramework.g,verified-exists
+method,com.corrodinggames.rts.appFramework,g$4,onClick,onClick,"""already meaningful - validates map name chars"" | shows 'Bad Map Name' dialog",verified-exists
+field,com.corrodinggames.rts.appFramework,g$6,a,saveNameField,Phase3-inferred: captured EditText (save name input),verified-exists
+field,com.corrodinggames.rts.appFramework,g$6,b,outerActivity,Phase3-inferred: synthetic outer ref to appFramework.g,verified-exists
+method,com.corrodinggames.rts.appFramework,g$6,onClick,onClick,"""already meaningful - validates save name chars"" | shows 'Bad Save Name' dialog",verified-exists
+field,com.corrodinggames.rts.appFramework,h,a,string,real-class-inferred: com.corrodinggames.rts.appFramework.h,real-class-v1200
+field,com.corrodinggames.rts.appFramework,h,b,g,real-class-inferred: com.corrodinggames.rts.appFramework.h,real-class-v1200
+method,com.corrodinggames.rts.appFramework,i,a,isEnabled,real-class-inferred: com.corrodinggames.rts.appFramework.i,real-class-v1200
+method,com.corrodinggames.rts.appFramework,i,b,reset,real-class-inferred: com.corrodinggames.rts.appFramework.i,real-class-v1200
+method,com.corrodinggames.rts.appFramework,i,d,getString,real-class-inferred: com.corrodinggames.rts.appFramework.i,real-class-v1200
+method,com.corrodinggames.rts.appFramework,j,b,reset,real-class-inferred: com.corrodinggames.rts.appFramework.j,real-class-v1200
+field,com.corrodinggames.rts.appFramework,k,a,pattern,real-class-inferred: com.corrodinggames.rts.appFramework.k,real-class-v1200
+method,com.corrodinggames.rts.appFramework,n,a,reset,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,c,n,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,e,handler1,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,f,boolean2,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,g,boolean3,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,h,textView,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,i,ae,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,j,alertDialog,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,n,k,handler2,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+method,com.corrodinggames.rts.appFramework,n,l,isEnabled,real-class-inferred: com.corrodinggames.rts.appFramework.n,real-class-v1200
+field,com.corrodinggames.rts.appFramework,o,a,string,real-class-inferred: com.corrodinggames.rts.appFramework.o,real-class-v1200
+field,com.corrodinggames.rts.appFramework,o,b,int1,real-class-inferred: com.corrodinggames.rts.appFramework.o,real-class-v1200
+field,com.corrodinggames.rts.appFramework,o,c,int2,real-class-inferred: com.corrodinggames.rts.appFramework.o,real-class-v1200
+field,com.corrodinggames.rts.appFramework,o,d,testConfigField1,"P3.3-deep-curated: class-context, was=n1",p3-deep-curated
+field,com.corrodinggames.rts.appFramework,o,e,testConfigField2,"P3.3-deep-curated: class-context, was=n2",p3-deep-curated
+field,com.corrodinggames.rts.appFramework,o,f,int3,real-class-inferred: com.corrodinggames.rts.appFramework.o,real-class-v1200
+field,com.corrodinggames.rts.appFramework,p,c,p,real-class-inferred: com.corrodinggames.rts.appFramework.p,real-class-v1200
+field,com.corrodinggames.rts.appFramework,p,d,handler,real-class-inferred: com.corrodinggames.rts.appFramework.p,real-class-v1200
+field,com.corrodinggames.rts.appFramework,p,e,runnable,real-class-inferred: com.corrodinggames.rts.appFramework.p,real-class-v1200
+method,com.corrodinggames.rts.appFramework,p$1,"a(g,g)",compareByRank,,verified-exists
+method,com.corrodinggames.rts.appFramework,p$1,a(g),rankServer,"Phase3-inferred: rank 0..99: pinged 0,  chat 1",verified-exists
+field,com.corrodinggames.rts.appFramework,q,c,string,real-class-inferred: com.corrodinggames.rts.appFramework.q,real-class-v1200
+field,com.corrodinggames.rts.appFramework,s,c,boolean1,real-class-inferred: com.corrodinggames.rts.appFramework.s,real-class-v1200
+field,com.corrodinggames.rts.appFramework,s,d,boolean2,real-class-inferred: com.corrodinggames.rts.appFramework.s,real-class-v1200
+field,com.corrodinggames.rts.appFramework,s,f,d,real-class-inferred: com.corrodinggames.rts.appFramework.s,real-class-v1200
+method,com.corrodinggames.rts.java,e,A,popTransformImpl,"""[EXTERNAL: Slick2D library — Restore g transform from stack [EXTERNAL: Slick2D library""",verified-exists
+field,com.corrodinggames.rts.java,e,a,renderEnabled,"Rendering enabled (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.java,e,b,initialized,Initialized flag (boolean),verified-exists
+field,com.corrodinggames.rts.java,e,c,clearColor,Clear/background color (static Slick Color),verified-exists
+field,com.corrodinggames.rts.java,e,d,darkOverlayColor,Dark overlay color (static Slick Color),verified-exists
+method,com.corrodinggames.rts.java,e,e,runCleanup,"""[EXTERNAL: Slick2D library — Trigger static texture cleanup queue [EXTERNAL: Slick2D library""",verified-exists
+method,com.corrodinggames.rts.java,e,f,onFrameEnd,"""[EXTERNAL: Slick2D library — Frame-end callback stub [EXTERNAL: Slick2D library""",verified-exists
+field,com.corrodinggames.rts.java,e,g,activeTexture,Active texture (m.e),verified-exists
+field,com.corrodinggames.rts.java,e,h,viewportWidth,Viewport width (int),verified-exists
+field,com.corrodinggames.rts.java,e,i,viewportHeight,Viewport height (int),verified-exists
+field,com.corrodinggames.rts.java,e,j,activeSprite,Active sprite (m.f),verified-exists
+field,com.corrodinggames.rts.java,e,k,sharedGraphics,Shared graphics context (static Graphics),verified-exists
+field,com.corrodinggames.rts.java,e,m,fontRenderer,Font renderer (static ae),verified-exists
+method,com.corrodinggames.rts.java,e,o,clearAlphaMap,"""[EXTERNAL: Slick2D library — Clear alpha/transparency layer [EXTERNAL: Slick2D library""",verified-exists
+method,com.corrodinggames.rts.java,e,p,flushAndReset,"""[EXTERNAL: Slick2D library — Flush Graphics + reset paint state [EXTERNAL: Slick2D library""",verified-exists
+method,com.corrodinggames.rts.java,e,q,destroyGraphics,"""[EXTERNAL: Slick2D library — Destroy Slick Graphics context [EXTERNAL: Slick2D library""",verified-exists
+method,com.corrodinggames.rts.java,e,r,getOomErrorImage,"""[EXTERNAL: Slick2D library — Return OOM error placeholder texture [EXTERNAL: Slick2D library""",verified-exists
+method,com.corrodinggames.rts.java,e,s,getUiScale,"""[EXTERNAL: Slick2D library — Return current UI scale factor [EXTERNAL: Slick2D library""",verified-exists
+method,com.corrodinggames.rts.java,e,t,getClearColor,"""[EXTERNAL: Slick2D library — Return shared clear color constant [EXTERNAL: Slick2D library""",verified-exists
+method,com.corrodinggames.rts.java,e,u,initGraphics,"""[EXTERNAL: Slick2D library — Set as active Graphics + mark initialized [EXTERNAL: Slick2D library""",verified-exists
+method,com.corrodinggames.rts.java,e,v,unbindProgram,"""[EXTERNAL: Slick2D library — Bind GL program 0 (disable shaders) [EXTERNAL: Slick2D library""",verified-exists
+method,com.corrodinggames.rts.java,e,w,flushCleanupQueue,"""[EXTERNAL: Slick2D library — Destroy queued textures + clear list [EXTERNAL: Slick2D library""",verified-exists
+method,com.corrodinggames.rts.java,e,x,shouldResizeFont,"""[EXTERNAL: Slick2D library — Check UI scale resize active + scale != 1 [EXTERNAL: Slick2D library""",unverifiable-rebuilt
+method,com.corrodinggames.rts.java,e,y,flushBuffer,"""[EXTERNAL: Slick2D library — Flush Slick Graphics buffer [EXTERNAL: Slick2D library""",verified-exists
+method,com.corrodinggames.rts.java,e,z,pushTransformImpl,"""[EXTERNAL: Slick2D library — Save current g transform onto stack [EXTERNAL: Slick2D library""",verified-exists
+field,com.corrodinggames.rts.java,t,c,imageWidth,Image width (private int),verified-exists
+field,com.corrodinggames.rts.java,t,d,imageHeight,Image height (private int),verified-exists
+field,com.corrodinggames.rts.java,t,e,textureWidth,Texture width (private int),verified-exists
+field,com.corrodinggames.rts.java,t,f,textureHeight,Texture height (private int),verified-exists
+field,com.corrodinggames.rts.java,t,g,pixelData,Pixel data (private byte[]),verified-exists
+field,com.corrodinggames.rts.java,e,e,syncLockA,Synchronization lock A (Object),verified-exists
+field,com.corrodinggames.rts.java,e,f,syncLockB,Synchronization lock B (Object),verified-exists
+field,com.corrodinggames.rts.java.audio.a,i,a,sampleRate,Audio sample rate (int),verified-exists
+field,com.corrodinggames.rts.java.audio.a,i,h,volumeLevel,Volume level (private float),verified-exists
+field,com.corrodinggames.rts.java.audio.a,i,i,bufferSize,Audio buffer size (private int),verified-exists
+field,com.corrodinggames.rts.java.audio.a,i,j,channelCount,Audio channel count (private int),verified-exists
+field,com.corrodinggames.rts.java.audio.a,i,k,audioFormat,Audio format enum (private int),verified-exists
+field,com.corrodinggames.rts.java.audio.a,i,l,audioSessionId,Audio session ID (private int),verified-exists
+field,com.corrodinggames.rts.java.audio.a,i,m,streamType,Audio stream type (private int),verified-exists
+field,com.corrodinggames.rts.java.audio.a,i,n,audioPlayerA,Audio player A (private j),verified-exists
+field,com.corrodinggames.rts.java.audio.a,i,o,audioPlayerB,Audio player B (private j),verified-exists
+method,com.corrodinggames.rts.appFramework,c,a(String),getNumberOfPlayersInMap,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;)I",logstring-selfname-v109
+method,com.corrodinggames.rts.a.a,c,"a(String,boolean)",assertCreateError,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;Z)V",logstring-selfname-v109
+method,com.corrodinggames.rts.a.a,f,a(),test2Expected,"证据串自报名(ldc 绑定, A 级)；描述符 ()V",logstring-selfname-v109
+method,com.corrodinggames.rts.a.a,n,"b(String,String)",assertEqualDebug,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;Ljava/lang/String;)V",logstring-selfname-v109
+method,com.corrodinggames.rts.java,Main$3,run(),startGameEvent,"证据串自报名(ldc 绑定, A 级)；描述符 ()V",logstring-selfname-v109
+method,com.corrodinggames.rts.java,i,"a(Throwable,boolean)",onGameCrash,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/Throwable;Z)V",logstring-selfname-v109
+method,com.corrodinggames.rts.java,Main,a(String[]),screenWidth,"证据串自报名(ldc 绑定, A 级)；描述符 ([Ljava/lang/String;)V",logstring-selfname-v109
+method,com.corrodinggames.rts.java,k,a(HttpClient),closeHttpClient,"证据串自报名(ldc 绑定, A 级)；描述符 (Lorg/apache/http/client/HttpClient;)V",logstring-selfname-v109
+method,com.corrodinggames.rts.java,n,a(boolean),startPlaying,"证据串自报名(ldc 绑定, A 级)；描述符 (Z)V",logstring-selfname-v109
+method,com.corrodinggames.rts.java,n,f(),realPlay,"证据串自报名(ldc 绑定, A 级)；描述符 ()V",logstring-selfname-v109
+method,com.corrodinggames.rts.java,n,a(float),setVolume,"证据串自报名(ldc 绑定, A 级)；描述符 (F)V",logstring-selfname-v109
+method,com.corrodinggames.rts.java,o,a(),startThreads,"证据串自报名(ldc 绑定, A 级)；描述符 ()V",logstring-selfname-v109
+method,com.corrodinggames.rts.java,s,D(),reloadFromImageData,"证据串自报名(ldc 绑定, A 级)；描述符 ()V",logstring-selfname-v109
+method,com.corrodinggames.rts.java,s,F(),reloadImage,"证据串自报名(ldc 绑定, A 级)；描述符 ()V",logstring-selfname-v109
+method,com.corrodinggames.rts.java.c,b,a(float),nextPacketSize,"证据串自报名(ldc 绑定, A 级)；v1.09 孪生类同证（com/corrodinggames/rts/java/a/b）；描述符 (F)V",logstring-selfname-v109-v109x
+method,com.corrodinggames.rts.java.c,b,b(SteamID),addPeer,"证据串自报名(ldc 绑定, A 级)；v1.09 孪生类同证（com/corrodinggames/rts/java/a/b）；描述符 (Lcom/codedisaster/steamworks/SteamID;)Lcom/corrodinggames/rts/gameFramework/j/c;",logstring-selfname-v109-v109x
+method,com.corrodinggames.rts.java.c,b,c(SteamID),connectTo,"证据串自报名(ldc 绑定, A 级)；v1.09 孪生类同证（com/corrodinggames/rts/java/a/b）；描述符 (Lcom/codedisaster/steamworks/SteamID;)V",logstring-selfname-v109-v109x
+method,com.corrodinggames.rts.java.c,b,j(),stopLobby,"证据串自报名(ldc 绑定, A 级)；v1.09 孪生类同证（com/corrodinggames/rts/java/a/b）；描述符 ()V",logstring-selfname-v109-v109x
+method,com.corrodinggames.rts.java.c,g,"a(b,boolean,String)",convertedAbsolutePath,"证据串自报名(ldc 绑定, A 级)；描述符 (Lcom/corrodinggames/rts/gameFramework/i/b;ZLjava/lang/String;)V",logstring-selfname-v109
+field,com.corrodinggames.rts.appFramework,g,f,f2_var,位置无关配对导出（02↔反向源唯一性配对）；见 RENAME-DAMAGE/STATUS §〇.2,pair-derived-v19.133f99
+field,com.corrodinggames.rts.appFramework,r,a,pattern,位置无关配对导出（02↔反向源唯一性配对）；见 RENAME-DAMAGE/STATUS §〇.2,pair-derived-v19.133f99
+field,com.corrodinggames.rts.java,Main,d,platformConfig,位置无关配对导出（02↔反向源唯一性配对）；见 RENAME-DAMAGE/STATUS §〇.2,pair-derived-v19.133f99
+field,com.corrodinggames.rts.java,Main,h,gameInstance,位置无关配对导出（02↔反向源唯一性配对）；见 RENAME-DAMAGE/STATUS §〇.2,pair-derived-v19.133f99
+field,com.corrodinggames.rts.java,Main,j,gameSettings,位置无关配对导出（02↔反向源唯一性配对）；见 RENAME-DAMAGE/STATUS §〇.2,pair-derived-v19.133f99
+field,com.corrodinggames.rts.appFramework,e,a,singleThreadedSurface,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.appFramework,e,b,singleThreadedSurfaceIfHardware,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.appFramework,e,c,multiThreadedSurface,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.appFramework,e,d,multiThreadedNonSurface,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.appFramework,e,e,opengl,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.appFramework,e,f,dynamicDefault,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99

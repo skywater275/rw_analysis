@@ -1,0 +1,2 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+method,android.net.http,b,a,reset,real-class-inferred: android.net.http.b,real-class-v1200

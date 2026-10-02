@@ -1,0 +1,16 @@
+{
+  "com/corrodinggames/rts/gameFramework/l$2$1": [
+    {
+      "find": "this.a.a.w",
+      "replace": "this.a.a.dt",
+      "evidence": "javap stock com/corrodinggames/rts/gameFramework/l → `public boolean dt;`（无 w）；外层反向源 l.java:253 亦为 `public boolean dt`，内嵌源仍留 03 语义名 w ⇒ 成员名未同步"
+    }
+  ],
+  "com/corrodinggames/rts/gameFramework/l$2$2": [
+    {
+      "find": "this.a.a.w",
+      "replace": "this.a.a.dt",
+      "evidence": "同上（l$2$2 与 l$2$1 是同一 if 的两个分支匿名类）"
+    }
+  ]
+}

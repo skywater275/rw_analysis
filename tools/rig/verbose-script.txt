@@ -1,0 +1,21 @@
+# Rusted Warfare 测试台 — 启动即执行的调试脚本（由 启动游戏.bat verbose 经 -debugscript 传入）
+#
+# 语法：每行一条脚本表达式，等价于在 Debug Server 上执行 `script <行>`；
+#       空行与以 # 开头的注释行会被跳过（02b rts/a/a$1.java 实证）。
+# 日志效果：脚本启动时写 `Running debug script: <路径>`，每行写 `Running: <行>` 与 `got: <结果>`，
+#           因此日志里能直接确认本脚本是否执行、执行了哪几行（这也是「提高日志详细程度」的一部分）。
+#
+# ⚠️ 三条实测约束（2026-09-24，都会让人白折腾，故写在这里）：
+#  1. **script 通道没有崩溃保护**：服务端先回 `done` 再抛异常 → `onGameCrash`，即**写错就崩游戏**。
+#     实测：写 `root.enableFeatures(...)`（该函数在 root 上不存在）→ 启动阶段直接崩溃。
+#     因此每行都必须先用 function 通道验证（function 通道 tryToCatchCrash=true，不崩游戏）：
+#         python tools/rig/live_stats.py --once --json
+#  2. **字符串字面量不可用**：`root.logDebug("带空格的话")` 会被当成变量名 →
+#     日志出现 `processArg: no variable:"..."` 且该行**无效**（不崩，但也没做事）。
+#     需要标记时用无参/数值表达式。
+#  3. `debug.enableFeatures(...)` 不要再试：它要求入参的 SHA-256 十六进制前 16 位 == 221FC410BD29D786
+#     （product 字节码实证：Debug.enableFeatures → gameFramework/f.e(String) = hex(SHA-256(入参))），
+#     属**哈希口令门**，无原像不可解锁；失败抛异常 → 在 script 通道里直接崩游戏。
+#
+# 已验证可用、启动期无副作用、且不会被解析器误伤的表达式（保留作为「脚本确实执行了」的证据）：
+root.getVersionName()

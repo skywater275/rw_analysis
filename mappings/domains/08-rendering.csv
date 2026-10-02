@@ -1,0 +1,713 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,com.corrodinggames.rts.gameFramework.b,q,a,uniformName,Uniform variable name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,q,b,uniformType,Uniform type enum (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,q,c,uniformLocation,GL uniform location handle (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,w,a,stackData,Stack data array (int[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,w,b,stackPointer,Current stack pointer (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,v,a,lineWidth,Line width (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,v,b,lineColor,Line color ARGB (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,v,c,lineStyle,Line Paint.Style (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.b,ai,a,filterMode,GL filter mode (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,ai,b,wrapMode,GL wrap mode (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.b,ai,c,generateMipmaps,Generate mipmaps flag (boolean),verified-exists
+method,com.corrodinggames.rts.gameFramework.b,ah,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.b.ah,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.b,ah,l,bitmapCache,Cached bitmap edge pixels (static HashMap),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,ah,n,filterMode,"GL texture filter mode (9729=GL_LINEAR,  package-private int)",verified-exists
+field,com.corrodinggames.rts.gameFramework.b,ah,o,cacheKey,Reusable cache lookup key (static ai),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,ah,p,contentValid,GL content in sync with bitmap (private boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,ah,t,throttleSkip,Throttle skip flag (private boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,ah,u,throttleCount,Throttle counter (private static int),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,ah,v,borderSize,Pixel padding at texture edges (private int),verified-exists
+method,com.corrodinggames.rts.gameFramework.b,al,a,setValue,real-class-inferred: com.corrodinggames.rts.gameFramework.b.al,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.b,al,b,uploadToVbo,[V] b()->void; upload vertex buffer to GPU (al.java:37),verified-exists
+method,com.corrodinggames.rts.gameFramework.b,al,c,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.b.al,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.b,al,f,parentDrawCall,Parent DrawCall reference (final aj),verified-exists
+method,com.corrodinggames.rts.gameFramework.b,b,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.b.b,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.b,b,c,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.b.b,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.b,b,g,texCoordScaleU,Texture coordinate U scale (1.0/textureWidth),verified-exists
+method,com.corrodinggames.rts.gameFramework.b,b,g(),rebindAllShaderPrograms,[v10.3-resolved: unique match,verified-exists
+field,com.corrodinggames.rts.gameFramework.b,b,h,texCoordScaleV,Texture coordinate V scale (1.0/textureHeight),verified-exists
+method,com.corrodinggames.rts.gameFramework.b,b,h(),getBaseAlpha,[v10.3-resolved: unique match,verified-exists
+field,com.corrodinggames.rts.gameFramework.b,b,i,useCount,Usage/reference count (int),verified-exists
+method,com.corrodinggames.rts.gameFramework.b,b,i(),getCurrentMatrix,[v10.3-resolved: unique match,verified-exists
+field,com.corrodinggames.rts.gameFramework.b,b,j,dirtyFlag,Dirty/invalidation flag (boolean),type-aware-fp-v19.114
+method,com.corrodinggames.rts.gameFramework.b,b,j(),pushTransform,[v10.3-resolved: unique match | returns void] Push transform onto stack,verified-exists
+field,com.corrodinggames.rts.gameFramework.b,b,k,renderer,GLRenderer reference (k = GLRenderer),verified-exists
+method,com.corrodinggames.rts.gameFramework.b,b,k(),popTransform,[v10.3-resolved: unique match | returns void] Pop transform from stack,verified-exists
+method,com.corrodinggames.rts.gameFramework.b,e,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.b.e,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.b,e,l,sourceBitmap,Source bitmap (protected Bitmap),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,i,c,lastCachedResult,Last cached blur result (private b),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,i,d,previousInput,Previous input texture reference (private b),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,n,U,framebufferLock,Framebuffer synchronization lock (final w),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,n,V,framebufferName,Framebuffer object name array (int[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,n,W,renderTargetStack,Render target stack (ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,n,X,tempMatrix,Temporary MVP matrix (final float[16]),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,n,Y,tempColor,Temporary color array (final float[4]),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,n,Z,tempRect1,Reusable rectangle 1 (final RectF),verified-exists
+method,com.corrodinggames.rts.gameFramework.b,n,a,glEnable,GLHelper: void - enable GL state,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.b,n,aa,tempRect2,Reusable rectangle 2 (final RectF),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,n,ab,linkStatus,Shader link status array (final int[1]),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,n,ac,textureIdGenerator,Default texture ID generator (static final u),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,n,am,field_am,"P3.1-inferred: type=com.corrodinggames.rts.game.units.custom.e.c, was=c5",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.b,n,an,field_an,"P3.1-inferred: type=float, was=value6",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.b,n,ao,field_ao,"P3.1-inferred: type=float, was=value7",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.b,n,ap,field_ap,"P3.1-inferred: type=float, was=value8",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.b,n,at,field_at,"P3.1-inferred: type=boolean, was=flag10",p3-auto-inferred
+method,com.corrodinggames.rts.gameFramework.b,n,b,glDisable,GLHelper: void - disable GL state,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,c,glBlendFunc,GLHelper: void - set blending mode,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,d,glClearColor,GLHelper: void - set clear color,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,e,glViewport,GLHelper: void - set viewport,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,f,glScissor,GLHelper: void - set scissor rect,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,g,glBindTexture,GLHelper: void - bind texture,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,h,glActiveTexture,GLHelper: void - activate texture unit,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,i,glUseProgram,GLHelper: void - use shader program,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,j,glUniformMatrix,GLHelper: void - set uniform matrix,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,k,glDrawArrays,GLHelper: void - draw arrays,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,l,glDrawElements,GLHelper: void - draw indexed elements,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,m,beginBatch,GLHelper: void - start batched rendering,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,n,endBatch,GLHelper: void - flush batched render,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,o,flush,GLHelper: void - force GPU flush,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,p,getMaxTextureSize,GLHelper: int - max texture size,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,q,checkGLError,GLHelper: void - check for GL errors,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,r,getGLVersion,GLHelper: String - GL version string,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,s,isExtensionSupported,GLHelper: boolean - check GL extension,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,t,genTexture,GLHelper: int - generate texture ID,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,u,deleteTexture,GLHelper: void - delete texture,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,v,genFramebuffer,GLHelper: int - generate FBO,body-verified-v1300
+method,com.corrodinggames.rts.gameFramework.b,n,w,bindFramebuffer,GLHelper: void - bind framebuffer,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.b,n,x,totalTextureAllocations,Total texture creation count (static int),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,n,y,totalTextureBytes,Total texture bytes allocated (static int),verified-exists
+field,com.corrodinggames.rts.gameFramework.b,n,z,boundTexture,Currently bound texture object (ab=GLObject),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,c,showHUD,HUD visible flag (boolean),verified-exists
+method,com.corrodinggames.rts.gameFramework.d,a,d,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.d.a,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,a,e,currentPlayer,Current player state (n),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,f,displayMode,"HUD display mode (int,  default 1)",verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,g,hudScaleX,HUD scale X (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,h,hudScaleY,HUD scale Y (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,i,minimapVisible,Minimap visible flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,j,selectedPlayer,Selected player state (n),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,k,showBuildQueue,Show build queue panel (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,l,selectedUnitIndex,Selected unit index (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,m,hoveredUnitIndex,Hovered unit index (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,n,showUnitTooltip,Show unit tooltip (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,o,tooltipUnitType,Tooltip unit type (y),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,q,showDamageNumbers,Show floating damage numbers (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,r,damageDisplayTimer,Damage display timer (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,s,hudTextSize,HUD text size (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,t,scrollSpeed,"Scroll speed factor (float,  default 0.04)",verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,u,autoScroll,Auto-scroll enabled (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,v,selectedUnit,Currently selected unit (am),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,a,w,hudInstance,HUD singleton instance (static o),verified-exists
+method,com.corrodinggames.rts.gameFramework.d,b,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.d.b,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.d,c,a,reset,"v19.106 agentJ: 占位猜测撤销, 见 radiate-agentJ.csv T0证据",verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,c,configValueC,"v19.106 agentJ: 占位猜测撤销, 见 radiate-agentJ.csv T0证据",verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,d,configValueD,Config value D (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,e,configValueE,Config value E (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,f,hudElements,HUD element array (static e[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,g,elementCount,Active element count (static int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,i,screenWidth,Screen width (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,j,screenHeight,Screen height (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,k,themeRef,Theme colors reference (static ae),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,l,backgroundTexture,Background texture (m.e),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,m,borderTexture,Border texture (m.e),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,n,tempRectF,Temporary RectF (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,o,tempRect,Temporary Rect (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,p,tempRect2,Temporary Rect 2 (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,q,backgroundPaint,Background fill paint (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,r,borderPaint,Border stroke paint (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,s,drawCommands,Draw command array (static g[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,w,activePaint,Active/current paint (final Paint),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,c,y,sectionVisibility,Section visibility flags (private boolean[5]),verified-exists
+method,com.corrodinggames.rts.gameFramework.d,e,b,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.d.e,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,e,d,needsLayout,Needs layout recalculation (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,e,isVisible,"Is visible (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,f,isInteractive,Is interactive/clickable (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,g,anchorMode,Anchor positioning mode (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,h,anchorTopLeft,Anchor constant: top-left (static int=1),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,i,anchorTopCenter,Anchor constant: top-center (static int=2),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,j,anchorTopRight,Anchor constant: top-right (static int=3),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,k,anchorCenterLeft,Anchor constant: center-left (static int=4),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,l,anchorCenter,Anchor constant: center (static int=5),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,m,anchorCenterRight,Anchor constant: center-right (static int=6),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,n,anchorBottomLeft,Anchor constant: bottom-left (static int=7),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,o,hasBackground,Has background fill (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,p,hasBorder,Has border stroke (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,q,drawLayer,Draw ordering layer (h enum),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,r,clipsContent,Clips child content (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,s,useScreenCoords,Use screen coords (vs world) (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,t,durationSeconds,Display duration seconds (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,u,fadeInEnabled,Fade-in animation enabled (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,v,fadeOutEnabled,Fade-out animation enabled (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,w,scaleMultiplier,"Scale multiplier (float,  default 1.0)",verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,x,offsetXPixels,Offset X in pixels (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,y,offsetYPixels,Offset Y in pixels (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,e,z,customParam,"Custom float parameter (float,  default -1.0)",verified-exists
+field,com.corrodinggames.rts.gameFramework.d,f,U,effectType,EffectEngine: int - effect type identifier,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,V,isEmitting,EffectEngine: boolean - currently emitting particles,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,W,emitRate,EffectEngine: float - particles per second,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,X,particleLifetime,EffectEngine: float - particle lifetime seconds,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,Y,particleSpeed,EffectEngine: float - initial particle speed,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,Z,spreadAngle,EffectEngine: float - emission spread angle,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aA,gravityFactor,EffectEngine: float - gravity influence on particles,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aB,useWind,EffectEngine: boolean - wind affects particles,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aC,collideWithMap,EffectEngine: boolean - particles collide with terrain,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aD,maxParticles,EffectEngine: int - particle pool size,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aE,textureRef,EffectEngine: Texture reference for particles,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aF,startSize,EffectEngine: float - particle start size,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aG,endSize,EffectEngine: float - particle end size (for size-over-life),body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aH,fadeInTime,EffectEngine: float - fade-in duration,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aI,fadeOutTime,EffectEngine: float - fade-out duration,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aJ,startColor,EffectEngine: int - particle start color ARGB,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aK,endColor,EffectEngine: int - particle end color ARGB,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aL,blendMode,EffectEngine: int - GL blend mode,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aM,emitterShape,EffectEngine: int - emitter shape (point/line/circle/box),body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aN,emitRadius,EffectEngine: float - emission radius,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aO,zOrder,EffectEngine: int - draw order/depth,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,aP,trailEnabled,EffectEngine: boolean - particle trails active,body-verified-v1300
+field,com.corrodinggames.rts.gameFramework.d,f,g,float6,real-class-inferred: com.corrodinggames.rts.gameFramework.d.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,f,h,float7,real-class-inferred: com.corrodinggames.rts.gameFramework.d.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,f,i,effectDuration,"P3.3-deep-curated: class-context, was=e1",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.d,f,j,frameIndex,Current animation frame (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,f,k,frameCount,Total animation frames (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,f,l,textureId,GL texture ID (int  -1=none),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,f,m,float8,real-class-inferred: com.corrodinggames.rts.gameFramework.d.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,f,n,float9,real-class-inferred: com.corrodinggames.rts.gameFramework.d.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,f,o,float10,real-class-inferred: com.corrodinggames.rts.gameFramework.d.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,f,p,float11,real-class-inferred: com.corrodinggames.rts.gameFramework.d.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,f,q,float12,real-class-inferred: com.corrodinggames.rts.gameFramework.d.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,f,r,float13,real-class-inferred: com.corrodinggames.rts.gameFramework.d.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,f,s,h,real-class-inferred: com.corrodinggames.rts.gameFramework.d.f,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,f,t,scaleValue,Effect scale (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,f,u,fadeOutEnabled,Fade-out enabled (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,f,v,effectIntensity,"P3.3-deep-curated: class-context, was=e2",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.d,f,w,effectBlendColor,"P3.3-deep-curated: class-context, was=e3",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.d,f,x,rendererRef,Renderer reference (c),verified-exists
+field,com.corrodinggames.rts.gameFramework.d,g,B,hudElementTexture,"P3.3-deep-curated: class-context, was=e1",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.d,g,C,hudElementPosition,"P3.3-deep-curated: class-context, was=e2",p3-deep-curated
+method,com.corrodinggames.rts.gameFramework.d,g,a,setValue,real-class-inferred: com.corrodinggames.rts.gameFramework.d.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,g,e,int4,real-class-inferred: com.corrodinggames.rts.gameFramework.d.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,g,f,int5,real-class-inferred: com.corrodinggames.rts.gameFramework.d.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,g,g,int6,real-class-inferred: com.corrodinggames.rts.gameFramework.d.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,g,h,int7,real-class-inferred: com.corrodinggames.rts.gameFramework.d.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,g,i,hudElementScale,"P3.3-deep-curated: class-context, was=e1",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.d,g,l,rect,real-class-inferred: com.corrodinggames.rts.gameFramework.d.g,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.d,h,a,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.d.h,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.d,h,b,layerOrder,"P3.3-deep-curated: class-context, was=h2",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.d,h,c,layerBlendMode,"P3.3-deep-curated: class-context, was=h3",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.d,h,d,layerVisible,"P3.3-deep-curated: class-context, was=h4",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.d,h,e,layerOpacity,"P3.3-deep-curated: class-context, was=h5",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.d,h,f,layerTransform,"P3.3-deep-curated: class-context, was=h6",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.m,ac,b,vertexBuffer,Vertex FloatBuffer (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,c,texCoordBuffer,TexCoord FloatBuffer (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,d,colorBuffer,Color FloatBuffer (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,e,indexBufferA,Index IntBuffer A (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,f,indexBufferB,Index IntBuffer B (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,g,indexBufferC,Index IntBuffer C (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,h,charBuffer,Character CharBuffer (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,i,bufferA,Generic Buffer A (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,j,bufferB,Generic Buffer B (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,k,bufferC,Generic Buffer C (private),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,l,currentTexId,Current texture ID (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,m,currentBlendSrc,Current blend src factor (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,n,currentBlendDst,Current blend dst factor (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,o,viewportWidth,Viewport width (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,p,isInit,Initialized flag (private boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,q,drawCallCount,Draw call counter (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,r,vertexCount,Vertex count (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,s,texCoordCount,TexCoord count (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,ac,t,triangleCount,Triangle count (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,af,a,uniformName,Uniform variable name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,af,b,uniformLocation,GL uniform location (int  -1=invalid),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,af,c,isInteger,Is integer type (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,af,d,isArray,Is array type (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,af,e,floatValues,Float value array (float[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,af,f,textureRef,Texture reference (e),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,af,g,needsUpdate,Needs GPU update flag (boolean),verified-exists
+method,com.corrodinggames.rts.gameFramework.m,aa,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.m.aa,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.m,ae,a,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.m.ae,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.m,e,"a(int,int,int)",setPixel,,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,e,a,getName,Texture: 获取纹理名称,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,e,a(Bitmap),setBitmap,Texture: 设置位图(更新宽高尺寸缓存),body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,e,a(String),setName,Texture: 设置纹理名称,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,e,a(boolean),setRenderTarget,Texture: 设置渲染目标标志,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,e,b,normalMapRegions,Normal map regions (e[]),verified-exists
+method,com.corrodinggames.rts.gameFramework.m,e,b(boolean),setKeepInGpuMemory,Texture: 设置保持GPU内存,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,e,c,specularMapRegions,Specular map regions (e[]),verified-exists
+method,com.corrodinggames.rts.gameFramework.m,e,d,isKeepInGpuMemory,Texture: 是否保持GPU内存,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,e,e,dataGeneration,Version counter | incremented on pixel data upload,verified-exists
+field,com.corrodinggames.rts.gameFramework.m,e,f,glUploadGeneration,Tracks which gen was last uploaded to GL,verified-exists
+field,com.corrodinggames.rts.gameFramework.m,e,g,name,Texture name/path identifier,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,e,h,copy,Texture: 深拷贝纹理(复制位图),body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,e,i,ensurePixelData,Texture: 确保像素缓冲存在(惰性加载),body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,e,j,loadPixelData,Texture: 从位图加载像素到int[],body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,e,k,bitmap,Android Bitmap holding decoded image data,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,e,l,getHeight,Texture: 纹理高,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,e,m,getWidth,Texture: 纹理宽,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,e,n,needsMipmap,Whether mipmaps should be generated,verified-exists
+field,com.corrodinggames.rts.gameFramework.m,e,o,wrapped,GL texture wrap mode (repeat vs clamp),verified-exists
+method,com.corrodinggames.rts.gameFramework.m,e,p,uploadToGpu,"""Texture: 像素缓冲提交GPU位图""",verified-exists
+field,com.corrodinggames.rts.gameFramework.m,e,q,height,Texture pixel height,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,e,r,clearPixelData,Texture: 清空像素缓冲,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,e,s,halfHeightInt,Integer half-height for texture coordinate origin,verified-exists
+field,com.corrodinggames.rts.gameFramework.m,e,t,halfWidthFloat,Float half-width for UV calculations,verified-exists
+field,com.corrodinggames.rts.gameFramework.m,e,u,halfHeightFloat,Float half-height for UV calculations,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,e,v,clearTeamVariants,"""Texture: 清空团队变体数组""",verified-exists
+field,com.corrodinggames.rts.gameFramework.m,e,w,keepInGpuMemory,Keep texture in GPU memory despite CPU cleanup,verified-exists
+field,com.corrodinggames.rts.gameFramework.m,e,x,nextTextureId,Static counter for unique texture IDs,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,f,"a(Texture,int,int)",drawRegion,,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,f,"a(int,int)",createAtlas,Sprite: 创建图集纹理+离屏渲染器+CLEAR画笔,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,f,a,clear,"""Sprite: drawColor(0""",verified-exists
+method,com.corrodinggames.rts.gameFramework.m,f,a(Texture),getRegion,Sprite: 取纹理区域(缓存命中/HashMap失效则重打包),body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,f,b,reset,Sprite: 重置图集(游标清零+清缓存+清空),body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,f,b(Texture),packRegion,Sprite: 打包纹理进图集(行打包算法),body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,f,c,tick,"""Sprite: 帧推进(溢出计数""",verified-exists
+method,com.corrodinggames.rts.gameFramework.m,f,d,rebuild,Sprite: 重建图集(重置后重绘全部缓存纹理),body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,f,e,isAtlasFull,Sprite: 图集已满标志,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,f,f,overflowFrames,Sprite: 图集满后经过帧数(>600触发重建),body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,f,g,needsRebuild,Sprite: 需要重建图集标志,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,f,h,cursorX,Sprite: 打包游标X(当前行下一可用像素列),body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,f,i,cursorY,Sprite: 打包游标Y,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,f,j,rowHeight,Sprite: 当前打包行最大高度,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,f,k,padding,Sprite: 区域间距(默认1),body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,f,l,regionCache,Sprite: 纹理→TextureFrame缓存(HashMap),body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,f,m,refreshQueue,Sprite: 待重绘纹理队列(ArrayList),body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,g,a,textureRef,Texture reference (e),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,g,b,frameX,Frame X offset (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,g,c,frameY,Frame Y offset (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,g,d,frameWidth,Frame width (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,g,e,frameHeight,Frame height (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,g,f,frameDuration,Frame display duration ms (int),verified-exists
+method,com.corrodinggames.rts.gameFramework.m,h,a,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.m.h,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.m,i,a,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.m.i,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.m,i,c,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.m.i,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.m,k,a,canvasTarget,Target canvas (Canvas),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,k,b,paintObject,Paint object (Paint),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,k,c,matrixObject,Matrix object (Matrix),verified-exists
+method,com.corrodinggames.rts.gameFramework.m,l,a,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.m.l,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.m,l,b,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.m.l,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.m,m,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.m.m,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.m,n,"a(Rect,Paint)",drawRect,NullRenderer: 空-绘制矩形(Rect),verified-exists
+method,com.corrodinggames.rts.gameFramework.m,n,"a(RectF,Paint)",drawRectF,NullRenderer: 空-绘制矩形(RectF),verified-exists
+method,com.corrodinggames.rts.gameFramework.m,n,a(Texture,Rect,Rect,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,n,a(int),clearScreenWithMode,NullRenderer: 空-清屏带混合模式; 逆5a-v19.133f98: exists-drop 重建,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,n,"b(float,float)",scale,NullRenderer: 空-缩放,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,n,a,restore,NullRenderer: 空-恢复状态,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,n,a(Rect),clipRect,NullRenderer: 空-裁剪(Rect),body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,n,a(RectF),clipRectF,NullRenderer: 空-裁剪(RectF),body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,n,a(Texture),bindTexture,NullRenderer: 空-绑定纹理,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,n,a(boolean),setBlendEnabled,NullRenderer: 设置混合开关,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,n,b,save,NullRenderer: 空-保存状态,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,n,b(int),clearScreen,NullRenderer: 空-清屏,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,n,c,isBlendEnabled,NullRenderer: 读取混合开关,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m,p,a,effectTypeA,Effect type A (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,b,effectTypeB,Effect type B (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,c,effectTypeC,Effect type C (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,d,effectTypeD,Effect type D (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,e,effectTypeE,Effect type E (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,f,effectTypeF,Effect type F (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,g,effectTypeG,Effect type G (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,h,effectTypeH,Effect type H (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,i,effectTypeI,Effect type I (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,j,effectTypeJ,Effect type J (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,k,effectTypeK,Effect type K (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,l,effectTypeL,Effect type L (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,m,effectTypeM,Effect type M (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,n,effectTypeN,Effect type N (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,o,effectTypeO,Effect type O (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,p,effectTypeP,Effect type P (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,q,effectTypeQ,Effect type Q (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,r,effectTypeR,Effect type R (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,s,effectTypeS,Effect type S (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,t,effectTypeT,Effect type T (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,u,effectTypeU,Effect type U (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,v,effectTypeV,Effect type V (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,w,effectTypeW,Effect type W (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,x,effectTypeX,Effect type X (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,y,effectTypeY,Effect type Y (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,p,z,effectTypeZ,Effect type Z (enum p),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,q,a,freeList,Free object list (ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,q,b,maxPoolSize,Maximum pool size (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,q,c,createdCount,Total created count (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,s,a,p,real-class-inferred: com.corrodinggames.rts.gameFramework.m.s,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.m,s,b,object,real-class-inferred: com.corrodinggames.rts.gameFramework.m.s,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.m,s,c,vertexShaderSource,Vertex shader GLSL source (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,s,d,fragmentShaderSource,Fragment shader GLSL source (String,verified-exists
+field,com.corrodinggames.rts.gameFramework.m,s,e,vertexPrecisionHint,Vertex precision hint (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,s,f,fragmentPrecisionHint,Fragment precision hint (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,s,g,programHandle,GL program handle (int),verified-exists
+method,com.corrodinggames.rts.gameFramework.m,t,a,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.m.t,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.m,x,"a(com.corrodinggames.rts.game.units.am,float,"" com.corrodinggames.rts.game.f)""",a_3p,,
+method,com.corrodinggames.rts.gameFramework.m,x,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.m.x,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.m,x,j,activeTexture,Active texture reference (e),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,x,x,context,Android context (private Context),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,x,y,rendererRefA,Renderer reference A (private l),verified-exists
+field,com.corrodinggames.rts.gameFramework.m,x,z,rendererRefB,Renderer reference B (private l),verified-exists
+method,com.corrodinggames.rts.gameFramework.m,y,"a(String,Paint)",getTextHeight,TextureManagerInterface: 文本行高,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,y,"b(String,Paint)",getTextWidth,TextureManagerInterface: 文本宽度,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,y,"b(float,float)",scale,,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,y,"b(int,int,boolean)",createRenderTarget,,verified-exists
+method,com.corrodinggames.rts.gameFramework.m,y,a,isGlAvailable,TextureManagerInterface: GL后端是否可用,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,a(Context),setContext,TextureManagerInterface: 设置Android Context,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,a(OpenGLRenderer),setGlEngine,TextureManagerInterface: 设置GL引擎,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,a(Rect),clipRect,TextureManagerInterface: 设置裁剪矩形,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,a(RectF),clipRectF,TextureManagerInterface: 设置裁剪矩形(浮点),body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,a(Renderer),setRenderer,TextureManagerInterface: 设置Renderer,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,a(Shader),bindShader,TextureManagerInterface: 绑定着色器,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,a(Texture),createRendererForTextureDirty,TextureManagerInterface: 创建子渲染器并标记dirty强制刷新,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,a(int),loadImageFromResource,TextureManagerInterface: 按资源ID加载图像,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,b,save,TextureManagerInterface: 保存画布状态,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,b(Texture),createRendererForTexture,TextureManagerInterface: 为纹理创建绑定子渲染器,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,b(int),clearScreen,TextureManagerInterface: 整屏填充颜色,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,c,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.m.y,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,d,getRenderer,TextureManagerInterface: 获取当前Renderer,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,e,flush,TextureManagerInterface: 刷新操作,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,g,flushShaders,TextureManagerInterface: 冲刷待绑定着色器,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,m,getCanvasWidth,TextureManagerInterface: 画布宽,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,n,getCanvasHeight,TextureManagerInterface: 画布高,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,o,clearAll,"""TextureManagerInterface: drawColor(0""",verified-exists
+method,com.corrodinggames.rts.gameFramework.m,y,r,getOomFallbackTexture,TextureManagerInterface: OOM回退纹理,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.m,y,s,getUiScale,TextureManagerInterface: UI缩放系数,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.m.e,f,A,flag0,[Phase3-inferred] type=boolean,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,B,flag1,[Phase3-inferred] type=boolean,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,C,flag2,[Phase3-inferred] type=boolean,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,D,flag3,[Phase3-inferred] type=boolean,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,E,flag4,[Phase3-inferred] type=boolean,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,F,value5,[Phase3-inferred] type=float,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,G,flag6,[Phase3-inferred] type=boolean,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,H,value7,[Phase3-inferred] type=float,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,I,value8,[Phase3-inferred] type=float,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,J,value9,[Phase3-inferred] type=float,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,K,value10,[Phase3-inferred] type=float,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,L,value11,[Phase3-inferred] type=float,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,M,flag12,[Phase3-inferred] type=boolean,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,N,value13,[Phase3-inferred] type=float,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,O,floatArray14,[Phase3-inferred] type=float[],unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,P,short15,[Phase3-inferred] type=short,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,Q,short16,[Phase3-inferred] type=short,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,R,short17,[Phase3-inferred] type=short,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,S,flag18,[Phase3-inferred] type=boolean,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m.e,f,T,flag19,[Phase3-inferred] type=boolean,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m.e,n,L,do_L,"""[Phase3-method] returns void""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m.e,n,O,do_O,"""[Phase3-method] returns void""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m.e,n,P,do_P,"""[Phase3-method] returns void""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m.e,n,Q,do_Q,"""[Phase3-method] returns void""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,a,<clinit>(),run,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,a,<init>(),register,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,A,scratchRectF3,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,B,paint,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,C,staticPaint,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,D,staticPaint2,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,E,staticRectF,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,a,x,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,a,a(),isVisible,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,b,y,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,a,b(float),render,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,a,c(float),update,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,d,unit,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,p,isStatic,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,x,scratchPoint,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,y,scratchRectF,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,a,z,scratchRectF2,"""(DrawEffect) 地图绘制特效: 静态实例列表 w""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,c,h,isPaused,"(EffectEngine) 特效引擎: 20 种精灵表,  固定数组池 e[]; 逆5b-v19.133f98: 保持-仅异域同名声明 (AIWaveParser 在 com/corrodinggames/rts/gameFramework/aicore), 语义存疑",suspicious-bc-missing
+method,com.corrodinggames.rts.gameFramework.d,d,"<init>(java.lang.String,int)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,d,<clinit>(),run,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,d,a,obj0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,d,j,objArray0,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,d,valueOf(java.lang.String),getResult,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,d,values(),getValue,"""(EffectType) 特效类型枚举 (9 种): 烟雾/火焰/爆炸/尾迹等""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,e,<clinit>(),run,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 方法 <clinit>() -> run,render-chain
+method,com.corrodinggames.rts.gameFramework.d,e,<init>(com.corrodinggames.rts.gameFramework.d.c),init,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 方法 <init>(com.corrodinggames.rts.gameFramework.d.c) -> init,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,B,obj76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 android.graphics.LightingColorFilter: obj76,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,D,count76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 int: count76,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,E,value76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 float: value76,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,H,isFlag76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isFlag76,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,a,template,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 com.corrodinggames.rts.game.units.custom.ay: template,render-chain
+method,com.corrodinggames.rts.gameFramework.d,e,a(),getPaint,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 方法 a() -> getPaint,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,aa,name76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 java.lang.String: name76,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,ab,paint76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 android.graphics.Paint: paint76,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,at,uniquePaint76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 com.corrodinggames.rts.gameFramework.m.ag: uniquePaint76,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,ax,objArray76,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 [com.corrodinggames.rts.gameFramework.m.ag: objArray76,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,ay,engine,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 com.corrodinggames.rts.gameFramework.d.c: engine,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,b,attachedObject,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 com.corrodinggames.rts.gameFramework.w: attachedObject,render-chain
+field,com.corrodinggames.rts.gameFramework.d,e,c,isActive,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 字段 boolean: isActive,render-chain
+method,com.corrodinggames.rts.gameFramework.d,e,c(),copyFromTemplate,(EffectInstance) 特效实例: 位置/速度/寿命/缩放/动画/颜色/附着对象 方法 c() -> copyFromTemplate,render-chain
+method,com.corrodinggames.rts.gameFramework.d,f,<init>(com.corrodinggames.rts.gameFramework.d.c),init,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 <init>(com.corrodinggames.rts.gameFramework.d.c) -> init,render-chain
+field,com.corrodinggames.rts.gameFramework.d,f,a,lifeTime,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: lifeTime,render-chain
+method,com.corrodinggames.rts.gameFramework.d,f,a(com.corrodinggames.rts.gameFramework.j.as),writeToStream,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 a(com.corrodinggames.rts.gameFramework.j.as) -> writeToStream,render-chain
+method,com.corrodinggames.rts.gameFramework.d,f,b(),initStaticEffects,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 b() -> initStaticEffects,render-chain
+field,com.corrodinggames.rts.gameFramework.d,f,c,intervalAccum,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: intervalAccum,render-chain
+method,com.corrodinggames.rts.gameFramework.d,f,c(),isInView,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 c() -> isInView,render-chain
+field,com.corrodinggames.rts.gameFramework.d,f,d,burstTimer,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: burstTimer,render-chain
+method,com.corrodinggames.rts.gameFramework.d,f,d(float),onUpdate,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 d(float) -> onUpdate,render-chain
+field,com.corrodinggames.rts.gameFramework.d,f,e,burstCount,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: burstCount,render-chain
+method,com.corrodinggames.rts.gameFramework.d,f,e(float),onDrawEnd,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 e(float) -> onDrawEnd,render-chain
+field,com.corrodinggames.rts.gameFramework.d,f,f,burstInterval,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 字段 float: burstInterval,render-chain
+method,com.corrodinggames.rts.gameFramework.d,f,f(float),isExpired,(EffectEmitter) 粒子发射器 (extends gameFramework.w): 周期性生成尾迹/烟雾/火焰特效 方法 f(float) -> isExpired,render-chain
+method,com.corrodinggames.rts.gameFramework.d,g,<clinit>(),run,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,g,<init>(),createDarkCopy,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,g,a(),init,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,g,b,frameWidth,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,g,c,frameHeight,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,g,d,offsetX,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,g,j,darkTexture,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,g,k,hasDarkCopy,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,g,m,staticDstRectF,"""(EffectSpriteSheet) 特效精灵表: 纹理 + 暗色副本 + 帧尺寸网格""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,h,"<init>(java.lang.String,int)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,h,<clinit>(),run,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.d,h,a,obj0,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,h,a(com.corrodinggames.rts.gameFramework.d.h),getResult,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.d,h,values(),getValue,"""(DrawLayer) 绘制层级枚举 (5 层): a<b<c<d<e""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,a,<clinit>(),run,"""(GLRenderEngine) OpenGL 渲染主循环: 帧缓冲/绘制计数/FPS""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,a,a,isFlag18,"""(GLRenderEngine) OpenGL 渲染主循环: 帧缓冲/绘制计数/FPS""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,a,b,obj18,"""(GLRenderEngine) OpenGL 渲染主循环: 帧缓冲/绘制计数/FPS""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,a,c,value18,"""(GLRenderEngine) OpenGL 渲染主循环: 帧缓冲/绘制计数/FPS""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,a,e,count18,"""(GLRenderEngine) OpenGL 渲染主循环: 帧缓冲/绘制计数/FPS""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,a,g,objArray18,"""(GLRenderEngine) OpenGL 渲染主循环: 帧缓冲/绘制计数/FPS""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,a,o,name18,"""(GLRenderEngine) OpenGL 渲染主循环: 帧缓冲/绘制计数/FPS""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,a,onDrawFrame(javax.microedition.khronos.opengles.GL10),handle,"""(GLRenderEngine) OpenGL 渲染主循环: 帧缓冲/绘制计数/FPS""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,a,p,time18,"""(GLRenderEngine) OpenGL 渲染主循环: 帧缓冲/绘制计数/FPS""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,aa,<clinit>(),run,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,aa,a,charCount,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,aa,a(com.corrodinggames.rts.gameFramework.m.e),getResult,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,aa,b,charSpacing,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,aa,b(int),getInts,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,aa,c,lineHeight,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,aa,d,baseline,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,aa,e,charRect,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,aa,f,glyphTextures,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,aa,g,paint,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,aa,h,srcRect,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,aa,i,dstRect,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,aa,j,drawRectF,"""(FontRenderer) 文本渲染: 字形纹理集""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ab,<init>(),run,(GlyphTexture) 字形纹理: 字符到纹理子区域的映射 方法 <init>() -> run,render-chain
+field,com.corrodinggames.rts.gameFramework.m,ab,a,count0,(GlyphTexture) 字形纹理: 字符到纹理子区域的映射 字段 int: count0,render-chain
+field,com.corrodinggames.rts.gameFramework.m,ab,c,isFlag0,(GlyphTexture) 字形纹理: 字符到纹理子区域的映射 字段 boolean: isFlag0,render-chain
+method,com.corrodinggames.rts.gameFramework.m,ab,clone(),getValue,(GlyphTexture) 字形纹理: 字符到纹理子区域的映射 方法 clone() -> getValue,render-chain
+field,com.corrodinggames.rts.gameFramework.m,ab,d,texture0,(GlyphTexture) 字形纹理: 字符到纹理子区域的映射 字段 com.corrodinggames.rts.gameFramework.m.e: texture0,render-chain
+method,com.corrodinggames.rts.gameFramework.m,ac,"b(javax.microedition.khronos.opengles.GL10, boolean, boolean)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ac,<clinit>(),run,(GLBuffer) GLES 缓冲对象: FloatBuffer/IntBuffer/CharBuffer 顶点数据 方法 <clinit>() -> run,render-chain
+field,com.corrodinggames.rts.gameFramework.m,ac,a,isFlag19,(GLBuffer) GLES 缓冲对象: FloatBuffer/IntBuffer/CharBuffer 顶点数据 字段 boolean: isFlag19,render-chain
+method,com.corrodinggames.rts.gameFramework.m,ad,<init>(com.corrodinggames.rts.gameFramework.m.e),handle,"""(MutableBitmapOrTexture) 可变 Bitmap/纹理: 包装 e 纹理""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ad,B(),getValue,"""(MutableBitmapOrTexture) 可变 Bitmap/纹理: 包装 e 纹理""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ad,a(),getName,"""(MutableBitmapOrTexture) 可变 Bitmap/纹理: 包装 e 纹理""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ad,g(),run,"""(MutableBitmapOrTexture) 可变 Bitmap/纹理: 包装 e 纹理""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ad,l(),getCount,"""(MutableBitmapOrTexture) 可变 Bitmap/纹理: 包装 e 纹理""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ad,x,texture,"""(MutableBitmapOrTexture) 可变 Bitmap/纹理: 包装 e 纹理""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ae,<init>(java.lang.String),handle,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,c,vertSource,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,d,fragSource,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ae,d(),run,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,e,vertPath,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ae,e(),isReady,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,f,fragPath,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,g,programId,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,h,fragId,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,i,name,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,j,reloadLog,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,k,lastReload,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,l,compileTime,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,m,isCompiled,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,n,uniformCount,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,o,attribCount,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,p,uniforms,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,q,userData,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,r,lastError,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ae,s,version,"""(Shader) GLSL 着色器程序: 从 assets/shaders/ 加载""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,af,<init>(),run,(ShaderUniform) uniform 值持有者: 名称 + 类型 + 值数组 + 目标纹理 方法 <init>() -> run,render-chain
+method,com.corrodinggames.rts.gameFramework.m,af,a(float),update,(ShaderUniform) uniform 值持有者: 名称 + 类型 + 值数组 + 目标纹理 方法 a(float) -> update,render-chain
+method,com.corrodinggames.rts.gameFramework.m,af,b(com.corrodinggames.rts.gameFramework.m.e),handle,(ShaderUniform) uniform 值持有者: 名称 + 类型 + 值数组 + 目标纹理 方法 b(com.corrodinggames.rts.gameFramework.m.e) -> handle,render-chain
+method,com.corrodinggames.rts.gameFramework.m,ag,<clinit>(),run,"""(UniquePaint) 线程安全 Paint 包装: 加锁后禁止修改""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ag,a(android.graphics.Typeface),getResult,"""(UniquePaint) 线程安全 Paint 包装: 加锁后禁止修改""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ag,b(float),update,"""(UniquePaint) 线程安全 Paint 包装: 加锁后禁止修改""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ag,p(),isReady,"""(UniquePaint) 线程安全 Paint 包装: 加锁后禁止修改""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,ag,q(),getValue,"""(UniquePaint) 线程安全 Paint 包装: 加锁后禁止修改""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ag,r,uniquePaint1,"""(UniquePaint) 线程安全 Paint 包装: 加锁后禁止修改""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ag,s,isFlag1,"""(UniquePaint) 线程安全 Paint 包装: 加锁后禁止修改""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,ag,t,obj1,"""(UniquePaint) 线程安全 Paint 包装: 加锁后禁止修改""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,b,a,mode,(GL10DrawCall) GLES1 绘制调用: glBindTexture/glTranslatef 上传单个四边形 (m.a 的内部类) 字段 com.corrodinggames.rts.gameFramework.m.d: mode,render-chain
+method,com.corrodinggames.rts.gameFramework.m,b,a(javax.microedition.khronos.opengles.GL10),handle,(GL10DrawCall) GLES1 绘制调用: glBindTexture/glTranslatef 上传单个四边形 (m.a 的内部类) 方法 a(javax.microedition.khronos.opengles.GL10) -> handle,render-chain
+field,com.corrodinggames.rts.gameFramework.m,b,b,texture,(GL10DrawCall) GLES1 绘制调用: glBindTexture/glTranslatef 上传单个四边形 (m.a 的内部类) 字段 com.corrodinggames.rts.gameFramework.m.e: texture,render-chain
+field,com.corrodinggames.rts.gameFramework.m,b,c,x,(GL10DrawCall) GLES1 绘制调用: glBindTexture/glTranslatef 上传单个四边形 (m.a 的内部类) 字段 float: x,render-chain
+field,com.corrodinggames.rts.gameFramework.m,b,d,y,(GL10DrawCall) GLES1 绘制调用: glBindTexture/glTranslatef 上传单个四边形 (m.a 的内部类) 字段 float: y,render-chain
+field,com.corrodinggames.rts.gameFramework.m,b,e,srcRect,(GL10DrawCall) GLES1 绘制调用: glBindTexture/glTranslatef 上传单个四边形 (m.a 的内部类) 字段 android.graphics.Rect: srcRect,render-chain
+field,com.corrodinggames.rts.gameFramework.m,b,f,dstRect,(GL10DrawCall) GLES1 绘制调用: glBindTexture/glTranslatef 上传单个四边形 (m.a 的内部类) 字段 android.graphics.RectF: dstRect,render-chain
+field,com.corrodinggames.rts.gameFramework.m,b,g,owner,(GL10DrawCall) GLES1 绘制调用: glBindTexture/glTranslatef 上传单个四边形 (m.a 的内部类) 字段 com.corrodinggames.rts.gameFramework.m.a: owner,render-chain
+field,com.corrodinggames.rts.gameFramework.m,c,a,drawCalls,(GL10DrawBatch) GLES1 绘制批次队列: b[] 批次 + 计数 字段 [com.corrodinggames.rts.gameFramework.m.b: drawCalls,render-chain
+field,com.corrodinggames.rts.gameFramework.m,c,b,count,(GL10DrawBatch) GLES1 绘制批次队列: b[] 批次 + 计数 字段 int: count,render-chain
+method,com.corrodinggames.rts.gameFramework.m,d,"<init>(java.lang.String,int)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,d,<clinit>(),run,"""(GLDrawMode) GLES1 绘制模式枚举: a=顶点模式""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,d,a,obj0,"""(GLDrawMode) GLES1 绘制模式枚举: a=顶点模式""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,d,c,objArray0,"""(GLDrawMode) GLES1 绘制模式枚举: a=顶点模式""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,d,valueOf(java.lang.String),getResult,"""(GLDrawMode) GLES1 绘制模式枚举: a=顶点模式""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,d,values(),getValue,"""(GLDrawMode) GLES1 绘制模式枚举: a=顶点模式""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,e,<init>(),run,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 方法 <init>() -> run,render-chain
+method,com.corrodinggames.rts.gameFramework.m,e,A(),isReady,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 方法 A() -> isReady,render-chain
+field,com.corrodinggames.rts.gameFramework.m,e,a,teamVariants,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 字段 [com.corrodinggames.rts.gameFramework.m.e: teamVariants,render-chain
+method,com.corrodinggames.rts.gameFramework.m,e,a(com.corrodinggames.rts.game.o),getResult,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 方法 a(com.corrodinggames.rts.game.o) -> getResult,render-chain
+method,com.corrodinggames.rts.gameFramework.m,e,clone(),getValue,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 方法 clone() -> getValue,render-chain
+field,com.corrodinggames.rts.gameFramework.m,e,d,sourceHeight,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 字段 int: sourceHeight,render-chain
+field,com.corrodinggames.rts.gameFramework.m,e,i,shader,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 字段 com.corrodinggames.rts.gameFramework.m.ae: shader,render-chain
+field,com.corrodinggames.rts.gameFramework.m,e,j,pixelData,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 字段 [int: pixelData,render-chain
+field,com.corrodinggames.rts.gameFramework.m,e,l,isTeamColorized,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 字段 boolean: isTeamColorized,render-chain
+method,com.corrodinggames.rts.gameFramework.m,e,l(),getCount,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 方法 l() -> getCount,render-chain
+field,com.corrodinggames.rts.gameFramework.m,e,m,isDisposed,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 字段 boolean: isDisposed,render-chain
+field,com.corrodinggames.rts.gameFramework.m,e,p,width,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 字段 int: width,render-chain
+field,com.corrodinggames.rts.gameFramework.m,e,r,texCoordX,(Texture) 核心纹理类: Android Bitmap / GL 句柄 / 团队色变体数组 / 可选 Shader 字段 int: texCoordX,render-chain
+method,com.corrodinggames.rts.gameFramework.m,f,"<init>(int,int)",setInts,,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,f,b,obj13,(BitmapOrTextureAlias) Bitmap/GL 纹理别名: 记录目标 Bitmap 并在源图更新时刷新 字段 com.corrodinggames.rts.gameFramework.m.y: obj13,render-chain
+method,com.corrodinggames.rts.gameFramework.m,f,b(),run,(BitmapOrTextureAlias) Bitmap/GL 纹理别名: 记录目标 Bitmap 并在源图更新时刷新 方法 b() -> run,render-chain
+method,com.corrodinggames.rts.gameFramework.m,g,<init>(),run,(TextureFrame) 纹理子区域/帧: 纹理 + 源矩形 + 缩放 方法 <init>() -> run,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,A,isShaderGreenLoaded,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 boolean: isShaderGreenLoaded,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,B,isShaderHueAddLoaded,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 boolean: isShaderHueAddLoaded,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,C,isShaderHueShiftLoaded,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 boolean: isShaderHueShiftLoaded,render-chain
+method,com.corrodinggames.rts.gameFramework.m,h,C(),run,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 方法 C() -> run,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,D,teamColor,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 int: teamColor,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,E,coloringMode,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 int: coloringMode,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,F,environment,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 com.corrodinggames.rts.game.o: environment,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,G,coloringAmount,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 float: coloringAmount,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,H,baseImage,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 com.corrodinggames.rts.gameFramework.m.e: baseImage,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,I,coloredImage,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 com.corrodinggames.rts.gameFramework.m.e: coloredImage,render-chain
+method,com.corrodinggames.rts.gameFramework.m,h,a(),getName,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 方法 a() -> getName,render-chain
+method,com.corrodinggames.rts.gameFramework.m,h,b(),getValue,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 方法 b() -> getValue,render-chain
+method,com.corrodinggames.rts.gameFramework.m,h,c(boolean),setEnabled,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 方法 c(boolean) -> setEnabled,render-chain
+method,com.corrodinggames.rts.gameFramework.m,h,u(),getCount,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 方法 u() -> getCount,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,x,shaderGreen,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 com.corrodinggames.rts.gameFramework.m.ae: shaderGreen,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,y,shaderHueAdd,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 com.corrodinggames.rts.gameFramework.m.ae: shaderHueAdd,render-chain
+field,com.corrodinggames.rts.gameFramework.m,h,z,shaderHueShift,(TeamColorTexture) 队伍颜色纹理: 3 个着色器 (pureGreen/hueAdd/hueShift) 懒加载团队色变体 字段 com.corrodinggames.rts.gameFramework.m.ae: shaderHueShift,render-chain
+method,com.corrodinggames.rts.gameFramework.m,i,"<init>(java.lang.String,boolean)",handle,,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,i,b,isReady,"""(TeamColorShader) 队伍颜色 Shader (extends m.ae): 设置 ""teamColor"" uniform 字段 boolean: isReady""",render-chain
+method,com.corrodinggames.rts.gameFramework.m,i,c(),run,"""(TeamColorShader) 队伍颜色 Shader (extends m.ae): 设置 ""teamColor"" uniform 方法 c() -> run""",render-chain
+method,com.corrodinggames.rts.gameFramework.m,j,<init>(android.graphics.Canvas),handle,(CanvasRenderer) Android Canvas 渲染后端 (implements m.l) 方法 <init>(android.graphics.Canvas) -> handle,render-chain
+field,com.corrodinggames.rts.gameFramework.m,j,a,canvas,(CanvasRenderer) Android Canvas 渲染后端 (implements m.l) 字段 android.graphics.Canvas: canvas,render-chain
+field,com.corrodinggames.rts.gameFramework.m,j,b,isClip,(CanvasRenderer) Android Canvas 渲染后端 (implements m.l) 字段 boolean: isClip,render-chain
+method,com.corrodinggames.rts.gameFramework.m,j,b(),run,(CanvasRenderer) Android Canvas 渲染后端 (implements m.l) 方法 b() -> run,render-chain
+method,com.corrodinggames.rts.gameFramework.m,j,c(),isReady,(CanvasRenderer) Android Canvas 渲染后端 (implements m.l) 方法 c() -> isReady,render-chain
+method,com.corrodinggames.rts.gameFramework.m,j,equals(java.lang.Object),getResult,(CanvasRenderer) Android Canvas 渲染后端 (implements m.l) 方法 equals(java.lang.Object) -> getResult,render-chain
+method,com.corrodinggames.rts.gameFramework.m,j,hashCode(),getCount,(CanvasRenderer) Android Canvas 渲染后端 (implements m.l) 方法 hashCode() -> getCount,render-chain
+method,com.corrodinggames.rts.gameFramework.m,j,toString(),getName,(CanvasRenderer) Android Canvas 渲染后端 (implements m.l) 方法 toString() -> getName,render-chain
+method,com.corrodinggames.rts.gameFramework.m,k,<clinit>(),run,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,k,a(android.graphics.Paint),getResult,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,k,b(com.corrodinggames.rts.gameFramework.m.e),handle,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,k,c(),isReady,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,d,isGlMode,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,e,srcRect,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,f,dstRectF,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,g,glShader,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,h,clipRectF,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,k,hashCode(),getCount,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,i,vertices,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,j,currentTexture,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,k,clipRect,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,l,paint,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,m,drawRect,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,n,fallbackTexture,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,k,o,isInDraw,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,k,toString(),getName,"""(BitmapDrawer) Bitmap 渲染工具: 将 Bitmap/Texture 绘制到 Canvas""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,l,a(boolean),setEnabled,(Renderer) 渲染抽象接口: drawBitmap/裁剪/矩阵操作 (Canvas 与 GL 后端共用) 方法 a(boolean) -> setEnabled,render-chain
+method,com.corrodinggames.rts.gameFramework.m,l,b(),run,(Renderer) 渲染抽象接口: drawBitmap/裁剪/矩阵操作 (Canvas 与 GL 后端共用) 方法 b() -> run,render-chain
+method,com.corrodinggames.rts.gameFramework.m,l,c(),isReady,(Renderer) 渲染抽象接口: drawBitmap/裁剪/矩阵操作 (Canvas 与 GL 后端共用) 方法 c() -> isReady,render-chain
+method,com.corrodinggames.rts.gameFramework.m,m,<init>(),run,(DrawCommand) 抽象绘制指令基类: a(y) 执行绘制 方法 <init>() -> run,render-chain
+method,com.corrodinggames.rts.gameFramework.m,m,a(com.corrodinggames.rts.gameFramework.m.y),handle,(DrawCommand) 抽象绘制指令基类: a(y) 执行绘制 方法 a(com.corrodinggames.rts.gameFramework.m.y) -> handle,render-chain
+method,com.corrodinggames.rts.gameFramework.m,n,<init>(),run,"""(NullRenderer) 空渲染器回退 (implements m.l""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,n,a,isNull,"""(NullRenderer) 空渲染器回退 (implements m.l""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,n,a(android.graphics.Rect),handle,"""(NullRenderer) 空渲染器回退 (implements m.l""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,n,c(),isReady,"""(NullRenderer) 空渲染器回退 (implements m.l""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,o,<init>(),run,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,o,a,renderer,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,o,b,commandCount,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,o,c,commandQueue,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,o,c(),isReady,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,o,d,poolDrawBitmap,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,o,e,poolDrawBitmapTinted,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,o,f,poolDrawRect,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,o,g,poolDrawText,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,o,h,poolDrawOther,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,o,i,saveStack,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,o,j,saveStackSize,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,o,k,isRecording,"""(DrawContext) 绘制上下文 (对象池): 命令队列 + 保存栈""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,p,"<init>(java.lang.String,int)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,p,<clinit>(),run,(DrawCommandType) 绘制命令枚举 (72 种): 每帧录制 drawBitmap/drawRect/drawText 等指令 方法 <clinit>() -> run,render-chain
+field,com.corrodinggames.rts.gameFramework.m,p,A,obj0,(DrawCommandType) 绘制命令枚举 (72 种): 每帧录制 drawBitmap/drawRect/drawText 等指令 字段 com.corrodinggames.rts.gameFramework.m.p: obj0,render-chain
+field,com.corrodinggames.rts.gameFramework.m,p,au,objArray0,(DrawCommandType) 绘制命令枚举 (72 种): 每帧录制 drawBitmap/drawRect/drawText 等指令 字段 [com.corrodinggames.rts.gameFramework.m.p: objArray0,render-chain
+method,com.corrodinggames.rts.gameFramework.m,p,valueOf(java.lang.String),getResult,(DrawCommandType) 绘制命令枚举 (72 种): 每帧录制 drawBitmap/drawRect/drawText 等指令 方法 valueOf(java.lang.String) -> getResult,render-chain
+method,com.corrodinggames.rts.gameFramework.m,p,values(),getValue,(DrawCommandType) 绘制命令枚举 (72 种): 每帧录制 drawBitmap/drawRect/drawText 等指令 方法 values() -> getValue,render-chain
+method,com.corrodinggames.rts.gameFramework.m,q,<init>(java.lang.Class),handle,"""(ObjectPool) 类型化对象池: 预分配实例""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,q,a(android.graphics.Rect),getResult,"""(ObjectPool) 类型化对象池: 预分配实例""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,r,<init>(),run,(DrawCommandMarker) 绘制命令标记 (空 final 类) 方法 <init>() -> run,render-chain
+method,com.corrodinggames.rts.gameFramework.m,s,<init>(com.corrodinggames.rts.gameFramework.m.o),handle,(DrawCommandEntry) 绘制命令条目: 命令类型 + 参数数组 + 坐标矩形 (m.o 内部类) 方法 <init>(com.corrodinggames.rts.gameFramework.m.o) -> handle,render-chain
+method,com.corrodinggames.rts.gameFramework.m,t,<init>(int),setInts,(DrawCommandList) 绘制命令列表容器: 条目数组 + 大小 (容量检查) 方法 <init>(int) -> setInts,render-chain
+field,com.corrodinggames.rts.gameFramework.m,t,a,size,(DrawCommandList) 绘制命令列表容器: 条目数组 + 大小 (容量检查) 字段 int: size,render-chain
+method,com.corrodinggames.rts.gameFramework.m,t,a(com.corrodinggames.rts.gameFramework.m.s),getResult,(DrawCommandList) 绘制命令列表容器: 条目数组 + 大小 (容量检查) 方法 a(com.corrodinggames.rts.gameFramework.m.s) -> getResult,render-chain
+field,com.corrodinggames.rts.gameFramework.m,t,b,entries,(DrawCommandList) 绘制命令列表容器: 条目数组 + 大小 (容量检查) 字段 [com.corrodinggames.rts.gameFramework.m.s: entries,render-chain
+method,com.corrodinggames.rts.gameFramework.m,u,<init>(),run,(RendererBase) 渲染器抽象基类 (implements m.l) 方法 <init>() -> run,render-chain
+method,com.corrodinggames.rts.gameFramework.m,v,<init>(com.corrodinggames.rts.gameFramework.m.w),handle,"""(CustomColorFilter) 自定义 ColorFilter (extends android.graphics.ColorFilter)""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,v,a,mode,"""(CustomColorFilter) 自定义 ColorFilter (extends android.graphics.ColorFilter)""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,w,"<init>(java.lang.String,int)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,w,<clinit>(),run,(ColorFilterMode) 颜色滤镜模式枚举 (3 种) 方法 <clinit>() -> run,render-chain
+field,com.corrodinggames.rts.gameFramework.m,w,a,obj0,(ColorFilterMode) 颜色滤镜模式枚举 (3 种) 字段 com.corrodinggames.rts.gameFramework.m.w: obj0,render-chain
+field,com.corrodinggames.rts.gameFramework.m,w,d,objArray0,(ColorFilterMode) 颜色滤镜模式枚举 (3 种) 字段 [com.corrodinggames.rts.gameFramework.m.w: objArray0,render-chain
+method,com.corrodinggames.rts.gameFramework.m,w,valueOf(java.lang.String),getResult,(ColorFilterMode) 颜色滤镜模式枚举 (3 种) 方法 valueOf(java.lang.String) -> getResult,render-chain
+method,com.corrodinggames.rts.gameFramework.m,w,values(),getValue,(ColorFilterMode) 颜色滤镜模式枚举 (3 种) 方法 values() -> getValue,render-chain
+method,com.corrodinggames.rts.gameFramework.m,x,<clinit>(),run,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,A,glEngine,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,B,instance,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,a,self,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,x,a(com.corrodinggames.rts.gameFramework.m.e),getResult,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,b,loadingTexture,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,c,loadedIds,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,x,c(),isReady,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,d,scratchBitmap,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,x,d(),getValue,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,e,texBuffer,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,f,texBuffer2,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,g,isInitialized,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,h,isGlAvailable,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,i,errorBitmap,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,k,maxTextureSize,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,l,textureCount,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,m,srcRect,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,x,m(),getCount,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,n,dstRect,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,o,srcRectF,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,p,dstRectF,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,q,transform,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,r,textRectF,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,s,currentTexture,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,t,drawRectF,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,u,clipRectF,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,v,textureCache,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.m,x,w,clipRect,"""(TextureManager) 主纹理/资源管理器: 加载/缓存/绘制""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,y,"c(android.graphics.Rect,android.graphics.Paint)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,y,a(com.corrodinggames.rts.gameFramework.m.e),getResult,(IRenderEngine) 渲染引擎接口: 纹理加载 + 绘制 + 裁剪 + Shader 绑定 (TextureManager 实现) 方法 a(com.corrodinggames.rts.gameFramework.m.e) -> getResult,render-chain
+method,com.corrodinggames.rts.gameFramework.m,y,d(),getValue,(IRenderEngine) 渲染引擎接口: 纹理加载 + 绘制 + 裁剪 + Shader 绑定 (TextureManager 实现) 方法 d() -> getValue,render-chain
+method,com.corrodinggames.rts.gameFramework.m,y,e(),run,(IRenderEngine) 渲染引擎接口: 纹理加载 + 绘制 + 裁剪 + Shader 绑定 (TextureManager 实现) 方法 e() -> run,render-chain
+method,com.corrodinggames.rts.gameFramework.m,y,m(),getCount,(IRenderEngine) 渲染引擎接口: 纹理加载 + 绘制 + 裁剪 + Shader 绑定 (TextureManager 实现) 方法 m() -> getCount,render-chain
+method,com.corrodinggames.rts.gameFramework.m,z,"c(android.graphics.Rect,android.graphics.Paint)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.m,z,<init>(),run,(TextureManagerGL) GL 渲染引擎实现 (implements m.y): Bitmap/纹理上传到 OpenGL 方法 <init>() -> run,render-chain
+field,com.corrodinggames.rts.gameFramework.m,z,a,texture1,(TextureManagerGL) GL 渲染引擎实现 (implements m.y): Bitmap/纹理上传到 OpenGL 字段 com.corrodinggames.rts.gameFramework.m.e: texture1,render-chain
+method,com.corrodinggames.rts.gameFramework.m,z,a(com.corrodinggames.rts.gameFramework.m.e),getResult,(TextureManagerGL) GL 渲染引擎实现 (implements m.y): Bitmap/纹理上传到 OpenGL 方法 a(com.corrodinggames.rts.gameFramework.m.e) -> getResult,render-chain
+method,com.corrodinggames.rts.gameFramework.m,z,d(),getValue,(TextureManagerGL) GL 渲染引擎实现 (implements m.y): Bitmap/纹理上传到 OpenGL 方法 d() -> getValue,render-chain
+method,com.corrodinggames.rts.gameFramework.m,z,m(),getCount,(TextureManagerGL) GL 渲染引擎实现 (implements m.y): Bitmap/纹理上传到 OpenGL 方法 m() -> getCount,render-chain
+method,com.corrodinggames.rts.gameFramework.d,c,a(int),allocateByPriority,按优先级分配粒子。T0: c/java 优先级上限 b=80/c=100/d=110/e=120,verified
+method,com.corrodinggames.rts.gameFramework.d,c,a(Context),loadTextures,加载粒子纹理。T0: c/java 池容量 n2=500桌面/350移动,verified
+method,com.corrodinggames.rts.gameFramework.d,c,a(String),textureIndexLookup,"纹理名查索引。T0: 20纹理(""effects""",verified
+method,com.corrodinggames.rts.gameFramework.d,c,a(float),updateEffects,v19.106 agentJ修正: 粒子特效引擎每帧更新 (原update占位错误),verified
+method,com.corrodinggames.rts.gameFramework.d,c,b(float),draw,粒子系统绘制。T0: c/java,verified
+method,com.corrodinggames.rts.gameFramework.d,c,"a(float,int)",drawLayer,,verified
+method,com.corrodinggames.rts.gameFramework.d,c,a(boolean),removeAll,"清空所有粒子。T0: c/java:894 日志 ""EffectEngine::removeAll""",verified
+method,com.corrodinggames.rts.gameFramework.d,c,"b(float,float,float)",verified,,
+field,com.corrodinggames.rts.gameFramework.d,c,a,activeCount,活动粒子数。T0: c/java:21,verified
+method,com.corrodinggames.rts.gameFramework.d,a,b(),isValid,蓝图是否有效。T0: d/a.java,verified
+method,com.corrodinggames.rts.gameFramework.d,a,"a(n,RectF,int)",verified,,
+method,com.corrodinggames.rts.gameFramework.d,a,"a(y,y)",overlapCheck,,verified
+method,com.corrodinggames.rts.gameFramework.d,b,a(),isEnabled,云层渲染开关。T0: d/b.java renderClouds,verified
+method,com.corrodinggames.rts.gameFramework.d,b,b(),initTexture,初始化噪声纹理。T0: d/b.java R$drawable.noise,verified
+method,com.corrodinggames.rts.gameFramework.d,b,a(float),updateClouds,v19.106 agentJ修正: 云层渲染更新 (原update占位错误),verified
+method,com.corrodinggames.rts.gameFramework.d,b,b(float),draw,云层绘制。T0: d/b.java,verified
+method,gameFramework.m.e,e,j(),initPixelBuffer,v19.113n: 02b m/e:164 位图缓冲初始化 (k!=null||!aU||aX → j=new int[p*q]) — 03缺失补插,bytecode-verified
+method,gameFramework.m.e,e,l(),getHeight,v19.113n: 02b m/e:190 return q (03缺失补插),bytecode-verified
+method,gameFramework.m.e,e,m(),getWidth,v19.113n: 02b m/e:194 return p (03缺失补插),bytecode-verified
+method,gameFramework.effects,f,a(),spawnEffectAt,"v19.113n: 02b d.f.a(eo,ep) 地图特效 (03误名EffectInstance — 真身DrawEffect d.f)",bytecode-verified
+method,com.corrodinggames.rts.gameFramework.b,o,a(int),loadHandle,"证据串自报名(ldc 绑定, A 级)；描述符 (I)V",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.b,s,a(int),loadHandle,"证据串自报名(ldc 绑定, A 级)；描述符 (I)V",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.d,b,b,reset2,"RS-34 第 59 轮：由「(我方名,描述符) vs (stock 名,描述符) 只差名字」机械推出",derived-bytecode-v19.133f99

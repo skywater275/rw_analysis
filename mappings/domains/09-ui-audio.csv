@@ -1,0 +1,434 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,com.corrodinggames.rts.gameFramework.f,e,a,resultLabel,Result label (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,e,b,resultValue,Result value (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,e,c,scoreValue,Score value (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,e,d,survivalWaves,Survival waves survived (float),verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,A,hasBuilderSelected,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Any builder unit in selection,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,B,hasFactorySelected,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Any factory unit in selection,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,C,hasTransporterSelected,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Any transport unit in selection,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,D,canAllBuild,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] All selected units can build,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,H,resign,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Handle resign action,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,I,setPingAction,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Set uiStateTracker to map ping action,type-aware-fp-v19.114
+method,com.corrodinggames.rts.gameFramework.f,g,J,isNotPlacing,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Not in build placement mode,type-aware-fp-v19.114
+method,com.corrodinggames.rts.gameFramework.f,g,K,invalidateUI,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Trigger UI redraw on next frame,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,e,clearActionPanel,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Clear action panel contents,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,f,setupDebugModes,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Configure debug overlay flags,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,g,clearSelection,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Clear selection group and waypoints,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,i,getDebugFactory,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Get currently selected debug editor factory,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,j,emptyUpdate,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Empty update method (no-op),verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,k,drawNoButton,"[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Draw No/Cancel button,  return hover state",verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,u,canAnySelectedBuild,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Can any selected unit build something,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,v,issueStopCommand,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Issue stop command to all selected units,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,w,createCommand,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Create command object from command pool,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,x,createCommandAll,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Create command for all selected units,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,y,clearFullSelection,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Clear entire selection: deselect all units,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,z,getLastSelectedCustomType,[[MANUAL: InGameUI overload - needs source reading]: multi-overload — needs manual disambiguation] Get custom unit type of last selected unit,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,ad,a,arraySize,Array size (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,ad,b,dataArray,Data array (private int[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,ad,c,markPosition,Mark position (private int  -1=none),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,p,a,minimapWidth,Minimap width (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,p,b,minimapHeight,Minimap height (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,p,c,worldScaleX,"World scale X (float,  default 1.0)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f,p,d,worldScaleY,"World scale Y (float,  default 1.0)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f,p,e,renderMode,"Render mode enum (r,  default r.a)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f,q,a,isVisible,Visible flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,q,b,markerX,Marker X position (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,q,c,markerY,Marker Y position (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,q,d,markerRadius,Marker radius (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,q,e,markerValue,Marker value (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,t,a,tileX,Tile X coordinate (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,t,b,tileY,Tile Y coordinate (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,t,c,lastDrawFrame,Last drawn frame (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,t,d,tileColor,Tile color ARGB (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,t,e,needsRedraw,Needs redraw flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,aa,a,historySource,LineGraphStyle: TeamHistory data source,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,aa,b,displayName,LineGraphStyle: team display name,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,aa,c,teamColor,LineGraphStyle: ARGB team color,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,aa,d,linePaints,LineGraphStyle: Paint[11] alpha-bucketed line paints,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,aa,e,fillPaints,LineGraphStyle: Paint[11] fill paints (width 5),body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,ab,a,dataSeries,Data series array (ArrayList),verified-exists
+method,com.corrodinggames.rts.gameFramework.f,ab,a(ArrayList),buildMergedSeries,StatsGraph: sweep-line merge series for relative view,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,ab,b,graphType,Graph type enum (bj),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,ab,c,minValue,Minimum display value (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,ab,d,maxValue,Maximum display value (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,ab,e,sampleCount,Sample count (int),verified-exists
+method,com.corrodinggames.rts.gameFramework.f,ae,a,setValue,real-class-inferred: com.corrodinggames.rts.gameFramework.f.ae,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,ae,b,secondaryColor,Secondary theme color (static Paint),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,ae,c,accentColor,Accent/highlight color (static Paint),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,ae,d,paint1,real-class-inferred: com.corrodinggames.rts.gameFramework.f.ae,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.f,am,a(as),writeToPacket,"SelectionGroup: network write: hold time,  lastAccess",verified-exists
+method,com.corrodinggames.rts.gameFramework.f,am,a(k),readFromPacket,"""SelectionGroup: network read""",verified-exists
+method,com.corrodinggames.rts.gameFramework.f,am,b,clearSelection,SelectionGroup: this.a.clear(),body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,am,bD,field_bD,"P3.1-inferred: type=boolean, was=flag3",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.f,am,bE,field_bE,"P3.1-inferred: type=com.corrodinggames.rts.gameFramework.utility.u, was=u4",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.f,am,bL,field_bL,"P3.1-inferred: type=boolean, was=flag11",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.f,am,bM,field_bM,"P3.1-inferred: type=boolean, was=flag12",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.f,am,bN,field_bN,"P3.1-inferred: type=boolean, was=flag13",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.f,am,bO,field_bO,"P3.1-inferred: type=boolean, was=flag14",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.f,am,bP,field_bP,"P3.1-inferred: type=boolean, was=flag15",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.f,am,bS,field_bS,"P3.1-inferred: type=float, was=value18",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.f,am,bT,field_bT,"P3.1-inferred: type=boolean, was=flag19",p3-auto-inferred
+method,com.corrodinggames.rts.gameFramework.f,am,c,captureSelection,SelectionGroup: add all selected units not already in list,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.f,am,d,pruneDeadUnits,SelectionGroup: remove units with bV (dead flag),body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.f,am,e,reacquireUnits,SelectionGroup: remap units by id via spatial grid lookup,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,am,f,selectionBoxY2,Selection box end Y (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,am,g,isSelecting,Currently selecting flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,am,h,isAdditiveSelection,Shift-additive selection (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,am,i,selectionCallback,Selection change callback (private a),verified-exists
+method,com.corrodinggames.rts.gameFramework.f,f,a,buildButtons,RateGameDialog: create finish/keep-playing buttons,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.f,f,a(float),updateDialog,"""RateGameDialog: per-frame update (timer""",verified-exists
+method,com.corrodinggames.rts.gameFramework.f,f,b,isGameFinished,RateGameDialog: (l2.dq||l2.dt)&&!l2.dr,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.f,f,b(float),drawDialog,RateGameDialog: Victory/Defeat text + confetti + stats + buttons,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.f,f,c,rebuildStatsPanel,RateGameDialog: rebuild stats panel from current game state,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.f,f,c(float),drawRateNowPopup,RateGameDialog: draw rating popup if showRateNow,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,f,d,confettiTimer,RateGameDialog: confetti animation timer,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,f,g,dialogBoxRect,RateGameDialog: dialog bounding box,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,f,h,statsPanel,RateGameDialog: StatsPanel instance (rebuilt on game end),body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,f,i,buttons,RateGameDialog: ArrayList<DialogButton>,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,f,j,buttonHeightPx,RateGameDialog: button height in pixels,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,f,k,buttonWidthPx,RateGameDialog: button width in pixels,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,f,l,buttonSpacingPx,RateGameDialog: button spacing in pixels,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,f,p,textPrompt,RateGameDialog: prompt text (Rate this game?),body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,f,q,textYes,RateGameDialog: Yes button text,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,f,r,textNo,RateGameDialog: No/Not Now button text,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,f,s,showRateNow,RateGameDialog: trigger flag for rating popup,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,E,buildMenuX,Build menu position X (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,F,buildMenuY,Build menu position Y (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,G,buildMenuTargetX,Build menu target X (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,H,isMultiSelect,Multi-select mode active (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,L,isRepairMode,Repair mode cursor active (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,M,isReclaimMode,Reclaim mode cursor active (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,N,lastTouchX,Last touch/click X (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,O,lastTouchY,Last touch/click Y (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,P,cursorX,Current cursor world X (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,Q,cursorY,Current cursor world Y (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,R,cursorScreenX,Current cursor screen X (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,S,cursorScreenY,Current cursor screen Y (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,T,isBuildPlacement,Build placement mode active (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,U,isWaypointMode,Waypoint placement mode active (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,V,isTargetingMode,Targeting mode active (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,W,selectedUnit,Currently selected single unit (am=UnitInstance),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,X,uiAnimProgress,UI animation progress (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,Y,uiTickCounter,UI tick counter (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,Z,uiScaleFactor,UI scale factor (float),verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,aA,energyBarPaint,Energy bar paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aB,resourceBarPaint,Resource bar paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aC,buttonBgPaint,Button background paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aD,buttonTextPaint,Button text paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aE,buttonBorderPaint,Button border paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aF,minimapPaint,Minimap paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aG,minimapBorderPaint,Minimap border paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aH,rangeCirclePaint,Attack range circle paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aI,repairCirclePaint,Repair range circle paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aJ,waypointLinePaint,Waypoint line paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aK,textSmallPaint,Small text paint (package-private),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aL,textMediumPaint,Medium text paint (package-private),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aM,textLargePaint,Large text paint (package-private),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aN,overlayPaint,Overlay/shade paint (package-private),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aO,highlightPaint,Highlight/glow paint (package-private),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aP,debugPaint,Debug overlay paint (package-private),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aQ,defaultPaintWrapper,Default named paint wrapper (ag),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aR,uiPaintWrapper,UI named paint wrapper (ag),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aS,textPaintWrapper,Text named paint wrapper (ag),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aT,fontScale,Font scale factor (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aU,float30,real-class-inferred: com.corrodinggames.rts.gameFramework.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,aV,float31,real-class-inferred: com.corrodinggames.rts.gameFramework.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,aW,float32,real-class-inferred: com.corrodinggames.rts.gameFramework.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,aX,int5,real-class-inferred: com.corrodinggames.rts.gameFramework.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,aY,float33,real-class-inferred: com.corrodinggames.rts.gameFramework.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,aZ,boolean22,real-class-inferred: com.corrodinggames.rts.gameFramework.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,aa,hoveredUnit,Currently hovered/moused-over unit (am),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ab,touchInputEnabled,"Touch input enabled (final boolean,  true)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ac,uiStateTracker,UI state tracker (s),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ad,activePlayerIndex,Active player index (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ae,showResourcePanel,Show resource panel flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,af,resourcePanelX,Resource panel X position (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ag,resourcePanelY,Resource panel Y position (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ah,minimapX,Minimap X position (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ai,showMinimapControls,Show minimap controls flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aj,actionPanelX,Action panel X position (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ak,actionPanelY,Action panel Y position (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,al,actionPanelWidth,Action panel width (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,am,actionPanelHeight,Action panel height (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,an,messagePanelX,Message panel X position (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ao,messagePanelY,Message panel Y position (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ap,showMessagePanel,Show message panel flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aq,unitInfoX,Unit info panel X position (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ar,unitInfoY,Unit info panel Y position (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,as,selectedActionIndex,Selected action button index (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,at,defaultPaint,Default UI paint (final Paint),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,au,selectionBoxPaint,Selection box rectangle paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,av,selectionBoxBorderPaint,Selection box border paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,aw,hpBarGreenPaint,HP bar green fill paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ax,hpBarRedPaint,HP bar red background paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ay,shieldBarBluePaint,Shield bar blue fill paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,az,buildBarYellowPaint,Build progress bar yellow paint,verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,b,uiVisible,"Main UI visible flag (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,ba,uiBuildPanelConfig,"P3.3-deep-curated: class-context, was=e2",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.f,g,bb,uiUnitPanelConfig,"P3.3-deep-curated: class-context, was=e3",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.f,g,bc,uiCommandPanelConfig,"P3.3-deep-curated: class-context, was=e4",p3-deep-curated
+field,com.corrodinggames.rts.gameFramework.f,g,bd,boolean23,real-class-inferred: com.corrodinggames.rts.gameFramework.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,be,float34,real-class-inferred: com.corrodinggames.rts.gameFramework.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,bf,paint24,real-class-inferred: com.corrodinggames.rts.gameFramework.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,bg,paint25,real-class-inferred: com.corrodinggames.rts.gameFramework.f.g,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,g,c,minimapExpanded,Minimap expanded mode flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,d,uiTransition,"UI transition progress (float,  0-1)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,h,selectionGroup,Current unit selection group (m),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,l,teamChatAction,Team chat action instance (units.a.e),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,m,mapPingAction,Map ping action instance (units.a.f),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,n,gameAction3,Generic game action 3 (units.a.i),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,o,gameAction4,Generic game action 4 (units.a.d),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,p,gameAction5,Generic game action 5 (units.a.j),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,q,uiStateA,UI state object A (r),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,r,uiStateB,UI state object B (q),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,s,uiLayout,UI layout panel (l=UIViewBase),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,t,isDragging,Currently dragging flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,g,w,selectionStartX,Selection box start X (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,o,a,float1,real-class-inferred: com.corrodinggames.rts.gameFramework.f.o,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,o,b,float2,real-class-inferred: com.corrodinggames.rts.gameFramework.f.o,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f,o,c,minimapWidth,"Minimap display width (float,  default 120)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f,o,d,minimapHeight,"Minimap display height (float,  default 120)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f,o,e,isVisible,Minimap visible flag (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,o,f,isInteractive,Minimap interactive/clickable (boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,o,g,tileRenderWidth,Tile render width (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,o,h,tileRenderHeight,Tile render height (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,o,i,offsetX,Minimap offset X (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,o,j,offsetY,Minimap offset Y (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,o,w,boundsRect,Minimap bounds rectangle (final Rect),verified-exists
+method,com.corrodinggames.rts.gameFramework.f,x,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.f.x,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.f,x,b,getar,real-class-inferred: com.corrodinggames.rts.gameFramework.f.x,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.f,y,"a(bj,z,Rect)",drawGraph,,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,y,a(m.y,bj,z,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,y,a,createPanel,StatsPanel: static factory from live game state,body-verified-v1200
+method,com.corrodinggames.rts.gameFramework.f,y,b,initPanel,"""StatsPanel: reset display mode""",verified-exists
+method,com.corrodinggames.rts.gameFramework.f,y,c,loadButtonTextures,StatsPanel: fill statsButtonIcons[] from R$drawable,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,y,d,valuePaint,StatsPanel: Paint(Align.RIGHT) for stat values,body-verified-v1200
+field,com.corrodinggames.rts.gameFramework.f,y,e,dataSamples,Data samples list (private ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,f,displayMode,Display mode enum (private ac),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,g,timeRange,Time range enum (private z),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,h,seriesDataA,Series data list A (private ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,i,seriesArrayA,Series display array A (private ab[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,j,seriesDataB,Series data list B (private ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,k,seriesArrayB,Series display array B (private ab[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,l,seriesDataC,Series data list C (private ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,m,seriesArrayC,Series display array C (private ab[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,n,lastUpdateTime,Last update timestamp (private long),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,o,textureRef,Texture reference (private m.e),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,p,textureArray,Texture array (private m.e[]),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,q,boundsRect,Bounds rectangle (private Rect),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,r,clipRect,Clip rectangle (private Rect),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,s,visibleSamplesA,Visible samples A (private ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,t,visibleSamplesB,Visible samples B (private ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,u,selectedIndex,"Selected data index (private int,  -1)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,v,hoveredIndex,"Hovered data index (private int,  -1)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f,y,w,maxDisplayIndex,"Max display index (private int,  -1)",verified-exists
+method,com.corrodinggames.rts.gameFramework.f.a,h,a,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.f.a.h,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.f.a,h,i,backgroundColor,"Background color (int); 逆4-v19.133f98: 语义名在 03 存在 — 归属待迁 (relocate-candidate); 逆4d-v19.133f98: 保持-仅异域同名声明 (TMXMapLoader 在 com/corrodinggames/rts/game/map), 语义存疑; 逆5b-v19.133f98: 保持-仅异域同名声明 (TMXMapLoader 在 com/corrodinggames/rts/game/map), 语义存疑",suspicious-bc-missing
+field,com.corrodinggames.rts.gameFramework.f.a,h,j,fieldTypeA,Static field type A (static final h),verified-exists
+field,com.corrodinggames.rts.gameFramework.f.a,h,k,fieldTypeB,Static field type B (static final h),verified-exists
+field,com.corrodinggames.rts.gameFramework.f.a,h,l,fieldTypeC,Static field type C (static final h),verified-exists
+field,com.corrodinggames.rts.gameFramework.f.a,h,m,fieldTypeD,Static field type D (static final h),verified-exists
+field,com.corrodinggames.rts.gameFramework.f.a,h,n,fieldTypeE,Static field type E (static final h),verified-exists
+field,com.corrodinggames.rts.gameFramework.f.a,h,r,textRef,Text field reference (h),verified-exists
+field,com.corrodinggames.rts.gameFramework.f.a,h,s,textHeight,"Text height lines (int,  default 3)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f.a,h,t,textWidth,"Text width chars (int,  default 3)",verified-exists
+field,com.corrodinggames.rts.gameFramework.f.a,h,u,maxChars,Maximum character count (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.f.a,h,v,inputField,Input field reference (h),verified-exists
+field,com.corrodinggames.rts.gameFramework.g,b,a,fieldName,Field name (private final String),verified-exists
+field,com.corrodinggames.rts.gameFramework.g,b,b,fieldType,Field type enum (private final int),verified-exists
+field,com.corrodinggames.rts.gameFramework.g,b,c,fieldListeners,Change listeners (private final ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.g,a,a,fieldName,Field name string,verified-exists
+field,com.corrodinggames.rts.gameFramework.g,a,b,fieldValue,Field value (Object),verified-exists
+field,com.corrodinggames.rts.gameFramework.g,a,c,fieldFlags,Field flags (int),verified-exists
+method,com.corrodinggames.rts.gameFramework.f,a,"<init>(com.corrodinggames.rts.gameFramework.l,com.corrodinggames.rts.gameFramework.f.g)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,a,<clinit>(),run,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,a,A,rectF93,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,a,B,rect93,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,a,D,isFlag93,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,a,E,value93,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,a,H,count93,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,a,S,texture93,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,a,Y,paint93,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,a,Z,obj93,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,a,ad,time93,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,a,ag,name93,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,a,d(),getValue,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,a,n,uniquePaint93,"""(ActionPanel) 操作面板/单位命令 UI: 选中单位指令按钮""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,ab,a(java.util.ArrayList),handle,"""(LeaderboardTab) 排行榜标签页: 玩家 bj + 条目列表""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,ab,b(com.corrodinggames.rts.gameFramework.f.ab),getResult,"""(LeaderboardTab) 排行榜标签页: 玩家 bj + 条目列表""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,ad,<init>(int),setInts,(LeaderboardRowBuffer) 排行榜行缓冲: int 数组 累加器 方法 <init>(int) -> setInts,render-chain
+method,com.corrodinggames.rts.gameFramework.f,ae,<clinit>(),run,"""(TextRenderer) 文本渲染工具: 多 Paint 字体组合绘制 (""\n"" 换行处理) 方法 <clinit>() -> run""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,ae,a,uniquePaint1,"""(TextRenderer) 文本渲染工具: 多 Paint 字体组合绘制 (""\n"" 换行处理) 字段 com.corrodinggames.rts.gameFramework.m.ag: uniquePaint1""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,ae,a(android.graphics.Paint),handle,"""(TextRenderer) 文本渲染工具: 多 Paint 字体组合绘制 (""\n"" 换行处理) 方法 a(android.graphics.Paint) -> handle""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,ae,c(),getCount,"""(TextRenderer) 文本渲染工具: 多 Paint 字体组合绘制 (""\n"" 换行处理) 方法 c() -> getCount""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,ae,e,paint2,"""(TextRenderer) 文本渲染工具: 多 Paint 字体组合绘制 (""\n"" 换行处理) 字段 android.graphics.Paint: paint2""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,ae,f,paint3,"""(TextRenderer) 文本渲染工具: 多 Paint 字体组合绘制 (""\n"" 换行处理) 字段 android.graphics.Paint: paint3""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,ae,g,paint4,"""(TextRenderer) 文本渲染工具: 多 Paint 字体组合绘制 (""\n"" 换行处理) 字段 android.graphics.Paint: paint4""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,ae,h,paint5,"""(TextRenderer) 文本渲染工具: 多 Paint 字体组合绘制 (""\n"" 换行处理) 字段 android.graphics.Paint: paint5""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,ae,i,obj8,"""(TextRenderer) 文本渲染工具: 多 Paint 字体组合绘制 (""\n"" 换行处理) 字段 com.corrodinggames.rts.gameFramework.utility.m: obj8""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,al,<clinit>(),run,(LinkedList) 双向链表节点 (a-f 自引用) 方法 <clinit>() -> run,render-chain
+field,com.corrodinggames.rts.gameFramework.f,al,a,obj0,(LinkedList) 双向链表节点 (a-f 自引用) 字段 com.corrodinggames.rts.gameFramework.f.al: obj0,render-chain
+method,com.corrodinggames.rts.gameFramework.f,al,a(com.corrodinggames.rts.game.units.y),getResult,(LinkedList) 双向链表节点 (a-f 自引用) 方法 a(com.corrodinggames.rts.game.units.y) -> getResult,render-chain
+method,com.corrodinggames.rts.gameFramework.f,am,"<init>(com.corrodinggames.rts.gameFramework.f.a,boolean)",handle,,unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,am,a,units,(SelectionGroup) 选中单位集合 (extends gameFramework.bq): 序列化/清理/广播 ping 字段 java.util.ArrayList: units,render-chain
+method,com.corrodinggames.rts.gameFramework.f,am,a(),run,(SelectionGroup) 选中单位集合 (extends gameFramework.bq): 序列化/清理/广播 ping 方法 a() -> run,render-chain
+field,com.corrodinggames.rts.gameFramework.f,am,b,groupRadius,(SelectionGroup) 选中单位集合 (extends gameFramework.bq): 序列化/清理/广播 ping 字段 float: groupRadius,render-chain
+field,com.corrodinggames.rts.gameFramework.f,am,c,lastPingTime,(SelectionGroup) 选中单位集合 (extends gameFramework.bq): 序列化/清理/广播 ping 字段 long: lastPingTime,render-chain
+field,com.corrodinggames.rts.gameFramework.f,am,d,groupX,(SelectionGroup) 选中单位集合 (extends gameFramework.bq): 序列化/清理/广播 ping 字段 float: groupX,render-chain
+field,com.corrodinggames.rts.gameFramework.f,am,e,groupY,(SelectionGroup) 选中单位集合 (extends gameFramework.bq): 序列化/清理/广播 ping 字段 float: groupY,render-chain
+method,com.corrodinggames.rts.gameFramework.f,e,"<init>(java.lang.String,java.lang.String)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,e,a(),getValue,"""(StatsEntry) 战后统计条目: 键值对""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,f,<clinit>(),run,"""(GameEndScreen) 游戏结束/评分 UI: ""gui.rategame / Victory! / Defeat"" 方法 <clinit>() -> run""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,f,a,paint20,"""(GameEndScreen) 游戏结束/评分 UI: ""gui.rategame / Victory! / Defeat"" 字段 android.graphics.Paint: paint20""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,f,b,isFlag20,"""(GameEndScreen) 游戏结束/评分 UI: ""gui.rategame / Victory! / Defeat"" 字段 boolean: isFlag20""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,f,b(),isReady,"""(GameEndScreen) 游戏结束/评分 UI: ""gui.rategame / Victory! / Defeat"" 方法 b() -> isReady""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,f,c,field_c,"P3.1-inferred: type=com.corrodinggames.rts.gameFramework.m.e, was=value20",p3-auto-inferred
+field,com.corrodinggames.rts.gameFramework.f,f,e,rect20,"""(GameEndScreen) 游戏结束/评分 UI: ""gui.rategame / Victory! / Defeat"" 字段 android.graphics.Rect: rect20""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,f,t,field_t,"P3.1-inferred: type=float, was=value20",p3-auto-inferred
+method,com.corrodinggames.rts.gameFramework.f,g,<clinit>(),run,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,g,A(),isReady,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,g,a,isPaused,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,g,b(),getValue,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,g,bA,paint185,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,g,bG,name185,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,g,bI,obj185,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,g,bN,isFlag185,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,g,bU,time185,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,g,bh,texture185,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,g,bv,rect185,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,g,cd,count185,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,g,ci,value185,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,g,d(java.lang.String),handle,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,g,q(),getCount,"""(InGameUI) 游戏内主 UI: 暂停/速度/调试/单位信息/点击交互""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,m,"<init>(com.corrodinggames.rts.gameFramework.l,com.corrodinggames.rts.gameFramework.f.g)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,m,<clinit>(),run,"""(Clock) 游戏时钟: ""HH:mm:ss"" 格式化显示 方法 <clinit>() -> run""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,m,a,hourOffset,"""(Clock) 游戏时钟: ""HH:mm:ss"" 格式化显示 字段 int: hourOffset""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,m,b,obj4,"""(Clock) 游戏时钟: ""HH:mm:ss"" 格式化显示 字段 com.corrodinggames.rts.gameFramework.f.g: obj4""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,m,d,paint4,"""(Clock) 游戏时钟: ""HH:mm:ss"" 格式化显示 字段 android.graphics.Paint: paint4""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,m,e,isFlag4,"""(Clock) 游戏时钟: ""HH:mm:ss"" 格式化显示 字段 boolean: isFlag4""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,o,<clinit>(),run,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 方法 <clinit>() -> run""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,o,A,paint30,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 字段 android.graphics.Paint: paint30""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,o,E,rect30,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 字段 android.graphics.Rect: rect30""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,o,F,texture30,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 字段 com.corrodinggames.rts.gameFramework.m.e: texture30""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,o,G,obj30,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 字段 com.corrodinggames.rts.gameFramework.m.y: obj30""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,o,L,value30,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 字段 float: value30""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,o,O,isFlag30,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 字段 boolean: isFlag30""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,o,R,count30,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 字段 int: count30""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,o,W,objArray30,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 字段 [com.corrodinggames.rts.gameFramework.m.ag: objArray30""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,o,X,uniquePaint30,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 字段 com.corrodinggames.rts.gameFramework.m.ag: uniquePaint30""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,o,b(),getCount,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 方法 b() -> getCount""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,o,d(),getValue,"""(Minimap) 小地图: ""Creating minimap image buffers / --setting up minimap--"" 方法 d() -> getValue""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,v,"setGroupCheckable(int, boolean, boolean)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,v,<init>(),run,(ChatLog) 聊天日志: ArrayList 消息列表 方法 <init>() -> run,render-chain
+field,com.corrodinggames.rts.gameFramework.f,v,a,obj0,(ChatLog) 聊天日志: ArrayList 消息列表 字段 java.util.ArrayList: obj0,render-chain
+method,com.corrodinggames.rts.gameFramework.f,v,addSubMenu(java.lang.CharSequence),getResult,(ChatLog) 聊天日志: ArrayList 消息列表 方法 addSubMenu(java.lang.CharSequence) -> getResult,render-chain
+method,com.corrodinggames.rts.gameFramework.f,v,findItem(int),getInts,(ChatLog) 聊天日志: ArrayList 消息列表 方法 findItem(int) -> getInts,render-chain
+method,com.corrodinggames.rts.gameFramework.f,v,hasVisibleItems(),isReady,(ChatLog) 聊天日志: ArrayList 消息列表 方法 hasVisibleItems() -> isReady,render-chain
+method,com.corrodinggames.rts.gameFramework.f,v,removeGroup(int),setInts,(ChatLog) 聊天日志: ArrayList 消息列表 方法 removeGroup(int) -> setInts,render-chain
+method,com.corrodinggames.rts.gameFramework.f,v,setQwertyMode(boolean),setEnabled,(ChatLog) 聊天日志: ArrayList 消息列表 方法 setQwertyMode(boolean) -> setEnabled,render-chain
+method,com.corrodinggames.rts.gameFramework.f,v,size(),getCount,(ChatLog) 聊天日志: ArrayList 消息列表 方法 size() -> getCount,render-chain
+method,com.corrodinggames.rts.gameFramework.f,w,<init>(),run,"""(UiWidget) UI 控件基类: 布局/输入/绘制 (默认 ""not Implemented"" 空实现) 方法 <init>() -> run""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,w,b,obj3,"""(UiWidget) UI 控件基类: 布局/输入/绘制 (默认 ""not Implemented"" 空实现) 字段 android.graphics.drawable.Drawable: obj3""",render-chain
+field,com.corrodinggames.rts.gameFramework.f,w,c,count3,"""(UiWidget) UI 控件基类: 布局/输入/绘制 (默认 ""not Implemented"" 空实现) 字段 int: count3""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,w,getAlphabeticShortcut(),getValue,"""(UiWidget) UI 控件基类: 布局/输入/绘制 (默认 ""not Implemented"" 空实现) 方法 getAlphabeticShortcut() -> getValue""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,w,getGroupId(),getCount,"""(UiWidget) UI 控件基类: 布局/输入/绘制 (默认 ""not Implemented"" 空实现) 方法 getGroupId() -> getCount""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,w,isActionViewExpanded(),isReady,"""(UiWidget) UI 控件基类: 布局/输入/绘制 (默认 ""not Implemented"" 空实现) 方法 isActionViewExpanded() -> isReady""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,w,setCheckable(boolean),isValid,"""(UiWidget) UI 控件基类: 布局/输入/绘制 (默认 ""not Implemented"" 空实现) 方法 setCheckable(boolean) -> isValid""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,w,setOnMenuItemClickListener(android.view.MenuItem$OnMenuItemClickListener),getResult,"""(UiWidget) UI 控件基类: 布局/输入/绘制 (默认 ""not Implemented"" 空实现) 方法 setOnMenuItemClickListener(android.view.MenuItem$OnMenuItemClickListener) -> getResult""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,w,setShowAsAction(int),setInts,"""(UiWidget) UI 控件基类: 布局/输入/绘制 (默认 ""not Implemented"" 空实现) 方法 setShowAsAction(int) -> setInts""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,w,setShowAsActionFlags(int),getInts,"""(UiWidget) UI 控件基类: 布局/输入/绘制 (默认 ""not Implemented"" 空实现) 方法 setShowAsActionFlags(int) -> getInts""",render-chain
+method,com.corrodinggames.rts.gameFramework.f,x,<init>(),run,"""(EventQueue) UI 事件队列: 占位单位更新通知""",unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.f,x,a,obj0,"""(EventQueue) UI 事件队列: 占位单位更新通知""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,x,a(float),update,"""(EventQueue) UI 事件队列: 占位单位更新通知""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,x,b(),getValue,"""(EventQueue) UI 事件队列: 占位单位更新通知""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,x,t(),isReady,"""(EventQueue) UI 事件队列: 占位单位更新通知""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,y,"<init>(java.util.ArrayList,java.util.ArrayList)",handle,,unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,y,a(),getValue,"""(Leaderboard) 排行榜 UI: 队伍标签 + 条目列表""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,y,b(),run,"""(Leaderboard) 排行榜 UI: 队伍标签 + 条目列表""",unverifiable-rebuilt
+method,com.corrodinggames.rts.gameFramework.f,g,"a(String,int)",showCenterMessage,,verified
+method,com.corrodinggames.rts.gameFramework.f,g,"b(String,int)",showCenterMessageVariant,,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(String),showMessage,消息显示默认。T0: g.java:262,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,b(String),showMessageVariant,消息变体。T0: g.java:266,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,c(String),showMessageVariant2,消息变体2。T0: g.java:270,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,d(String),showMessageVariant3,消息变体3。T0: g.java:274,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,d(),clearMouseStates,清除鼠标按键状态 U/V/I=false。T0: g.java:278-282,verified
+method,com.corrodinggames.rts.gameFramework.f,g,"a(float,float)",isPointInUi,,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(boolean),setSelectionMode,设置选择模式(bl 时 g.j() 标记组脏)。T0: g.java:298,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(Context),init,初始化加载资源。T0: g.java:346 上下文资源加载,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(float),update,每帧更新(总入口)。T0: g.java:546 v+=f2 平滑累加,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(units.h),setUnitInfo,设置单位信息。T0: g.java:985,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(l),isCtrlDown,Ctrl键按下(按键59/60)。T0: g.java:989,verified
+method,com.corrodinggames.rts.gameFramework.f,g,b(l),isShiftDown,Shift键按下(按键113/114)。T0: g.java:996,verified
+method,com.corrodinggames.rts.gameFramework.f,g,c(l),isSpaceDown,空格键按下(按键57/58)。T0: g.java:1003,verified
+method,com.corrodinggames.rts.gameFramework.f,g,b(float),draw,每帧绘制(主渲染入口)。T0: g.java:1010 Z+=0.2f*f2 屏幕边框绘制,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(l,n,boolean,verified
+method,com.corrodinggames.rts.gameFramework.f,g,b(boolean),isYesNoPressed,是否按了YES或NO。T0: g.java:1237 a(bl?a:b,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(h),isMenuButtonPressed,按钮按下判断(h枚举)。T0: g.java:1241 委托 a(h,verified
+method,com.corrodinggames.rts.gameFramework.f,g,"a(h,boolean)",isMenuButtonPressedAny,,verified
+method,com.corrodinggames.rts.gameFramework.f,g,c(float),updateTapProcessing,帧内点击/指令处理。T0: g.java:1300 大方法多分支,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,"a(float,float,Point)",verified,,
+method,com.corrodinggames.rts.gameFramework.f,g,a(am),onUnitTap,单位点击处理(重复点击检测)。T0: g.java:2125 W==am2&&X<40 快速重复判断,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(e),collectSelectableUnits,收集可选单位(w.er 遍历)。T0: g.java:2244 cG&&m(y2) 条件,verified
+method,com.corrodinggames.rts.gameFramework.f,g,"a(e,s)",addActionTarget,,verified
+method,com.corrodinggames.rts.gameFramework.f,g,"a(s,boolean)",canIssueToSelected,,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(s),canIssueAction,动作可发布性判断。T0: g.java:2373,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,b(s),canIssueActionAny,动作对任意单位可发布。T0: g.java:2392,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,c(s),isActionEnabled,动作启用判断。T0: g.java:2408,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,d(s),getActionLabel,获取动作标签文本。T0: g.java:2428 String 返回,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,e(s),getUnitsForAction,收集可执行动作的单位。T0: g.java:2445 bY 填充返回 u,verified
+method,com.corrodinggames.rts.gameFramework.f,g,f(s),getActionWarning,获取动作警告文本。T0: g.java:2457 String 返回,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,a(units.ag),hasUnitWithAbility,是否有带该能力的单位。T0: g.java:2505 遍历 bZ,verified
+method,com.corrodinggames.rts.gameFramework.f,g,"a(units.ag,am)",unitHasAbility,,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(s,PointF,am,verified
+method,com.corrodinggames.rts.gameFramework.f,g,b(am),issueActionToUnit,发布动作到单位(e2.d(am2))。T0: g.java:2671 标记 ap=12 尺寸25,verified
+method,com.corrodinggames.rts.gameFramework.f,g,"b(float,float)",issueMoveAt,,verified
+method,com.corrodinggames.rts.gameFramework.f,g,c(am),issueAttackOrder,发布攻击指令。T0: g.java:2832 e2.a(am2)+爆炸音 a.e.d+特效,verified
+method,com.corrodinggames.rts.gameFramework.f,g,d(am),issueCaptureOrder,发布占领指令。T0: g.java:2872 e2.b(am2) 标记 ap=10 尺寸35,verified
+method,com.corrodinggames.rts.gameFramework.f,g,e(am),issueTransportOrder,发布运输装载指令。T0: g.java:2890 e2.c(am2) 标记 aq=17/ap=1,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,f(am),issueRepairOrder,发布修理指令。T0: g.java:2964 e2.e(am2) 标记 ap=11 尺寸25,verified
+method,com.corrodinggames.rts.gameFramework.f,g,g(am),issueBuildOrder,发布建造指令。T0: g.java:2982 e2.f(am2) 标记 ap=11,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,h(am),deselectSameType,取消同类单位选中。T0: g.java:3039 遍历 w.er 同队同类型 j(am3),verified
+method,com.corrodinggames.rts.gameFramework.f,g,i(am),canSelectUnit,单位可选性判断。T0: g.java:3063 t()隐藏/队伍 bX 判断,verified
+method,com.corrodinggames.rts.gameFramework.f,g,j(am),selectUnit,选中单位(已选则保持)。T0: g.java:3072 cG 判断,verified
+method,com.corrodinggames.rts.gameFramework.f,g,k(am),addToSelection,加入选中。T0: g.java:3084 cG=true+cH=时间戳+aX+++ca=am2,verified
+method,com.corrodinggames.rts.gameFramework.f,g,"a(am,boolean)",setSelection,,verified
+method,com.corrodinggames.rts.gameFramework.f,g,l(am),removeFromSelection,从选中移除。T0: g.java:3126,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,m(am),isUnitControllable,单位可控性判断(队伍关系)。T0: g.java:3188 cW()/bX==bs/bX.b(bs),verified
+method,com.corrodinggames.rts.gameFramework.f,g,n(am),isUnitSelected,单位是否已选中。T0: g.java:3202,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,o(am),selectPredicate,选择谓词。T0: g.java:3215,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,p(am),selectPredicate2,选择谓词2。T0: g.java:3228,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,q(am),selectPredicate3,选择谓词3。T0: g.java:3241,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,g,a(j.as),onNetworkOrder,网络指令接收。T0: g.java:3262 g.a(as2)+as2.c(1)+a(this.ad) 同步版本,verified
+method,com.corrodinggames.rts.gameFramework.f,g,"a(j.k,boolean)",onNetworkReplay,,verified
+method,com.corrodinggames.rts.gameFramework.f,g,a(String,Rect,Paint,verified
+method,com.corrodinggames.rts.gameFramework.f,a,a(float),update,操作面板更新。T0: a/a.java:206 摄像头缩放按键/滚轮/手势,verified
+method,com.corrodinggames.rts.gameFramework.f,a,b(float),update2,操作面板更新2。T0: a/a.java:403,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,a,d(float),draw,操作面板绘制(返回悬停按钮)。T0: a/a.java:1012 int 返回,verified
+method,com.corrodinggames.rts.gameFramework.f,a,"a(float,int)",drawActionBar,,verified
+method,com.corrodinggames.rts.gameFramework.f,a,e(float),drawControlGroups,小队控制组绘制。T0: a/a.java:2311 10组方框,verified
+method,com.corrodinggames.rts.gameFramework.f,a,"a(String,int)",showCenterMessage,,verified
+method,com.corrodinggames.rts.gameFramework.f,a,a(s),isChatAction,是否为聊天动作(静态)。T0: a/a.java:608,verified
+method,com.corrodinggames.rts.gameFramework.f,a,"a(s,int,ArrayList)",verified,,
+method,com.corrodinggames.rts.gameFramework.f,a,"a(am,ArrayList)",createActionList,,verified
+method,com.corrodinggames.rts.gameFramework.f,a,a(int),selectMenuOption,"选择菜单选项。T0: a/a.java:2281 appFramework.g.c(n2) 日志 ""selectMenuOption: gameView==null""",verified
+method,com.corrodinggames.rts.gameFramework.f,o,a(float),update,小地图更新。T0: o.java,verified
+method,com.corrodinggames.rts.gameFramework.f,o,b(float),draw,小地图绘制。T0: o.java,verified
+method,com.corrodinggames.rts.gameFramework.f,o,c(float),drawMarkers,标记绘制。T0: o.java p2.e 类型分支,verified-exists
+method,com.corrodinggames.rts.gameFramework.f,m,"a(String,String)",addMessage,,verified
+method,com.corrodinggames.rts.gameFramework.f,m,"a(float,int)",draw,,verified
+method,com.corrodinggames.rts.gameFramework.f,ap,a(am),logUnitAction,记录单位行动。T0: ap.java:42,verified
+method,com.corrodinggames.rts.gameFramework.f,ap,b(am),logBuildComplete,记录建造完成。T0: ap.java:48,verified
+method,com.corrodinggames.rts.gameFramework.f,ap,c(am),logUpgradeComplete,记录升级完成。T0: ap.java:54,verified
+method,com.corrodinggames.rts.gameFramework.f,ap,a(String),logMessage,记录普通日志。T0: ap.java:60,verified
+method,com.corrodinggames.rts.gameFramework.f,ap,"a(String,int)",logImportant,,verified
+method,com.corrodinggames.rts.gameFramework.f,ap,a(float),draw,战争日志绘制。T0: ap.java:89 受 showWarLogOnScreen 控制,verified
+method,com.corrodinggames.rts.gameFramework.f,ap,d(),jumpToLatest,跳转最新条目。T0: ap.java:118 h=true+b(au2.e,verified
+method,com.corrodinggames.rts.gameFramework.f,ap,c(),pruneExpired,清理过期条目(20秒)。T0: ap.java:109 20000ms 超时移除,verified
+field,com.corrodinggames.rts.gameFramework.f,i,a,none,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.gameFramework.f,i,b,zoomButton,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.gameFramework.f,i,c,unselectAllButton,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.gameFramework.f,r,a,base,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.gameFramework.f,r,b,unit,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.gameFramework.f,r,c,nuke,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.gameFramework.f,r,d,message,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99

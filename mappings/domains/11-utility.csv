@@ -1,0 +1,83 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,com.corrodinggames.rts.gameFramework.utility,n,a,listRef,List reference (CustomArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,n,b,currentIndex,Current position (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,o,a,headNode,Head node (Node),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,o,b,tailNode,Tail node (Node),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,o,c,elementCount,Element count (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,p,a,listRef,List reference (DequeList),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,p,b,currentNode,Current node (Node),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,p,c,remainingCount,Remaining elements (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,x,a,emptyBooleanArray,Empty boolean array (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,x,b,emptyByteArray,Empty byte array (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,x,c,emptyCharArray,Empty char array (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,x,d,emptyDoubleArray,Empty double array (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,x,e,emptyIntArray,Empty int array (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,x,f,emptyClassArray,Empty Class array (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,x,g,emptyObjectArray,Empty Object array (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,x,h,emptyStringArray,Empty String array (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,x,i,emptyThrowableArray,Empty Throwable array (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,x,j,emptyStackTraceArray,Empty StackTraceElement array (static final),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,z,a,styleType,Paint Style enum (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,z,b,paintColor,Paint color (int),unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.utility,z,c,strokeWidth,Stroke width (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,h,a,bufferRef,Buffer reference (RingBuffer),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,h,b,currentIndex,Current position (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,h,c,remainingCount,Remaining elements (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,aa,a,textString,Text string (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,aa,b,positionX,X position (float),unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.utility,aa,c,positionY,Y position (float),unverifiable-rebuilt
+field,com.corrodinggames.rts.gameFramework.utility,t,a,parentList,Parent typed list reference,verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,t,b,currentIndex,Current index (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,t,c,listSize,List size (int),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,ab,a,string1,real-class-inferred: com.corrodinggames.rts.gameFramework.utility.ab,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.utility,ab,b,boolean1,real-class-inferred: com.corrodinggames.rts.gameFramework.utility.ab,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.utility,ab,c,linkedHashSet,real-class-inferred: com.corrodinggames.rts.gameFramework.utility.ab,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.utility,ab,d,keyList,Key string list (ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,ab,e,valueList,Value string list (ArrayList),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,ab,f,currentSectionName,Current section name (String),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,ab,g,controlCharPattern,Control character regex (static Pattern),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,ab,h,sectionPattern,Section header regex (static Pattern),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,ab,i,keyValuePattern,Key=value regex (static Pattern),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,ab,j,sectionMap,Parsed sections (private LinkedHashMap),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,ab,k,isParsed,Parsing complete flag (private boolean),verified-exists
+method,com.corrodinggames.rts.gameFramework.utility,ad,a,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.utility.ad,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.utility,ad,b,poolIndex,Current pool index (private int),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,ad,c,isFixedSize,Fixed size flag (private final boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,ai,b,keyValueB,Key value B (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,ai,c,keyValueC,Key value C (float),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,d,b,defaultTimeoutHandler,Default timeout handler (static f),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,d,c,intervalChecker,Active interval checker (private e),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,d,d,timeoutHandler,Active timeout handler (private f),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,d,e,mainHandler,Main thread Handler (private final),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,d,f,timeoutMilliseconds,Timeout in ms (private final int),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,d,g,watchdogName,Watchdog name for logging (private String),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,d,h,isStarted,Started flag (private boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,d,i,isStopped,Stopped flag (private boolean),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,d,j,tickCounter,Heartbeat tick counter (private volatile int),verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,d,k,watchdogRunnable,Watchdog check Runnable (private final),verified-exists
+method,com.corrodinggames.rts.gameFramework.utility,l,a,getString,real-class-inferred: com.corrodinggames.rts.gameFramework.utility.l,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.utility,l,c,isEnabled,real-class-inferred: com.corrodinggames.rts.gameFramework.utility.l,real-class-v1200
+method,com.corrodinggames.rts.gameFramework.utility,l,d,reset,real-class-inferred: com.corrodinggames.rts.gameFramework.utility.l,real-class-v1200
+field,com.corrodinggames.rts.gameFramework.utility,l,e,lineNumber,"Current line number (private int,  -1)",verified-exists
+field,com.corrodinggames.rts.gameFramework.utility,l,f,lastCharValue,"Last character value (private int,  -1)",verified-exists
+method,com.corrodinggames.rts.gameFramework.utility,s,a,toArray,s.a()->w[]; f(float) 167: TypedObjectList 转数组遍历,verified
+method,com.corrodinggames.rts.gameFramework.utility,s,size,size,标准 List 大小; f(float) 175: 遍历上界,verified
+method,com.corrodinggames.rts.gameFramework.utility,i,c(),assetIndex,"证据串自报名(ldc 绑定, A 级)；v1.09 孪生类同证（com/corrodinggames/rts/gameFramework/utility/i）；描述符 ()Ljava/util/ArrayList;",logstring-selfname-v109-v109x
+method,com.corrodinggames.rts.gameFramework.utility,y,"a(float,float,float,float,ao)",pathPossible,"证据串自报名(ldc 绑定, A 级)；描述符 (FFFFLcom/corrodinggames/rts/game/units/ao;)Z",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility,ah,f(String),getEntry,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;)Ljava/util/zip/ZipEntry;",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility,ah,h(String),getEntrySize,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;)J",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility,ag,"d(String,boolean)",isDirectory,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;Z)Lcom/corrodinggames/rts/gameFramework/utility/ah;",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility,ag,l(String),getPathInZip,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;)Ljava/lang/String;",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility,al,"a(String,int)",getBracketEnd,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;I)I",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility.a,a,"a(Uri,boolean,String)",createSAFLink,"证据串自报名(ldc 绑定, A 级)；描述符 (Landroid/net/Uri;ZLjava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/a/b;",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility.a,a,n(String),getPathInZip,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;)Ljava/lang/String;",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility.a,a,"b(String,boolean)",openAssetSteam,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;Z)Lcom/corrodinggames/rts/gameFramework/utility/j;",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility.a,a,c(String),deleteFile,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;)Z",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility.a,b,b(String),openAssetSteam,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/j;",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility.a,b,"a(String,boolean)",writableOutputSteam,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;Z)Ljava/io/OutputStream;",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility.a,b,e(String),deleteFile,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;)Z",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility.a,b,"a(String,String)",renameFile,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;Ljava/lang/String;)Z",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility.a,b,i(String),createDirectory,"证据串自报名(ldc 绑定, A 级)；描述符 (Ljava/lang/String;)Landroid/net/Uri;",logstring-selfname-v109
+method,com.corrodinggames.rts.gameFramework.utility,l,b(...),getint,位置无关配对导出（02↔反向源唯一性配对）；见 RENAME-DAMAGE/STATUS §〇.2,bytecode-derived-v19.133f99
+field,com.corrodinggames.rts.gameFramework.utility,q,a,add,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.gameFramework.utility,q,b,remove,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99

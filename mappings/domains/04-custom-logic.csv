@@ -1,0 +1,149 @@
+type,obfuscated_package,obfuscated_class,obfuscated_member,meaningful_name,notes,verified
+field,com.corrodinggames.rts.game.units.custom.e,a,A,allResourcesRegistry,[V] static ArrayList; e() iterates it (e/a.java:69-77),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,B,enabledResourcesList,"""[V] static ArrayList; e() filters into it""",verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,C,globalResourcesRegistry,[U] static ArrayList; third registry,verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,D,effectResourceRef,"P3.3-deep-curated: class-context, was=creditResourceType",p3-deep-curated
+field,com.corrodinggames.rts.game.units.custom.e,a,E,energyResourceType,[V] static final built-in ResourceType; resourceId='energy' (inner class d),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,F,ammoResourceType,[V] static final built-in ResourceType; resourceId='ammo' (inner class b),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,G,hitPointResourceType,[V] static final built-in ResourceType; resourceId='hp' (inner class e),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,H,shieldResourceType,[V] static final built-in ResourceType; resourceId='shield' (inner class f),verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,a,a,isHiddenInEditor,[V] a()->boolean returns isHiddenInEditor,verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,a,b,getDefaultValue,[V] b()->float returns defaultValue,verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,a,toString,toString,[V] Object.toString override,verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,x,maxValue,[U] float next to hasMaxLimit — likely resource max,verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,y,iconTexture,[U] m.e texture (HUD icon),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,z,resourceFlag,[U] boolean; unverified,verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,A,equivalentGlobalResource,[V] [V] l2.k(z) resolved type (e/d.java:143),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,B,iconImage,[V] [V] INI 'iconImage' EffectDefinition max 100x100 (e/d.java:118-121),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,C,iconImageUseInText,[V] [V] INI 'iconImageUseInText' (e/d.java:122),verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,d,a(com.corrodinggames.rts.game.units.custom.l),applyConfig,[U] a(l)->void; apply to ModUnitRegistry,verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,u,displayTextPostfix,[V] [V] INI 'displayTextPostfix'/'displayPostfixInHUD' (e/d.java:94-106),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,v,displayTextAppendResource,[V] [V] INI 'displayTextAppendResource'/'appendResourceInHUD' (e/d.java:108-114),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,w,displayResourceType,[V] [V] l2.k(v) resolved type (e/d.java:152),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,x,displayTextAppendResourceWithGap,[V] [V] INI 'displayTextAppendResourceWithGap' (e/d.java:116),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,y,appendResourceInHUD_whenThisZero,[V] [V] INI 'appendResourceInHUD_whenThisZero' (e/d.java:117),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,z,equivalentGlobalResourceForAI,[V] [V] INI 'equivalentGlobalResourceForAI' (e/d.java:137),verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,f,a(com.corrodinggames.rts.game.units.am),fromUnit,[U] a(am)->e.f; build from unit's resources,verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,f,b(com.corrodinggames.rts.game.units.custom.e.a),clear,[V] b()->void; empty the list,verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,f,c,isEmpty,[V] c()->boolean; no entries,verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,f,d,size,[U] d()->int; entry count,verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,f,e,reset,[U] e()->void; reset to zero,verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,f,f(com.corrodinggames.rts.game.units.custom.e.f),overlapsWith,[V] f(f)->boolean; any positive entry shared with other,verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,f,g(com.corrodinggames.rts.game.units.custom.e.f),copyFrom,[V] g(f)->void; clear() then addAll from other (e/f.java:550),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,b,canAttackFilter,Can attack filter (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,c,canBuildFilter,Can build filter (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,d,canMoveFilter,Can move filter (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,e,canRepairFilter,Can repair filter (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,f,canReclaimFilter,Can reclaim filter (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,g,canTransportFilter,Can transport filter (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,h,movementTypeFilter,Movement type filter (q enum),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,i,checkOwnerTeam,Check owning team (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,j,selectRange,Selection range (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,k,filterEnemyUnits,Filter enemy units (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,l,filterAllyUnits,Filter ally units (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,m,filterNeutralUnits,Filter neutral units (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,n,filterSelfUnit,Filter own unit (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,o,teamFilterMode,Team filter mode (int  -1=all),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,p,filterRadiusMultiplier,"Filter radius multiplier (float,  default 1.0)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,q,hasUnitTypeFilter,Has unit type filter (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,r,activationCondition,Activation LogicBoolean condition,verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,s,targetFilterCondition,Target filter LogicBoolean condition,verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,t,executionCondition,Execution LogicBoolean condition,verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,u,requiresTarget,Requires valid target (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,d,v,filterConfigRef,Reference to filter config (e),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,e,b,frameTextures,Multiple frame textures array (m.e[]),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,e,c,frameWidth,Frame width in pixels (int),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,e,d,frameHeight,Frame height in pixels (int),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,e,e,spriteColumns,"Sprite sheet columns (int,  default 1)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,e,f,spriteRows,"Sprite sheet rows (int,  default 1)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,c,frictionValue,Friction coefficient (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,d,accelerationValue,"Acceleration rate (float,  default 0.1)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,e,maxSpeedValue,Maximum speed (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,f,turnRateValue,Turn rate (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,g,brakingDistance,Braking distance (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,h,waterSpeedMultiplier,Water speed multiplier (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,i,airSpeedMultiplier,Air speed multiplier (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,j,collisionEnabled,"Collision enabled (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,k,ignoreTerrain,Ignore terrain constraints (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,l,canHoverOverride,Override hover capability (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,m,pathfindingEnabled,"Pathfinding enabled (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,n,avoidanceEnabled,Unit avoidance enabled (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,o,pushingEnabled,"Unit pushing enabled (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,p,pushStrengthValue,Push strength value (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,q,formationSpacing,Formation spacing (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,r,arrivalDistance,Arrival detection distance (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,i,s,movementSpeedScale,"Speed scale multiplier (float,  default 1.0)",verified-exists
+method,com.corrodinggames.rts.game.units.custom.b,n,b,getString,real-class-inferred: com.corrodinggames.rts.game.units.custom.b.n,real-class-v1200
+field,com.corrodinggames.rts.game.units.custom.b,n,c,cost1,Resource cost 1 (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,d,cost2,Resource cost 2 (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,e,buildTime,Build/research time (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,f,field_f,"P3.1-inferred: type=int, was=value1",p3-auto-inferred
+field,com.corrodinggames.rts.game.units.custom.b,n,g,field_g,"P3.1-inferred: type=com.corrodinggames.rts.game.n, was=value2",p3-auto-inferred
+field,com.corrodinggames.rts.game.units.custom.b,n,h,isEnabled,Enabled flag (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,i,isHidden,Hidden from UI (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,j,modifyHp,Modifies HP (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,k,modifySpeed,Modifies speed (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,l,modifyDamage,Modifies damage (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,m,modifyRange,"Modifies range (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,n,modifyBuildSpeed,"Modifies build speed (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,o,modifyCost,"Modifies cost (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,p,modifyArmor,"Modifies armor (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,q,modifyShield,Modifies shield (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,r,modifySight,"Modifies sight range (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,s,modifyEnergy,"Modifies energy (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,t,modifyAmmo,Modifies ammo (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,u,modifyTurnRate,Modifies turn rate (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.b,n,v,boolean15,real-class-inferred: com.corrodinggames.rts.game.units.custom.b.n,real-class-v1200
+field,com.corrodinggames.rts.game.units.custom.b,n,w,bp,real-class-inferred: com.corrodinggames.rts.game.units.custom.b.n,real-class-v1200
+field,com.corrodinggames.rts.game.units.custom.b,n,x,boolean16,real-class-inferred: com.corrodinggames.rts.game.units.custom.b.n,real-class-v1200
+field,com.corrodinggames.rts.game.units.custom.b,n,y,boolean17,real-class-inferred: com.corrodinggames.rts.game.units.custom.b.n,real-class-v1200
+field,com.corrodinggames.rts.game.units.custom.b,n,z,boolean18,real-class-inferred: com.corrodinggames.rts.game.units.custom.b.n,real-class-v1200
+field,com.corrodinggames.rts.game.units.custom.e,a,c,displayName,Display name (LocalizedString),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,d,descriptionText,Description text (LocalizedString),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,e,isCurrencyType,Is currency/credit type (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,f,showInResourceUI,Show in resource UI panel (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,g,abbreviationName,Short abbreviation (LocalizedString),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,h,formatString,Display format string (LocalizedString),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,i,parentResourceType,Parent resource type reference (a),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,j,isGlobalResource,Is global/shared resource (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,k,isTransferable,Can transfer between players (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,l,autoCollectEnabled,"Auto-collect enabled (boolean,  default true)",verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,m,uiColorValue,UI display color (Integer),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,n,isHiddenResource,Is hidden/undisplayed resource (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,o,isDepletable,Is depletable resource (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,p,depletedWhenEmpty,Remove when depleted (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,q,resourceCategory,Resource category enum (b),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,s,defaultValue,Default starting value (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,v,linkedResourceType,Linked/secondary resource type (a),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,a,w,hasMaxLimit,Has maximum limit (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,a,unitConfigId,Unit configuration ID (String),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,b,resourceType,Primary resource type (a),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,c,buildCostValue,Build cost amount (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,d,buildTimeValue,Build time seconds (Integer),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,e,isHiddenUnit,Is hidden from build menu (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,f,isBuildable,Is buildable/constructable (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,g,unitDisplayName,Unit display name (LocalizedString),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,h,unitDescription,Unit description (LocalizedString),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,i,isLockedByTech,Locked until tech researched (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,j,isUniqueUnit,Only one allowed (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,k,isExperimentalUnit,Is experimental/T3 unit (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,l,requiresWater,Requires water placement (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,m,maxHitPoints,Maximum HP (float),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,n,hasShieldGenerator,Has shield generator (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,o,hasEnergyWeapon,Has energy weapon (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,p,isSelfDestructUnit,Self-destructs on death (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,q,unitEquipFlags,Unit equipment flags (boolean),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,r,unitCategoryEnum,Unit category enum (b),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,s,techLevelValue,Tech tier level (int),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,d,t,unitTooltipText,Unit tooltip text (LocalizedString),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,e,a,resourceTypeRef,Resource type reference (f),verified-exists
+field,com.corrodinggames.rts.game.units.custom.e,e,b,amountValue,Amount/value (float),verified-exists
+method,com.corrodinggames.rts.game.units.custom.e,f,b,do_b,"""[Phase3-method] returns void""",verified-exists
+method,com.corrodinggames.rts.game.units.custom.b,m,a(j),onCreateSpawnUnitOf,"证据串自报名(ldc 绑定, A 级)；描述符 (Lcom/corrodinggames/rts/game/units/custom/j;)V",logstring-selfname-v109
+method,com.corrodinggames.rts.game.units.custom.b,m,"a(j,n,y)",setAttachedUnitLookup,"证据串自报名(ldc 绑定, A 级)；描述符 (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/game/units/custom/b/n;Lcom/corrodinggames/rts/game/units/y;)Z",logstring-selfname-v109
+field,com.corrodinggames.rts.game.units.custom.b,f,a,shadow,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.game.units.custom.b,f,b,beforeBody,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.game.units.custom.b,f,c,afterBody,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.game.units.custom.b,f,d,onTop,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.game.units.custom.b,f,e,beforeUI,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99
+field,com.corrodinggames.rts.game.units.custom.b,f,f,inactive,枚举常量 INI 名（RS-27 第 47 轮，由 <clinit> 的 ldc 序列提取）,derived-bytecode-v19.133f99

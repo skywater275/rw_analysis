@@ -1,0 +1,30 @@
+# ============================================================
+# 行尾统一规范 (2026-09-04, 文档归档战役)
+# 存储层统一 LF; 工作区文本统一 CRLF (Windows 生态)
+# ============================================================
+* text=auto
+*.md text eol=crlf
+*.java text eol=crlf
+*.py text eol=crlf
+*.csv text eol=crlf
+*.json text eol=crlf
+*.txt text eol=crlf
+*.bat text eol=crlf
+*.sh text eol=lf
+*.class binary
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.jfr binary
+*.zip binary
+*.replay binary
+*.dat binary
+
+# 批处理: 中文 Windows 的 cmd 按 OEM 代码页(GBK)解析, 而 .bat 内含中文路径与注释
+# → 以 GBK 落盘且不做行尾归一, 否则 UTF-8/换行转换会让 cmd 解析错位 (2026-09-24 实测)
+*.bat -text

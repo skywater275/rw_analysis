@@ -1,0 +1,62 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.corrodinggames.rts.game.units.custom.animation;
+
+import com.corrodinggames.rts.game.units.custom.bp;
+import com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean;
+
+public strictfp class UnitTrait {
+    short a;
+    String b;
+    public strictfp String b() {  // 02b b/n.java L55: b() { return this.b; }
+        return this.b;
+    }
+    float c;
+    float d;
+    float e;
+    public float f;
+    public float g = 0.0f;
+    public boolean h;
+    boolean i;
+    public boolean j;
+    public boolean k;
+    public boolean l = false;
+    public boolean m = true;
+    public boolean n = true;
+    public boolean o = true;
+    public boolean p = true;
+    public boolean q = false;
+    boolean r = true;
+    boolean s = true;
+    boolean t = false;
+    public boolean u;
+    boolean v = false;
+    bp w;
+    boolean x = true;
+    boolean y;
+    public boolean z;
+    boolean A = true;
+    boolean B = false;
+    public boolean C = false;
+    public boolean D = false;
+    public boolean E;
+    public boolean F = true;
+    public float G;
+    public boolean H;
+    public boolean I = false;
+    public boolean J = true;
+    public boolean K;
+    public boolean L;
+    public boolean M = true;
+    public LogicBoolean N;
+    public boolean O;
+
+    public short a() {
+        return this.a;
+    }
+
+    public String getString() {
+        return this.b;
+    }
+}

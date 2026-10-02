@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.corrodinggames.rts.game;
+
+public strictfp enum ResourceType {
+    a,
+    b,
+    c,
+    d,
+    e,
+    f,
+    g;
+
+}
